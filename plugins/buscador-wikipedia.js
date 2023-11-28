@@ -23,7 +23,10 @@ return data}
 var notFond = {
 status: link.status,
 Pesan: eror}
-return notFond}}
+return notFond}
+  
+  
+}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝗗𝗶𝗴𝗶𝘁𝗲 𝗮 𝗽𝗮𝗹𝗮𝘃𝗿𝗮-𝗰𝗵𝗮𝘃𝗲 𝗽𝗮𝗿𝗮 𝗯𝘂𝘀𝗰𝗮𝗿. 🔎 \n𝗘𝘅𝗲𝗺𝗽𝗹𝗼\n*${usedPrefix + command} Universe*`
 wikipedia(`${text}`).then(res => {
