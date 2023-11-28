@@ -115,6 +115,23 @@ global.gt = "Edgar-BOT•"
 global.ig = "https://www.instagram.com/henryy.xn"
 global.md = "https://github.com/ARCANGEL0/Edgar"
 
+
+global..fb = "https://www.facebook.com/profile.php?id=100089128511446"
+
+global.nna = ' '//CANAL UPDATE
+global.nn2 = '' //UPDATE
+global.nna2 = '' //Help
+global.nn = '' //Grupo 1
+global.nnn = ''
+global.nnnt = '' //Grupo 3
+global.nnntt = ''//Grupo 4
+global.nnnttt = ''
+global.nnnttt1 = '''
+global.nnnttt2 = ''
+global.nnnttt3 = ''
+global.nnnttt4 = '' //Grupo 9 COL
+global.nnnttt5 = '' //A.T.M.me
+
 global.paypal = 'https://paypal.me/henryarcangelo'
 global.asistencia = 'Wa.me/351927285125'
 
