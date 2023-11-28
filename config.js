@@ -116,7 +116,7 @@ global.ig = "https://www.instagram.com/henryy.xn"
 global.md = "https://github.com/ARCANGEL0/Edgar"
 
 
-global..fb = "https://www.facebook.com/profile.php?id=100089128511446"
+global.fb = "https://www.facebook.com/profile.php?id=100089128511446"
 
 global.nna = ' '//CANAL UPDATE
 global.nn2 = '' //UPDATE
