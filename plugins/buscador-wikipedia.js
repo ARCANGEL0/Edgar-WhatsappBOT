@@ -27,19 +27,20 @@ return notFond}}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙇𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 𝘾𝙇𝘼𝙑𝙀 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Luna*\n\n𝙏𝙔𝙋𝙀 𝙏𝙃𝙀 𝙆𝙀𝙔𝙒𝙊𝙍𝘿 𝙏𝙊 𝙎𝙀𝘼𝙍𝘾𝙃\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Universe*`
 wikipedia(`${text}`).then(res => {
-let info = `𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙀 𝙀𝙎𝙏𝙊 | 𝙄 𝙁𝙊𝙐𝙉𝘿 𝙏𝙃𝙄𝙎:\n\n` + res.result.isi
+let info = `𝙄𝙨𝙩𝙤 𝙛𝙤𝙞 𝙤 𝙦𝙪𝙚 𝙚𝙪 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙚𝙞 🔎
+` + res.result.isi
   
     conn.reply(m.chat, `${info} `, m, {
      contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-      title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙒𝙞𝙠𝙞𝙥𝙚𝙙𝙞𝙖',
-       body: '𝗦𝘂𝗽𝗲𝗿 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗕𝗼𝘁 🐱❤️',         
+      title: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ | 𝙒𝙞𝙠𝙞𝙥𝙚𝙙𝙞𝙖',
+       body: ' 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗕𝗼𝘁 🐱',         
         previewType: 0, thumbnail: imagen2,
          sourceUrl: welgata}}})
   
-}).catch(() => { m.reply(`${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙇𝙊 𝙌𝙐𝙀 𝘽𝙐𝙎𝘾𝘼. 𝙋𝙍𝙊𝘾𝙐𝙍𝙀 𝙐𝙎𝘼𝙍 𝙐𝙉𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 𝘾𝙇𝘼𝙑𝙀\n\n𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿 𝙒𝙃𝘼𝙏 𝙔𝙊𝙐 𝘼𝙍𝙀 𝙇𝙊𝙊𝙆𝙄𝙉𝙂 𝙁𝙊𝙍. 𝙏𝙍𝙔 𝙏𝙊 𝙐𝙎𝙀 𝘼 𝙆𝙀𝙔 𝙒𝙊𝙍𝘿`) })}
+}).catch(() => { m.reply(`${fg}𝙉𝙖𝙤 𝙛𝙤𝙞 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖𝙙𝙤 𝙣𝙚𝙣𝙝𝙪𝙢 𝙧𝙚𝙜𝙞𝙨𝙩𝙧𝙤. 𝙏𝙚𝙣𝙩𝙚 𝙪𝙨𝙖𝙧 𝙥𝙖𝙡𝙖𝙫𝙧𝙖𝙨-𝙘𝙝𝙖𝙫𝙚. 🐈‍⬛`) })}
 handler.help = ['wikipedia'].map(v => v + ' <apa>')
 handler.tags = [ 'internet']
 handler.command = /^(wiki|wikipedia)$/i 
-handler.exp = 40
-handler.level = 2
+handler.exp = 0
+handler.level = 0
 export default handler
