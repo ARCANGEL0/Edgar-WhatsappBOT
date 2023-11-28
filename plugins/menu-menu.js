@@ -292,8 +292,8 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 *╭━━[ FERRAMENTAS 🛠️ ]━━⬣*
 ┃🛠️ _${usedPrefix}afk *motivo*_
 ┃🛠️ _${usedPrefix}acortar *url*_
-┃🛠️ _${usedPrefix}calc *operacion math*_
-┃🛠️ _${usedPrefix}del *respondre a mensaje del Bot*_
+┃🛠️ _${usedPrefix}calc *operacao math*_
+┃🛠️ _${usedPrefix}del *respodert*_
 ┃🛠️ _${usedPrefix}qrcode *texto*_
 ┃🛠️ _${usedPrefix}readmore *texto1|texto2*_
 ┃🛠️ _${usedPrefix}spamwa *numero|texto|cantidad*_
@@ -306,10 +306,9 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 *╰━━━━━━━━━━━━⬣*
 
 *╭━[ STICKERS DINÁMICOS ]━⬣*
-┃ *Realiza acciones con Stickers*
-┃ *Etiquetando a alguien!!*
+┃ *Realiza ações com Stickers*
+┃ *
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⛱️ _${usedPrefix}bater  *@tag*_
 ┃⛱️ _${usedPrefix}bofetada  *@tag*_
 ┃⛱️ _${usedPrefix}golpear *@tag*_
 ┃⛱️ _${usedPrefix}beijar *@tag*_
