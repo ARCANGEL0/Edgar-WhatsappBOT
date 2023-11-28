@@ -290,6 +290,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━[ FERRAMENTAS 🛠️ ]━━⬣*
+┃🛠️ _${usedPrefix}criador 
 ┃🛠️ _${usedPrefix}afk *motivo*_
 ┃🛠️ _${usedPrefix}acortar *url*_
 ┃🛠️ _${usedPrefix}calc *operacao math*_

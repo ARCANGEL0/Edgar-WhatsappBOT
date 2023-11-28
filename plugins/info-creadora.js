@@ -1,24 +1,27 @@
 var handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let pp = gataImg.getRandom()	
-const cat = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈
-*Wa.me/573026191480*
+const cat = `Edgar Allan Bot 💖🐈
+𝘿𝙚𝙨𝙚𝙣𝙫𝙤𝙡𝙫𝙞𝙙𝙤 𝙥𝙤𝙧:
 
-𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 💖🐈
-*wa.me/593993684821*
+˜”*°•.˜”*°• Ｈｅｎｒｙ░Λｒｃａｎｇｅｌｏ •°*”˜.•°*”˜💖🐈
+
+*wa.me/351927285125*
 *---------------------*
 
-*CENTER GATABOT*
-*centergatabot@gmail.com*
+*arcangelo.net*
 
-𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
+*EMAIL*
+*henry.arcangello@gmail.com*
+
+𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
-handler.command = /^(owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
+handler.command = /^(criador|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 
 export default handler
 

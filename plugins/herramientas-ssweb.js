@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command, args }) => {
 let full = /f$/i.test(command)
-if (!args[0]) return conn.reply(m.chat, '*Por favor ingresa un url de la página a la que se le tomará captura 🔎*', m)
+if (!args[0]) return conn.reply(m.chat, '*Por favor insira um URL da página para captura 🔎*', m)
 let krt = await ssweb(args)
 //let url = /https?:\/\//.test(args[0]) ? args[0] : 'https://' + args[0]
 //let ss = await (await fetch(global.API('nrtm', '/api/ssweb', { delay: 1000, url, full }))).buffer()
