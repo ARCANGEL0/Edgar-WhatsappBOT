@@ -25,7 +25,7 @@ status: link.status,
 Pesan: eror}
 return notFond}}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙇𝘼 𝙋𝘼𝙇𝘼𝘽𝙍𝘼 𝘾𝙇𝘼𝙑𝙀 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Luna*\n\n𝙏𝙔𝙋𝙀 𝙏𝙃𝙀 𝙆𝙀𝙔𝙒𝙊𝙍𝘿 𝙏𝙊 𝙎𝙀𝘼𝙍𝘾𝙃\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Universe*`
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝗗𝗶𝗴𝗶𝘁𝗲 𝗮 𝗽𝗮𝗹𝗮𝘃𝗿𝗮-𝗰𝗵𝗮𝘃𝗲 𝗽𝗮𝗿𝗮 𝗯𝘂𝘀𝗰𝗮𝗿. 🔎 \n𝗘𝘅𝗲𝗺𝗽𝗹𝗼\n*${usedPrefix + command} Universe*`
 wikipedia(`${text}`).then(res => {
 let info = `𝙄𝙨𝙩𝙤 𝙛𝙤𝙞 𝙤 𝙦𝙪𝙚 𝙚𝙪 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙚𝙞 🔎
 ` + res.result.isi
