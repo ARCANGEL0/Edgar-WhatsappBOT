@@ -25,7 +25,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }*/
 
-if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
+if (/.regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
   conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 ⚠️ 〙*
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙘𝙝𝙖𝙢𝙖𝙧 𝙤 𝙗𝙤𝙩
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙛𝙖𝙯𝙚𝙧 𝙨𝙥𝙖𝙢 𝙘𝙤𝙢 𝙤 𝙗𝙤𝙩
