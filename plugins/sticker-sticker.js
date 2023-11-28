@@ -7,15 +7,15 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   let stiker = false
   let user = db.data.users[m.sender]
   let time = user.lastmining + 10000 //tiempo de espera en min
-if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA UNOS MINUTOS PARA USAR OTRO COMANDO*`,  m)
+if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA ALGUNS MINUTOS PARA USAR O COMANDO*`,  m)
   try {
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
     if (/webp|image|video/g.test(mime)) {
-      if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙉𝙊 𝘿𝙀𝘽𝙀 𝘿𝙀 𝘿𝙐𝙍𝘼𝙍 𝙈𝘼𝙎 𝘿𝙀 *7* 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎\n\n𝙏𝙃𝙀 𝙑𝙄𝘿𝙀𝙊 𝙎𝙃𝙊𝙐𝙇𝘿 𝙉𝙊𝙏 𝙇𝘼𝙎𝙏 𝙈𝙊𝙍𝙀 𝙏𝙃𝘼𝙉 *7* 𝙎𝙀𝘾𝙊𝙉𝘿𝙎')
+      if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱*𝗔𝗩𝗜𝗦𝗢 * ⊱⚠️⊱╮\𝗻\𝗻𝗢 𝗩𝗜𝗗𝗘𝗢 𝗡𝗔𝗢 𝗗𝗘𝗩𝗘 𝗗𝗨𝗥𝗔𝗥 𝗠𝗔𝗜𝗦 𝗗𝗘 *𝟳* 𝗦𝗘𝗚𝗨𝗡𝗗𝗢𝗦')
       let img = await q.download?.()
-      if (!img) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙋𝙊 *.jpg* 𝙋𝘼𝙍𝘼 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝙍 𝙀𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*\n\n𝙍𝙀𝙎𝙋𝙊𝙉𝘿 𝙏𝙊 𝘼𝙉 𝙄𝙈𝘼𝙂𝙀, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊𝙍 𝙇𝙄𝙉𝙆 𝙊𝙁 𝙏𝙔𝙋𝙀 *.jpg* 𝙏𝙊 𝙈𝘼𝙆𝙀 𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙐𝙎𝙀 *${usedPrefix + command}_*`
+      if (!img) throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
@@ -40,7 +40,7 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
     if (!stiker) stiker = e
   } finally {
      if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
-    else throw '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n𝙑𝙐𝙀𝙇𝙑𝘼 𝘼 𝙄𝙉𝙏𝙀𝙉𝙏𝘼𝙍 𝙍𝙀𝙎𝙋𝙊𝙉𝘿𝘼 𝘼 𝙐𝙉𝘼 𝙄𝙈𝘼𝙂𝙀𝙉, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙋𝙊 *.jpg* 𝙋𝘼𝙍𝘼 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝙍 𝙀𝙇 𝙎𝙏𝙄𝘾𝙆𝙀𝙍\n\n𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉 𝙍𝙀𝙎𝙋𝙊𝙉𝘿 𝙏𝙊 𝘼𝙉 𝙄𝙈𝘼𝙂𝙀, 𝙑𝙄𝘿𝙀𝙊, 𝙂𝙄𝙁 𝙊𝙍 𝙇𝙄𝙉𝙆 𝙊𝙁 𝙏𝙔𝙋𝙀 *.jpg* 𝙏𝙊 𝙈𝘼𝙆𝙀 𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍*'
+    else throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
   }
 user.lastmiming = new Date * 1
 }
