@@ -96,11 +96,11 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🎡➺ _${usedPrefix}topintegrantes
 ┃🎡➺ _${usedPrefix}toplindos
 ┃🎡➺ _${usedPrefix}topfamosos
-┃🎡➺ _${usedPrefix}gay | gay *@tag*_
+┃🎡➺ _${usedPrefix}gay | gay *@tag*
 ┃🎡➺ _${usedPrefix}puta *nombre : @tag*
-┃🎡➺ _${usedPrefix}love *nombre : @tag*_
-┃🎡➺ _${usedPrefix}multijogos_
-┃🎡➺ _${usedPrefix}jogos_
+┃🎡➺ _${usedPrefix}love *nombre : @tag*
+┃🎡➺ _${usedPrefix}multijogos
+┃🎡➺ _${usedPrefix}jogos
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 IA 〕━⬣*
@@ -230,7 +230,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
 ┃🛰️➺ _${usedPrefix}tovideo *audio*_
 ┃🛰️➺ _${usedPrefix}tourl *video, imagen*_
-┃🛰️➺ _${usedPrefix}toenlace  *video, imagen o audio*_
+┃🛰️➺ _${usedPrefix}toenlace  *video, imagm  o audio*_
 ┃🛰️➺ _${usedPrefix}tts es *texto*_
 *╰━━━━━━━━━━━━⬣*
 
@@ -296,7 +296,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🛠️ _${usedPrefix}del *respodert*_
 ┃🛠️ _${usedPrefix}qrcode *texto*_
 ┃🛠️ _${usedPrefix}readmore *texto1|texto2*_
-┃🛠️ _${usedPrefix}spamwa *numero|texto|cantidad*_
+┃🛠️ _${usedPrefix}spamwa *numero|texto*_
 ┃🛠️ _${usedPrefix}styletext *texto*_
 ┃🛠️ _${usedPrefix}traduzir *texto*_
 ┃🛠️➺ _${usedPrefix}morse codificar *texto*_
@@ -316,7 +316,7 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 *╰━━━━━━━━━━━━⬣*
 
 `.trim()
-await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menu, fkontak)
+await conn.sendFile(m.chat, '', '', menu, fkontak)
 	
 } catch (e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
