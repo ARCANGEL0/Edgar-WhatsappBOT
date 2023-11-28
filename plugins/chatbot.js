@@ -25,7 +25,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
 }*/
 
-if (/.regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
+if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
   conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 ⚠️ 〙*
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙘𝙝𝙖𝙢𝙖𝙧 𝙤 𝙗𝙤𝙩
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙛𝙖𝙯𝙚𝙧 𝙨𝙥𝙖𝙢 𝙘𝙤𝙢 𝙤 𝙗𝙤𝙩
@@ -39,7 +39,7 @@ if (/.regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
      conn.reply(m.chat, `Hola :D`, fkontak, m)
 
  }*/
- 
+ /*
 if (/^¿que es un bot?|Que es un bot|Que es gatabot?$/i.test(m.text) ) { //sem prefixo
     conn.reply(m.chat, `╭┄〔 *${wm}* 〕┄⊱
 ┆ ——————«•»——————
@@ -55,7 +55,7 @@ if (/^¿que es un bot?|Que es un bot|Que es gatabot?$/i.test(m.text) ) { //sem p
 ┆ 
 ┆ 「 🅖🅐🅣🅐🅑🅞🅣-🅜🅓 」
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
-
+*/
 }  
 return !0 
 }
