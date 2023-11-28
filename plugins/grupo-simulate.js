@@ -14,7 +14,7 @@ switch (event.toLowerCase()) {
 case 'add':
 case 'invite':
 case 'welcome':
-case 'bienvenida':       
+case 'bemvindo':       
 act = 'add'
 break
 case 'bye':
