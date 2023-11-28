@@ -12,7 +12,7 @@ if (isClose === undefined)
 throw `
 ${lenguajeGB['smsAvisoMG']()}*╭━[ ${wm} ]━⬣*
 *┃➥ ${usedPrefix + command} abrir*
-*┃➥ ${usedPrefix + command} cerrar*
+*┃➥ ${usedPrefix + command} fechar*
 *╰━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
@@ -26,7 +26,7 @@ if (isClose === 'announcement'){
 conn.sendButton(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉𝙎 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!`, `𝙂𝙍𝙐𝙋𝙊 𝘾𝙀𝙍𝙍𝘼𝘿𝙊\n${wm}`, pp, [['𝙈𝙤𝙢𝙚𝙣𝙩𝙤 𝘼𝙙𝙢𝙞𝙣 😎', '.s'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]], m)
 }  
  }
-handler.help = ['group open / close', 'grupo abrir / cerrar']
+handler.help = ['group open / close', 'grupo abrir / fechar']
 handler.tags = ['group']
 handler.command = /^(group|grupo)$/i
 handler.admin = true
