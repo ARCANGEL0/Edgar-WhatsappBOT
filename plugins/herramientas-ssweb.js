@@ -11,7 +11,7 @@ conn.sendMessage(m.chat, {image:krt.result, caption: `Resultados`}, {quoted:m})
 handler.help = ['ss', 'ssf'].map(v => v + ' <url>')
 handler.tags = ['internet']
 handler.command = /^ss(web)?f?$/i
-handler.money = 40
+handler.money = 0
 export default handler
 
 const ssweb = (url, device = 'desktop') => {
