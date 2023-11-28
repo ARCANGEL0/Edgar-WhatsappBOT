@@ -80,7 +80,7 @@ const formatoFecha = {
 
 }
 lugarFecha.locale('pt', formatoFecha)
-const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
+const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [de] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
 
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : username}*${(conn.user.jid == global.conn.user.jid ? '' : `\n*SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
@@ -90,16 +90,9 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🎡➺ _${usedPrefix}math
 ┃🎡➺ _${usedPrefix}tictactoe | ttt *sala*_
 ┃🎡➺ _${usedPrefix}deltictactoe | delttt_
-┃🎡➺ _${usedPrefix}topgays
-┃🎡➺ _${usedPrefix}topotakus
-┃🎡➺ _${usedPrefix}topputas
-┃🎡➺ _${usedPrefix}topintegrantes
-┃🎡➺ _${usedPrefix}toplindos
-┃🎡➺ _${usedPrefix}topfamosos
-┃🎡➺ _${usedPrefix}gay | gay *@tag*
-┃🎡➺ _${usedPrefix}puta *nombre : @tag*
-┃🎡➺ _${usedPrefix}love *nombre : @tag*
-┃🎡➺ _${usedPrefix}multijogos
+┃🎡➺ _${usedPrefix}top5 * alguma coisa *
+┃🎡➺ _${usedPrefix}personalidade *@usuario**
+┃🎡➺ _${usedPrefix}quiz
 ┃🎡➺ _${usedPrefix}jogos
 *╰━━━━━━━━━━━━⬣*
 
@@ -108,6 +101,8 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🪄➺ _${usedPrefix}simi | okgoogle *texto*_
 ┃🪄➺ _${usedPrefix}alexa | siri | cortana *texto*_
 ┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
+┃🪄➺ _${usedPrefix}chatgpt *texto*_$
+┃🪄➺ _${usedPrefix}dalle *texto*_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
