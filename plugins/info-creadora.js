@@ -4,7 +4,7 @@ let pp = gataImg.getRandom()
 const cat = `Edgar Allan Bot 💖🐈
 𝘿𝙚𝙨𝙚𝙣𝙫𝙤𝙡𝙫𝙞𝙙𝙤 𝙥𝙤𝙧:
 
-˜”*°•.˜”*°• Ｈｅｎｒｙ░Λｒｃａｎｇｅｌｏ •°*”˜.•°*”˜💖🐈
+˜”*°• Ｈｅｎｒｙ░Λｒｃａｎｇｅｌｏ •°*˜💖🐈
 
 *wa.me/351927285125*
 *---------------------*
@@ -16,9 +16,9 @@ const cat = `Edgar Allan Bot 💖🐈
 
 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
+await conn.sendFile(m.chat, pp, 'sticker.webp', cat, m, false, { 
+contextInfo: { externalAdReply: { title: 'Λｒｃａｎｇｅｌｏ🐈‍⬛  🐈', body: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ', sourceUrl: `https://instagram.com/henryy.xn`, thumbnail: imagen2}}})}
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
-}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 handler.command = /^(criador|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
