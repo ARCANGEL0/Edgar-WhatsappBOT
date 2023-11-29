@@ -20,6 +20,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   }
  setInterval(checkRepoUpdates, 60000)
 }
-handler.command = /^(actualizar|actualizacion)/i
+handler.command = /^(fetchrepo|actualizacion)/i
 handler.rowner = true
 export default handler
