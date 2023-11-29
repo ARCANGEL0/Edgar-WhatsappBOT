@@ -15,8 +15,8 @@ let ads = '*💫 • 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝘿𝙊𝙍 𝘿𝙀 𝘼𝙉�
 conn.sendMessage(m.chat, { image: { url: img }, caption: ads + res }, {quoted: m})
 }
 handler.command = ['cuevana', 'pelisplus']
-handler.level = 2
-handler.money = 40
+handler.level = 0
+handler.money = 0
 export default handler
 
 const safeLoad = async(url, options = {}) => {
