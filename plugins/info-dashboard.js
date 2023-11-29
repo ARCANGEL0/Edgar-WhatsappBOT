@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
     if (name.includes('-') && name.endsWith('.js')) name = name.split('-')[1].replace('.js', '')
     return `(${idx + 1})\n┏━━━━━━━━━━━━━━━━┓\n┣📚 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 : ${name}\n┣≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋\n┣🗂️ 𝙐𝙎𝙊𝙎 : ${total}\n┣≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋\n┣📍 𝙐𝙇𝙏𝙄𝙈𝙊𝙎 𝙐𝙎𝙊 : ${getTime(last)}\n┗━━━━━━━━━━━━━━━━┛`
   }).join`\n\n`
-  m.reply(`*☘️ Dashboard comandos mas usados ☘️*\n\n${txt}`)
+  m.reply(`*☘️ Dashboard comandos mais usados ☘️*\n\n${txt}`)
 }
 handler.help = ['dashboard']
 handler.tags = ['info']
@@ -32,8 +32,8 @@ export function parseMs(ms) {
 
 export function getTime(ms) {
   let now = parseMs(+new Date() - ms)
-  if (now.days) return `${now.days} days ago`
-  else if (now.hours) return `${now.hours} hours ago`
-  else if (now.minutes) return `${now.minutes} minutes ago`
-else return `hace unos segunos`
+  if (now.days) return `${now.days} dias atras`
+  else if (now.hours) return `${now.hours} horas atras`
+  else if (now.minutes) return `${now.minutes} minutos atras`
+else return `alguns segundos`
 }
