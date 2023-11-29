@@ -12,7 +12,7 @@ if (text.includes('+')) throw  `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙎𝙄�
 let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)
  
-      await conn.reply(text+'@s.whatsapp.net', `\n\n${link}`, m, {mentions: [m.sender]})
+      await conn.reply(link + '  ' text+'@s.whatsapp.net', `\n\n${link}`, m, {mentions: [m.sender]})
         m.reply(`*@${who.split`@`[0]}*\n*Enviando solicitação no privado...*`) 
 
 }
