@@ -16,8 +16,6 @@ let handler = async (m) => {
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
 COMANDOS TEMPORARIAMENTE INDISPONÍVEIS ATÉ REATIVAÇÃO POR PARTE DOS ADMINS
-\n\n  
-
 
 ${pickRandom([ "Noite, noite escura! Desde as estrelas até a aurora, eu tremo e estremeço diante de tua beleza.",
   "O homem que tem muitos amigos pode vir à ruína, mas há um amigo mais chegado do que um irmão.",
@@ -38,14 +36,13 @@ ${pickRandom([ "Noite, noite escura! Desde as estrelas até a aurora, eu tremo e
   "É uma felicidade se maravilhar; é uma felicidade sonhar.",
   "Acredite apenas na metade do que você vê e nada do que ouve.",
   "Toda religião, meu amigo, é simplesmente derivada de fraude, medo, ganância, imaginação e poesia."])}
-  \n 
   -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛
   
 `)
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
-handler.command = /^banchat|bangata|banchat2$/i
+handler.command = /^banchat|mutebot|banchat2$/i
 handler.botAdmin = true
 handler.admin = true 
 export default handler
