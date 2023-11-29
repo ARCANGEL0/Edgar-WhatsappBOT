@@ -4,7 +4,7 @@ import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
 const fetch = (await import('node-fetch')).default;
 const text = args.join` `;
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙀𝙑𝘼 ���𝙊 𝙌𝙐𝙀 𝙌𝙐𝙀𝙍 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙓𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto*`, m)
+if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙀𝙑𝘼 𝙊 𝙌𝙐𝙀 𝙌𝙐𝙀𝙍 𝘽𝙐𝙎𝘾𝘼𝙍\n𝙀𝙓𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Texto*`, m)
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 try {
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
