@@ -17,7 +17,7 @@ let h = ps.getRandom()
 let i = ps.getRandom()
 let j = ps.getRandom()
 
-if (command == 'topgays') {
+if (command == 'top5') {
 let vn = './media/gay2.mp3'
 let top = `*🌈TOP 10 GAYS/LESBIANAS DEL GRUPO🌈*
     
@@ -74,8 +74,8 @@ type: 'audioMessage',
 ptt: true 
 })}
    
-if (command == 'topintegrantes') {
-let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
+if (command == 'top5') {
+let top = `*_💎TOP 10 ${m.chat}👑_*
     
 *_1.- 💎 ${user(a)}_* 💎
 *_2.- 👑 ${user(b)}_* 👑
@@ -225,7 +225,7 @@ let top = `*_😳TOP L@S MAS LIND@S Y SEXIS DEL GRUPO😳_*
 m.reply(top, null, { mentions: conn.parseMention(top) })}
    
 if (command == 'toplindos') {
-let top = `*_😳TOP L@S MAS LIND@S Y SEXIS DEL GRUPO😳_*
+let top = `*_😳TOP OS LINDOS E SEXYS DO GRUPO😳_*
     
 *_1.- ✨ ${user(a)}_* ✨
 *_2.- ✨ ${user(b)}_* ✨
@@ -239,8 +239,8 @@ let top = `*_😳TOP L@S MAS LIND@S Y SEXIS DEL GRUPO😳_*
 *_10.- ✨ ${user(j)}_* ✨`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
    
-if (command == 'topput@s') {
-let top = `*_😏TOP L@S MAS PUT@S DEL GRUPO SON🔥_* 
+if (command == 'topputas') {
+let top = `*_😏TOP AS MAIS PUTAS DO GRUPO🔥_* 
     
 *_1.- 👉 ${user(a)}_* 👌
 *_2.- 👉 ${user(b)}_* 👌
