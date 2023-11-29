@@ -38,9 +38,9 @@ handler.limit = 0
 handler.help = ['lirik','letra'].map(v => v + ' <Apa>')
 handler.tags = ['internet']
 handler.command = /^(lirik|lyrics|lyric|letra)$/i
-handler.limit = 1
-handler.level = 3
-handler.exp = 55
+handler.limit = 0
+handler.level = 0
+handler.exp = 0
 export default handler
 
 /*import fetch from 'node-fetch'
