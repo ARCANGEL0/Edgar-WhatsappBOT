@@ -17,25 +17,19 @@ global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
 COMANDOS TEMPORARIAMENTE INDISPONÍVEIS ATÉ REATIVAÇÃO POR PARTE DOS ADMINS
 
-${pickRandom([ "Noite, noite escura! Desde as estrelas até a aurora, eu tremo e estremeço diante de tua beleza.",
-  "O homem que tem muitos amigos pode vir à ruína, mas há um amigo mais chegado do que um irmão.",
-  "Aquele que luta com monstros deve acautelar-se para não tornar-se também um monstro.",
-  "O sono, aquele irmão da Morte.",
-  "Erga-se o cortinado! — ainda ele ousa erguer-se. Eu falei em alta voz? Eu gritei?— Dizei, dizei! — Não! Eu apenas sussurrei — É esta a minha única e verdadeira maneira de agir.",
-  "A verdade, no fundo, é raramente pura, e nunca simples.",
-  "Eu permaneci demasiado tempo na calma do tédio; deveria ter mais medo da monotonia do que do terror.",
-  "Temos o poder de sonhar a qualquer hora, de criar um mundo que nunca existiu na realidade, mas, no entanto, é mais verdadeiro do que qualquer coisa que tenhamos experimentado.",
-  "É impossível dizer quão primeiro o contato com certas pessoas afeta nossos sentimentos — quais são os resultados do dia a dia do bem ou do mal.",
-  "O medo do perigo é mil vezes mais aterrorizante do que o próprio perigo.", "Tudo o que vemos ou parecemos não passa de um sonho dentro de um sonho.",
-  "Eu enlouqueci, com longos intervalos de horrível sanidade.",
-  "Profundamente naquela escuridão espiando, por muito tempo fiquei lá, imaginando, temendo, duvidando, sonhando sonhos que nenhum mortal jamais ousou sonhar antes.",
-  "As fronteiras que separam a Vida da Morte são, na melhor das hipóteses, sombrias e vagas. Quem dirá onde uma termina e a outra começa?",
-  "Eu gostaria de poder escrever tão misteriosamente quanto um gato.",
-  "Palavras não têm o poder de impressionar a mente sem o horror requintado de sua realidade.",
-  "Aqueles que sonham de dia estão cientes de muitas coisas que escapam àqueles que sonham apenas à noite.",
-  "É uma felicidade se maravilhar; é uma felicidade sonhar.",
-  "Acredite apenas na metade do que você vê e nada do que ouve.",
-  "Toda religião, meu amigo, é simplesmente derivada de fraude, medo, ganância, imaginação e poesia."])}
+${pickRandom([ 
+ "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",
+  "Assim como o vento leva as folhas secas, minha despedida é suave, mas inevitável.",
+  "Parto desta existência como um barco que se afasta silenciosamente no crepúsculo.",
+  "Da encruzilhada da vida, escolho o caminho da despedida, deixando para trás memórias e mistérios.",
+  "Como um eco que desvanece na distância, minha presença se desvanece no horizonte do adeus.",
+  "Na penumbra da despedida, deixo para trás a trama intricada da vida para encontrar o desconhecido.",
+  "Assim como a última nota de uma melodia, minha despedida ressoa no silêncio que se segue.",
+  "Deixo este palco como um ator após sua última cena, desaparecendo nas cortinas do destino.",
+  "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
+  "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
+
+])}
   -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛
   
 `)
