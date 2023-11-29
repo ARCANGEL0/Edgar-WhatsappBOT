@@ -16,7 +16,7 @@ const cat = `Edgar Allan Bot 💖🐈
 
 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
-await conn.sendFile(m.chat, cat, 'sticker.webp', cat, m, false, { 
+await conn.sendFile(m.chat, pp, 'sticker.webp', cat, m, false, { 
 contextInfo: { externalAdReply: { title: 'Λｒｃａｎｇｅｌｏ🐈‍⬛  🐈', body: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ', sourceUrl: `https://instagram.com/henryy.xn`, thumbnail: imagen2}}})}
 
 handler.help = ['owner', 'creator']
