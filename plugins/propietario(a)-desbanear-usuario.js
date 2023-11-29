@@ -9,8 +9,8 @@ var number = text.split`@`[1]
 var number = text
 }
 
-if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE AL USUARIO, ESCRIBA SU NUMERO O RESPONDA AL MENSAJE PARA DESBANEAR*`, m)
-if(isNaN(number)) return conn.reply(m.chat, `*EL NÚMERO QIE INGRESÓ NO ES VÁLIDO PARA DESBANEAR*`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `*MARQUE O USUARIO, ESCREVA O NUMERO OU RESPONDA UMA MENSAGEM PARA DESBANEAR*`, m)
+if(isNaN(number)) return conn.reply(m.chat, `*O NÚMERO QUE DIGITOU NÃO É VÁLIDO PARA DESBANEAR*`, m)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -27,11 +27,11 @@ let users = m.isGroup ? participants.find(u => u.jid == user) : {}
 let number = user.split('@')[0]
   
 global.global.db.data.users[user].banned = false
-conn.reply(m.chat, `*@${number} HA SIDO DESBANEADO(A) DE LA BASE DE DATOS*`, null, { mentions: [user] })
+conn.reply(m.chat, `*@${number} FOI DESBANEADO(A) DA BASE DE DADOS*`, null, { mentions: [user] })
 }}
 
 handler.tags = ['owner']
-handler.command = ['desbanearuser', 'desbanearusuario', 'desbanear'] 
+handler.command = ['unmute', 'desbanearusuario', 'desbanear'] 
 handler.owner = true
 
 export default handler
