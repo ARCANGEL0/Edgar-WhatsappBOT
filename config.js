@@ -215,16 +215,16 @@ global.img9 = './media/menus/img4.jpg'
 global.img10 = './media/menus/img3.jpg'
 global.img11 = './media/menus/img2.jpg'
 global.img12 = './media/menus/img1.jpg'
-global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
-global.img14 = 'https://i.imgur.com/knBDWRA.jpeg'
-global.img15 = 'https://i.imgur.com/QrkkKx7.jpeg'
+global.img13 = './media/menus/img12.jpg'
+global.img14 = './media/menus/img5.jpg'
+global.img15 = './media/menus/img10.jpg'
 
-global.img16 = 'https://i.imgur.com/11MRjo4.jpeg' //+18
+global.img16 = './media/menus/img4.jpg' //+18
 
-global.img17 = 'https://i.imgur.com/JpYfcH0.jpeg'
-global.img18 = 'https://i.imgur.com/9yLH4W4.jpeg'
+global.img17 = './media/menus/img2.jpg'
+global.img18 = './media/menus/img8.jpg'
 
-global.logogit = 'https://tinyurl.com/2qvl9vgs'
+global.logogit = './media/menus/img3.jpg'
 
 global.welgata = [ig, md, ig, paypal, ig]
 global.redesMenu = [ md, ig, paypal, asistencia]
