@@ -86,17 +86,17 @@ let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃➥ *VELOCIDAD | SPEED*
 ┃ღ  *${speed}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *BOT SECUNDARIOS ACTIVOS | ACTIVE SECONDARY BACKS*
+┃➥ *BOT SECUNDARIOS AtiVOS | ACTIVE SECONDARY BACKS*
 ┃ღ *${totaljadibot.length}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *AUTOREAD*
-┃ღ ${autoread ? '*Activado ✔*' : '*Desactivado ✘*'}
+┃ღ ${autoread ? '*Ativado ✔*' : '*Desativado ✘*'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *RESTRICT* 
-┃ღ ${restrict ? '*Activado ✔*' : '*Desactivado ✘*'} 
+┃ღ ${restrict ? '*Ativado ✔*' : '*Desativado ✘*'} 
 ┃
 ╰━━━[ 𝙄𝙣𝙛𝙤 ]━━⬣`
-await conn.sendFile(m.chat, pp, 'gata.mp4', info, fkontak)
+await conn.sendFile(m.chat, pp, './media/menus/Menu1.jpg', info, fkontak)
 /*let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
