@@ -200,21 +200,21 @@ global.imagen13 = fs.readFileSync("./media/menus/img12.jpg")
 
 //━━━━━━━━━━━━━━ img ━━━━━━━━━
 
-global.img = 'https://i.imgur.com/IXlUwTW.jpg'
-global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'
+global.img = './media/menus/img12.jpg'
+global.img2 = './media/menus/img11.jpg'
 
-global.img3 = 'https://i.imgur.com/oUAGYc2.jpg' //prem
-global.img4 = 'https://i.imgur.com/i0pccuo.jpg' //prem
+global.img3 = './media/menus/img10.jpg' //prem
+global.img4 = './media/menus/img9.jpg' //prem
 
-global.img5 = 'https://i.imgur.com/iL1snRx.jpeg'
-global.img6 = 'https://i.imgur.com/cYFgSKv.jpeg'
-global.img7 = 'https://i.imgur.com/JqL3h2V.jpeg'
-global.img8 = 'https://i.imgur.com/PCujt1s.jpeg'
-global.img9 = 'https://i.imgur.com/xfUEdDb.jpeg'
+global.img5 = './media/menus/img8.jpg'
+global.img6 = './media/menus/img7.jpg'
+global.img7 = './media/menus/img6.jpg'
+global.img8 = './media/menus/img5.jpg'
+global.img9 = './media/menus/img4.jpg'
 
-global.img10 = 'https://i.imgur.com/DvHoMc3.jpg'
-global.img11 = 'https://i.imgur.com/5Q1MqGD.jpg'
-global.img12 = 'https://i.imgur.com/vWnsjh8.jpg'
+global.img10 = './media/menus/img3.jpg'
+global.img11 = './media/menus/img2.jpg'
+global.img12 = './media/menus/img1.jpg'
 global.img13 = 'https://i.imgur.com/pCfFOgw.jpeg'
 global.img14 = 'https://i.imgur.com/knBDWRA.jpeg'
 global.img15 = 'https://i.imgur.com/QrkkKx7.jpeg'
