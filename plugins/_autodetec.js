@@ -14,7 +14,7 @@ await this.sendMessage(m.chat, { text: `${usuario} 𝘼 𝙉𝙊𝙑𝘼 𝘿�
 } else if (m.messageStubType == 25) {
 await this.sendMessage(m.chat, { text: `🔒 𝗔𝗚𝗢𝗥𝗔 *${m.messageStubParameters[0] == 'on' ? '𝗔𝗣𝗘𝗡𝗔𝗦 𝗔𝗗𝗠𝗜𝗡𝗦' : '𝙏𝙊𝘿𝙊𝙎'}* 𝗣𝗢𝗗𝗘𝗠 𝗘𝗗𝗜𝗧𝗔𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦 𝗗𝗢 𝗚𝗥𝗨𝗣𝗢`, mentions: [m.sender] }, { quoted: fkontak })
 } else if (m.messageStubType == 26) {
-await this.sendMessage(m.chat, { text: `𝗢 𝗚𝗥𝗨𝗣𝗢 𝗘𝗦𝗧𝗔  *${m.messageStubParameters[0] == 'on' ? '𝗙𝗘𝗖𝗛𝗔𝗗𝗢 🔒' : '𝗔𝗕𝗘𝗥𝗧𝗢 🔓'}*\n ${m.messageStubParameters[0] == 'on' ? '𝗔𝗣𝗘𝗡𝗔𝗦 𝗔𝗗𝗠𝗜𝗡 𝗣𝗢𝗗𝗘𝗠 𝗘𝗦𝗖𝗥𝗘𝗩𝗘𝗥' : '𝗔𝗚𝗢𝗥𝗔 𝗧𝗢𝗗𝗢𝗦 𝗣𝗢𝗗𝗘𝗠 𝗘𝗦𝗖𝗥𝗘𝗩𝗘𝗥`, mentions: [m.sender] }, { quoted: fkontak })
+await this.sendMessage(m.chat, { text: `𝗢 𝗚𝗥𝗨𝗣𝗢 𝗘𝗦𝗧𝗔  *${m.messageStubParameters[0] == 'on' ? '𝗙𝗘𝗖𝗛𝗔𝗗𝗢 🔒' : '𝗔𝗕𝗘𝗥𝗧𝗢 🔓'}*\n ${m.messageStubParameters[0] == 'on' ? '𝗔𝗣𝗘𝗡𝗔𝗦 𝗔𝗗𝗠𝗜𝗡 𝗣𝗢𝗗𝗘𝗠 𝗘𝗦𝗖𝗥𝗘𝗩𝗘𝗥' : '𝗔𝗚𝗢𝗥𝗔 𝗧𝗢𝗗𝗢𝗦 𝗣𝗢𝗗𝗘𝗠 𝗘𝗦𝗖𝗥𝗘𝗩𝗘𝗥', mentions: [m.sender] }`, { quoted: fkontak })
 } else if (m.messageStubType == 29) {
 await this.sendMessage(m.chat, { text: `@${m.messageStubParameters[0].split`@`[0]}`𝗔𝗚𝗢𝗥𝗔 𝗘 𝗔𝗗𝗠𝗜𝗡 𝗡𝗢 𝗚𝗥𝗨𝗣𝗢\n\n😼🫵𝗔𝗖𝗔𝗢 𝗥𝗘𝗔𝗟𝗜𝗭𝗔𝗗𝗔 𝗣𝗢𝗥: ${usuario}`, mentions: [`${m.sender}`,`${m.messageStubParameters[0]}`]/*, mentions: (await conn.groupMetadata(m.chat)).participants.map(v => v.id)*/ }, { quoted: fkontak })
 } else if (m.messageStubType == 30) {
