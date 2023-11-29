@@ -26,7 +26,7 @@ global.db.data.chats[m.chat].isBanned = false
 }
 handler.help = ['unbanchat'];
 handler.tags = ['owner'];
-handler.command = /^unmutebot/i;
+handler.command =  /^(abrirbot|unmutebot|ativarbot)$/i
 handler.botAdmin = true
 handler.admin = true
 export default handler;
