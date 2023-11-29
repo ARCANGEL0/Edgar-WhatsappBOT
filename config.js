@@ -113,7 +113,7 @@ global.vsJB = "2.5 (Beta)"
 
 global.gt = "Edgar-BOT•"
 global.ig = "https://www.instagram.com/henryy.xn"
-global.md = "https://github.com/ARCANGEL0/Edgar"
+global.md = "https://github.com/ARCANGEL0/Edgar-WhatsappBOT"
 
 
 global.fb = "https://www.facebook.com/profile.php?id=100089128511446"
@@ -273,7 +273,7 @@ global.fgif = {
                         'seconds': '999999999', 
                         'gifPlayback': 'true', 
                         'caption': bottime,
-                        'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')
+                        'jpegThumbnail': fs.readFileSync('./media/menus/Menu2.jpg')
                                }
                               }
                              };
