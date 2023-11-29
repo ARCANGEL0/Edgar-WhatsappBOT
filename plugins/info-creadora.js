@@ -17,7 +17,7 @@ const cat = `Edgar Allan Bot 💖🐈
 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak, contextInfo: { externalAdReply: { sourceUrl: `https://instagram.com/henryy.xn`}})
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
