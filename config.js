@@ -110,9 +110,9 @@ global.author = "Henry"
 
 global.vs = "1.1.0"
 global.vsJB = "1.0 "
-
+global.yt = "https://www.instagram.com/henryy.xn"
 global.gt = "Edgar-BOT•"
-global.ig, global.yt = "https://www.instagram.com/henryy.xn"
+global.ig = "https://www.instagram.com/henryy.xn"
 global.md = "https://github.com/ARCANGEL0/Edgar-WhatsappBOT"
 
 
