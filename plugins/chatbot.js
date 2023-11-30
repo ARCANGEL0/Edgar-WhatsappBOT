@@ -15,8 +15,7 @@ conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 */ 
 
 
-
-
+}
 
 /*if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sin prefijo 
     let teks = `
@@ -59,7 +58,7 @@ if (/^¿que es un bot?|Que es un bot|Que es gatabot?$/i.test(m.text) ) { //sem p
 */
 }  
 return !0 
-}
+
 export default handler
 
 function pickRandom(list) {
