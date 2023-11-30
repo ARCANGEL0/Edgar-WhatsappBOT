@@ -108,8 +108,8 @@ global.author = "Henry"
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = "1.7.0"
-global.vsJB = "2.5 (Beta)"
+global.vs = "1.1.0"
+global.vsJB = "1.0 "
 
 global.gt = "Edgar-BOT•"
 global.ig = "https://www.instagram.com/henryy.xn"
@@ -158,7 +158,7 @@ global.mal = mg
 global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀 * ⊱📩⊱╮\n\n'
 global.envio = eeg
 
-global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 * ⊱💚⊱╮\n\n'
+global.eg = '╰⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱╮\n\n'
 global.exito = eg
 
 //𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
@@ -262,7 +262,7 @@ global.htka = "*☪ ••••̩̩͙⊰•⭑*"
 global.comienzo = "• • ◕◕════"
 global.fin = " • •"
 
-global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}`; //Asia/Jakarta
+global.botdate = `⫹⫺ Data:  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}`; //Asia/Jakarta
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`;//America/Los_Angeles
 global.fgif = {
             key: {
