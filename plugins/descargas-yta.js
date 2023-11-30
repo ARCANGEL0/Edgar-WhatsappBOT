@@ -52,7 +52,7 @@ let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
 conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}𝗢 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗼 𝗲 𝘂𝗺 𝗳𝗮𝗿𝗱𝗼, 𝗽𝗲𝘀𝗮𝗱𝗼 𝗲𝗺 𝗱𝗲𝗺𝗮𝘀𝗶𝗮𝗱𝗼. ❌ 𝗖𝗹𝗮𝗺𝗼 𝗽𝗼𝗿 𝘂𝗺𝗮 𝘀𝘂𝗯𝘀𝘁𝗶𝘁𝘂𝗶𝗰𝗮𝗼 𝗺𝗮𝗶𝘀 𝗹𝗲𝘃𝗲. ✍️✒️
-𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿, 𝘁𝗲𝗻𝘁𝗲 𝗼𝘂𝘁𝗿𝗼 𝘃𝗶𝗱𝗲𝗼, 𝗺𝗲𝘂 𝗰𝗮𝗿𝗼🐈‍⬛``, m)}
+𝗣𝗼𝗿 𝗳𝗮𝘃𝗼𝗿, 𝘁𝗲𝗻𝘁𝗲 𝗼𝘂𝘁𝗿𝗼 𝘃𝗶𝗱𝗲𝗼, 𝗺𝗲𝘂 𝗰𝗮𝗿𝗼🐈‍⬛` m)}
 }}}
 handler.command = /^audio|fgmp3|dlmp3|getaud|yt(a|mp3)$/i
 export default handler
