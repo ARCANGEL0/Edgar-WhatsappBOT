@@ -13,7 +13,7 @@ const cat = `Edgar Allan Bot 💖🐈
 
 *EMAIL*
 *henry.arcangello@gmail.com*
-
+*instagram.com/henryy.xn*
 𝘼𝙎𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
 
