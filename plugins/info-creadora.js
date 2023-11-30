@@ -14,11 +14,18 @@ const cat = `Edgar Allan Bot 💖🐈
 *EMAIL*
 *henry.arcangello@gmail.com*
 
-𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
+𝘼𝙎𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak,false,{
+  contextInfo: { externalAdReply: { title: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛  🐈', body: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ', sourceUrl: `https://github.com/ARCANGEL0/Edgar-WhatsappBOT`, thumbnail: pp}}
+  
+})
 }
+
+
+
+
 
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
