@@ -13,6 +13,6 @@ await conn.sendFile(m.chat, json.getRandom(), 'error.jpg', `
 handler.help = ['pinterest <keyword>']
 handler.tags = ['internet']
 handler.command = /^(pinterest|dlpinterest|pinterestdl)$/i
-handler.exp = 500
-handler.money = 50
+handler.exp = 0
+handler.money = 0
 export default handler
