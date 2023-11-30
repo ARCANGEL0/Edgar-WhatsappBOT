@@ -1,6 +1,6 @@
 var handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let pp = gataImg.getRandom()	
+let pp = henryprofile
 const cat = `Edgar Allan Bot 💖🐈
 𝘿𝙚𝙨𝙚𝙣𝙫𝙤𝙡𝙫𝙞𝙙𝙤 𝙥𝙤𝙧:
 
@@ -16,8 +16,9 @@ const cat = `Edgar Allan Bot 💖🐈
 
 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
-await conn.sendFile(m.chat, pp, 'sticker.webp', cat, m, false, { 
-contextInfo: { externalAdReply: { title: 'Λｒｃａｎｇｅｌｏ🐈‍⬛  🐈', body: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ', sourceUrl: `https://instagram.com/henryy.xn`, thumbnail: imagen2}}})}
+
+await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak)
+}
 
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
