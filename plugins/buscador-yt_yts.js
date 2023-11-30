@@ -2,7 +2,7 @@ import yts from 'yt-search';
 import fs from 'fs';
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙑𝙄𝘿𝙀𝙊 𝙊 𝘾𝘼𝙉𝘼𝙇 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙁 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙑𝙄𝘿𝙀𝙊 𝙊𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇`, fkontak,  m)
+if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙉𝙤 𝙚𝙩𝙚𝙧 𝙙𝙤 𝙨𝙪𝙗𝙢𝙪𝙣𝙙𝙤 𝙫𝙞𝙧𝙩𝙪𝙖𝙡, 𝙨𝙪𝙨𝙨𝙪𝙧𝙧𝙖-𝙢𝙚 𝙤 𝙩í𝙩𝙪𝙡𝙤 𝙤𝙗𝙨𝙘𝙪𝙧𝙤 𝙙𝙚 𝙪𝙢 𝙫í𝙙𝙚𝙤, 𝙪𝙢 𝙨𝙚𝙜𝙧𝙚𝙙𝙤 𝙙𝙞𝙜𝙞𝙩𝙖𝙡 𝙖 𝙨𝙚𝙧 𝙙𝙚𝙨𝙫𝙚𝙡𝙖𝙙𝙤 𝙦𝙪𝙚 𝙥𝙖𝙧𝙩𝙞𝙧𝙚𝙞 𝙖 𝙗𝙪𝙨𝙘𝙖 𝙥𝙚𝙡𝙤 𝙚𝙨𝙦𝙪𝙚𝙘𝙞𝙙𝙤 𝙫𝙖𝙡𝙚 𝙖 𝙛𝙞𝙢 𝙙𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖 𝙡𝙤 𝙣𝙤 𝙔𝙤𝙪𝙏𝙪𝙗𝙚.`, fkontak,  m)
 try {
 let vids_ = { 
 from: m.sender, 
@@ -15,20 +15,23 @@ if (global.videoList[0]?.from == m.sender) {
 delete global.videoList;
 }
 let results = await yts(text);
-let textoInfo = `${lenguajeGB['smsAvisoIIG']()}𝙋𝙐𝙀𝘿𝙀𝙎 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙌𝙐𝙀 𝙌𝙐𝙄𝙀𝙍𝘼𝙎 𝘿𝙀 𝙀𝙎𝙏𝘼 𝙁𝙊𝙍𝙈𝘼:
+let textoInfo = `${lenguajeGB['smsAvisoIIG']()}
+
 ${usedPrefix}video <numero> 
 ${usedPrefix}audio <numero> 
 
-*𝙀𝙅𝙀𝙈𝙋𝙇𝙊:*
+𝗕𝗮𝗶𝘅𝗲 𝗼 𝘃í𝗱𝗲𝗼 𝗾𝘂𝗲 𝗱𝗲𝘀𝗲𝗷𝗮𝗿𝗲𝘀 , 𝘀𝗲𝗴𝘂𝗶𝗻𝗱𝗼 𝗺𝗲𝘂𝘀 𝗽𝗮𝘀𝘀𝗼𝘀 𝗱𝗲 𝗲𝘅𝗲𝗺𝗽𝗹𝗼 𝗽𝗮𝗿𝗮 𝘀𝘂𝗮 𝗽𝗼𝗯𝗿𝗲 𝗮𝗹𝗺𝗮 𝗶𝗻𝗰𝗮𝗽𝗮𝘇
+
+
 *${usedPrefix}video 2*\n\n••••••••••••••••••••••••••••••••••••`.trim()  
 let teks = results.all.map((v, i) => {
 let link = v.url;
 vids_.urls.push(link);
 return `[${i + 1}]\n❤️꙰༻ *TÍTULO:*  ${v.title}
-⁖🩵꙰༻ *ENLACE:* ${v.url}
-⁖💜꙰༻ *DURACIÓN:* ${v.timestamp}
-⁖💚꙰༻ *SUBIDO:* ${v.ago}
-⁖🧡꙰༻ *VISTAS:* ${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
+⁖🩵꙰༻ *LINK$*{v.url}
+⁖💜꙰༻ *DURACAO:* ${v.timestamp}
+⁖💚꙰༻ *DATA:* ${v.ago}
+⁖🧡꙰༻ *VISUALIZACOES*${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
 conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, fkontak, m)
 global.videoList.push(vids_);
 } catch {    
