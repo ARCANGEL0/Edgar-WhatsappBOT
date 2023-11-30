@@ -56,7 +56,7 @@ if (/^¿que es un bot?|Que es un bot|Que es gatabot?$/i.test(m.text) ) { //sem p
 ┆ 「 🅖🅐🅣🅐🅑🅞🅣-🅜🅓 」
 ╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 */
-}  
+
 return !0 
 
 export default handler
