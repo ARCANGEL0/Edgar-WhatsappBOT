@@ -18,7 +18,7 @@ const cat = `Edgar Allan Bot 💖🐈
 *${asistencia}*`
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', cat, fkontak,
-  contextInfo: { sourceUrl: `https://github.com/ARCANGEL0/Edgar-WhatsappBOT`, thumbnail: pp}
+  contextInfo: { sourceUrl: `https://github.com/ARCANGEL0/Edgar-WhatsappBOT`, thumbnail: pp
   
 })
 }
