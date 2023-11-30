@@ -27,11 +27,11 @@ ${usedPrefix}audio <numero>
 let teks = results.all.map((v, i) => {
 let link = v.url;
 vids_.urls.push(link);
-return `[${i + 1}]\n❤️꙰༻ *TÍTULO:*  ${v.title}
-⁖🩵꙰༻ *LINK$* ${v.url}
-⁖💜꙰༻ *DURACAO:* ${v.timestamp}
-⁖💚꙰༻ *DATA:* ${v.ago}
-⁖🧡꙰༻ *VISUALIZACOES* ${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
+return `[${i + 1}]\n🐦‍⬛༻ *TÍTULO:*  ${v.title}
+🐈‍⬛༻ *LINK$* ${v.url}
+🥀༻ *DURACAO:* ${v.timestamp.toLocaleString('pt-BR')}
+🦇༻ *DATA:* ${v.ago}
+✒️༻ *VISUALIZACOES* ${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
 conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, fkontak, m)
 global.videoList.push(vids_);
 } catch {    
@@ -73,7 +73,7 @@ if (m.isGroup) return m.reply('*✳️ 𝙃𝙊𝙇𝘼 𝙀𝙎𝙏𝙄𝙈𝘼
 } catch {
 try {     
 for (let i of search.all) {
-listAudio.push({title: i.title, description: `${i.author.name} | ${i.timestamp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
+listAudio.push({title: i.title, description: `${i.author.name} | ${i.mp}`, rowId: `${usedPrefix}ytmp3 ${i.url}`})
 listAudioDoc.push({title: i.title, description: `${i.author.name} | ${i.timestamp}`, rowId: `${usedPrefix}ytmp3doc ${i.url}`})
 listVideo.push({title: i.title, description: `${i.author.name} | ${i.timestamp}`, rowId: `${usedPrefix}ytmp4 ${i.url}`})
 listVideoDoc.push({title: i.title, description: `${i.author.name} | ${i.timestamp}`, rowId: `${usedPrefix}ytmp4doc ${i.url}`})}
