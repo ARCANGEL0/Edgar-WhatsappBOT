@@ -47,8 +47,8 @@ user.messageSpam = motive
 }} else if (userData.antiBan === 3) {
 if (userData.message3 < 1) {
 userData.message3++  
-motive = 'SPAM DE MENSAJES ALARMANTE'
-mensaje = `*@${m.sender.split`@`[0]} COMMANDOS BLOQUEADOS DURANTE 2 MINUTOS*\n\n*MOTIVO: ${motive}*`
+motive = 'SPAM DE MENSAGENS ALARMANTE'
+mensaje = `*@${m.sender.split`@`[0]} COMANDOS BLOQUEADOS DURANTE 2 MINUTOS*\n\n*MOTIVO: ${motive}*`
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
 user.messageSpam = motive
 await conn.groupParticipantsUpdate(m.chat, [sender], 'remove')
