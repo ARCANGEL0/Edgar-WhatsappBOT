@@ -39,9 +39,9 @@ global.videoList.push(vids_);
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
 handler.command = /^playlist|ytbuscar|yts(earch)?$/i
-handler.exp = 70
-handler.limit = 1
-handler.level = 4
+handler.exp = 0
+handler.limit = 0
+handler.level = 0
 export default handler
 
 
