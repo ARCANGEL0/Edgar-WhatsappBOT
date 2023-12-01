@@ -13,7 +13,7 @@ return conn.reply(m.chat, txt, fkontak, m, { mentions: await conn.parseMention(t
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { mentions: await conn.parseMention(txt) })*/
 }).catch(err => {
 console.log(err);
-return conn.reply(m.chat, `${rg}test𝘿`, imagen1, m) 
+return conn.reply(m.chat, `${rg}Nenhuma alma penada encontra-se banida deste vale sombrio. . `, imagen1, m) 
 /*conn.sendButton(m.chat, `${rg}𝙉𝘼𝘿𝙄𝙀 𝙃𝘼 𝙎𝙄𝘿𝙊 𝘽𝙇𝙊𝙌𝙐𝙀𝘼𝘿𝙊\n\n𝙉𝙊 𝙊𝙉𝙀 𝙃𝘼𝙎 𝘽𝙀𝙀𝙉 𝘽𝙇𝙊𝘾𝙆𝙀𝘿`, wm, gata, [
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], os.getRandom())*/
 })} 
