@@ -30,75 +30,75 @@ export default handler;
 
 var effects = [
   {
-    'title': '3d-deep-sea-metal',
+    'title': 'metalsea',
     'url': 'https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html',
   },
   {
-    'title': 'American-flag-3D',
+    'title': 'america3d',
     'url': 'https://textpro.me/create-american-flag-3d-text-effect-online-1051.html',
   },
   {
-    'title': '3D-sci-fi',
+    'title': '3dscifi',
     'url': 'https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html',
   },
   {
-    'title': '3D-rainbow-color-calligraphy',
+    'title': 'colorido3d',
     'url': 'https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html',
   },
   {
-    'title': '3D-water-pipe',
+    'title': '3dpipe',
     'url': 'https://textpro.me/create-3d-water-pipe-text-effects-online-1048.html',
   },
   {
-    'title': 'Halloween-skeleton',
+    'title': 'halloween1',
     'url': 'https://textpro.me/create-halloween-skeleton-text-effect-online-1047.html',
   },
   {
-    'title': 'a-spooky-Halloween',
+    'title': 'halloween2',
     'url': 'https://textpro.me/create-a-spooky-halloween-text-effect-online-1046.html',
   },
   {
-    'title': 'a-cinematic-horror',
+    'title': 'cinehorror',
     'url': 'https://textpro.me/create-a-cinematic-horror-text-effect-1045.html',
   },
   {
-    'title': 'a-sketch',
+    'title': 'sketch',
     'url': 'https://textpro.me/create-a-sketch-text-effect-online-1044.html',
   },
   {
-    'title': 'blue-circuit-style',
+    'title': 'circuit',
     'url': 'https://textpro.me/create-blue-circuit-style-text-effect-online-1043.html',
   },
   {
-    'title': 'space',
+    'title': 'espaco',
     'url': 'https://textpro.me/create-space-text-effects-online-free-1042.html',
   },
   {
-    'title': 'a-metallic',
+    'title': 'metalico',
     'url': 'https://textpro.me/create-a-metallic-text-effect-free-online-1041.html',
   },
   {
-    'title': 'Creat-glossy-metalic',
+    'title': 'metalico2',
     'url': 'https://textpro.me/creat-glossy-metalic-text-effect-free-online-1040.html',
   },
   {
-    'title': 'a-Captain-America',
+    'title': 'cptamerica',
     'url': 'https://textpro.me/create-a-captain-america-text-effect-free-online-1039.html',
   },
   {
-    'title': 'science-fiction',
+    'title': 'sciencefiction',
     'url': 'https://textpro.me/create-science-fiction-text-effect-online-free-1038.html',
   },
   {
-    'title': 'Video-game-classic-8-bit',
+    'title': '8bit',
     'url': 'https://textpro.me/video-game-classic-8-bit-text-effect-1037.html',
   },
   {
-    'title': 'green-horror-style',
+    'title': 'greenhorror',
     'url': 'https://textpro.me/create-green-horror-style-text-effect-online-1036.html',
   },
   {
-    'title': 'a-transformer',
+    'title': 'transformer',
     'url': 'https://textpro.me/create-a-transformer-text-effect-online-1035.html',
   },
   {
@@ -110,139 +110,139 @@ var effects = [
     'url': 'https://textpro.me/create-layered-text-effects-online-free-1032.html',
   },
   {
-    'title': 'Online-thunder--generator',
+    'title': 'thunder',
     'url': 'https://textpro.me/online-thunder-text-effect-generator-1031.html',
   },
   {
-    'title': 'a-magma-hot',
+    'title': 'magma',
     'url': 'https://textpro.me/create-a-magma-hot-text-effect-online-1030.html',
   },
   {
-    'title': '3D-stone-cracked-cool',
+    'title': '3Dstone',
     'url': 'https://textpro.me/3d-stone-cracked-cool-text-effect-1029.html',
   },
   {
-    'title': '3D-neon-light',
+    'title': '3Dneon',
     'url': 'https://textpro.me/create-3d-neon-light-text-effect-online-1028.html',
   },
   {
-    'title': 'impressive-glitch',
+    'title': 'glitch',
     'url': 'https://textpro.me/create-impressive-glitch-text-effects-online-1027.html',
   },
   {
-    'title': 'a-glitch',
+    'title': 'glitch2',
     'url': 'https://textpro.me/create-a-glitch-text-effect-online-free-1026.html',
   },
   {
-    'title': 'embossed--on-cracked-surface',
+    'title': 'crack',
     'url': 'https://textpro.me/create-embossed-text-effect-on-cracked-surface-1024.html',
   },
   {
-    'title': 'Broken-glass',
+    'title': 'brokenglass',
     'url': 'https://textpro.me/broken-glass-text-effect-free-online-1023.html',
   },
   {
-    'title': 'art-paper-cut',
+    'title': 'papercut',
     'url': 'https://textpro.me/create-art-paper-cut-text-effect-online-1022.html',
   },
   {
-    'title': 'artistic-black-and-white-status-and-quote-with-your-photos',
+    'title': 'artistic',
     'url': 'https://textpro.me/create-artistic-black-and-white-status-and-quote-with-your-photos-1021.html',
   },
   {
-    'title': 'Online-3D-gradient--generator',
+    'title': 'Online3D',
     'url': 'https://textpro.me/online-3d-gradient-text-effect-generator-1020.html',
   },
   {
-    'title': 'a-3D-glossy-metal',
+    'title': 'metalgloss',
     'url': 'https://textpro.me/create-a-3d-glossy-metal-text-effect-1019.html',
   },
   {
-    'title': '3D-realistic--on-the-beach',
+    'title': '3D',
     'url': 'https://textpro.me/create-3d-realistic-text-effect-on-the-beach-online-1018.html',
   },
   {
-    'title': 'a-watercolor',
+    'title': 'aquarela',
     'url': 'https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html',
   },
   {
-    'title': 'Online-multicolor-3D-paper-cut',
+    'title': '3dpapercut',
     'url': 'https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html',
   },
   {
-    'title': 'Write-text-on-foggy-window',
+    'title': 'textoemjanela',
     'url': 'https://textpro.me/write-text-on-foggy-window-online-free-1015.html',
   },
   {
-    'title': 'neon-devil-wings',
+    'title': 'devil',
     'url': 'https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html',
   },
   {
-    'title': '3D-underwater--generator',
+    'title': 'sobagua',
     'url': 'https://textpro.me/3d-underwater-text-effect-generator-online-1013.html',
   },
   {
-    'title': 'Online-black-and-white-bear-mascot-logo-creation',
+    'title': 'bwn',
     'url': 'https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html',
   },
   {
-    'title': 'wonderful-graffiti-art',
+    'title': 'graffitiart',
     'url': 'https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html',
   },
   {
-    'title': 'a-cool-graffiti-text-on-the-wall',
+    'title': 'grafitil',
     'url': 'https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html',
   },
   {
-    'title': 'cool-wall-graffiti',
+    'title': 'wallgraffi',
     'url': 'https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html',
   },
   {
-    'title': 'a-christmas-holiday-snow',
+    'title': 'natal',
     'url': 'https://textpro.me/create-a-christmas-holiday-snow-text-effect-1007.html',
   },
   {
-    'title': 'a-futuristic-technology-neon-light',
+    'title': 'neonlight',
     'url': 'https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html',
   },
   {
-    'title': 'snow--for-winter-holidays',
+    'title': 'snow',
     'url': 'https://textpro.me/create-snow-text-effects-for-winter-holidays-1005.html',
   },
   {
-    'title': 'a-cloud--on-the-sky',
+    'title': 'cloud',
     'url': 'https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html',
   },
   {
-    'title': '3D-luxury-gold',
+    'title': '3Dluxury',
     'url': 'https://textpro.me/3d-luxury-gold-text-effect-online-1003.html',
   },
   {
-    'title': '3D-gradient',
+    'title': '3Dgradient',
     'url': 'https://textpro.me/3d-gradient-text-effect-online-free-1002.html',
   },
   {
-    'title': 'Blackpink-logo-style',
+    'title': 'Blackpink',
     'url': 'https://textpro.me/create-blackpink-logo-style-online-1001.html',
   },
   {
-    'title': 'realistic-vintage-style-light-bulb',
+    'title': 'lightbulb',
     'url': 'https://textpro.me/create-realistic-vintage-style-light-bulb-1000.html',
   },
   {
-    'title': 'realistic-cloud',
+    'title': 'realisticvloud',
     'url': 'https://textpro.me/create-realistic-cloud-text-effect-online-free-999.html',
   },
   {
-    'title': 'a-cloud--in-the-sky',
+    'title': 'cloud2',
     'url': 'https://textpro.me/create-a-cloud-text-effect-in-the-sky-online-997.html',
   },
   {
-    'title': 'Write-in-Sand-Summer-Beach',
+    'title': 'SandSummer',
     'url': 'https://textpro.me/write-in-sand-summer-beach-free-online-991.html',
   },
   {
-    'title': 'Sand-Writing',
+    'title': 'SandWriting',
     'url': 'https://textpro.me/sand-writing-text-effect-online-990.html',
   },
   {
