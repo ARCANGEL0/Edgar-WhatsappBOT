@@ -14,8 +14,7 @@ const listMessage = {
   footer: wm,
   title: `${htki} 𝙇𝙄𝙎𝙏𝘼 𝙑𝘼𝙍𝙄𝘼𝘿𝘼𝙎 📃`,
   buttonText: `📑 𝙑𝙀𝙍 𝙇𝙄𝙎𝙏𝘼𝙎 📑`,
-  sections
 }
-await conn.sendMessage(m.chat, sections, {quoted: fkontak})}
+await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}
 handler.command = /^listas|lists?$/i
 export default handler
