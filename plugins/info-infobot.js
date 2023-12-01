@@ -40,11 +40,7 @@ const cpu = cpus.reduce((last, cpu, _, { length }) => {
   })
 const { restrict } = global.db.data.settings[conn.user.jid] || {}
 const { autoread } = global.opts
-let pp = imagen1
-let vn = '../media/infobot.mp3'
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'Instagram' , sourceUrl: ig, thumbnail: await(await fetch(pp)).buffer() }}}
 
-let dos = enlace
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let old = performance.now()
@@ -94,7 +90,7 @@ let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃ღ ${restrict ? '*Ativado ✔*' : '*Desativado ✘*'} 
 ┃
 ╰━━━[ 𝙄𝙣𝙛𝙤 ]━━⬣`
-await conn.sendFile(m.chat, pp, './media/menus/Menu1.jpg', info, fkontak)
+await m.reply(info)
 /*let info = `
 ╭━━━━[ ${gt} ]━━━━━⬣
 ┃
