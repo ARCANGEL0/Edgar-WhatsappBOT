@@ -24,8 +24,8 @@ console.log(e)}
 handler.help = ['logos'];
 handler.tags = ['nulis'];
 handler.command = /^(logo|logos|logos2)$/i;
-handler.limit = 1
-handler.register = true
+handler.limit = 0
+handler.register = false
 export default handler;
 
 var effects = [
