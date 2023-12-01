@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${mg}*𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙚𝙡 𝙧𝙚𝙥𝙤𝙧𝙩𝙚*\n\n*𝙀𝙅𝙀𝙈𝙋𝙇𝙊:*\n*${usedPrefix + command} el comando ${usedPrefix}infobot no funciona.*\n\n*𝙒𝙧𝙞𝙩𝙚 𝙩𝙝𝙚 𝙧𝙚𝙥𝙤𝙧𝙩*\n\n*𝙀𝙓𝘼𝙈𝙋𝙇𝙀:*\n*${usedPrefix + command} the command ${usedPrefix}owner it does not work.*`
-if (text.length < 8) throw `${fg} ✨ *Mínimo 10 caracteres para hacer El Reporte.*\n\n✨ *Minimum 10 characters to make the Report.*`
-if (text.length > 1000) throw `${fg} 😼 *Máximo 1000 caracteres para o Reporte.*\n\n😼 *Maximum 1000 characters to make the Report.*`
+if (!text) throw `${mg}Descreva o seu relato\n*Exemplo:*\n*${usedPrefix + command} l comando ${usedPrefix}infobot nao funciona.*\n`
+if (text.length < 8) throw `${fg} ✒️*Mínimo 10 caracteres para realizar o relato*\n.*`
+if (text.length > 1000) throw `${fg} ✒️ *Máximo 1000 caracteres para o Relato.*\n*`
 let teks = `*╭━━[ | 𝙍𝙀𝙋𝙊𝙍𝙏 ]━━━⬣*\n*┃*\n*┃* *𝙉𝙐𝙈𝙀𝙍𝙊 *\n┃ ✦ Wa.me/${m.sender.split`@`[0]}\n*┃*\n*┃* 𝙈𝙎𝙂*\n*┃* ✦ ${text}\n*┃*\n*╰━━━━━━━━━━━━━━━━━━⬣*`
 //conn.reply('19393844141@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 //contextInfo: {
@@ -11,8 +11,8 @@ conn.reply('351927285125@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks
 contextInfo: {
 mentionedJid: [m.sender]
 }})
-  m.reply(`╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱💚⊱╮\n
-O informe foi despachado ao meuCriador, aguardando.. em breve, terá então uma réplica. Se falso, será soterrado no esquecimento do relato.
+  m.reply(`╰⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱╮\n
+🐈‍⬛O informe foi despachado ao meu Criador, aguardando.. em breve, terá então uma réplica. Se falso, será soterrado no esquecimento de sua memória.
   `)
 
 }
