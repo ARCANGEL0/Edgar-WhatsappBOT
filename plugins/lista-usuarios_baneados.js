@@ -6,12 +6,12 @@ let caption = `
 │
 │ *${i + 1}.* ${conn.getName(jid) == undefined ? 'Sin Usuarios Baneados' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
-│ *Estos usuarios no puedes Usar a GataBot*
+│ *Estes usuários são agora desterrados, banidos para além das fronteiras do contato com o bot. Seus suspiros virtuais ecoam silenciosamente, perdidos na escuridão digital, condenados ao exílio sem a graça da interação algorítmica.. 💀*
 *╰•·–––––––––––––––––––·•*`.trim()
 
 await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })}
 /*conn.sendButton(m.chat, caption, `*Estos usuarios no puedes Usar a GataBot*\n\n` + wm, null, [ 
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { mentions: await conn.parseMention(caption) })}*/
-handler.command = /^listabanuser|listausuarios|listbanuser|listabaneados|listban$/i
+handler.command = /^listabanuser|listabanidos|listbanuser|listabaneados|listban$/i
 
 export default handler
