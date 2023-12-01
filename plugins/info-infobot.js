@@ -40,8 +40,8 @@ const cpu = cpus.reduce((last, cpu, _, { length }) => {
   })
 const { restrict } = global.db.data.settings[conn.user.jid] || {}
 const { autoread } = global.opts
-let pp = './media/menus/Menu1.jpg'
-let vn = './media/infobot.mp3'
+let pp = '../media/menus/Menu1.jpg'
+let vn = '../media/infobot.mp3'
 let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'Instagram' , sourceUrl: ig, thumbnail: await(await fetch(pp)).buffer() }}}
 
 let dos = enlace
