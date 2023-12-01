@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text }) => {
-   if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄Digite um texilto psra definir a bio do BOT...`
+   if (!text) throw `${lenguajeGB['smsAvisoMG']()}❖─┅──┅\nVagueio como um autômato poético,aguardando novas palavras emaranhadas com a melancolia de um corvo noturno, para se tornarem minha nova descrição distinta nestas terras sombrias\n─┅──┅❖ `
      try {
 		await conn.updateProfileStatus(text).catch(_ => _)
 		conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}Bio alterada fom sucesso  ✅️`, m)
