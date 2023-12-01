@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-let handler = async (m, { conn, text, args, usedPrefix }) => {
+let handler = async (m, { conn, text, args, command, usedPrefix }) => {
 	if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 𝙙𝙚 𝙡𝙖 𝙖𝙠𝙥 𝙥𝙖𝙧𝙖 𝙗𝙪𝙨𝙘𝙖𝙧`
 	let enc = encodeURIComponent(text)
 try {
