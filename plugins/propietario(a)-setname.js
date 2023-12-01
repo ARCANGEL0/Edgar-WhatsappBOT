@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙏𝙀𝙓𝙏𝙊`
+  if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄Digite um texto para nomear o BOT`
   try {
     await conn.updateProfileName(text)
     m.reply('LISTO!')
