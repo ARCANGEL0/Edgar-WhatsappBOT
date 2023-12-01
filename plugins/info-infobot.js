@@ -42,8 +42,7 @@ const { restrict } = global.db.data.settings[conn.user.jid] || {}
 const { autoread } = global.opts
 let pp = './media/menus/Menu1.jpg'
 let vn = './media/infobot.mp3'
-let gata = [imagen5, imagen7, imagen8, imagen9]
-let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'Instagram' , sourceUrl: ig, thumbnail: await(await fetch(gata.getRandom())).buffer() }}}
+let enlace = { contextInfo: { externalAdReply: {title: wm + ' ', body: 'Instagram' , sourceUrl: ig, thumbnail: await(await fetch(pp)).buffer() }}}
 
 let dos = enlace
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
@@ -152,7 +151,7 @@ conn.sendHydrated(m.chat, info, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 }
 handler.help = ['infobot']
 handler.tags = ['info', 'tools']
-handler.command = /^(infobot|informacionbot|infogata|informacióngata|informaciongata)$/i
+handler.command = /^(infobot|informacionbot|infopoe|informacióngata|informaciongata)$/i
 export default handler
 
 function clockString(ms) {
