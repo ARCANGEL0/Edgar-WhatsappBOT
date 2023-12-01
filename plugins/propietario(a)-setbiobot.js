@@ -1,10 +1,10 @@
 let handler = async (m, { conn, text }) => {
-   if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉 𝙏𝙀𝙓𝙏𝙊`
+   if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄Digite um texilto psra definir a bio do BOT...`
      try {
 		await conn.updateProfileStatus(text).catch(_ => _)
-		conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙄𝙉𝙁𝙊 𝘾𝘼𝙈𝘽𝙄𝘼𝘿𝘼 𝘾𝙊𝙉 𝙀𝙓𝙄𝙏𝙊𝙎 ✅️`, m)
+		conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}Bio alterada fom sucesso  ✅️`, m)
 } catch {
-       throw 'Well, Error Sis...'
+       throw 'error...'
      }
 }
 handler.help = ['setbotbio <teks>']
