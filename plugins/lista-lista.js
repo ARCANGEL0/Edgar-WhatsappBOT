@@ -7,9 +7,7 @@ rows: [
 {title: "📛 𝗕𝗟𝗢𝗤𝗨𝗘𝗔𝗗𝗢𝗦", rowId: `${usedPrefix}listablock`, description: `Usuarios bloqueados por ligar.`},
 {title: "⚠️ 𝗔𝗗𝗩𝗘𝗥𝗧𝗜𝗗𝗢𝗦", rowId: `${usedPrefix}listadv`, description: `Usuarios bloqueados por ofensa e comportamentos tóxicos.`},
 {title: "📵 𝗖𝗛𝗔𝗧 𝗕𝗔𝗡𝗜𝗗𝗢𝗦", rowId: `${usedPrefix}chatsbaneados`, description: `Chats proibidos de usar o Por`},
-{title: "🚷 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗕𝗔𝗡𝗜𝗗𝗢𝗦", rowId: `${usedPrefix}listbanuser`, description: `usuarios proibidos de usar o Poe`},
-{title: "🎟️ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 : 𝗩𝗜𝗣 ", rowId: `${usedPrefix}listapremium`, description: `Usuarios vip`},
-{title: "💞 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗘𝗡 ❤️", rowId: `${usedPrefix}listaparejas`, description: `Usuarios em uma relação amorosa`}]}]
+{title: "🚷 𝗨𝗦𝗨𝗔𝗥𝗜𝗢𝗦 𝗕𝗔𝗡𝗜𝗗𝗢𝗦", rowId: `${usedPrefix}listbanuser`, description: `usuarios proibidos de usar o Poe`}
 
 const listMessage = {
   text: `𝙏𝙄𝙋𝙊𝙎 𝘿𝙀 𝙇𝙄𝙎𝙏𝘼𝙎 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎\n`,
@@ -18,6 +16,6 @@ const listMessage = {
   buttonText: `📑 𝙑𝙀𝙍 𝙇𝙄𝙎𝙏𝘼𝙎 📑`,
   sections
 }
-await conn.sendMessage(m.chat, listMessage, {quoted: fkontak})}
+await conn.sendMessage(m.chat, sections, {quoted: fkontak})}
 handler.command = /^listas|lists?$/i
 export default handler
