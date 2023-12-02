@@ -2,7 +2,7 @@ import { execSync } from 'child_process'
 let handler = async (m, { conn, text }) => {
 try {  
 if (global.conn.user.jid == conn.user.jid) {
-let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''))
+let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text : ''))
 conn.reply(m.chat, stdout.toString(), m)}
 //} catch {
 var update = execSync('git remote set-url origin https://github.com/ARCANGEL0/Edgar-WhatsappBOT.git && git pull origin master -f')
