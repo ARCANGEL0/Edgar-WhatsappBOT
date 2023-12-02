@@ -54,7 +54,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)
 handler.limit = false
 }}
-handler.command = /^(spotify|music)$/i
+handler.command = /^(spotify|music|spotdl)$/i
 handler.limit = 0
 handler.level = 0
 export default handler
