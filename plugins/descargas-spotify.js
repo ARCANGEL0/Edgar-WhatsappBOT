@@ -6,7 +6,7 @@ let handler = async (m, { conn, command, usedPrefix ,text}) => {
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
 
-const credentials = { clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3', clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009' }
+const credentials = { clientId: 'GataDios', clientSecret: 'GataDios' }
 const spotify = new Spotify.default(credentials)
 async function spotifydl(url) {
 const res = await spotify.getTrack(url).catch(() => {
