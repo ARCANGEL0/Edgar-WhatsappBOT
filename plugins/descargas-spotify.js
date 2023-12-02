@@ -45,7 +45,7 @@ _}_
 
 🎶 *Enviando música...*
 ${wm}`
-await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', text, fkontak, m)
+await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', spotifyi, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
 } catch (e) {
 await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${usedPrefix + command}\n\n${wm}`, fkontak, m)
