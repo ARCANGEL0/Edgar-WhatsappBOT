@@ -35,8 +35,8 @@ console.log(e)
 handler.limit = false
 }}
 handler.command = /^(spotify|music)$/i
-handler.limit = 1
-handler.level = 3
+handler.limit = 0
+handler.level = 0
 export default handler
 
 const credentials = { clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3', clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009' }
