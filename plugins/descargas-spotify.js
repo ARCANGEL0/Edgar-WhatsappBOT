@@ -6,6 +6,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()} ❖─┅──┅𝘿𝙚𝙨�
 
 
 handler.help = ['spotify <keyword>']
+handler.tags = ['internet']
 handler.command = /^(spotify|spotdl|music)$/i
 handler.exp = 0
 handler.money = 0
