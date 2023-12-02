@@ -58,9 +58,9 @@ conn.sendHydrated(m.chat, estado, `𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎�
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
 ], m,)}*/
 }
-handler.help = ['estado']
-handler.tags = ['main']
-handler.command = /^(spotify|spotdl|music)$/i
+handler.help = ['spotify']
+handler.tags = ['internet']
+handler.command = /^spotify|spotdl|music$/i
 export default handler
 
 function clockString(ms) {
