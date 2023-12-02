@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg'  
-
+const { reaction, antifake, antiTwitter, antiInstagram, antiFacebook, antiTelegram, antiYoutube, antiTiktok, isBanned, autolevelup, antiver, antitoxic, temporal, restrict, stickers, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 
 let text = 
 `╭━[ 𝘾𝙊𝙉𝙁𝙄𝙂]━⬣
