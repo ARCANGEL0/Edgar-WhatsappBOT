@@ -69,7 +69,6 @@ return { data: res, audio: await spotify.downloadTrack(url) }}
 ], m)*/
 }
 handler.help = ['spotify <keyword>']
-handler.tags = ['internet']
 handler.command = /^(spotify|spotdl|music)$/i
 handler.exp = 0
 handler.money = 0
