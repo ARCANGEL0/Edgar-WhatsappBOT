@@ -55,7 +55,7 @@ irq: 0
 }})
 
 let old = performance.now()
-await conn.reply(m.chat, `${eg}🚀 𝙋𝙍𝙊𝙑𝘼 𝘿𝙀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿𝙀...\n🚀 𝙎𝙋𝙀𝙀𝘿 𝙏𝙀𝙎𝙏...`, fkontak,  m)
+await conn.reply(m.chat, `${eg}🚀 𝙋𝙍𝙊𝙑𝘼 𝘿𝙀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿𝙀......`, fkontak,  m)
 //await conn.sendButton(m.chat, wm, `${eg}🚀 𝙋𝙍𝙐𝙀𝘽𝘼 𝘿𝙀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿...\n🚀 𝙎𝙋𝙀𝙀𝘿 𝙏𝙀𝙎𝙏...`, null, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], fkontak, m)  
 let neww = performance.now()
 let speed = neww - old
