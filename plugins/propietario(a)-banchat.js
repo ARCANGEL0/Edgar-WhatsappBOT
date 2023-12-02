@@ -15,7 +15,7 @@ function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]
 let handler = async (m) => {
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
-COMANDOS TEMPORARIAMENTE INDISPONÍVEIS ATÉ REATIVAÇÃO POR PARTE DOS ADMINS
+❖─┅──┅\n💀 COMANDOS TEMPORARIAMENTE INDISPONÍVEIS ATÉ REATIVAÇÃO POR PARTE DOS ADMINS\n─┅──┅❖ 
 ${pickRandom([ 
  "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",
   "Assim como o vento leva as folhas secas, minha despedida é suave, mas inevitável.",
