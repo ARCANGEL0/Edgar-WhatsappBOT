@@ -91,7 +91,7 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `
 console.log(caption)
-await conn.sendFile(m.chat, imagen1, 'gata.jpg', caption, fkontak)
+await conn.sendFile(m.chat, "teste", 'gata.jpg', imagen2, fkontak)
 //await conn.sendButton(m.chat, wm, caption, gata.getRandom(), [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, dos.getRandom())
 } catch (e) {
 await conn.reply(m.chat, `${fg}*❖─┅──┅\nALGO OCORREU MAL NA EXECUÇÃO. ERROS ENCONTRADOS\n─┅──┅❖*\n\n\`\`\`REPORTE ESTE COMANDO ${usedPrefix + command} COM O COMANDO ${usedPrefix}reporte\`\`\`\n─┅──┅❖ `, m)
