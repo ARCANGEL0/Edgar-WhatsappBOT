@@ -1,34 +1,42 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg'  
-let isClose = { // Switch Case Like :v
-'open': 'not_announcement',
-'close': 'announcement',
-'abierto': 'not_announcement',
-'cerrado': 'announcement',
-'abrir': 'not_announcement',
-'cerrar': 'announcement',
-}[(args[0] || '')]
-if (isClose === undefined)
-throw `
-${lenguajeGB['smsAvisoMG']()}*╭━[ ${wm} ]━⬣*
-*┃➥ ${usedPrefix + command} abrir*
-*┃➥ ${usedPrefix + command} fechar*
-*╰━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
+
+
+let text = 
+`╭━[ 𝘾𝙊𝙉𝙁𝙄𝙂]━⬣
+┃
+┃・ 𝘽𝙊𝘼𝙎 𝙑𝙄𝙉𝘿𝘼𝙎${welcome ? '✅' : '❌'}
+┃・ 𝘿𝙀𝙏𝙀𝘾𝙏 ${detect ? '✅' : '❌'} 
+┃・𝙍𝙀𝙎𝙏𝙍𝙄𝙉𝙂𝙄𝙍 𝘼𝘿𝙄𝘾𝙄𝙊𝙉𝘼𝙍 𝙀 𝙍𝙀𝙈𝙊𝙑𝙀𝙍 ${global.db.data.settings[conn.user.jid].restrict ? '✅' : '❌'}
+┃・ 𝘽𝙊𝙏 𝙏𝙀𝙈𝙋𝙊𝙍𝘼𝙇 ${global.db.data.settings[conn.user.jid].temporal ? '✅' : '❌'}
+┃・ 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 ${stickers ? '✅' : '❌'}
+┃・ 𝙍𝙀𝘼𝘾𝙊𝙀𝙎 𝘿𝙊 𝘽𝙊𝙏${reaction ? '✅' : '❌'}
+┃・ 𝘼𝙐𝙏𝙊𝙎𝙏𝙄𝘾𝙆𝙀𝙍 ${autosticker ? '✅' : '❌'} 
+┃・ 𝘼𝙐𝘿𝙄𝙊𝙎 ${audios ? '✅' : '❌'} 
+┃・ 𝘼𝙉𝙏𝙄𝙏𝙊𝙓𝙄𝘾 ${antitoxic ? '✅' : '❌'} 
+┃・ 𝘼𝙉𝙏𝙄 𝙄𝙉𝙏𝙀𝙍𝙉𝘼𝘾𝙄𝙊𝙉𝘼𝙇 ${antifake ? '✅' : '❌'} 
+┃・ 𝘼𝙉𝙏𝙄 𝙑𝙀𝙍 ${antiver ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄𝘿𝙀𝙇𝙀𝙏𝙀 ${global.db.data.chats[m.chat].delete ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 ${antiLink ? '✅' : '❌'} 
+┃・ 𝘼𝙉𝙏𝙄𝙇𝙄𝙉𝙆 *2* ${antiLink2 ? '✅' : '❌'} 
+┃・ 𝘼𝙉𝙏𝙄 𝙏𝙄𝙆𝙏𝙊𝙆 ${antiTiktok ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄 𝙔𝙊𝙐 𝙏𝙐𝘽𝙀 ${antiYoutube ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄 𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 ${antiTelegram ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄 𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 ${antiFacebook ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 ${antiInstagram ? '✅' : '❌'}
+┃・ 𝘼𝙉𝙏𝙄 𝙏𝙒𝙄𝙏𝙏𝙀𝙍 ${antiTwitter ? '✅' : '❌'}
+┃
+╰━━━❰ *𓃠 ${vs}* ❱━━⬣
 `.trim()
-await conn.groupSettingUpdate(m.chat, isClose)
-  
-if (isClose === 'not_announcement'){
-conn.sendButton(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙔𝘼 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙏𝙊𝘿𝙊𝙎 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!`, `𝙂𝙍𝙐𝙋𝙊 𝘼𝘽𝙄𝙀𝙍𝙏𝙊\n${wm}`, pp, [['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', `.cuentasgb`], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]], m)
-}
-  
-if (isClose === 'announcement'){
-//m.reply(`${eg}*𝙂𝙍𝙐𝙋𝙊 𝘾𝙀𝙍𝙍𝘼𝘿𝙊*\n𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉𝙎 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊`)
-conn.sendButton(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙎𝙊𝙇𝙊 𝙇𝙊𝙎 𝘼𝘿𝙈𝙄𝙉𝙎 𝙋𝙐𝙀𝘿𝙀𝙉 𝙀𝙎𝘾𝙍𝙄𝘽𝙄𝙍 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊!!`, `𝙂𝙍𝙐𝙋𝙊 𝘾𝙀𝙍𝙍𝘼𝘿𝙊\n${wm}`, pp, [['𝙈𝙤𝙢𝙚𝙣𝙩𝙤 𝘼𝙙𝙢𝙞𝙣 😎', '.s'], ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `/menu`]], m)
-}  
+
+await conn.sendFile(m.chat, imagen3, 'gata.mp4', text, fkontak)
+
+
+
  }
 handler.help = ['group open / close', 'grupo abrir / fechar']
 handler.tags = ['group']
-handler.command = /^(group|grupo)$/i
+handler.command = /^(gpconfig|config)$/i
 handler.admin = true
 handler.botAdmin = true
 handler.exp = 200
