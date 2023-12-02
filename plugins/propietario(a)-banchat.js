@@ -16,7 +16,6 @@ let handler = async (m) => {
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
 COMANDOS TEMPORARIAMENTE INDISPONÍVEIS ATÉ REATIVAÇÃO POR PARTE DOS ADMINS
-
 ${pickRandom([ 
  "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",
   "Assim como o vento leva as folhas secas, minha despedida é suave, mas inevitável.",
@@ -28,11 +27,8 @@ ${pickRandom([
   "Deixo este palco como um ator após sua última cena, desaparecendo nas cortinas do destino.",
   "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
-
 ])}
-  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛
-  
-`)
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`)
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
