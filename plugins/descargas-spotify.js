@@ -15,6 +15,18 @@ return { data: res, audio: await spotify.downloadTrack(url) }}
 
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}╭━[𝙎𝙥𝙤𝙩𝙞𝙛𝙮]━⬣
+┃
+┃ ✒️📜 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐬𝐢𝐧𝐟𝐨𝐧𝐢𝐚
+┃ 𝐚𝐬𝐬𝐨𝐦𝐛𝐫𝐚 𝐭𝐞𝐮𝐬 𝐩𝐞𝐧𝐬𝐚𝐦𝐞𝐧𝐭𝐨𝐬 
+┃ 𝐯𝐢𝐬 𝐞 𝐛𝐮𝐬𝐜𝐚𝐫𝐞𝐢 𝐧𝐞𝐬𝐭𝐞 𝐯𝐚𝐥𝐞 𝐝𝐞 
+┃ 𝐭𝐞𝐫𝐫𝐨𝐫𝐞𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬, 𝐚 𝐩𝐫𝐨𝐜𝐮𝐫𝐚
+┃ 𝐝𝐨 𝐭𝐞𝐮 𝐫𝐚𝐭𝐢𝐨 𝐚𝐧𝐱𝐢𝐞𝐭𝐚𝐭𝐢𝐬 🎶🎵
+┃
+╰━━━❰ *𓃠 ${vs}* ❱━━⬣ 
+ Exemplo:\n*${usedPrefix + command} Cat*` 
+try {
  let resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`)
 let jsonDL = await resDL.json()
 let linkDL = jsonDL.result[0].link
@@ -51,7 +63,11 @@ let estado = `╭━━━━[ 🎶 *${spty.data.name}* 🎶 ]━━━━━⬣
 await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', estado, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
 
-
+}
+catch(e){
+  
+  
+}
 
 }
 handler.help = ['spotify']
