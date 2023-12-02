@@ -29,7 +29,7 @@ let text =
 ╰━━━❰ *𓃠 ${vs}* ❱━━⬣
 `.trim()
 
-await conn.sendFile(m.chat, imagen3, 'gata.mp4', text, fkontak)
+await conn.sendFile(m.chat, imagen3, 'gata.mp4', text)
 
 
 
