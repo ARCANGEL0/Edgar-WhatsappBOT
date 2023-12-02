@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import Spotify from "spotifydl-x"
 import fs from 'fs'
 
-let handler = async (m, { conn, command, usedPrefix }) => {
+let handler = async (m, { conn, command, usedPrefix ,text}) => {
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
@@ -42,7 +42,7 @@ let estado = `╭━━━━[ 🎶 *${spty.data.name}* 🎶 ]━━━━━⬣
 ╰━━━━━━━━━━━━━━━━━━⬣`
 
 
-await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', spotifyi, fkontak, m)
+await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', estado, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
 
 
@@ -53,8 +53,4 @@ handler.tags = ['internet']
 handler.command = /^spotify|spotdl|music$/i
 export default handler
 
-function clockString(ms) {
-let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+
