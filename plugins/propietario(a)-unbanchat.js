@@ -3,9 +3,7 @@ function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]
 
 
 const handler = async (m) => {
-m.reply(`${eg} 🐈‍⬛BOT REATIVADO POR ADMIN 🕸️🕸️
-COMANDOS DISPONÍVEIS NOVAMENTE 🐦‍⬛
-
+m.reply(`${eg} ❖─┅──┅\n📜✒️ BOT REATIVADO POR ADMIN COMANDOS DISPONÍVEIS NOVAMENTE\n─┅──┅❖ 
 ${pickRandom([
 "Voltei do vale da sombra da morte para contemplar mais uma vez a luz do dia.",
   "Como um corvo que retorna ao seu poleiro, estou de volta para encarar os enigmas da existência.",
@@ -18,10 +16,7 @@ ${pickRandom([
   "Como um viajante perdido retorna à senda certa, aqui estou eu, de volta aos caminhos familiares.",
   "Das trevas do exílio, retorno com palavras de reconciliação e boas-vindas."
 ])}
--- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛
-
-
-`)
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
 global.db.data.chats[m.chat].isBanned = false 
 }
 handler.help = ['unbanchat'];
