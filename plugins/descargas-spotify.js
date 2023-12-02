@@ -5,8 +5,7 @@ import fs from 'fs'
 let handler = async (m, { conn, command, usedPrefix ,text}) => {
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
-let _uptime = process.uptime() * 1000
-let _muptime
+
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
  let resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`)
