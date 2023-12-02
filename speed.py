@@ -1914,7 +1914,7 @@ def shell():
             quiet)
 
     if not args.mini:
-        printer('Recuperación de la lista de servidores Speedtest.net. | Retrieving speedtest.net server list...', quiet)
+        printer('Buscando lista de servidorrs speedtest. . . .', quiet)
         try:
             speedtest.get_servers(servers=args.server, exclude=args.exclude)
         except NoMatchedServers:
@@ -1945,7 +1945,7 @@ def shell():
             '%(latency)s ms' % results.server, quiet)
 
     if args.download:
-        printer('\n🚀 Testandk velocidade de download\n', quiet,
+        printer('\n🚀 Testando velocidade de download\n', quiet,
                 end=('', '\n')[bool(debug)])
         speedtest.download(
             callback=callback,
