@@ -2,15 +2,95 @@ import { toAudio } from '../lib/converter.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-if (!/video|audio/.test(mime)) throw `${lenguajeGB['smsAvisoMG']()}❖─┅──┅─\n RESPONDA UM AUDIO OU VIDEO PARA SALVAR COMO MP3┅──┅❖ `
+if (!/video|audio/.test(mime)) throw `${lenguajeGB['smsAvisoMG']()}
+╭━━━━━━━━━⬣
+┃
+┃ 🐈‍⬛🪦 𝐃𝐢𝐠𝐚-𝐦𝐞, 𝐩𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚. 𝐐𝐮𝐚𝐥 
+┃ 𝐯𝐢𝐝𝐞𝐨 𝐨𝐮 𝐚𝐮𝐝𝐢𝐨 𝐥𝐡𝐞 𝐝𝐞𝐬𝐩𝐞𝐫𝐭𝐚 
+┃ 𝐨 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐬𝐞 𝐧𝐞𝐬𝐭𝐞 𝐞𝐜𝐨 
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨, 𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐨 
+┃ 𝐝𝐞𝐬𝐭𝐢𝐧𝐨 𝐝𝐞 𝐭𝐮𝐚 𝐚𝐭𝐞𝐧çã𝐨 𝐪𝐮𝐞 
+┃ 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞𝐢 𝐞𝐦 𝐮𝐦 𝐚𝐫𝐪𝐮𝐢𝐯𝐨 
+┃ 𝐝𝐞 á𝐮𝐝𝐢𝐨 𝐦𝐩𝟑
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
+
 await conn.sendPresenceUpdate('recording', m.chat)
 let media = await q.download?.()
-if (!media && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}❖─┅──┅\n 🐈‍⬛ NAO FOI POSSIVEL BAIXAR O VIDEO. TENTE NOVAMENTE MAIS TARDE─┅──┅❖ `
-if (!media && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}❖─┅──┅\n 🐈‍⬛ NAO FOI POSSIVEL BAIXAR O AUDIO. TENTE NOVAMENTE MAIS TARDE─┅──┅❖ `
+if (!media && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()} ╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 
+┃ 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃ 
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
+if (!media && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 
+┃ 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
 let audio = await toAudio(media, 'mp4')
-if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}❖─┅──┅\n 🐈‍⬛ NAO FOI POSSIVEL BAIXAR O VIDEO. TENTE NOVAMENTE MAIS TARDE─┅──┅❖ `
-if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}���❖─┅──┅\n 🐈‍⬛ NAO FOI POSSIVEL BAIXAR O AUDIO. TENTE NOVAMENTE MAIS TARDE─┅──┅❖ `
-if (!audio.data && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}❖─┅──┅\n 🐈‍⬛ NAO FOI POSSIVEL BAIXAR. TENTE NOVAMENTE MAIS TARDE─┅──┅❖ `
+if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣ `
+if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
+if (!audio.data && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
 conn.sendFile(m.chat, audio.data, 'error.mp3', '', m, null, { mimetype: 'audio/mp4' })
 }
 handler.help = ['tomp3 (reply)']
