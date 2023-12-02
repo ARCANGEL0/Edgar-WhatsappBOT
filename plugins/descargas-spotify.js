@@ -24,7 +24,7 @@ _${spty.data.name}_
 🌐 *URL*:
 » _${linkDL}_
 
-🎶 *Enviando canción...*
+🎶 *Enviando música...*
 ${wm}`
 await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', spotifyi, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
@@ -43,7 +43,7 @@ const credentials = { clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3', clientSecret
 const spotify = new Spotify.default(credentials)
 async function spotifydl(url) {
 const res = await spotify.getTrack(url).catch(() => {
-return { error: 'Fallo la descarga' }})
+return { error: '𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨 𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞. 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚 𝐞𝐱𝐢𝐭𝐨' }})
 return { data: res, audio: await spotify.downloadTrack(url) }}
 
 
