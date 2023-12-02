@@ -6,7 +6,7 @@ const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './
 const { reaction, antifake, antiTwitter, antiInstagram, antiFacebook, antiTelegram, antiYoutube, antiTiktok, isBanned, autolevelup, antiver, antitoxic, temporal, restrict, stickers, welcome, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 
 let text = 
-`╭━[ 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ]━⬣
+`╭━[ 𝘾𝙊𝙉𝙁𝙄𝙂]━⬣
 ┃
 ┃・ 𝘽𝙊𝘼𝙎 𝙑𝙄𝙉𝘿𝘼𝙎${welcome ? '✅' : '❌'}
 ┃・ 𝘿𝙀𝙏𝙀𝘾𝙏 ${detect ? '✅' : '❌'} 
