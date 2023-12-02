@@ -10,6 +10,7 @@ let resDL = await fetch(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lol
 let jsonDL = await resDL.json()
 let linkDL = jsonDL.result[0].link
 let spty = await spotifydl(linkDL)
+console.log(spty)
 const getRandom = (ext) => {
 return `${Math.floor(Math.random() * 10000)}${ext}`}
 let randomName = getRandom(".mp3")
