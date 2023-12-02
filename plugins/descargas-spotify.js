@@ -16,7 +16,7 @@ return `${Math.floor(Math.random() * 10000)}${ext}`}
 let randomName = getRandom(".mp3")
 const filePath = `./tmp/${randomName}`
 fs.writeFileSync(filePath, spty.audio)
-let text = `╭━━━━[  🎶 *${spty.data.name}* 🎶 ]━━━━⬣
+/*let text = `╭━━━━[  🎶 *${spty.data.name}* 🎶 ]━━━━⬣
 ┃
 ┃ 🥀 *𝐀𝐑𝐓𝐈𝐒𝐓𝐀*:
 ┃ ${spty.data.artists}
@@ -34,7 +34,7 @@ let text = `╭━━━━[  🎶 *${spty.data.name}* 🎶 ]━━━━⬣
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣
 
-`
+`*/
 let spotifyi = `TITULO:*
 _}_
 
@@ -52,12 +52,7 @@ await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), 
 await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${usedPrefix + command}\n\n${wm}`, fkontak, m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
-handler.limit = false
-}}
-handler.command = /^(spotify|music|spotdl)$/i
-handler.limit = 0
-handler.level = 0
-export default handler
+
 
 const credentials = { clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3', clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009' }
 const spotify = new Spotify.default(credentials)
@@ -66,7 +61,12 @@ const res = await spotify.getTrack(url).catch(() => {
 return { error: '𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨 𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞. 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚 𝐞𝐱𝐢𝐭𝐨' }})
 return { data: res, audio: await spotify.downloadTrack(url) }}
 
-
+handler.limit = false
+}}
+handler.command = /^(spotify|music|spotdl)$/i
+handler.limit = 0
+handler.level = 0
+export default handler
 /*import fetch from 'node-fetch'
 import fs from 'fs'
 
