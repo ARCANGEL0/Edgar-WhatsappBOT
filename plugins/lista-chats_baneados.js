@@ -4,7 +4,7 @@ let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned
     
 let caption = `*╭•·––| 💬 𝘾𝙃𝘼𝙏𝙎 𝘽𝘼𝙉𝙄𝘿𝙊𝙎 |––·•*
 │ *Total: ${chats.length} Chats* ${chats ? '\n│\n' + chats.map(([jid], i) =>`
-│ ${i + 1}. ${conn.getName(jid) == undefined ? 'Sin Chats Banidos' : `*CHAT BANIDO*`}
+│ ${i + 1}. ${conn.getName(jid) == undefined ? 'Sem Chats Banidos' : `*CHAT BANIDO*`}
 │ ${jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
 *╰•·–––––––––––––––––––·•*`
 await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })}
