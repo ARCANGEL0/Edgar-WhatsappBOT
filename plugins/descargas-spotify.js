@@ -14,7 +14,7 @@ return `${Math.floor(Math.random() * 10000)}${ext}`}
 let randomName = getRandom(".mp3")
 const filePath = `./tmp/${randomName}`
 fs.writeFileSync(filePath, spty.audio)
-/*let text = `╭━━━━[  🎶 *${spty.data.name}* 🎶 ]━━━━⬣
+let text = `╭━━━━[  🎶 *${spty.data.name}* 🎶 ]━━━━⬣
 ┃
 ┃ 🥀 *𝐀𝐑𝐓𝐈𝐒𝐓𝐀*:
 ┃ ${spty.data.artists}
@@ -32,7 +32,7 @@ fs.writeFileSync(filePath, spty.audio)
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣
 
-`*/
+`
 let spotifyi = `TITULO:*
 _}_
 
@@ -44,7 +44,7 @@ _}_
 
 🎶 *Enviando música...*
 ${wm}`
-await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', spotifyi, fkontak, m)
+await conn.sendFile(m.chat, spty.data.cover_url, 'error.jpg', text, fkontak, m)
 await conn.sendMessage(m.chat, { audio: fs.readFileSync(`./tmp/${randomName}`), fileName: `${spty.data.name}.mp3`, mimetype: "audio/mp4", }, { quoted: m })    
 } catch (e) {
 await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${usedPrefix + command}\n\n${wm}`, fkontak, m)
