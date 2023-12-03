@@ -7,7 +7,7 @@ let caption = `⚠️ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝘼𝘿𝙑𝙀𝙍𝙏�
 *╭•·–––––––––––––––––––·•*
  *Total : ${adv.length} Usuarios* ${adv ? '\n' + adv.map(([jid, user], i) => `
 
- *${i + 1}.* ${conn.getName(jid)  == undefined ? 'Sin Usuarios' :`*(${user.warn}/4)*`} ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
+ *${i + 1}.* ${conn.getName(jid)  == undefined ? 'Sem Usuarios' :`*(${user.warn}/4)*`} ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
 *╰•·–––––––––––––––––––·•*\n\n⚠️ 𝗔𝗗𝗩𝗘𝗥𝗧𝗘𝗡𝗖𝗜𝗔 ⇢ ${warns ? `*${warns}/4*` : '*0/4*'}\n${wm}`
 await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })}
 /* conn.sendButton(m.chat, caption, `⚠️ 𝗔𝗗𝗩𝗘𝗥𝗧𝗘𝗡𝗖𝗜𝗔 ⇢ ${warns ? `*${warns}/4*` : '*0/4*'}\n${wm}`, null, [ 
