@@ -12,7 +12,7 @@ let name = await conn.getName(m.sender)
 let user = global.db.data.users[who]
 if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
 let txt = text.replace('@' + who.split`@`[0], '').trim()
-if (!txt) return conn.reply(m.chat, lenguajeGB.smsAdveu3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
+
 try {
 user.warn += 1
 await m.reply(
