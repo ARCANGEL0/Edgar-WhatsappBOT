@@ -16,12 +16,12 @@ let txt = text.replace('@' + who.split`@`[0], '').trim()
 try {
 user.warn -= 1
 await m.reply(
-    `${
-      user.warn == 1 ? `
+    `
 ╭━━━━━━━━━⬣
+
 UMA ADVERTÊNCIA REMOVIDA
 
-*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`}
+*@${who.split`@`[0]}*
 *${lenguajeGB['smsAdveu5']()}*
 ⚠️ *${user.warn}/4* 
 ${wm} || ${vs}
