@@ -1,6 +1,20 @@
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, command, usedPrefix }) => {
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙎𝙄𝙉 𝙐𝙎𝘼𝙍 "@"\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} mundo_dos_animes81*\n\n𝙏𝙔𝙋𝙀 𝙔𝙊𝙐𝙍 𝙏𝙄𝙆𝙏𝙊𝙆 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 𝙒𝙄𝙏𝙃𝙊𝙐𝙏 𝙐𝙎𝙄𝙉𝙂 "@"\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} universo_editx*`, m)
+if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+
+╭━━━━━━━━━⬣
+┃
+┃ 🥀💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐧𝐨𝐦𝐞 𝐝𝐚 𝐚𝐥𝐦𝐚 𝐪𝐮𝐞 
+┃ 𝐝𝐞𝐬𝐞𝐣𝐚𝐬 𝐛𝐮𝐬𝐜𝐚𝐫 𝐬𝐚𝐛𝐞𝐫 𝐧𝐨 𝐯𝐚𝐥𝐞
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐝𝐞𝐧𝐨𝐦𝐢𝐧𝐚𝐦 
+┃ 𝐓𝐢𝐤𝐓𝐨𝐤, 𝐞 𝐥𝐡𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐚𝐫𝐞𝐢 𝐨 𝐪𝐮𝐞 𝐬𝐞𝐢
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
+┃ *${usedPrefix + command} usuario*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`, m)
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=9b817532fadff8fc7cb86862`)
 let res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=9b817532fadff8fc7cb86862`
