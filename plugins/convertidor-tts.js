@@ -57,7 +57,7 @@ async function tts(text) {
 
         // Cleanup: Remove the temporary audio file
         unlinkSync(filePath);
-
+resolve(readFileSync(filePath))
         return audioBuffer;
     } catch (e) {
         throw e;
