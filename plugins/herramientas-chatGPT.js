@@ -21,7 +21,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 let pp = './media/menus/Menu1.jpg'
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
 
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
@@ -53,7 +53,7 @@ return finalResponse;
 let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
 
 
@@ -62,7 +62,7 @@ try {
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
 if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
 
 } catch {
 try {
@@ -71,19 +71,19 @@ const fgjson1 = await fgapi1.json();
 if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
 
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,m)
 } catch {
 try {
 const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
 const vihangaytjson1 = await vihangayt1.json();
 if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
-await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,m)
 } catch {
 try {
 const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
 const vihangaytjson2 = await vihangayt2.json();
 if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta)
-await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,fkontak)       
+await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,m)       
 } catch {
 try {
 const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
@@ -91,7 +91,7 @@ const vihangaytjson3 = await vihangayt3.json();
 if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
  
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson3.data,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson3.data,m)
 } catch {
 try {
 const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
@@ -100,7 +100,7 @@ if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) ret
 const hasill22_result = await translate(`${hasill22.result}`, {to: idioma, autoCorrect: true});
 
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', hasill22_result.text,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', hasill22_result.text,m)
 } catch {
 try {
 const searchString2 = ' Brasil ';
@@ -112,7 +112,7 @@ const hahaha = await translate(`${jjson.data}`, {to: idioma, autoCorrect: true})
 const sextS = hahaha.text;
 const replacedText = sextS.replace(searchString2, replacementString2).trim();
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', replacedText,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', replacedText,m)
 } catch {
 try {
 const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
@@ -121,7 +121,7 @@ if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariap
 const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'pt-br', autoCorrect: true});
 
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult2.text,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult2.text,m)
 } catch {
 try {
 const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
@@ -130,7 +130,7 @@ if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariap
 const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br', autoCorrect: true});
 
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
 }}}}}}}}}}}
