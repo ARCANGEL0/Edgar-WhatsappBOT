@@ -50,7 +50,7 @@ function tts(text, lang = 'pt-br') {
           let filePath = join(new URL('.', import.meta.url).pathname, '../tmp', (1 * new Date) + '.wav');
 
                     
-                    say.export(text, 'Alex', 1.0, __dirname+"../tmp", (err) => {
+                    say.export(text, 'Alex', 1.0,filePath, (err) => {
                         if (err) {
                             reject(err);
                         } else {
