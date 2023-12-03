@@ -17,12 +17,8 @@ import axios from 'axios';
 import translate from '@vitalets/google-translate-api';
 import {Configuration, OpenAIApi} from 'openai';
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
-function getRandomElement(arr) {
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  return arr[randomIndex];
-}
 
-let pp = getRandomElement(gataImg)
+let pp = imagen1
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
@@ -38,6 +34,7 @@ if (!text) throw `╭━[𝗚𝗣𝗧]━━━━━━━⬣
 
 ${usedPrefix + command} Quem foi Franz Kafka
 ${usedPrefix + command} Codigo em JS para um jogo da velha
+
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
