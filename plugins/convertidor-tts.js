@@ -49,7 +49,7 @@ function tts(text, lang = 'pt-br') {
             // Using a male voice with 'say'
     let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
                     
-                    say.export(text, 'Alex', 1.0, filePath, (err) => {
+                    say.export(text, 'Alex', 1.0, __dirname+"../tmp", (err) => {
                         if (err) {
                             reject(err);
                         } else {
