@@ -1,7 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, command, usedPrefix }) => {
 if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
-
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🥀💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐧𝐨𝐦𝐞 𝐝𝐚 𝐚𝐥𝐦𝐚 𝐪𝐮𝐞 
@@ -74,5 +73,5 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
 handler.command = /^(tiktokstalk|verttk)$/i
-handler.exp = 48
+handler.exp = 0
 export default handler
