@@ -94,7 +94,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 50674,
+      "exp": 51198,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -283,7 +283,7 @@
       "mana": 0,
       "mangga": 0,
       "misi": "",
-      "money": 37700,
+      "money": 38000,
       "monyet": 0,
       "mythic": 0,
       "naga": 0,
@@ -2759,10 +2759,10 @@
       "lastSuccess": 1701526429175
     },
     "propietario(a)-update.js": {
-      "total": 55,
-      "success": 55,
-      "last": 1701622083226,
-      "lastSuccess": 1701622083226
+      "total": 58,
+      "success": 58,
+      "last": 1701629405090,
+      "lastSuccess": 1701629405090
     },
     "grupo-configuracion.js": {
       "total": 3,
@@ -3027,6 +3027,18 @@
       "success": 2,
       "last": 1701627164108,
       "lastSuccess": 1701627164108
+    },
+    "herramientas-chatGPT.js": {
+      "total": 4,
+      "success": 2,
+      "last": 1701628652959,
+      "lastSuccess": 1701628652959
+    },
+    "herramientas-chatgpt-Voz.js": {
+      "total": 7,
+      "success": 7,
+      "last": 1701629596996,
+      "lastSuccess": 1701629596996
     }
   },
   "msgs": {},
@@ -3056,7 +3068,7 @@
       "antiSpam": true,
       "modoia": false,
       "jadibotmd": true,
-      "status": 1701627614818
+      "status": 1701629453319
     }
   }
 }
