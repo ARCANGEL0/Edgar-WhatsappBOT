@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async(m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄teste`
 let anu = await ringtone(text)
@@ -17,7 +17,7 @@ let hasil = []
 $('#__next > main > section > div.jsx-2244708474.container > div > div > div > div:nth-child(4) > div > div > div > ul > li').each(function (a, b) {
 hasil.push({ title: $(b).find('h4').text(), source: 'https://meloboom.com/'+$(b).find('a').attr('href'), audio: $(b).find('audio').attr('src') })
 })
-resolve(hasil)})})}
+resolve(hasil)})})}*/
 
 
 import fetch from 'node-fetch'
@@ -69,6 +69,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 }
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
-handler.command = /^(tiktokstalk|verttk)$/i
+handler.command = /^(toque|notifcelular)$/i
 handler.exp = 0
 export default handler
