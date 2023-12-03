@@ -73,6 +73,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 }
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
-handler.command = /^(tiktokstalk|ttstalk)$/i
+handler.command = /^(tiktokstalk|verttk)$/i
 handler.exp = 48
 export default handler
