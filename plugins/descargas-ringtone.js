@@ -4,7 +4,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄teste`
 let anu = await ringtone(text)
 let result = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })}
-handler.command  = ['toque|ringtone|notifcelular']
+handler.command  = /^((notifcelular|toque)ringtone)$/i
 handler.money = 0
 handler.level = 0
 handler.register = false
