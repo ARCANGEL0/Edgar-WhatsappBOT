@@ -110,7 +110,7 @@ try {
 const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
 const akuariapijson1 = await akuariapi1.json();
 if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
-const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'es', autoCorrect: true});
+const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'ptbr', autoCorrect: true});
 const audio10 = await tts(akuariapiresult1.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                           
 } catch {
