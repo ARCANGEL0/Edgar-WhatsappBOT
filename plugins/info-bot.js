@@ -3,7 +3,7 @@ let handler = m => m
 
 handler.all = async function (m) {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let bot = `${pickRandom(["Bem-vindo à obscura morada das palavras, onde cada saudação é um eco sombrio.",
+let bot = `${pickRandom(["Bem-vindo à obscura morada das palavras, onde cada saudação é um eco sombrio.🕯️💀",
   "Saudações, viajante perdido nos corredores sombrios da linguagem. Como posso guiá-lo? 🕯️💀",
   "Entre, forasteiro, nesta sinfonia de saudações onde as palavras dançam no crepúsculo.✒️📜",
   "Olá, visitante da penumbra, onde as frases revelam segredos e os cumprimentos são sinistros.🥀",
@@ -26,7 +26,7 @@ if (/^bot|edgar|poe$/i.test(m.text)) {
     
 await conn.sendMessage(m.chat, {text: bot, mentions: [m.sender]}, {quoted: fkontak})
 //conn.sendButton(m.chat, `¡𝑬𝒚! 𝑨𝒒𝒖í 𝒆𝒔𝒕𝒐𝒚. 𝒀𝒐 𝒑𝒖𝒆𝒅𝒐 𝒂𝒚𝒖𝒅𝒂𝒓 👉👈 𝑯𝒆𝒚! 𝑰'𝒎 𝒉𝒆𝒓𝒆. 𝑰 𝒄𝒂𝒏 𝒉𝒆𝒍𝒑 🙌`, wm, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
-if (/^regras|regras do gp|normas$/i.test(m.text)) {
+if (/^regras|Regras|normas$/i.test(m.text)) {
     
     conn.sendMessage(m.chat,{text: `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 ⚠️ 〙*
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙘𝙝𝙖𝙢𝙖𝙧 𝙤 𝙗𝙤𝙩
