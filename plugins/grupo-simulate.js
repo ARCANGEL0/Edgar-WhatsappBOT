@@ -35,7 +35,7 @@ case 'quitarpoder':
 act = 'demote'
 break
 default:
-throw 'error, ingrese una opcion valida'
+throw 'error, coloque uma opção valida'
 }
 if (act) return conn.participantsUpdate({
 id: m.chat,
