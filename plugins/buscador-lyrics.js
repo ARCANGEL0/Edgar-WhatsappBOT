@@ -34,10 +34,10 @@ const bochil = await googleImage(`${result[0].artist} ${result[0].title}`);
 img = await bochil.getRandom();
 }}
 await conn.sendMessage(m.chat, {image: {url: img}, caption: `𝙏𝙄𝙏𝙐𝙇𝙊 
-💚 *${result[0].title || ''}*
+🥀🪦 *${result[0].title || ''}*
 
 𝘼𝙐𝙏𝙊𝙍(𝘼) 
-💜 *${result[0].artist || ''}*
+📜✒️ *${result[0].artist || ''}*
 
 ${lyrics || ''}`}, {quoted: fkontak});
 await conn.sendMessage(m.chat, {audio: {url: result[0].preview}, fileName: `${result[0].artist} ${result[0].title}.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
