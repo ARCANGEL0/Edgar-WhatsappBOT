@@ -6,7 +6,22 @@ let generateWAMessageFromContent = (await import(global.baileys)).default
 import { tiktokdl } from '@bochilteam/scraper'
 let handler = async (m, { conn, text, args, usedPrefix, command}) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐𝙉 𝙀𝙉𝙇𝘼𝘾𝙀 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙋𝘼𝙍𝘼 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙍 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} https://vm.tiktok.com/ZMLEPnruc/?k=1*\n\n𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙀𝙉𝙏𝙀𝙍 𝘼 𝙏𝙄𝙆𝙏𝙊𝙆 𝙇𝙄𝙉𝙆 𝙏𝙊 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙏𝙃𝙀 𝙑𝙄𝘿𝙀𝙊\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} https://vm.tiktok.com/ZMLEPnruc/?k=1*`, fkontak,  m)
+if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+╭━━━━━━━━━⬣
+┃
+┃ 🕯️💀 𝐑𝐞𝐯𝐞𝐥𝐚-𝐦𝐞 𝐨 𝐞𝐥𝐨 𝐩𝐚𝐫𝐚 𝐨 
+┃ 𝐯𝐢𝐝𝐞𝐨 𝐓𝐢𝐤𝐓𝐨𝐤 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐢𝐬 
+┃ 𝐛𝐚𝐢𝐱𝐚𝐫, 𝐞 𝐚𝐬𝐬𝐢𝐦, 𝐝𝐚𝐬 
+┃ 𝐩𝐫𝐨𝐟𝐮𝐧𝐝𝐞𝐳𝐚𝐬 𝐝𝐚 𝐨𝐛𝐬𝐜𝐮𝐫𝐢𝐝𝐚𝐝𝐞 
+┃ 𝐯𝐢𝐫𝐭𝐮𝐚𝐥, 𝐭𝐫𝐚𝐫𝐞𝐢 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨 
+┃ 𝐪𝐮𝐞 𝐚𝐧𝐬𝐞𝐢𝐚𝐬.
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
+┃ *${usedPrefix + command} https://vm.tiktok.com
+┃ /ZMLEPnruc/?k=1*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣ `, fkontak,  m)
 if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}╭━━━━━━━━━⬣
 ┃
 ┃ ❌📜 𝐀 𝐔𝐑𝐋 𝐚𝐩𝐫𝐞𝐬𝐞𝐧𝐭𝐚-𝐬𝐞 𝐜𝐨𝐦𝐨 𝐮𝐦 
@@ -19,7 +34,9 @@ if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak,  m)  
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 😸\n𝙎𝙊𝙊𝙉 𝙒𝙄𝙇𝙇 𝙃𝘼𝙑𝙀 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊 🥳`, fkontak,  m) 
+await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}╭━━━━━━━━━⬣
+⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
+╰━━━━━━━━━━━━━━━━━━⬣`, fkontak,  m) 
 try {
 const dataF = await tiktok.v1(args[0])
 conn.sendFile(m.chat, dataF.play, 'tiktok.mp4', `🕯️💀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊\n*${nickname}*\n${description ? `\n📜𝘿𝙀𝙎𝘾𝙍𝙄𝘾𝘼𝙊\n*${description}`: ''}\n${wm}`.trim(), m) 
