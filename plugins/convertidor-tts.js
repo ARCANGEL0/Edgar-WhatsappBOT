@@ -26,8 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
         if (!text) {
             throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
-                // ... (rest of the error message)
-        }
+`    }
 
         await conn.sendPresenceUpdate('recording', m.chat);
         res = await tts(text, lang);
