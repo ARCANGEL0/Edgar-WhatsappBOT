@@ -1,4 +1,5 @@
-import gtts from 'node-gtts'
+/*import gtts from 'node-gtts'*/
+import 'say' from say
 import { readFileSync, unlinkSync } from 'fs'
 import { join } from 'path'
 
@@ -14,7 +15,7 @@ text = args.join(' ')
 if (!text && m.quoted?.text) text = m.quoted.text
 
 let res
-try { res = await tts(text, lang) }
+try { res = await tts(text) }
 catch (e) {
 m.reply(e + '')
 text = args.join(' ')
@@ -33,7 +34,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
 ╰━━━━━━━━━━━━━━━━━━⬣
 *`
 await conn.sendPresenceUpdate('recording', m.chat)
-res = await tts(text, defaultLang)
+res = await tts(text)
 } finally {
 if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
 }}
@@ -41,8 +42,28 @@ handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
 handler.command = /^g?tts|totts$/i
 export default handler
+async function tts(text) {
+    try {
+        const filePath = join(global.__dirname(import.meta.url), '../tmp', `${1 * new Date}.wav`);
 
-function tts(text, lang = 'pt-br') {
+        await new Promise((resolve, reject) => {
+            say.export(text, 'Alex', 1, filePath, (err) => {
+                if (err) reject(err);
+                else resolve();
+            });
+        });
+
+        const audioBuffer = readFileSync(filePath);
+
+        // Cleanup: Remove the temporary audio file
+        unlinkSync(filePath);
+
+        return audioBuffer;
+    } catch (e) {
+        throw e;
+    }
+}
+/*function tts(text, lang = 'pt-br') {
 console.log(lang, text)
 return new Promise((resolve, reject) => {
 try {
@@ -54,3 +75,4 @@ unlinkSync(filePath)
 })
 } catch (e) { reject(e) }
 })}
+*/
