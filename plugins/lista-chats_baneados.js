@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 let ban = global.db.data.chats    
 let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
     
-let caption = `*╭•·––| 💬 𝘾𝙃𝘼𝙏𝙎 𝘽𝘼𝙉𝙄𝘿𝙊𝙎 |––·•*
+let caption = `*╭•·––| 🥀💀 𝘾𝙃𝘼𝙏𝙎 𝘽𝘼𝙉𝙄𝘿𝙊𝙎 |––·•*
 │ *Total: ${chats.length} Chats* ${chats ? '\n│\n' + chats.map(([jid], i) =>`
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Sem Chats Banidos' : `*CHAT BANIDO*`}
 │ ${jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
