@@ -46,8 +46,9 @@ function tts(text, lang = 'pt-br') {
 
     return new Promise((resolve, reject) => {
         try {
-            // Using a male voice with 'say'
-    let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
+          
+          let filePath = join(new URL('.', import.meta.url).pathname, '../tmp', (1 * new Date) + '.wav');
+
                     
                     say.export(text, 'Alex', 1.0, __dirname+"../tmp", (err) => {
                         if (err) {
