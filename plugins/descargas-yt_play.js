@@ -15,7 +15,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
-┃ *${usedPrefix + command} Bauhaus - Bela Lugosi*
+┃ *${usedPrefix + command} Bauhaus - Dark Entries*
 ┃
 ╰━━━❰ *𓃠 ${vs}* ❱━━⬣`
 try {
