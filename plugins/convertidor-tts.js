@@ -51,7 +51,7 @@ function tts(text, lang = 'pt-br') {
                 if (err) {
                     reject(err);
                 } else {
-                    // Saving the speech as a temporary file (you can adjust the file format and path)
+                    // Saving the speech as a temporary file (you can adjust the file format a nd path)
                     let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
                     
                     say.export(text, 'Alex', 1.0, filePath, (err) => {
@@ -65,6 +65,7 @@ function tts(text, lang = 'pt-br') {
                 }
             });
         } catch (e) {
+          console.log(e)
             reject(e);
         }
     });
