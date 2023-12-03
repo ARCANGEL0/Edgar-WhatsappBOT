@@ -44,7 +44,6 @@ export default handler;
 function tts(text, lang = 'pt-br') {
     console.log(lang, text);
 
-    return new Promise((resolve, reject) => {
         try {
             // Using a male voice with 'say'
             say.speak(text, 'Alex', 1.0, (err) => {
@@ -63,8 +62,8 @@ function tts(text, lang = 'pt-br') {
                         }
                     });
                 }
-            });
-        } catch (e) {
+            );}
+         catch (e) {
             reject(e);
         }
     });
