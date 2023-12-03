@@ -1,56 +1,72 @@
-import gtts from 'node-gtts'
-// import 'say' from say
-import { readFileSync, unlinkSync } from 'fs'
-import { join } from 'path'
+// Import 'say' library
+import say from 'say';
+import { readFileSync, unlinkSync } from 'fs';
+import { join } from 'path';
 
-const defaultLang = 'pt-br'
+const defaultLang = 'pt-br';
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+    let lang = args[0];
+    let text = args.slice(1).join(' ');
 
-let lang = args[0]
-let text = args.slice(1).join(' ')
-if ((args[0] || '').length !== 2) {
-lang = defaultLang
-text = args.join(' ')
-}
-if (!text && m.quoted?.text) text = m.quoted.text
+    if ((args[0] || '').length !== 2) {
+        lang = defaultLang;
+        text = args.join(' ');
+    }
 
-let res
-try { res = await tts(text,lang) }
-catch (e) {
-m.reply(e + '')
-text = args.join(' ')
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
-┃
-┃ 🥀🪦 𝐌𝐞 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐞 𝐮𝐦 𝐬𝐞𝐠𝐫𝐞𝐝𝐨
-┃ 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐞 𝐥𝐡𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐚𝐫𝐞𝐢
-┃ 𝐚 𝐯𝐨𝐳 𝐝𝐨 𝐥𝐚𝐦𝐞𝐧𝐭𝐨 𝐧𝐚 𝐟𝐨𝐫𝐦𝐚 𝐝𝐞
-┃ 𝐮𝐦 𝐚𝐮𝐝𝐢𝐨 𝐦𝐚𝐥𝐝𝐢𝐭𝐨
-┃
-┃ 𝙀𝙓𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} ptbr Tudo
-┃ que amei, amei sozinho
-┃
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣
-*`
-await conn.sendPresenceUpdate('recording', m.chat)
-res = await tts(text,lang)
-} finally {
-if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
-}}
-handler.help = ['tts <lang> <teks>']
-handler.tags = ['tools']
-handler.command = /^g?tts|totts$/i
-export default handler
+    if (!text && m.quoted?.text) text = m.quoted.text;
+
+    let res;
+    
+    try {
+        res = await tts(text, lang);
+    } catch (e) {
+        m.reply(e + '');
+        text = args.join(' ');
+
+        if (!text) {
+            throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
+                // ... (rest of the error message)
+        }
+
+        await conn.sendPresenceUpdate('recording', m.chat);
+        res = await tts(text, lang);
+    } finally {
+        if (res) conn.sendFile(m.chat, res, 'tts.wav', null, m, true);
+    }
+};
+
+handler.help = ['tts <lang> <teks>'];
+handler.tags = ['tools'];
+handler.command = /^g?tts|totts$/i;
+
+export default handler;
+
 function tts(text, lang = 'pt-br') {
-console.log(lang, text)
-return new Promise((resolve, reject) => {
-try {
-let tts = gtts(lang)
-let filePath = join(global.__dirname(import.meta.url), '../tmp', (1 * new Date) + '.wav')
-tts.save(filePath, text, () => {
-resolve(readFileSync(filePath))
-unlinkSync(filePath)
-})
-} catch (e) { reject(e) }
-})}
+    console.log(lang, text);
+
+    return new Promise((resolve, reject) => {
+        try {
+            // Using a male voice with 'say'
+            say.speak(text, 'Alex', 1.0, (err) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    // Saving the speech as a temporary file (you can adjust the file format and path)
+                    let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
+                    
+                    say.export(text, 'Alex', 1.0, filePath, (err) => {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(readFileSync(filePath));
+                            unlinkSync(filePath);
+                        }
+                    });
+                }
+            });
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
