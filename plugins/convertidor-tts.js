@@ -1,5 +1,4 @@
-// Import 'say' library
-import say from 'say';
+import Say from 'say.js';
 import { readFileSync, unlinkSync } from 'fs';
 import { join } from 'path';
 
@@ -17,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!text && m.quoted?.text) text = m.quoted.text;
 
     let res;
-    
+
     try {
         res = await tts(text, lang);
     } catch (e) {
@@ -26,7 +25,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
         if (!text) {
             throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
-`    }
+                // ... (rest of the error message)
+     `   }
 
         await conn.sendPresenceUpdate('recording', m.chat);
         res = await tts(text, lang);
@@ -46,22 +46,15 @@ function tts(text, lang = 'pt-br') {
 
     return new Promise((resolve, reject) => {
         try {
-            // Using a male voice with 'say'
-            say.speak(text, 'Alex', 1.0, (err) => {
+            // Using 'say.js' to speak with a male voice
+            Say.speak(text, 'Alex', 1.0, (err) => {
                 if (err) {
                     reject(err);
                 } else {
                     // Saving the speech as a temporary file (you can adjust the file format and path)
                     let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
-                    
-                    say.export(text, 'Alex', 1.0, filePath, (err) => {
-                        if (err) {
-                            reject(err);
-                        } else {
-                            resolve(readFileSync(filePath));
-                            unlinkSync(filePath);
-                        }
-                    });
+                    resolve(readFileSync(filePath));
+                    unlinkSync(filePath);
                 }
             });
         } catch (e) {
