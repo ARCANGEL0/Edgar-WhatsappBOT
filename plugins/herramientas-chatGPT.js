@@ -62,7 +62,7 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
 
 }
-/* catch {
+ catch {
 try {
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: pmpt, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
 if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
@@ -138,7 +138,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
-}}}}}}}}}}} */
+}}}}}}}}}}} 
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
 
