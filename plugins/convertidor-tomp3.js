@@ -5,7 +5,7 @@ let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
 if (!/video|audio/.test(mime)) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
-┃ 🐈‍⬛🪦 𝐃𝐢𝐠𝐚-𝐦𝐞, 𝐩𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚. 𝐐𝐮𝐚𝐥 
+┃ 🐈‍⬛🪦 𝐃𝐢𝐠𝐚-𝐦𝐞, 𝐩𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚. 𝐐𝐮𝐚𝐥
 ┃ 𝐯𝐢𝐝𝐞𝐨 𝐨𝐮 𝐚𝐮𝐝𝐢𝐨 𝐥𝐡𝐞 𝐝𝐞𝐬𝐩𝐞𝐫𝐭𝐚 
 ┃ 𝐨 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐬𝐞 𝐧𝐞𝐬𝐭𝐞 𝐞𝐜𝐨 
 ┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨, 𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐨 
