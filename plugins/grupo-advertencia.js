@@ -17,8 +17,12 @@ try {
 user.warn += 1
 await m.reply(
     `${
-      user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`
-    }*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${user.warn}/4*\n${wm}`,
+      user.warn == 1 ? `╭━━━━━━━━━⬣
+      *@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`
+    } *${lenguajeGB['smsAdveu5']()}*
+        ⚠️ *${user.warn}/4* 
+        ${wm} || ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`,
     null,
     { mentions: [who] });
 /*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} ${lenguajeGB['smsAdveu4']()}\n\n🫵 *${text}*`, `*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${user.warn}/4*\n\n${wm}`, img, [
