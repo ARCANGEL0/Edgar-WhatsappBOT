@@ -37,6 +37,7 @@ await conn.sendPresenceUpdate('recording', m.chat)
 res = await tts(text)
 } finally {
 if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true)
+if(!res) conn.sendMessage(m.chat,`error`,'error.jpg',null,m,true)
 }}
 handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
