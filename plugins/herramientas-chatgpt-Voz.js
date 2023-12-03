@@ -32,6 +32,7 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 
 ${usedPrefix + command} Quem foi Franz Kafka
 ${usedPrefix + command} Codigo em JS para um jogo da velha
+
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('recording', m.chat);
