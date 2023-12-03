@@ -165,7 +165,7 @@ let result = await translate(`${text}`, { to: lang, autoCorrect: true })
 const listMessage = {
 text: result.text,
 footer: `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*\n${wm}`,
-title: `*⎔───ꕤ 🌐 𝙏𝙍𝘼𝘿𝙐𝘾𝘾𝙄𝙊𝙉 ꕤ───⎔*`,
+title: `*⎔───ꕤ 🌐 𝙏𝙍𝘼𝘿𝙐𝘾𝘼𝙊───⎔*`,
 buttonText: `🪄 𝙀𝙡𝙚𝙜𝙞𝙧 𝙄𝙙𝙞𝙤𝙢𝙖 🪄`,
 sections }  
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
@@ -179,13 +179,25 @@ let result2 = loll.result.translated
 const listMessage = {
 text: result2.text,
 footer: `*𝗣𝗥𝗘𝗠𝗜𝗨𝗠 ${user.premium ? "✅": "❌"}*\n${wm}`,
-title: `*⎔───ꕤ 🌐 𝙏𝙍𝘼𝘿𝙐𝘾𝘾𝙄𝙊𝙉 ꕤ───⎔*`,
+title: `*⎔───ꕤ 🌐 𝙏𝙍𝘼𝘿𝙐𝘾𝘼𝙊───⎔*`,
 buttonText: `🪄 𝙀𝙡𝙚𝙜𝙞𝙧 𝙄𝙙𝙞𝙤𝙢𝙖 🪄`,
 sections }  
 await conn.sendMessage(m.chat, listMessage, {quoted: fkontak} )
 await m.reply(result2.text)
 } catch { 
-await m.reply(`${fg}\`\`\`NO SE LOGRÓ TRADUCIR SU TEXTO, REPORTE ESTE COMANDO CON EL COMANDO #reporte\`\`\``)    
+await m.reply(`${fg}\`\`\`╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
+┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃
+┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
+┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐞𝐱𝐢𝐭𝐨
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣\`\`\``)    
 }}}
-handler.command = /^(translate|traducir|trad)$/i
+handler.command = /^(translate|traduzir|trad)$/i
 export default handler
