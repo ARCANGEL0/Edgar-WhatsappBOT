@@ -25,6 +25,9 @@ const idioma = 'pt-br'
 
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
+const pmpt = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo.
+
+` + text
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `╭━[𝗚𝗣𝗧]━━━━━━━⬣
@@ -59,14 +62,14 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
 } catch {
 try {
-const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
+const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: pmpt, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
 if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
 
 } catch {
 try {
-const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${text}&symsg=${sistema1}&apikey=XlwAnX8d`);
+const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${pmpt}&symsg=${sistema1}&apikey=XlwAnX8d`);
 const fgjson1 = await fgapi1.json();
 if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
 
@@ -74,19 +77,19 @@ if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return
 await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,m)
 } catch {
 try {
-const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
+const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${pmpt}`);
 const vihangaytjson1 = await vihangayt1.json();
 if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
 await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,m)
 } catch {
 try {
-const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
+const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${pmpt}`);
 const vihangaytjson2 = await vihangayt2.json();
 if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta)
 await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson1.data,m)       
 } catch {
 try {
-const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
+const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${pmpt}`);
 const vihangaytjson3 = await vihangayt3.json();
 if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
  
@@ -94,7 +97,7 @@ if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjso
 await conn.sendFile(m.chat, pp, 'gata.mp4', vihangaytjson3.data,m)
 } catch {
 try {
-const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
+const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${pmpt}&user=${m.sender}`);
 const hasill22 = await tioress22.json();
 if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
 const hasill22_result = await translate(`${hasill22.result}`, {to: idioma, autoCorrect: true});
@@ -115,7 +118,7 @@ const replacedText = sextS.replace(searchString2, replacementString2).trim();
 await conn.sendFile(m.chat, pp, 'gata.mp4', replacedText,m)
 } catch {
 try {
-const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
+const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${pmpt}`);
 const akuariapijson2 = await akuariapi2.json();
 if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
 const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'pt-br', autoCorrect: true});
@@ -124,7 +127,7 @@ const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult2.text,m)
 } catch {
 try {
-const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
+const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${pmpt}`);
 const akuariapijson1 = await akuariapi1.json();
 if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
 const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br', autoCorrect: true});
