@@ -2,6 +2,11 @@
 import say from 'say';
 import { readFileSync, unlinkSync } from 'fs';
 import { join } from 'path';
+import OpenAI from "openai";
+
+const openai = new OpenAI();
+
+const speechFile = path.resolve("tts.mp3")
 
 const defaultLang = 'pt-br';
 
@@ -31,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         await conn.sendPresenceUpdate('recording', m.chat);
         res = await tts(text, lang);
     } finally {
-        if (res) conn.sendFile(m.chat, res, 'tts.wav', null, m, true);
+        if (res) conn.sendFile(m.chat, speechFile, 'tts.mp3', null, m, true);
     }
 };
 
@@ -41,26 +46,14 @@ handler.command = /^g?tts|totts$/i;
 
 export default handler;
 
-function tts(text, lang = 'pt-br') {
-    console.log(lang, text);
-
-    return new Promise((resolve, reject) => {
-        try {
-          
-          let filePath = join(new URL('.', import.meta.url).pathname, '../tmp', (1 * new Date) + '.wav');
-
-                    
-                    say.export(text, 'Alex', 1.0,filePath, (err) => {
-                        if (err) {
-                            reject(err);
-                        } else {
-                            resolve(readFileSync(filePath));
-                            unlinkSync(filePath);
-                        }
-                    });
-        } catch (e) {
-          console.log(e)
-            reject(e);
-        }
-    });
+function tts(text, lang = 'pt-br'){
+  
+const mp3 = await openai.audio.speech.create({
+    model: "tts-1",
+    voice: "onyx",
+    input: text
+  });
+  console.log(speechFile);
+  const buffer = Buffer.from(await mp3.arrayBuffer());
+  await fs.promises.writeFile(speechFile, buffer);
 }
