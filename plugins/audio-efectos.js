@@ -19,6 +19,7 @@ if (/robot/.test(command)) set = '-filter_complex "afftfilt=real=\'hypot(re,im)*
 if (/slow/.test(command)) set = '-filter:a "atempo=0.7,asetrate=44100"'
 if (/smooth/.test(command)) set = '-filter:v "minterpolate=\'mi_mode=mci:mc_mode=aobmc:vsbmc=1:fps=120\'"'
 if (/tupai|squirrel|chipmunk/.test(command)) set = '-filter:a "atempo=0.5,asetrate=65100"'
+if (/vgoth/.test(command)) set = '-af asetrate=44100*0.8,lowpass=300,highpass=100,echo=0.8:0.88:60:0.4';
 if (/audio/.test(mime)) {
 let ran = getRandom('.mp3')
 let filename = join(__dirname, '../tmp/' + ran)
@@ -35,9 +36,9 @@ ptt: true
 } catch (e) {
 throw e
 }}
-handler.help = ['bass', 'blown', 'deep', 'earrape', 'fast', 'fat', 'nightcore', 'reverse', 'robot', 'slow', 'smooth', 'tupai'].map(v => v + ' [vn]')
+handler.help = ['bass', 'blown', 'deep', 'earrape', 'fast', 'fat', 'nightcore', 'reverse', 'robot', 'slow', 'smooth', 'tupai','vgoth'].map(v => v + ' [vn]')
 handler.tags = ['audio']
-handler.command = /^(bass|blown|deep|earrape|fas?t|nightcore|reverse|robot|slow|smooth|tupai|squirrel|chipmunk)$/i
+handler.command = /^(bass|vgoth|blown|deep|earrape|fas?t|nightcore|reverse|robot|slow|smooth|tupai|squirrel|chipmunk)$/i
 export default handler
 
 const getRandom = (ext) => {
