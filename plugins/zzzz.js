@@ -11,7 +11,7 @@ var handler = async(m, { conn, text, usedPrefix, command }) => {
   accuracyInMeters: 0,
   speedInMps: 0,
   degreesClockwiseFromMagneticNorth: 2,
-  comment: 'ni funciona esta cosa',
+  comment: 'funcionw caralho',
   jpegThumbnail: imagen1
 }}, { quoted: m })
 conn.relayMessage(m.chat, msg.message, {})
