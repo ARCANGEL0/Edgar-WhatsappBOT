@@ -19,7 +19,7 @@ if (/robot/.test(command)) set = '-filter_complex "afftfilt=real=\'hypot(re,im)*
 if (/slow/.test(command)) set = '-filter:a "atempo=0.7,asetrate=44100"'
 if (/smooth/.test(command)) set = '-filter:v "minterpolate=\'mi_mode=mci:mc_mode=aobmc:vsbmc=1:fps=120\'"'
 if (/tupai|squirrel|chipmunk/.test(command)) set = '-filter:a "atempo=0.5,asetrate=65100"'
-if (/vgoth/.test(command)) set = '-filter_complex "afftfilt=real=\'hypot(re,im)*sin(0.1)\':imag=\'hypot(re,im)*cos(0.1)\':win_size=512:overlap=0.75,asetrate=22050"'
+if (/vgoth/.test(command)) set= '-af "asetrate=44100,aresample=44100,asetrate=22050,afftfilt=real=\'hypot(re,im)*sin(0.1)\':imag=\'hypot(re,im)*cos(0.1)\""'
 if (/audio/.test(mime)) {
 let ran = getRandom('.mp3')
 let filename = join(__dirname, '../tmp/' + ran)
