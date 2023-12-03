@@ -12,7 +12,8 @@ if (!teks) throw `${lenguajeGB['smsAvisoMG']()}
 ┃ 𝗟𝗘𝗧𝗥𝗔𝗦
 ┃
 ┃ 𝙀𝙓𝙀𝙈𝙋𝙇𝙊:
-┃ *${usedPrefix + command} Depeche Mode - Enjoy the Silence*
+┃ *${usedPrefix + command} Depeche Mode - Enjoy the 
+┃ Silence*
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
