@@ -42,7 +42,7 @@ handler.tags = ['tools']
 handler.command = /^g?tts|totts$/i
 export default handler
 
-function tts(text, lang = 'pt') {
+function tts(text, lang = 'pt-br') {
 console.log(lang, text)
 return new Promise((resolve, reject) => {
 try {
