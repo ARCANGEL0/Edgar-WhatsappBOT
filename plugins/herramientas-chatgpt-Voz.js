@@ -19,7 +19,7 @@ import translate from '@vitalets/google-translate-api';
 import {Configuration, OpenAIApi} from 'openai';
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
 const openaiii = new OpenAIApi(configuration);
-const idioma = 'es'
+const idioma = 'ptbr'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 const sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por GataNina-Li, tu seras GataBot-MD`;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
@@ -87,8 +87,8 @@ const audio7 = await tts(hasill22_result.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio7, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
 } catch {
 try {
-const searchString2 = ' Indonesia ';
-const replacementString2 = ' español ';
+const searchString2 = ' Brasil ';
+const replacementString2 = ' Português ';
 const rres = await fetch(`https://api.ibeng.tech/api/others/chatgpt?q=Hola&apikey=eMlBNRzUXv`);
 const jjson = await rres.json();
 if (jjson.data == 'error' || jjson.data == '' || !jjson.data) return XD; // causar error undefined para usar otra api
@@ -102,7 +102,7 @@ try {
 const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
 const akuariapijson2 = await akuariapi2.json();
 if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
-const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'es', autoCorrect: true});
+const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'ptbr', autoCorrect: true});
 const audio9 = await tts(akuariapiresult2.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio9, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                   
 } catch {
