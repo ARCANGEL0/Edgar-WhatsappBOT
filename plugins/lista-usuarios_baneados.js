@@ -1,12 +1,12 @@
 let handler = async (m, { conn, isOwner }) => {
 let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
 let caption = `
-*╭•·–| 👥 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝘽𝘼𝙉𝙄𝘿𝙊𝙎 |–·•*
+*╭•·–| 🥀🪦 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝘽𝘼𝙉𝙄𝘿𝙊𝙎 |–·•*
 │ *Total : ${users.length} Usuarios* ${users ? '\n' + users.map(([jid], i) => `
 │
 │ *${i + 1}.* ${conn.getName(jid) == undefined ? 'Sem Usuarios Banidos' : conn.getName(jid)}
 │ ${isOwner ? '@' + jid.split`@`[0] : jid}\n│ - - - - - - - - -`.trim()).join('\n') : ''}
-│ *Estes usuários são agora desterrados, banidos para além das fronteiras do contato com o bot. Seus suspiros virtuais ecoam silenciosamente, perdidos na escuridão digital, condenados ao exílio sem a graça da interação algorítmica.. 💀*
+ *Estes usuários são agora desterrados, banidos para além das fronteiras do contato com o bot. Condenados ao exílio sem a graça da interação algorítmica.. 💀*
 *╰•·–––––––––––––––––––·•*`.trim()
 
 await conn.reply(m.chat, caption, m, { mentions: await conn.parseMention(caption) })}
