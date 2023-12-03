@@ -4,10 +4,10 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀
 let anu = await ringtone(text)
 let result = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })}
-handler.command  = ['ringtone']
-handler.money = 100
-handler.level = 2
-handler.register = true
+handler.command  = ['toque|ringtone|notifcelular']
+handler.money = 0
+handler.level = 0
+handler.register = false
 export default handler
 async function ringtone(title) {
 return new Promise((resolve, reject) => {
