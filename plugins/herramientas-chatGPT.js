@@ -45,7 +45,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: 'user', content: pmpt });
+chgptdb.push({ role: sistema1, content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
 const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
 const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": sistema1, "content": sistema1 }, ...chgptdb, ]};
