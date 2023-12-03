@@ -23,7 +23,7 @@ let image = res.getRandom()
 let link = image
 conn.sendFile(m.chat, link, 'error.jpg', `*🕯️💀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}*`, m)
 }
-handler.help = ['gimage <query>', 'imagen <query>']
+handler.help = ['gimage <query>', 'image <query>']
 handler.tags = ['internet', 'tools']
 handler.command = /^(gimage|image|foto)$/i
 handler.exp = 0
