@@ -12,6 +12,16 @@ export default handler
 
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, command, usedPrefix }) => {
+  
+  async function ringtone(title) {
+return new Promise((resolve, reject) => {
+axios.get('https://meloboom.com/es/search/'+title).then((get) => {
+let $ = cheerio.load(get.data)
+let hasil = []
+$('#__next > main > section > div.jsx-2244708474.container > div > div > div > div:nth-child(4) > div > div > div > ul > li').each(function (a, b) {
+hasil.push({ title: $(b).find('h4').text(), source: 'https://meloboom.com/'+$(b).find('a').attr('href'), audio: $(b).find('audio').attr('src') })
+})
+resolve(hasil)})})}
 if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🥀 𝐌𝐞 𝐝𝐢𝐠𝐚 𝐪𝐮𝐚𝐢𝐬 𝐭𝐞𝐦𝐚𝐭𝐢𝐜𝐚𝐬 
@@ -27,15 +37,7 @@ if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}╭━━━�
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, m)
 try {
-  async function ringtone(title) {
-return new Promise((resolve, reject) => {
-axios.get('https://meloboom.com/es/search/'+title).then((get) => {
-let $ = cheerio.load(get.data)
-let hasil = []
-$('#__next > main > section > div.jsx-2244708474.container > div > div > div > div:nth-child(4) > div > div > div > ul > li').each(function (a, b) {
-hasil.push({ title: $(b).find('h4').text(), source: 'https://meloboom.com/'+$(b).find('a').attr('href'), audio: $(b).find('audio').attr('src') })
-})
-resolve(hasil)})})}
+  
   let anu = await ringtone(text)
 let result = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })}
@@ -65,8 +67,8 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 ], m,)  */
 
 }
-handler.help = ['tiktokstalk'].map(v => v + ' <username>')
-handler.tags = ['stalk']
+handler.help = ['toqur'].map(v => v + ' <audio>')
+handler.tags = ['internet']
 handler.command = /^(toque|notifcelular)$/i
 handler.exp = 0
 export default handler
