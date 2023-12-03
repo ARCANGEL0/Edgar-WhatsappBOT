@@ -47,12 +47,7 @@ function tts(text, lang = 'pt-br') {
     return new Promise((resolve, reject) => {
         try {
             // Using a male voice with 'say'
-            say.speak(text, 'Alex', 1.0, (err) => {
-                if (err) {
-                    reject(err);
-                } else {
-                    // Saving the speech as a temporary file (you can adjust the file format a nd path)
-                    let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
+    let filePath = join(__dirname, '../tmp', (1 * new Date) + '.wav');
                     
                     say.export(text, 'Alex', 1.0, filePath, (err) => {
                         if (err) {
@@ -62,8 +57,6 @@ function tts(text, lang = 'pt-br') {
                             unlinkSync(filePath);
                         }
                     });
-                }
-            });
         } catch (e) {
           console.log(e)
             reject(e);
