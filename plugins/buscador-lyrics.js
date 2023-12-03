@@ -4,8 +4,19 @@ import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 const teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : '';
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!teks) throw `${lenguajeGB['smsAvisoMG']()}𝗗𝗜𝗚𝗜𝗧𝗘 𝗢 𝗡𝗢𝗠𝗘 𝗗𝗘 𝗨𝗠𝗔 𝗠𝗨𝗦𝗜𝗖𝗔 𝗣𝗔𝗥𝗔 𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗔𝗦 𝗟𝗘𝗧𝗥𝗔𝗦
-\n𝙀𝙓𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Runaway*\n*`
+if (!teks) throw `${lenguajeGB['smsAvisoMG']()}
+╭━━━━━━━━━⬣
+┃
+┃ 📜🎵 𝗗𝗜𝗚𝗜𝗧𝗘 𝗢 𝗡𝗢𝗠𝗘 𝗗𝗘 𝗨𝗠𝗔 
+┃ 𝗠𝗨𝗦𝗜𝗖𝗔 𝗣𝗔𝗥𝗔 𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗔𝗦 
+┃ 𝗟𝗘𝗧𝗥𝗔𝗦
+┃
+┃ 𝙀𝙓𝙀𝙈𝙋𝙇𝙊:
+┃ *${usedPrefix + command} Depeche Mode - Enjoy the Silence*
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
 try {
 const result = await getTracks(teks);
 const lyrics = await find_lyrics(`${result[0].artist} ${result[0].title}`);
