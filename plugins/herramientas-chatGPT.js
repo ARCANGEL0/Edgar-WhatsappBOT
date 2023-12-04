@@ -1,164 +1,57 @@
-/* -------------------------------------------------------*/
-/* [❗]                      [❗]                      [❗] */
-/*                                                       */
-/*       |- [ ⚠ ] - CREDITOS DEL CODIGO - [ ⚠ ] -|      */
-/*     —◉ DESAROLLADO POR OTOSAKA:                       */
-/*     ◉ Otosaka (https://github.com/6otosaka9)          */
-/*                                                       */
-/*     —◉ FT:                                            */
-/*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */
-/*                                                       */
-/* [❗]                      [❗]                      [❗] */
-/* -------------------------------------------------------*/
-import fetch from 'node-fetch';
-import gtts from 'node-gtts';
-import {readFileSync, unlinkSync} from 'fs';
-import {join} from 'path';
-import axios from 'axios';
-import translate from '@vitalets/google-translate-api';
-import {Configuration, OpenAIApi} from 'openai';
-const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
-const openaiii = new OpenAIApi(configuration);
-const idioma = 'pt-br'
-//const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
+let handler = async (m, { conn, command, usedPrefix }) => {
+let picture = './media/menus/Menu1.jpg'
+let name = await conn.getName(m.sender)
+let _uptime = process.uptime() * 1000
+let _muptime
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 1000) }) * 1000}
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let uptime = clockString(_uptime)
+let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
+┃🐈‍⬛ *Olá!* ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃𓃠 *Versao de ${gt}*
+┃➥ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ღ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ღ *Ativo Durante* 
+┃➥ ${uptime}
+┃ღ *Usuario(s) | Users* 
+┃➥ ${Object.keys(global.db.data.users).length} 
+┃ღ *Chat(s) Proibido(s)*
+┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┃ღ *Usuario(s) Proibido(s)*
+┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+╰━━━━━━━━━━━━━━━━━━⬣`
+await conn.sendFile(m.chat, picture, 'gata.mp4', estado, fkontak)
+/*let estado =`
+╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
+┃💗 *¡Hola | Hi!* ${name}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃𓃠 *Versión de ${gt}*
+┃➥ ${vs}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ღ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃ღ *Activo Durante | Active During* 
+┃➥ ${uptime}
+┃ღ *Usuario(s) | Users* 
+┃➥ ${Object.keys(global.db.data.users).length} 
+┃ღ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
+┃ღ *Usuario(s) Prohibido(s) | Prohibited Urs*
+┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
+╰━━━━━━━━━━━━━━━━━━⬣`.trim()
 
-let pp = './media/menus/Menu3.jpg'
-const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo
-`
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `*${lenguajeGB['smsAvisoMG']()}{
-╭━[𝗚𝗣𝗧]━━━━━━━⬣
-🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
-
-📜 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
-
-${usedPrefix + command} Quem foi Franz Kafka
-${usedPrefix + command} Codigo em JS para um jogo da velha
-
-╰━━━━━━━━━━━━━━━━━━⬣` }
-try {
-  await conn.sendFile(m.chat, pp, 'gata.mp4', "teste caralho",fkontak)
-}
-catch {
-  await conn.sendFile(m.chat, pp, 'gata.mp4', "teste erro",fkontak)
-}
-
-/*
-try {
-conn.sendPresenceUpdate('typing', m.chat);
-
-
-async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
-let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: 'user', content: texto });
-const url = "https://api.openai.com/v1/chat/completions";
-const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo","temperature":0.3,"max_tokens":4057, "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb, ]};
-const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
-const result = await response.json();
-const finalResponse = result.choices[0].message.content;
-return finalResponse;
+conn.sendHydrated(m.chat, estado, `𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼\n${asistencia}\n\n` + wm, picture, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪', '.allmenu'],
+['𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙', '/ping'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪', '#menu']
+], m,)}*/
 }
 
-
-
-let respuesta = await getOpenAIChatCompletion(text);
-if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,fkontak)
-await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,fkontak)
-
-
-}
-
-catch {
-try {
-  let chgptdb = global.chatgpt.data.users[m.sender];
- 
- const botIA222 = await openaiii.createCompletion({
-  model: 'text-davinci-003',
-  prompt: text,
-  temperature: 0.3,
-  max_tokens: 4097,
-  messages: [
-    {"role": "system", "content": sistema1 },
-    {"role": "user", "content": chgptdb},
-  ],
-  top_p: 1,
-  frequency_penalty: 0.2,
-  presence_penalty: 0
-})
-if(botIA222.data.choices[0].text == 'error' || '' || !botIA222.data.choices[0].text){ return XD;
-}
-await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,fkontak)
-} 
-catch {
-try {
-const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${text}&symsg=${sistema1}&apikey=XlwAnX8d`);
-const fgjson1 = await fgapi1.json();
-if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
-
-await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,fkontak)
-
-} catch {
-try {
-const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
-const vihangaytjson1 = await vihangayt1.json();
-if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,fkontak)
-
-} catch {
-try {
-const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
-const vihangaytjson2 = await vihangayt2.json();
-if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,fkontak)
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson2.data,fkontak)
-
-} catch {
-try {
-const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
-const vihangaytjson3 = await vihangayt3.json();
-if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangayt3.data,fkontak)
-} catch {
-try {
-const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
-const hasill22 = await tioress22.json();
-if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
-const hasill22_result = await translate(`${hasill22.result}`, {to: idioma, autoCorrect: true});
-await conn.sendFile(m.chat, pp, 'gata.mp4',hasill22_result,fkontak)
-
-} catch {
-try {
-const searchString2 = ' Brasil ';
-const replacementString2 = ' Português ';
-const rres = await fetch(`https://api.ibeng.tech/api/others/chatgpt?q=Hola&apikey=eMlBNRzUXv`);
-const jjson = await rres.json();
-if (jjson.data == 'error' || jjson.data == '' || !jjson.data) return XD; // causar error undefined para usar otra api
-const hahaha = await translate(`${jjson.data}`, {to: idioma, autoCorrect: true});
-const sextS = hahaha.text;
-const replacedText = sextS.replace(searchString2, replacementString2).trim();
-
-await conn.sendFile(m.chat, pp, 'gata.mp4',replacedText,fkontak)
- 
-} catch {
-try {
-const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
-const akuariapijson2 = await akuariapi2.json();
-if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
-const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'pt-br', autoCorrect: true});
-
-await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult2,fkontak)
-           
-} catch {
-try {
-const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
-const akuariapijson1 = await akuariapi1.json();
-if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
-const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br', autoCorrect: true});
-
-await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,fkontak)                     
-} catch {
-}}}}}}}}}}} */
 
 handler.command = /^(openai|gpt|edgar|alangpt)$/i;
 export default handler;
