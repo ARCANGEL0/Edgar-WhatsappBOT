@@ -16,10 +16,10 @@ const configuration = new Configuration({organization: global.openai_org_id, api
  
  
 let handler = async (m, { conn, command, usedPrefix }) => {
-let picture = './media/menus/Menu1.jpg'
+let picture = './media/menus/Menu3.jpg'
 
 
-await conn.sendFile(m.chat, picture, 'gata.mp4', "testepoha", m)
+await conn.sendFile(m.chat, picture, 'gata.mp4', "pinto", m)
 
 }
 
