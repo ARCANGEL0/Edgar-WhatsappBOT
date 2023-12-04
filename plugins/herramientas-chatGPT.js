@@ -3,22 +3,19 @@ import {readFileSync, unlinkSync} from 'fs';
 import {join} from 'path';
 import axios from 'axios';
 import translate from '@vitalets/google-translate-api';
-import {Configuration, OpenAIApi} from 'openai';
-const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
-
 
 
  
   
  let pp = imagen4
-  const openaiii = new OpenAIApi(configuration);
+  
   const idioma = 'pt-br'
   
 
  
  
 let handler = async (m, { conn,text,command, usedPrefix }) => {
-let sistema1 = 'Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo'
+
 if (!text) {
 throw `╭━[𝗚𝗣𝗧]━━━━━━━⬣
 🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
@@ -33,23 +30,43 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
-async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
-let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: "user" , content: texto });
-const url = "https://api.openai.com/v1/chat/completions";
-const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo","temperature":0.8,"max_tokens":600, "messages": [
-  { "role": "system", "content": sistema1 }, ...chgptdb, ]};
-const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
-const result = await response.json();
-const finalResponse = result.choices[0].message.content;
-return finalResponse;
-};
-let respuesta = await getOpenAIChatCompletion(text);
-if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
+async function obterRespostaDoChatGPT(text) {
+  const apiUrl = 'https://api.openai.com/v1/chat/completions';  // Substitua pela URL correta da API do ChatGPT
+  const apiKey = global.openai_key;  // Substitua pela sua chave API do OpenAI
+
+  const prompt = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo`;
+
+  const requestBody = {
+    model: 'gpt-3.5-turbo',
+    messages: [
+      { role: 'system', content: prompt },
+      { role: 'user', content: text },
+    ],
+  };
+
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+  };
+
+  try {
+    const response = await axios.post(apiUrl, requestBody, config);
+    const respostagpt = response.data.choices[0].message.content;
+    return respostagpt;
+  } catch (error) {
+    console.error('Erro ao obter resposta do ChatGPT:', error.message);
+    throw error;
+  }
+}
+
+// Exemplo de uso:
+
+const respostagpt = await obterRespostaDoChatGPT(text);
+console.log(resposta);
+await conn.sendFile(m.chat, pp, 'gata.mp4', respostagpt,m)
 
 
 
