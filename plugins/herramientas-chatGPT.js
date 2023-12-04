@@ -28,16 +28,14 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣`  
 }
 
-try {
+/*try {
 conn.sendPresenceUpdate('typing', m.chat);
 
 async function obterRespostaDoChatGPT(text) {
   const apiUrl = 'https://api.openai.com/v1/chat/completions';  // Substitua pela URL correta da API do ChatGPT
   const apiKey = process.env.OPENAI_API_KEY;  // Retrieve API key from environment variable
 
-  if (!apiKey) {
-    throw new Error('API key not found in environment variable OPENAI_API_KEY');
-  }
+  
 
   const prompt = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo`;
 
@@ -74,11 +72,11 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respostagpt,m)
 
 
 
-}
+}*/
 catch(e){
   console.log(e)
     await conn.sendFile(m.chat, pp, 'gata.mp4', 
-    openai_key,m)
+    process.env.OPEN_AI_KEY,m)
 }
 
 }
