@@ -21,7 +21,21 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-let pp = imagen6
+const fkontak = {
+        "key": {
+        "participants":"0@s.whatsapp.net",
+            "remoteJid": "status@broadcast",
+            "fromMe": false,
+            "id": "Halo"    
+        }, 
+        "message": {
+            "contactMessage": {
+                "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+            }
+        }, 
+        "participant": "0@s.whatsapp.net"
+    } 
+let pp = './media/menus/Menu3.jpg'
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo
 `
 
@@ -59,8 +73,8 @@ return finalResponse;
 
 
 let respuesta = await getOpenAIChatCompletion(text);
-if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
-await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
+if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,fkontak)
 
 
 }
@@ -84,7 +98,7 @@ try {
 })
 if(botIA222.data.choices[0].text == 'error' || '' || !botIA222.data.choices[0].text){ return XD;
 }
-await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,fkontak)
 } 
 catch {
 try {
@@ -92,35 +106,35 @@ const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${t
 const fgjson1 = await fgapi1.json();
 if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4', fgjson1.result,fkontak)
 
 } catch {
 try {
 const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
 const vihangaytjson1 = await vihangayt1.json();
 if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,fkontak)
 
 } catch {
 try {
 const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
 const vihangaytjson2 = await vihangayt2.json();
-if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,m)
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson2.data,m)
+if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson1.data,fkontak)
+await conn.sendFile(m.chat, pp, 'gata.mp4',vihangaytjson2.data,fkontak)
 
 } catch {
 try {
 const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
 const vihangaytjson3 = await vihangayt3.json();
 if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
-await conn.sendFile(m.chat, pp, 'gata.mp4',vihangayt3.data,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4',vihangayt3.data,fkontak)
 } catch {
 try {
 const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
 const hasill22 = await tioress22.json();
 if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
 const hasill22_result = await translate(`${hasill22.result}`, {to: idioma, autoCorrect: true});
-await conn.sendFile(m.chat, pp, 'gata.mp4',hasill22_result,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4',hasill22_result,fkontak)
 
 } catch {
 try {
@@ -133,7 +147,7 @@ const hahaha = await translate(`${jjson.data}`, {to: idioma, autoCorrect: true})
 const sextS = hahaha.text;
 const replacedText = sextS.replace(searchString2, replacementString2).trim();
 
-await conn.sendFile(m.chat, pp, 'gata.mp4',replacedText,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4',replacedText,fkontak)
  
 } catch {
 try {
@@ -142,7 +156,7 @@ const akuariapijson2 = await akuariapi2.json();
 if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
 const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'pt-br', autoCorrect: true});
 
-await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult2,m)
+await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult2,fkontak)
            
 } catch {
 try {
@@ -151,7 +165,7 @@ const akuariapijson1 = await akuariapi1.json();
 if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
 const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br', autoCorrect: true});
 
-await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,m)                     
+await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,fkontak)                     
 } catch {
 }}}}}}}}}}} 
 
