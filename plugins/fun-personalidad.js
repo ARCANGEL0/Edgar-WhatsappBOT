@@ -4,7 +4,7 @@ let handler = async (m, { conn, command, text }) => {
   let personalidad = `
 ┏━━°❀❬ *PERSONALIDADE}* ❭❀°━━┓
 *┃*
-*┃• Nome* : ${text ? text : m.sender}
+*┃• Nome* : ${text ? text : m.sender.name}
 *┃• Tipo MBTI* : ${pickRandom(['ISTJ','ESTP','INFJ','ENFP','INTP','ESFJ','ISFP','ENTJ','ISTP','INFP','ESTJ','ESFP','ENFJ','INTJ','ISFJ','ENTP'])}
 *┃• Atividades Frequentes* : ${pickRandom(['Lendo Livros','Praticando Esportes','Explorando Novos Lugares','Assistindo Filmes','Desenvolvendo Habilidades Artísticas','Socializando em Festas','Jogando Videogames','Meditando','Trabalhando em Projetos Pessoais','Conversando com Amigos','Aproveitando a Natureza','Participando de Eventos Culturais','Liderando Equipes','Ajudando em Organizações Voluntárias','Inovando em Projetos Tecnológicos','Curtindo a Solidão'])}
 *┃• Está Sempre* : ${pickRandom(['Planejando','Aventurando-se','Refletindo','Criando','Desafiando Normas','Cuidando dos Outros','Se Divertindo','Explorando Oportunidades','Aprendendo Constantemente','Procrastinando','Conectando-se com Pessoas','Focando em Metas','Tomando Decisões Rápidas','Expressando Criatividade','Observando ao Redor'])}
