@@ -23,7 +23,6 @@ const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
 🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
@@ -35,9 +34,11 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
-conn.sendPresenceUpdate('recording', m.chat);
+conn.sendPresenceUpdate('typing', m.chat);
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
+if (!openaiAPIKey) {throw 'no api key'}
+
 let chgptdb = global.chatgpt.data.users[m.sender];
 chgptdb.push({ role: 'user', content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
@@ -48,9 +49,7 @@ const result = await response.json();
 const finalResponse = result.choices[0].message.content;
 return finalResponse;
 };
-let respuesta = await getOpenAIChatCompletion(text);
-if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
-const audio1 = await tts(respuesta, idioma);
+let respuesta = await getOpenAIChatCompletion(text); 
 await conn.sendMessage(m.chat, respuesta, {quoted: m});
 } catch (e){console.log(e)} }
 /*catch {
