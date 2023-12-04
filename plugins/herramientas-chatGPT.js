@@ -20,6 +20,7 @@ import {Configuration, OpenAIApi} from 'openai';
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
+let pp = imagen6
 let chgptdb = []
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
