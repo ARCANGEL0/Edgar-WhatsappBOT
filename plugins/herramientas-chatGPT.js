@@ -154,7 +154,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,m)                     
 } catch {
 }}}}}}}}}}} 
-}
+
 handler.command = /^(openai|gpt|edgar|iapoe)$/i;
 export default handler;
 
