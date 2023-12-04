@@ -56,16 +56,20 @@ let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
-} catch {
+} 
+catch{
+  await conn.sendFile(m.chat, pp, 'gata.mp4',"error",m)
+}
+/*
+catch {
 try {
   let chgptdb = global.chatgpt.data.users[m.sender];
   
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'],messages: [{role: "system", content: sistema1 }, ...chgptdb, ]}, top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
 if (botIA222.data.choices[0].text == 'error' ||  == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
 await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
-
-
-} catch {
+} 
+catch {
 try {
 const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${text}&symsg=${sistema1}&apikey=XlwAnX8d`);
 const fgjson1 = await fgapi1.json();
@@ -132,21 +136,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 
 await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,m)                     
 } catch {
-}}}}}}}}}}}
+}}}}}}}}}}} */
 handler.command = /^(openai|gpt|edgar|iapoe)$/i;
 export default handler;
 
-async function tts(text = 'error', lang = 'es') {
-return new Promise((resolve, reject) => {
-try {
-const tts = gtts(lang);
-const filePath = join(global.__dirname(import.meta.url), '../tmp', (1 * new Date) + '.wav');
-tts.save(filePath, text, () => {
-resolve(readFileSync(filePath));
-unlinkSync(filePath);
-});
-} catch (e) {
-reject(e);
-}
-});
-}
