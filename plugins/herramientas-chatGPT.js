@@ -52,6 +52,8 @@ ${usedPrefix + command} Quem foi Franz Kafka
 ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
+await conn.sendFile(m.chat, pp, 'gata.mp4', "teste caralho",fkontak)
+/*
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
@@ -67,8 +69,7 @@ const response = await fetch(url, {method: "POST", headers: headers, body: JSON.
 const result = await response.json();
 const finalResponse = result.choices[0].message.content;
 return finalResponse;
-};
-
+}
 
 
 
@@ -167,7 +168,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 
 await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,fkontak)                     
 } catch {
-}}}}}}}}}}} 
+}}}}}}}}}}} */
 
 handler.command = /^(openai|gpt|edgar|iapoe)$/i;
 export default handler;
