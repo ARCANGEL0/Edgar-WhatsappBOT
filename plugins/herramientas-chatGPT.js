@@ -21,25 +21,12 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-const fkontak = {
-        "key": {
-        "participants":"0@s.whatsapp.net",
-            "remoteJid": "status@broadcast",
-            "fromMe": false,
-            "id": "Halo"    
-        }, 
-        "message": {
-            "contactMessage": {
-                "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-            }
-        }, 
-        "participant": "0@s.whatsapp.net"
-    } 
+
 let pp = './media/menus/Menu3.jpg'
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo
 `
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()}{
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
 🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
 
@@ -48,8 +35,14 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ${usedPrefix + command} Quem foi Franz Kafka
 ${usedPrefix + command} Codigo em JS para um jogo da velha
 
-╰━━━━━━━━━━━━━━━━━━⬣` 
-await conn.sendFile(m.chat, pp, 'gata.mp4', "teste caralho",fkontak)
+╰━━━━━━━━━━━━━━━━━━⬣` }
+try {
+  await conn.sendFile(m.chat, pp, 'gata.mp4', "teste caralho",fkontak)
+}
+catch {
+  await conn.sendFile(m.chat, pp, 'gata.mp4', "teste erro",fkontak)
+}
+
 /*
 try {
 conn.sendPresenceUpdate('typing', m.chat);
@@ -166,7 +159,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,fkontak)                     
 } catch {
 }}}}}}}}}}} */
-}
-handler.command = /^(openai|gpt|edgar|iapoe)$/i;
+
+handler.command = /^(openai|gpt|edgar|alangpt)$/i;
 export default handler;
 
