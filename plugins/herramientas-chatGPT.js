@@ -42,7 +42,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
-async function getOpenAIChatCompletion(texto) {
+/* async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
 chgptdb.push({ role: texto, content: texto });
@@ -56,10 +56,31 @@ return finalResponse;
 };
 let respuesta = await getOpenAIChatCompletion(pmpt);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
+*/
+async function askChatGPT(from, q) {
+  context[from] === undefined
+    ? (context[from] = "Human: " + q)
+    : (context[from] = context[from] + "\n Human:" + q);
+  const completion = await openai.createCompletion({
+    model: "text-davinci-003",
+    temperature: 0.9,
+    max_tokens: 550,
+    top_p: 1,
+    frequency_penalty: 0,
+    presence_penalty: 0.6,
+    prompt: context[from],
+    stop: [" Human:", " AI:"],
+  });
+  console.log("Q: ", context[from]);
+  const resp = completion.data.choices[0].text;
+  //   console.log(resp.toString());
+  return resp;
+}
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
+const datas= askChatGPT(sistema1,text)
+await conn.sendFile(m.chat, pp, 'gata.mp4', datas,m)
 
-
+/*
 
 }
  catch {
@@ -138,7 +159,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
-}}}}}}}}}}} 
+}}}}}}}}}}} */
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
 
