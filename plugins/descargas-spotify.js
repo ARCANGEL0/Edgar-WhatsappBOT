@@ -80,7 +80,7 @@ catch(e){
   
 }
 
-}
+
 handler.help = ['spotify']
 handler.tags = ['internet']
 handler.command = /^spotify|spotdl|music$/i
