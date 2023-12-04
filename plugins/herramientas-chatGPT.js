@@ -73,7 +73,6 @@ const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan P
 
 let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
-const audio1 = await tts(respuesta, idioma);
 await conn.sendMessage(m.chat, {audio: audio1, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
 } catch {
 try {
