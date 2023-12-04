@@ -48,7 +48,7 @@ let chgptdb = global.chatgpt.data.users[m.sender];
 chgptdb.push({ role: texto, content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
 const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo","temperature":0.8, "messages": [{ "role": "syste.", "content": texto }, ...chgptdb, ]};
+const data = { "model": "gpt-3.5-turbo","temperature":0.8,"max_tokens":600, "messages": [{ "role": "syste.", "content": texto }, ...chgptdb, ]};
 const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
 const result = await response.json();
 const finalResponse = result.choices[0].message.content;
