@@ -23,7 +23,7 @@ ${text}
 `
  
  
-let handler = async (m, { conn, command, usedPrefix },text) => {
+let handler = async (m, { conn, text,command, usedPrefix }) => {
 
 /*if (!text) {
 throw `╭━[𝗚𝗣𝗧]━━━━━━━⬣
