@@ -1,6 +1,5 @@
 let handler = async (m, { conn, command, text }) => {
 	
-    if (!text) return conn.reply(m.chat, 'Ingrese un nombre?', m)
 	
   let personalidad = `
 ┏━━°❀❬ *PERSONALIDADE}* ❭❀°━━┓
