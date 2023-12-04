@@ -40,6 +40,8 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
+
+/*
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
@@ -52,10 +54,15 @@ const result = await response.json();
 const finalResponse = result.choices[0].message.content;
 return finalResponse;
 };
+
+
+
+
 let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
-
+*/
+await conn.sendFile(m.chat, pp, 'gata.mp4',"vai tomar no cu",m)
 } 
 catch{
   await conn.sendFile(m.chat, pp, 'gata.mp4',"error",m)
