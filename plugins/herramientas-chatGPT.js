@@ -4,7 +4,7 @@ import {join} from 'path';
 import axios from 'axios';
 import translate from '@vitalets/google-translate-api';
 
-
+require('dotenv').config();  // Import dotenv and configure Iterator
  
   
  let pp = imagen4
