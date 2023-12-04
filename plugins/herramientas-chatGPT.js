@@ -42,13 +42,13 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
-/* async function getOpenAIChatCompletion(texto) {
+async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
 chgptdb.push({ role: texto, content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
 const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": texto, "content": texto }, ...chgptdb, ]};
+const data = { "model": "gpt-3.5-turbo","temperature":0.8, "messages": [{ "role": "syste.", "content": texto }, ...chgptdb, ]};
 const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
 const result = await response.json();
 const finalResponse = result.choices[0].message.content;
@@ -56,29 +56,8 @@ return finalResponse;
 };
 let respuesta = await getOpenAIChatCompletion(pmpt);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
-*/
-async function askChatGPT(from, q) {
-  context[from] === undefined
-    ? (context[from] = "Human: " + q)
-    : (context[from] = context[from] + "\n Human:" + q);
-  const completion = await openai.createCompletion({
-    model: "text-davinci-003",
-    temperature: 0.9,
-    max_tokens: 550,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0.6,
-    prompt: context[from],
-    stop: [" Human:", " AI:"],
-  });
-  console.log("Q: ", context[from]);
-  const resp = completion.data.choices[0].text;
-  //   console.log(resp.toString());
-  return resp;
-}
 
-
-await conn.sendFile(m.chat, pp, 'gata.mp4', "test",m)
+await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
 /*
 
