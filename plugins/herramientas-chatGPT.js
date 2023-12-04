@@ -75,6 +75,7 @@ let respuesta = await getOpenAIChatCompletion(text);
 await conn.sendMessage(m.chat,respuesta, {quoted: m});
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
 } 
+catch (e){ console.log(e)}
 /*
 catch {
 try {
