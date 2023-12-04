@@ -9,7 +9,7 @@ let str = `💖𝐎𝐥𝐚! 𝐀𝐠𝐫𝐚𝐝𝐞𝐜𝐨 𝐞𝐬𝐭𝐚�
 𝙋𝙖𝙮𝙋𝙖𝙡 - 
 *https://paypal.me/henryarcangelo*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`
-await conn.sendFile(m.chat, pp, 'gata.mp4', str, fkontak)
+await conn.sendFile(m.chat, str, 'gata.mp4', pp, fkontak)
 }
 /*conn.sendHydrated(m.chat, str, `𝙂𝘼𝙏𝘼 𝘿𝙄𝙊𝙎 - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼\n${asistencia}\n\n` + wm, media, 'https://paypal.me/OficialGD', '🎁 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', null, null, [
 ['𝙂𝙧𝙪𝙥𝙤𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝙂𝙧𝙤𝙪𝙥𝙨 🔰', '.grupos'],
