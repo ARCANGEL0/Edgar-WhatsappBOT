@@ -10,7 +10,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 
  
   
- let pp = './media/menus/Menu1.jpg'
+ let pp = imagen4
   const openaiii = new OpenAIApi(configuration);
   const idioma = 'pt-br'
   
