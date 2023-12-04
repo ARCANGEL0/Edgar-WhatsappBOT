@@ -45,11 +45,10 @@ conn.sendPresenceUpdate('typing', m.chat);
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: "user" , content: texto });
+chgptdb.push({ role: texto, content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
 const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo","temperature":0.8,"max_tokens":600, "messages": [
-  { "role": "system", "content": sistema1 }, ...chgptdb, ]};
+const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": texto, "content": texto }, ...chgptdb, ]};
 const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
 const result = await response.json();
 const finalResponse = result.choices[0].message.content;
@@ -142,4 +141,3 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
 }}}}}}}}}}} 
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
-
