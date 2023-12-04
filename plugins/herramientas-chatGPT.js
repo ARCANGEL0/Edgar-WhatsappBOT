@@ -77,8 +77,8 @@ async function askChatGPT(from, q) {
   return resp;
 }
 
-const datas= askChatGPT(sistema1,text)
-await conn.sendFile(m.chat, pp, 'gata.mp4', datas,m)
+
+await conn.sendFile(m.chat, pp, 'gata.mp4', "test",m)
 
 /*
 
