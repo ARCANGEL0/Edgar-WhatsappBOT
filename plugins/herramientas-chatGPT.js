@@ -68,8 +68,22 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 catch {
 try {
   let chgptdb = global.chatgpt.data.users[m.sender];
-  
-const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'],messages: [{"role": "system", "content": sistema1 }, ...chgptdb, ]}, top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
+ 
+ const botIA222 = await openaiii.createCompletion({
+  model: 'text-davinci-003',
+  prompt: text,
+  temperature: 0.3,
+  max_tokens: 4097,
+  stop: ['Ai:', 'Human:'],
+  messages: [
+    {"role": "system", "content": sistema1 },
+    {"role": "user", "content": chgptdb},
+  ],
+  top_p: 1,
+  frequency_penalty: 0.2,
+  presence_penalty: 0
+});
+
 if (botIA222.data.choices[0].text == 'error' ||  == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
 await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
 } 
