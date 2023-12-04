@@ -41,7 +41,7 @@ try {
   let anu = await ringtone(text)
 let result = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })}
-} catch (e) {
+catch (e) {
 throw `${lenguajeGB['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
@@ -67,7 +67,7 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 ], m,)  */
 
 }
-handler.help = ['toqur'].map(v => v + ' <audio>')
+handler.help = ['toque'].map(v => v + ' <audio>')
 handler.tags = ['internet']
 handler.command = /^(toque|notifcelular)$/i
 handler.exp = 0
