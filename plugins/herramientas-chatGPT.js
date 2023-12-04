@@ -17,7 +17,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 
  
  
-let handler = async (m, { conn,text command, usedPrefix }) => {
+let handler = async (m, { conn,text,command, usedPrefix }) => {
 let sistema1 = 'Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo'
 if (!text) {
 throw `╭━[𝗚𝗣𝗧]━━━━━━━⬣
@@ -31,21 +31,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣`  
 }
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', "pinto", m)
 
-}
-
-
-handler.command = /^(openai|gpt|edgar|alangpt)$/i;
-export default handler;
-
-/* 
-
-
-  
-  
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
@@ -147,6 +133,21 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
 }}}}}}}}}}} 
+
+}
+
+
+handler.command = /^(openai|gpt|edgar|alangpt)$/i;
+export default handler;
+
+/* 
+
+
+  
+  
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
+
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
 */
