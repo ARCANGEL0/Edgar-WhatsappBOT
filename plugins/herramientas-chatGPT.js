@@ -47,9 +47,8 @@ const data = {
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
-    // Make a request to the OpenAI GPT-3 API
-    const response = await openai.complete(data);
-
+    // Make a request to the OpenAI GPT-3 APIconst response = await openai.createCompletion(data);
+const response = await openai.createCompletion(data);
     // Extract and send the AI's reply
     const aiReply = response.data.choices[0].message.content;
     conn.reply(m.chat, aiReply, m);
