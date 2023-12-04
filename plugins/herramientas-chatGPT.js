@@ -39,7 +39,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
-conn.sendPresenceUpdate('recording', m.chat);
+conn.sendPresenceUpdate('typing', m.chat);
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
