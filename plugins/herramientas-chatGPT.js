@@ -37,7 +37,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 
-chgptdb.push({ role: 'user', content: texto });
+chgptdb.push({ role: 'user', content: text });
 const data = {
     "model": "gpt-3.5-turbo",
     "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb],
