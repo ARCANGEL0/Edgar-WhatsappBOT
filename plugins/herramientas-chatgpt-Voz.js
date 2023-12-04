@@ -21,7 +21,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
+
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
@@ -36,18 +36,41 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
 conn.sendPresenceUpdate('recording', m.chat);
+
+
+
+
 async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
-let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: 'user', content: texto });
-const url = "https://api.openai.com/v1/chat/completions";
-const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb, ]};
-const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
-const result = await response.json();
-const finalResponse = result.choices[0].message.content;
-return finalResponse;
-};
+  const openaiAPIKey = global.openai_key;
+
+const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
+  // Ensure proper initialization of chgptdb
+  const chgptdb = global.chatgpt.data.users[m.sender] || [];
+
+
+
+  chgptdb.push({ role: 'user', content: texto });
+
+  const url = "https://api.openai.com/v1/chat/completions";
+  const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
+  
+  const data = {
+    "model": "gpt-3.5-turbo",
+    "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb],
+  };
+
+  const response = await fetch(url, { method: "POST", headers: headers, body: JSON.stringify(data) });
+  const result = await response.json();
+
+  // Ensure result.choices is defined before accessing its properties
+  const finalResponse = result.choices && result.choices.length > 0 ? result.choices[0].message.content : 'No response';
+
+  return finalResponse;
+}
+
+
+
+
 let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
 const audio1 = await tts(respuesta, idioma);
