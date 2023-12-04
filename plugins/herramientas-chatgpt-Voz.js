@@ -37,7 +37,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 try {
 conn.sendPresenceUpdate('recording', m.chat);
 async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
+const openaiAPIKey = openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
 chgptdb.push({ role: 'user', content: texto });
 const url = "https://api.openai.com/v1/chat/completions";
