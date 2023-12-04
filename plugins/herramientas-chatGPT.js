@@ -52,7 +52,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 
 
 
-  await conn.sendMessage(m.chat,pp,"error.mp4","test",m)
+  await m.reply("teste")
 
   
 }
