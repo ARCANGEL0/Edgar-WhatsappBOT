@@ -60,7 +60,7 @@ if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar 
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
-/*
+
 
 }
  catch {
@@ -139,7 +139,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
-}}}}}}}}}}} */
+}}}}}}}}}}} 
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
 
