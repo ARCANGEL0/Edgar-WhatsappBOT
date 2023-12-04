@@ -61,20 +61,20 @@ const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan P
 
   const response = await fetch(url, { method: "POST", headers: headers, body: JSON.stringify(data) });
   const result = await response.json();
-
-  // Ensure result.choices is defined before accessing its properties
+// Check if result.choices is defined and not empty
   const finalResponse = result.choices && result.choices.length > 0 ? result.choices[0].message.content : 'No response';
 
   return finalResponse;
 }
 
-
-
-
 let respuesta = await getOpenAIChatCompletion(text);
-await conn.sendMessage(m.chat,respuesta, {quoted: m});
-if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
-} 
+
+// Handle empty or undefined response
+if (!respuesta) {
+  return XD; // Cause an undefined error to use another API
+}
+
+
 catch (e){ console.log(e)}
 /*
 catch {
