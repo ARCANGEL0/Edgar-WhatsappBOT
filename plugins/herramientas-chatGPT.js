@@ -31,7 +31,21 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣`  
 }
 
+await conn.sendFile(m.chat, pp, 'gata.mp4', "poha", m)
 
+}
+
+
+handler.command = /^(openai|gpt|edgar|alangpt)$/i;
+export default handler;
+
+/* 
+
+
+  
+  
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
 try {
 conn.sendPresenceUpdate('typing', m.chat);
@@ -133,21 +147,6 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', akuariapiresult1.text,m)
                       
 } catch {
 }}}}}}}}}}} 
-
-}
-
-
-handler.command = /^(openai|gpt|edgar|alangpt)$/i;
-export default handler;
-
-/* 
-
-
-  
-  
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (usedPrefix == 'a' || usedPrefix == 'A') return;
-
 handler.command = /^(openai|chatgpt|gpt|poeai|edgar)$/i;
 export default handler;
 */
