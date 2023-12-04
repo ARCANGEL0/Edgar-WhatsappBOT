@@ -1,6 +1,8 @@
 let handler = async (m, { conn, command, text }) => {
 	
-	console.log(m.sender)
+	console.log(JSON.stringify(m.sender))
+	
+	
   let personalidad = `
 ┏━━°❀❬ *PERSONALIDADE}* ❭❀°━━┓
 *┃*
