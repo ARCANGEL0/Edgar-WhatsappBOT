@@ -137,6 +137,8 @@ let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.ge
 ┃🛰️➺ _${usedPrefix}toimg | img | jpg *figurinha*_
 ┃🛰️➺ _${usedPrefix}toanime  *foto*_
 ┃🛰️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
+┃🛰️➺ _${usedPrefix}s *imagem pra figurinha*_
+┃🛰️➺ _${usedPrefix}topdf *imagem*_
 ┃🛰️➺ _${usedPrefix}tovn | vn *video o audio*_
 ┃🛰️➺ _${usedPrefix}tovideo *audio*_
 ┃🛰️➺ _${usedPrefix}tourl *video, imagen*_
