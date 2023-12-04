@@ -47,10 +47,38 @@ const data = {
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
-    // Make a request to the OpenAI GPT-3 APIconst response = await openai.createCompletion(data);
-const response = await openai.createCompletion(data);
-    // Extract and send the AI's reply
-    const aiReply = response.data.choices[0].message.content;
+async function requestToChatGPT(inputText) {
+
+    
+
+
+
+  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
+  const endpoint = "https://api.naga.ac/v1/chat/completions"
+  // ////
+ const requestData = {
+  model: 'gpt-3.5-turbo',
+  messages: [
+    { role: 'system', content: sistema1 },
+    ...chgptdb
+  ],
+}; 
+// frtch c
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { 
+    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
+    
+  },
+  body: JSON.stringify(requestData), 
+});
+
+const result = await response.json();
+console.log(result.choices[0].message.content);
+  return result.choices[0].message.content
+    
+}
+let aiReply = await requestToChatGPT(text)
     conn.reply(m.chat, aiReply, m);
   }
   
