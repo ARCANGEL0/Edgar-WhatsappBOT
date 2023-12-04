@@ -46,7 +46,7 @@ const result = await response.json();
 const finalResponse = result.choices[0].message.content;
 return finalResponse;
 };
-let respuesta = await getOpenAIChatCompletion(pmpt);
+let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
 
 await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
