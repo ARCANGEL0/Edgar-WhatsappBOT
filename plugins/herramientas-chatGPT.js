@@ -47,17 +47,19 @@ const data = {
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
+    // Make a request to the OpenAI GPT-3 API
+    const response = await openai.complete(data);
 
-
-
-
-
-  await m.reply("teste")
-
+    // Extract and send the AI's reply
+    const aiReply = response.data.choices[0].message.content;
+    conn.reply(m.chat, aiReply, m);
+  }
   
-}
-
-catch (e){ console.log(e)}
+  catch (error) {
+    console.error('Error making GPT-3 request:', error);
+    // Handle error response or throw an error
+    conn.reply(m.chat, 'Error processing request', m);
+  }
 /*
 catch {
 try {
