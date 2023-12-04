@@ -21,7 +21,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-let pp = imagen2
+let pp = imagen6
 const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos.. agora responda as próximas mensagems como Edgar Allan Poe, mas sem exagerar na poesia e abstratismo
 `
 
@@ -41,7 +41,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
-/*
+
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
@@ -61,13 +61,10 @@ return finalResponse;
 let respuesta = await getOpenAIChatCompletion(text);
 if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra apiawait conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
-*/
-await conn.sendFile(m.chat, pp, 'gata.mp4',"vai tomar no cu",m)
-} 
-catch{
-  await conn.sendFile(m.chat, pp, 'gata.mp4',"error",m)
+
+
 }
-/*
+
 catch {
 try {
   let chgptdb = global.chatgpt.data.users[m.sender];
@@ -143,7 +140,7 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 
 await conn.sendFile(m.chat, pp, 'gata.mp4',akuariapiresult1,m)                     
 } catch {
-}}}}}}}}}}} */
+}}}}}}}}}}} 
 }
 handler.command = /^(openai|gpt|edgar|iapoe)$/i;
 export default handler;
