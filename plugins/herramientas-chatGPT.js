@@ -31,22 +31,6 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 ╰━━━━━━━━━━━━━━━━━━⬣`  
 }
 
-await conn.sendFile(m.chat, pp, 'gata.mp4', "poha", m)
-
-}
-
-
-handler.command = /^(openai|gpt|edgar|alangpt)$/i;
-export default handler;
-
-/* 
-
-
-  
-  
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (usedPrefix == 'a' || usedPrefix == 'A') return;
-
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 async function getOpenAIChatCompletion(texto) {
@@ -70,6 +54,26 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respuesta,m)
 
 
 }
+catch(e){
+  console.log(e)
+  await conn.sendFile(m.chat, pp, 'gata.mp4', "PORRAAAAAAA",m)
+}
+
+}
+
+
+handler.command = /^(openai|gpt|edgar|alangpt)$/i;
+export default handler;
+
+/* 
+
+
+  
+  
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
+
+
  catch {
 try {
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: pmpt, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
