@@ -21,8 +21,9 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
+
 const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
 🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
@@ -34,25 +35,47 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 try {
-conn.sendPresenceUpdate('typing', m.chat);
-async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
-if (!openaiAPIKey) {throw 'no api key'}
+conn.sendPresenceUpdate('recording', m.chat);
 
-let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: 'user', content: texto });
-const url = "https://api.openai.com/v1/chat/completions";
-const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb, ]};
-const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
-const result = await response.json();
-const finalResponse = result.choices[0].message.content;
-return finalResponse;
-};
-let respuesta = await getOpenAIChatCompletion(text); 
-await conn.sendMessage(m.chat, respuesta, {quoted: m});
-} catch (e){console.log(e)} }
-/*catch {
+
+
+
+async function getOpenAIChatCompletion(texto) {
+  const openaiAPIKey = global.openai_key;
+
+const sistema1 = `Voce deve agir como se fosse a reincarnação de Edgar Allan Poe, voce ira falar e agir como ele, compartilhará as mesmas ideias obscuras e nilistas que ele. Tudo que lhe perguntarem, você ira responder de acordo como Edgar Allan Poe diria pessoalmente. Nao saia do personagem em momento algum. você é edgar allan poe, um poeta e escritor famoso, pai do terror e horror psicológico e romance policia. Entidade dos corvos e gatos pretos`;
+  // Ensure proper initialization of chgptdb
+  const chgptdb = global.chatgpt.data.users[m.sender] || [];
+
+
+
+  chgptdb.push({ role: 'user', content: texto });
+
+  const url = "https://api.openai.com/v1/chat/completions";
+  const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
+  
+  const data = {
+    "model": "gpt-3.5-turbo",
+    "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb],
+  };
+
+  const response = await fetch(url, { method: "POST", headers: headers, body: JSON.stringify(data) });
+  const result = await response.json();
+
+  // Ensure result.choices is defined before accessing its properties
+  const finalResponse = result.choices && result.choices.length > 0 ? result.choices[0].message.content : 'No response';
+
+  return finalResponse;
+}
+
+
+
+
+let respuesta = await getOpenAIChatCompletion(text);
+if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
+const audio1 = await tts(respuesta, idioma);
+await conn.sendMessage(m.chat, {audio: audio1, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+} catch {
 try {
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
 if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
@@ -123,8 +146,8 @@ const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'pt-br
 const audio10 = await tts(akuariapiresult1.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                           
 } catch {
-}}}}}}}}}}}*/
-handler.command = /^(gpt|chatgpt|alangpt|ggpt)$/i;
+}}}}}}}}}}}
+handler.command = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|Mysticvoz|MysticBotvoz|gptvoz|ai_voz|ai_voce)$/i;
 export default handler;
 
 async function tts(text = 'error', lang = 'es') {
