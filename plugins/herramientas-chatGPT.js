@@ -82,7 +82,7 @@ try {
   frequency_penalty: 0.2,
   presence_penalty: 0
 })
-if(botIA222.data.choices[0].text == 'error' ||  == '' || !botIA222.data.choices[0].text){ return XD;
+if(botIA222.data.choices[0].text == 'error' || '' || !botIA222.data.choices[0].text){ return XD;
 }
 await conn.sendFile(m.chat, pp, 'gata.mp4', botIA222.data.choices[0].text,m)
 } 
