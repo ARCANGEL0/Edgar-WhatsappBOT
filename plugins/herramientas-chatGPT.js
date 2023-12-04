@@ -72,6 +72,7 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', respostagpt,m)
 
 }
 catch(e){
+  console.log(global.openai_key)
   console.log(e)
   await conn.sendFile(m.chat, pp, 'gata.mp4', "PORRAAAAAAA",m)
 }
