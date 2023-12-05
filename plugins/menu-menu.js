@@ -496,6 +496,8 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🦇 _${usedPrefix}tupai_
 *╰━━━━━━━━━━━━⬣*
 `.trim()
+
+try{
 if(command=="menuall"){
 await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkontak)
 }
