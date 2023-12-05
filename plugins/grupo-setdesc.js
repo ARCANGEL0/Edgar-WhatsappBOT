@@ -8,5 +8,5 @@ conn.reply(m.chat, lenguajeGB.smsDest(), m)
 handler.command = /^setdesk|setdesc|newdesc|descripción|descripcion$/i
 handler.group = true
 handler.admin = true
-handler.botAdmin = true
+handler.botAdmin = false
 export default handler
