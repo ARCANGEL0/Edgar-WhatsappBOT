@@ -21,9 +21,6 @@ let texto = `
 `
 
 
-await conn.sendFile(m.chat, imagen6, "error.jpg" ,texto, m)
-  
-  
-} 
+await conn.sendMessage(m.chat, texto, {quoted: fkontak})}
 handler.command = /^listas|lista|list?$/i
 export default handler
