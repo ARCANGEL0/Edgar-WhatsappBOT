@@ -7,7 +7,7 @@ conn.reply(m.chat, lenguajeGB.smsSetB(), fkontak, m)
 } else throw `${lenguajeGB['smsSetB2']()}`
 }
 handler.command = ['setbye', 'despedida'] 
-handler.botAdmin = true
+handler.botAdmin = false
 handler.admin = true
 handler.group = true
 export default handler
