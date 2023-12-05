@@ -21,7 +21,7 @@ let texto = `
 `
 
 
-await conn.sendMessage(m.chat, texto, m)
+await conn.sendMessage(m.chat, pp, "error.jpg" ,texto, m)
   
   
 } 
