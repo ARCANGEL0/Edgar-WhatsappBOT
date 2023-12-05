@@ -81,6 +81,26 @@ const formatoFecha = {
 }
 lugarFecha.locale('pt', formatoFecha)
 const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [de] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
+
+menuh = `╭━━━━━━━━━⬣
+┃ 🕯️💀 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐦𝐞𝐧𝐮
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ *${usedPrefix}menuall*  - _TUDO_
+┃ *${usedPrefix}menubuscas*  - _BUSCAS_
+┃ *${usedPrefix}menutools*  - _FERRAMENTAS_
+┃ *${usedPrefix}menujogos*  - _JOGOS_
+┃ *${usedPrefix}menubaixar*  - _DOWNLOADS_
+┃ *${usedPrefix}menucvs*  - _COMVERSORES_
+┃ *${usedPrefix}menumd*  - _MIDIAS_
+┃ *${usedPrefix}menuia*  - _IA E CHATGPT_
+┃ *${usedPrefix}menugp*  - _GRUPO_
+┃ *${usedPrefix}menubot*  - _BOT_
+┃ *${usedPrefix}menuvoto*  - _VOTOS_
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
+
+
 let menubuscas = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ BUSCAS ]━━⬣*
@@ -493,7 +513,7 @@ if(text="menugp") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', men
 if(text="menutools") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
 
 if(text="menujogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
-
+if(text="menucvs") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
 if(!text) conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuh, fkontak)
 }
 
