@@ -9,7 +9,7 @@ if (prefixRegex.test(m.text) && !opts['gconly']) Prefijo = true;
 const bot = global.db.data.settings[conn.user.jid]   
 if (bot.modoia && !m.isGroup && !Prefijo && !m.fromMe && m.text !== '') {
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return;
-let textodem = m.text;
+let textodem = m.text//tes
 const name = conn.getName(m.sender)
 const namedem = `${name || 'Sin Definir'}`
 const sytm = await fetch(`https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/src/chatgpt_indicciones.txt`).then(v => v.text()); 
