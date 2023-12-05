@@ -33,6 +33,9 @@ case 'demote':
 case 'quitaradmin':
 case 'quitarpoder':
 act = 'demote'
+case 'adv':
+case 'advertencia':
+act = 'advertir'
 break
 default:
 throw 'error, coloque uma opção valida'
