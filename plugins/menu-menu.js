@@ -496,7 +496,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🦇 _${usedPrefix}tupai_
 *╰━━━━━━━━━━━━⬣*
 `.trim()
-
+}
   
 
 
