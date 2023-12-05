@@ -86,16 +86,16 @@ let menuh = `╭━━━━━━━━━⬣
 ┃ 🕯️💀 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐦𝐞𝐧𝐮
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ *${usedPrefix}menuall*  - _TUDO_
-┃ *${usedPrefix}menubuscas*  - _BUSCAS_
-┃ *${usedPrefix}menutools*  - _FERRAMENTAS_
-┃ *${usedPrefix}menujogos*  - _JOGOS_
-┃ *${usedPrefix}menubaixar*  - _DOWNLOADS_
-┃ *${usedPrefix}menucvs*  - _COMVERSORES_
-┃ *${usedPrefix}menumd*  - _MIDIAS_
-┃ *${usedPrefix}menuia*  - _IA E CHATGPT_
-┃ *${usedPrefix}menugp*  - _GRUPO_
-┃ *${usedPrefix}menubot*  - _BOT_
-┃ *${usedPrefix}menuvoto*  - _VOTOS_
+┃ *${usedPrefix}mbuscas*  - _BUSCAS_
+┃ *${usedPrefix}mtools*  - _FERRAMENTAS_
+┃ *${usedPrefix}mjogos*  - _JOGOS_
+┃ *${usedPrefix}mbaixar*  - _DOWNLOADS_
+┃ *${usedPrefix}mcv*  - _CONVERSORES_
+┃ *${usedPrefix}mmd*  - _MIDIAS_
+┃ *${usedPrefix}mia*  - _IA E CHATGPT_
+┃ *${usedPrefix}mgp*  - _GRUPO_
+┃ *${usedPrefix}mbot*  - _BOT_
+┃ *${usedPrefix}mvoto*  - _VOTOS_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
@@ -500,21 +500,22 @@ let menuall = `💀🕯️ Olá @${username}
 if(command=="menuall")
 await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkontak)
 
+if(command=="mbuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
 
-if(command=="menubuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
+if(command=="mbot") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
+if(command=="mia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuia, fkontak)
+if(command=="mmd") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
 
-if(command=="menumd") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
+if(command=="mvoto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
+if(command=="mbaixar") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
 
-if(command=="menuvoto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
-if(command=="menubaixar") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
-
-if(command=="menugp") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
+if(command=="mgp") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
 
 
-if(command=="menutools") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
+if(command=="mtools") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
 
-if(command=="menujogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
-if(command=="menucvs") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
+if(command=="mjogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
+if(command=="mcv") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
 if(command=="menu"||"help"||"info") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuh, fkontak)
 
 }
@@ -523,7 +524,7 @@ await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() 
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(menu|help|info|menuall|allmenu|menumd|menugp|menutools|menujogos|menuvoto|menuia|menucvs|menubaixar|menubuscas|\?)$/i
+handler.command = /^(menu|help|info|menuall|allmenu|mmd|mgp|mtools|mjogos|mvoto|mia|mcv|mbaixar|mbuscas|\?)$/i
 //handler.register = true
 export default handler
 
