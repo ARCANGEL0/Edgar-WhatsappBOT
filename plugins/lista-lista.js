@@ -21,7 +21,9 @@ let texto = `
 `
 
 
-await conn.reply(texto) }
-
+await conn.sendMessage(m.chat, texto, m)
+  
+  
+} 
 handler.command = /^listas|lista|list?$/i
 export default handler
