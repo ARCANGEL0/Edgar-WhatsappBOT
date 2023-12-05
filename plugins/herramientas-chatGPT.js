@@ -46,7 +46,7 @@ const data = {
     "model": "gpt-3.5-turbo",
     "temperature":0.3,
     "messages": [{ "role": "system", "content": sistema1 }, 
-    {"role":"user","content":text}],
+    ...chgptdb],
   };
   
 try {
