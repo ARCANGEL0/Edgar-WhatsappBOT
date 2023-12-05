@@ -173,10 +173,10 @@ let menutools = `💀🕯️ Olá @${username}
 ┃✒️️ _${usedPrefix}qrcode *texto*_
 ┃✒️️ _${usedPrefix}styletext *texto*_
 ┃✒️️ _${usedPrefix}traduzir | trad *texto*_
-┃✒️️➺ _${usedPrefix}morse codificar *texto*_
-┃✒️️➺ _${usedPrefix}morse decodificar *morse*_
-┃✒️️➺ _${usedPrefix}poll *Motivo*_
-┃✒️️➺ _${usedPrefix}horario_
+┃✒️️ _${usedPrefix}morse codificar *texto*_
+┃✒️️ _${usedPrefix}morse decodificar *morse*_
+┃✒️️ _${usedPrefix}poll *Motivo*_
+┃✒️️ _${usedPrefix}horario_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
@@ -480,7 +480,7 @@ let menuall = `💀🕯️ Olá @${username}
 *╰━━━━━━━━━━━━⬣*
 `.trim()
 
-if(command=="menuall")
+if(command=="mall")
 await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkontak)
 
 if(command=="mbuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
