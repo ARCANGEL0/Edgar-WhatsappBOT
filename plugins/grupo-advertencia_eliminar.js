@@ -22,7 +22,6 @@ await m.reply(
 UMA ADVERTÊNCIA REMOVIDA
 
 *@${who.split`@`[0]}*
-*${lenguajeGB['smsAdveu5']()}*
 ⚠️ *${user.warn}/4* 
 ${wm} || ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`,
