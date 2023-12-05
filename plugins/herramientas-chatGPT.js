@@ -41,19 +41,19 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 
-chgptdb.push({ role: 'user', content: text });
+
 const data = {
     "model": "gpt-3.5-turbo",
     "temperature":0.3,
     "messages": [{ "role": "system", "content": sistema1 }, 
-    ...chgptdb],
+    {"role":"user","content":text}],
   };
   
 try {
 conn.sendPresenceUpdate('typing', m.chat);
 
 async function requestToChatGPT(inputText) {
-
+delete global.chatgpt.data.users[m.sender]  
     
 
 
