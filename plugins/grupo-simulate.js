@@ -35,7 +35,7 @@ case 'quitarpoder':
 act = 'demote'
 case 'adv':
 case 'advertencia':
-act = 'advertir'
+act = 'adv'
 break
 default:
 throw 'error, coloque uma opção valida'
