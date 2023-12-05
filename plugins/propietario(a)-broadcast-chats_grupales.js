@@ -1,7 +1,7 @@
 import { randomBytes } from 'crypto'
 let handler = async (m, { conn, command, participants, usedPrefix, text }) => {
 if (!text && !m.quoted) return m.reply(lenguajeGB.smsBCMensaje(usedPrefix, command))        
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${conn.user.jid.split('@')[0]}:${conn.user.jid.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" } 
+
 let users = participants.map(u => conn.decodeJid(u.id))
 let cc2 = text ? m : m.quoted ? await m.getQuotedObj() : false || m
 let teks2 = text ? text : cc2.text 
@@ -21,7 +21,7 @@ const id = groups[i];
 const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
 const delay = i * 4000 //4 seg
 setTimeout(async () => { 
-await conn.sendMessage(id, { text: infoGP + teks2, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak }) 
+await conn.sendMessage(id, { text: infoGP + teks2, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }) 
 //await conn.reply(id, infoGP + teks2, { mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak });
 }, delay)}         
 let totalGP = groups.length
