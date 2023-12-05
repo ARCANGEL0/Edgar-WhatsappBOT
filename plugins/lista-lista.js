@@ -21,6 +21,7 @@ let texto = `
 `
 
 
-await conn.reply(texto)
+await conn.reply(texto) }
+
 handler.command = /^listas|lista|list?$/i
 export default handler
