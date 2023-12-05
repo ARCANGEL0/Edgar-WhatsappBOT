@@ -82,7 +82,7 @@ const formatoFecha = {
 lugarFecha.locale('pt', formatoFecha)
 const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [de] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
 
-menuh = `╭━━━━━━━━━⬣
+let menuh = `╭━━━━━━━━━⬣
 ┃ 🕯️💀 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐦𝐞𝐧𝐮
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ *${usedPrefix}menuall*  - _TUDO_
