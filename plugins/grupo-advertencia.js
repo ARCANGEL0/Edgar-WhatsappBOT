@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, command, usedPrefix }) => {//prems 
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-//conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]], fkontak, m)
+
+//conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]],  m)
 
 let who 
 let img = 'https://i.imgur.com/DvHoMc3.jpg'
@@ -10,7 +10,7 @@ else who = m.chat
 let name = await conn.getName(m.sender)	
 	
 let user = global.db.data.users[who]
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`, fkontak, m)  	
+if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`,  m)  	
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 
 try {
@@ -19,7 +19,6 @@ await m.reply(
     `
 ╭━━━━━━━━━⬣
 *@${who.split`@`[0]}*
-*${lenguajeGB['smsAdveu5']()}*
 ⚠️ *${user.warn}/4* 
 ${wm} || ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`,
