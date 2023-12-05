@@ -1,4 +1,4 @@
-let handler = async (m, { conn, command, text, usedPrefix }) => {
+let handler = async (m, { conn, command, usedPrefix }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 let texto = `
@@ -19,7 +19,8 @@ let texto = `
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 
+await conn.sendFile(m.chat, imagen3, 'gata.mp4', texto)
 
-await conn.sendMessage(m.chat, "teste", {quoted: fkontak})}
+
 handler.command = /^listas|lista|list?$/i
 export default handler
