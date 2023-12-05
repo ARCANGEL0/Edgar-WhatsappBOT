@@ -1,31 +1,31 @@
 import axios from 'axios'
 var handler = async(m, { conn, text }) => {
 
-  if (!text) return conn.reply(m.chat, '*⚠️ INGRESE EL NOMBRE DE UN USUARIO DE GITHUB*', m)
+  if (!text) return conn.reply(m.chat, '*❖─┅──┅\nINSIRA UM NOME DE USUARIO\n─┅──┅❖ *', m)
 
   await m.reply('*B U S C A N D O ✅*')
   let request = await githubstalk(text) 
     let { username, following, followers, type, bio, company, blog, location, email, public_repo, public_gists, profile_pic } = request
     let thumb = await (profile_pic)
     let hasil = `*⬤── 「 𝙂𝙄𝙏𝙃𝙐𝘽 𝙎𝙏𝘼𝙇𝙆 」 ──⬤*
-➸ *nombre de usuario*: ${username}
+➸ *Nome*: ${username}
 ➸ *Bio*: ${bio}
-➸ *Compañía*: ${company}
+➸ *Empresa*: ${company}
 ➸ *Email:* ${email}
 ➸ *Blog:* ${blog}
 ➸ *Repositorios públicos:* ${public_repo}
-➸ *Gists Publik:* ${public_gists}
-➸ *Follower:* ${followers}
-➸ *Following:* ${following}
-➸ *Lokasi:* ${location}
-➸ *Type:* ${type}
+➸ *Gists*  ${public_gists}
+➸ *Seguidores* ${followers}
+➸ *Seguindo:* ${following}
+➸ *Localidade* ${location}
+➸ *Tipo:* ${type}
 `
 
     conn.sendFile(m.chat, logogit, 'githubstalk.jpg', hasil, m)
 }
 handler.help = ['githubstalk'].map(v => v + ' <query>')
 handler.tags = ['internet']
-handler.command = /^(githubstalk)$/i
+handler.command = /^(gbstalk)$/i
 
 export default handler
 
