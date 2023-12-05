@@ -162,11 +162,11 @@ let menutools = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ FERRAMENTAS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✒️️ _${usedPrefix}criador
+┃✒️️ _${usedPrefix}criador_
 ┃✒️️ _${usedPrefix}boost_
-┃✒️️ _${usedPrefix}status
-┃✒️️ _${usedPrefix}ping 
-┃✒️️ _${usedPrefix}speedtest
+┃✒️️ _${usedPrefix}status_
+┃✒️️ _${usedPrefix}ping_ 
+┃✒️️ _${usedPrefix}speedtest_
 ┃✒️️ _${usedPrefix}afk *motivo*_
 ┃✒️️ _${usedPrefix}acortar *url*_
 ┃✒️️ _${usedPrefix}calc *operacao mth*_
@@ -359,21 +359,21 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🥀️➺ _${usedPrefix}tts *idioma* *texto*_
 *╰━━━━━━━━━━━━⬣*
 *╭━━[ FERRAMENTAS ]━━⬣*
-┃✒️️ _${usedPrefix}criador
+┃✒️️ _${usedPrefix}criador_
 ┃✒️️ _${usedPrefix}boost_
-┃✒️️ _${usedPrefix}status
-┃✒️️ _${usedPrefix}ping 
-┃✒️️ _${usedPrefix}speedtest
+┃✒️️ _${usedPrefix}status_
+┃✒️️ _${usedPrefix}ping_ 
+┃✒️️ _${usedPrefix}speedtest_
 ┃✒️️ _${usedPrefix}afk *motivo*_
 ┃✒️️ _${usedPrefix}acortar *url*_
 ┃✒️️ _${usedPrefix}calc *operacao mth*_
 ┃✒️️ _${usedPrefix}qrcode *texto*_
 ┃✒️️ _${usedPrefix}styletext *texto*_
 ┃✒️️ _${usedPrefix}traduzir | trad *texto*_
-┃✒️️➺ _${usedPrefix}morse codificar *texto*_
-┃✒️️➺ _${usedPrefix}morse decodificar *morse*_
-┃✒️️➺ _${usedPrefix}poll *Motivo*_
-┃✒️️➺ _${usedPrefix}horario_
+┃✒️️ _${usedPrefix}morse codificar *texto*_
+┃✒️️ _${usedPrefix}morse decodificar *morse*_
+┃✒️️ _${usedPrefix}poll *Motivo*_
+┃✒️️ _${usedPrefix}horario_
 *╰━━━━━━━━━━━━⬣*
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
 ┃ *Admin!!*
@@ -485,7 +485,8 @@ await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkonta
 
 if(command=="mbuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
 
-if(command=="mbot") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
+if(command=="mbot") conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
+
 if(command=="mia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuia, fkontak)
 if(command=="mmd") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
 
@@ -507,7 +508,7 @@ await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() 
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(mall|all|mmd|mgp|mtools|mjogos|mvoto|mia|mcv|mbaixar|mbuscas|\?)$/i
+handler.command = /^(mall|all|mmd|mgp|mbot|mtools|mjogos|mvoto|mia|mcv|mbaixar|mbuscas|\?)$/i
 //handler.register = true
 export default handler
 
