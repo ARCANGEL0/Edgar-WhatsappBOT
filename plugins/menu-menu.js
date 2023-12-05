@@ -514,7 +514,7 @@ if(command=="menutools") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp
 
 if(command=="menujogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
 if(command=="menucvs") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
-if(!text) conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuh, fkontak)
+if(command=="menu"||"help"||"info") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuh, fkontak)
 }
 
 } catch (e) {
