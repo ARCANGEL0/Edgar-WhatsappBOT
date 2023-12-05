@@ -38,6 +38,6 @@ handler.help = ['group open / close', 'grupo abrir / fechar']
 handler.tags = ['group']
 handler.command = /^(gpconfig|config)$/i
 handler.admin = true
-handler.botAdmin = true
+handler.botAdmin = false
 handler.exp = 200
 export default handler
