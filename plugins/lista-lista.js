@@ -17,10 +17,9 @@ let texto = `
 ┃ ${usedPrefix}listabanchat 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣
-`
+╰━━━━━━━━━━━━━━━━━━⬣`
 
 
-await conn.sendMessage(m.chat, texto, {quoted: fkontak})}
+await conn.sendMessage(m.chat, "teste", {quoted: fkontak})}
 handler.command = /^listas|lista|list?$/i
 export default handler
