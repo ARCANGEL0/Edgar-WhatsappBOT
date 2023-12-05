@@ -507,7 +507,7 @@ if(command=="menubuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.m
 if(command=="menumd") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
 
 if(command=="menuvoto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
-
+if(command=="menubaixar") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
 
 if(command=="menugp") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
 
@@ -523,7 +523,7 @@ await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() 
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(menu|help|info|menuall|allmenu|menumd|menugp|menutools|menujogos|menuvoto|menuia|menubaixar|menubuscas|\?)$/i
+handler.command = /^(menu|help|info|menuall|allmenu|menumd|menugp|menutools|menujogos|menuvoto|menuia|menucvs|menubaixar|menubuscas|\?)$/i
 //handler.register = true
 export default handler
 
