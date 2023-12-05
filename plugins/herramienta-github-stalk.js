@@ -21,7 +21,7 @@ var handler = async(m, { conn, text }) => {
 ➸ *Tipo:* ${type}
 `
 
-    conn.sendFile(m.chat, logogit, 'githubstalk.jpg', hasil, m)
+    conn.sendFile(m.chat, thumb, 'githubstalk.jpg', hasil, m)
 }
 handler.help = ['githubstalk'].map(v => v + ' <query>')
 handler.tags = ['internet']
