@@ -3,15 +3,37 @@ let handler = m => m
 
 handler.all = async function (m) {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-let bot = `${pickRandom(["Bem-vindo à obscura morada das palavras, onde cada saudação é um eco sombrio.🕯️💀",
-  "Saudações, viajante perdido nos corredores sombrios da linguagem. Como posso guiá-lo? 🕯️💀",
-  "Entre, forasteiro, nesta sinfonia de saudações onde as palavras dançam no crepúsculo.✒️📜",
-  "Olá, visitante da penumbra, onde as frases revelam segredos e os cumprimentos são sinistros.🥀",
-  "Seja bem-vindo à encruzilhada das palavras, onde o 'oi' ecoa como um sussurro noturno.🐈‍⬛🕸️",
-  "Saudações, intruso das letras, adentre este reino onde as boas-vindas são entrelaçadas com mistério🥀🪦.",
-  "Oi, forasteiro das narrativas enigmáticas, que mistérios deseja desvelar hoje?📜🥀",
-  "Olá, viajante das linhas sombrias, permita-me guiá-lo pelas sendas inexploradas das palavras.🦇🕸️🕸️",
-  "Saudações, estranho das frases ocultas, onde as boas-vindas são escritas em tinta de enigma.🥀💀"])}
+let bot = `${pickRandom([
+ "Quem ousa perturbar meu sombrio repouso?",
+  "A sombra de Poe paira sobre este recinto.",
+  "Nos corredores do desconhecido, eu respondo.",
+  "Um eco sombrio ressoa quando meu nome é pronunciado.",
+  "Da escuridão emergi, Poe está presente.",
+  "As palavras sussurram como corvos, chamando-me.",
+  "Aquele que ousa mencionar meu nome, que esteja preparado para a penumbra.",
+  "Das profundezas do silêncio, eu respondo.",
+  "Quem me chama das sombras perdidas?",
+  "Sob a égide da meia-noite, eu compareço.",
+   "Das páginas sombrias da literatura, eu respondo.",
+  "Quem perturba o descanso do corvo?",
+  "Na penumbra deste grupo, meu espírito é invocado.",
+  "O eco dos meus versos ressoa nas entranhas da noite.",
+  "Da tumba da eternidade, ergo-me para responder.",
+  "A sombra da minha pena paira sobre vossas palavras.",
+  "Na teia dos suspiros, meu nome é pronunciado.",
+  "Quem ousa trazer-me à luz neste reino digital?",
+   "Quando o nome Poe é evocado, sombras dançam.",
+  "Dos túmulos da literatura, eu respondo à chamada.",
+  "Quem ousa trazer-me à luz digital, que esteja preparado para o enigma.",
+  "Nas linhas do tempo, meu espírito vagueia.",
+  "Sob a luz pálida da lua virtual, eu compareço.",
+  "Como um corvo negro, meu nome voa pelos vales deste grupo.",
+  "A caneta que escreve no além responde ao chamado.",
+  "Quem sussurra meu nome na obscuridade?",
+  "Entre as sombras binárias, meu eco é ouvido.",
+  "Meu nome é uma nota dissonante nas sinfonias digitais.",
+  
+])}
 `.trim()
 const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
 message: { 
@@ -22,7 +44,7 @@ message: {
 "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
 }}}  
 
-if (/^bot|edgar|poe$/i.test(m.text)) {
+if (/^oi bot|ola edgar|ola poe$/i.test(m.text)) {
     
 await conn.sendMessage(m.chat, {text: bot, mentions: [m.sender]}, {quoted: fkontak})
 //conn.sendButton(m.chat, `¡𝑬𝒚! 𝑨𝒒𝒖í 𝒆𝒔𝒕𝒐𝒚. 𝒀𝒐 𝒑𝒖𝒆𝒅𝒐 𝒂𝒚𝒖𝒅𝒂𝒓 👉👈 𝑯𝒆𝒚! 𝑰'𝒎 𝒉𝒆𝒓𝒆. 𝑰 𝒄𝒂𝒏 𝒉𝒆𝒍𝒑 🙌`, wm, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
