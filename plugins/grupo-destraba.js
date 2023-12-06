@@ -7,7 +7,7 @@ if (!text) return conn.reply(m.chat, "no data", null, m)
 
 if(text) {
   
-  let mensagem = args.slice(1)
+  let mensagem = args[].slice(1)
 return conn.reply(m.chat,mensagem,null ,m)
 
 } 
