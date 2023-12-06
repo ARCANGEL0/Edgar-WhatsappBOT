@@ -22,7 +22,7 @@ mensaje = `*@${m.sender.split`@`[0]} JÁ SE MENCIONOU QUE NÃO DEVE SE UTILIZAR 
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
   
 } else if (user.counterPrivate === 2) {
-mensaje = `*@${m.sender.split`@`[0]} SERÁ BLOQUEADO(A). 😾 POR DESOBEDECER AS ADVERTÊNCIAS*\n\n⚠️ \`\`\`TERCEIRA ADVERTENCIA\`\`\` ⚠️`
+mensaje = `*@${m.sender.split`@`[0]} SERÁ BLOQUEADO(A). 💀 POR DESOBEDECER AS ADVERTÊNCIAS*\n\n⚠️ \`\`\`TERCEIRA ADVERTENCIA\`\`\` ⚠️`
 await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
   
 user.counterPrivate = -1
