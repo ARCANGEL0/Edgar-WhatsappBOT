@@ -49,7 +49,7 @@ user.lastmiming = new Date * 1
 }
 handler.help = ['sticker']
 handler.tags = ['sticker']
-handler.command = ['s', 'sticker', 'stiker'] 
+handler.command = ['fg', 'sticker', 'stiker'] 
 
 export default handler
 
