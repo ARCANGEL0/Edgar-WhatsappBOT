@@ -21,7 +21,7 @@ ${pickRandom([
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
-handler.command = /^botoff|mutebot|desativarbot$/i
+handler.command = /^botoff|mutebot|desbott$/i
 handler.botAdmin = false
 handler.admin = true 
 export default handler
