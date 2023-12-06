@@ -42,5 +42,6 @@ await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), nu
 console.log(e) 
 }}
 handler.command = /^mute|ban$/i
-handler.rowner = true
+handler.rowner = false
+handler.admin = true
 export default handler
