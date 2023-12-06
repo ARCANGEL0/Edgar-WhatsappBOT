@@ -8,7 +8,7 @@ global.dfail('admin', m, conn)
 throw false
 
 let timeoutset = 86400000 * args[1] / 24 //Una Hora 86400000
-
+m.reply("teste1")
 if (args[1]) {
 await m.reply(args[1])
 }}
