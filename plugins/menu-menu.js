@@ -182,29 +182,28 @@ let menutools = `💀🕯️ Olá @${username}
 
 let menugp = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
-*╭━━[ GRUPO ]━━⬣*
-┃┃ *Admin!!*
+*╭━〔 GRUPO 〕━⬣*
+┃ * configurar Grupo!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪦➺ _${usedPrefix}mutebot
-┃🪦➺ _${usedPrefix}ligarbot
 ┃🪦➺ _${usedPrefix}config
-┃🪦➺ _${usedPrefix}infogrupo
-┃🪦➺ _${usedPrefix}listas
-┃🪦➺ _${usedPrefix}listbanchat
-┃🪦➺ _${usedPrefix}listadv
-┃🪦➺ _${usedPrefix}listbloqueados
-┃🪦➺ _${usedPrefix}listbanidos
-┃🪦➺ _${usedPrefix}settings
+┃🪦➺ _${usedPrefix}infogrupo_
+┃🪦➺ _${usedPrefix}listbanchat_
+┃🪦➺ _${usedPrefix}listadv_
+┃🪦➺ _${usedPrefix}listbloqueados_
+┃🪦➺ _${usedPrefix}listbanidos_
+┃🪦➺ _${usedPrefix}settings'
 ┃🪦➺ _${usedPrefix}vergrupo_
+*╰━━━━━━━━━━━━⬣*
+*╭━[ CONFIGURAÇÃO - GRUPOS ]━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}ban | mute   *@tag*_
+┃✒️📜➺ _${usedPrefix}ban | mute *@tag*_
 ┃✒️📜➺ _${usedPrefix}grupo *abrir : fechar*_
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
 ┃✒️📜➺ _${usedPrefix}banchat_
 ┃✒️📜➺ _${usedPrefix}unbanchat_
-┃✒️📜➺ _${usedPrefix}unmute | desbanir *@tag*_
+┃✒️📜➺ _${usedPrefix}unmute | unban *@tag*_
 ┃✒️📜➺ _${usedPrefix}admins *texto*_
 ┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_
 ┃✒️📜➺ _${usedPrefix}hidetag *texto*_
@@ -212,13 +211,12 @@ let menugp = `💀🕯️ Olá @${username}
 ┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
 ┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
-┃✒️📜➺ _${usedPrefix}delwarn *@tag*_
 ┃✒️📜➺ _${usedPrefix}startvoto *texto*_
 ┃✒️📜➺ _${usedPrefix}sivotar | upvote_
 ┃✒️📜➺ _${usedPrefix}novotar | devote_
 ┃✒️📜➺ _${usedPrefix}vervotos | cekvoto_
 ┃✒️📜➺ _${usedPrefix}delvoto | deletevoto_
-┃✒️📜➺ _*${usedPrefix}link*_
+┃✒️📜➺ _${usedPrefix}link*_
 ┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
 ┃✒️📜➺ _${usedPrefix}despedida *texto*_
 ┃✒️📜➺ _${usedPrefix}on_
@@ -317,9 +315,10 @@ let menuall = `💀🕯️ Olá @${username}
 *╭━〔 JOGOS 〕━⬣*
 ┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
-┃🐈‍⬛➺ _${usedPrefix}quiz @usuario*_
+┃🐈‍⬛➺ _${usedPrefix}quiz_
 ┃🐈‍⬛➺ _${usedPrefix}poemas _
 ┃🐈‍⬛➺ _${usedPrefix}culturagotica_
+┃🐈‍⬛➺ _${usedPrefix}biografia_ 
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 IA 〕━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -346,15 +345,12 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🕯️➺ _${usedPrefix}tiktokimagen | ttimagen *link*_
 ┃🕯️➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
 ┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🕯️➺ _${usedPrefix}clima *país cidade*_
-┃🕯️➺ _${usedPrefix}morse codificar *texto*_
-┃🕯️➺ _${usedPrefix}morse decodificar *morse*_
 *╰━━━━━━━━━━━━⬣*
 *╭━[ CONVERSORES ]━⬣*
 ┃🥀️➺ _${usedPrefix}toimg | img | jpg *figurinha*_
 ┃🥀️➺ _${usedPrefix}toanime *foto*_
 ┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
-┃🥀️➺ _${usedPrefix}s *imagem pra figurinha*_
+┃🥀️➺ _${usedPrefix}fg *imagem pra figurinha*_
 ┃🥀️➺ _${usedPrefix}topdf *imagem*_
 ┃🥀️➺ _${usedPrefix}tovn | vn *video ou audio*_
 ┃🥀️➺ _${usedPrefix}tovideo *audio*_
@@ -377,6 +373,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃✒️️ _${usedPrefix}morse decodificar *morse*_
 ┃✒️️ _${usedPrefix}poll *Motivo*_
 ┃✒️️ _${usedPrefix}horario_
+┃✒️ _${usedPrefix}clima *país cidade*_
 *╰━━━━━━━━━━━━⬣*
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
 ┃ *Admin!!*
@@ -405,41 +402,38 @@ let menuall = `💀🕯️ Olá @${username}
 ┃⚙️ _${usedPrefix}on *:* off *antinstagram*_
 ┃⚙️ _${usedPrefix}on *:* off *antitwitter*_
 ┃⚙️ _${usedPrefix}on *:* off *bot*_
-┃⚙️ _${usedPrefix}on *:* off *chat*_
+┃⚙️ _${usedPrefix}on *:* off *gconly*_
+┃⚙️ _${usedPrefix}on *:* off *pconly*_
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 GRUPO 〕━⬣**
 ┃ * configurar Grupo!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪦➺ _${usedPrefix}config
-┃🪦➺ _${usedPrefix}infogrupo
-┃🪦➺ _${usedPrefix}listas
-┃🪦➺ _${usedPrefix}listbanchat
-┃🪦➺ _${usedPrefix}listadv
-┃🪦➺ _${usedPrefix}listbloqueados
-┃🪦➺ _${usedPrefix}listbanidos
-┃🪦➺ _${usedPrefix}settings
+┃🪦➺ _${usedPrefix}infogrupo_
+┃🪦➺ _${usedPrefix}listbanchat_
+┃🪦➺ _${usedPrefix}listadv_
+┃🪦➺ _${usedPrefix}listbloqueados_
+┃🪦➺ _${usedPrefix}listbanidos_
+┃🪦➺ _${usedPrefix}settings'
 ┃🪦➺ _${usedPrefix}vergrupo_
 *╰━━━━━━━━━━━━⬣*
 *╭━[ CONFIGURAÇÃO - GRUPOS ]━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}ban   *@tag*_
+┃✒️📜➺ _${usedPrefix}ban | mute *@tag*_
 ┃✒️📜➺ _${usedPrefix}grupo *abrir : fechar*_
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
 ┃✒️📜➺ _${usedPrefix}banchat_
 ┃✒️📜➺ _${usedPrefix}unbanchat_
-┃✒️📜➺ _${usedPrefix}banuser *@tag*_
-┃✒️📜➺ _${usedPrefix}unmute *@tag*_
+┃✒️📜➺ _${usedPrefix}unmute | unban *@tag*_
 ┃✒️📜➺ _${usedPrefix}admins *texto*_
-┃✒️📜➺ _${usedPrefix}invocar *texto*_
-┃✒️📜➺ _${usedPrefix}tagall *texto*_
+┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_
 ┃✒️📜➺ _${usedPrefix}hidetag *texto*_
 ┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
 ┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
-┃✒️📜➺ _${usedPrefix}advertencia *@tag*_
+┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
-┃✒️📜➺ _${usedPrefix}delwarn *@tag*_
 ┃✒️📜➺ _${usedPrefix}startvoto *texto*_
 ┃✒️📜➺ _${usedPrefix}sivotar | upvote_
 ┃✒️📜➺ _${usedPrefix}novotar | devote_
@@ -463,7 +457,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃ * Personalização de logos
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🥀 _${usedPrefix}logos *efeito texto*_
-┃🪦🕯️ _${usedPrefix}menulogos2_
+┃🪦 _${usedPrefix}menulogos2_
 *╰━━━━━━━━━━━━⬣*
 *╭━[ MODIFICAR AUDIO ]━⬣*
 ┃ *Realiza modificações*
