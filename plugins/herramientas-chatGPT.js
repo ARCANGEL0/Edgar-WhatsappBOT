@@ -46,7 +46,7 @@ ${text}
 `;
 
  await conn.sendMessage(m.chat,{ react: {
-        text: "⌛", // use an empty string to remove the reaction
+        text: "🌒", // use an empty string to remove the reaction
         key: m.key }
     },
     m  )
@@ -95,7 +95,7 @@ console.log(result.choices[0].message.content);
 let aiReply = await requestToChatGPT(text)
 
 await conn.sendMessage(m.chat, {react: {
-        text: "✔️", // use an empty string to remove the reaction
+        text: "🌕", // use an empty string to remove the reaction
         key: m.key}
     },
     m  )
