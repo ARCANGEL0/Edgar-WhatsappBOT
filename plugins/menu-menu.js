@@ -67,7 +67,7 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 let pp = gataVidMenu.getRandom()
 let pareja = global.db.data.users[m.sender].pasangan 
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender1111.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 //let fsizedoc = '1'.repeat(10)
 //let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', mi thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 const numberToEmoji = { "0": "0️⃣", "1": "1️⃣", "2": "2️⃣", "3": "3️⃣", "4": "4️⃣", "5": "5️⃣", "6": "6️⃣", "7": "7️⃣", "8": "8️⃣", "9": "9️⃣", }
@@ -105,7 +105,7 @@ let menujogos = `💀🕯️ Olá @${username}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🐈‍⬛➺ _${usedPrefix}top5 *texto*
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*
-*╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
+*╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()p
 
 let menuia = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
@@ -185,6 +185,8 @@ let menugp = `💀🕯️ Olá @${username}
 *╭━━[ GRUPO ]━━⬣*
 ┃┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪦➺ _${usedPrefix}mutebot
+┃🪦➺ _${usedPrefix}ligarbot
 ┃🪦➺ _${usedPrefix}config
 ┃🪦➺ _${usedPrefix}infogrupo
 ┃🪦➺ _${usedPrefix}listas
@@ -196,21 +198,19 @@ let menugp = `💀🕯️ Olá @${username}
 ┃🪦➺ _${usedPrefix}vergrupo_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}ban   *@tag*_
+┃✒️📜➺ _${usedPrefix}ban | mute   *@tag*_
 ┃✒️📜➺ _${usedPrefix}grupo *abrir : fechar*_
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
 ┃✒️📜➺ _${usedPrefix}banchat_
 ┃✒️📜➺ _${usedPrefix}unbanchat_
-┃✒️📜➺ _${usedPrefix}banuser *@tag*_
-┃✒️📜➺ _${usedPrefix}unmute *@tag*_
+┃✒️📜➺ _${usedPrefix}unmute | desbanir *@tag*_
 ┃✒️📜➺ _${usedPrefix}admins *texto*_
-┃✒️📜➺ _${usedPrefix}invocar *texto*_
-┃✒️📜➺ _${usedPrefix}tagall *texto*_
+┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_
 ┃✒️📜➺ _${usedPrefix}hidetag *texto*_
 ┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
 ┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
-┃✒️📜➺ _${usedPrefix}advertencia *@tag*_
+┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
 ┃✒️📜➺ _${usedPrefix}delwarn *@tag*_
 ┃✒️📜➺ _${usedPrefix}startvoto *texto*_
@@ -218,7 +218,7 @@ let menugp = `💀🕯️ Olá @${username}
 ┃✒️📜➺ _${usedPrefix}novotar | devote_
 ┃✒️📜➺ _${usedPrefix}vervotos | cekvoto_
 ┃✒️📜➺ _${usedPrefix}delvoto | deletevoto_
-┃✒️📜➺ _${usedPrefix}link*_
+┃✒️📜➺ _*${usedPrefix}link*_
 ┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
 ┃✒️📜➺ _${usedPrefix}despedida *texto*_
 ┃✒️📜➺ _${usedPrefix}on_
@@ -315,8 +315,11 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🔍📜➺ _${usedPrefix}play | spotify *texto*_
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 JOGOS 〕━⬣*
-┃🐈‍⬛➺ _${usedPrefix}top5 *texto*
-┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*
+┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
+┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
+┃🐈‍⬛➺ _${usedPrefix}quiz @usuario*_
+┃🐈‍⬛➺ _${usedPrefix}poemas _
+┃🐈‍⬛➺ _${usedPrefix}culturagotica_
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 IA 〕━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
