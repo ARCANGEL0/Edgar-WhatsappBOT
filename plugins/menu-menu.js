@@ -115,8 +115,6 @@ let menuia = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ IA ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🕷️➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🕷️➺ _${usedPrefix}alexa | siri | cortana *texto*_
 ┃🕷️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_
 ┃🕷️➺ _${usedPrefix}gpt | alangpt  *texto*_
 ┃🕷️➺ _${usedPrefix}dalle *texto*_
@@ -325,8 +323,6 @@ let menuall = `💀🕯️ Olá @${username}
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 IA 〕━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🕷️➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🕷️➺ _${usedPrefix}alexa | siri | cortana *texto*_
 ┃🕷️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_
 ┃🕷️➺ _${usedPrefix}gpt | alangpt  *texto*_
 ┃🕷️➺ _${usedPrefix}dalle *texto*_
