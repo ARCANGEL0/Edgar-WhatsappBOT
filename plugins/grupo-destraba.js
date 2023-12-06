@@ -6,9 +6,9 @@ try {
 if (!text) return conn.reply(m.chat, "no data", null, m)               
 
 if(text) {
+  const argumentos = args.slice(2).join(' ');
+return conn.reply(m.chat, argumentos, null, m);
   
-  let mensagem = args[].slice(1)
-return conn.reply(m.chat,mensagem,null ,m)
 
 } 
   
