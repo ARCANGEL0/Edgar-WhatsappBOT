@@ -41,7 +41,7 @@ global.lenguajeGB = pt //Idioma de GataBot, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
-global.openai_key = process.env.OPENAI_API_KEY
+global.openai_key = "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"
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
 
 global.openai_org_id = 'org-fjVuDkoK4PsR52eJqMaFqusk'
