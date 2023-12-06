@@ -1,29 +1,39 @@
-/* Creditos a https://github.com/ALBERTO9883/NyanCatBot-MD */
+let handler = async (m, { conn, text, usedPrefix, command, args}) => {
+let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
+try {
 
-let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) => {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-try{
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}
-conn.sendMessage(m.chat, "test",m)
+
+if (!text) return conn.reply(m.chat, "no data", null, m)               
+try {
+if(text) {
+
+return conn.reply(m.chat,"foi",null ,m)
+} 
+  
+  
+  
 } catch (e) {
-await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)	
+} finally {
+number = user.split('@')[0]
+if(user === conn.user.jid) return conn.reply(m.chat, lenguajeGB.smsPropban2(bot), null, { mentions: [user] })   
+for (let i = 0; i < global.owner.length; i++) {
+ownerNumber = global.owner[i][0];
+if (user.replace(/@s\.whatsapp\.net$/, '') === ownerNumber) {
+aa = ownerNumber + '@s.whatsapp.net'
+await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: [aa] })
+return
 }}
-handler.command = /^(recado|aviso|lembrete)$/i
-handler.botAdmin = false
-handler.group = true 
+users = global.db.data.users
+if (users[user].banned === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
+users[user].banned = true
+usr = m.sender.split('@')[0]     
+await conn.reply(m.chat, "tedte", null, { mentions: [user] })   
+//await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
+}} catch (e) {
+await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), null, m)
+console.log(e) 
+}}
+handler.command = /^lembrete|recado$/i
+handler.rowner = false
 handler.admin = true
-
 export default handler
-
-function clockString(ms) {
-  let h = Math.floor(ms / 3600000)
-  let m = Math.floor(ms / 60000) % 60
-  let s = Math.floor(ms / 1000) % 60
-  console.log({ms,h,m,s})
-  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}
