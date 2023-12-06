@@ -7,9 +7,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }
-console.log(args)
-conn.sendMessage(m.chat, args[0],m)
-conn.sendMessage(m.chat, args[1],m)
+conn.sendMessage(m.chat, "test",m)
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
