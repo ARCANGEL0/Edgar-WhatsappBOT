@@ -19,7 +19,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)	
 }}
 handler.command = /^(lembrete)$/i
-handler.botAdmin = true
+handler.botAdmin = false
 handler.group = true 
 handler.admin = true
 
