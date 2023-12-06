@@ -3,10 +3,11 @@ let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
 try {
 
 
-if (!text) return conn.reply(m.chat, "no data", null, m)               
+if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)               
 
-if(text) {
-  const argumentos = args.slice(2).join(' ');
+if(args[0] && args[1]) {
+  const lembrete = args.slice(1).join(' ');
+  const horario = args[0]
 return conn.reply(m.chat, argumentos, null, m);
   
 
