@@ -30,5 +30,6 @@ handler.help = ["block", "unblock"]
 handler.tags = ["owner"]
 handler.command = /^(block|unblock|bloquear|desbloquear)$/i
 handler.owner = false
+handler.admin = true
  
 export default handler
