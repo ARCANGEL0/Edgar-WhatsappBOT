@@ -47,8 +47,16 @@ conn.sendFile(m.chat, pp, 'error.jpg', `✨ *HERE IS THE WEATHER IN ENGLISH*`, m
 ], m,)}  */
   
   
-if (command == 'clima3') {
- if (!text) return conn.reply(m.chat, `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙋𝘼𝙄𝙎 𝙔 𝘾𝙄𝙐𝘿𝘼𝘿 𝙋𝘼𝙍𝘼 𝙎𝘼𝘽𝙀𝙍 𝙀𝙇 𝘾𝙇𝙄𝙈𝘼\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Ecuador Quito*\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝘾𝙊𝙐𝙉𝙏𝙍𝙔 𝘼𝙉𝘿 𝘾𝙄𝙏𝙔 𝙏𝙊 𝙆𝙉𝙊𝙒 𝙏𝙃𝙀 𝙒𝙀𝘼𝙏𝙃𝙀𝙍\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Francia París*`, m)  
+if (command == 'clima') {
+ if (!text) return conn.reply(m.chat, `${mg}
+ ━━━━━━━━━⬣⬣━━━━━━━━
+ 
+ 𝐐𝐮𝐚𝐥 𝐩𝐚í𝐬 𝐞 𝐜𝐢𝐝𝐚𝐝𝐞 𝐞𝐟ê𝐦𝐞𝐫𝐚 𝐝𝐞𝐬𝐞𝐣𝐚𝐫𝐢𝐚𝐬 𝐬𝐨𝐧𝐝𝐚𝐫 𝐨𝐬 𝐡𝐮𝐦𝐨𝐫𝐞𝐬 𝐝𝐨 𝐜𝐥𝐢𝐦𝐚? 🕯️📜
+ 
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
+┃ *${usedPrefix + command} Franca Paris*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ `, m)  
 
 let pp = `https://pt.wttr.in/${text}.png`
 conn.sendFile(m.chat, pp, 'error.jpg', `✨ *AQUI ESTÁ O TEMPO EM PORTUGUÊS*`, m)}
