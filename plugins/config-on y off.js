@@ -406,7 +406,14 @@ throw false;
 }
 bot.modoia = isEnable;      
 break;      
-      
+      case 'bot':
+isAll = true;
+if (!isOwner) {
+global.dfail('owner', m, conn);
+throw false;
+}
+chat.isBanned = isEnable;      
+break;      
 case 'swonly': case 'statusonly':
 isAll = true
 if (!isROwner) {
@@ -416,7 +423,7 @@ throw false
 global.opts['swonly'] = isEnable
 break
 default:
-if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🌟 ${lenguajeGB.smsConfi2()} *@${toUser}*
+if (!/[01]/.test(command)) return await conn.reply(m.chat, `${lenguajeGB.smsConfi10()}\n\n🥀 ${lenguajeGB.smsConfi2()} *@${toUser}*
 
 ${lenguajeGB.smsConfi3()}
 ${lenguajeGB.smsConfi4()}
