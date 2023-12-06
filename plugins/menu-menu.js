@@ -211,6 +211,7 @@ let menugp = `💀🕯️ Olá @${username}
 ┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
 ┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
 ┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
+┃✒️📜➺ _${usedPrefix}lembrete *horario* *mensagem*_
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
 ┃✒️📜➺ _${usedPrefix}startvoto *texto*_
 ┃✒️📜➺ _${usedPrefix}sivotar | upvote_
@@ -441,6 +442,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
 ┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
 ┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
+┃✒️📜➺ _${usedPrefix}lembrete *horario* *mensagem*
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
 ┃✒️📜➺ _${usedPrefix}startvoto *texto*_
 ┃✒️📜➺ _${usedPrefix}sivotar | upvote_
