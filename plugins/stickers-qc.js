@@ -26,7 +26,7 @@ let text
       "scale": 2,
       "messages": [{
          "entities": [],
-         "avatar": true,
+         "avatar": false,
          "from": {
             "id": 1,
             "name": m.name,
