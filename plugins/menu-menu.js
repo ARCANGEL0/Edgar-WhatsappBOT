@@ -103,8 +103,12 @@ let menujogos = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ JOGOS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🐈‍⬛➺ _${usedPrefix}top5 *texto*
-┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*
+┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
+┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
+┃🐈‍⬛➺ _${usedPrefix}quiz_
+┃🐈‍⬛➺ _${usedPrefix}poemas _
+┃🐈‍⬛➺ _${usedPrefix}culturagotica_
+┃🐈‍⬛➺ _${usedPrefix}biografia_ 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()p
 
 let menuia = `💀🕯️ Olá @${username}
@@ -139,9 +143,6 @@ let menubaixar = `💀🕯️ Olá @${username}
 ┃🕯️➺ _${usedPrefix}tiktokimagen | ttimagen *link*_
 ┃🕯️➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
 ┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-┃🕯️➺ _${usedPrefix}clima *país cidade*_
-┃🕯️➺ _${usedPrefix}morse codificar *texto*_
-┃🕯️➺ _${usedPrefix}morse decodificar *morse*_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 let menucvs = `💀🕯️ Olá @${username}
@@ -151,7 +152,7 @@ let menucvs = `💀🕯️ Olá @${username}
 ┃🥀️➺ _${usedPrefix}toimg | img | jpg *figurinha*_
 ┃🥀️➺ _${usedPrefix}toanime *foto*_
 ┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
-┃🥀️➺ _${usedPrefix}s *imagem pra figurinha*_
+┃🥀️➺ _${usedPrefix}fg *imagem pra figurinha*_
 ┃🥀️➺ _${usedPrefix}topdf *imagem*_
 ┃🥀️➺ _${usedPrefix}tovn | vn *video ou audio*_
 ┃🥀️➺ _${usedPrefix}tovideo *audio*_
@@ -177,6 +178,7 @@ let menutools = `💀🕯️ Olá @${username}
 ┃✒️️ _${usedPrefix}morse decodificar *morse*_
 ┃✒️️ _${usedPrefix}poll *Motivo*_
 ┃✒️️ _${usedPrefix}horario_
+┃✒️️ _${usedPrefix}clima *pais cidade*_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
@@ -258,7 +260,8 @@ let menubot = `💀🕯️ Olá @${username}
 ┃⚙️ _${usedPrefix}on *:* off *antinstagram*_
 ┃⚙️ _${usedPrefix}on *:* off *antitwitter*_
 ┃⚙️ _${usedPrefix}on *:* off *bot*_
-┃⚙️ _${usedPrefix}on *:* off *chat*_
+┃⚙️ _${usedPrefix}on *:* off *gconly*_
+┃⚙️ _${usedPrefix}on *:* off *pconly*_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 let menumd = `💀🕯️ Olá @${username}
@@ -378,6 +381,13 @@ let menuall = `💀🕯️ Olá @${username}
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
 ┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+┃⚙️ _${usedPrefix}criador_
+┃⚙️ _${usedPrefix}infobot_
+┃⚙️ _${usedPrefix}doar | paypal_
+┃⚙️ _${usedPrefix}boost_
+┃⚙️ _${usedPrefix}status_
+┃⚙️ _${usedPrefix}ping_
 ┃⚙️ _${usedPrefix}on *:* off *welcome*_
 ┃⚙️ _${usedPrefix}on *:* off *avisos*_
 ┃⚙️ _${usedPrefix}on *:* off *restrict*_
