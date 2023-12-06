@@ -21,6 +21,6 @@ let texto = `
 
 await conn.sendFile(m.chat, imagen3, 'gata.mp4', texto)
 
-
+}
 handler.command = /^listas|lista|list?$/i
 export default handler
