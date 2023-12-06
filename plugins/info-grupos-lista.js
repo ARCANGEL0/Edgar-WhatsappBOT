@@ -33,7 +33,7 @@ const participants = groupMetadata.participants || [];
 const bot = participants.find((u) => conn.decodeJid(u.id) === conn.user.jid) || {};
 const isBotAdmin = bot?.admin || false;
 const isParticipant = participants.some((u) => conn.decodeJid(u.id) === conn.user.jid);
-const participantStatus = isParticipant ? '✅ *ESTOU  AQUÍ*' : '❌ *NAO ESTOU AQUÍ *;
+const participantStatus = isParticipant ? '✅ *ESTOU  AQUÍ*' : '❌ *NAO ESTOU AQUÍ';
 const totalParticipants = participants.length;    
     txt += `🐈 ${i + 1}
 ${lenguajeGB.smsLisC()} ${await conn.getName(jid)} ${participantStatus}
