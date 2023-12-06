@@ -21,7 +21,7 @@ global.db.data.chats[m.chat].isBanned = false
 }
 handler.help = ['unbanchat'];
 handler.tags = ['owner'];
-handler.command =  /^(abrirbot|boton|ativarbot)$/i
+handler.command =  /^(abrirbot|ligarbot|ativarbot)$/i
 handler.botAdmin = false
 handler.admin = true
 export default handler;
