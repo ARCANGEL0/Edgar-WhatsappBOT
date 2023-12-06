@@ -45,6 +45,12 @@ ${text}
 
 `;
 
+ await conn.sendMessage(m.chat, react: {
+        text: "⌛", // use an empty string to remove the reaction
+        key: message.key
+    },
+    m  )
+
 const data = {
     "model": "gpt-3.5-turbo",
     "temperature":0.3,
@@ -85,7 +91,15 @@ console.log(result.choices[0].message.content);
   return result.choices[0].message.content
     
 }
+
 let aiReply = await requestToChatGPT(text)
+
+await conn.sendMessage(m.chat, react: {
+        text: "✔️", // use an empty string to remove the reaction
+        key: message.key
+    },
+    m  )
+
     conn.reply(m.chat, aiReply, m);
   }
   
