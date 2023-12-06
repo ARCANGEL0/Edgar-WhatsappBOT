@@ -106,9 +106,10 @@ let menujogos = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
-┃🐈‍⬛➺ _${usedPrefix}poemas _
+┃🐈‍⬛➺ _${usedPrefix}poemas_
 ┃🐈‍⬛➺ _${usedPrefix}culturagotica_
 ┃🐈‍⬛➺ _${usedPrefix}biografia_ 
+┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()p
 
 let menuia = `💀🕯️ Olá @${username}
@@ -293,7 +294,7 @@ let menuvoto = `💀🕯️ Olá @${username}
 ┃📧➺ _${usedPrefix}startvote *texto*_
 ┃📧➺ _${usedPrefix}upvote_
 ┃📧➺ _${usedPrefix}devote_
-┃📧➺ _${usedPrefix}vervotos
+┃📧➺ _${usedPrefix}vervotos_
 ┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
@@ -317,9 +318,10 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
-┃🐈‍⬛➺ _${usedPrefix}poemas _
+┃🐈‍⬛➺ _${usedPrefix}poemas_
 ┃🐈‍⬛➺ _${usedPrefix}culturagotica_
 ┃🐈‍⬛➺ _${usedPrefix}biografia_ 
+┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 IA 〕━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -456,7 +458,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃📧➺ _${usedPrefix}startvote *texto*_
 ┃📧➺ _${usedPrefix}upvote_
 ┃📧➺ _${usedPrefix}devote_
-┃📧➺ _${usedPrefix}vervotos
+┃📧➺ _${usedPrefix}vervotos_
 ┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━━━━━━━━⬣
 *╭━━━[ LOGOS ]━━⬣*
