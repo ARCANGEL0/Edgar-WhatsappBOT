@@ -8,7 +8,7 @@ if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
-return conn.reply(m.chat, argumentos, null, m);
+return conn.reply(m.chat, lembrete, null, m);
   
 
 } 
