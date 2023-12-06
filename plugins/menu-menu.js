@@ -110,7 +110,7 @@ let menujogos = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}culturagotica_
 ┃🐈‍⬛➺ _${usedPrefix}biografia_ 
 ┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
-*╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()p
+*╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 let menuia = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
