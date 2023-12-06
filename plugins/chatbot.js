@@ -18,6 +18,7 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 
 
 return !0 
+}
 
 export default handler
 
