@@ -511,6 +511,7 @@ if(command=="mcv") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', me
 
 }
  catch (e) {
+   console.log(e)
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'pt' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
