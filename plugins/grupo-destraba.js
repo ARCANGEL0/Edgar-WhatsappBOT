@@ -2,14 +2,14 @@ let handler = async (m, { conn, text, usedPrefix, command, args}) => {
 let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
 try {
 
-const horario = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
+const horaatual = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
 if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)               
 
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
   
-return conn.reply(m.chat, horario, null, m);
+return conn.reply(m.chat, horaatual, null, m);
   
 
 } 
