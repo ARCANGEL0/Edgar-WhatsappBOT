@@ -20,6 +20,7 @@ case "unblock":
 case "desbloquear":
 if (who) await conn.updateBlockStatus(who, "unblock").then(() => {
 res.push(who);
+conn.reply(m.chat, `*Desbloqueando ${res ? `${res.map(v => '@' + v.split("@")[0])}` : ''}*`, m, { mentions: res })
 })
 else conn.reply(m.chat, why, m, { mentions: [m.sender] })
 break
