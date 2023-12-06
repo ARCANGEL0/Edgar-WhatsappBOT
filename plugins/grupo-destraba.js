@@ -7,7 +7,8 @@ if (!text) return conn.reply(m.chat, "no data", null, m)
 try {
 if(text) {
 
-return conn.reply(m.chat,"foi",null ,m)
+return conn.reply(m.chat,args[0],null ,m)
+return conn.reply(m.chat,args[1],null ,m)
 } 
   
   
