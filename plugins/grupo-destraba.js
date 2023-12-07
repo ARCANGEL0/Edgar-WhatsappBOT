@@ -10,7 +10,8 @@ if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
   
-  const horario = args[0];
+  
+ 
 const formatoHora = 'HH:mm';
 
 const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
