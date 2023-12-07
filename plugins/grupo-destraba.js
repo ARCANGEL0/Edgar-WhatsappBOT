@@ -12,7 +12,7 @@ if(args[0] && args[1]) {
   const timeout = horario.valueOf() - horaatual.valueOf();
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
-await conn.reply(m.chat, lembrete)
+await conn.reply(m.chat, timeout)
 }, timeout)
 
 
