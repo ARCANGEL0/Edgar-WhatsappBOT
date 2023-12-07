@@ -17,7 +17,7 @@ const startDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), cu
 const endDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), parseInt(horario.split(":")[0]), parseInt(horario.split(":")[1]), 0);
 
 // Calculate the difference in minutes
-const timeoutset = (endDate - startDate) / (1000 * 60);
+const timeoutset = endDate - startDate;
 
 
    
