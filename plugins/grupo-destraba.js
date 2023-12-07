@@ -2,6 +2,9 @@ let handler = async (m, { conn, text, usedPrefix, command, args}) => {
 let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
 try {
 let user = global.db.data.users[m.sender]
+let groups = Object.keys(await conn.groupFetchAllParticipating())
+const delay = i * 4000 //4 seg
+  const id = groups[i];
   
 const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
 if (!text || !args[1]) return conn.reply(m.chat, `
@@ -43,9 +46,8 @@ const timeoutset = endDate - startDate;
 🌒🕯️ 𝐦𝐞𝐧𝐬𝐚𝐠𝐞𝐦  𝐦𝐚𝐫𝐜𝐚𝐝𝐚  𝐩𝐚𝐫𝐚 *${horario}*
 
  ━━━━━━━━━⬣⬣━━━━━━━━`)
-  setTimeout(async () => {
-   
-await conn.reply(m.chat, ` ━━━━━━━━━⬣⬣━━━━━━━━
+ 
+ let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
 
 🕯️🌕  *@${m.sender.split("@")[0]}* 𝐚𝐠𝐞𝐧𝐝𝐨𝐮 𝐮𝐦𝐚 𝐦𝐞𝐧𝐬𝐚𝐠𝐞𝐦 𝐩𝐚𝐫𝐚 𝐞𝐜𝐨𝐚𝐫 𝐞𝐧𝐭𝐫𝐞 𝐚𝐬 𝐚𝐥𝐦𝐚𝐬 𝐩𝐞𝐫𝐝𝐢𝐝𝐚𝐬 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨, 𝐦𝐚𝐫𝐜𝐚𝐧𝐝𝐨 𝐨 𝐥𝐞𝐦𝐛𝐫𝐞𝐭𝐞 𝐩𝐚𝐫𝐚 *${horario}*
 
@@ -54,7 +56,15 @@ await conn.reply(m.chat, ` ━━━━━━━━━⬣⬣━━━━━━�
 
 
  ━━━━━━━━━⬣⬣━━━━━━━━
-`,m,{ mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) })
+`
+
+  setTimeout(async () => {
+  
+  setTimeout(async () => { 
+await conn.sendMessage(id, { text: msgheader, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }) 
+//await conn.reply(id, infoGP + teks2, { mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak });
+}, delay)}     
+  
 }, timeoutset)
 
 
