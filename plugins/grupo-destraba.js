@@ -9,7 +9,12 @@ if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
-  const timeout = horario.valueOf() - horaatual.valueOf();
+  
+  const horario = args[0];
+const formatoHora = 'HH:mm';
+
+const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
+  const timeout = horarioLembrete.valueOf() - horaatual.valueOf();
   console.log(timeout)
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
