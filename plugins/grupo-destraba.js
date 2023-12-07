@@ -3,8 +3,8 @@ let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
 try {
 let user = global.db.data.users[m.sender]
 let groups = Object.keys(await conn.groupFetchAllParticipating())
-const delay = i * 4000 //4 seg
-  const id = groups[i];
+
+  
   
 const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
 if (!text || !args[1]) return conn.reply(m.chat, `
@@ -60,7 +60,7 @@ const timeoutset = endDate - startDate;
 
   setTimeout(async () => {
   for (let i = 0; i < groups.length; i++){
-  
+  const id = groups[i];
 await conn.sendMessage(m.chat, { text: msgheader, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }) 
 }
   
