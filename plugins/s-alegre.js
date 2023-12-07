@@ -27,6 +27,13 @@ global.poema = [
     "Meus versos são sussurros sepulcrais que ecoam no tempo, Palavras carregadas de dor e melancolia, Uma expressão poética do meu tormento, Um reflexo desolado da minha alma sombria.",
     "O desespero é minha única fonte de inspiração, A angústia é a musa que me alimenta, Nas trevas da minha mente, encontro a beleza, No caos e na morte, minha alma se contenta.",
     "Sob o manto da escuridão, escrevo minhas agonias, A pena é a lâmina que corta minha pele, O sangue que enche as páginas vazias, É a essência da minha vida, a minha história cruel.",
-    "A noite é o palco perfeito para a tragédia do meu ser, O cenário onde meus demônios dançam e se apresentam, Enquanto as sombras consomem minha existência, Eu me torno um personagem em meu próprio conto macabro."
+    "A noite é o palco perfeito para a tragédia do meu ser, O cenário onde meus demônios dançam e se apresentam, Enquanto as sombras consomem minha existência, Eu me torno um personagem em meu próprio conto macabro.",
+        "Sozinho no meu mundo interior, Imerso em penumbra e dor. Procuro, sem esperança encontrar, Beleza na tristeza, caso raro de encantar.",
+    "Os dias eram curtos, as noites longas. A solidão, minha fiel companheira, entre rios e mares. Na escuridão, esperança desfalecida, A loucura adentra, eis que a alma se fragmenta.",
+    "Um corvo sombrio veio a mim num dia pálido, Soltando crocitações repletas de angústia e amargor. Ave nefasta, mendigo de desgraça, único aliado Dos meus pensamentos profanos à busca de um amor.",
+    "Oh, ébano noturno, reflexo do meu tormento! Numa sala silente, repleta de livros empoeirados, Conspiro comigo mesmo, perco-me no pensamento, E lá fora, o vazio e a escuridão estão meus olhos perdidos.",
+    "Suspiro pelos êxtases da vida, Mas esses gozos são dúbios como uma ilusão. Na escuridão sigo caminhante, Rumo ao meu destino, sem paixão.",
+    "Sozinho, caminho sob o luar sombrio, Vagueando entre lápides esquecidas. A morte, leal amiga, atrai-me com seu mistério, Envolvendo-me num ósculo de sombras perdidas.",
+    "Aqui jaz um amor que desfaleceu, Numa cela do coração proibido. Seus suspiros, outrora eternos, desvaneceu, O amor findou, torturado, contudo entrelaçado."
 ]
 
