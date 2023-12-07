@@ -1,36 +1,32 @@
-import { sticker } from '../lib/sticker.js'
-let handler = async(m, { conn }) => {
-//if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 *#on stickers* 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
+/* By https://github.com/DIEGO-OFC/DORRAT-BOT-MD */
 
-let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨' 
- 
-const s = [
-'https://c.tenor.com/-8qgEEd80skAAAAi/chika.gif',
-'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif', 
-'https://c.tenor.com/KyoAsIz_GH8AAAAi/heat-wave.gif',
-'https://c.tenor.com/4cNykyUM0M0AAAAi/draxy-stickery.gif',
-'https://c.tenor.com/-I1sYsJQ-XUAAAAi/vibe-dance.gif',  
-'https://media4.giphy.com/media/5dQQUpPjaZQeQ/giphy.gif?cid=ecf05e47wz1ny77fqnp8gvps730g2edfumud5kz2pqe9wh2o&rid=giphy.gif&ct=g',
-'https://c.tenor.com/U-XE486arkUAAAAi/chika-fujiwara-chika.gif',
-'https://media3.giphy.com/media/3osxAKYM7Wx8sji9LY/giphy.gif?cid=ecf05e47db4pd3yaey7geps2nhso6myni75w6umq8ph297zo&rid=giphy.gif&ct=g',
-'https://media1.giphy.com/media/5GoVLqeAOo6PK/giphy.gif?cid=ecf05e47ukjm4gay9dnm1qlb4za6tpgnsmkq2tbnob86z88c&rid=giphy.gif&ct=g',
-'https://media4.giphy.com/media/q4sdF9tchap6E/giphy.gif?cid=ecf05e47270meko3jt3y05iv01ou7ffzktzm8e4i34sb0bpt&rid=giphy.gif&ct=g'
-];  
- 
-let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
-await delay(5 * 5000)
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+let handler = async (m, { conn, text}) => {
+
+m.reply(` ━━━━━━━━━⬣⬣━━━━━━━━
+
+🪶📜 _${pickRandom(global.poema)}_
+
+ ━━━━━━━━━⬣⬣━━━━━━━━`)
 }
-handler.customPrefix = /animada|animado|contento|contenta|alegría|alegrarse|alegremonos|emocionado|emocionada|feliz/i 
-handler.command = new RegExp
-handler.exp = 50
+handler.tags = ['frases']
+handler.command = ['poemas']
 export default handler
 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]}
 
-
-
-
+global.poema = [
+    "A noite era eterna, a escuridão absoluta, Envolvendo minha alma em um abismo sem fim, As estrelas, como olhos distantes e curiosos, Observando minha solidão e agonia sem fim.",
+    "Por trás do meu sorriso, escondia-se a morte, Um segredo obscuro que me consumia a cada dia, Minha alegria falsa era apenas um véu, Para encobrir a tristeza que me corroía.",
+    "Os corvos cantavam uma canção enlouquecedora, Com suas vozes roucas e penetrantes, Eles traziam consigo a melancolia, Acompanhando minhas angústias incessantes.",
+    "A sanidade fugiu por entre os dedos trêmulos, E mergulhei na loucura que me assombrava, Minha mente fragmentada e obscura, Um labirinto de pensamentos que se entrelaçava.",
+    "Nas sombras, os demônios dançavam com a melancolia, Seus passos sinistros ecoavam em minha mente, Os pesadelos se tornaram meus companheiros, Enquanto eu vagava sem rumo, descrente.",
+    "Meus pensamentos, como galhos quebrados, ecoavam no vazio, Palavras desconexas que se perdiam no ar, A poesia era minha única salvação, Uma forma de me expressar e me libertar.",
+    "A lua chorava lágrimas de sangue sobre o meu túmulo, Uma testemunha silenciosa do meu fim iminente, Em seu brilho maldito, eu encontrava conforto, Sabendo que meu destino era fatalmente latente.",
+    "Das profundezas da névoa, surgiu a figura sinistra, Um espectro sombrio que me seduzia, Meus medos se materializaram diante de mim, E a escuridão em meu coração só se fortalecia.",
+    "Meus versos são sussurros sepulcrais que ecoam no tempo, Palavras carregadas de dor e melancolia, Uma expressão poética do meu tormento, Um reflexo desolado da minha alma sombria.",
+    "O desespero é minha única fonte de inspiração, A angústia é a musa que me alimenta, Nas trevas da minha mente, encontro a beleza, No caos e na morte, minha alma se contenta.",
+    "Sob o manto da escuridão, escrevo minhas agonias, A pena é a lâmina que corta minha pele, O sangue que enche as páginas vazias, É a essência da minha vida, a minha história cruel.",
+    "A noite é o palco perfeito para a tragédia do meu ser, O cenário onde meus demônios dançam e se apresentam, Enquanto as sombras consomem minha existência, Eu me torno um personagem em meu próprio conto macabro."
+]
 
