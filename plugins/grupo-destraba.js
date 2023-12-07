@@ -5,12 +5,17 @@ try {
 const horaatual = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
 if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)               
 
+
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
+  const timeoutset = horaAtual.diff(horario);
   
-return conn.reply(m.chat, horaatual, null, m);
-  
+  setTimeout(async () => {
+await conn.reply(m.chat, lembrete)
+}), timeoutset)
+
+
 
 } 
   
