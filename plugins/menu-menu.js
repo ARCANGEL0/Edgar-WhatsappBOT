@@ -106,7 +106,7 @@ let menujogos = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ JOGOS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
+┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
 ┃🐈‍⬛➺ _${usedPrefix}poemas_
@@ -319,7 +319,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🔍📜➺ _${usedPrefix}play | spotify *texto*_
 *╰━━━━━━━━━━━━⬣*
 *╭━〔 JOGOS 〕━⬣*
-┃🐈‍⬛➺ _${usedPrefix}top5 *texto*_
+┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
 ┃🐈‍⬛➺ _${usedPrefix}poemas_
