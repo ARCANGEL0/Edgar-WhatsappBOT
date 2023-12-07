@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args}) => {
 let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
 try {
 
-const horaatual = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
+const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
 if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)               
 
 
@@ -17,7 +17,7 @@ const formatoHora = 'HH:mm';
 const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
   const timeout = horarioLembrete.valueOf() - horaatual.valueOf();
   console.log("hora atual    "+horaatual)
-  console.log("hora definida    "+horarioLembrete)
+  console.log("hora definida    "+horario)
   console.log(timeout)
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
