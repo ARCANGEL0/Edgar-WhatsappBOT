@@ -15,7 +15,7 @@ if(args[0] && args[1]) {
 const formatoHora = 'HH:mm';
 
 const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
-  const timeoutset = moment(horarioLembrete.diff(horaatual)).format("m[m] s[s]");
+  const timeoutset = moment(horarioLembrete.diff(horaatual)).format("H[H]:m[m]");
   console.log("hora atual    "+horaatual)
   console.log("hora definida    "+horario)
   console.log(timeoutset)
