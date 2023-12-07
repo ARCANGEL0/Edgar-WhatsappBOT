@@ -59,10 +59,15 @@ const timeoutset = endDate - startDate;
 `
 
   setTimeout(async () => {
+  
+await conn.sendMessage(m.chat, { text: msgheader, mentions: [m.sender], mentions: (
+  
   for (let i = 0; i < groups.length; i++){
   const id = groups[i];
-await conn.sendMessage(m.chat, { text: msgheader, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }) 
+  await conn.groupMetadata(id)).participants.map(v => v.id) }
 }
+) 
+
   
 }, timeoutset)
 
