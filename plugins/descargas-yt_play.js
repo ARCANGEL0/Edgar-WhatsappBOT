@@ -45,7 +45,9 @@ let captionvid = `𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
 ও 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀. . . 
 
 *𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`  
-await conn.sendMessage(m.chat, {
+
+
+let sendtext = await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
 externalAdReply: {
@@ -56,6 +58,12 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })
+
+
+const timeout = 20000; // 20,000 milliseconds = 20 seconds
+setTimeout(
+  await conm.sendMessage(m.chat, { delete: sendtext.key });
+  , timeout);
 if (command == 'play') {	
 try {
 let q = '128kbps'
