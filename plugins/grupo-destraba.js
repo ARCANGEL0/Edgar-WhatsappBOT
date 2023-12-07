@@ -9,18 +9,17 @@ if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
-  
-  
  
-const formatoHora = 'HH:mm';
+   const currentDate = new Date();
 
-const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
-   
-   const diffEmMilissegundos = horarioLembrete.diff(horaatual);
-const diffEmMinutos = moment.duration(diffEmMilissegundos).asMinutes();
+// Set the current date to the start and end times
+const startDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), parseInt(horaatual.split(":")[0]), parseInt(horaatual.split(":")[1]), 0);
+const endDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), parseInt(horario.split(":")[0]), parseInt(horario.split(":")[1]), 0);
 
-const timeoutset = diffEmMinutos > 0 ? diffEmMinutos : 0;
-   
+// Calculate the difference in minutes
+const timeoutset = (endDate - startDate) / (1000 * 60);
+
+
    
    
   console.log("hora atual    "+horaatual+"\ntipo:  "+typeof horaatual)
