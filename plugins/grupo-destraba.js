@@ -54,7 +54,7 @@ await conn.reply(m.chat, ` ━━━━━━━━━⬣⬣━━━━━━�
 
 
  ━━━━━━━━━⬣⬣━━━━━━━━
-`,m,{ mentions: [m.sender] })
+`,m,{ mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) })
 }, timeoutset)
 
 
