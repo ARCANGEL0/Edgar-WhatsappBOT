@@ -13,7 +13,7 @@ if(args[0] && args[1]) {
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
 await conn.reply(m.chat, lembrete)
-}), timeoutset)
+}, timeoutset)
 
 
 
