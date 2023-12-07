@@ -22,10 +22,11 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
+additionalText = '𝘼𝙐𝘿𝙄𝙊'
 } else if (command === 'play2') {
-additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
+additionalText = '𝙑𝙄𝘿𝙀𝙊 '}
 let captionvid = `╭━━[${yt_play[0].title}]━━━⬣
+
 📜🪶 𝐃𝐚𝐭𝐚:
 ${yt_play[0].ago}
 -----------------
@@ -33,6 +34,7 @@ ${yt_play[0].ago}
  ${yt_play[0].url}
  
  🕰️ 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀.
+ 
 ╰━━━━━━━━━━━━━━━━━━⬣`
 
 
