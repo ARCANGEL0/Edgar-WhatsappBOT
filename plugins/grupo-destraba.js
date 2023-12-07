@@ -24,7 +24,7 @@ const timeoutset = diffEmMinutos > 0 ? diffEmMinutos : 0;
    
    
   console.log("hora atual    "+horaatual+"\ntipo:  "+typeof horaatual)
-  console.log("hora definida    "+horarioLembrete+"\ntipo   "+typeof horarioLembrete)
+  console.log("hora definida    "+horario+"\ntipo   "+typeof horario)
   console.log(timeoutset)
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
