@@ -15,6 +15,8 @@ const formatoHora = 'HH:mm';
 
 const horarioLembrete = moment(horario, formatoHora).tz('America/Sao_Paulo');
   const timeout = horarioLembrete.valueOf() - horaatual.valueOf();
+  console.log("hora atual    "+horaatual)
+  console.log("hora definida    "+horarioLembrete)
   console.log(timeout)
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
