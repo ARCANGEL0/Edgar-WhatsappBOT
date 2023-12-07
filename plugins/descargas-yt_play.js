@@ -62,7 +62,7 @@ renderLargerThumbnail: true
 
 const timeout = 20000; // 20,000 milliseconds = 20 seconds
 setTimeout(
-  conn.sendMessage(m.chat, { delete: sendtext.key })
+ await conn.sendMessage(m.chat, { delete: sendtext.key })
   , timeout);
 if (command == 'play') {	
 try {
