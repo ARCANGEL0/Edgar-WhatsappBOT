@@ -25,26 +25,15 @@ if (command === 'play') {
 additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
 } else if (command === 'play2') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
-let captionvid = `𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
-
-ও  💀🕯️𝙏𝙄𝙏𝙐𝙇𝙊 
-»  ${yt_play[0].title}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ✒️ 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 
-» ${yt_play[0].ago}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ⌛𝘿𝙐𝙍𝘼𝘾𝘼𝙊
-» ${secondString(yt_play[0].duration.seconds)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও 🔎🐈‍⬛𝙑𝙄𝙎𝙏𝘼𝙎
-» ${MilesNumber(yt_play[0].views)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও 🪦 𝙐𝙍𝙇
-» ${yt_play[0].url}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀. . . 
-
-*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`  
+let captionvid = `╭━━[${yt_play[0].title}]━━━⬣
+📜🪶 𝐃𝐚𝐭𝐚:
+${yt_play[0].ago}
+-----------------
+🗝️ 𝐔𝐑𝐋:
+ ${yt_play[0].url}
+ 
+ 🕰️ 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀.
+╰━━━━━━━━━━━━━━━━━━⬣`
 
 
 let sendtext = await conn.sendMessage(m.chat, {
@@ -60,10 +49,6 @@ renderLargerThumbnail: true
 }}} , { quoted: m })
 
 
-const timeout = 20000; // 20,000 milliseconds = 20 seconds
-setTimeout(
- await conn.sendMessage(m.chat, { delete: sendtext.key })
-  , timeout);
 if (command == 'play') {	
 try {
 let q = '128kbps'
