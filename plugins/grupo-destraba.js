@@ -9,7 +9,7 @@ if (!text || !args[1]) return conn.reply(m.chat, "no data", null, m)
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
-  const timeoutset = horario.diff(horaatual,"hours");
+  const timeout = horario.valueOf() - horaatual.valueOf();
   await conn.reply(m.chat, "bilhete salvo meu patrao, nois que voa corvo bruxao 🕯️")
   setTimeout(async () => {
 await conn.reply(m.chat, lembrete)
