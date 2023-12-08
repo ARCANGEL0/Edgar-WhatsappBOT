@@ -94,7 +94,7 @@ console.log(result.choices[0].message.content);
 
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
-let respuesta = await requestToChatGPT(text);
+let respuesta = await requestToChatGPT(m.text);
 await m.reply(`${respuesta}`)
 
 return;
