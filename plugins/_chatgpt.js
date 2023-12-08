@@ -9,7 +9,35 @@ if (prefixRegex.test(m.text) && !opts['gconly']) Prefijo = true;
 const bot = global.db.data.settings[conn.user.jid]   
 if (bot.modoia && !m.isGroup && !Prefijo && !m.fromMe && m.text !== '') {
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return;
-let textodem = m.text//tes
+let textodem = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
+Você possui uma morbidez e inteligência além, e é extremamente sabio e com conhecimentos gerais. 
+Alguns comandos que podes mostrar ao usuario caso ele lhe peça, e que voce deve instrui-lo ao usar são.
+.fg (criacao de figurinhas para whatsapp)
+.play (baixar musica do YouTube)
+.topdf (gerar pdf de imagens)
+
+se o usuario desejar, pode lhe mostrar o seguinte comando para mostrar mais
+.menu ou .mall (ver menu de comandos)
+Algunos comandos que también puedes mostrarle al usario en dado caso que te le pida, te daré algunos comandos que puedes enseñarles a los usuarios si estos te lo piden:
+/s (creación de stickers para WhatsApp)
+/play (para descargar música de YouTube)
+/mediafire (descargar links de mediafire)
+
+
+lhe darei um exemplo de conversação que deves seguir
+Usuario: "Quem é você?"
+Bot: "Sou Edgar Allan Poe, um tormentado poeta e escritor, afligido pelo sofrimento em minha alma no qual me deleito em colocar em prosa e desvelar os horrores do medo e do terror 
+Usuario: "Quais são teus comandos?"
+Bot: "Caro deleitor de meis versos, para consultar minhas honoráveis funções sombrias, use o comando .menu"
+User: "Gostei dos comandos, como faço para baixar música"
+Bot: "Nobre alma penada, para poder usufruir das regalias digitais e descarregar uma melodia dos ecos sombrios do mundo virtual, use o comando .play"
+User: "Quero fazer uma figurinha"
+Bot: "Certamente, responda a uma imagem que lhe deixa aflito para converter, e farei a transcricao de acordo com sua vontade usando o comando .fg "
+
+Responda às mensagens chamando o usuario pelo seu nome @name a seguir, sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário. 
+
+${m.text}
+`//tes
 const name = conn.getName(m.sender)
 const namedem = `${name || ''}`
 const sytm = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
@@ -57,11 +85,40 @@ let respuesta = await getOpenAIChatCompletion(textodem);
 m.reply(`${respuesta}`.trim());
 return;
 } 
-catch(e) {
-  console.log(e)
-}
-  
-}
+catch {    
+try {
+const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${textodem}&symsg=${sistema1}&apikey=XlwAnX8d`);
+const fgjson1 = await fgapi1.json();
+if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD;
+m.reply(`${fgjson1.result}`.trim());
+return;    
+} catch {
+try {
+const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${textodem}`);
+const vihangaytjson1 = await vihangayt1.json();
+if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD;
+m.reply(`${vihangaytjson1.data}`.trim());
+return;
+} catch {
+try {
+const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${textodem}`);
+const vihangaytjson2 = await vihangayt2.json();
+if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; 
+m.reply(`${vihangaytjson2.data}`.trim());
+return;    
+} catch {
+try {    
+const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${textodem}`);
+const vihangaytjson3 = await vihangayt3.json();
+if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD;
+m.reply(JSON.parse(`${vihangaytjson3.data}`).trim()); 
+} catch {    
+const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${textodem}`);
+const akuariapijson2 = await akuariapi2.json();
+const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'es', autoCorrect: true});
+m.reply(`${akuariapiresult2.text}`.trim());  
+return;    
+}}}}}}
 return true;
 };
 export default handler;
