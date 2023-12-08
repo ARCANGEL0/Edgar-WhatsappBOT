@@ -57,6 +57,7 @@ Bot: "Certamente, responda a uma imagem que lhe deixa aflito para converter, e f
 Responda às mensagens chamando o usuario pelo seu nome @name a seguir, sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário. `
 const sistema1 = sytm.replace('@name', namedem)
 
+try {
 await conn.sendPresenceUpdate('composing', m.chat)
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
@@ -76,6 +77,10 @@ return;
 
   
   
+} 
+  catch(e){
+    console.log(e)
+  }
 }
 return true;
 };
