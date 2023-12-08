@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 	
 	
 	try{
-	  conn.reply("porra")
+	  m.reply("porra")
 	}
 	catch(e){
 	  console.log(e)
