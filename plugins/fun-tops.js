@@ -64,4 +64,5 @@ m.reply(top, null, { mentions: conn.parseMention(top) })}
 handler.help = handler.command = ['top10', 'top5' ]
 handler.tags = ['games']
 handler.group = true
+handler.admin = true
 export default handler  
