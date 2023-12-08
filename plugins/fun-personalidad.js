@@ -25,8 +25,8 @@ conn.reply(m.chat, personalidad, m, { mentions: conn.parseMention(personalidad) 
 handler.help = ['personalidade *<nome>*']
 handler.tags = ['fun']
 handler.command = /^personalidade/i
-
-export default handler 
+handler.admin = true
+export default handler
 
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
