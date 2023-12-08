@@ -7,11 +7,7 @@ let chgptdb = []
 const handler = (m) => m;
 
 handler.before = async (m) => {
-   await m.reply({ react: {
-        text: "🌒", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
+   
 
   
  
@@ -99,12 +95,8 @@ console.log(result.choices[0].message.content);
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
 let respuesta = await requestToChatGPT(text);
+await m.reply(`${respuesta}`)
 
-await m.reply({ react: {
-        text: "🌕", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
 return;
 
   
