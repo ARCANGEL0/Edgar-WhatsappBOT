@@ -1,8 +1,20 @@
 import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api';
+import {Configuration, OpenAIApi} from 'openai';
+const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
+const openai = new OpenAIApi(configuration);
+let chgptdb = []
 const handler = (m) => m;
 
 handler.before = async (m) => {
+   await m.reply({ react: {
+        text: "🌒", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
+
+  
+ 
 let Prefijo = false;
 const prefixRegex = global.prefix;
 if (prefixRegex.test(m.text) && !opts['gconly']) Prefijo = true;
@@ -56,23 +68,43 @@ Bot: "Certamente, responda a uma imagem que lhe deixa aflito para converter, e f
 
 Responda às mensagens chamando o usuario pelo seu nome @name a seguir, sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário. `
 const sistema1 = sytm.replace('@name', namedem)
+async function requestToChatGPT(inputText) {
+chgptdb.push({ role: 'user', content: inputText });
+  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
+  const endpoint = "https://api.naga.ac/v1/chat/completions"
+  // ////
+ const requestData = {
+  model: 'gpt-3.5-turbo',
+  messages: [
+    { role: 'system', content: sytm },
+    ...chgptdb
+  ],
+}; 
+// frtch c
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { 
+    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
+    
+  },
+  body: JSON.stringify(requestData), 
+});
+
+const result = await response.json();
+console.log(result.choices[0].message.content);
+  return result.choices[0].message.content
+    
+}
 
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
-async function getOpenAIChatCompletion(texto) {
-const openaiAPIKey = global.openai_key;
-let chgptdb = global.chatgpt.data.users[m.sender];
-chgptdb.push({ role: 'user', content: texto });
-const url = "https://api.openai.com/v1/chat/completions";
-const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
-const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb, ]};
-const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
-const result = await response.json();
-const finalResponse = result.choices[0].message.content;
-return finalResponse;
-};
-let respuesta = await getOpenAIChatCompletion(textodem);
-m.reply(`${respuesta}`.trim());
+let respuesta = await requestToChatGPT(m.text);
+m.reply(respuesta)
+await m.reply({ react: {
+        text: "🌕", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
 return;
 
   
