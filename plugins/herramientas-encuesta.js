@@ -12,9 +12,10 @@ let texto = `📊 𝙀𝙉𝘾𝙐𝙀𝙎𝙏𝘼 𝘾𝙍𝙀𝘼𝘿𝘼 𝙋
 
 return conn.sendPoll(m.chat, texto, a, {mentions: m})}
 
-}
+
 catch(e){
   console.log(e)
+}
 }
 handler.command = ['poll', 'enquete', 'crearencuesta', 'startpoll', 'encuestas', 'polls'] 
 handler.admin = true
