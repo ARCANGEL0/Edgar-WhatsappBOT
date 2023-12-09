@@ -18,7 +18,7 @@ if (!/image/g.test(mime)) throw `${lenguajeGB.smsAvisoMG()}
 const data = await q.download?.();
 const image = await uploadImage(data);
 try {
-const anime = `https://api.lolhuman.xyz/api/imagetoanime?apikey=${lolkeysapi}&img=${image}`;
+const anime = `https://api.lolhuman.xyz/api/cartoon?apikey=${lolkeysapi}&img=${image}`;
 await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
 } catch (i) {
 try {
