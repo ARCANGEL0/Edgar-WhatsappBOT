@@ -57,8 +57,8 @@ const generateAndSendImage = async () => {
     
   }
   catch(e){
-    const tiores1 = generateImages(text);
-    console.log(tiores1)}
-};
+    
+    console.log(e)
+}}
 handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai3', 'a-img', 'aimg', 'imagine'];
 export default handler;
