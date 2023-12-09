@@ -39,4 +39,4 @@ throw `${lenguajeGB.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
 handler.help = ['toanime'];
 handler.tags = ['tools'];
 export default handler;
-handler.command = /^(foto|photo)$/i;
+handler.command = /^(foto|photo|filtro)$/i;
