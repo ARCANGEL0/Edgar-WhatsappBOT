@@ -38,7 +38,7 @@ const generateAndSendImage = async () => {
         fs.writeFileSync('generated_image.png', Buffer.from(imageBase64, 'base64'));
 
         // Send the file using m.sendFile
-        m.sendFile('generated_image.png', 'Generated Image', { quoted: m });
+        conn.sendFile(m.chat, imageBase64, 'error.jpg', null, m);
     } catch (error) {
         console.error(`Error generating and sending image: ${error.message}`);
     }
