@@ -12,67 +12,48 @@ ${usedPrefix + command} um gato preto deitado sob uma caveira
     await conn.sendMessage(m.chat, {text: `╭━━━━━━━━━⬣
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
+const apiUrl = "https://api.wizmodel.com/sdapi/v1/txt2img";
+const apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDIxNDQ5NDIsInVzZXJfaWQiOiI2NTc0YWJhZDE0NzE2ODgxNjFiN2JjMjcifQ.S63pCMV8ykEGf__M-5z40WrztqhEU_ZRX9qg9hEE_4M";
 
-
-
-// Obtain your API key
-const apiKey = "da0d5b76-8272-47bd-b236-0267614d63aa";
-
-const apiUrl = "https://visioncraftapi--vladalek05.repl.co";
-const model = "anything_V5";
-const sampler = "Euler";
-const imageCount = 3;
-const cfgScale = 8;
-const steps = 30;
-
-const generateImages = async (input) => {
+const generateAndSendImage = async () => {
     try {
         const data = {
-            model: model,
-            sampler: sampler,
-            prompt: input,
-            negative_prompt: "canvas frame, 3d, ((disfigured)), ((bad art)), ((deformed)),((extra limbs)),((close up)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render",
-            image_count: imageCount,
-            token: apiKey,
-            cfg_scale: cfgScale,
-            steps: steps
+            prompt: "puppy dog running on grass",
+            steps: 100
         };
 
-        // Send the request to generate images
-        const response = await fetch(`${apiUrl}/generate`, {
+        const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + apiKey
             },
             body: JSON.stringify(data),
         });
 
         const responseData = await response.json();
-        console.log(responseData)
-        const imageUrls = responseData.images;
+        const imageBase64 = responseData.image;
 
-        // Use Promise.all to wait for all image uploads
-        await Promise.all(imageUrls.map(async (imageUrl, i) => {
-            const imageResponse = await fetch(imageUrl);
-            const imageBuffer = await imageResponse.buffer();
+        // Save the image to a file
+        fs.writeFileSync('generated_image.png', Buffer.from(imageBase64, 'base64'));
 
-            // Assuming 'conn' is your connection object
-            await conn.sendMessage(m.chat, { image: { url: `data:image/png;base64,${imageBuffer.toString('base64')}` } }, { quoted: m });
-        }));
+        // Send the file using m.sendFile
+        m.sendFile('generated_image.png', 'Generated Image', { quoted: m });
     } catch (error) {
-        console.error(`Error generating images: ${error.message}`);
+        console.error(`Error generating and sending image: ${error.message}`);
     }
 };
 
-// Call the function to generate and send images
-generateImages();
+// Assuming 'm' is your message object
+// Call the function to generate and send an image
+
 // Call the function to generate and send images
 
 
 
 
   try {
-    generateImages(text);
+    generateAndSendImage();
     
   }
   catch(e){
