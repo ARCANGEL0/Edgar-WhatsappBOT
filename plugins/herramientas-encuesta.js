@@ -20,7 +20,8 @@ const image = await uploadImage(data);
 try {
 const anime = `https://api.lolhuman.xyz/api/cartoon?apikey=${lolkeysapi}&img=${image}`;
 await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
-} catch (i) {
+}
+/* catch (i) {
 try {
 const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
 await conn.sendFile(m.chat, anime2, 'error.jpg', null, m);
@@ -31,7 +32,10 @@ await conn.sendFile(m.chat, anime3, 'error.jpg', null, m);
 } catch (e) {
 throw `${lenguajeGB.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
 𝗩𝗘𝗥𝗜𝗙𝗜𝗤𝗨𝗘 𝗦𝗘 𝗛Á 𝗗𝗘 𝗙𝗔𝗧𝗢 𝗔 𝗙𝗔𝗖𝗘 𝗗𝗘 𝗔𝗟𝗚𝗨𝗠𝗔 𝗣𝗢𝗕𝗥𝗘 𝗔𝗟𝗠𝗔 𝗡𝗘𝗦𝗧𝗔 𝗙𝗢𝗧𝗢\n─┅──┅❖ `
-}}}}
+}}} */
+  
+  
+}
 handler.help = ['toanime'];
 handler.tags = ['tools'];
 export default handler;
