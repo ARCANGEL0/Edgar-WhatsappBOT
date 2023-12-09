@@ -48,6 +48,7 @@ const generateImages = async (input) => {
         });
 
         const responseData = await response.json();
+        console.log(responseData)
         const imageUrls = responseData.images;
 
         // Use Promise.all to wait for all image uploads
