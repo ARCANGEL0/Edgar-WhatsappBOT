@@ -70,7 +70,7 @@ const generateImages = async (input) => {
 
   try {
     const tiores1 = generateImages(text);
-    await conn.sendMessage(m.chat, {image: tiores1}, {quoted: m});
+    await conn.sendMessage(m.chat, {image: {url: tiores1}}, {quoted: m});
   }
   catch(e){console.log(e)}
 };
