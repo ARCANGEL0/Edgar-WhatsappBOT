@@ -1,6 +1,6 @@
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 	
-	
+	await conn.reply(m.chat, "espera caralho ")
 	try{
 	  conn.sendPoll(m.chat,"pica",["4cm,6cm,8cm,10cm"])
 	}
