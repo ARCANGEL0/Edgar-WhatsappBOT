@@ -31,7 +31,7 @@ const generateImages = async (input) => {
             model: model,
             sampler: sampler,
             prompt: input,
-            negative_prompt: "canvas frame, cartoon, 3d, ((disfigured)), ((bad art)), ((deformed)),((extra limbs)),((close up)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render",
+            negative_prompt: "canvas frame, 3d, ((disfigured)), ((bad art)), ((deformed)),((extra limbs)),((close up)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render",
             image_count: imageCount,
             token: apiKey,
             cfg_scale: cfgScale,
@@ -50,27 +50,29 @@ const generateImages = async (input) => {
         const responseData = await response.json();
         const imageUrls = responseData.images;
 
-        // Assuming 'conn' is your connection object
-        imageUrls.forEach(async (imageUrl, i) => {
+        // Use Promise.all to wait for all image uploads
+        await Promise.all(imageUrls.map(async (imageUrl, i) => {
             const imageResponse = await fetch(imageUrl);
             const imageBuffer = await imageResponse.buffer();
 
-            // Assuming 'm' is your message object
+            // Assuming 'conn' is your connection object
             await conn.sendMessage(m.chat, { image: { url: `data:image/png;base64,${imageBuffer.toString('base64')}` } }, { quoted: m });
-        });
+        }));
     } catch (error) {
         console.error(`Error generating images: ${error.message}`);
     }
 };
 
 // Call the function to generate and send images
+generateImages();
+// Call the function to generate and send images
 
 
 
 
   try {
-    const tiores1 = generateImages(text);
-    await conn.sendMessage(m.chat, {image: {url: tiores1}}, {quoted: m});
+    generateImages(text);
+    
   }
   catch(e){
     const tiores1 = generateImages(text);
