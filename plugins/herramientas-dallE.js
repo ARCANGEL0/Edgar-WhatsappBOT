@@ -14,8 +14,6 @@ ${usedPrefix + command} um gato preto deitado sob uma caveira
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
 
 
-// Define the API endpoint
-const apiUrl = "https://visioncraftapi--vladalek05.repl.co";
 
 // Obtain your API key
 const apiKey = "da0d5b76-8272-47bd-b236-0267614d63aa";
