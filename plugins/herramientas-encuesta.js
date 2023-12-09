@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 }
 handler.help = ['poll <Guru|piro|xd>']
 handler.tags = ['group'] 
-handler.command = ['poll', 'encuesta', 'polling'] 
+handler.command = ['enquete'] 
 handler.group = true
 
 export default handler
