@@ -21,6 +21,9 @@ try {
 const anime = `https://api.lolhuman.xyz/api/filter/lofi?apikey=${lolkeysapi}&img=${image}`;
 await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
 }
+catch(e){
+  m.reply(m.chat, "fudeu algo seu comedia")
+}
 /* catch (i) {
 try {
 const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
