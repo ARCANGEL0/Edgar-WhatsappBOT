@@ -40,6 +40,8 @@ console.log(imageBase64);
         if (imageBase64) {
             const imageBuffer = Buffer.from(imageBase64, 'base64')
 
+
+console.log("buffer  "+ imageBuffer)
             // Send the file with a callback function (cb)
             await conn.sendFile(
                 m.chat,
