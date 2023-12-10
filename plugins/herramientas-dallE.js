@@ -37,12 +37,11 @@ const generateAndSendImage = async () => {
 const imageBase64 = responseData.images;
 
 if (imageBase64) {
-  // Parse base64 string to Buffer
   
   const imageBuffer = Buffer.from(imageBase64, 'base64');
 
 // Define the directory path
-const directoryPath = "../tmp";
+const directoryPath = path.join(__dirname, '..', 'tmp');
 
 try {
     // Create the 'tmp' directory if it doesn't exist
@@ -58,8 +57,6 @@ try {
     // Handle the error
     console.error('Error generating and sending image:', err);
 }
-  
-  
 });
 
 
