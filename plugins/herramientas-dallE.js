@@ -101,7 +101,8 @@ try {
   const responseData = await response.json();
 const imageBase64 = responseData.image;
 
-
+console.log(imageBase64)
+return 0
 } 
 catch (error) {
   console.error('Error:', error.message);
