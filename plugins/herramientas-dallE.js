@@ -34,11 +34,15 @@ const generateAndSendImage = async () => {
         const responseData = await response.json();
 const imageBase64 = responseData.image;
 
-// Parse base64 string to Buffer
-const imageBuffer = Buffer.from(imageBase64, 'base64');
+if (imageBase64) {
+  // Parse base64 string to Buffer
+  const imageBuffer = Buffer.from(imageBase64, 'base64');
 
-// Assuming 'conn' is your connection object and 'm' is your message object
-await conn.sendFile(m.chat, imageBuffer, 'error.jpg', null, { quoted: m });
+  // Assuming 'conn' is your connection object and 'm' is your message object
+  await conn.sendFile(m.chat, imageBuffer, 'error.jpg', null, { quoted: m });
+} else {
+  console.error('Error: Image data not received in the API response.');
+}
         
     } catch (error) {
         console.error(`Error generating and sending image: ${error.message}`);
