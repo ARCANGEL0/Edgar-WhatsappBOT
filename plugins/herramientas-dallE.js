@@ -20,7 +20,7 @@ const generateAndSendImage = async () => {
     try {
         const data = {
             prompt: "puppy dog running on grass",
-            steps: 100
+            steps: 30
         };
 
         const response = await fetch(apiUrl, {
@@ -33,10 +33,10 @@ const generateAndSendImage = async () => {
         });
 
         const responseData = await response.json();
-        console.log(responseData);
+        
 
         const imageBase64 = responseData.images;
-
+console.log(imageBase64);
         if (imageBase64) {
             const imageBuffer = Buffer.from(imageBase64, 'base64')
 
