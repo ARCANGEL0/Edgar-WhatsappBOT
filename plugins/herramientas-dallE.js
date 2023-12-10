@@ -40,7 +40,7 @@ if (imageBase64) {
   // Parse base64 string to Buffer
   const imageBuffer = Buffer.from(imageBase64, 'base64');
 // Define the directory path
-  const directoryPath = path.join(__dirname, '..', 'tmp'); // Assuming this script is in the root directory
+  const directoryPath = path.join('../', 'tmp'); // Assuming this script is in the root directory
 
   // Create the 'tmp' directory if it doesn't exist
   await fs.mkdir(directoryPath, { recursive: true });
