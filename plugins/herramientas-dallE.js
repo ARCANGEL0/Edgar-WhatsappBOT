@@ -38,19 +38,28 @@ const imageBase64 = responseData.images;
 
 if (imageBase64) {
   // Parse base64 string to Buffer
+  
   const imageBuffer = Buffer.from(imageBase64, 'base64');
+
 // Define the directory path
+const directoryPath = "../tmp";
+
+try {
+    // Create the 'tmp' directory if it doesn't exist
+    await fs.mkdir(directoryPath, { recursive: true });
+
+    // Save the image as a file in the 'tmp' directory
+    const filePath = path.join(directoryPath, 'generated.jpg');
+    await fs.writeFile(filePath, imageBuffer);
+
+    // Send the file
+    await conn.sendFile(m.chat, `../tmp/generated.jpg`, 'error.bin', null, m);
+} catch (err) {
+    // Handle the error
+    console.error('Error generating and sending image:', err);
+}
   
   
-  
-  await fs.writeFile("../tmp/generated.jpg", imageBuffer, (err) => {
-  if (err) {
-    // Lida com o erro, caso ocorra
-    console.error('Error generating image:', err);
-  } else {
-    // Caso não ocorra erro, continue com o envio do arquivo
-    conn.sendFile(m.chat, "../tmp/generated.jpg", "error.bin", null, m);
-  }
 });
 
 
