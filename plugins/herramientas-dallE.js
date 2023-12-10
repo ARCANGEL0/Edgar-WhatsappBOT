@@ -100,7 +100,7 @@ const options = {
   const responseData = await response.json();
 const imageBase64 = responseData.image;
 
-console.log(imageBase64)
+console.log(responseData)
 await m.reply(imageBase64)
 
 
