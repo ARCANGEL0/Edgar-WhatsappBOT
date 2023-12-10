@@ -33,28 +33,29 @@ const generateAndSendImage = async () => {
         });
 
         const responseData = await response.json();
-        console.log(responseData)
-const imageBase64 = responseData.images;
+        console.log(responseData);
 
-if (imageBase64) {
-  
-  const imageBuffer = Buffer.from(imageBase64, 'base64');
-    // Create the 'tmp' directory if it doesn't exist
+        const imageBase64 = responseData.images;
 
-    await fs.writeFile("generated.jpg", imageBuffer);
+        if (imageBase64) {
+            const imageBuffer = Buffer.from(imageBase64, 'base64');
+            await fs.writeFile("generated.jpg", imageBuffer);
 
-    // Send the file
-    await conn.sendFile(m.chat, `generated.jpg`, 'error.bin', null, m);
-
-} else
-{
-  console.log("image not received")
-}
-
-
-} 
-        
-    catch (error) {
+            // Send the file with a callback function (cb)
+            await conn.sendFile(
+                m.chat,
+                `generated.jpg`,
+                'error.bin',
+                null,
+                async () => {
+                    console.log("File sent successfully!");
+                    // Additional logic after the file is sent
+                }
+            );
+        } else {
+            console.log("Image not received");
+        }
+    } catch (error) {
         console.error(`Error generating and sending image: ${error.message}`);
     }
 };
