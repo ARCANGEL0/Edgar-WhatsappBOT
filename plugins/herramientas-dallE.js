@@ -39,27 +39,22 @@ const imageBase64 = responseData.images;
 if (imageBase64) {
   
   const imageBuffer = Buffer.from(imageBase64, 'base64');
-
-
-try {
     // Create the 'tmp' directory if it doesn't exist
 
     await fs.writeFile("generated.jpg", imageBuffer);
 
     // Send the file
     await conn.sendFile(m.chat, `generated.jpg`, 'error.bin', null, m);
-} catch (err) {
-    // Handle the error
-    console.error('Error generating and sending image:', err);
+
+} else
+{
+  console.log("image not received")
 }
-});
 
 
-} else {
-  console.error('Error: Image data not received in the API response.');
-}
+} 
         
-    } catch (error) {
+    catch (error) {
         console.error(`Error generating and sending image: ${error.message}`);
     }
 };
