@@ -69,7 +69,7 @@ console.log("buffer  "+ imageBuffer)
 
   try {
     const data = {
-  key: "w5RngxqloX85uOIgBsuJzFcKmxMgJOhFgwIl5QnMJiyofruaLBA8k3DrfyLF",
+  key: "3uEPWNyA7xgAVEII8CScH8QrhTdY26obFbtQwuqOcqs7ijvgCX5tmARW09T9",
   prompt: text,
   negative_prompt: null,
   width: '512',
