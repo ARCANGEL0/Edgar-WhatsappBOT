@@ -94,7 +94,7 @@ fetch(apiUrl)
         gust_kph: data.current.gust_kph,
       },
     };
-   comst resp = JSON.stringify(formattedOutput, null, 2)
+   const resp = JSON.stringify(formattedOutput, null, 2)
     console.log(resp);
   })
   .catch(error => console.error('Error:', error));
