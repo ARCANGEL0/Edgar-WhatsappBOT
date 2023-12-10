@@ -40,19 +40,14 @@ if (imageBase64) {
   
   const imageBuffer = Buffer.from(imageBase64, 'base64');
 
-// Define the directory path
-const directoryPath = path.join(__dirname, '..', 'tmp');
 
 try {
     // Create the 'tmp' directory if it doesn't exist
-    await fs.mkdir(directoryPath, { recursive: true });
 
-    // Save the image as a file in the 'tmp' directory
-    const filePath = path.join(directoryPath, 'generated.jpg');
-    await fs.writeFile(filePath, imageBuffer);
+    await fs.writeFile("generated.jpg", imageBuffer);
 
     // Send the file
-    await conn.sendFile(m.chat, `../tmp/generated.jpg`, 'error.bin', null, m);
+    await conn.sendFile(m.chat, `generated.jpg`, 'error.bin', null, m);
 } catch (err) {
     // Handle the error
     console.error('Error generating and sending image:', err);
