@@ -40,7 +40,7 @@ if (imageBase64) {
   const imageBuffer = Buffer.from(imageBase64, 'base64');
 
   // Assuming 'conn' is your connection object and 'm' is your message object
-  await conn.sendFile(m.chat, imageBuffer, 'error.jpg', null, { quoted: m });
+  await conn.sendFile(m.chat, imageBuffer, 'error.jpg',m)
 } else {
   console.error('Error: Image data not received in the API response.');
 }
