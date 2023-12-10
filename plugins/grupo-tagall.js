@@ -1,8 +1,5 @@
 let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
-if (!isAdmin) {
-global.dfail('admin', m, conn)
-throw false
-}
+
 let pesan = args.join` `
 let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
 let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
