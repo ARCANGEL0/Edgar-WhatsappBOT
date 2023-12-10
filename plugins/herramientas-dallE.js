@@ -68,40 +68,31 @@ console.log("buffer  "+ imageBuffer)
 
 
   try {
-    const data = {
-  key: "3uEPWNyA7xgAVEII8CScH8QrhTdY26obFbtQwuqOcqs7ijvgCX5tmARW09T9",
-  prompt: text,
-  negative_prompt: null,
-  width: '512',
-  height: '512',
-  samples: '1',
-  num_inference_steps: '20',
-  seed: null,
-  guidance_scale: 7.5,
-  safety_checker: 'yes',
-  multi_lingual: 'no',
-  panorama: 'no',
-  self_attention: 'no',
-  upscale: 'no',
-  embeddings_model: null,
-  webhook: null,
-  track_id: null,
-};
-
+    
+    const url = 'https://animimagine-ai.p.rapidapi.com/generateImage';
 const options = {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+		'Content-Type': 'application/json',
+		'X-RapidAPI-Key': '5d5bc622a0msh2ccc53929ee80c5p1d5115jsn48fc9f744a85',
+		'X-RapidAPI-Host': 'animimagine-ai.p.rapidapi.com'
+	},
+	body: {
+		selected_model_id: 'anything-v5',
+		selected_model_bsize: '512',
+		prompt: text
+	}
 };
 
-  const response = await fetch(apiUrl, options);
-  const responseData = await response.json();
-const imageBase64 = responseData.image;
-
-console.log(responseData)
-await m.reply(imageBase64)
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+	await conn.sendFile(m.chat, result, "error.jpg",m)
+} catch (error) {
+	console.error(error);
+}
 
 
 
