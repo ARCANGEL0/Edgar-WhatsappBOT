@@ -38,14 +38,13 @@ const generateAndSendImage = async () => {
         const imageBase64 = responseData.images;
 
         if (imageBase64) {
-            const imageBuffer = Buffer.from(imageBase64, 'base64');
-            await fs.writeFile("generated.jpg", imageBuffer);
+            const imageBuffer = Buffer.from(imageBase64, 'base64')
 
             // Send the file with a callback function (cb)
             await conn.sendFile(
                 m.chat,
-                `generated.jpg`,
-                'error.bin',
+                responseData.images,
+                'error.jpg',
                 null,
                 m
             );
