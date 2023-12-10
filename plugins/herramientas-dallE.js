@@ -78,11 +78,11 @@ const options = {
 		'X-RapidAPI-Key': '5d5bc622a0msh2ccc53929ee80c5p1d5115jsn48fc9f744a85',
 		'X-RapidAPI-Host': 'animimagine-ai.p.rapidapi.com'
 	},
-	body: {
-		selected_model_id: 'anything-v5',
-		selected_model_bsize: '512',
-		prompt: text
-	}
+body: JSON.stringify({
+    selected_model_id: 'anything-v5',
+    selected_model_bsize: '512',
+    prompt: text
+})
 };
 
 try {
