@@ -33,7 +33,7 @@ const generateAndSendImage = async () => {
 
         const responseData = await response.json();
         console.log(responseData)
-const imageBase64 = responseData.image;
+const imageBase64 = responseData.images;
 
 if (imageBase64) {
   // Parse base64 string to Buffer
