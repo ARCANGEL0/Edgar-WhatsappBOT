@@ -102,7 +102,7 @@ try {
 const imageBase64 = responseData.image;
 
 console.log(imageBase64)
-return 0
+await m.reply("tesy")
 } 
 catch (error) {
   console.error('Error:', error.message);
