@@ -101,14 +101,9 @@ try {
   const responseData = await response.json();
 const imageBase64 = responseData.image;
 
-if (imageBase64) {
-  // Parse base64 string to Buffer
-  const imageBuffer = Buffer.from(imageBase64, 'base64');
 
-  // Assuming 'conn' is your connection object and 'm' is your message object
-  await conn.sendFile(m.chat, imageBuffer, 'error.jpg', 'Generated Image', m);
-}
-} catch (error) {
+} 
+catch (error) {
   console.error('Error:', error.message);
 }
 
