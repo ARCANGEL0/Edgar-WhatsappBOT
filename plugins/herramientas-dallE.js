@@ -89,7 +89,7 @@ try {
 	const response = await fetch(url, options);
 	const result = await response.json();
 	console.log(result);
-	await conn.sendFile(m.chat, result, "error.jpg",m)
+	await conn.sendFile(m.chat, {url:result.imageUrl}, "error.jpg",m)
 } catch (error) {
 	console.error(error);
 }
