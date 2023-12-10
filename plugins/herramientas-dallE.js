@@ -96,20 +96,16 @@ const options = {
   body: JSON.stringify(data),
 };
 
-try {
   const response = await fetch(apiUrl, options);
   const responseData = await response.json();
 const imageBase64 = responseData.image;
 
 console.log(imageBase64)
 await m.reply("tesy")
-} 
-catch (error) {
-  console.error('Error:', error.message);
-}
 
 
-}
+
+
     
   }
   catch(e){
