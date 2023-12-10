@@ -19,6 +19,8 @@ const data = await q.download?.();
 const image = await uploadImage(data);
 try {
 const anime = `https://api.neoxr.eu/api/ai-real?q=cat%20on%20the%20fire&apikey=${keysneoxr}`;
+
+console.log(anime)
 await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
 }
 catch(e){
