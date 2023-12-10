@@ -70,7 +70,7 @@ console.log("buffer  "+ imageBuffer)
   try {
     const data = {
   key: "w5RngxqloX85uOIgBsuJzFcKmxMgJOhFgwIl5QnMJiyofruaLBA8k3DrfyLF",
-  prompt: 'ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner))',
+  prompt: text
   negative_prompt: null,
   width: '512',
   height: '512',
