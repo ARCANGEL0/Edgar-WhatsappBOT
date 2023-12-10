@@ -42,10 +42,18 @@ if (imageBase64) {
 // Define the directory path
   
   
-  await fs.writeFile("../tmp/generated.jpg", imageBuffer);
   
-  // Assuming 'conn' is your connection object and 'm' is your message object
-  await conn.sendFile(m.chat, "../tmp/generated.jpg", "error.bin", null, m);
+  await fs.writeFile("../tmp/generated.jpg", imageBuffer, (err) => {
+  if (err) {
+    // Lida com o erro, caso ocorra
+    console.error('Error generating image:', err);
+  } else {
+    // Caso não ocorra erro, continue com o envio do arquivo
+    conn.sendFile(m.chat, "../tmp/generated.jpg", "error.bin", null, m);
+  }
+});
+
+
 } else {
   console.error('Error: Image data not received in the API response.');
 }
