@@ -32,6 +32,7 @@ const generateAndSendImage = async () => {
         });
 
         const responseData = await response.json();
+        console.log(responseData)
 const imageBase64 = responseData.image;
 
 if (imageBase64) {
