@@ -40,17 +40,12 @@ if (imageBase64) {
   // Parse base64 string to Buffer
   const imageBuffer = Buffer.from(imageBase64, 'base64');
 // Define the directory path
-  const directoryPath = path.join('../', 'tmp'); // Assuming this script is in the root directory
-
-  // Create the 'tmp' directory if it doesn't exist
-  await fs.mkdir(directoryPath, { recursive: true });
-
-  // Save the image as a file in the 'tmp' directory
-  const filePath = path.join(directoryPath, 'generated.jpg');
-  await fs.writeFile(filePath, imageBuffer);
+  
+  
+  await fs.writeFile("../tmp/generated.jpg", imageBuffer);
   
   // Assuming 'conn' is your connection object and 'm' is your message object
-  await conn.sendFile(m.chat, filePath, "error.bin", null, m);
+  await conn.sendFile(m.chat, "../tmp/generated.jpg", "error.bin", null, m);
 } else {
   console.error('Error: Image data not received in the API response.');
 }
