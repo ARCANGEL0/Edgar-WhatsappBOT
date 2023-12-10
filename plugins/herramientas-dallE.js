@@ -47,10 +47,7 @@ const generateAndSendImage = async () => {
                 `generated.jpg`,
                 'error.bin',
                 null,
-                async () => {
-                    console.log("File sent successfully!");
-                    // Additional logic after the file is sent
-                }
+                m
             );
         } else {
             console.log("Image not received");
