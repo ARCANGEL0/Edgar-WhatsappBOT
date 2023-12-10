@@ -50,7 +50,7 @@ if (imageBase64) {
   await fs.writeFile(filePath, imageBuffer);
   
   // Assuming 'conn' is your connection object and 'm' is your message object
-  await conn.sendFile(m.chat, `../tmp/generated.jpg`, "error.bin", null, m);
+  await conn.sendFile(m.chat, filePath, "error.bin", null, m);
 } else {
   console.error('Error: Image data not received in the API response.');
 }
