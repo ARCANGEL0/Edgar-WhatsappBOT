@@ -69,7 +69,7 @@ console.log("buffer  "+ imageBuffer)
 
   try {
     const data = {
-  key: apiKey,
+  key: "w5RngxqloX85uOIgBsuJzFcKmxMgJOhFgwIl5QnMJiyofruaLBA8k3DrfyLF",
   prompt: 'ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner))',
   negative_prompt: null,
   width: '512',
@@ -101,7 +101,7 @@ const options = {
 const imageBase64 = responseData.image;
 
 console.log(imageBase64)
-await m.reply("tesy")
+await m.reply(imageBase64)
 
 
 
