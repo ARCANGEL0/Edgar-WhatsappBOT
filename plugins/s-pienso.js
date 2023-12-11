@@ -34,16 +34,31 @@ if (!text) {
         // Adicione mais categorias conforme necessário
     ];
 
-    const categoryList = categories.map((category, index) => `.fatos ${index + 1} - ${category}`).join('\n');
+    const categoryList = categories.map((category, index) => `┃ .fatos ${index + 1} - ${category}`).join('\n');
 
     throw `
-    ╭━━━━━━━━━⬣
+    ╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
     ┃
     ┃ ${categoryList}
     ┃
     ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
     ┃ 𝓔𝓭𝓲𝓬̧𝓪̃𝓸 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
     ╰━━━━━━━━━━━━━━━━━━⬣`;
+}
+else {
+    const commandIndex = parseInt(text.split(' ')[1], 10) - 1;
+
+    if (commandIndex >= 0 && commandIndex < categories.length) {
+        const curiositiesCiencia = ["Curiosidade 1", "Curiosidade 2"]; // Replace with actual curiosities
+        // Add more arrays for other categories
+
+        const selectedCategory = categories[commandIndex];
+        const selectedCuriosities = eval(`curiosities${selectedCategory.replace(/\s/g, '')}`);
+
+        return selectedCuriosities;
+    } else {
+        throw "erro";
+    }
 }
 
 try{
