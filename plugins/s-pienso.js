@@ -57,11 +57,7 @@ else {
 
         
      await   m.reply("deu certo seu merda")
-    } else {
-        
-     await   m.reply("erro caralho")
-        
-    }
+    } 
 }
 
 
