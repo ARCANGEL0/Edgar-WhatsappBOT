@@ -141,7 +141,7 @@ return conn.reply(m.chat, `${mg}🔣 𝘾𝙊𝘿𝙄𝘾𝙊 𝙈𝙊𝙍𝙎�
 handler.help = ["morse"].map(v => v + " <encode|decode>")
 handler.tags = ["tools"]
 
-handler.command = /^(morse|morce)/i
+handler.command = /^(morse)/i
 handler.money = 0
 
 export default handler
