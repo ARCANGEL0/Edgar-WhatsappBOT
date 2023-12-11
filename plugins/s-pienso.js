@@ -46,13 +46,13 @@ ${categoryList}
     ╰━━━━━━━━━━━━━━━━━━⬣`;
 }
 else {
-    const commandIndex = parseInt(text.split(' ')[1], 10) - 1;
-     console.log(commandIndex)
-    if (commandIndex >= 0 && commandIndex < categories.length) {
+    
+     console.log(text)
+    if (text >= 0 && text < categories.length) {
         const curiositiesCiencia = ["Curiosidade 1", "Curiosidade 2"]; // Replace with actual curiosities
         // Add more arrays for other categories
 
-        const selectedCategory = categories[commandIndex];
+        const selectedCategory = categories[text];
         
 
         
