@@ -49,10 +49,8 @@ if (command == 'clima') {
 const apiKey = 'dca80f6ff04d4f6096f231246231012';
 const location = text;
 const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
-const dt = await fetch(apiUrl);
-const formattedOutput = dt.json()
-        
-    const resp = JSON.stringify(formattedOutput, null, 2)    
+const resp = await fetch(apiUrl)
+
 const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
