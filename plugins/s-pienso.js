@@ -1,6 +1,9 @@
 
 import uploadImage from '../lib/uploadImage.js';
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]}
   const categories = [
         'Ciência',
         'História',
@@ -50,13 +53,14 @@ else {
      console.log(text)
     if (text >= 0 && text < categories.length) {
         const curiositiesCiencia = ["Curiosidade 1", "Curiosidade 2"]; // Replace with actual curiosities
+        const curiositiesHistoria = ["aa","bb"] 
         // Add more arrays for other categories
 
         const selectedCategory = categories[text];
         
 
         
-     await   m.reply("deu certo seu merda")
+     await   m.reply(pickRandom(selectedCategory))
     } 
 }
 
