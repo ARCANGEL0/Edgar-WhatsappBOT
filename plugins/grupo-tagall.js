@@ -1,10 +1,10 @@
 let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
-if (!isOwner || !isAdmin)
+if (!isOwner && !isAdmin)
 {
   await m.reply("hakuna matata")
 }
 
-
+else {
 let pesan = args.join` `
 let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
 let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
@@ -14,6 +14,7 @@ teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )  
+} 
 }
 handler.command = /^(tagall|invocar|marcar|todos|invocación)$/i
 
