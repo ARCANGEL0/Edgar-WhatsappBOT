@@ -1,27 +1,42 @@
-import { sticker } from '../lib/sticker.js'
-let handler = async(m, { conn }) => {
-//if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 *#on stickers* 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
+/* By https://github.com/DIEGO-OFC/DORRAT-BOT-MD */
+
+let handler = async (m, { conn, text}) => {
+
+m.reply(` ━━━━━━━━━⬣⬣━━━━━━━━
+
+ 『🕯️💀
  
-let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
- 
-const s = [
-'https://media1.giphy.com/media/3fmRTfVIKMRiM/giphy.gif?cid=ecf05e47pyhfy4u8g5l7ij4rw7g0t3p46n7316kciee0ozt7&rid=giphy.gif&ct=g',
-'https://media1.giphy.com/media/OPU6wzx8JrHna/giphy.gif?cid=ecf05e47jownk0m3q4bbrmiarbcjyzrvfcldw6fq2cl9qgeo&rid=giphy.gif&ct=g',
-'https://media3.giphy.com/media/UYzNgRSTf9X1e/giphy.gif?cid=ecf05e47eyl7fbdshc46l04t6n9vhq8tlb7v68z5grx9sk4h&rid=giphy.gif&ct=g',
-'https://media4.giphy.com/media/4bBLOhnMb0vHG/giphy.gif?cid=ecf05e47ccuhintdj5piel7ar1kpijylv7yl7jety6zwb0n4&rid=giphy.gif&ct=g',
-'https://media0.giphy.com/media/KDRv3QggAjyo/giphy.gif?cid=ecf05e47u0k1a48j85ewtw30exm64hd7yfcsol47x4x5h1kq&rid=giphy.gif&ct=g',
-'https://media3.giphy.com/media/xUPGcq0kyXkLQBvAIM/giphy.gif?cid=ecf05e47gscyh1yvbrh4zudbdaeqx5wmxmwal01nd4sqypgv&rid=giphy.gif&ct=g',
-'https://c.tenor.com/iZukxR3qFRQAAAAi/gato-pls-pls-cat.gif'
-];  
- 
-let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
-await delay(5 * 5000)
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+_${pickRandom(global.mundoGoticoInfo)}_ 
+
+ ━━━━━━━━━⬣⬣━━━━━━━━`)
 }
-handler.customPrefix = /llorar|yorar|llorando|llorando|llorare|llorará|lloremos|llorastes|lloraste/i 
-handler.command = new RegExp
-handler.exp = 50
+handler.tags = ['frases']
+handler.command = ['mundogotico']
 export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]}
+
+const mundoGoticoInfo = [
+  "A subcultura gótica, surgida nos anos 80, é uma expressão cultural complexa que se distingue por sua influência multifacetada, incluindo a literatura gótica, o expressionismo alemão e correntes artísticas diversas.",
+  "A estética gótica, manifesta na moda, destaca-se por sua singularidade. Caracterizada por roupas escuras, acessórios de prata, maquiagem dramática e penteados elaborados, a moda gótica reflete uma preferência por um estilo visual sombrio e elegante, transmitindo uma expressão única de identidade.",
+  "A música desempenha um papel central no mundo gótico. Gêneros como gothic rock, darkwave e post-punk prosperam, com bandas emblemáticas como Bauhaus e Sisters of Mercy contribuindo significativamente para a riqueza musical da subcultura.",
+  "A literatura gótica, seja clássica ou contemporânea, serve como uma fonte rica de inspiração para os adeptos do estilo. Explorando temas como o sobrenatural, o misterioso e o macabro, ela contribui para a construção da narrativa cultural gótica.",
+  "A subcultura gótica forma uma comunidade global, com clubes noturnos, festivais de música gótica e eventos temáticos desempenhando um papel vital. A Europa Ocidental destaca-se como um epicentro significativo dessas atividades culturais.",
+  "A estética gótica também permeia as artes visuais. Artistas góticos criam obras que capturam a atmosfera sombria e romântica, frequentemente retratando paisagens misteriosas e personagens fascinantes, contribuindo para a expressão artística da subcultura.",
+  "Para além da música e da moda, a dança é uma forma crucial de expressão na subcultura gótica. Estilos como a dança gótica são praticados em eventos específicos, fornecendo uma dimensão física e emocional à experiência gótica.",
+  "Os festivais góticos, notavelmente o Wave-Gotik-Treffen em Leipzig, Alemanha, atraem participantes de todo o mundo. Esses eventos oferecem uma experiência imersiva na cultura gótica, com performances ao vivo, desfiles de moda e oportunidades sociais.",
+  "Os temas filosóficos na subcultura gótica vão além da estética. Exploram ideias como decadência, niilismo, existencialismo e romantismo sombrio, proporcionando uma abordagem intelectual e reflexiva que enriquece a experiência cultural.",
+  "O termo 'gótico' possui uma história rica, desde sua origem na arquitetura medieval até sua evolução para designar uma estética e uma atitude cultural. Essa trajetória evidencia a diversidade de significados que essa palavra incorpora, conectando-se com a complexidade da subcultura gótica.",
+  "A arquitetura gótica, influenciadora primordial da estética gótica, destaca-se por suas catedrais imponentes, vitrais elaborados e elementos decorativos detalhados, refletindo a atmosfera majestosa e sombria.",
+  "A subcultura gótica tem um interesse marcado por temas históricos, especialmente a Idade Média. Essa fascinação se manifesta em recriações de vestimentas medievais, eventos temáticos e uma abordagem romântica à história.",
+  "O cinema gótico, representado por filmes como 'Nosferatu' e 'The Cabinet of Dr. Caligari', desempenhou um papel crucial na formação da estética gótica, explorando narrativas sombrias e atmosferas macabras.",
+  "A poesia gótica, com seus versos melancólicos e imagens sombrias, é uma forma de expressão artística apreciada na subcultura gótica, complementando as influências literárias e musicais.",
+  "O simbolismo desempenha um papel vital na cultura gótica, com elementos como a cruz invertida, corvos, rosas negras e outros símbolos sombrios sendo frequentemente utilizados para expressar identidade e pertencimento.",
+  "A subcultura gótica, apesar de suas raízes europeias, encontrou expressão global, sendo adotada e reinterpretada em diversas culturas ao redor do mundo, evidenciando sua ressonância universal.",
+  "O DIY (Faça Você Mesmo) é um princípio importante na cena gótica, incentivando a criatividade individual na moda, arte e música, permitindo que os adeptos personalizem e expressem sua identidade única.",
+  "A cultura gótica também abraça o ativismo, com discussões sobre questões como diversidade, igualdade e inclusão, refletindo a consciência social dentro da subcultura.",
+  "A moda gótica contemporânea é influenciada pela fusão de estilos, incorporando elementos de moda vitoriana, punk, cybergoth e steampunk, resultando em uma expressão diversificada e em constante evolução.",
+  "A subcultura gótica, longe de ser estática, continua a evoluir, integrando novas influências e perspectivas, mantendo-se como um espaço dinâmico para a expressão artística e cultural."
+];
+
