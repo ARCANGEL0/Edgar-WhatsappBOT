@@ -248,7 +248,7 @@ const dateagora = new Date(localstring);
 const horaatual = `${dateagora.getDate()}/${dateagora.getMonth() + 1}/${dateagora.getFullYear()} 🕰️ ${dateagora.getHours()}:${dateagora.getMinutes()}`;
 
 const inputDateString = resp.current.last_updated;
-const horaatu = new Date(inputDateString);
+const dateatu = new Date(inputDateString);
 
 const ultimaatualizacao = `${dateatu.getDate()}/${dateatu.getMonth() + 1}/${dateatu.getFullYear()} 🕰️ ${dateatu.getHours()}:${dateatu.getMinutes()}`;
 console.log(ultimaatualizacao);
