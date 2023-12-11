@@ -245,12 +245,12 @@ if(!response){
 const localstring = resp.location.localtime;
 const dateagora = new Date(localstring);
 
-const horaatual = `${dateagora.getDate()}/${dateagora.getMonth() + 1}/${dateagora.getFullYear()} 🕰️ ${dateagora.getHours()}:${dateagora.getMinutes()}`;
+const horaatual = `${dateagora.getHours()}:${dateagora.getMinutes()}`;
 
 const inputDateString = resp.current.last_updated;
 const dateatu = new Date(inputDateString);
 
-const ultimaatualizacao = `${dateatu.getDate()}/${dateatu.getMonth() + 1}/${dateatu.getFullYear()} 🕰️ ${dateatu.getHours()}:${dateatu.getMinutes()}`;
+const ultimaatualizacao = `${dateatu.getHours()}:${dateatu.getMinutes()}`;
 console.log(ultimaatualizacao);
 
   await m.reply(`╭━━━『🌕 𝙲𝙻𝙸𝙼𝙰 』━━⬣
