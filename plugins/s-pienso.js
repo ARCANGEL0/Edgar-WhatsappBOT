@@ -49,18 +49,20 @@ ${categoryList}
     ╰━━━━━━━━━━━━━━━━━━⬣`;
 }
 else {
+    const selectedCategoryIndex = parseInt(text) - 1;
     
      console.log(text)
-    if (text >= 0 && text < categories.length) {
+    if (selectedCategoryIndex >= 0 && selectedCategoryIndex < categories.length) {
         const curiositiesCiencia = ["Curiosidade 1", "Curiosidade 2"]; // Replace with actual curiosities
         const curiositiesHistoria = ["aa","bb"] 
         // Add more arrays for other categories
 
-        const selectedCategory = categories[text];
-        
+        const selectedCategory = categories[selectedCategoryIndex];
+            const selectedCuriositiesArray = eval(`curiosities${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
-        
-     await   m.reply(pickRandom(selectedCategory))
+            if (selectedCuriositiesArray && selectedCuriositiesArray.length > 0) {
+                const randomCuriosity = pickRandom(selectedCuriositiesArray);
+                await m.reply(randomCuriosity);
     } 
 }
 
