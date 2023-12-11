@@ -53,28 +53,18 @@ else {
         // Add more arrays for other categories
 
         const selectedCategory = categories[commandIndex];
-        const selectedCuriosities = eval(`curiosities${selectedCategory.replace(/\s/g, '')}`);
+        
 
         
-        m.reply("deu certo seu merda")
+     await   m.reply("deu certo seu merda")
     } else {
         
-        m.reply("erro caralho")
+     await   m.reply("erro caralho")
         
     }
 }
 
-try{
-  m.reply(`${lenguajeGB.smsAvisoIIG()}❖─┅──┅ \n🕯️📜 𝐄𝐦 𝐛𝐫𝐞𝐯𝐞 𝐭𝐫𝐚𝐫𝐞𝐢 𝐚 𝐢𝐦𝐚𝐠𝐞𝐦 𝐝𝐞𝐬𝐨𝐥𝐚𝐝𝐨𝐫𝐚 𝐩𝐚𝐫𝐚 𝐭𝐮𝐚 𝐯𝐢𝐬𝐚𝐨. 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐦 𝐩𝐨𝐮𝐜𝐨 𝐩𝐞𝐥𝐨 𝐫𝐞𝐯𝐞𝐥𝐚𝐫 𝐝𝐨 𝐪𝐮𝐞 𝐬𝐮𝐛𝐣𝐚𝐳 𝐧𝐚𝐬 𝐩𝐫𝐨𝐟𝐮𝐧𝐝𝐞𝐳𝐚𝐬 𝐝𝐨 𝐦𝐞𝐮𝐬 𝐨𝐛𝐬𝐜𝐮𝐫𝐨𝐬 𝐭𝐫𝐞𝐜𝐡𝐨𝐬 𝐝𝐞 𝐜𝐨𝐝𝐢𝐠𝐨𝐬\n─┅──┅❖ `);
 
-
-console.log(anime)
-await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
-}
-
-catch(e){
-  m.reply(m.chat, "fudeu algo seu comedia")
-}
 /* catch (i) {
 try {
 const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
