@@ -6,7 +6,7 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
   const categories = [
         'Geral',
-        'História',
+        'Historia',
         'Mitologia',
         'Arte',
         'Tecnologia',
