@@ -94,12 +94,12 @@ fetch(apiUrl)
         gust_kph: data.current.gust_kph,
       },
     };
-   const resp = JSON.stringify(formattedOutput, null, 2)
+   
     console.log(resp);
   })
   .catch(error => console.error('Error:', error));
         
-        
+    const resp = JSON.stringify(formattedOutput, null, 2)    
 const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
