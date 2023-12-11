@@ -46,60 +46,6 @@ if (command == 'clima') {
 ┃ *${usedPrefix + command} Franca Paris*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ `, m)  
 
-const apiKey = 'dca80f6ff04d4f6096f231246231012';
-const location = text;
-const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
-
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    const formattedOutput = {
-      location: {
-        name: data.location.name,
-        region: data.location.region,
-        country: data.location.country,
-        lat: data.location.lat,
-        lon: data.location.lon,
-        tz_id: data.location.tz_id,
-        localtime_epoch: data.location.localtime_epoch,
-        localtime: data.location.localtime,
-      },
-      current: {
-        last_updated_epoch: data.current.last_updated_epoch,
-        last_updated: data.current.last_updated,
-        temp_c: data.current.temp_c,
-        temp_f: data.current.temp_f,
-        is_day: data.current.is_day,
-        condition: {
-          text: data.current.condition.text,
-          icon: `http:${data.current.condition.icon}`,
-          code: data.current.condition.code,
-        },
-        wind_mph: data.current.wind_mph,
-        wind_kph: data.current.wind_kph,
-        wind_degree: data.current.wind_degree,
-        wind_dir: data.current.wind_dir,
-        pressure_mb: data.current.pressure_mb,
-        pressure_in: data.current.pressure_in,
-        precip_mm: data.current.precip_mm,
-        precip_in: data.current.precip_in,
-        humidity: data.current.humidity,
-        cloud: data.current.cloud,
-        feelslike_c: data.current.feelslike_c,
-        feelslike_f: data.current.feelslike_f,
-        vis_km: data.current.vis_km,
-        vis_miles: data.current.vis_miles,
-        uv: data.current.uv,
-        gust_mph: data.current.gust_mph,
-        gust_kph: data.current.gust_kph,
-      },
-    };
-
-    console.log(JSON.stringify(formattedOutput, null, 2));
-  })
-  .catch(error => console.error('Error:', error));
-
-const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
 
@@ -159,9 +105,6 @@ function getWeatherEmoji(weatherCode) {
 }
 
 // Example usage:
-const weatherCode = 1003; // Replace with your actual weather code
-const emoji = getWeatherEmoji(resp.current.condition.code);
-console.log(emoji); // Output: 🌤️
 
 function traduzirEstadoTempo(codigo) {
     const estadosTempo = {
@@ -220,26 +163,84 @@ function traduzirEstadoTempo(codigo) {
 
 // Exemplo de uso:
 
-const tempo = traduzirEstadoTempo(resp.current.condition.code);
 
+const apiKey = 'dca80f6ff04d4f6096f231246231012';
+const location = text;
+const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
 
-await m.reply(`╭━━━『𝙲𝙻𝙸𝙼𝙰』━━⬣
+try {
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+
+  const resp = data;
+
+  const formattedOutput = {
+    location: {
+      name: resp.location.name,
+      region: resp.location.region,
+      country: resp.location.country,
+      lat: resp.location.lat,
+      lon: resp.location.lon,
+      tz_id: resp.location.tz_id,
+      localtime_epoch: resp.location.localtime_epoch,
+      localtime: resp.location.localtime,
+    },
+    current: {
+      last_updated_epoch: resp.current.last_updated_epoch,
+      last_updated: resp.current.last_updated,
+      temp_c: resp.current.temp_c,
+      temp_f: resp.current.temp_f,
+      is_day: resp.current.is_day,
+      condition: {
+        text: resp.current.condition.text,
+        icon: `http:${resp.current.condition.icon}`,
+        code: resp.current.condition.code,
+      },
+      wind_mph: resp.current.wind_mph,
+      wind_kph: resp.current.wind_kph,
+      wind_degree: resp.current.wind_degree,
+      wind_dir: resp.current.wind_dir,
+      pressure_mb: resp.current.pressure_mb,
+      pressure_in: resp.current.pressure_in,
+      precip_mm: resp.current.precip_mm,
+      precip_in: resp.current.precip_in,
+      humidity: resp.current.humidity,
+      cloud: resp.current.cloud,
+      feelslike_c: resp.current.feelslike_c,
+      feelslike_f: resp.current.feelslike_f,
+      vis_km: resp.current.vis_km,
+      vis_miles: resp.current.vis_miles,
+      uv: resp.current.uv,
+      gust_mph: resp.current.gust_mph,
+      gust_kph: resp.current.gust_kph,
+    },
+  };
+
+  console.log(JSON.stringify(formattedOutput, null, 2));
+
+  const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
+  const weatherCode = resp.current.condition.code;
+  const emoji = getWeatherEmoji(weatherCode);
+  const tempo = traduzirEstadoTempo(weatherCode);
+
+  await m.reply(`╭━━━『𝙲𝙻𝙸𝙼𝙰』━━⬣
 ┃ ─┅❖ Cidade: ${resp.location.name}
 ┃ ─┅❖ Região: ${resp.location.region}
 ┃ ─┅❖ País: ${resp.location.country}
 ┃ ─┅❖ Fuso horário: ${resp.location.tz}
-┃ ─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅
+┃ ─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─
 ┃ ─┅❖ Última atualização: ${resp.current.last_updated}
 ┃ ─┅❖ Horário: ${resp.location.localtime}
 ┃ ─┅❖ Temperatura (C°): ${resp.current.temp_c}
-┃ ─┅❖ Sensação Termica (C°): ${resp.current.feelslike_c}
-┃ ─┅❖ Tempo : ${emoji}  ${tempo}
+┃ ─┅❖ Sensação Térmica (C°): ${resp.current.feelslike_c}
+┃ ─┅❖ Tempo: ${emoji}  ${tempo}
 ┃ ─┅❖ Umidade: ${resp.current.humidity}
-┃ ─┅❖ Veloc. Vento : ${resp.current.wind_kph}
-┃ ─┅❖ Veloc. Vento : ${resp.current.wind_kph}
-╰━━━━━━━━━━━━━━━━━━⬣
-`)
-  
+┃ ─┅❖ Velocidade do Vento: ${resp.current.wind_kph}
+╰━━━━━━━━━━━━━━━━━━⬣`);
+} catch (error) {
+  console.error('Error:', error);
+}
+
   
 }
 /*conn.sendHydrated(m.chat, `✨ *AQUI ESTÁ O TEMPO EM PORTUGUÊS*`, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
