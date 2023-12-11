@@ -94,12 +94,7 @@ fetch(apiUrl)
         gust_kph: data.current.gust_kph,
       },
     };
-   return formattedOutput
-    console.log(resp);
-  })
-  .catch(error => console.error('Error:', error));
-        
-    const resp = JSON.stringify(formattedOutput, null, 2)    
+   const resp = JSON.stringify(formattedOutput, null, 2)    
 const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
@@ -240,6 +235,11 @@ await m.reply(`╭━━━『𝙲𝙻𝙸𝙼𝙰』━━⬣
 ┃ ─┅❖ Veloc. Vento : ${resp.current.wind_kph}
 ╰━━━━━━━━━━━━━━━━━━⬣
 `)
+    console.log(resp);
+  })
+  .catch(error => console.error('Error:', error));
+        
+    
   
   
 }
