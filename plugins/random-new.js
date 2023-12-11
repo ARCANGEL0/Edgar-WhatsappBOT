@@ -255,17 +255,17 @@ console.log(ultimaatualizacao);
 
   await m.reply(`╭━━━『🌕 𝙲𝙻𝙸𝙼𝙰 』━━⬣
 ┃ ─┅❖ 💀 Cidade: ${resp.location.name}
-┃ ─┅❖ 🪦 Região: ${resp.location.region}
-┃ ─┅❖ 🪦 País: ${resp.location.country}
-┃ ─┅❖ 🪦 Fuso horário: ${resp.location.tz_id}
-┃ ─┅❖ 🕰️ horário: ${horaatual}
+┃ ─┅❖ Região: ${resp.location.region}
+┃ ─┅❖ País: ${resp.location.country}
+┃ ─┅❖ Fuso horário: ${resp.location.tz_id}
+┃ ─┅❖ Horário: ${horaatual}
 ┃ ─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─
 ┃ ─┅❖ 📜 Última atualização: ${ultimaatualizacao}
-┃ ─┅❖ 🌡️Temperatura (C°): ${resp.current.temp_c}
-┃ ─┅❖ 🥀 Sensação Térmica (C°): ${resp.current.feelslike_c}
-┃ ─┅❖ 🌒 Tempo: ${emoji}  ${tempo}
-┃ ─┅❖ 💧 Umidade: ${resp.current.humidity}
-┃ ─┅❖ 🌪️ Velocidade do Vento: ${resp.current.wind_kph}
+┃ ─┅❖ Temperatura (C°): ${resp.current.temp_c}
+┃ ─┅❖ Sensação Térmica (C°): ${resp.current.feelslike_c}
+┃ ─┅❖ Tempo: ${emoji}  ${tempo}
+┃ ─┅❖ Umidade: ${resp.current.humidity}
+┃ ─┅❖ Velocidade do Vento: ${resp.current.wind_kph}
 ╰━━━━━━━━━━━━━━━━━━⬣`);
 } catch (error) {
   console.error('Error:', error);
