@@ -17,7 +17,7 @@ export default handler
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
-const mundoGoticoInfo = [
+let global.mundoGoticoInfo = [
   "A subcultura gótica, surgida nos anos 80, é uma expressão cultural complexa que se distingue por sua influência multifacetada, incluindo a literatura gótica, o expressionismo alemão e correntes artísticas diversas.",
   "A estética gótica, manifesta na moda, destaca-se por sua singularidade. Caracterizada por roupas escuras, acessórios de prata, maquiagem dramática e penteados elaborados, a moda gótica reflete uma preferência por um estilo visual sombrio e elegante, transmitindo uma expressão única de identidade.",
   "A música desempenha um papel central no mundo gótico. Gêneros como gothic rock, darkwave e post-punk prosperam, com bandas emblemáticas como Bauhaus e Sisters of Mercy contribuindo significativamente para a riqueza musical da subcultura.",
