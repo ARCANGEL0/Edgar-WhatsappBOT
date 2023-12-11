@@ -94,7 +94,7 @@ fetch(apiUrl)
         gust_kph: data.current.gust_kph,
       },
     };
-   
+   return formattedOutput
     console.log(resp);
   })
   .catch(error => console.error('Error:', error));
