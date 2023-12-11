@@ -223,13 +223,24 @@ try {
   const emoji = getWeatherEmoji(weatherCode);
   const tempo = traduzirEstadoTempo(weatherCode);
 
+const localstring = resp.location.localtime;
+const dateagora = new Date(localstring);
+
+const horaatual = `${dateagora.getDate()}/${dateagora.getMonth() + 1}/${dateagora.getFullYear()} 🕰️ ${dateagora.getHours()}:${dateagora.getMinutes()}`;
+
+const inputDateString = resp.current.last_updated;
+const horaatu = new Date(inputDateString);
+
+const ultimaatualizacao = `${dateatu.getDate()}/${dateatu.getMonth() + 1}/${dateatu.getFullYear()} 🕰️ ${dateatu.getHours()}:${dateatu.getMinutes()}`;
+console.log(ultimaatualizacao);
+
   await m.reply(`╭━━━『𝙲𝙻𝙸𝙼𝙰』━━⬣
 ┃ ─┅❖ Cidade: ${resp.location.name}
 ┃ ─┅❖ Região: ${resp.location.region}
 ┃ ─┅❖ País: ${resp.location.country}
-┃ ─┅❖ Fuso horário: ${resp.location.tz}
+┃ ─┅❖ Fuso horário: ${horaatual}
 ┃ ─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─
-┃ ─┅❖ Última atualização: ${resp.current.last_updated}
+┃ ─┅❖ Última atualização: ${ultimaatualizacao}
 ┃ ─┅❖ Horário: ${resp.location.localtime}
 ┃ ─┅❖ Temperatura (C°): ${resp.current.temp_c}
 ┃ ─┅❖ Sensação Térmica (C°): ${resp.current.feelslike_c}
