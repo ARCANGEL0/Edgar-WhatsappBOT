@@ -49,8 +49,56 @@ if (command == 'clima') {
 const apiKey = 'dca80f6ff04d4f6096f231246231012';
 const location = text;
 const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
-const resp = await fetch(apiUrl)
-console.log(JSON.stringify(resp))
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const formattedOutput = {
+      location: {
+        name: data.location.name,
+        region: data.location.region,
+        country: data.location.country,
+        lat: data.location.lat,
+        lon: data.location.lon,
+        tz_id: data.location.tz_id,
+        localtime_epoch: data.location.localtime_epoch,
+        localtime: data.location.localtime,
+      },
+      current: {
+        last_updated_epoch: data.current.last_updated_epoch,
+        last_updated: data.current.last_updated,
+        temp_c: data.current.temp_c,
+        temp_f: data.current.temp_f,
+        is_day: data.current.is_day,
+        condition: {
+          text: data.current.condition.text,
+          icon: `http:${data.current.condition.icon}`,
+          code: data.current.condition.code,
+        },
+        wind_mph: data.current.wind_mph,
+        wind_kph: data.current.wind_kph,
+        wind_degree: data.current.wind_degree,
+        wind_dir: data.current.wind_dir,
+        pressure_mb: data.current.pressure_mb,
+        pressure_in: data.current.pressure_in,
+        precip_mm: data.current.precip_mm,
+        precip_in: data.current.precip_in,
+        humidity: data.current.humidity,
+        cloud: data.current.cloud,
+        feelslike_c: data.current.feelslike_c,
+        feelslike_f: data.current.feelslike_f,
+        vis_km: data.current.vis_km,
+        vis_miles: data.current.vis_miles,
+        uv: data.current.uv,
+        gust_mph: data.current.gust_mph,
+        gust_kph: data.current.gust_kph,
+      },
+    };
+
+    console.log(JSON.stringify(formattedOutput, null, 2));
+  })
+  .catch(error => console.error('Error:', error));
+
 const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
