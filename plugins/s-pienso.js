@@ -1337,14 +1337,23 @@ else {
             if (selectedCuriositiesArray && selectedCuriositiesArray.length > 0) {
                 const randomCuriosity = pickRandom(selectedCuriositiesArray);
                 await m.reply(`
-╭━━━『${selectedCuriositiesArray}』━━━⬣
+╭━━━『${selectedCategoryIndex}』━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈  🕯️💀
 ┃ ${randomCuriosity}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
     } 
 }
+else {
+  await m.reply(`
+  ╭━━━━━━━━━⬣
+  
+🪦🕯️ 𝐏𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚, 𝐝𝐢𝐠𝐚-𝐦𝐞 𝐮𝐦
+𝐧ú𝐦𝐞𝐫𝐨 𝐪𝐮𝐞 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐞 𝐧𝐚𝐬
+𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐥𝐢𝐬𝐭𝐚
 
+╰━━━━━━━━━━━━━━━━━━⬣`)
+}
 
 /* catch (i) {
 try {
