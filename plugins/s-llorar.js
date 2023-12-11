@@ -4,14 +4,14 @@ let handler = async (m, { conn, text}) => {
 
 m.reply(` ━━━━━━━━━⬣⬣━━━━━━━━
 
- 『🕯️💀』
+ 『🕯🦇』
  
 _${pickRandom(global.mundoGoticoInfo)}_ 
 
  ━━━━━━━━━⬣⬣━━━━━━━━`)
 }
 handler.tags = ['frases']
-handler.command = ['mundogotico']
+handler.command = ['morceguices']
 export default handler
 
 function pickRandom(list) {
