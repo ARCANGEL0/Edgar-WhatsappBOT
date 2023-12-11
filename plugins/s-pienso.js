@@ -34,12 +34,12 @@ if (!text) {
         // Adicione mais categorias conforme necessário
     ];
 
-    const categoryList = categories.map((category, index) => `┃ .fatos ${index + 1} - ${category}`).join('\n');
+    const categoryList = categories.map((category, index) => `    ┃ .fatos ${index + 1} - ${category}`).join('\n');
 
     throw `
     ╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
     ┃
-    ┃ ${categoryList}
+     ${categoryList}
     ┃
     ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
     ┃ 𝓔𝓭𝓲𝓬̧𝓪̃𝓸 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
