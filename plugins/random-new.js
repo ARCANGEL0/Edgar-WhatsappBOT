@@ -153,9 +153,7 @@ function getWeatherEmoji(weatherCode) {
 
     return emojiMap[weatherCode] || "❓"; // Default to question mark if code not found
 }
-
-// Example usage:
-const weatherCode = 1003; // Replace with your actual weather code
+ce with your actual weather code
 const emoji = getWeatherEmoji(resp.current.condition.code);
 console.log(emoji); // Output: 🌤️
 
