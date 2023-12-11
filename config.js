@@ -105,15 +105,15 @@ global.mail = 'henry.arcangello@gmail.com' //agrega tú correo
 global.desc = '' //agrega una descripción corta
 global.desc2 = '' //agrega una descripción larga (Solo se aplicará si su whasapp no tiene descripción)
 global.country = 'PT' //agrega tú país ejemplo: 
-global.packname = "Edgar BOT •"
+global.packname = "𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛"
 global.author = "Henry"
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = "1.1.0"
-global.vsJB = "1.0 "
+global.vs = "1.1.6"
+global.vsJB = "1.2 "
 global.yt = "https://www.instagram.com/henryy.xn"
-global.gt = "Edgar-BOT•"
+global.gt = "𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛"
 global.ig = "https://www.instagram.com/henryy.xn"
 global.md = "https://github.com/ARCANGEL0/Edgar-WhatsappBOT"
 
