@@ -53,7 +53,7 @@ try{
 console.log(anime)
 await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
 }
-}
+
 catch(e){
   m.reply(m.chat, "fudeu algo seu comedia")
 }
