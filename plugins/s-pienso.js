@@ -1337,9 +1337,9 @@ else {
             if (selectedCuriositiesArray && selectedCuriositiesArray.length > 0) {
                 const randomCuriosity = pickRandom(selectedCuriositiesArray);
                 await m.reply(`
-╭━━━『${selectedCategoryIndex}』━━━⬣
+╭━━━『${selectedCategory}』━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈  🕯️💀
-┃ ${randomCuriosity}
+ ${randomCuriosity}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
     } 
