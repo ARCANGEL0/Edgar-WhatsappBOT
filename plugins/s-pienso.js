@@ -1,9 +1,7 @@
 
 import uploadImage from '../lib/uploadImage.js';
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  
-if (!text) {
-    const categories = [
+  const categories = [
         'Ciência',
         'História',
         'Física',
@@ -33,6 +31,8 @@ if (!text) {
         'Mitologia',
         // Adicione mais categorias conforme necessário
     ];
+if (!text) {
+    
 
     const categoryList = categories.map((category, index) => `    ┃ .fatos ${index + 1} - ${category}`).join('\n');
 
