@@ -4,7 +4,7 @@ let handler = async (m, { conn, text}) => {
 
 m.reply(` ━━━━━━━━━⬣⬣━━━━━━━━
 
- 『🕯️💀
+ 『🕯️💀』
  
 _${pickRandom(global.mundoGoticoInfo)}_ 
 
