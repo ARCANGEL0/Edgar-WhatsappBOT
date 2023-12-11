@@ -55,9 +55,12 @@ else {
         const selectedCategory = categories[commandIndex];
         const selectedCuriosities = eval(`curiosities${selectedCategory.replace(/\s/g, '')}`);
 
-        return selectedCuriosities;
+        
+        m.reply("deu certo seu merda")
     } else {
-        throw "erro";
+        
+        m.reply("erro caralho")
+        
     }
 }
 
