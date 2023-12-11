@@ -1,28 +1,76 @@
-import { sticker } from '../lib/sticker.js'
-let handler = async(m, { conn }) => {
-//if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 *#on stickers* 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
- 
-let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
- 
-const s = [
-'https://c.tenor.com/BBNrRQkKdcUAAAAi/anime.gif',
-'https://c.tenor.com/OHMxfMcU4eQAAAAi/anime-girl.gif',  
-'https://c.tenor.com/7nadUsiwZioAAAAd/satanichia-gabriel-dropout.gif',
-'https://c.tenor.com/Gr6Z_6lBm2kAAAAd/satania-satanichia.gif',
-'https://i.pinimg.com/originals/e4/f7/a2/e4f7a2ca99c568e64c1d41f2a61133eb.jpg',  
-'https://i.pinimg.com/474x/b0/62/3f/b0623f46719f73be8b2d65357d8e30b2.jpg',
-'https://i.pinimg.com/736x/e4/df/2d/e4df2d77375455726233c66882e5e0e7.jpg',
-'https://i.pinimg.com/236x/2b/c2/fa/2bc2fa0191d01026d9797091d1ba5b2f.jpg' 
-];  
- 
-let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
-await delay(5 * 5000)
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+
+import uploadImage from '../lib/uploadImage.js';
+const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+  
+if (!text) {
+    const categories = [
+        'Ciência',
+        'História',
+        'Física',
+        'Arte',
+        'Tecnologia',
+        'Geografia',
+        'Cultura Geral',
+        'Curiosidades',
+        'Esportes',
+        'Música',
+        'Biologia',
+        'Filosofia',
+        'Literatura',
+        'Medicina',
+        'Economia',
+        'Política',
+        'Astronomia',
+        'Psicologia',
+        'Matemática',
+        'Química',
+        'Ecologia',
+        'Antropologia',
+        'Sociologia',
+        'Arqueologia',
+        'Psicologia Social',
+        'Ciências Exatas',
+        'Mitologia',
+        // Adicione mais categorias conforme necessário
+    ];
+
+    const categoryList = categories.map((category, index) => `.fatos ${index + 1} - ${category}`).join('\n');
+
+    throw `
+    ╭━━━━━━━━━⬣
+    ┃
+    ┃ ${categoryList}
+    ┃
+    ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+    ┃ 𝓔𝓭𝓲𝓬̧𝓪̃𝓸 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+    ╰━━━━━━━━━━━━━━━━━━⬣`;
 }
-handler.customPrefix = /piensa|pensaré|pensó|🤔/i 
-handler.command = new RegExp
-handler.exp = 50
-export default handler
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+  m.reply(`${lenguajeGB.smsAvisoIIG()}❖─┅──┅ \n🕯️📜 𝐄𝐦 𝐛𝐫𝐞𝐯𝐞 𝐭𝐫𝐚𝐫𝐞𝐢 𝐚 𝐢𝐦𝐚𝐠𝐞𝐦 𝐝𝐞𝐬𝐨𝐥𝐚𝐝𝐨𝐫𝐚 𝐩𝐚𝐫𝐚 𝐭𝐮𝐚 𝐯𝐢𝐬𝐚𝐨. 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐦 𝐩𝐨𝐮𝐜𝐨 𝐩𝐞𝐥𝐨 𝐫𝐞𝐯𝐞𝐥𝐚𝐫 𝐝𝐨 𝐪𝐮𝐞 𝐬𝐮𝐛𝐣𝐚𝐳 𝐧𝐚𝐬 𝐩𝐫𝐨𝐟𝐮𝐧𝐝𝐞𝐳𝐚𝐬 𝐝𝐨 𝐦𝐞𝐮𝐬 𝐨𝐛𝐬𝐜𝐮𝐫𝐨𝐬 𝐭𝐫𝐞𝐜𝐡𝐨𝐬 𝐝𝐞 𝐜𝐨𝐝𝐢𝐠𝐨𝐬\n─┅──┅❖ `);
+
+
+console.log(anime)
+await conn.sendFile(m.chat, anime, 'error.jpg', null, m);
+}
+catch(e){
+  m.reply(m.chat, "fudeu algo seu comedia")
+}
+/* catch (i) {
+try {
+const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
+await conn.sendFile(m.chat, anime2, 'error.jpg', null, m);
+} catch (a) {
+try {
+const anime3 = `https://api.caliph.biz.id/api/animeai?img=${image}&apikey=caliphkey`;
+await conn.sendFile(m.chat, anime3, 'error.jpg', null, m);
+} catch (e) {
+throw `${lenguajeGB.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
+𝗩𝗘𝗥𝗜𝗙𝗜𝗤𝗨𝗘 𝗦𝗘 𝗛Á 𝗗𝗘 𝗙𝗔𝗧𝗢 𝗔 𝗙𝗔𝗖𝗘 𝗗𝗘 𝗔𝗟𝗚𝗨𝗠𝗔 𝗣𝗢𝗕𝗥𝗘 𝗔𝗟𝗠𝗔 𝗡𝗘𝗦𝗧𝗔 𝗙𝗢𝗧𝗢\n─┅──┅❖ `
+}}} */
+  
+  
+}
+handler.help = ['curiosidades'];
+handler.tags = ['tools'];
+export default handler;
+handler.command = /^(curiosidades|curi|fatos)$/i;
