@@ -34,7 +34,7 @@ return list[Math.floor(list.length * Math.random())]}
 if (!text) {
     
 
-    const categoryList = categories.map((category, index) => `┃ .fatos ${index + 1} - ${category}`).join('\n');
+    const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
 
     throw `
 ╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
