@@ -50,7 +50,7 @@ const apiKey = 'dca80f6ff04d4f6096f231246231012';
 const location = text;
 const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
 const resp = await fetch(apiUrl)
-
+console.log(resp.json())
 const isDayString = resp.current.is_day ? 'Dia' : 'Noite';
 
 
