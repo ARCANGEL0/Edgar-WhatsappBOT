@@ -217,7 +217,7 @@ else {
     },
     "Resposta": "B"
   },
-  {
+  
   // Adicione mais perguntas conforme necessário
 ];
           const perguntasGeral =[]
