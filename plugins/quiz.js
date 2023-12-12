@@ -31,6 +31,11 @@ return list[Math.floor(list.length * Math.random())]}
         'CulturaGotica',
         // Adicione mais categorias conforme necessário
     ];
+    
+    let currentQuestion = "";
+let currentAnswer = "";
+
+
 if (!text) {
     
 
@@ -46,7 +51,7 @@ if (!text) {
 ${categoryList}
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓲𝓬̧𝓪̃𝓸 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`;
 }
 else {
@@ -257,7 +262,12 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const optionsString = Object.entries(Opcoes)
     .map(([key, value]) => `${key}: ${value}`)
     .join("\n");
-
+// Update the current question and answer
+  currentQuestion = Pergunta;
+  currentAnswer = Resposta;
+  
+  
+  console.log(currentQuestion)
   await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
