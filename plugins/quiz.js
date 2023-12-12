@@ -56,7 +56,7 @@ else {
     if (selectedCategoryIndex >= 0 && selectedCategoryIndex < categories.length) {
         
         
-   /*     const perguntasFisica = [
+        const perguntasFisica = [
   {
     "Pergunta": "Qual é a fórmula da lei de Ohm?",
     "Opcoes": {
@@ -219,7 +219,7 @@ else {
   },
   
   // Adicione mais perguntas conforme necessário
-];*/
+];
           const perguntasGeral =[]
     const perguntasHistoria = []
     const perguntasMitologia =[]
@@ -249,17 +249,23 @@ else {
         
 
         const selectedCategory = categories[selectedCategoryIndex];
-            const selectedperguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
+const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
-            if (selectedperguntasArray && selectedperguntasArray.length > 0) {
-                const pergunta = pickRandom(selectedperguntasArray);
-                await m.reply(`
+if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
+  const perguntaObj = pickRandom(selectedPerguntasArray);
+  const { Pergunta, Opcoes } = perguntaObj;
+  const optionsString = Object.entries(Opcoes)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join("\n");
+
+  await m.reply(`
 ╭━━━『${selectedCategory}』━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈  🕯️💀
- ${pergunta}
+ ${Pergunta}
+ ${optionsString}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
-    } 
+}
 }
 else {
   await m.reply(`
