@@ -56,7 +56,7 @@ else {
     if (selectedCategoryIndex >= 0 && selectedCategoryIndex < categories.length) {
         
         
-        const perguntasFisica = [
+   /*     const perguntasFisica = [
   {
     "Pergunta": "Qual é a fórmula da lei de Ohm?",
     "Opcoes": {
@@ -219,7 +219,7 @@ else {
   },
   
   // Adicione mais perguntas conforme necessário
-];
+];*/
           const perguntasGeral =[]
     const perguntasHistoria = []
     const perguntasMitologia =[]
