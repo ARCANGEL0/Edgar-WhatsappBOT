@@ -259,7 +259,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     .join("\n");
 
   await m.reply(`
-╭━━━『${selectedCategory}』━━━⬣
+╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
 ┃ ${Pergunta}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
