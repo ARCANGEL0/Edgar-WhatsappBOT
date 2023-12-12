@@ -245,12 +245,17 @@ if(!response){
 const localstring = resp.location.localtime;
 const dateagora = new Date(localstring);
 
-const horaatual = `${dateagora.getHours()}:${dateagora.getMinutes()}`;
+
+
+
+console.log(ultimaatualizacao);
+
+const horaatual = `${dateagora.getHours()}:${dateagora.getMinutes().toString().padStart(2, '0')}`;
 
 const inputDateString = resp.current.last_updated;
 const dateatu = new Date(inputDateString);
 
-const ultimaatualizacao = `${dateatu.getHours()}:${dateatu.getMinutes()}`;
+const ultimaatualizacao = `${dateatu.getHours()}:${dateatu.getMinutes().toString().padStart(2, '0')}`;
 console.log(ultimaatualizacao);
 
   await m.reply(`╭━━━『🌕 𝙲𝙻𝙸𝙼𝙰 』━━⬣
