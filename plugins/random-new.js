@@ -248,7 +248,7 @@ const dateagora = new Date(localstring);
 
 
 
-console.log(ultimaatualizacao);
+
 
 const horaatual = `${dateagora.getHours()}:${dateagora.getMinutes().toString().padStart(2, '0')}`;
 
