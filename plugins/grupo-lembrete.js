@@ -7,6 +7,8 @@ try {
 let user = global.db.data.users[m.sender]
 let groups = Object.keys(await conn.groupFetchAllParticipating())
 
+// Set the timezone to 'America/Sao_Paulo'
+process.env.TZ = 'America/Sao_Paulo';
   
   
 const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
@@ -44,7 +46,10 @@ let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
   scheduledTime.setHours(hours, minutes, 0, 0);
 
   // Schedule the task
-  const job = schedule.scheduleJob(scheduledTime, async () => {
+  console.log('Scheduled time:', scheduledTime);
+
+const job = schedule.scheduleJob(scheduledTime, async () => {
+  console.log('Executing scheduled task...');
     const mentionIds = [];
   
   for (let i = 0; i < groups.length; i++) {
