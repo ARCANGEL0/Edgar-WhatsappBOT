@@ -266,11 +266,11 @@ console.log(ultimaatualizacao);
 ┃ ─┅❖ Horário: ${horaatual}
 ┃ ─┅─┅─┅─┅─┅─┅─┅─┅─┅─┅─
 ┃ ─┅❖ 📜 Última atualização: ${ultimaatualizacao}
-┃ ─┅❖ Temperatura (C°): ${resp.current.temp_c}
-┃ ─┅❖ Sensação Térmica (C°): ${resp.current.feelslike_c}
+┃ ─┅❖ Temperatura (C°): ${resp.current.temp_c}°
+┃ ─┅❖ Sensação Térmica (C°): ${resp.current.feelslike_c}°
 ┃ ─┅❖ Tempo: ${emoji}  ${tempo}
-┃ ─┅❖ Umidade: ${resp.current.humidity}
-┃ ─┅❖ Velocidade do Vento: ${resp.current.wind_kph}
+┃ ─┅❖ Umidade: ${resp.current.humidity}%
+┃ ─┅❖ Velocidade do Vento: ${resp.current.wind_kph} km/h
 ╰━━━━━━━━━━━━━━━━━━⬣`);
 } catch (error) {
   console.error('Error:', error);
