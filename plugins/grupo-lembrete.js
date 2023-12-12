@@ -44,7 +44,7 @@ let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
   scheduledTime.setHours(hours, minutes, 0, 0);
 
   // Schedule the task
-  const job = schedule.scheduleJob(scheduledTime, async () => {
+/* const job = schedule.scheduleJob(scheduledTime, async () => {
     const mentionIds = [];
   
   for (let i = 0; i < groups.length; i++) {
@@ -53,7 +53,7 @@ let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
     mentionIds.push(...participants);
   }
     await conn.sendMessage(m.chat, { text: msgheader, mentions: mentionIds });
-  });
+  }); */
   
    /*const currentDate = new Date();
 
