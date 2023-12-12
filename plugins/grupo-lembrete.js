@@ -28,7 +28,7 @@ if (!text || !args[1]) return conn.reply(m.chat, `
 if(args[0] && args[1]) {
   const lembrete = args.slice(1).join(' ');
   const horario = args[0]
-  const [hours, minutes] = horario.split(':').map(Number);
+//  const [hours, minutes] = horario.split(':').map(Number);
 
 let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
 
@@ -40,8 +40,8 @@ let msgheader = ` ━━━━━━━━━⬣⬣━━━━━━━━
  ━━━━━━━━━⬣⬣━━━━━━━━
 `
   // Create a date object for the scheduled time
-  const scheduledTime = new Date();
-  scheduledTime.setHours(hours, minutes, 0, 0);
+//  const scheduledTime = new Date();
+ // scheduledTime.setHours(hours, minutes, 0, 0);
 
   // Schedule the task
 /* const job = schedule.scheduleJob(scheduledTime, async () => {
