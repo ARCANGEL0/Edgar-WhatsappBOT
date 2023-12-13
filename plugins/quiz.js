@@ -314,7 +314,7 @@ else {
 
 ╰━━━━━━━━━━━━━━━━━━⬣`)
 }
-
+}
 /* catch (i) {
 try {
 const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
