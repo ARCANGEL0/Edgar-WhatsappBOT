@@ -21,5 +21,6 @@ await conn.sendFile(m.chat, pp, 'error.jpg', textoA + textoB, m, false, { mentio
 //await conn.sendButton(m.chat, textoA, textoB, pp, [[lenguajeGB.smsConMenu(), `.menu`]], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.command = /^(admins|@admins|dmins)$/i
+handler.admin = true
 handler.group = true
 export default handler
