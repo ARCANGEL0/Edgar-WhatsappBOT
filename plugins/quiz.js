@@ -278,14 +278,15 @@ console.log('pergunta   '  + currentAnswer)
 
         if (respostaUsuario === currentAnswer) {
           // The answer is correct
-          await m.reply("Resposta correta!")
+          await m.reply("Resposta correta!");
+
         }
         else {
           // The answer is wrong
-          await m.reply(`Resposta incorreta. A resposta correta é " + ${currentAnswer}`);
+          await m.reply(`Resposta incorreta. A resposta correta é " + currentAnswer`);
         }
       
-
+});
 
     // Add a callback event to the message
     
@@ -303,9 +304,10 @@ ${optionsString}
   
 
 
-
-
-}}}}}}
+};
+}
+}
+}
 /* catch (i) {
 try {
 const anime2 = `https://api.zahwazein.xyz/photoeditor/jadianime?url=${image}&apikey=${keysxxx}`;
