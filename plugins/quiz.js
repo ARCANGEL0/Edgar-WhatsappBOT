@@ -270,7 +270,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 
-console.log('pergunta   '  + perguntaObj)
+console.log('pergunta   '  + currentAnswer)
 
 const respostaUsuario = reply.content;
 
