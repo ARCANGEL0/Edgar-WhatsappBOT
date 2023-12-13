@@ -265,7 +265,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   
   
   const perguntaObj = pickRandom(selectedPerguntasArray);
-  const { Pergunta, Opcoes ,Resposta} = perguntaObj;
+  const { Pergunta, Opcoes } = perguntaObj;
   const optionsString = Object.entries(Opcoes)
     .map(([key, value]) => `${key}: ${value}`)
     .join("\n");
@@ -285,7 +285,7 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
-/*
+
 
 if (m.replyToAll) {
     // Get the chat ID and the most recent message in the chat
@@ -295,7 +295,7 @@ if (m.replyToAll) {
     // Check if the user's reply is the correct answer
     if (lastMessage.text === currentAnswer) {
       // The user answered correctly
-      await conn.SendMessage(`
+      await m.reply(`
 ╭━━━『 CORRETO! 』━━━⬣
 ┃
 ┃ Você acertou! Parabéns!
@@ -305,7 +305,7 @@ if (m.replyToAll) {
     } else {
       // The user answered incorrectly
       const optionsString = Object.entries(currentQuestion).map(([key, value]) => `${key}: ${value}`).join("\n");
-      await conn.SendMessage(`
+      await m.reply(`
 ╭━━━『 INCORRETO! 』━━━⬣
 ┃
 ┃ Sua resposta: ${lastMessage.text}
@@ -328,16 +328,20 @@ ${optionsString}
 ┃ Para responder às perguntas, espere o bot enviar uma pergunta.
 ┃
 ╰━━━━━━━━━━━━━━━━━━⬣`
-  }*/
+  }
 };
 }
-
-
 }
+else {
+  await m.reply(`
+  ╭━━━━━━━━━⬣
+  
+🪦🕯️ 𝐏𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚, 𝐝𝐢𝐠𝐚-𝐦𝐞 𝐮𝐦
+𝐧ú𝐦𝐞𝐫𝐨 𝐪𝐮𝐞 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐞 𝐧𝐚𝐬
+𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐥𝐢𝐬𝐭𝐚
 
+╰━━━━━━━━━━━━━━━━━━⬣`)
 }
-
-
 
 /* catch (i) {
 try {
@@ -353,7 +357,7 @@ throw `${lenguajeGB.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
 }}} */
   
   
-
+}}
 handler.help = ['curiosidades'];
 handler.tags = ['tools'];
 export default handler;
