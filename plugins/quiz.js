@@ -259,23 +259,31 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   
   
-  
-  
-  
-  
-  
   const perguntaObj = pickRandom(selectedPerguntasArray);
-  const { Pergunta, Opcoes, Resposta } = perguntaObj;
-  const optionsString = Object.entries(Opcoes)
-    .map(([key, value]) => `${key}: ${value}`)
-    .join("\n");
-// Update the current question and answer
-  currentQuestion = Pergunta;
-  currentAnswer = Resposta;
-  
-  
-  console.log(currentQuestion)
-  await m.reply(`
+    const { Pergunta, Opcoes, Resposta } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+    // Update the current question and answer
+    currentQuestion = Pergunta;
+    currentAnswer = Resposta;
+
+    // Add a callback event to the message
+    m.on("reply", async (reply) => {
+      // Get the user's answer
+      const respostaUsuario = reply.content;
+
+      // Check if the answer is correct
+      if (respostaUsuario === currentAnswer) {
+        // The answer is correct
+        await m.reply("Resposta correta!");
+      } else {
+        // The answer is wrong
+        await m.reply("Resposta incorreta. A resposta correta é " + currentAnswer);
+      }
+    });
+
+    await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
 ┃ ${Pergunta}
@@ -285,50 +293,10 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
+  
+  
 
 
-if (m.replyToAll) {
-    // Get the chat ID and the most recent message in the chat
-    const chatId = conn.getChat();
-    const lastMessage = conn.getMessage(chatId);
-
-    // Check if the user's reply is the correct answer
-    if (lastMessage.text === currentAnswer) {
-      // The user answered correctly
-      await m.reply(`
-╭━━━『 CORRETO! 』━━━⬣
-┃
-┃ Você acertou! Parabéns!
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-╰━━━━━━━━━━━━━━━━━━⬣`);
-    } else {
-      // The user answered incorrectly
-      const optionsString = Object.entries(currentQuestion).map(([key, value]) => `${key}: ${value}`).join("\n");
-      await m.reply(`
-╭━━━『 INCORRETO! 』━━━⬣
-┃
-┃ Sua resposta: ${lastMessage.text}
-┃ A resposta correta é: ${currentAnswer}
-┃
-${optionsString}
-
-╰━━━━━━━━━━━━━━━━━━⬣`);
-    }
-
-    // Reset the current question and answer
-    currentQuestion = "";
-    currentAnswer = "";
-  } else {
-    // The user is not replying to the bot's message
-    throw `
-╭━━━『 𝐀𝐓𝐄𝐍𝐂̧𝐀̃𝐎! 』━━━⬣
-┃
-┃ 🪦🕯️ 𝐄𝐬𝐬𝐞 𝐧ã𝐨 é 𝐨 𝐥𝐮𝐠𝐚𝐫 𝐩𝐚𝐫𝐚 𝐞𝐬𝐜𝐫𝐢𝐯𝐞𝐫!
-┃ Para responder às perguntas, espere o bot enviar uma pergunta.
-┃
-╰━━━━━━━━━━━━━━━━━━⬣`
-  }
 };
 }
 }
