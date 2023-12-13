@@ -57,7 +57,7 @@ ${categoryList}
 else {
     const selectedCategoryIndex = parseInt(text) - 1;
     
-     console.log(text)
+     
     if (selectedCategoryIndex >= 0 && selectedCategoryIndex < categories.length) {
         
         
