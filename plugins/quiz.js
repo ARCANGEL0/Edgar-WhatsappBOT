@@ -1,5 +1,9 @@
 
 import uploadImage from '../lib/uploadImage.js';
+import { Baileys } from '@whiskeysockets/baileys';
+
+const baileys: Baileys = new Baileys();
+
 const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
@@ -272,21 +276,17 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 console.log('pergunta   '  + currentAnswer)
 
-      // Add a callback event to the message
-      m.on('reply', async (reply) => {
-        const respostaUsuario = reply.content;
 
-        if (respostaUsuario === currentAnswer) {
-          // The answer is correct
-          await m.reply("Resposta correta!");
+baileys.connect('https://web.whatsapp.com/');
 
-        }
-        else {
-          // The answer is wrong
-          await m.reply(`Resposta incorreta. A resposta correta é " + currentAnswer`);
-        }
-      
+baileys.on('typingStart', (message) => {
+  if (message.from !== 'bot') {
+    console.log(`User ${message.from} is typing a response.`);
+  }
 });
+
+      // Add a callback event to the message
+      
 
     // Add a callback event to the message
     
