@@ -270,7 +270,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 
-console.log('pergunta'  + currentQuestion)
+console.log('pergunta   '  + perguntaObj)
 
     // Add a callback event to the message
     
