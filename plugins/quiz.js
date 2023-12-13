@@ -303,7 +303,7 @@ ${optionsString}
   
 
 
-};
+
 
 }
 /* catch (i) {
