@@ -270,10 +270,8 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 
-console.log('p'  + currentQuestion)
-const respostaUsuario = reply.content;
+console.log('pergunta'  + currentQuestion)
 
-console.log('r    ' + respostaUsuario)
     // Add a callback event to the message
     
     await m.reply(`
