@@ -21,8 +21,8 @@ global.owner = [
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
-global.botNumberCode = "+62895382879494" //Ejemplo: +59309090909
-global.confirmCode = "+62895382879494"
+global.botNumberCode = "+3584573983538" //Ejemplo: +59309090909
+global.confirmCode = "+3584573983538"
 
 global.mods = [351927285125]
 global.prems = ["528451003894"]
