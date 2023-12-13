@@ -272,11 +272,20 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 console.log('pergunta   '  + currentAnswer)
 
-if(reply){
-const respostaUsuario = reply.content;
+      // Add a callback event to the message
+      m.on('reply', async (reply) => {
+        const respostaUsuario = reply.content;
 
-console.log("teste   "+respostaUsuario)
-}
+        if (respostaUsuario === currentAnswer) {
+          // The answer is correct
+          await m.reply("Resposta correta!")
+        }
+        else {
+          // The answer is wrong
+          await m.reply(`Resposta incorreta. A resposta correta é " + ${currentAnswer}`);
+        }
+      
+
 
     // Add a callback event to the message
     
