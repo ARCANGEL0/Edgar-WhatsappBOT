@@ -331,8 +331,6 @@ ${optionsString}
   }*/
 };
 }
-}
-}
 
 else {
   await m.reply(`
@@ -344,6 +342,10 @@ else {
 
 ╰━━━━━━━━━━━━━━━━━━⬣`)
 }
+
+}
+
+
 
 /* catch (i) {
 try {
