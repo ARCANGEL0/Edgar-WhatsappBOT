@@ -285,7 +285,7 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
-
+/*
 
 if (m.replyToAll) {
     // Get the chat ID and the most recent message in the chat
@@ -328,7 +328,7 @@ ${optionsString}
 ┃ Para responder às perguntas, espere o bot enviar uma pergunta.
 ┃
 ╰━━━━━━━━━━━━━━━━━━⬣`
-  }
+  }*/
 };
 }
 }
