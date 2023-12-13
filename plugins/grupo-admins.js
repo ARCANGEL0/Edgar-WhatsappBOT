@@ -5,13 +5,13 @@ const groupAdmins = participants.filter(p => p.admin)
 const listAdmin = groupAdmins.map((v, i) => `*» ${i + 1}. @${v.id.split('@')[0]}*`).join('\n')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
 let pesan = args.join` `
-let oi = `${lenguajeGB.smsAddB5()} _${pesan}_`
+let oi = `${lenguajeGB.smsAddB5()} + "\n"+_${pesan}_`
 
 let textoA = 
 `*⊱ ──── 《.⋅ 🕯️💀 ⋅.》 ──── ⊰*
-❖─┅──┅ ${lenguajeGB.smsAddB3()}
-❖─┅──┅ ${oi}
-*⊱ ──── 《.⋅ ${vs} ⋅.》 ──── ⊰*`
+${lenguajeGB.smsAddB3()}
+❖ ${oi}
+*⊱ ──── 《.⋅ ${vs} ⋅.》 ──── \n⊰*`
 
 let textoB = 
 `${listAdmin}
