@@ -304,7 +304,6 @@ ${optionsString}
 
 
 };
-}
 
 }
 /* catch (i) {
