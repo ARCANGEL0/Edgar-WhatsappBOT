@@ -1,6 +1,6 @@
 
 import uploadImage from '../lib/uploadImage.js';
-const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
@@ -271,22 +271,11 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 cons9le.log('p'  + currentQuestion)
-console.log('r    ' + reply)
+const respostaUsuario = reply.content;
+
+console.log('r    ' + respostaUsuario)
     // Add a callback event to the message
-    m.on("reply", async (reply) => {
-      // Get the user's answer
-      const respostaUsuario = reply.content;
-
-      // Check if the answer is correct
-      if (respostaUsuario === currentAnswer) {
-        // The answer is correct
-        await m.reply("Resposta correta!");
-      } else {
-        // The answer is wrong
-        await m.reply("Resposta incorreta. A resposta correta é " + currentAnswer);
-      }
-    });
-
+    
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
