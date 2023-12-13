@@ -268,6 +268,10 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     currentQuestion = Pergunta;
     currentAnswer = Resposta;
 
+
+
+cons9le.log(currentQuestion)
+console.log(reply)
     // Add a callback event to the message
     m.on("reply", async (reply) => {
       // Get the user's answer
