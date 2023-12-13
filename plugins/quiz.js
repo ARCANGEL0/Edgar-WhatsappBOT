@@ -271,9 +271,12 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 console.log('pergunta   '  + perguntaObj)
-if(m.replyToAll){
-  await m.reply("teste")
-}
+
+const respostaUsuario = reply.content;
+
+console.log("teste   "+respostaUsuario)
+
+
     // Add a callback event to the message
     
     await m.reply(`
