@@ -270,8 +270,8 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 
 
-cons9le.log(currentQuestion)
-console.log(reply)
+cons9le.log('p'  + currentQuestion)
+console.log('r    ' + reply)
     // Add a callback event to the message
     m.on("reply", async (reply) => {
       // Get the user's answer
