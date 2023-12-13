@@ -265,7 +265,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   
   
   const perguntaObj = pickRandom(selectedPerguntasArray);
-  const { Pergunta, Opcoes } = perguntaObj;
+  const { Pergunta, Opcoes ,Resposta} = perguntaObj;
   const optionsString = Object.entries(Opcoes)
     .map(([key, value]) => `${key}: ${value}`)
     .join("\n");
