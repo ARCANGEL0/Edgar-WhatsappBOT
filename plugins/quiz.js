@@ -353,7 +353,7 @@ throw `${lenguajeGB.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
 }}} */
   
   
-}}
+
 handler.help = ['curiosidades'];
 handler.tags = ['tools'];
 export default handler;
