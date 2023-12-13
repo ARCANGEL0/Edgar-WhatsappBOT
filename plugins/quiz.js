@@ -272,10 +272,11 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 console.log('pergunta   '  + currentAnswer)
 
+if(reply){
 const respostaUsuario = reply.content;
 
 console.log("teste   "+respostaUsuario)
-
+}
 
     // Add a callback event to the message
     
