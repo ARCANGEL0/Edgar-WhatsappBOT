@@ -1,8 +1,5 @@
 
 import uploadImage from '../lib/uploadImage.js';
-import { Baileys } from '@whiskeysockets/baileys';
-
-const baileys: Baileys = new Baileys();
 
 const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
@@ -277,13 +274,6 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 console.log('pergunta   '  + currentAnswer)
 
 
-baileys.connect('https://web.whatsapp.com/');
-
-baileys.on('typingStart', (message) => {
-  if (message.from !== 'bot') {
-    console.log(`User ${message.from} is typing a response.`);
-  }
-});
 
       // Add a callback event to the message
       
