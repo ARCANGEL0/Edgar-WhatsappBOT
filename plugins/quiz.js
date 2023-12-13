@@ -257,6 +257,13 @@ else {
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
+  
+  
+  
+  
+  
+  
+  
   const perguntaObj = pickRandom(selectedPerguntasArray);
   const { Pergunta, Opcoes } = perguntaObj;
   const optionsString = Object.entries(Opcoes)
@@ -278,6 +285,51 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
+
+
+if (m.replyToAll) {
+    // Get the chat ID and the most recent message in the chat
+    const chatId = conn.getChat();
+    const lastMessage = conn.getMessage(chatId);
+
+    // Check if the user's reply is the correct answer
+    if (lastMessage.text === currentAnswer) {
+      // The user answered correctly
+      await conn.SendMessage(`
+╭━━━『 CORRETO! 』━━━⬣
+┃
+┃ Você acertou! Parabéns!
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+╰━━━━━━━━━━━━━━━━━━⬣`);
+    } else {
+      // The user answered incorrectly
+      const optionsString = Object.entries(currentQuestion).map(([key, value]) => `${key}: ${value}`).join("\n");
+      await conn.SendMessage(`
+╭━━━『 INCORRETO! 』━━━⬣
+┃
+┃ Sua resposta: ${lastMessage.text}
+┃ A resposta correta é: ${currentAnswer}
+┃
+${optionsString}
+
+╰━━━━━━━━━━━━━━━━━━⬣`);
+    }
+
+    // Reset the current question and answer
+    currentQuestion = "";
+    currentAnswer = "";
+  } else {
+    // The user is not replying to the bot's message
+    throw `
+╭━━━『 𝐀𝐓𝐄𝐍𝐂̧𝐀̃𝐎! 』━━━⬣
+┃
+┃ 🪦🕯️ 𝐄𝐬𝐬𝐞 𝐧ã𝐨 é 𝐨 𝐥𝐮𝐠𝐚𝐫 𝐩𝐚𝐫𝐚 𝐞𝐬𝐜𝐫𝐢𝐯𝐞𝐫!
+┃ Para responder às perguntas, espere o bot enviar uma pergunta.
+┃
+╰━━━━━━━━━━━━━━━━━━⬣`
+  }
+};
 }
 }
 else {
@@ -310,3 +362,4 @@ handler.help = ['curiosidades'];
 handler.tags = ['tools'];
 export default handler;
 handler.command = /^(quiz)$/i;
+
