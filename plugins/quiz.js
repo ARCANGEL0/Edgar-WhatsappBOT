@@ -273,14 +273,9 @@ global.quiz = {
   "ca": Resposta
 }
 
-if (!global.quiz){
-  console.log("tsteeee")
-}
-console.log('pergunta   '  + currentAnswer)
 
-if(m.quoted){
-  console.log("test")
-}
+console.log('pergunta   '  + Resposta)
+
 
 
       // Add a callback event to the message
@@ -304,6 +299,9 @@ ${optionsString}
 
 };
 }
+    else if(text === "r"){
+      await conn.reply("teste")
+    }
 }
 }
 /* catch (i) {
