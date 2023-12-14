@@ -300,10 +300,25 @@ ${optionsString}
 };
 }
     else if(text === "r"){
-      await m.reply("teste")
+      await m.reply(global.quiz.cp)
     }
     else {
-      await m.reply("erro ")
+      
+      const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
+
+    throw `
+╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
+┃ 
+┃ 🥀🦇 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐭ó𝐩𝐢𝐜𝐨 𝐣𝐚𝐳 
+┃ 𝐞𝐦 𝐬𝐞𝐮𝐬 𝐩𝐞𝐧𝐬𝐚𝐦𝐞𝐧𝐭𝐨𝐬 
+┃ 𝐜𝐮𝐫𝐢𝐨𝐬𝐨𝐬
+┃
+${categoryList}
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`;
+
     }
 }
 }
