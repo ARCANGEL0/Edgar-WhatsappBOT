@@ -51,7 +51,7 @@ const handler = async (m, {conn, args: [effect], text: txt, usedPrefix, command,
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
-  await conn.sendMessage(m.chat, {image: {url: res.image}, caption: `\n🌒 *EFEITO: ${effect}*\n${wm}`}, {quoted: m});  
+  await conn.sendMessage(m.chat, {image: {url: res.image}, caption:{ `\n🌒 *EFEITO: ${effect}*\n${wm}`}, {quoted: m});  
 } catch (e) {
 await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
