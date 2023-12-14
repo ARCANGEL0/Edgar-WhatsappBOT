@@ -1,67 +1,69 @@
 import axios from "axios";
 import cheerio from "cheerio";
 import FormData from "form-data";
+
 const split = '|';
-const handler = async (m, {conn, args: [effect], text: txt, usedPrefix, command, name}) => {
+const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
   if (!effect) throw `${mg}
 ╭━━━━━━━━━⬣
-
 🥀 𝐍𝐨 𝐜𝐫𝐞𝐩𝐮𝐬𝐜𝐮𝐥𝐨 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞, 𝐚𝐠𝐮𝐚𝐫𝐝𝐨 𝐨 𝐬𝐞𝐮 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐩𝐚𝐫𝐚 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫 𝐮𝐦 𝐞𝐟𝐞𝐢𝐭𝐨 𝐚 𝐚𝐩𝐥𝐢𝐜𝐚𝐫.
 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐞𝐟𝐞𝐢𝐭𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐬 𝐣𝐮𝐧𝐭𝐨 𝐜𝐨𝐦 𝐨 𝐭𝐞𝐱𝐭𝐨
-
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ❖─┅ ${usedPrefix + command}  magma Inferno
 ╰━━━━━━━━━━━━━━━━━━⬣
-  *🕯️𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎*\n\n🪶📜${usedPrefix + command} ` + effects.map(v => v.title).join(`\n🪶📜 ${usedPrefix + command} `)
+*🕯️𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎*\n\n🪶📜${usedPrefix + command} ` + effects.map(v => v.title).join(`\n🪶📜 ${usedPrefix + command} `);
+
   if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `${mg}
    ━━━━━━━━━⬣ ⬣━━━━━━━━
   💀 𝐓𝐚𝐥 𝐞𝐟𝐞𝐢𝐭𝐨 ${effect}  é 𝐜𝐨𝐦𝐨 𝐮𝐦𝐚 𝐟𝐢𝐠𝐮𝐫𝐚 𝐬𝐨𝐦𝐛𝐫𝐢𝐚 𝐝𝐞 𝐢𝐠𝐧𝐨𝐫â𝐧𝐜𝐢𝐚 𝐞𝐦 𝐦𝐞𝐮 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨, 𝐮𝐦𝐚 𝐬𝐨𝐦𝐛𝐫𝐚 𝐪𝐮𝐞 𝐦𝐞 𝐢𝐦𝐩𝐨𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐚 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫. 
 𝐓𝐞𝐧𝐭𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞 𝐜𝐨𝐦 𝐨𝐮𝐭𝐫𝐨 𝐞𝐟𝐞𝐢𝐭𝐨 𝐝𝐚 𝐥𝐢𝐬𝐭𝐚 𝐦𝐚𝐥𝐝𝐢𝐭𝐚
-━━━━━━━━━⬣ ⬣━━━━━━━━
-`
- try {
-  let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart();
-  if (text.includes(split)) {
-    text = text.split(split).map((t) => t.trim());
-  } else {
-    text = [text.trim()];
-  }
-  const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
-  const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw `${mg} 
+━━━━━━━━━⬣ ⬣━━━━━━━━`;
+
+  try {
+    let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart();
+    if (text.includes(split)) {
+      text = text.split(split).map((t) => t.trim());
+    } else {
+      text = [text.trim()];
+    }
+    const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
+    const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw `${mg} 
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐟𝐚𝐥𝐡𝐨𝐮  
 ┃ 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞. 𝐝𝐢𝐠𝐢𝐭𝐞 𝐮𝐦 
 ┃ 𝐭𝐞𝐱𝐭𝐨
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝓔𝓭𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣
-  ` })
-   if (typeof res == 'number') throw res == -1 ? `${mg}
+` })
+    if (typeof res == 'number') throw res == -1 ? `${mg}
   ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
-┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
+┃𝐟𝐚𝐥𝐡𝐨𝐮
+┃ 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
 ┃
 ┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
-┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
-┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
+┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 
+┃ 𝐟𝐮𝐭𝐮𝐫𝐨 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
 ┃ 𝐞𝐱𝐢𝐭𝐨
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣`
+╰━━━━━━━━━━━━━━━━━━⬣`;
 
-await conn.sendMessage(m.chat, {
-  image: { url: res.image },
-  caption: `\n 🌒 *EFEITO: ${effect}*\n${wm}`
-}, { quoted: m });
-  
-} catch (e) {
-await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)}  
-}
+    await conn.sendMessage(m.chat, {
+      image: { url: res.image },
+      caption: `\n 🌒 *EFEITO: ${effect}*\n${wm}`
+    }, { quoted: m });
+
+  } catch (e) {
+    await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
+    console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+    console.log(e)
+  }
+};
 handler.help = ['logos'];
 handler.tags = ['nulis'];
 handler.command = /^(logo|logos|logos2)$/i;
