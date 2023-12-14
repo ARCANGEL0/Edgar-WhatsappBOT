@@ -267,11 +267,15 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
     // Update the current question and answer
-    currentQuestion = Pergunta;
-    currentAnswer = Resposta;
+    
+global.quiz = {
+  "cp": Pergunta,
+  "ca": Resposta
+}
 
-
-
+if (!global.quiz){
+  console.log("tsteeee")
+}
 console.log('pergunta   '  + currentAnswer)
 
 if(m.quoted){
