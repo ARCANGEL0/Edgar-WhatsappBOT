@@ -110,7 +110,7 @@ global.author = "Henry"
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = "1.1.6"
+global.vs = "1.1.8"
 global.vsJB = "1.2 "
 global.yt = "https://www.instagram.com/henryy.xn"
 global.gt = "𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛"
