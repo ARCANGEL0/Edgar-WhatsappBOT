@@ -273,6 +273,9 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
 console.log('pergunta   '  + currentAnswer)
 
+if(m.quoted){
+  console.log("test")
+}
 
 
       // Add a callback event to the message
