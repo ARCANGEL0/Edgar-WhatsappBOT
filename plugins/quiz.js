@@ -300,7 +300,10 @@ ${optionsString}
 };
 }
     else if(text === "r"){
-      await conn.reply("teste")
+      await m.reply("teste")
+    }
+    else {
+      await m.reply("erro ")
     }
 }
 }
