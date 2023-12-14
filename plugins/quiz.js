@@ -1,5 +1,4 @@
-
-import uploadImage from '../lib/uploadImage.js';
+global.quiz = global.quiz ? global.quiz : {}
 
 const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
