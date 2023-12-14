@@ -34,7 +34,7 @@ return list[Math.floor(list.length * Math.random())]}
     
     let currentQuestion = "";
 let currentAnswer = "";
-
+let id = m.chat
 
 
 
@@ -270,7 +270,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     currentQuestion = Pergunta;
     currentAnswer = Resposta;
 
-global.math[id] = [
+global.quiz[id] = [
 await conn.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
