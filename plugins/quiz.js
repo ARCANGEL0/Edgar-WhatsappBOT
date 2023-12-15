@@ -184,7 +184,7 @@ else {
     },
     "Resposta": "C",
     "Motivo": "O bóson de Higgs é uma partícula que desempenha um papel crucial na teoria eletrofraca, conferindo massa a outras partículas subatômicas através da interação com o campo de Higgs."
-  },
+  },{
     "Pergunta": "O que é a teoria da inflação cósmica?",
     "Opcoes": {
       A: "Expansão acelerada do universo durante seus primeiros momentos",
