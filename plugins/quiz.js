@@ -2159,7 +2159,174 @@ else {
   
   
   ]
-    const perguntasArte = [];
+    const perguntasArte = [
+        {
+    "Pergunta": "Quem foi o pintor renascentista italiano conhecido por obras como 'A Última Ceia' e 'Mona Lisa'?",
+    "Opcoes": {
+      A: "Vincent van Gogh",
+      B: "Michelangelo",
+      C: "Leonardo da Vinci",
+      D: "Pablo Picasso"
+    },
+    "Resposta": "C",
+    "Motivo": "Leonardo da Vinci foi um destacado pintor renascentista italiano conhecido por suas contribuições à arte e à ciência. 'A Última Ceia' e 'Mona Lisa' são obras-primas que refletem sua habilidade técnica, uso inovador da perspectiva e representação realista."
+  },
+  {
+    "Pergunta": "Quem foi o escultor grego antigo que criou a estátua de 'Vênus de Milo', uma das mais famosas esculturas da antiguidade?",
+    "Opcoes": {
+      A: "Fídias",
+      B: "Praxíteles",
+      C: "Míron",
+      D: "Escopas"
+    },
+    "Resposta": "B",
+    "Motivo": "Praxíteles foi um renomado escultor grego antigo, destacando-se pela representação da beleza feminina. 'Vênus de Milo' é uma escultura icônica conhecida por sua elegância, proporções harmônicas e pela ausência dos braços, aspecto que adiciona mistério à obra."
+  },
+  {
+    "Pergunta": "Qual movimento artístico do século XIX valorizava a expressão emocional, o uso de cores vibrantes e técnicas não convencionais, influenciando artistas como Van Gogh e Gauguin?",
+    "Opcoes": {
+      A: "Impressionismo",
+      B: "Realismo",
+      C: "Romantismo",
+      D: "Barroco"
+    },
+    "Resposta": "A",
+    "Motivo": "O Impressionismo foi um movimento artístico revolucionário que surgiu no século XIX. Valorizando a captura da luz, a expressão de emoções e o uso de pinceladas soltas, artistas impressionistas como Monet e Renoir influenciaram significativamente a arte moderna."
+  },
+  {
+    "Pergunta": "Quem foi o arquiteto espanhol conhecido por suas obras surrealistas e orgânicas, como a Sagrada Família em Barcelona?",
+    "Opcoes": {
+      A: "Frank Lloyd Wright",
+      B: "Le Corbusier",
+      C: "Antoni Gaudí",
+      D: "I. M. Pei"
+    },
+    "Resposta": "C",
+    "Motivo": "Antoni Gaudí foi um arquiteto catalão cujo estilo único é marcado por formas orgânicas, inspiração na natureza e elementos surrealistas. A Sagrada Família, uma de suas obras mais famosas, combina arquitetura gótica com inovações modernistas, destacando-se pela exuberância e complexidade."
+  },
+  {
+    "Pergunta": "Quem foi o pintor holandês conhecido por suas obras 'Noite Estrelada' e 'Girassóis', contribuindo significativamente para o movimento pós-impressionista?",
+    "Opcoes": {
+      A: "Claude Monet",
+      B: "Edgar Degas",
+      C: "Vincent van Gogh",
+      D: "Paul Cézanne"
+    },
+    "Resposta": "C",
+    "Motivo": "Vincent van Gogh foi um pintor pós-impressionista que trouxe uma abordagem única à pintura. Suas obras, como 'Noite Estrelada' e 'Girassóis', são caracterizadas por pinceladas intensas, cores vibrantes e expressão emocional, influenciando o desenvolvimento da arte moderna."
+  },
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que surgiu nas décadas de 1950 e 1960, caracterizado por obras de arte que desafiam as convenções tradicionais e frequentemente exploram o abstrato e o conceitual?",
+    "Opcoes": {
+      A: "Cubismo",
+      B: "Expressionismo",
+      C: "Pop Art",
+      D: "Arte Conceitual"
+    },
+    "Resposta": "D",
+    "Motivo": "A Arte Conceitual é um movimento artístico que se desenvolveu nas décadas de 1950 e 1960. Em vez de focar na produção física da obra de arte, os artistas conceituais priorizavam a ideia por trás da obra, desafiando as tradições artísticas convencionais."
+  },
+  {
+    "Pergunta": "Quem foi a pintora mexicana conhecida por suas obras que exploram a identidade, a cultura mexicana e questões sociais, como 'As Duas Fridas' e 'Auto-Retrato com Colar de Espinhos'?",
+    "Opcoes": {
+      A: "Georgia O'Keeffe",
+      B: "Frida Kahlo",
+      C: "Tamara de Lempicka",
+      D: "Dorothea Lange"
+    },
+    "Resposta": "B",
+    "Motivo": "Frida Kahlo foi uma pintora mexicana renomada cujas obras são marcadas por uma expressão intensa de sua própria vida e emoções. 'As Duas Fridas' e 'Auto-Retrato com Colar de Espinhos' são exemplos de sua habilidade em abordar questões pessoais e sociais de maneira única."
+  },
+  {
+    "Pergunta": "Qual é o estilo artístico caracterizado por formas geométricas, cores vibrantes e abstração, sendo influente nas artes plásticas, arquitetura e design durante o início do século XX?",
+    "Opcoes": {
+      A: "Art Déco",
+      B: "Fauvismo",
+      C: "Cubismo",
+      D: "Art Nouveau"
+    },
+    "Resposta": "A",
+    "Motivo": "O Art Déco é um estilo artístico que floresceu no início do século XX, caracterizado por formas geométricas, cores vibrantes e um design elegante. Tendo influência nas artes plásticas, arquitetura e design, o Art Déco reflete uma estética moderna e sofisticada da época."
+  },
+  {
+    "Pergunta": "Quem foi o escultor francês conhecido por suas esculturas modernistas abstratas, como 'O Homem que Anda' e 'A Mulher de Pé'?",
+    "Opcoes": {
+      A: "Henry Moore",
+      B: "Constantin Brancusi",
+      C: "Auguste Rodin",
+      D: "Barbara Hepworth"
+    },
+    "Resposta": "B",
+    "Motivo": "Constantin Brancusi foi um escultor romeno-francês que desempenhou um papel crucial no desenvolvimento da escultura moderna. Suas obras, como 'O Homem que Anda' e 'A Mulher de Pé', refletem uma abordagem abstrata e simplificada, explorando formas essenciais e materiais puros."
+  },
+  {
+    "Pergunta": "Qual é o movimento artístico que surgiu no início do século XX, caracterizado por formas abstratas, linhas dinâmicas e um foco na representação da velocidade e da modernidade?",
+    "Opcoes": {
+      A: "Dadaísmo",
+      B: "Futurismo",
+      C: "Surrealismo",
+      D: "Suprematismo"
+    },
+    "Resposta": "B",
+    "Motivo": "O Futurismo foi um movimento artístico que surgiu no início do século XX, enfatizando a velocidade, a modernidade e a representação dinâmica. Artistas futuristas, como Umberto Boccioni, buscavam capturar a energia da era industrial e a transformação do mundo moderno."
+  },
+  {
+    "Pergunta": "Quem foi o artista norte-americano associado ao movimento de pintura drip, conhecido por obras como 'Nº 5, 1948', onde a tinta é gotejada ou respingada na tela?",
+    "Opcoes": {
+      A: "Willem de Kooning",
+      B: "Jackson Pollock",
+      C: "Mark Rothko",
+      D: "Piet Mondrian"
+    },
+    "Resposta": "B",
+    "Motivo": "Jackson Pollock foi um influente artista norte-americano associado ao movimento expressionista abstrato. Sua técnica de pintura drip, onde a tinta é gotejada ou respingada na tela, é evidente em obras como 'Nº 5, 1948', representando uma abordagem inovadora e gestual à arte."
+  },
+  {
+    "Pergunta": "Qual é o nome da técnica de pintura renascentista que utiliza camadas finas e transparentes de tinta para criar uma luminosidade e profundidade intensas, como vista em obras de artistas como Leonardo da Vinci?",
+    "Opcoes": {
+      A: "Chiaroscuro",
+      B: "Sfumato",
+      C: "Tenebrismo",
+      D: "Grissaille"
+    },
+    "Resposta": "B",
+    "Motivo": "Sfumato é uma técnica de pintura renascentista caracterizada pelo uso de camadas finas e transparentes de tinta, criando uma transição suave entre as cores e proporcionando uma luminosidade intensa. Leonardo da Vinci foi mestre na aplicação do sfumato, como evidenciado em 'Mona Lisa'."
+  },
+  {
+    "Pergunta": "Quem foi o escultor italiano do Renascimento conhecido por suas obras, incluindo 'Davi' e 'O Nascimento de Vênus', destacando-se pela representação idealizada do corpo humano?",
+    "Opcoes": {
+      A: "Donatello",
+      B: "Michelangelo",
+      C: "Gian Lorenzo Bernini",
+      D: "Sandro Botticelli"
+    },
+    "Resposta": "D",
+    "Motivo": "Sandro Botticelli foi um pintor italiano do Renascimento, conhecido por suas obras que capturam a beleza e a idealização do corpo humano. 'O Nascimento de Vênus' é um exemplo marcante de sua habilidade em representar a harmonia e a elegância na arte renascentista."
+  },
+  {
+    "Pergunta": "Qual é o nome da técnica de escultura em que a forma é esculpida para fora de um bloco de material, frequentemente associada a Michelangelo e sua obra 'David'?",
+    "Opcoes": {
+      A: "Entalhe",
+      B: "Modelagem",
+      C: "Escultura em Relevo",
+      D: "Escultura em Alto-relevo"
+    },
+    "Resposta": "A",
+    "Motivo": "O entalhe é uma técnica de escultura em que a forma é esculpida para fora de um bloco de material, deixando uma figura tridimensional. Michelangelo utilizou essa técnica magistralmente em 'David', demonstrando sua habilidade em transformar uma pedra bruta em uma obra de arte esculpida."
+  },
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que surgiu nos anos 1960, caracterizado por obras que desafiam a concepção tradicional de arte, muitas vezes incorporando objetos do cotidiano e desafiando as fronteiras entre arte e vida?",
+    "Opcoes": {
+      A: "Arte Conceitual",
+      B: "Arte Pop",
+      C: "Minimalismo",
+      D: "Expressionismo Abstrato"
+    },
+    "Resposta": "B",
+    "Motivo": "A Arte Pop foi um movimento artístico que surgiu nos anos 1960, destacando-se pelo uso de imagens e temas populares da cultura de massa. Artistas pop, como Andy Warhol, desafiaram as concepções tradicionais de arte, incorporando objetos do cotidiano e explorando as fronteiras entre alta e baixa cultura."
+  },
+      
+      ];
   const perguntasTecnologia =[] ;
     const perguntasInformatica =[];
     const perguntasProgramacao =[]
