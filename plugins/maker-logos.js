@@ -251,7 +251,7 @@ var effects = [
     'url': 'https://textpro.me/3d-gradient-text-effect-online-free-1002.html',
   },
   {
-    'title': 'Blackpink',
+    'title': 'blackpink',
     'url': 'https://textpro.me/create-blackpink-logo-style-online-1001.html',
   },
   {
@@ -267,15 +267,15 @@ var effects = [
     'url': 'https://textpro.me/create-a-cloud-text-effect-in-the-sky-online-997.html',
   },
   {
-    'title': 'SandSummer',
+    'title': 'sand1',
     'url': 'https://textpro.me/write-in-sand-summer-beach-free-online-991.html',
   },
   {
-    'title': 'SandWriting',
+    'title': 'sand2',
     'url': 'https://textpro.me/sand-writing-text-effect-online-990.html',
   },
   {
-    'title': 'Sand-engraved-3d',
+    'title': 'sand3d',
     'url': 'https://textpro.me/sand-engraved-3d-text-effect-989.html',
   },
   {
@@ -303,7 +303,7 @@ var effects = [
     'url': 'https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html',
   },
   {
-    'title': 'a-Stone',
+    'title': 'stone',
     'url': 'https://textpro.me/create-a-stone-text-effect-online-982.html',
   },
   {
@@ -315,59 +315,59 @@ var effects = [
     'url': 'https://textpro.me/1917-style-text-effect-online-980.html',
   },
   {
-    'title': '80\'s-Retro-Neon',
+    'title': 'retroneon',
     'url': 'https://textpro.me/80-s-retro-neon-text-effect-online-979.html',
   },
   {
-    'title': 'Minion--3D',
+    'title': 'minion3d',
     'url': 'https://textpro.me/minion-text-effect-3d-online-978.html',
   },
   {
-    'title': 'Pornhub-Style-Logo',
+    'title': 'pornhub',
     'url': 'https://textpro.me/pornhub-style-logo-online-generator-free-977.html',
   },
   {
-    'title': 'Double-Exposure--Black-&-White',
+    'title': 'dbexposure',
     'url': 'https://textpro.me/double-exposure-text-effect-black-white-976.html',
   },
   {
-    'title': 'Holographic-3D',
+    'title': 'holo3d',
     'url': 'https://textpro.me/holographic-3d-text-effect-975.html',
   },
   {
-    'title': '3D-Avengers-logo',
+    'title': 'avengers',
     'url': 'https://textpro.me/create-3d-avengers-logo-online-974.html',
   },
   {
-    'title': 'Metal-Purple-Dual-Effect',
+    'title': 'purplemetal',
     'url': 'https://textpro.me/metal-purple-dual-effect-973.html',
   },
   {
-    'title': 'logo-style-Marvel-studios-Ver:-metal',
+    'title': 'marvel',
     'url': 'https://textpro.me/create-logo-style-marvel-studios-ver-metal-972.html',
   },
   {
-    'title': 'logo-style-Marvel-studios',
+    'title': 'marvel2',
     'url': 'https://textpro.me/create-logo-style-marvel-studios-online-971.html',
   },
   {
-    'title': 'Deluxe-Silver',
+    'title': 'silver',
     'url': 'https://textpro.me/deluxe-silver-text-effect-970.html',
   },
   {
-    'title': 'Color-Full-Luxury-Metal',
+    'title': 'metalfull',
     'url': 'https://textpro.me/color-full-luxury-metal-text-effect-969.html',
   },
   {
-    'title': 'Glossy-Blue-Metal',
+    'title': 'bluemetal',
     'url': 'https://textpro.me/glossy-blue-metal-text-effect-967.html',
   },
   {
-    'title': 'Deluxe-Gold',
+    'title': 'Gold',
     'url': 'https://textpro.me/deluxe-gold-text-effect-966.html',
   },
   {
-    'title': 'Glossy-Carbon',
+    'title': 'carbono',
     'url': 'https://textpro.me/glossy-carbon-text-effect-965.html',
   },
   {
@@ -375,23 +375,23 @@ var effects = [
     'url': 'https://textpro.me/fabric-text-effect-online-964.html',
   },
   {
-    'title': 'Neon',
+    'title': 'neon',
     'url': 'https://textpro.me/neon-text-effect-online-963.html',
   },
   {
-    'title': 'New-Year-Cards-3D-By-Name',
+    'title': 'newyear',
     'url': 'https://textpro.me/new-year-cards-3d-by-name-960.html',
   },
   {
-    'title': 'Happ-new-year-card-firework-gif',
+    'title': 'fireworks',
     'url': 'https://textpro.me/happ-new-year-card-firework-gif-959.html',
   },
   {
-    'title': 'Fullcolor-Balloon',
+    'title': 'balao',
     'url': 'https://textpro.me/fullcolor-balloon-text-effect-958.html',
   },
   {
-    'title': 'Text-Logo-3D-Metal',
+    'title': 'metal3d',
     'url': 'https://textpro.me/create-text-logo-3d-metal-online-957.html',
   },
   {
@@ -399,100 +399,72 @@ var effects = [
     'url': 'https://textpro.me/create-avatar-gold-online-956.html',
   },
   {
-    'title': 'Text-Logo-3D-Metal-Silver',
+    'title': 'metalprata',
     'url': 'https://textpro.me/text-logo-3d-metal-silver-946.html',
   },
   {
-    'title': 'Text-Logo-3D-Metal-Rose-Gold',
+    'title': 'metalrosa',
     'url': 'https://textpro.me/text-logo-3d-metal-rose-gold-945.html',
   },
   {
-    'title': 'Text-Logo-3D-Metal-Gold',
+    'title': 'metalouro',
     'url': 'https://textpro.me/text-logo-3d-metal-gold-944.html',
   },
   {
-    'title': 'Text-Logo-3D-Metal-Galaxy',
+    'title': 'metalgalaxy',
     'url': 'https://textpro.me/text-logo-3d-metal-galaxy-943.html',
   },
   {
-    'title': 'Xmas-Cards-3D',
+    'title': 'xmas',
     'url': 'https://textpro.me/xmas-cards-3d-online-942.html',
   },
   {
-    'title': 'Blood-Text-On-The-Frosted-Glass',
+    'title': 'blood1',
     'url': 'https://textpro.me/blood-text-on-the-frosted-glass-941.html',
   },
   {
-    'title': 'Halloween-Fire',
+    'title': 'halloweenfire',
     'url': 'https://textpro.me/halloween-fire-text-effect-940.html',
   },
   {
-    'title': 'Metal-Dark-Gold',
+    'title': 'metaldark',
     'url': 'https://textpro.me/metal-dark-gold-text-effect-online-939.html',
   },
   {
-    'title': 'Lion-Logo-Mascot',
+    'title': 'logolion',
     'url': 'https://textpro.me/create-lion-logo-mascot-online-938.html',
   },
   {
-    'title': 'Wolf-Logo-Black-&-White',
+    'title': 'logowolf',
     'url': 'https://textpro.me/create-wolf-logo-black-white-937.html',
   },
   {
-    'title': 'Wolf-Logo-Galaxy',
+    'title': 'lobogalaxia',
     'url': 'https://textpro.me/create-wolf-logo-galaxy-online-936.html',
   },
   {
-    'title': 'Ninja-Logo',
+    'title': 'logoninja',
     'url': 'https://textpro.me/create-ninja-logo-online-935.html',
   },
   {
-    'title': 'Logo-Joker',
+    'title': 'logojoker',
     'url': 'https://textpro.me/create-logo-joker-online-934.html',
   },
   {
-    'title': 'Wicker',
+    'title': 'pao',
     'url': 'https://textpro.me/wicker-text-effect-online-932.html',
   },
   {
-    'title': 'Natural-Leaves',
+    'title': 'folhas',
     'url': 'https://textpro.me/natural-leaves-text-effect-931.html',
   },
   {
-    'title': 'Firework-Sparkle',
+    'title': 'firework2',
     'url': 'https://textpro.me/firework-sparkle-text-effect-930.html',
   },
   {
     'title': 'Skeleton',
     'url': 'https://textpro.me/skeleton-text-effect-online-929.html',
-  },
-  {
-    'title': 'Red-Foil-Balloon',
-    'url': 'https://textpro.me/red-foil-balloon-text-effect-928.html',
-  },
-  {
-    'title': 'Purple-Foil-Balloon',
-    'url': 'https://textpro.me/purple-foil-balloon-text-effect-927.html',
-  },
-  {
-    'title': 'Pink-Foil-Balloon',
-    'url': 'https://textpro.me/pink-foil-balloon-text-effect-926.html',
-  },
-  {
-    'title': 'Green-Foil-Balloon',
-    'url': 'https://textpro.me/green-foil-balloon-text-effect-925.html',
-  },
-  {
-    'title': 'Cyan-Foil-Balloon',
-    'url': 'https://textpro.me/cyan-foil-balloon-text-effect-924.html',
-  },
-  {
-    'title': 'Blue-Foil-Balloon',
-    'url': 'https://textpro.me/blue-foil-balloon-text-effect-923.html',
-  },
-  {
-    'title': 'Gold-Foil-Balloon',
-    'url': 'https://textpro.me/gold-foil-balloon-text-effect-922.html',
   },
   {
     'title': 'Steel',
@@ -507,15 +479,15 @@ var effects = [
     'url': 'https://textpro.me/denim-text-effect-online-919.html',
   },
   {
-    'title': 'Decorate-Green',
+    'title': 'verde',
     'url': 'https://textpro.me/decorate-green-text-effect-918.html',
   },
   {
-    'title': 'Decorate-Purple',
+    'title': 'roxo',
     'url': 'https://textpro.me/decorate-purple-text-effect-917.html',
   },
   {
-    'title': 'Peridot-Stone',
+    'title': '2Stone',
     'url': 'https://textpro.me/peridot-stone-text-effect-916.html',
   },
   {
@@ -527,97 +499,54 @@ var effects = [
     'url': 'https://textpro.me/lava-text-effect-online-914.html',
   },
   {
-    'title': 'Yellow-Glass',
+    'title': 'vidroamarelo',
     'url': 'https://textpro.me/yellow-glass-text-effect-913.html',
   },
   {
-    'title': 'Purple-Glass',
+    'title': 'vidroroxo',
     'url': 'https://textpro.me/purple-glass-text-effect-912.html',
   },
   {
-    'title': 'Orange-Glass',
+    'title': 'vidrolaranja',
     'url': 'https://textpro.me/orange-glass-text-effect-911.html',
   },
   {
-    'title': 'Green-Glass',
+    'title': 'vidroverde',
     'url': 'https://textpro.me/green-glass-text-effect-910.html',
   },
   {
-    'title': 'Cyan-Glass',
+    'title': 'vidrociano',
     'url': 'https://textpro.me/cyan-glass-text-effect-909.html',
   },
   {
-    'title': 'Blue-Glass',
+    'title': 'vidroazul',
     'url': 'https://textpro.me/blue-glass-text-effect-908.html',
   },
   {
-    'title': 'Red-Glass',
+    'title': 'vidrovermelho',
     'url': 'https://textpro.me/red-glass-text-effect-907.html',
   },
   {
-    'title': 'Purple-Shiny-Glass',
+    'title': 'vidrobril',
     'url': 'https://textpro.me/purple-shiny-glass-text-effect-906.html',
   },
   {
-    'title': 'Captain-America',
+    'title': 'Cpamerica',
     'url': 'https://textpro.me/captain-america-text-effect-905.html',
   },
   {
-    'title': 'Robot-R2-D2',
+    'title': 'r2d2',
     'url': 'https://textpro.me/robot-r2-d2-text-effect-903.html',
   },
   {
-    'title': 'Rainbow-Equalizer',
+    'title': 'Rainbow',
     'url': 'https://textpro.me/rainbow-equalizer-text-effect-902.html',
   },
   {
     'title': 'Toxic',
     'url': 'https://textpro.me/toxic-text-effect-online-901.html',
   },
-  {
-    'title': 'Pink-Sparkling-Jewelry',
-    'url': 'https://textpro.me/pink-sparkling-jewelry-text-effect-899.html',
-  },
-  {
-    'title': 'Blue-Sparkling-Jewelry',
-    'url': 'https://textpro.me/blue-sparkling-jewelry-text-effect-898.html',
-  },
-  {
-    'title': 'Green-Sparkling-Jewelry',
-    'url': 'https://textpro.me/green-sparkling-jewelry-text-effect-897.html',
-  },
-  {
-    'title': 'Purple-Sparkling-Jewelry',
-    'url': 'https://textpro.me/purple-sparkling-jewelry-text-effect-896.html',
-  },
-  {
-    'title': 'Gold-Sparkling-Jewelry',
-    'url': 'https://textpro.me/gold-sparkling-jewelry-text-effect-895.html',
-  },
-  {
-    'title': 'Red-Sparkling-Jewelry',
-    'url': 'https://textpro.me/red-sparkling-jewelry-text-effect-894.html',
-  },
-  {
-    'title': 'Cyan-Sparkling-Jewelry',
-    'url': 'https://textpro.me/cyan-sparkling-jewelry-text-effect-893.html',
-  },
-  {
-    'title': 'Purple-Glass',
-    'url': 'https://textpro.me/purple-glass-text-effect-online-892.html',
-  },
-  {
-    'title': 'Decorative-Glass',
-    'url': 'https://textpro.me/decorative-glass-text-effect-891.html',
-  },
-  {
-    'title': 'Chocolate-Cake',
-    'url': 'https://textpro.me/chocolate-cake-text-effect-890.html',
-  },
-  {
-    'title': 'Strawberry',
-    'url': 'https://textpro.me/strawberry-text-effect-online-889.html',
-  },
+
   {
     'title': 'Koi-Fish',
     'url': 'https://textpro.me/koi-fish-text-effect-online-888.html',
@@ -667,19 +596,19 @@ var effects = [
     'url': 'https://textpro.me/green-neon-text-effect-874.html',
   },
   {
-    'title': 'Free-Advanced-Glow',
+    'title': 'glow2',
     'url': 'https://textpro.me/free-advanced-glow-text-effect-873.html',
   },
   {
-    'title': 'Dropwater',
+    'title': 'agua',
     'url': 'https://textpro.me/dropwater-text-effect-872.html',
   },
   {
-    'title': 'Break-Wall',
+    'title': 'wall',
     'url': 'https://textpro.me/break-wall-text-effect-871.html',
   },
   {
-    'title': 'Chrismast-Gift',
+    'title': 'gift',
     'url': 'https://textpro.me/chrismast-gift-text-effect-869.html',
   },
   {
@@ -687,27 +616,27 @@ var effects = [
     'url': 'https://textpro.me/honey-text-effect-868.html',
   },
   {
-    'title': 'Plastic-Bag-Drug',
+    'title': 'plastic',
     'url': 'https://textpro.me/plastic-bag-drug-text-effect-867.html',
   },
   {
-    'title': 'Horror-Gift',
+    'title': 'Horror3',
     'url': 'https://textpro.me/horror-gift-text-effect-866.html',
   },
   {
-    'title': 'Marble-Slabs',
+    'title': 'Marble',
     'url': 'https://textpro.me/marble-slabs-text-effect-864.html',
   },
   {
-    'title': 'Marble',
+    'title': 'Marble2',
     'url': 'https://textpro.me/marble-text-effect-863.html',
   },
   {
-    'title': 'Ice-Cold',
+    'title': 'Icecold',
     'url': 'https://textpro.me/ice-cold-text-effect-862.html',
   },
   {
-    'title': 'Fruit-Juice',
+    'title': 'Fruit',
     'url': 'https://textpro.me/fruit-juice-text-effect-861.html',
   },
   {
@@ -731,7 +660,7 @@ var effects = [
     'url': 'https://textpro.me/wood-text-effect-856.html',
   },
   {
-    'title': 'SCI---Fi',
+    'title': 'scifi',
     'url': 'https://textpro.me/sci-fi-text-effect-855.html',
   },
   {
