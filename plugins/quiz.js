@@ -4133,7 +4133,7 @@ else {
   },
   
     {
-    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+    "Pergunta": `O que o seguinte componente funcional em React faz?\n\n
   import React, { useState } from 'react';
 const ToggleComponent = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -4149,7 +4149,7 @@ const ToggleComponent = () => {
     </div>
   );
 };
-",
+`,
     "Opcoes": {
       A: "Renderiza uma lista de elementos filtrados",
       B: "Exibe um botão que alterna a visibilidade de um conteúdo",
@@ -4160,7 +4160,7 @@ const ToggleComponent = () => {
     "Motivo": "O componente ToggleComponent exibe um botão que alterna a visibilidade de um conteúdo condicionalmente, dependendo do estado do isVisible."
   },
   {
-    "Pergunta": "Dado o seguinte componente funcional em React, o que ele faz?\n\n
+    "Pergunta": `Dado o seguinte componente funcional em React, o que ele faz?\n\n
 import React, { useState, useEffect } from 'react';
 
 cnst DataFetchingComponent = () => {
@@ -4179,7 +4179,7 @@ cnst DataFetchingComponent = () => {
     </div>
   );
 };
-",
+`,
     "Opcoes": {
       A: "Renderiza uma galeria de imagens",
       B: "Exibe uma mensagem de confirmação de formulário",
@@ -4190,7 +4190,7 @@ cnst DataFetchingComponent = () => {
     "Motivo": "O componente `DataFetchingComponent` realiza uma simulação de requisição assíncrona e exibe os dados recuperados ou uma mensagem de carregamento."
   },
   {
-    "Pergunta": "O que o seguinte componente funcional em React faz?\n\njsx
+    "Pergunta": `O que o seguinte componente funcional em React faz?\n\n
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 
@@ -4203,7 +4203,7 @@ const ThemedComponent = () => {
     </div>
   );
 };
-",
+`,
     "Opcoes": {
       A: "Renderiza uma lista de elementos filtrados",
       B: "Exibe uma mensagem de erro em caso de falha na requisição",
@@ -4213,7 +4213,7 @@ const ThemedComponent = () => {
     "Resposta": "C",
     "Motivo": "O componente ThemedComponent renderiza um componente com base no contexto do tema, utilizando o hook useContext para acessar as informações do tema."
   }  {
-    "Pergunta": "Considere o seguinte componente funcional em React. O que esse componente faz?\n\n
+    "Pergunta": `Considere o seguinte componente funcional em React. O que esse componente faz?\n\n
 import React from 'react';
 
 const Greeting = ({ name }) => {
@@ -4221,7 +4221,7 @@ const Greeting = ({ name }) => {
 };
 
 export default Greeting;
-",
+`,
     "Opcoes": {
       A: "Renderiza um botão interativo",
       B: "Exibe uma mensagem de saudação com o nome fornecido",
@@ -4232,13 +4232,13 @@ export default Greeting;
     "Motivo": "O componente  Greeting renderiza uma mensagem de saudação com o nome fornecido como propriedade."
   },
   {
-    "Pergunta": "Dado o seguinte componente em React, qual é a principal característica que o torna um componente funcional?\n\n
+    "Pergunta": `Dado o seguinte componente em React, qual é a principal característica que o torna um componente funcional?\n\n
 import React from 'react';
 
 const Counter = ({ count }) => {
   return <p>Count: {count}</p>;
 };
-",
+`,
     "Opcoes": {
       A: "Utiliza um estado local",
       B: "Aceita propriedades (props) como parâmetros",
@@ -4249,7 +4249,7 @@ const Counter = ({ count }) => {
     "Motivo": "A principal característica que torna o componente Counter funcional é que ele aceita propriedades (props) como parâmetros."
   },
   {
-    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+    "Pergunta": `O que o seguinte componente funcional em React faz?\n\n
 import React, { useState } from 'react';
 
 const ClickCounter = () => {
@@ -4266,7 +4266,7 @@ const ClickCounter = () => {
     </div>
   );
 };
-",
+`,
     "Opcoes": {
       A: "Renderiza uma tabela de dados",
       B: "Exibe a contagem de cliques e permite incrementá-la",
@@ -4277,7 +4277,7 @@ const ClickCounter = () => {
     "Motivo": "O componente ClickCounter renderiza a contagem de cliques e permite incrementá-la quando o botão é clicado, utilizando o estado local com useState."
   },
   {
-    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+    "Pergunta": `O que o seguinte componente funcional em React faz?\n\n
 import React, { useEffect, useState } from 'react';
 
 const Timer = () => {
@@ -4292,7 +4292,7 @@ const Timer = () => {
   }, [seconds]);
 
   return <p>Elapsed Time: {seconds} seconds</p>;
-};",
+};`,
     "Opcoes": {
       A: "Renderiza um calendário interativo",
       B: "Exibe um temporizador que incrementa a cada segundo",
