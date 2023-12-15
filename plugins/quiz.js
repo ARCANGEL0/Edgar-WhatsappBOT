@@ -64,7 +64,7 @@ else {
         
         
         const perguntasFisica = [
-         
+        { 
          "Pergunta": "Qual é a teoria que busca unificar a gravidade com outras forças fundamentais?",
     "Opcoes": {
       A: "Teoria das Cordas",
