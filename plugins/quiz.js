@@ -4302,13 +4302,2117 @@ const Timer = () => {
     "Resposta": "B",
     "Motivo": "O componente Timer exibe um temporizador que incrementa a cada segundo, utilizando o hook useEffect para gerenciar o ciclo de vida."
   },
-  
+  {
+    "Pergunta": `No contexto do PHP, o que o seguinte trecho de código faz?\n\n
+<?php
+  $numbers = [1, 2, 3, 4, 5];
+  $squaredNumbers = array_map(function($num) {
+    return $num ** 2;
+  }, $numbers);
+  print_r($squaredNumbers);
+`,
+    "Opcoes": {
+      A: "Calcula a média dos números no array",
+      B: "Remove os elementos duplicados do array",
+      C: "Calcula o quadrado de cada número no array",
+      D: "Ordena os números em ordem crescente"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho de código utiliza a função array_map para calcular o quadrado de cada número no array, resultando em [1, 4, 9, 16, 25]."
+  },
+  {
+    "Pergunta": `No contexto do Laravel, o que o seguinte trecho de código em um controlador faz?\n\n
+public function show($id)
+{
+    $post = Post::find($id);
+    return view('posts.show', ['post' => $post]);
+}
+`,
+    "Opcoes": {
+      A: "Exibe uma lista de posts",
+      B: "Atualiza um post no banco de dados",
+      C: "Deleta um post no banco de dados",
+      D: "Mostra os detalhes de um post específico"
+    },
+    "Resposta": "D",
+    "Motivo": "O método `show` em um controlador do Laravel busca um post específico no banco de dados com base no ID e exibe os detalhes desse post."
+  },
+  {
+    "Pergunta": `No contexto do PHP e Laravel, o que o seguinte trecho de código faz?\n\n
+<?php
+  $name = "John";
+  $greeting = "Hello, $name!";
+  echo $greeting;
+`,
+    "Opcoes": {
+      A: "Cria um array associativo",
+      B: "Manipula uma string",
+      C: "Declara uma classe",
+      D: "Realiza uma consulta SQL"
+    },
+    "Resposta": "B",
+    "Motivo": "O trecho de código manipula uma string, utilizando a interpolação de variáveis para criar a saudação 'Hello, John!'."
+  },
+  {
+    "Pergunta": `No contexto do Laravel, o que o seguinte trecho de código em uma rota faz?\n\n
+Route::get('/users', 'UserController@index');
+`,
+    "Opcoes": {
+      A: "Define uma rota para exibir a lista de usuários",
+      B: "Atualiza um usuário no banco de dados",
+      C: "Deleta um usuário no banco de dados",
+      D: "Mostra os detalhes de um usuário específico"
+    },
+    "Resposta": "A",
+    "Motivo": "O trecho de código em uma rota do Laravel define que a URL '/users' será associada ao método 'index' do controlador 'UserController', que geralmente exibe a lista de usuários."
+  },
   
       
+  {
+    "Pergunta": `No contexto do Laravel, o que o seguinte trecho de código em um controlador faz?\n\n
+public function store(Request $request)
+{
+    $validatedData = $request->validate([
+        'title' => 'required|string|max:255',
+        'content' => 'required|string',
+    ]);
+
+    $post = Post::create($validatedData);
+
+    return redirect('/posts/' . $post->id);
+}
+`,
+    "Opcoes": {
+      A: "Exibe uma lista de posts",
+      B: "Atualiza um post no banco de dados",
+      C: "Cria um novo post no banco de dados",
+      D: "Mostra os detalhes de um post específico"
+    },
+    "Resposta": "C",
+    "Motivo": "O método `store` em um controlador do Laravel valida os dados recebidos do formulário, cria um novo post no banco de dados e redireciona para a página de detalhes desse post."
+  },
+  {
+    "Pergunta": `No contexto do PHP e Laravel, o que o seguinte trecho de código faz?\n\n
+<?php
+  $numbers = [2, 4, 6, 8, 10];
+  $filteredNumbers = array_filter($numbers, function($num) {
+    return $num > 5;
+  });
+  print_r($filteredNumbers);
+`,
+    "Opcoes": {
+      A: "Calcula a média dos números no array",
+      B: "Remove os elementos duplicados do array",
+      C: "Filtra os números maiores que 5 no array",
+      D: "Ordena os números em ordem crescente"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho de código utiliza a função `array_filter` para filtrar os números maiores que 5 no array, resultando em [6, 8, 10]."
+  },
+  {
+    "Pergunta": `No contexto do Laravel, o que o seguinte trecho de código em uma rota faz?\n\n
+Route::get('/posts', 'PostController@index');
+`,
+    "Opcoes": {
+      A: "Define uma rota para exibir a lista de posts",
+      B: "Atualiza um post no banco de dados",
+      C: "Deleta um post no banco de dados",
+      D: "Mostra os detalhes de um post específico"
+    },
+    "Resposta": "A",
+    "Motivo": "O trecho de código em uma rota do Laravel define que a URL '/posts' será associada ao método 'index' do controlador 'PostController', que geralmente exibe a lista de posts."
+  },
+  
+  {
+    "Pergunta": `No contexto do Java, o que o seguinte trecho de código faz?\n\n
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        int upperLimit = 50;
+
+        String primeNumbers = IntStream.rangeClosed(2, upperLimit)
+            .filter(PrimeNumbers::isPrime)
+            .mapToObj(Integer::toString)
+            .collect(Collectors.joining(", "));
+
+        System.out.println("Prime Numbers up to " + upperLimit + ": " + primeNumbers);
+    }
+
+    private static boolean isPrime(int number) {
+        return IntStream.rangeClosed(2, (int) Math.sqrt(number))
+            .noneMatch(i -> number % i == 0);
+    }
+}
+`,
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Faz uma requisição HTTP e retorna os dados em formato JSON",
+      C: "Identifica e lista os números primos até um limite superior",
+      D: "Ordena uma lista de strings em ordem alfabética"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho de código em Java identifica e lista os números primos até um limite superior, utilizando a função isPrime para verificar se um número é primo."
+  },
+  {
+    "Pergunta": `No contexto do Java, o que o seguinte trecho de código faz?\n\n
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public static List<Person> sortByName(List<Person> people) {
+        return people.stream()
+            .sorted(Comparator.comparing(Person::getName))
+            .collect(Collectors.toList());
+    }
+}
+`,
+    "Opcoes": {
+      A: "Define uma classe para manipular imagens",
+      B: "Realiza uma requisição HTTP e retorna os dados em formato JSON",
+      C: "Ordena uma lista de objetos Person pelo nome",
+      D: "Calcula a soma dos números de 1 a 5"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho de código em Java define uma classe Person com um método estático sortByName que ordena uma lista de objetos Person pelo nome utilizando a API Stream."
+  },
+  {
+    "Pergunta": `No contexto do Java, o que o seguinte trecho de código faz?\n\n
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class StreamOperations {
+    public static void main(String[] args) {
+        Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        Predicate<Integer> isEven = num -> num % 2 == 0;
+
+        long countEvenNumbers = numbers.filter(isEven).count();
+
+        System.out.println("Count of even numbers: " + countEvenNumbers);
+    }
+}
+`,
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Filtra os números pares em uma lista e calcula a média",
+      C: "Ordena uma lista de strings em ordem alfabética",
+      D: "Conta o número de números pares em um stream"
+    },
+    "Resposta": "D",
+    "Motivo": "O trecho de código em Java utiliza a API Stream para contar o número de números pares em um stream, utilizando a operação filter e o método count."
+  },
+  {
+    "Pergunta": `No contexto do Java, o que o seguinte trecho de código faz?\n\n
+import java.util.HashMap;
+import java.util.Map;
+
+public class WordFrequencyCounter {
+    public static void main(String[] args) {
+        String sentence = "This is a sample sentence. This sentence is a test.";
+
+        Map<String, Integer> wordFrequency = new HashMap<>();
+
+        String[] words = sentence.split("\\s+");
+
+        for (String word : words) {
+            wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
+        }
+
+        System.out.println("Word Frequency: " + wordFrequency);
+    }
+}
+`,
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Conta a frequência de cada palavra em uma frase",
+      C: "Ordena uma lista de strings em ordem alfabética",
+      D: "Remove os elementos duplicados de uma lista"
+    },
+    "Resposta": "B",
+    "Motivo": "O trecho de código em Java conta a frequência de cada palavra em uma frase, utilizando um Map para armazenar a contagem de cada palavra."
+  }
+  
       ]
-    const perguntasQuimica = []
-    const perguntasBiologia = []
-    const perguntasMatematica = []
+    const perguntasQuimica = [
+      {
+    "Pergunta": "Qual é o número atômico do hidrogênio?",
+    "Opcoes": {
+      A: "1",
+      B: "2",
+      C: "3",
+      D: "4"
+    },
+    "Resposta": "A",
+    "Motivo": "O hidrogênio possui número atômico 1, o que significa que tem um próton em seu núcleo."
+  },
+  {
+    "Pergunta": "O que representa a sigla pH?",
+    "Opcoes": {
+      A: "Peso Hidrogeniônico",
+      B: "Potencial Hidrogeniônico",
+      C: "Pressão Hidrogeniônica",
+      D: "Perfil Hidrogeniônico"
+    },
+    "Resposta": "B",
+    "Motivo": "O pH representa o Potencial Hidrogeniônico, uma medida que indica a acidez ou basicidade de uma solução."
+  },
+  {
+    "Pergunta": "Qual é a fórmula química da água?",
+    "Opcoes": {
+      A: "CO2",
+      B: "H2O",
+      C: "O2",
+      D: "CH4"
+    },
+    "Resposta": "B",
+    "Motivo": "A fórmula química da água é H2O, indicando que uma molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio."
+  },
+  {
+    "Pergunta": "O que é um íon?",
+    "Opcoes": {
+      A: "Um átomo neutro",
+      B: "Um átomo com carga elétrica positiva",
+      C: "Um átomo com carga elétrica negativa",
+      D: "Uma molécula formada por dois átomos"
+    },
+    "Resposta": "C",
+    "Motivo": "Um íon é um átomo que ganhou ou perdeu elétrons, resultando em uma carga elétrica positiva (cátion) ou negativa (ânion)."
+  },
+  {
+    "Pergunta": "Qual é o símbolo químico do ouro?",
+    "Opcoes": {
+      A: "Ag",
+      B: "Fe",
+      C: "Au",
+      D: "Cu"
+    },
+    "Resposta": "C",
+    "Motivo": "O símbolo químico do ouro é Au, derivado do termo latino 'aurum'."
+  },
+  {
+    "Pergunta": "O que é uma reação de oxirredução?",
+    "Opcoes": {
+      A: "Uma reação que libera luz",
+      B: "Uma reação que envolve oxigênio",
+      C: "Uma reação que envolve transferência de elétrons",
+      D: "Uma reação que produz ácido"
+    },
+    "Resposta": "C",
+    "Motivo": "Uma reação de oxirredução envolve a transferência de elétrons entre substâncias químicas, resultando em mudanças no estado de oxidação."
+  },
+  {
+    "Pergunta": "Qual é o componente principal do gás metano?",
+    "Opcoes": {
+      A: "Hidrogênio",
+      B: "Oxigênio",
+      C: "Carbono",
+      D: "Nitrogênio"
+    },
+    "Resposta": "C",
+    "Motivo": "O componente principal do gás metano (CH4) é o carbono."
+  },
+  {
+    "Pergunta": "O que é um composto iônico?",
+    "Opcoes": {
+      A: "Uma substância formada por átomos de um único elemento",
+      B: "Uma substância formada por moléculas",
+      C: "Uma substância formada por átomos de diferentes elementos ligados por ligações covalentes",
+      D: "Uma substância formada por íons positivos e negativos ligados por ligações iônicas"
+    },
+    "Resposta": "D",
+    "Motivo": "Um composto iônico é uma substância formada por íons positivos (cátions) e negativos (ânions) ligados por ligações iônicas."
+  },
+  {
+    "Pergunta": "O que é um isótopo?",
+    "Opcoes": {
+      A: "Um átomo com carga elétrica",
+      B: "Um átomo com o mesmo número de prótons, mas diferente número de nêutrons",
+      C: "Um átomo com o mesmo número de elétrons, mas diferente número de prótons",
+      D: "Uma molécula formada por dois átomos"
+    },
+    "Resposta": "B",
+    "Motivo": "Um isótopo é um átomo que tem o mesmo número de prótons, mas um diferente número de nêutrons em seu núcleo."
+  },
+  {
+    "Pergunta": "Qual é a principal função dos catalisadores em uma reação química?",
+    "Opcoes": {
+      A: "Aumentar a temperatura da reação",
+      B: "Reduzir a velocidade da reação",
+      C: "Alterar o equilíbrio químico",
+      D: "Acelerar a reação sem ser consumido"
+    },
+    "Resposta": "D",
+    "Motivo": "Os catalisadores aceleram reações químicas ao fornecer uma rota de reação alternativa, reduzindo a energia de ativação necessária sem serem consumidos na reação."
+  },
+  
+  {
+    "Pergunta": "O que é um polímero?",
+    "Opcoes": {
+      A: "Uma substância formada por átomos de um único elemento",
+      B: "Uma substância formada por moléculas",
+      C: "Uma substância formada por átomos de diferentes elementos ligados por ligações covalentes",
+      D: "Uma substância formada por macromoléculas compostas por unidades repetitivas"
+    },
+    "Resposta": "D",
+    "Motivo": "Um polímero é uma substância formada por macromoléculas, que são compostas por unidades repetitivas chamadas monômeros."
+  },
+  {
+    "Pergunta": "O que é a Lei da Conservação da Massa?",
+    "Opcoes": {
+      A: "A massa de um átomo é sempre constante",
+      B: "A massa total de um sistema isolado permanece constante durante uma reação química",
+      C: "A massa de uma substância é diretamente proporcional ao seu volume",
+      D: "A massa de um gás é inversamente proporcional à sua pressão"
+    },
+    "Resposta": "B",
+    "Motivo": "A Lei da Conservação da Massa afirma que a massa total de um sistema isolado permanece constante durante uma reação química, indicando que a massa não é criada nem destruída, apenas transformada."
+  },
+  {
+    "Pergunta": "O que é a Tabela Periódica?",
+    "Opcoes": {
+      A: "Uma lista de elementos químicos organizados por ordem de descoberta",
+      B: "Uma lista de elementos químicos organizados por ordem alfabética",
+      C: "Uma lista de compostos químicos",
+      D: "Uma lista de moléculas orgânicas"
+    },
+    "Resposta": "A",
+    "Motivo": "A Tabela Periódica é uma lista de elementos químicos organizados por ordem crescente de número atômico, facilitando a compreensão das propriedades e relações entre os elementos."
+  },
+  {
+    "Pergunta": "O que é a eletronegatividade?",
+    "Opcoes": {
+      A: "A tendência de um átomo ganhar elétrons",
+      B: "A tendência de um átomo perder elétrons",
+      C: "A tendência de um átomo atrair elétrons em uma ligação química",
+      D: "A tendência de um átomo formar íons positivos"
+    },
+    "Resposta": "C",
+    "Motivo": "A eletronegatividade é a medida da tendência de um átomo atrair elétrons em uma ligação química. Quanto maior a eletronegatividade, maior a capacidade do átomo de atrair elétrons."
+  },
+  
+  {
+    "Pergunta": "O que é um composto covalente?",
+    "Opcoes": {
+      A: "Uma substância formada por átomos de um único elemento",
+      B: "Uma substância formada por moléculas",
+      C: "Uma substância formada por átomos de diferentes elementos ligados por ligações iônicas",
+      D: "Uma substância formada por átomos que compartilham elétrons"
+    },
+    "Resposta": "D",
+    "Motivo": "Um composto covalente é uma substância formada por átomos que compartilham elétrons na formação de ligações covalentes."
+  },
+  {
+    "Pergunta": "O que é a Teoria da Ligação de Valência?",
+    "Opcoes": {
+      A: "Uma teoria que descreve a formação de íons",
+      B: "Uma teoria que descreve a formação de ligações iônicas",
+      C: "Uma teoria que descreve a formação de ligações covalentes",
+      D: "Uma teoria que descreve a distribuição de elétrons nas camadas eletrônicas"
+    },
+    "Resposta": "C",
+    "Motivo": "A Teoria da Ligação de Valência descreve a formação de ligações covalentes, enfatizando o compartilhamento de elétrons entre átomos para alcançar estabilidade."
+  },
+  {
+    "Pergunta": "O que é um ácido conforme a Teoria de Arrhenius?",
+    "Opcoes": {
+      A: "Uma substância que libera íons hidroxila (OH-) em solução aquosa",
+      B: "Uma substância que libera íons hidrogênio (H+) em solução aquosa",
+      C: "Uma substância que libera íons positivos em solução aquosa",
+      D: "Uma substância que libera íons negativos em solução aquosa"
+    },
+    "Resposta": "B",
+    "Motivo": "Conforme a Teoria de Arrhenius, um ácido é uma substância que libera íons hidrogênio (H+) em solução aquosa."
+  },
+  {
+    "Pergunta": "O que é uma base conforme a Teoria de Arrhenius?",
+    "Opcoes": {
+      A: "Uma substância que libera íons hidroxila (OH-) em solução aquosa",
+      B: "Uma substância que libera íons hidrogênio (H+) em solução aquosa",
+      C: "Uma substância que libera íons positivos em solução aquosa",
+      D: "Uma substância que libera íons negativos em solução aquosa"
+    },
+    "Resposta": "A",
+    "Motivo": "Conforme a Teoria de Arrhenius, uma base é uma substância que libera íons hidroxila (OH-) em solução aquosa."
+  },
+  {
+    "Pergunta": "O que é um ácido conforme a Teoria de Brønsted-Lowry?",
+    "Opcoes": {
+      A: "Uma substância que aceita prótons em uma reação química",
+      B: "Uma substância que doa prótons em uma reação química",
+      C: "Uma substância que libera íons hidrogênio (H+) em solução aquosa",
+      D: "Uma substância que libera íons hidroxila (OH-) em solução aquosa"
+    },
+    "Resposta": "B",
+    "Motivo": "Conforme a Teoria de Brønsted-Lowry, um ácido é uma substância que doa prótons em uma reação química."
+  },
+  {
+    "Pergunta": "O que é uma base conforme a Teoria de Brønsted-Lowry?",
+    "Opcoes": {
+      A: "Uma substância que aceita prótons em uma reação química",
+      B: "Uma substância que doa prótons em uma reação química",
+      C: "Uma substância que libera íons hidrogênio (H+) em solução aquosa",
+      D: "Uma substância que libera íons hidroxila (OH-) em solução aquosa"
+    },
+    "Resposta": "A",
+    "Motivo": "Conforme a Teoria de Brønsted-Lowry, uma base é uma substância que aceita prótons em uma reação química."
+  },
+  {
+    "Pergunta": "O que é um ácido no contexto da química?",
+    "Opcoes": {
+      A: "Uma substância que libera íons hidróxido (OH-) em solução aquosa",
+      B: "Uma substância que libera prótons (H+) em solução aquosa",
+      C: "Uma substância que possui pH maior que 7",
+      D: "Uma substância que é uma base forte"
+    },
+    "Resposta": "B",
+    "Motivo": "No contexto da química, um ácido é uma substância que libera prótons (íons H+) em solução aquosa, contribuindo para a acidez da solução."
+  },
+  {
+    "Pergunta": "O que é uma base no contexto da química?",
+    "Opcoes": {
+      A: "Uma substância que libera íons hidróxido (OH-) em solução aquosa",
+      B: "Uma substância que libera prótons (H+) em solução aquosa",
+      C: "Uma substância que possui pH menor que 7",
+      D: "Uma substância que é um ácido fraco"
+    },
+    "Resposta": "A",
+    "Motivo": "No contexto da química, uma base é uma substância que libera íons hidróxido (OH-) em solução aquosa, contribuindo para a alcalinidade da solução."
+  },
+  {
+    "Pergunta": "O que é um poluente orgânico persistente (POP)?",
+    "Opcoes": {
+      A: "Um composto químico inofensivo",
+      B: "Um composto químico que se degrada rapidamente no ambiente",
+      C: "Um composto químico que contém apenas carbono e hidrogênio",
+      D: "Um composto químico resistente à degradação ambiental e capaz de se acumular nos organismos vivos"
+    },
+    "Resposta": "D",
+    "Motivo": "Poluentes orgânicos persistentes (POPs) são compostos químicos que são resistentes à degradação ambiental e têm a capacidade de se acumular nos organismos vivos, representando riscos ambientais e para a saúde."
+  },
+  {
+    "Pergunta": "O que é a radioatividade?",
+    "Opcoes": {
+      A: "A capacidade de um átomo perder elétrons",
+      B: "A emissão de partículas subatômicas de um núcleo instável",
+      C: "A formação de íons em uma reação química",
+      D: "A tendência de um átomo atrair elétrons"
+    },
+    "Resposta": "B",
+    "Motivo": "A radioatividade é a emissão de partículas subatômicas de um núcleo instável, resultando na busca por estabilidade nuclear."
+  },
+  {
+    "Pergunta": "O que é um isômero no contexto químico?",
+    "Opcoes": {
+      A: "Um átomo com o mesmo número de prótons, mas diferente número de nêutrons",
+      B: "Duas substâncias com a mesma fórmula molecular, mas diferentes arranjos de átomos",
+      C: "Um composto covalente",
+      D: "Uma substância formada por átomos de um único elemento"
+    },
+    "Resposta": "B",
+    "Motivo": "No contexto químico, isômeros são duas ou mais substâncias que possuem a mesma fórmula molecular, mas diferentes arranjos de átomos, resultando em propriedades químicas e físicas distintas."
+  },
+  {
+    "Pergunta": "O que é a entalpia em uma reação química?",
+    "Opcoes": {
+      A: "A quantidade total de energia do sistema",
+      B: "A energia transferida na forma de calor durante uma reação química",
+      C: "A capacidade de um átomo ganhar elétrons",
+      D: "A energia associada à posição dos elétrons em um átomo"
+    },
+    "Resposta": "B",
+    "Motivo": "Em uma reação química, a entalpia é a energia transferida na forma de calor entre o sistema e o ambiente, refletindo a quantidade de energia envolvida na reação."
+  },
+  {
+    "Pergunta": "O que é a lei de Boyle no contexto da físico-química?",
+    "Opcoes": {
+      A: "A pressão de um gás é inversamente proporcional ao seu volume, mantendo a temperatura constante",
+      B: "A energia total de um sistema isolado permanece constante",
+      C: "A quantidade de gás dissolvida em um líquido é diretamente proporcional à pressão do gás",
+      D: "A taxa de uma reação química é diretamente proporcional à concentração dos reagentes"
+    },
+    "Resposta": "A",
+    "Motivo": "A lei de Boyle afirma que, mantendo a temperatura constante, a pressão de um gás é inversamente proporcional ao seu volume."
+  },
+  
+  {
+    "Pergunta": "O que é a energia de ativação em uma reação química?",
+    "Opcoes": {
+      A: "A energia liberada durante uma reação química",
+      B: "A energia total de um sistema isolado",
+      C: "A energia associada à posição dos elétrons em um átomo",
+      D: "A quantidade mínima de energia necessária para iniciar uma reação química"
+    },
+    "Resposta": "D",
+    "Motivo": "A energia de ativação em uma reação química é a quantidade mínima de energia necessária para iniciar a reação, superando a barreira de energia."
+  },
+  {
+    "Pergunta": "O que é entropia na termodinâmica?",
+    "Opcoes": {
+      A: "A quantidade total de energia do sistema",
+      B: "A medida da desordem ou aleatoriedade em um sistema",
+      C: "A quantidade de calor transferida durante uma reação química",
+      D: "A capacidade de um átomo ganhar elétrons"
+    },
+    "Resposta": "B",
+    "Motivo": "Na termodinâmica, entropia é a medida da desordem ou aleatoriedade em um sistema. Sistemas naturais tendem a aumentar sua entropia ao longo do tempo."
+  },
+  {
+    "Pergunta": "O que é um agente redutor em uma reação de oxirredução?",
+    "Opcoes": {
+      A: "Uma substância que ganha elétrons e é oxidada",
+      B: "Uma substância que perde elétrons e é oxidada",
+      C: "Uma substância que ganha elétrons e é reduzida",
+      D: "Uma substância que perde elétrons e é reduzida"
+    },
+    "Resposta": "A",
+    "Motivo": "Um agente redutor em uma reação de oxirredução é uma substância que ganha elétrons e, portanto, é oxidada, facilitando a redução de outra substância na reação."
+  },
+  {
+    "Pergunta": "O que é um agente oxidante em uma reação de oxirredução?",
+    "Opcoes": {
+      A: "Uma substância que ganha elétrons e é oxidada",
+      B: "Uma substância que perde elétrons e é oxidada",
+      C: "Uma substância que ganha elétrons e é reduzida",
+      D: "Uma substância que perde elétrons e é reduzida"
+    },
+    "Resposta": "B",
+    "Motivo": "Um agente oxidante em uma reação de oxirredução é uma substância que perde elétrons e, portanto, é reduzida, facilitando a oxidação de outra substância na reação."
+  },
+  {
+    "Pergunta": "O que é a Lei Zero da Termodinâmica?",
+    "Opcoes": {
+      A: "Se dois sistemas estão em equilíbrio térmico com um terceiro sistema, estão em equilíbrio térmico entre si",
+      B: "A energia total de um sistema isolado permanece constante",
+      C: "A quantidade de gás dissolvida em um líquido é diretamente proporcional à pressão do gás",
+      D: "A taxa de uma reação química é diretamente proporcional à concentração dos reagentes"
+    },
+    "Resposta": "A",
+    "Motivo": "A Lei Zero da Termodinâmica afirma que se dois sistemas estão em equilíbrio térmico com um terceiro sistema, então estão em equilíbrio térmico entre si."
+  },
+  {
+    "Pergunta": "O que é a Lei de Hess?",
+    "Opcoes": {
+      A: "A pressão de um gás é inversamente proporcional ao seu volume, mantendo a temperatura constante",
+      B: "A energia transferida na forma de calor durante uma reação química",
+      C: "A quantidade de gás dissolvida em um líquido é diretamente proporcional à pressão do gás",
+      D: "A variação total de entalpia em uma reação química é a mesma, independentemente do número de etapas"
+    },
+    "Resposta": "D",
+    "Motivo": "A Lei de Hess afirma que a variação total de entalpia em uma reação química é a mesma, independentemente do número de etapas ou caminho da reação."
+  },
+  {
+    "Pergunta": "O que é a constante de Avogadro?",
+    "Opcoes": {
+      A: "O número de átomos em 1 mol de carbono-12",
+      B: "A quantidade de gás dissolvida em um líquido",
+      C: "A quantidade total de energia do sistema",
+      D: "A energia associada à posição dos elétrons em um átomo"
+    },
+    "Resposta": "A",
+    "Motivo": "A constante de Avogadro é o número de átomos, íons ou moléculas em 1 mol de substância e é aproximadamente igual a 6,022 x 10^23 mol^-1."
+  },
+  {
+    "Pergunta": "O que é um sistema fechado na termodinâmica?",
+    "Opcoes": {
+      A: "Um sistema que troca matéria e energia com o ambiente",
+      B: "Um sistema que troca apenas energia com o ambiente",
+      C: "Um sistema que não troca matéria nem energia com o ambiente",
+      D: "Um sistema que está em equilíbrio térmico com outro sistema"
+    },
+    "Resposta": "C",
+    "Motivo": "Um sistema fechado na termodinâmica é um sistema que não troca matéria nem energia com o ambiente externo."
+  }
+  
+  ,
+  {
+    "Pergunta": "O que é a constante de Boltzmann?",
+    "Opcoes": {
+      A: "A medida da desordem ou aleatoriedade em um sistema",
+      B: "A energia transferida na forma de calor durante uma reação química",
+      C: "A constante que relaciona a energia cinética média das partículas em um gás com a temperatura absoluta",
+      D: "A medida da tendência de um átomo atrair elétrons"
+    },
+    "Resposta": "C",
+    "Motivo": "A constante de Boltzmann (k) relaciona a energia cinética média das partículas em um gás com a temperatura absoluta, sendo parte da equação dos gases ideais."
+  },
+  {
+    "Pergunta": "O que é uma célula eletroquímica?",
+    "Opcoes": {
+      A: "Um dispositivo que converte energia química em energia térmica",
+      B: "Um dispositivo que converte energia térmica em energia elétrica",
+      C: "Um dispositivo que converte energia luminosa em energia elétrica",
+      D: "Um dispositivo que utiliza reações químicas para produzir eletricidade"
+    },
+    "Resposta": "D",
+    "Motivo": "Uma célula eletroquímica é um dispositivo que utiliza reações químicas para produzir eletricidade, geralmente consistindo em dois eletrodos imersos em uma solução eletrolítica."
+  },
+  {
+    "Pergunta": "O que é uma reação exotérmica?",
+    "Opcoes": {
+      A: "Uma reação que libera energia para o ambiente",
+      B: "Uma reação que absorve energia do ambiente",
+      C: "Uma reação que ocorre na presença de luz",
+      D: "Uma reação que ocorre em alta pressão"
+    },
+    "Resposta": "A",
+    "Motivo": "Uma reação exotérmica é uma reação que libera energia para o ambiente na forma de calor, muitas vezes resultando em um aumento da temperatura do sistema."
+  },
+  {
+    "Pergunta": "O que é a entalpia padrão de formação?",
+    "Opcoes": {
+      A: "A energia liberada durante uma reação química",
+      B: "A energia total de um sistema isolado",
+      C: "A quantidade de calor transferida durante uma reação química",
+      D: "A entalpia de uma reação que forma um mol de um composto a partir de seus elementos constituintes no estado padrão"
+    },
+    "Resposta": "D",
+    "Motivo": "A entalpia padrão de formação é a entalpia de uma reação que forma um mol de um composto a partir de seus elementos constituintes no estado padrão, comumente utilizada para calcular a entalpia de reações químicas."
+  },
+  {
+    "Pergunta": "O que é a regra do octeto?",
+    "Opcoes": {
+      A: "Um princípio que afirma que átomos tendem a ganhar elétrons para atingir uma configuração eletrônica de 8 elétrons na camada de valência",
+      B: "Um princípio que afirma que átomos tendem a perder elétrons para atingir uma configuração eletrônica de 8 elétrons na camada de valência",
+      C: "Um princípio que afirma que átomos tendem a compartilhar elétrons para atingir uma configuração eletrônica de 4 elétrons na camada de valência",
+      D: "Um princípio que afirma que átomos não seguem padrões específicos de distribuição eletrônica"
+    },
+    "Resposta": "A",
+    "Motivo": "A regra do octeto é um princípio que afirma que átomos tendem a ganhar, perder ou compartilhar elétrons para atingir uma configuração eletrônica de 8 elétrons na camada de valência, buscando estabilidade."
+  },
+  {
+    "Pergunta": "O que é um sistema endotérmico?",
+    "Opcoes": {
+      A: "Um sistema que libera calor para o ambiente",
+      B: "Um sistema que absorve calor do ambiente",
+      C: "Um sistema que ocorre em alta pressão",
+      D: "Um sistema que ocorre na ausência de luz"
+    },
+    "Resposta": "B",
+    "Motivo": "Um sistema endotérmico é um sistema que absorve calor do ambiente durante uma reação, muitas vezes resultando em uma diminuição da temperatura do sistema."
+  },
+  {
+    "Pergunta": "O que é um reator nuclear?",
+    "Opcoes": {
+      A: "Um dispositivo que converte energia química em energia térmica",
+      B: "Um dispositivo que converte energia térmica em energia elétrica",
+      C: "Um dispositivo que utiliza reações químicas para produzir eletricidade",
+      D: "Um dispositivo que utiliza reações nucleares para produzir eletricidade"
+    },
+    "Resposta": "D",
+    "Motivo": "Um reator nuclear é um dispositivo que utiliza reações nucleares para produzir eletricidade, geralmente envolvendo fissão nuclear ou fusão nuclear controlada."
+  },
+  
+  {
+    "Pergunta": "O que é um hidrocarboneto?",
+    "Opcoes": {
+      A: "Um composto que contém apenas átomos de hidrogênio",
+      B: "Um composto que contém apenas átomos de carbono",
+      C: "Um composto que contém átomos de hidrogênio e oxigênio",
+      D: "Um composto que contém átomos de hidrogênio, carbono e nitrogênio"
+    },
+    "Resposta": "B",
+    "Motivo": "Um hidrocarboneto é um composto que contém apenas átomos de carbono e hidrogênio, sendo a classe principal de compostos na química orgânica."
+  },
+  {
+    "Pergunta": "O que é um grupo funcional na química orgânica?",
+    "Opcoes": {
+      A: "Um conjunto de átomos ligados por ligações iônicas",
+      B: "Um conjunto de átomos ligados por ligações covalentes",
+      C: "Um átomo isolado em uma molécula",
+      D: "Um conjunto de moléculas ligadas por pontes de hidrogênio"
+    },
+    "Resposta": "B",
+    "Motivo": "Um grupo funcional na química orgânica é um conjunto de átomos ligados por ligações covalentes que confere propriedades específicas a uma molécula e determina suas reações químicas."
+  },
+  {
+    "Pergunta": "O que é isomeria na química orgânica?",
+    "Opcoes": {
+      A: "Duas substâncias com a mesma fórmula molecular, mas diferentes arranjos de átomos",
+      B: "Um composto que contém apenas átomos de carbono",
+      C: "A capacidade de um átomo ganhar elétrons",
+      D: "A medida da tendência de um átomo atrair elétrons"
+    },
+    "Resposta": "A",
+    "Motivo": "Na química orgânica, isomeria refere-se à existência de duas ou mais substâncias com a mesma fórmula molecular, mas diferentes arranjos de átomos, resultando em propriedades químicas e físicas distintas."
+  },
+  {
+    "Pergunta": "O que é um composto aromático?",
+    "Opcoes": {
+      A: "Um composto com um odor forte",
+      B: "Um composto que contém apenas átomos de carbono",
+      C: "Um composto que possui uma estrutura de anel conjugado e é estável",
+      D: "Um composto que reage rapidamente com ácidos"
+    },
+    "Resposta": "C",
+    "Motivo": "Um composto aromático é um composto que possui uma estrutura de anel conjugado e é especialmente estável, muitas vezes exibindo propriedades aromáticas ou um odor característico."
+  },
+  {
+    "Pergunta": "O que é um éster na química orgânica?",
+    "Opcoes": {
+      A: "Um composto que contém apenas átomos de carbono",
+      B: "Um composto que contém uma ligação tripla entre átomos de carbono",
+      C: "Um composto que possui uma estrutura de anel conjugado e é estável",
+      D: "Um composto derivado da reação entre um ácido e um álcool"
+    },
+    "Resposta": "D",
+    "Motivo": "Um éster na química orgânica é um composto derivado da reação entre um ácido e um álcool, resultando na formação de uma ligação éster."
+  },
+  {
+    "Pergunta": "O que é a polimerização na química orgânica?",
+    "Opcoes": {
+      A: "Um processo de quebra de polímeros em monômeros",
+      B: "Um processo de formação de polímeros a partir de monômeros",
+      C: "A capacidade de um átomo ganhar elétrons",
+      D: "Um processo de conversão de átomos isolados em moléculas"
+    },
+    "Resposta": "B",
+    "Motivo": "A polimerização na química orgânica é o processo de formação de polímeros a partir de monômeros, onde moléculas menores se combinam para formar uma molécula maior e mais complexa."
+  },
+  {
+    "Pergunta": "O que é a reação de esterificação na química orgânica?",
+    "Opcoes": {
+      A: "Uma reação entre um ácido e uma base",
+      B: "Uma reação entre um ácido e um álcool",
+      C: "Uma reação entre um alceno e um alcino",
+      D: "Uma reação entre um hidrocarboneto e oxigênio"
+    },
+    "Resposta": "B",
+    "Motivo": "A reação de esterificação na química orgânica é uma reação entre um ácido e um álcool, resultando na formação de um éster e água."
+  },
+  {
+    "Pergunta": "O que é um radical na química orgânica?",
+    "Opcoes": {
+      A: "Um átomo com carga elétrica",
+      B: "Um átomo isolado em uma molécula",
+      C: "Um átomo com elétrons desemparelhados",
+      D: "Um átomo com o mesmo número de prótons e elétrons"
+    },
+    "Resposta": "C",
+    "Motivo": "Na química orgânica, um radical é um átomo ou grupo de átomos que possui elétrons desemparelhados, tornando-o altamente reativo."
+  },
+  {
+    "Pergunta": "O que é um polímero na química orgânica?",
+    "Opcoes": {
+      A: "Um composto que contém apenas átomos de carbono",
+      B: "Uma molécula composta por cadeias lineares de átomos",
+      C: "Um composto que contém apenas átomos de hidrogênio",
+      D: "Uma macromolécula formada por unidades repetitivas chamadas monômeros"
+    },
+    "Resposta": "D",
+    "Motivo": "Um polímero na química orgânica é uma macromolécula formada por unidades repetitivas chamadas monômeros, sendo comum em plásticos, borrachas e materiais sintéticos."
+  },
+  {
+    "Pergunta": "O que é um enol na química orgânica?",
+    "Opcoes": {
+      A: "Uma molécula com uma ligação dupla entre átomos de carbono",
+      B: "Uma molécula com uma ligação tripla entre átomos de carbono",
+      C: "Uma molécula com uma ligação dupla e uma hidroxila (-OH)",
+      D: "Uma molécula com uma hidroxila (-OH) e uma amina"
+    },
+    "Resposta": "C",
+    "Motivo": "Um enol na química orgânica é uma molécula que possui uma ligação dupla (ene) e uma hidroxila (-ol), caracterizando-se pela presença desses grupos funcionais."
+  },
+  {
+    "Pergunta": "O que é uma reação de oxidação na química orgânica?",
+    "Opcoes": {
+      A: "Uma reação em que um átomo ganha elétrons",
+      B: "Uma reação em que um átomo perde elétrons",
+      C: "Uma reação que envolve a quebra de uma ligação",
+      D: "Uma reação que envolve a formação de uma ligação"
+    },
+    "Resposta": "B",
+    "Motivo": "Uma reação de oxidação na química orgânica é aquela em que um átomo ou íon perde elétrons, resultando em um aumento de seu estado de oxidação."
+  },
+  {
+    "Pergunta": "O que é uma reação de redução na química orgânica?",
+    "Opcoes": {
+      A: "Uma reação em que um átomo ganha elétrons",
+      B: "Uma reação em que um átomo perde elétrons",
+      C: "Uma reação que envolve a quebra de uma ligação",
+      D: "Uma reação que envolve a formação de uma ligação"
+    },
+    "Resposta": "A",
+    "Motivo": "Uma reação de redução na química orgânica é aquela em que um átomo ou íon ganha elétrons, resultando em uma diminuição de seu estado de oxidação."
+  },
+  {
+    "Pergunta": "O que são isômeros constitucionais na química orgânica?",
+    "Opcoes": {
+      A: "Duas substâncias com a mesma fórmula molecular, mas diferentes arranjos de átomos",
+      B: "Duas substâncias que possuem a mesma orientação relativa de grupos em torno de uma ligação dupla ou anel",
+      C: "Duas substâncias que possuem a mesma estrutura espacial tridimensional",
+      D: "Duas substâncias que possuem a mesma orientação relativa de grupos em torno de um átomo"
+    },
+    "Resposta": "A",
+    "Motivo": "Isômeros constitucionais na química orgânica são duas ou mais substâncias que possuem a mesma fórmula molecular, mas diferentes arranjos de átomos, resultando em diferentes estruturas químicas."
+  },
+  {
+    "Pergunta": "O que são grupos amino na química orgânica?",
+    "Opcoes": {
+      A: "Grupos funcionais que contêm nitrogênio e dois átomos de hidrogênio",
+      B: "Grupos funcionais que contêm oxigênio e dois átomos de hidrogênio",
+      C: "Grupos funcionais que contêm enxofre e dois átomos de hidrogênio",
+      D: "Grupos funcionais que contêm carbono e três átomos de hidrogênio"
+    },
+    "Resposta": "A",
+    "Motivo": "Grupos amino na química orgânica são grupos funcionais que contêm nitrogênio e dois átomos de hidrogênio, sendo característicos em aminas e aminoácidos."
+  }, 
+  
+  {
+    "Pergunta": "O que é o composto CH3OH?",
+    "Opcoes": {
+      A: "Metanol",
+      B: "Etanol",
+      C: "Propanol",
+      D: "Butanol"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto CH3OH é conhecido como metanol, um álcool utilizado, por exemplo, como combustível e solvente."
+  },
+  {
+    "Pergunta": "O que é o composto C2H5OH?",
+    "Opcoes": {
+      A: "Metanol",
+      B: "Etanol",
+      C: "Propanol",
+      D: "Butanol"
+    },
+    "Resposta": "B",
+    "Motivo": "O composto C2H5OH é conhecido como etanol, um álcool comum em bebidas alcoólicas e utilizado também como biocombustível."
+  },
+  {
+    "Pergunta": "O que é o composto C4H9OH?",
+    "Opcoes": {
+      A: "Metanol",
+      B: "Etanol",
+      C: "Propanol",
+      D: "Butanol"
+    },
+    "Resposta": "D",
+    "Motivo": "O composto C4H9OH é conhecido como butanol, um álcool utilizado em solventes, produtos de limpeza e até mesmo como biocombustível."
+  },
+  {
+    "Pergunta": "O que é o composto C2H5OC2H5?",
+    "Opcoes": {
+      A: "Éter etílico",
+      B: "Metanol",
+      C: "Propanol",
+      D: "Butanol"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto C2H5OC2H5 é conhecido como éter etílico, uma substância utilizada como solvente e na produção de anestésicos."
+  },
+  {
+    "Pergunta": "O que é o composto CH3OCH3?",
+    "Opcoes": {
+      A: "Metanol",
+      B: "Etanol",
+      C: "Metilamina",
+      D: "Dimetil éter"
+    },
+    "Resposta": "D",
+    "Motivo": "O composto CH3OCH3 é conhecido como dimetil éter, uma substância utilizada como solvente e em processos industriais."
+  },
+  {
+    "Pergunta": "O que é o composto C2H5OC2H5?",
+    "Opcoes": {
+      A: "Éter etílico",
+      B: "Metanol",
+      C: "Propanol",
+      D: "Butanol"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto C2H5OC2H5 é conhecido como éter etílico, uma substância utilizada como solvente e na produção de anestésicos."
+  },
+  {
+    "Pergunta": "O que é o composto CH3CHOHCH3?",
+    "Opcoes": {
+      A: "Propanal",
+      B: "Propanona",
+      C: "Butanal",
+      D: "Butanona"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto CH3CHOHCH3 é conhecido como propanal, um aldeído utilizado na produção de resinas e plásticos."
+  },
+  {
+    "Pergunta": "O que é o composto CH3COCH3?",
+    "Opcoes": {
+      A: "Propanal",
+      B: "Propanona",
+      C: "Butanal",
+      D: "Butanona"
+    },
+    "Resposta": "B",
+    "Motivo": "O composto CH3COCH3 é conhecido como propanona, uma cetona amplamente utilizada como solvente e na indústria química."
+  },
+  {
+    "Pergunta": "O que é o composto CH3(CH2)4CH2OH?",
+    "Opcoes": {
+      A: "Hexanol",
+      B: "Heptanol",
+      C: "Octanol",
+      D: "Nonanol"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto CH3(CH2)4CH2OH é conhecido como hexanol, um álcool utilizado em fragrâncias e na indústria química."
+  },
+  {
+    "Pergunta": "O que é o composto CH3(CH2)6CH3?",
+    "Opcoes": {
+      A: "Hexano",
+      B: "Heptano",
+      C: "Octano",
+      D: "Nonano"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto CH3(CH2)6CH3 é conhecido como hexano, um hidrocarboneto alifático utilizado como solvente e na indústria petroquímica."
+  }
+  ,
+  
+  {
+    "Pergunta": "Identifique o composto CH3CH2OH.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Éster",
+      D: "Hidrocarboneto"
+    },
+    "Resposta": "A",
+    "Motivo": "O composto CH3CH2OH é conhecido como etanol, classificado como um álcool devido à presença do grupo hidroxila (-OH)."
+  },
+  {
+    "Pergunta": "Identifique o composto CH3OCH3.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Éster",
+      D: "Hidrocarboneto"
+    },
+    "Resposta": "B",
+    "Motivo": "O composto CH3OCH3 é conhecido como éter dimetílico, sendo classificado como éter devido à presença da ligação oxigênio-carbono."
+  },
+  {
+    "Pergunta": "Identifique o composto CH3COOH.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Ácido Carboxílico",
+      D: "Hidrocarboneto"
+    },
+    "Resposta": "C",
+    "Motivo": "O composto CH3COOH é conhecido como ácido acético, classificado como ácido carboxílico devido à presença do grupo funcional carboxila (-COOH)."
+  },
+  {
+    "Pergunta": "Identifique o composto CH3COOCH2CH3.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Éster",
+      D: "Aldeído"
+    },
+    "Resposta": "C",
+    "Motivo": "O composto CH3COOCH2CH3 é conhecido como etanoato de metila e classificado como éster devido à presença do grupo funcional éster."
+  },
+  {
+    "Pergunta": "Identifique o composto C6H6.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Hidrocarboneto Aromático",
+      D: "Aldeído"
+    },
+    "Resposta": "C",
+    "Motivo": "O composto C6H6 é conhecido como benzeno, classificado como hidrocarboneto aromático devido à presença do anel benzênico."
+  },
+  {
+    "Pergunta": "Identifique o composto CH3CHO.",
+    "Opcoes": {
+      A: "Álcool",
+      B: "Éter",
+      C: "Éster",
+      D: "Aldeído"
+    },
+    "Resposta": "D",
+    "Motivo": "O composto CH3CHO é conhecido como propanal, classificado como aldeído devido à presença do grupo funcional aldeído."
+  }
+  ,
+  
+  {
+    "Pergunta": "Balanceie a equação química: H2 + O2 → H2O",
+    "Opcoes": {
+      A: "2H2 + O2 → H2O",
+      B: "H2 + 2O2 → H2O",
+      C: "2H2 + 2O2 → 2H2O",
+      D: "H2 + O2 → 2H2O"
+    },
+    "Resposta": "C",
+    "Motivo": "A equação balanceada é 2H2 + 2O2 → 2H2O, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: CH4 + O2 → CO2 + H2O",
+    "Opcoes": {
+      A: "CH4 + 2O2 → CO2 + H2O",
+      B: "CH4 + O2 → CO2 + 2H2O",
+      C: "2CH4 + O2 → CO2 + 2H2O",
+      D: "CH4 + 2O2 → CO2 + 2H2O"
+    },
+    "Resposta": "D",
+    "Motivo": "A equação balanceada é CH4 + 2O2 → CO2 + 2H2O, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: Fe2O3 + CO → Fe + CO2",
+    "Opcoes": {
+      A: "Fe2O3 + CO → 2Fe + CO2",
+      B: "2Fe2O3 + CO → 3Fe + CO2",
+      C: "Fe2O3 + 3CO → 2Fe + 3CO2",
+      D: "Fe2O3 + 2CO → 2Fe + 2CO2"
+    },
+    "Resposta": "A",
+    "Motivo": "A equação balanceada é Fe2O3 + 3CO → 2Fe + 3CO2, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: C4H10 + O2 → CO2 + H2O",
+    "Opcoes": {
+      A: "C4H10 + 6O2 → 4CO2 + 5H2O",
+      B: "2C4H10 + 13O2 → 8CO2 + 10H2O",
+      C: "C4H10 + 5O2 → 4CO2 + 5H2O",
+      D: "2C4H10 + 9O2 → 8CO2 + 10H2O"
+    },
+    "Resposta": "B",
+    "Motivo": "A equação balanceada é 2C4H10 + 13O2 → 8CO2 + 10H2O, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: N2 + H2 → NH3",
+    "Opcoes": {
+      A: "N2 + 2H2 → NH3",
+      B: "2N2 + 3H2 → 2NH3",
+      C: "3N2 + H2 → 2NH3",
+      D: "N2 + 3H2 → NH3"
+    },
+    "Resposta": "A",
+    "Motivo": "A equação balanceada é N2 + 3H2 → 2NH3, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: C6H12O6 + O2 → CO2 + H2O",
+    "Opcoes": {
+      A: "C6H12O6 + 6O2 → 6CO2 + 6H2O",
+      B: "C6H12O6 + O2 → CO2 + H2O",
+      C: "2C6H12O6 + O2 → 2CO2 + 2H2O",
+      D: "C6H12O6 + 2O2 → 2CO2 + 2H2O"
+    },
+    "Resposta": "A",
+    "Motivo": "A equação balanceada é C6H12O6 + 6O2 → 6CO2 + 6H2O, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: KClO3 → KCl + O2",
+    "Opcoes": {
+      A: "2KClO3 → 2KCl + 3O2",
+      B: "KClO3 → KCl + 2O2",
+      C: "KClO3 → 2KCl + O2",
+      D: "3KClO3 → 3KCl + O2"
+    },
+    "Resposta": "A",
+    "Motivo": "A equação balanceada é 2KClO3 → 2KCl + 3O2, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: P4 + O2 → P2O5",
+    "Opcoes": {
+      A: "P4 + 5O2 → 2P2O5",
+      B: "P4 + O2 → 2P2O5",
+      C: "2P4 + 5O2 → 4P2O5",
+      D: "P4 + 2O2 → P2O5"
+    },
+    "Resposta": "C",
+    "Motivo": "A equação balanceada é 2P4 + 5O2 → 4P2O5, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: SO2 + O2 → SO3",
+    "Opcoes": {
+      A: "2SO2 + O2 → 2SO3",
+      B: "SO2 + 2O2 → SO3",
+      C: "SO2 + O2 → 2SO3",
+      D: "2SO2 + 2O2 → 2SO3"
+    },
+    "Resposta": "C",
+    "Motivo": "A equação balanceada é 2SO2 + O2 → 2SO3, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  },
+  {
+    "Pergunta": "Balanceie a equação química: HCl + NaOH → NaCl + H2O",
+    "Opcoes": {
+      A: "HCl + NaOH → NaCl + H2O",
+      B: "2HCl + 2NaOH → 2NaCl + 2H2O",
+      C: "HCl + NaOH → NaCl + 2H2O",
+      D: "2HCl + NaOH → NaCl + H2O"
+    },
+    "Resposta": "A",
+    "Motivo": "A equação balanceada é HCl + NaOH → NaCl + H2O, garantindo que a quantidade de átomos de cada elemento seja a mesma nos reagentes e nos produtos."
+  }
+  
+  
+  
+  
+      ]
+    const perguntasBiologia = [
+      
+      {
+    "Pergunta": "O que é mitose?",
+    "Opcoes": {
+      A: "Processo de divisão celular que resulta em células haploides",
+      B: "Processo de divisão celular que resulta em células diploides",
+      C: "Processo de reprodução assexuada",
+      D: "Processo de reprodução sexuada"
+    },
+    "Resposta": "B",
+    "Motivo": "A mitose é um processo de divisão celular que resulta em células filhas geneticamente idênticas à célula-mãe, mantendo o número de cromossomos (células diploides)."
+  },
+  {
+    "Pergunta": "O que é a fotossíntese?",
+    "Opcoes": {
+      A: "Processo de respiração celular",
+      B: "Processo de produção de proteínas",
+      C: "Processo de obtenção de energia a partir de alimentos",
+      D: "Processo de conversão de luz solar em energia química"
+    },
+    "Resposta": "D",
+    "Motivo": "A fotossíntese é o processo pelo qual os organismos autotróficos convertem a luz solar em energia química para produção de alimentos, liberando oxigênio como subproduto."
+  },
+  {
+    "Pergunta": "O que são os ribossomos?",
+    "Opcoes": {
+      A: "Organelas responsáveis pela síntese de lipídios",
+      B: "Organelas envolvidas na respiração celular",
+      C: "Organelas responsáveis pela síntese de proteínas",
+      D: "Organelas de armazenamento de nutrientes"
+    },
+    "Resposta": "C",
+    "Motivo": "Os ribossomos são organelas celulares responsáveis pela síntese de proteínas durante o processo de tradução do RNA mensageiro."
+  },
+  {
+    "Pergunta": "O que é a meiose?",
+    "Opcoes": {
+      A: "Processo de divisão celular que resulta em células diploides",
+      B: "Processo de reprodução assexuada",
+      C: "Processo de reprodução sexuada",
+      D: "Processo de formação de gametas"
+    },
+    "Resposta": "C",
+    "Motivo": "A meiose é um processo de divisão celular que resulta na formação de células haploides e é fundamental para a reprodução sexuada, pois produz gametas."
+  },
+  {
+    "Pergunta": "O que é a teoria da evolução por seleção natural?",
+    "Opcoes": {
+      A: "Ideia de que os organismos evoluem para se tornarem maiores",
+      B: "Ideia de que os organismos evoluem para se tornarem mais complexos",
+      C: "Ideia de que os organismos evoluem para se adaptarem ao ambiente por meio de mudanças genéticas",
+      D: "Ideia de que os organismos evoluem para se tornarem mais simples"
+    },
+    "Resposta": "C",
+    "Motivo": "A teoria da evolução por seleção natural propõe que os organismos evoluem ao longo do tempo para se adaptarem ao ambiente por meio de mudanças genéticas favoráveis que são selecionadas pela natureza."
+  },
+  {
+    "Pergunta": "O que são os ecossistemas?",
+    "Opcoes": {
+      A: "Grupos de organismos da mesma espécie",
+      B: "Conjunto de órgãos em um organismo",
+      C: "Ambientes com fatores bióticos e abióticos interagindo",
+      D: "Sistemas de transporte em organismos"
+    },
+    "Resposta": "C",
+    "Motivo": "Ecossistemas são conjuntos complexos de organismos interagindo entre si e com os fatores abióticos em um determinado ambiente, formando uma unidade funcional."
+  },
+  
+  {
+    "Pergunta": "O que é a replicação do DNA?",
+    "Opcoes": {
+      A: "Processo de divisão celular",
+      B: "Processo de síntese de proteínas",
+      C: "Processo de duplicação do material genético",
+      D: "Processo de produção de energia"
+    },
+    "Resposta": "C",
+    "Motivo": "A replicação do DNA é o processo no qual a molécula de DNA é copiada, resultando em duas moléculas idênticas, cada uma contendo uma cadeia original e uma recém-sintetizada."
+  },
+  {
+    "Pergunta": "O que são os cromossomos?",
+    "Opcoes": {
+      A: "Estruturas responsáveis pela síntese de proteínas",
+      B: "Estruturas de armazenamento de nutrientes",
+      C: "Estruturas que compõem a membrana plasmática",
+      D: "Estruturas que contêm material genético"
+    },
+    "Resposta": "D",
+    "Motivo": "Os cromossomos são estruturas celulares que contêm o material genético (DNA) e são essenciais para a transmissão da informação genética durante a divisão celular."
+  },
+  {
+    "Pergunta": "O que são os leucócitos?",
+    "Opcoes": {
+      A: "Células sanguíneas responsáveis pela coagulação",
+      B: "Células musculares estriadas",
+      C: "Células responsáveis pela produção de insulina",
+      D: "Células sanguíneas envolvidas na defesa imunológica"
+    },
+    "Resposta": "D",
+    "Motivo": "Os leucócitos são células sanguíneas envolvidas na defesa imunológica, desempenhando um papel crucial no sistema imunológico ao combaterem patógenos e agentes invasores."
+  },
+  {
+    "Pergunta": "O que é a homeostase?",
+    "Opcoes": {
+      A: "Processo de reprodução celular",
+      B: "Mecanismo de equilíbrio interno no organismo",
+      C: "Processo de síntese de lipídios",
+      D: "Mecanismo de regulação da temperatura corporal"
+    },
+    "Resposta": "B",
+    "Motivo": "A homeostase é o mecanismo de equilíbrio interno no organismo, permitindo a regulação de variáveis fisiológicas, como temperatura, pH e concentração de substâncias, para manter condições ideais para a vida."
+  },
+  {
+    "Pergunta": "O que são os neurônios?",
+    "Opcoes": {
+      A: "Células do sistema digestório",
+      B: "Células do sistema muscular",
+      C: "Células do sistema nervoso",
+      D: "Células do sistema circulatório"
+    },
+    "Resposta": "C",
+    "Motivo": "Os neurônios são células do sistema nervoso responsáveis pela transmissão de sinais elétricos e químicos, permitindo a comunicação entre diferentes partes do corpo e a resposta a estímulos."
+  },
+  {
+    "Pergunta": "O que é a clonagem?",
+    "Opcoes": {
+      A: "Processo de reprodução sexuada",
+      B: "Processo de reprodução assexuada",
+      C: "Processo de manipulação genética para criar organismos geneticamente idênticos",
+      D: "Processo de reprodução de células somáticas"
+    },
+    "Resposta": "C",
+    "Motivo": "A clonagem é o processo de criar organismos geneticamente idênticos, seja por reprodução assexuada natural ou por técnicas de manipulação genética em laboratório."
+  },
+  {
+    "Pergunta": "O que é a fotossíntese?",
+    "Opcoes": {
+      A: "Processo de obtenção de energia a partir de alimentos",
+      B: "Processo de conversão de luz solar em energia química",
+      C: "Processo de respiração celular",
+      D: "Processo de produção de proteínas"
+    },
+    
+     {
+    "Pergunta": "O que é a mutação genética?",
+    "Opcoes": {
+      A: "Processo de duplicação de genes",
+      B: "Processo de recombinação de cromossomos",
+      C: "Alteração no material genético que pode ser herdada",
+      D: "Processo de eliminação de genes"
+    },
+    "Resposta": "C",
+    "Motivo": "A mutação genética é uma alteração no material genético de um organismo que pode ser herdada e resulta em variações nas características hereditárias."
+  },
+  {
+    "Pergunta": "O que é a biodiversidade?",
+    "Opcoes": {
+      A: "Número total de seres humanos em um ecossistema",
+      B: "Variedade de vida em todas as formas, níveis e combinações",
+      C: "Número total de espécies em um ecossistema",
+      D: "Variedade de plantas em um determinado ambiente"
+    },
+    "Resposta": "B",
+    "Motivo": "A biodiversidade refere-se à variedade de vida em todas as formas, níveis e combinações, incluindo diversidade genética, de espécies e de ecossistemas."
+  },
+  {
+    "Pergunta": "O que são os ecossistemas aquáticos?",
+    "Opcoes": {
+      A: "Ambientes terrestres com plantas e animais",
+      B: "Ambientes com água salgada",
+      C: "Ambientes com água doce",
+      D: "Ambientes com ar e solo"
+    },
+    "Resposta": "C",
+    "Motivo": "Os ecossistemas aquáticos são ambientes que incluem corpos d'água como rios, lagos e oceanos, sendo classificados como ecossistemas de água doce ou ecossistemas marinhos."
+  },
+  {
+    "Pergunta": "O que são os ecossistemas terrestres?",
+    "Opcoes": {
+      A: "Ambientes com água doce",
+      B: "Ambientes com água salgada",
+      C: "Ambientes com ar e solo",
+      D: "Ambientes com plantas e animais aquáticos"
+    },
+    "Resposta": "C",
+    "Motivo": "Os ecossistemas terrestres são ambientes que incluem áreas de solo e atmosfera, onde plantas e animais terrestres interagem entre si e com o ambiente físico."
+  },
+  {
+    "Pergunta": "O que são os decompositores em um ecossistema?",
+    "Opcoes": {
+      A: "Organismos que produzem alimentos por meio da fotossíntese",
+      B: "Organismos que se alimentam de outros organismos",
+      C: "Organismos que quebram matéria orgânica em substâncias mais simples",
+      D: "Organismos que competem por recursos naturais"
+    },
+    "Resposta": "C",
+    "Motivo": "Os decompositores são organismos que desempenham o papel crucial de quebrar matéria orgânica em substâncias mais simples, facilitando a reciclagem de nutrientes em um ecossistema."
+  },
+  {
+    "Pergunta": "O que é a teoria celular?",
+    "Opcoes": {
+      A: "Idea de que todos os seres vivos são formados por células",
+      B: "Idea de que os seres vivos não são compostos por células",
+      C: "Idea de que apenas animais são formados por células",
+      D: "Idea de que apenas plantas são formadas por células"
+    },
+    "Resposta": "A",
+    "Motivo": "A teoria celular é a ideia fundamental de que todos os seres vivos são formados por células, sendo a célula a unidade básica da vida."
+  },
+  {
+    "Pergunta": "O que são as enzimas?",
+    "Opcoes": {
+      A: "Moléculas que produzem energia",
+      B: "Moléculas que compõem a estrutura celular",
+      C: "Moléculas que aceleram reações químicas",
+      D: "Moléculas que transportam oxigênio"
+    },
+    "Resposta": "C",
+    "Motivo": "As enzimas são moléculas que atuam como catalisadores, acelerando reações químicas em organismos vivos sem serem consumidas durante o processo."
+  },
+  
+  {
+    "Pergunta": "O que são os seres autotróficos?",
+    "Opcoes": {
+      A: "Seres vivos que se alimentam de outros organismos",
+      B: "Seres vivos capazes de produzir seu próprio alimento",
+      C: "Seres vivos que se alimentam de detritos",
+      D: "Seres vivos que se alimentam de plantas"
+    },
+    {
+    "Pergunta": "Explique o processo de transcrição do DNA.",
+    "Opcoes": {
+      A: "Síntese de proteínas a partir do RNA mensageiro",
+      B: "Síntese de RNA a partir do DNA",
+      C: "Quebra do RNA em aminoácidos",
+      D: "Replicação do DNA"
+    },
+    "Resposta": "B",
+    "Motivo": "A transcrição é o processo no qual a informação genética contida no DNA é transcrita para formar uma molécula de RNA mensageiro (mRNA), que servirá como molde para a síntese de proteínas."
+  },
+  {
+    "Pergunta": "Qual é o papel dos ribossomos na síntese de proteínas?",
+    "Opcoes": {
+      A: "Transporte de aminoácidos até o local de síntese",
+      B: "Quebra das moléculas de RNA",
+      C: "Síntese de aminoácidos",
+      D: "Leitura do código genético do mRNA"
+    },
+    "Resposta": "D",
+    "Motivo": "Os ribossomos têm o papel crucial de ler o código genético presente no mRNA durante o processo de tradução, facilitando a síntese de proteínas com base nesse código."
+  },
+  {
+    "Pergunta": "Explique o ciclo celular e suas principais fases.",
+    "Opcoes": {
+      A: "Processo de divisão celular que resulta em células haploides",
+      B: "Processo de divisão celular que resulta em células diploides",
+      C: "Processo de reprodução assexuada",
+      D: "Processo de reprodução sexuada"
+    },
+    "Resposta": "B",
+    "Motivo": "O ciclo celular é o conjunto de eventos que ocorre desde a formação de uma célula até sua divisão. As principais fases são a interfase (G1, S e G2) e a mitose (ou meiose em células germinativas), onde ocorre a divisão celular propriamente dita."
+  },
+  {
+    "Pergunta": "Como ocorre a regulação da expressão gênica em um organismo?",
+    "Opcoes": {
+      A: "Pela síntese de proteínas reguladoras",
+      B: "Por meio da replicação do DNA",
+      C: "Pela ação de enzimas digestivas",
+      D: "Por processos de transcrição e tradução"
+    },
+    "Resposta": "A",
+    "Motivo": "A regulação da expressão gênica envolve a síntese de proteínas reguladoras que controlam os processos de transcrição e tradução, determinando quais genes serão ativados e expressos em determinado momento."
+  },
+  {
+    "Pergunta": "O que são células-tronco e qual é o seu potencial terapêutico?",
+    "Opcoes": {
+      A: "Células especializadas do sistema nervoso",
+      B: "Células com capacidade de se diferenciar em diversos tipos celulares",
+      C: "Células do sistema imunológico",
+      D: "Células reprodutivas"
+    },
+    "Resposta": "B",
+    "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."
+  },
+  {
+    "Pergunta": "Descreva o processo de osmose em uma célula.",
+    "Opcoes": {
+      A: "Movimento de moléculas de soluto de uma área de alta concentração para uma área de baixa concentração",
+      B: "Passagem de água do meio hipotônico para o meio hipertônico",
+      C: "Transporte ativo de íons através da membrana celular",
+      D: "Fagocitose de partículas sólidas pela célula"
+    },
+    "Resposta": "B",
+    "Motivo": "O processo de osmose em uma célula refere-se à passagem de água do meio com menor concentração de solutos (hipotônico) para o meio com maior concentração (hipertônico), buscando igualar as concentrações de solutos nos dois lados da membrana celular."
+  },
+  {
+    "Pergunta": "Como ocorre a herança genética ligada ao cromossomo X?",
+    "Opcoes": {
+      A: "Apenas passa do pai para o filho",
+      B: "Afeta apenas os descendentes do sexo masculino",
+      C: "Afeta apenas os descendentes do sexo feminino",
+      D: "Pode ser transmitida tanto pelo pai quanto pela mãe, mas se expressa mais frequentemente em um sexo"
+    },
+    "Resposta": "D",
+    "Motivo": "A herança genética ligada ao cromossomo X pode ser transmitida por ambos os pais, mas sua expressão é mais frequente em um dos sexos. Exemplos incluem a daltonismo e a hemofilia."
+  },
+  {
+    "Pergunta": "Explique os diferentes tipos de seleção natural.",
+    "Opcoes": {
+      A: "Seleção natural direcional, estabilizadora e disruptiva",
+      B: "Seleção artificial, seleção sexual e seleção temporal",
+      C: "Seleção positiva e seleção negativa",
+      D: "Seleção natural e seleção artificial"
+    },
+    "Resposta": "A",
+    "Motivo": "Os diferentes tipos de seleção natural incluem a direcional (favorecendo um extremo do fenótipo), estabilizadora (favorecendo o fenótipo intermediário) e disruptiva (favorecendo extremos diferentes). Cada tipo atua de maneira específica sobre a variabilidade genética de uma população."
+  },
+  {
+    "Pergunta": "Como a mitose e a meiose diferem em termos de resultado e função?",
+    "Opcoes": {
+      A: "A mitose produz células haploides para a reprodução, enquanto a meiose produz células diploides para o crescimento e manutenção do organismo",
+      B: "A mitose produz células diploides para o crescimento e manutenção do organismo, enquanto a meiose produz células haploides para a reprodução",
+      C: "Ambas produzem células diploides para o crescimento e manutenção do organismo",
+      D: "Ambas produzem células haploides para a reprodução"
+    },
+    "Resposta": "B",
+    "Motivo": "A mitose produz células geneticamente idênticas e diploides para o crescimento, desenvolvimento e reparo de tecidos. A meiose, por sua vez, produz células haploides, os gametas, necessárias para a reprodução sexuada e a variabilidade genética."
+  },
+  {
+    "Pergunta": "Explique como as enzimas participam de processos metabólicos.",
+    "Opcoes": {
+      A: "São moléculas de armazenamento de energia",
+      B: "Atuam como catalisadores, acelerando reações químicas nos processos metabólicos",
+      C: "Realizam a fotossíntese",
+      D: "Participam da replicação do DNA"
+    },
+    "Resposta": "B",
+    "Motivo": "As enzimas são moléculas proteicas que atuam como catalisadores, acelerando reações químicas nos processos metabólicos. Elas diminuem a energia de ativação necessária para iniciar uma reação, facilitando as transformações químicas dentro das células."
+  },
+  {
+    "Pergunta": "Como a regulação hormonal afeta o funcionamento do corpo?",
+    "Opcoes": {
+      A: "Inibindo a síntese de proteínas",
+      B: "Controlando o transporte de íons",
+      C: "Regulando o equilíbrio ácido-base",
+      D: "Coordenando e controlando diversas funções fisiológicas por meio de sinais químicos"
+    },
+    "Resposta": "D",
+    "Motivo": "A regulação hormonal coordena e controla diversas funções fisiológicas no corpo, transmitindo sinais químicos para regular processos como crescimento, metabolismo, reprodução e resposta ao estresse."
+  },
+   {
+    "Pergunta": "Como a variabilidade genética contribui para a evolução das espécies?",
+    "Opcoes": {
+      A: "Variabilidade genética não influencia a evolução",
+      B: "Contribui para a adaptação das espécies a diferentes ambientes e condições, permitindo a seleção natural atuar",
+      C: "Variabilidade genética leva à extinção de espécies",
+      D: "A variabilidade genética é resultado apenas da manipulação humana em laboratório"
+    },
+    "Resposta": "B",
+    "Motivo": "A variabilidade genética é fundamental para a evolução das espécies, pois proporciona a matéria-prima para a seleção natural atuar. A adaptação das espécies a diferentes ambientes ocorre através da preservação e transmissão de características vantajosas presentes na variabilidade genética."
+  },
+  {
+    "Pergunta": "O que são os fatores abióticos em um ecossistema e como eles influenciam os seres vivos?",
+    "Opcoes": {
+      A: "São fatores relacionados à atividade biológica, como a presença de predadores",
+      B: "São fatores físicos e químicos não vivos, como luz, temperatura, umidade e solo, que influenciam os seres vivos",
+      C: "Fatores abióticos não têm impacto nos seres vivos",
+      D: "São apenas os fatores bióticos que influenciam os seres vivos em um ecossistema"
+    },
+    
+    {
+    "Pergunta": "Descreva a estrutura do DNA e explique a importância da sua dupla hélice.",
+    "Opcoes": {
+      A: "DNA é uma molécula única em forma de hélice, e a dupla hélice não tem relevância biológica",
+      B: "DNA é composto por duas fitas antiparalelas, formando uma dupla hélice, e essa estrutura é essencial para a replicação e transmissão de informações genéticas",
+      C: "DNA é uma molécula única, e a dupla hélice é uma estrutura temporária durante a replicação",
+      D: "A dupla hélice do DNA é irrelevante para os processos biológicos"
+    },
+    "Resposta": "B",
+    "Motivo": "A estrutura do DNA consiste em duas fitas antiparalelas, formando uma dupla hélice. Essa organização é essencial para processos como replicação, transcrição e tradução, permitindo a transmissão precisa das informações genéticas."
+  },
+  {
+    "Pergunta": "Quais são os componentes fundamentais de um nucleotídeo do DNA? Descreva sua estrutura.",
+    "Opcoes": {
+      A: "Açúcar ribose, base nitrogenada e três grupos fosfato",
+      B: "Açúcar desoxirribose, base nitrogenada e três grupos fosfato",
+      C: "Açúcar desoxirribose, base nitrogenada e um grupo fosfato",
+      D: "Açúcar ribose, base nitrogenada e um grupo fosfato"
+    },
+    "Resposta": "B",
+    "Motivo": "Um nucleotídeo do DNA é composto por açúcar desoxirribose, uma base nitrogenada (adenina, timina, citosina ou guanina) e um grupo fosfato. Essa estrutura forma a unidade básica para a construção da cadeia de DNA."
+  },
+  {
+    "Pergunta": "Explique o processo de replicação do DNA, incluindo as enzimas envolvidas e sua importância.",
+    "Opcoes": {
+      A: "A replicação do DNA não envolve enzimas e é um processo passivo",
+      B: "Enzimas como DNA polimerase sintetizam uma nova fita de DNA complementar à fita existente, garantindo a duplicação do material genético",
+      C: "RNA polimerase é a principal enzima na replicação do DNA, sintetizando uma nova fita de RNA",
+      D: "A replicação do DNA ocorre apenas durante a divisão celular, não envolvendo enzimas"
+    },
+    "Resposta": "B",
+    "Motivo": "Durante a replicação do DNA, a enzima DNA polimerase sintetiza uma nova fita complementar à fita existente. Esse processo é essencial para garantir que as células filhas recebam uma cópia precisa do material genético durante a divisão celular."
+  },
+  {
+    "Pergunta": "O que é a transcrição do DNA e como ela está relacionada à síntese de proteínas?",
+    "Opcoes": {
+      A: "Transcrição é a síntese direta de proteínas a partir do DNA",
+      B: "É o processo de cópia do DNA para formar uma molécula de RNA mensageiro (mRNA), que servirá como molde para a síntese de proteínas",
+      C: "Transcrição não tem relação com a síntese de proteínas",
+      D: "RNA mensageiro é uma cópia exata do DNA, não envolvendo processos de transcrição"
+    },
+    "Resposta": "B",
+    "Motivo": "A transcrição é o processo no qual uma molécula de RNA mensageiro (mRNA) é sintetizada a partir do DNA. O mRNA serve como molde para a síntese de proteínas durante o processo de tradução nos ribossomos."
+  },
+  {
+    "Pergunta": "Explique o papel dos ribossomos na tradução do código genético durante a síntese de proteínas.",
+    "Opcoes": {
+      A: "Ribossomos não estão envolvidos na síntese de proteínas",
+      B: "São responsáveis pela transcrição do RNA mensageiro",
+      C: "Atuam na síntese de aminoácidos durante a replicação do DNA",
+      D: "Leem o código genético do RNA mensageiro e coordenam a síntese de proteínas"
+    },
+    "Resposta": "D",
+    "Motivo": "Os ribossomos têm o papel crucial de ler o código genético presente no RNA mensageiro (mRNA) durante o processo de tradução. Eles coordenam a síntese de proteínas, garantindo que os aminoácidos certos sejam unidos na ordem correta para formar a cadeia polipeptídica."
+  },
+  {
+    "Pergunta": "O que são mutações genéticas e como podem afetar os organismos?",
+    "Opcoes": {
+      A: "Mutação genética é um processo benéfico que melhora as características dos organismos",
+      B: "São alterações no DNA que podem surgir espontaneamente ou serem induzidas, podendo ter efeitos neutros, prejudiciais ou, em alguns casos, benéficos",
+      C: "Mutação genética é um termo usado apenas para descrever doenças genéticas",
+      D: "Mutação genética ocorre apenas em laboratório e não afeta os organismos na natureza"
+    },
+    "Resposta": "B",
+    "Motivo": "Mutações genéticas são alterações no DNA que podem ocorrer espontaneamente ou serem induzidas. Elas podem ter efeitos neutros, prejudiciais ou, em alguns casos raros, benéficos, afetando a variabilidade genética e, consequentemente, a evolução das espécies."
+  },
+  
+  {
+    "Pergunta": "Explique a sequência das bases do DNA e como a informação genética é codificada.",
+    "Opcoes": {
+      A: "Sequência de bases A-G, T-C, onde cada trinca representa um aminoácido específico",
+      B: "Sequência de bases A-T, C-G, onde cada trinca representa um nucleotídeo específico",
+      C: "Sequência de bases U-A, G-C, onde cada trinca representa um aminoácido específico",
+      D: "Sequência de bases A-T, C-G, onde cada trinca de bases (códon) representa um aminoácido específico"
+    },
+    "Resposta": "D",
+    "Motivo": "A sequência de bases do DNA é composta por adenina (A), timina (T), citosina (C) e guanina (G). Durante a transcrição, a sequência de bases do RNA mensageiro (mRNA) é complementar, substituindo a timina por uracila (U). Os códons, trincas de bases no mRNA, representam aminoácidos específicos durante a síntese de proteínas."
+  },
+  {
+    "Pergunta": "O que é um barramento das bases no DNA?",
+    "Opcoes": {
+      A: "Estrutura que impede a replicação do DNA",
+      B: "Cadeia de aminoácidos ligados por pontes de hidrogênio",
+      C: "Estrutura que limita a transcrição do DNA",
+      D: "Cadeia de nucleotídeos unidos por pontes de hidrogênio formando a dupla hélice"
+    },
+    "Resposta": "D",
+    "Motivo": "O barramento das bases no DNA refere-se à cadeia de nucleotídeos unidos por pontes de hidrogênio formando a dupla hélice. As bases nitrogenadas A (adenina) se emparelham com T (timina) e C (citosina) com G (guanina), estabilizando a estrutura e permitindo a correta transmissão da informação genética durante processos como replicação e transcrição."
+  },
+  {
+    "Pergunta": "Qual é o papel das pontes de hidrogênio na estabilidade da dupla hélice do DNA?",
+    "Opcoes": {
+      A: "As pontes de hidrogênio desestabilizam a dupla hélice do DNA",
+      B: "Atuam como ligações covalentes na formação da dupla hélice",
+      C: "As pontes de hidrogênio são irrelevantes para a estabilidade do DNA",
+      D: "São ligações não covalentes que mantêm as fitas complementares unidas"
+    },
+    "Resposta": "D",
+    "Motivo": "As pontes de hidrogênio são ligações não covalentes formadas entre as bases complementares do DNA. Essas pontes mantêm as fitas antiparalelas unidas, conferindo estabilidade à dupla hélice. A especificidade na formação dessas pontes (A-T e C-G) é crucial para a precisão na transmissão da informação genética."
+  },
+  {
+    "Pergunta": "Explique como as sequências de bases do DNA são transcritas em moléculas de RNA mensageiro (mRNA).",
+    "Opcoes": {
+      A: "RNA polimerase sintetiza diretamente as bases do mRNA",
+      B: "RNA polimerase forma pontes de hidrogênio entre as bases do mRNA e do DNA",
+      C: "RNA polimerase lê a sequência de bases do DNA e sintetiza uma molécula complementar de RNA",
+      D: "A transcrição do DNA não está relacionada à formação de mRNA"
+    },
+    "Resposta": "C",
+    "Motivo": "Durante a transcrição, a RNA polimerase lê a sequência de bases do DNA e sintetiza uma molécula complementar de RNA mensageiro (mRNA). As bases do mRNA são determinadas pela sequência de bases do DNA, seguindo a regra de emparelhamento A-T e C-G."
+  },
+  {
+    "Pergunta": "Como o código genético presente na sequência de bases do mRNA é traduzido em proteínas durante o processo de tradução?",
+    "Opcoes": {
+      A: "A sequência de bases do mRNA é diretamente convertida em proteínas",
+      B: "Ribossomos reconhecem a sequência de bases do mRNA e a traduzem em uma sequência de aminoácidos",
+      C: "Código genético do mRNA é irrelevante para a síntese de proteínas",
+      D: "RNA polimerase atua na tradução direta do código genético"
+    },
+    "Resposta": "B",
+    "Motivo": "Durante a tradução, os ribossomos reconhecem a sequência de bases do mRNA em conjuntos de três, chamados códons. Cada códon corresponde a um aminoácido específico, e assim, a sequência de códons é traduzida em uma sequência de aminoácidos, formando a proteína."
+  },
+  {
+    "Pergunta": "Explique como ocorre o processo de replicação do DNA e como as enzimas estão envolvidas nesse processo.",
+    "Opcoes": {
+      A: "Replicação do DNA é passiva e não envolve enzimas",
+      B: "Enzimas como a DNA polimerase sintetizam uma nova fita de DNA complementar à fita existente, garantindo a duplicação do material genético",
+      C: "RNA polimerase é a principal enzima na replicação do DNA, sintetizando uma nova fita de RNA",
+      D: "Replicação do DNA ocorre apenas durante a divisão celular, não envolvendo enzimas"
+    },
+    "Resposta": "B",
+    "Motivo": "Enzimas, especialmente a DNA polimerase, desempenham um papel fundamental na replicação do DNA. A DNA polimerase sintetiza uma nova fita de DNA complementar à fita existente, assegurando que as células filhas recebam cópias precisas do material genético durante a divisão celular."
+  },
+  {
+    "Pergunta": "O que são nucleotídeos e como estão envolvidos na estrutura do DNA?",
+    "Opcoes": {
+      A: "Nucleotídeos são proteínas que compõem a estrutura do DNA",
+      B: "São as subunidades que formam as cadeias de DNA, compostos por açúcar, base nitrogenada e um grupo fosfato",
+      C: "Nucleotídeos são enzimas responsáveis pela replicação do DNA",
+      D: "São os códons presentes na sequência de bases do DNA"
+    },
+    "Resposta": "B",
+    "Motivo": "Nucleotídeos são as subunidades que formam as cadeias de DNA. Cada nucleotídeo é composto por um açúcar (desoxirribose no DNA), uma base nitrogenada (adenina, timina, citosina ou guanina) e um grupo fosfato. A sequência específica desses nucleotídeos constitui a informação genética no DNA."
+  },
+  {
+    "Pergunta": "O que são pontes de hidrogênio e qual é o papel delas na estrutura do DNA?",
+    "Opcoes": {
+      A: "Pontes de hidrogênio são enzimas que facilitam a replicação do DNA",
+      B: "São ligações covalentes que mantêm as fitas de DNA unidas",
+      C: "São ligações não covalentes que formam pares de bases complementares e conferem estabilidade à dupla hélice do DNA",
+      D: "Pontes de hidrogênio são responsáveis pela transcrição do DNA"
+    },
+    "Resposta": "C",
+    "Motivo": "Pontes de hidrogênio são ligações não covalentes que ocorrem entre as bases nitrogenadas complementares do DNA. Elas formam pares específicos (A-T e C-G), garantindo a estabilidade da dupla hélice. Essa especificidade é crucial para a transmissão precisa da informação genética."
+  },
+  {
+    "Pergunta": "Explique como a sequência das bases do DNA é transcrita em moléculas de RNA mensageiro (mRNA).",
+    "Opcoes": {
+      A: "RNA polimerase lê diretamente a sequência de bases do DNA e forma o mRNA",
+      B: "RNA polimerase forma pontes de hidrogênio entre as bases do mRNA e do DNA",
+      C: "A sequência de bases do DNA é diretamente convertida em RNA mensageiro durante a replicação",
+      D: "RNA polimerase lê a sequência de bases do DNA e sintetiza uma molécula complementar de RNA"
+    },
+    "Resposta": "D",
+    "Motivo": "Durante a transcrição, a RNA polimerase lê a sequência de bases do DNA e sintetiza uma molécula complementar de RNA mensageiro (mRNA). A sequência de bases do mRNA é determinada pela sequência de bases do DNA, seguindo a regra de emparelhamento A-T e C-G."
+  },
+  {
+    "Pergunta": "Explique a diferença entre genes e alelos.",
+    "Opcoes": {
+      A: "Genes são unidades de informação genética, enquanto alelos são variantes específicas de um gene que ocupam o mesmo loci cromossômico",
+      B: "Genes e alelos são termos intercambiáveis e têm o mesmo significado",
+      C: "Genes referem-se às características físicas dos organismos, e alelos são as unidades de hereditariedade",
+      D: "Genes são estruturas celulares, e alelos são os blocos de construção do DNA"
+    },
+    "Resposta": "A",
+    "Motivo": "Genes são unidades de informação genética que contêm instruções para a síntese de proteínas. Alelos são diferentes formas de um gene específico que ocupam o mesmo loci cromossômico e influenciam características hereditárias."
+  },
+  {
+    "Pergunta": "O que é herança mendeliana e quais são as leis de Mendel?",
+    "Opcoes": {
+      A: "Herança mendeliana refere-se à transmissão de características genéticas, e as leis de Mendel são princípios que descrevem a segregação independente dos genes e a herança independente de características",
+      B: "Herança mendeliana está relacionada apenas à herança de características físicas",
+      C: "Leis de Mendel descrevem a determinação do sexo dos organismos",
+      D: "Herança mendeliana é um termo ultrapassado na genética moderna"
+    },
+    "Resposta": "A",
+    "Motivo": "Herança mendeliana é o conjunto de padrões de herança genética observados por Gregor Mendel em seus experimentos com plantas. As leis de Mendel incluem a Lei da Segregação, que descreve a segregação de alelos durante a formação de gametas, e a Lei da Distribuição Independente, que aborda a herança independente de diferentes características genéticas."
+  },
+  {
+    "Pergunta": "O que são genótipos e fenótipos?",
+    "Opcoes": {
+      A: "Genótipos são características observáveis, enquanto fenótipos são as informações genéticas dos organismos",
+      B: "Genótipos referem-se à composição genética de um organismo, e fenótipos são as características observáveis resultantes dessa composição",
+      C: "Genótipos e fenótipos são sinônimos e podem ser usados de forma intercambiável",
+      D: "Genótipos e fenótipos são termos específicos para descrever características de plantas"
+    },
+    "Resposta": "B",
+    "Motivo": "Genótipo refere-se à composição genética de um organismo, enquanto fenótipo é a expressão observável dessa composição, ou seja, as características físicas, bioquímicas e fisiológicas do organismo resultantes de sua interação com o ambiente."
+  },
+  {
+    "Pergunta": "Explique a diferença entre homozigoto e heterozigoto.",
+    "Opcoes": {
+      A: "Homozigoto é um organismo com dois alelos diferentes para um gene, enquanto heterozigoto possui dois alelos idênticos",
+      B: "Homozigoto e heterozigoto são termos intercambiáveis",
+      C: "Homozigoto tem apenas um alelo para um gene específico, e heterozigoto possui dois alelos diferentes",
+      D: "Homozigoto é um termo obsoleto na genética moderna"
+    },
+    "Resposta": "A",
+    "Motivo": "Homozigoto é um organismo com dois alelos idênticos para um gene específico, seja dois alelos dominantes (homozigoto dominante) ou dois alelos recessivos (homozigoto recessivo). Heterozigoto possui dois alelos diferentes para o mesmo gene."
+  },
+  {
+    "Pergunta": "O que são alelos múltiplos e como eles influenciam a expressão de características?",
+    "Opcoes": {
+      A: "Alelos múltiplos referem-se a vários genes que controlam a mesma característica, aumentando a variabilidade genética",
+      B: "Alelos múltiplos são formas diferentes de um mesmo gene, cada uma contribuindo de maneira distinta para a expressão de uma característica específica",
+      C: "Alelos múltiplos são uma anomalia genética sem relevância",
+      D: "Alelos múltiplos são exclusivos de organismos não humanos"
+    },
+    "Resposta": "B",
+    "Motivo": "Alelos múltiplos são diferentes formas ou variantes de um mesmo gene, cada um ocupando o mesmo loci cromossômico. Eles podem influenciar a expressão de uma característica de maneira distinta, contribuindo para a diversidade genética em uma população."
+  },
+   {
+    "Pergunta": "O que é ligação gênica e como ela afeta a segregação de genes durante a formação de gametas?",
+    "Opcoes": {
+      A: "Ligação gênica é a tendência de alelos diferentes para segregarem independentemente durante a formação de gametas",
+      B: "Ligação gênica é a ligação física entre alelos de genes diferentes, levando à sua segregação conjunta durante a formação de gametas",
+      C: "Ligação gênica não tem impacto na segregação de genes",
+      D: "Ligação gênica impede a segregação de genes durante a formação de gametas"
+    },
+    "Resposta": "B",
+    "Motivo": "Ligação gênica refere-se à proximidade física de alelos de genes diferentes em um mesmo cromossomo. Quando dois genes estão ligados, eles tendem a ser herdados juntos, afetando a segregação durante a formação de gametas. A ligação gênica pode ser quebrada por meio de eventos de recombinação genética."
+  },
+  {
+    "Pergunta": "O que são mapas genéticos e como são construídos?",
+    "Opcoes": {
+      A: "Mapas genéticos são representações gráficas dos cromossomos, indicando sua morfologia",
+      B: "Mapas genéticos são representações visuais da localização dos genes em um cromossomo e da distância entre eles, construídos com base na taxa de mutação",
+      C: "Mapas genéticos são irrelevantes para a genética",
+      D: "Mapas genéticos representam a sequência de aminoácidos em uma proteína específica"
+    },
+    "Resposta": "B",
+    "Motivo": "Mapas genéticos são representações visuais da localização relativa dos genes em um cromossomo e da distância entre eles. Eles são construídos com base em dados sobre a frequência de recombinação genética, que ocorre durante a formação de gametas. A unidade de medida comum em mapas genéticos é o centimorgan."
+  },
+  {
+    "Pergunta": "O que é epistasia e como ela difere da interação gênica?",
+    "Opcoes": {
+      A: "Epistasia é quando um gene mascara ou modifica o efeito de outro gene. A interação gênica é quando dois ou mais genes influenciam um único fenótipo",
+      B: "Epistasia e interação gênica são termos intercambiáveis",
+      C: "Epistasia é a expressão de um único gene. A interação gênica refere-se à influência de genes diferentes em diferentes características",
+      D: "Epistasia é um conceito ultrapassado na genética"
+    },
+    "Resposta": "A",
+    "Motivo": "Epistasia ocorre quando a expressão de um gene mascara ou modifica a expressão de outro gene. Na interação gênica, dois ou mais genes influenciam um único fenótipo. Em resumo, a epistasia envolve a relação entre genes específicos, enquanto a interação gênica refere-se à influência conjunta de genes em um fenótipo."
+  },
+  {
+    "Pergunta": "Quais são os níveis hierárquicos usados na taxonomia para classificar os seres vivos, do mais geral ao mais específico?",
+    "Opcoes": {
+      A: "Reino, Filo, Classe, Ordem, Família, Gênero, Espécie",
+      B: "Espécie, Gênero, Família, Ordem, Classe, Filo, Reino",
+      C: "Reino, Ordem, Família, Classe, Gênero, Espécie",
+      D: "Filos, Classes, Famílias, Ordens, Gêneros, Espécies, Reinos"
+    },
+    
+    {
+    "Pergunta": "Qual é o nível mais amplo de classificação utilizado na taxonomia, que engloba todos os seres vivos?",
+    "Opcoes": {
+      A: "Reino",
+      B: "Filo",
+      C: "Classe",
+      D: "Ordem"
+    },
+    "Resposta": "A",
+    "Motivo": "O nível mais amplo de classificação na taxonomia é o Reino, que engloba todos os seres vivos. É a categoria que divide a vida em grandes grupos distintos com base em características fundamentais."
+  },
+  {
+    "Pergunta": "Quantos reinos principais são comumente reconhecidos no sistema de classificação biológica?",
+    "Opcoes": {
+      A: "4",
+      B: "6",
+      C: "8",
+      D: "10"
+    },
+    "Resposta": "B",
+    "Motivo": "Atualmente, são comumente reconhecidos seis reinos principais no sistema de classificação biológica: Bacteria, Archaea, Protista, Fungi, Plantae e Animalia. Essa classificação reflete as relações evolutivas entre os diferentes grupos de organismos."
+  },
+  {
+    "Pergunta": "Qual é o reino que engloba organismos multicelulares, eucariontes, autotróficos e que realizam fotossíntese?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Archaea",
+      C: "Plantae",
+      D: "Animalia"
+    },
+    "Resposta": "C",
+    "Motivo": "O reino Plantae engloba organismos multicelulares, eucariontes, autotróficos e capazes de realizar fotossíntese. As plantas são fundamentais na produção de oxigênio e na cadeia alimentar terrestre."
+  },
+  {
+    "Pergunta": "Quais são as características típicas dos organismos pertencentes ao reino Animalia?",
+    "Opcoes": {
+      A: "Autotróficos, unicelulares e com parede celular",
+      B: "Heterotróficos, multicelulares e sem parede celular",
+      C: "Autotróficos, multicelulares e com parede celular",
+      D: "Heterotróficos, unicelulares e sem parede celular"
+    },
+    "Resposta": "B",
+    "Motivo": "Os organismos do reino Animalia são heterotróficos (dependentes de fontes externas para obter nutrientes), multicelulares e geralmente não possuem parede celular. Essas características são fundamentais na distinção desse reino."
+  },
+  {
+    "Pergunta": "Quais são as características dos organismos pertencentes ao reino Fungi?",
+    "Opcoes": {
+      A: "Heterotróficos, unicelulares e móveis",
+      B: "Heterotróficos, multicelulares e com parede celular",
+      C: "Autotróficos, unicelulares e sem parede celular",
+      D: "Heterotróficos, multicelulares e móveis"
+    },
+    "Resposta": "B",
+    "Motivo": "Os organismos do reino Fungi são heterotróficos, multicelulares e geralmente possuem parede celular. Eles desempenham papéis importantes na decomposição e na ciclagem de nutrientes nos ecossistemas."
+  },
+  {
+    "Pergunta": "Quais são as características dos organismos pertencentes ao reino Protista?",
+    "Opcoes": {
+      A: "Heterotróficos, multicelulares e sem parede celular",
+      B: "Autotróficos, unicelulares e com parede celular",
+      C: "Heterotróficos, unicelulares e com parede celular",
+      D: "Autotróficos, multicelulares e móveis"
+    },
+    "Resposta": "C",
+    "Motivo": "Os organismos do reino Protista podem ser heterotróficos ou autotróficos, são frequentemente unicelulares e alguns podem possuir parede celular. Esse reino abrange uma diversidade de organismos, como protozoários e algas unicelulares."
+  },
+  {
+    "Pergunta": "Qual reino inclui organismos procariontes, unicelulares e que podem habitar ambientes extremos?",
+    "Opcoes": {
+      A: "Animalia",
+      B: "Plantae",
+      C: "Bacteria",
+      D: "Fungi"
+    },
+    "Resposta": "C",
+    "Motivo": "O reino Bacteria inclui organismos procariontes, geralmente unicelulares, e pode abranger espécies que habitam diversos ambientes, incluindo extremos. Esses organismos desempenham papéis cruciais nos ecossistemas."
+  },
+  {
+    "Pergunta": "Em qual reino são encontrados organismos procariontes que podem habitar ambientes extremos, como fontes termais e ambientes salinos?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Plantae",
+      C: "Animalia",
+      D: "Fungi"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Bacteria inclui organismos procariontes, como bactérias, que podem habitar ambientes extremos, como fontes termais e ambientes salinos. Essas bactérias desempenham papéis importantes na ciclagem de nutrientes."
+  },
+  {
+    "Pergunta": "Qual é o reino que inclui organismos unicelulares e procariontes frequentemente encontrados em ambientes extremos, como fontes hidrotermais?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Plantae",
+      C: "Animalia",
+      D: "Fungi"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Bacteria inclui organismos unicelulares e procariontes, muitos dos quais são encontrados em ambientes extremos, como fontes hidrotermais. Esses organismos são vitais para diversos processos biológicos e ecológicos."
+  },
+  {
+    "Pergunta": "Em qual reino são encontrados organismos unicelulares e procariontes frequentemente associados a ambientes extremos, como águas termais e vulcões submarinos?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Animalia",
+      C: "Protista",
+      D: "Fungi"
+    },
+    "Resposta": "C",
+    "Motivo": "O reino Protista inclui uma variedade de organismos unicelulares, alguns dos quais são procariontes e frequentemente associados a ambientes extremos, como águas termais e vulcões submarinos. Esses organismos exibem uma diversidade de formas e modos de vida."
+  },
+  {
+    "Pergunta": "Qual reino abrange organismos multicelulares, eucariontes, autotróficos e capazes de realizar fotossíntese?",
+    "Opcoes": {
+      A: "Plantae",
+      B: "Animalia",
+      C: "Fungi",
+      D: "Bacteria"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Plantae abrange organismos multicelulares, eucariontes, autotróficos e capazes de realizar fotossíntese. As plantas desempenham um papel essencial na produção de oxigênio e na sustentação de muitos ecossistemas."
+  },
+  {
+    "Pergunta": "Quais são as características dos organismos do reino Fungi?",
+    "Opcoes": {
+      A: "Heterotróficos, unicelulares e com parede celular",
+      B: "Heterotróficos, multicelulares e sem parede celular",
+      C: "Autotróficos, unicelulares e móveis",
+      D: "Heterotróficos, unicelulares e móveis"
+    },
+    "Resposta": "B",
+    "Motivo": "Os organismos do reino Fungi são heterotróficos, multicelulares e geralmente possuem parede celular. Eles desempenham um papel importante na decomposição e na ciclagem de nutrientes nos ecossistemas."
+  },
+  {
+    "Pergunta": "Qual é o reino que inclui organismos multicelulares, eucariontes, heterotróficos e sem capacidade de locomoção?",
+    "Opcoes": {
+      A: "Plantae",
+      B: "Animalia",
+      C: "Fungi",
+      D: "Protista"
+    },
+    "Resposta": "B",
+    "Motivo": "O reino Animalia inclui organismos multicelulares, eucariontes, heterotróficos e geralmente sem capacidade de locomoção. Animais representam uma variedade diversificada de formas de vida e ocupam diferentes nichos ecológicos."
+  },
+  {
+    "Pergunta": "Qual reino inclui organismos unicelulares e procariontes frequentemente encontrados em ambientes extremos, como fontes termais e ambientes salinos?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Plantae",
+      C: "Animalia",
+      D: "Fungi"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Bacteria inclui organismos unicelulares e procariontes, muitos dos quais são encontrados em ambientes extremos, como fontes termais e ambientes salinos. Esses organismos desempenham papéis importantes na ciclagem de nutrientes e em processos biológicos diversos."
+  },
+  {
+    "Pergunta": "Em qual reino são encontrados organismos unicelulares e procariontes que podem habitar ambientes extremos, como fontes hidrotermais?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Animalia",
+      C: "Protista",
+      D: "Fungi"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Bacteria inclui organismos unicelulares e procariontes, muitos dos quais podem habitar ambientes extremos, como fontes hidrotermais. Esses organismos são fundamentais para a manutenção de processos biológicos e ecológicos nos diferentes ecossistemas."
+  },
+  {
+    "Pergunta": "Qual reino abrange organismos unicelulares eucariontes frequentemente associados a ambientes aquáticos e alguns capazes de realizar fotossíntese?",
+    "Opcoes": {
+      A: "Bacteria",
+      B: "Animalia",
+      C: "Protista",
+      D: "Fungi"
+    },
+    "Resposta": "C",
+    "Motivo": "O reino Protista abrange organismos unicelulares eucariontes, muitos dos quais estão associados a ambientes aquáticos. Alguns protistas são capazes de realizar fotossíntese, contribuindo para a produção primária nos ecossistemas aquáticos."
+  },
+  {
+    "Pergunta": "Qual reino inclui organismos multicelulares, eucariontes, autotróficos e frequentemente com tecidos especializados?",
+    "Opcoes": {
+      A: "Plantae",
+      B: "Animalia",
+      C: "Fungi",
+      D: "Protista"
+    },
+    "Resposta": "A",
+    "Motivo": "O reino Plantae inclui organismos multicelulares, eucariontes, autotróficos e frequentemente com tecidos especializados. Plantas desempenham um papel vital na produção de oxigênio e na sustentação de ecossistemas terrestres."
+  }
+  
+  
+    
+      ]
+    const perguntasMatematica = [
+       },
+  {
+    "Pergunta": "Qual é a fórmula para calcular a área de um círculo?",
+    "Opcoes": {
+      A: "Área = π * r",
+      B: "Área = 2 * π * r",
+      C: "Área = 1/2 * π * r^2",
+      D: "Área = π * d"
+    },
+    "Resposta": "C",
+    "Motivo": "A fórmula correta para calcular a área de um círculo é Área = π * raio^2."
+  },
+  {
+    "Pergunta": "Se um retângulo tem comprimento 8 e largura 5, qual é a sua área?",
+    "Opcoes": {
+      A: "20",
+      B: "30",
+      C: "40",
+      D: "50"
+    },
+    "Resposta": "C",
+    "Motivo": "A área de um retângulo é calculada multiplicando o comprimento pela largura. Neste caso, a área é 8 * 5 = 40."
+  },
+  {
+    "Pergunta": "Qual é a soma dos ângulos de um quadrado?",
+    "Opcoes": {
+      A: "180 graus",
+      B: "270 graus",
+      C: "360 graus",
+      D: "450 graus"
+    },
+    "Resposta": "C",
+    "Motivo": "A soma dos ângulos de um quadrado é sempre 360 graus, pois todos os seus ângulos internos são ângulos retos (90 graus)."
+  },
+  
+  {
+    "Pergunta": "Resolva a equação: 2x² - 5x + 3 = 0. Quais são as raízes reais?",
+    "Opcoes": {
+      A: "x = 1 e x = 3",
+      B: "x = -1 e x = -3",
+      C: "x = 1/2 e x = 3/2",
+      D: "x = -1/2 e x = -3/2"
+    },
+    "Resposta": "A",
+    "Motivo": "As raízes reais da equação 2x² - 5x + 3 = 0 são x = 1 e x = 3."
+  },
+  {
+    "Pergunta": "Se f(x) = 3x² + 2x + 1, qual é o valor de f(2)?",
+    "Opcoes": {
+      A: "f(2) = 15",
+      B: "f(2) = 19",
+      C: "f(2) = 23",
+      D: "f(2) = 27"
+    },
+    "Resposta": "C",
+    "Motivo": "Substituindo x por 2 na função, obtemos f(2) = 3(2)² + 2(2) + 1 = 3(4) + 4 + 1 = 12 + 4 + 1 = 17."
+  },
+  {
+    "Pergunta": "Qual é o valor de x na equação log₂(x) = 3?",
+    "Opcoes": {
+      A: "x = 6",
+      B: "x = 8",
+      C: "x = 9",
+      D: "x = 12"
+    },
+    "Resposta": "B",
+    "Motivo": "A equação log₂(x) = 3 pode ser reescrita como 2³ = x. Assim, x = 8."
+  },
+  {
+    "Pergunta": "Se a + b = 5 e a - b = 1, qual é o valor de a² - b²?",
+    "Opcoes": {
+      A: "4",
+      B: "6",
+      C: "8",
+      D: "10"
+    },
+    "Resposta": "C",
+    "Motivo": "Podemos fatorar a² - b² como (a + b)(a - b). Substituindo os valores dados, obtemos (5)(1) = 5. Portanto, a² - b² = 5."
+  },
+  {
+    "Pergunta": "Resolva a inequação 2x² - 8x + 6 > 0. Quais são os valores de x?",
+    "Opcoes": {
+      A: "x < 1 ou x > 3",
+      B: "x < 2 ou x > 3",
+      C: "1 < x < 3",
+      D: "2 < x < 3"
+    },
+    "Resposta": "A",
+    "Motivo": "Os valores de x que satisfazem a inequação 2x² - 8x + 6 > 0 são x < 1 ou x > 3."
+  },
+  {
+    "Pergunta": "Se log₃(y) = 2, qual é o valor de y?",
+    "Opcoes": {
+      A: "y = 1",
+      B: "y = 3",
+      C: "y = 6",
+      D: "y = 9"
+    },
+    "Resposta": "D",
+    "Motivo": "A equação log₃(y) = 2 pode ser reescrita como 3² = y. Assim, y = 9."
+  },
+  {
+    "Pergunta": "Qual é a solução da equação sen(x) + cos(x) = 1 para x no intervalo [0, 2π]?",
+    "Opcoes": {
+      A: "x = 0 e x = π",
+      B: "x = π/2 e x = 3π/2",
+      C: "x = π/4 e x = 5π/4",
+      D: "x = π/6 e x = 7π/6"
+    },
+    "Resposta": "B",
+    "Motivo": "Na solução da equação sen(x) + cos(x) = 1, as soluções são x = π/2 e x = 3π/2 no intervalo [0, 2π]."
+  },
+  
+  
+  
+  ]
     const perguntasMusica = []
     const perguntasFilosofia = []
     const perguntasLiteratura = []
