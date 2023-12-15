@@ -231,18 +231,7 @@ else {
             C: "Radiação remanescente do Big Bang", 
             D: "Emissões solares" },
             "Resposta": "C", 
-            "Motivo": "A radiação cósmica de fundo é uma radiação eletromagnética que preenche o universo e é remanescente do Big Bang, sendo crucial para entender a evolução e a estrutura do cosmos." }
-    ,{
-       "Pergunta": "O que é a teoria da gravidade quântica de loop?",
-    "Opcoes": {
-      A: "Teoria sobre a interação entre partículas carregadas",
-      B: "Modelo que descreve a gravidade como uma força quântica",
-      C: "Estudo sobre órbitas de corpos celestes",
-      D: "Descrição da expansão do universo"
-    },
-    "Resposta": "B",
-    "Motivo": "A teoria da gravidade quântica de loop é uma abordagem que busca unificar a gravidade com os princípios da mecânica quântica, descrevendo a gravidade como uma força quântica em nível fundamental."
-  },
+            "Motivo": "A radiação cósmica de fundo é uma radiação eletromagnética que preenche o universo e é remanescente do Big Bang, sendo crucial para entender a evolução e a estrutura do cosmos." },
   {
     "Pergunta": "O que é a teoria das partículas supersimétricas?",
     "Opcoes": {
