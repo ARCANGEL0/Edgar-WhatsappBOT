@@ -2326,10 +2326,1985 @@ else {
     "Motivo": "A Arte Pop foi um movimento artístico que surgiu nos anos 1960, destacando-se pelo uso de imagens e temas populares da cultura de massa. Artistas pop, como Andy Warhol, desafiaram as concepções tradicionais de arte, incorporando objetos do cotidiano e explorando as fronteiras entre alta e baixa cultura."
   },
       
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que surgiu na década de 1980, caracterizado por obras provocativas, muitas vezes abordando questões sociais e políticas, e utilizando diferentes meios, como fotografia e vídeo?",
+    "Opcoes": {
+      A: "Land Art",
+      B: "Arte Contemporânea",
+      C: "Graffiti",
+      D: "Arte Performática"
+    },
+    "Resposta": "B",
+    "Motivo": "A Arte Contemporânea é um movimento artístico que surgiu na década de 1980, caracterizado pela diversidade de estilos, abordando questões sociais, políticas e culturais. Os artistas contemporâneos frequentemente utilizam diferentes meios, como fotografia, vídeo, instalações e performance, para expressar suas ideias."
+  },
+  {
+    "Pergunta": "Quem foi o pintor espanhol conhecido por seu papel no desenvolvimento do Cubismo, juntamente com Georges Braque, e por obras como 'Les Demoiselles d'Avignon'?",
+    "Opcoes": {
+      A: "Pablo Picasso",
+      B: "Salvador Dalí",
+      C: "Joan Miró",
+      D: "Fernand Léger"
+    },
+    "Resposta": "A",
+    "Motivo": "Pablo Picasso foi um pintor espanhol e uma das figuras mais influentes do Cubismo, movimento artístico que revolucionou a representação visual. 'Les Demoiselles d'Avignon' é uma obra emblemática que rompeu com as convenções artísticas da época, introduzindo formas geométricas e influências africanas."
+  },
+  {
+    "Pergunta": "Qual é o nome da técnica de pintura que utiliza pequenos pontos coloridos para formar uma imagem, sendo um estilo associado a artistas como Georges Seurat e Paul Signac?",
+    "Opcoes": {
+      A: "Cubismo",
+      B: "Pontilhismo",
+      C: "Realismo",
+      D: "Surrealismo"
+    },
+    "Resposta": "B",
+    "Motivo": "O Pontilhismo é uma técnica de pintura que utiliza pequenos pontos coloridos, chamados de pontos, para criar uma imagem. Este estilo, associado a artistas como Georges Seurat e Paul Signac, busca criar uma mistura ótica de cores quando vistas de longe, produzindo efeitos visuais impressionantes."
+  },
+  {
+    "Pergunta": "Quem foi a escultora e pintora franco-americana associada ao movimento modernista, conhecida por suas formas abstratas e pela obra 'Bird in Space'?",
+    "Opcoes": {
+      A: "Barbara Hepworth",
+      B: "Georgia O'Keeffe",
+      C: "Isamu Noguchi",
+      D: "Constantin Brancusi"
+    },
+    "Resposta": "D",
+    "Motivo": "Constantin Brancusi foi um escultor e pintor romeno-francês associado ao movimento modernista. Sua obra 'Bird in Space' é uma escultura abstrata que busca capturar a essência do voo, utilizando formas simplificadas e fluidas para transmitir movimento e leveza."
+  },
+  {
+    "Pergunta": "Qual é o nome da técnica de escultura em que o escultor esculpe diretamente na pedra, sem o uso de modelos ou moldes, sendo uma abordagem intuitiva e direta?",
+    "Opcoes": {
+      A: "Entalhe",
+      B: "Modelagem",
+      C: "Cinzelagem",
+      D: "Escultura Direta"
+    },
+    "Resposta": "D",
+    "Motivo": "A Escultura Direta é uma técnica em que o escultor esculpe diretamente na pedra, sem o uso de modelos ou moldes. Essa abordagem é intuitiva e direta, permitindo que a forma evolua durante o processo de escultura, evidenciando a habilidade e sensibilidade do artista em relação ao material."
+  },
+  
+    {
+    "Pergunta": "Qual movimento artístico do século XIX é conhecido por representar cenas cotidianas com pinceladas soltas, enfatizando a luz e a atmosfera?",
+    "Opcoes": {
+      A: "Impressionismo",
+      B: "Cubismo",
+      C: "Realismo",
+      D: "Romantismo"
+    },
+    "Resposta": "A",
+    "Motivo": "O Impressionismo foi um movimento artístico do século XIX que revolucionou a representação visual. Os artistas impressionistas, como Claude Monet e Pierre-Auguste Renoir, buscavam capturar a essência das cenas por meio de pinceladas soltas, destacando a influência da luz e da atmosfera nas paisagens e nas cenas cotidianas."
+  },
+  {
+    "Pergunta": "Quem foi o líder do movimento surrealista, conhecido por suas pinturas oníricas e simbólicas, como 'A Persistência da Memória', onde relógios derretidos são destaque?",
+    "Opcoes": {
+      A: "Salvador Dalí",
+      B: "René Magritte",
+      C: "Joan Miró",
+      D: "Max Ernst"
+    },
+    "Resposta": "A",
+    "Motivo": "Salvador Dalí foi um proeminente líder do movimento surrealista. Sua obra 'A Persistência da Memória' é um ícone do surrealismo, apresentando relógios derretidos em um cenário onírico. Dalí explorou o inconsciente e os sonhos, criando imagens vívidas e perturbadoras."
+  },
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que emergiu no início do século XX, caracterizado pela representação de objetos e pessoas de maneira não realista e frequentemente influenciado por ideias psicanalíticas?",
+    "Opcoes": {
+      A: "Dadaísmo",
+      B: "Futurismo",
+      C: "Surrealismo",
+      D: "Cubismo"
+    },
+    "Resposta": "C",
+    "Motivo": "O Surrealismo é um movimento artístico que surgiu no início do século XX, influenciado por ideias psicanalíticas de Sigmund Freud. Artistas surrealistas, como Salvador Dalí e André Breton, buscavam explorar o inconsciente, representando objetos e pessoas de maneira não realista e muitas vezes perturbadora."
+  },
+  {
+    "Pergunta": "Quem foi um dos fundadores do Cubismo, conhecido por obras como 'Les Demoiselles d'Avignon', que rompeu com as formas tradicionais de representação visual?",
+    "Opcoes": {
+      A: "Henri Matisse",
+      B: "Pablo Picasso",
+      C: "Georges Braque",
+      D: "Fernand Léger"
+    },
+    "Resposta": "B",
+    "Motivo": "Pablo Picasso foi um dos fundadores do Cubismo, um movimento artístico que revolucionou a representação visual. 'Les Demoiselles d'Avignon' é uma obra emblemática que rompeu com as formas tradicionais, introduzindo formas geométricas e influências africanas, antecipando o desenvolvimento da arte moderna."
+  },
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que se desenvolveu na década de 1960, caracterizado por obras que desafiam as convenções tradicionais e frequentemente exploram o abstrato e o conceitual?",
+    "Opcoes": {
+      A: "Op Art",
+      B: "Minimalismo",
+      C: "Arte Conceitual",
+      D: "Expressionismo Abstrato"
+    },
+    "Resposta": "C",
+    "Motivo": "A Arte Conceitual é um movimento artístico que se desenvolveu na década de 1960. Em vez de focar na produção física da obra de arte, os artistas conceituais priorizavam a ideia por trás da obra. Isso desafiou as tradições artísticas convencionais, explorando conceitos e provocando reflexões."
+  },
+  {
+    "Pergunta": "Qual movimento artístico do século XX enfatizava a representação da realidade de uma maneira distorcida e exagerada, frequentemente retratando a vida urbana e social?",
+    "Opcoes": {
+      A: "Expressionismo",
+      B: "Fauvismo",
+      C: "Realismo",
+      D: "Simbolismo"
+    },
+    "Resposta": "A",
+    "Motivo": "O Expressionismo foi um movimento artístico do século XX que enfatizava a representação da realidade de maneira distorcida e exagerada. Muitas vezes, artistas expressionistas, como Edvard Munch, retratavam a vida urbana e social, expressando emoções intensas e reações subjetivas à realidade."
+  },
+  {
+    "Pergunta": "Quem foi o pintor francês associado ao movimento impressionista, conhecido por suas obras que capturam cenas da vida urbana, como 'Almoço dos Remadores' e 'Ballet Clássico'?",
+    "Opcoes": {
+      A: "Edgar Degas",
+      B: "Claude Monet",
+      C: "Pierre-Auguste Renoir",
+      D: "Camille Pissarro"
+    },
+    "Resposta": "C",
+    "Motivo": "Pierre-Auguste Renoir foi um pintor francês associado ao movimento impressionista. Suas obras, como 'Almoço dos Remadores' e 'Ballet Clássico', capturam cenas da vida urbana com pinceladas soltas e uma abordagem única à luz, cor e atmosfera, características distintivas do Impressionismo."
+  },
+  {
+    "Pergunta": "Qual é o nome do movimento artístico que se concentrou em representar a realidade de maneira objetiva, muitas vezes destacando aspectos da vida cotidiana e do trabalho?",
+    "Opcoes": {
+      A: "Realismo",
+      B: "Romantismo",
+      C: "Barroco",
+      D: "Simbolismo"
+    },
+    "Resposta": "A",
+    "Motivo": "O Realismo foi um movimento artístico que se concentrou em representar a realidade de maneira objetiva, destacando aspectos da vida cotidiana e do trabalho. Artistas realistas, como Gustave Courbet"},
+    
+    {
+    "Pergunta": "Qual é o nome de um movimento artístico contemporâneo que explora o estranho, o surreal e muitas vezes o bizarro, envolvendo elementos de horror e ficção científica?",
+    "Opcoes": {
+      A: "Weirdcore",
+      B: "Arte Contemporânea",
+      C: "Surrealismo Pop",
+      D: "Terror Psicológico"
+    },
+    "Resposta": "A",
+    "Motivo": "Weirdcore é um movimento artístico contemporâneo que explora o estranho, o surreal e frequentemente o bizarro. Muitas vezes, incorpora elementos de horror, ficção científica e uma estética única que desafia as normas convencionais da arte, criando experiências visuais únicas e desconcertantes."
+  },
+  {
+    "Pergunta": "Quem é um artista contemporâneo conhecido por suas esculturas hiper-realistas de figuras humanas distorcidas e muitas vezes grotescas, explorando temas de horror e alienação?",
+    "Opcoes": {
+      A: "Damien Hirst",
+      B: "Ron Mueck",
+      C: "Takashi Murakami",
+      D: "Patricia Piccinini"
+    },
+    "Resposta": "D",
+    "Motivo": "Patricia Piccinini é uma artista contemporânea conhecida por suas esculturas hiper-realistas que exploram figuras humanas distorcidas e muitas vezes grotescas. Seu trabalho aborda temas de horror, alienação e a relação entre humanos e criaturas fictícias, estimulando reflexões sobre a natureza da humanidade."
+  },
+  {
+    "Pergunta": "Qual é o nome de um subgênero artístico que se destaca por criar imagens surreais, muitas vezes assustadoras, que evocam sentimentos de horror e mal-estar, frequentemente associado a bandas de música e artistas visuais contemporâneos?",
+    "Opcoes": {
+      A: "Weirdcore",
+      B: "Surrealismo Obscuro",
+      C: "Estranho Realismo",
+      D: "Terror Visionário"
+    },
+    "Resposta": "A",
+    "Motivo": "Weirdcore é um subgênero artístico contemporâneo que cria imagens surreais, frequentemente assustadoras, associadas a bandas de música e artistas visuais. Essas obras evocam sentimentos de horror e mal-estar, explorando o lado estranho e obscuro da imaginação humana."
+  },
+  {
+    "Pergunta": "Quem é um renomado cineasta e artista contemporâneo conhecido por suas obras de terror psicológico, como 'Cisne Negro' e 'Réquiem para um Sonho'?",
+    "Opcoes": {
+      A: "David Lynch",
+      B: "Guillermo del Toro",
+      C: "Darren Aronofsky",
+      D: "Ari Aster"
+    },
+    "Resposta": "C",
+    "Motivo": "Darren Aronofsky é um cineasta e artista contemporâneo reconhecido por suas obras de terror psicológico. 'Cisne Negro' e 'Réquiem para um Sonho' exploram temas intensos e perturbadores, mergulhando na psique humana e desafiando as convenções do gênero cinematográfico."
+  },
+  {
+    "Pergunta": "Qual é o nome de um movimento artístico contemporâneo que combina elementos de horror, ficção científica e surrealismo, muitas vezes associado a músicos que exploram essas estéticas?",
+    "Opcoes": {
+      A: "Weird Fiction",
+      B: "Surrealismo Contemporâneo",
+      C: "New Horror",
+      D: "Vaporwave"
+    },
+    "Resposta": "A",
+    "Motivo": "Weird Fiction é um movimento artístico contemporâneo que combina elementos de horror, ficção científica e surrealismo. Frequentemente associado a músicos que exploram essas estéticas, o Weird Fiction busca criar experiências visuais e sonoras únicas, desafiando as expectativas e explorando o lado mais estranho e imaginativo da arte."
+  },
+  {
+    "Pergunta": "Quem é um artista contemporâneo conhecido por suas ilustrações e pinturas que mergulham no terror psicológico, muitas vezes retratando figuras sombrias e distorcidas?",
+    "Opcoes": {
+      A: "H. R. Giger",
+      B: "Zdzisław Beksiński",
+      C: "Junji Ito",
+      D: "Francis Bacon"
+    },
+    "Resposta": "C",
+    "Motivo": "Junji Ito é um artista japonês conhecido por suas ilustrações e mangás que exploram o terror psicológico. Suas obras apresentam figuras sombrias, distorcidas e narrativas intensas, contribuindo significativamente para o gênero do horror visual e psicológico contemporâneo."
+  },
+  {
+    "Pergunta": "Qual é o nome de uma técnica artística que envolve a manipulação digital de imagens para criar composições surreais e frequentemente perturbadoras, associadas a artistas contemporâneos?",
+    "Opcoes": {
+      A: "Collage Digital",
+      B: "Glitch Art",
+      C: "Foto Manipulação",
+      D: "Surrealismo Digital"
+    },
+    "Resposta": "D",
+    "Motivo": "O Surrealismo Digital é uma técnica artística que envolve a manipulação digital de imagens para criar composições surreais e frequentemente perturbadoras. Muitos artistas contemporâneos exploram essa técnica para desafiar a realidade visual, criar narrativas desconcertantes e mergulhar no universo do estranho e do imaginário."
+  },
+  
+   {
+    "Pergunta": "Qual artista polonês contemporâneo, conhecido por suas pinturas surreais e sombrias, retrata frequentemente mundos distópicos e figuras grotescas?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Francis Bacon"
+    },
+    "Resposta": "A",
+    "Motivo": "Zdzisław Beksiński foi um renomado artista polonês contemporâneo, reconhecido por suas pinturas surreais e sombrias. Suas obras frequentemente retratam mundos distópicos, figuras grotescas e uma atmosfera única que cativa a imaginação do espectador."
+  },
+  {
+    "Pergunta": "Quem foi um artista suíço conhecido por suas criações biomecânicas, notavelmente design do Alien no filme 'Alien, o Oitavo Passageiro'?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Francis Bacon"
+    },
+    "Resposta": "B",
+    "Motivo": "H. R. Giger foi um artista suíço conhecido por suas criações biomecânicas. Ele ficou famoso por seu design icônico do Alien no filme 'Alien, o Oitavo Passageiro', marcando sua contribuição significativa para o gênero do horror e da ficção científica no cinema."
+  },
+  {
+    "Pergunta": "Qual artista britânico do século XX é conhecido por suas pinturas expressionistas que exploram temas de angústia, alienação e deformidade?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Francis Bacon"
+    },
+    "Resposta": "D",
+    "Motivo": "Francis Bacon foi um influente artista britânico do século XX, conhecido por suas pinturas expressionistas. Suas obras exploram temas de angústia, alienação e deformidade, criando imagens poderosas que refletem as complexidades da experiência humana e emocional."
+  },
+  {
+    "Pergunta": "Quem é um mangaká japonês famoso por suas obras de terror psicológico, como 'Uzumaki' e 'Tomie'?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Francis Bacon"
+    },
+    "Resposta": "C",
+    "Motivo": "Junji Ito é um mangaká japonês renomado, famoso por suas obras de terror psicológico. 'Uzumaki' e 'Tomie' são exemplos de suas narrativas envolventes e visualmente impactantes que exploram o sobrenatural, o bizarro e o horror psicológico."
+  },
+  {
+    "Pergunta": "Quem é um pintor e escultor alemão contemporâneo associado ao movimento de arte distorcida, conhecido por suas figuras distorcidas e grotescas?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Jonathan Meese"
+    },
+    "Resposta": "D",
+    "Motivo": "Jonathan Meese é um pintor e escultor alemão contemporâneo associado ao movimento de arte distorcida. Suas obras apresentam figuras distorcidas e grotescas, explorando temas de mitologia, política e cultura popular de maneira provocativa e expressiva."
+  },
+  {
+    "Pergunta": "Quem é um artista norte-americano conhecido por suas esculturas que misturam horror e humor, frequentemente apresentando criaturas grotescas e cômicas?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Junji Ito",
+      D: "Ron English"
+    },
+    "Resposta": "D",
+    "Motivo": "Ron English é um artista norte-americano conhecido por suas esculturas que misturam horror e humor. Suas criações frequentemente apresentam criaturas grotescas e cômicas, desafiando as expectativas e explorando uma estética única que cativa e intriga o espectador."
+  },
+  {
+    "Pergunta": "Quem foi um artista surrealista belga conhecido por suas pinturas que exploram temas do subconsciente, sonhos e a natureza misteriosa da mente humana?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "René Magritte",
+      D: "Francis Bacon"
+    },
+    "Resposta": "C",
+    "Motivo": "René Magritte foi um proeminente artista surrealista belga, conhecido por suas pinturas que exploram temas do subconsciente, sonhos e a natureza misteriosa da mente humana. Suas obras muitas vezes desafiam a lógica visual, provocando reflexões sobre a realidade e a percepção."
+  },
+  {
+    "Pergunta": "Quem é uma artista contemporânea mexicana conhecida por suas ilustrações e pinturas que combinam elementos de horror, fantasia e surrealismo?",
+    "Opcoes": {
+      A: "Zdzisław Beksiński",
+      B: "H. R. Giger",
+      C: "Alejandro Jodorowsky",
+      D: "Gris Grimly"
+    },
+    "Resposta": "D",
+    "Motivo": "Gris Grimly é uma artista contemporânea mexicana conhecida por suas ilustrações e pinturas que combinam elementos de horror, fantasia e surrealismo. Seu estilo único cria imagens cativantes e muitas vezes perturbadoras que exploram o lado mais sombrio da imaginação humana."
+  }
+    
+      
+      
+      
       ];
-  const perguntasTecnologia =[] ;
-    const perguntasInformatica =[];
-    const perguntasProgramacao =[]
+  const perguntasTecnologia =[
+    
+{
+  "Pergunta": "Qual é o principal protocolo de comunicação utilizado na internet?",
+  "Opcoes": {
+    A: "FTP",
+    B: "SMTP",
+    C: "HTTP",
+    D: "TCP/IP"
+  },
+  "Resposta": "D",
+  "Motivo": "O TCP/IP (Transmission Control Protocol/Internet Protocol) é o conjunto de protocolos de comunicação fundamental para a internet, garantindo a transmissão eficiente de dados entre dispositivos."
+},
+{
+    "Pergunta": "O que significa a sigla HTML em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Hypertext Markup Language",
+      B: "Hyperlink and Text Markup Language",
+      C: "High-level Text Management Language",
+      D: "Hypertext Management and Linking"
+    },
+    "Resposta": "A",
+    "Motivo": "HTML significa Hypertext Markup Language, sendo a linguagem padrão para a criação e estruturação de páginas web."
+  },
+  {
+    "Pergunta": "O que significa a sigla CSS em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Cascading Style Sheet",
+      B: "Computer Style Sheet",
+      C: "Creative Style Sheet",
+      D: "Code Style Sheet"
+    },
+    "Resposta": "A",
+    "Motivo": "CSS significa Cascading Style Sheet, sendo uma linguagem usada para estilizar a apresentação de documentos escritos em HTML."
+  },
+   {
+    "Pergunta": "Qual é o conceito fundamental por trás do paradigma de programação funcional?",
+    "Opcoes": {
+      A: "Estruturas de controle de fluxo",
+      B: "Imutabilidade e funções puras",
+      C: "Programação orientada a objetos",
+      D: "Manipulação direta de registros de memória"
+    },
+    "Resposta": "B",
+    "Motivo": "Na programação funcional, a imutabilidade e o uso de funções puras são centrais, permitindo um estilo de codificação mais declarativo e evitando efeitos colaterais."
+  },
+  {
+    "Pergunta": "Em redes de computadores, o que é um 'subnet'?",
+    "Opcoes": {
+      A: "Um endereço IP público exclusivo",
+      B: "Uma porção de uma rede IP maior dividida em sub-redes menores",
+      C: "Um protocolo de roteamento avançado",
+      D: "Um tipo de firewall"
+    },
+    "Resposta": "B",
+    "Motivo": "Uma 'subnet' é uma subdivisão de uma rede IP maior para melhorar a gestão de endereços e o desempenho da rede."
+  },
+  {
+    "Pergunta": "Qual é a diferença entre Java e JavaScript?",
+    "Opcoes": {
+      A: "Java é apenas para backend, enquanto JavaScript é exclusivamente para frontend",
+      B: "Java é compilado e orientado a objetos, enquanto JavaScript é interpretado e baseado em protótipos",
+      C: "JavaScript é uma versão simplificada de Java",
+      D: "Java é usado apenas para scripts de servidor, enquanto JavaScript é para scripts de cliente"
+    },
+    "Resposta": "B",
+    "Motivo": "Java é compilado e fortemente tipado, enquanto JavaScript é interpretado e baseado em protótipos, sendo mais flexível."
+  },
+  {
+    "Pergunta": "O que é uma injeção de SQL?",
+    "Opcoes": {
+      A: "Um método de otimização de consultas em bancos de dados",
+      B: "Uma técnica para injetar código malicioso em instruções SQL",
+      C: "Um processo de criação dinâmica de tabelas em um banco de dados",
+      D: "Um padrão de design para a criação de interfaces gráficas em SQL"
+    },
+    "Resposta": "B",
+    "Motivo": "Injeção de SQL é uma vulnerabilidade onde um atacante pode inserir comandos SQL maliciosos em entradas de dados, comprometendo a integridade do banco de dados."
+  },
+  {
+    "Pergunta": "O que é o conceito de 'big-O' na análise de algoritmos?",
+    "Opcoes": {
+      A: "Uma linguagem de programação popular",
+      B: "Uma notação para descrever o desempenho ou complexidade de um algoritmo",
+      C: "Um padrão de codificação para algoritmos eficientes",
+      D: "Uma técnica para compressão de dados em algoritmos"
+    },
+    "Resposta": "B",
+    "Motivo": "O 'big-O' é uma notação que descreve a complexidade assintótica de um algoritmo, indicando como o desempenho do algoritmo se comporta em relação ao tamanho da entrada."
+  },
+  
+  {
+    "Pergunta": "O que é um 'hash' em criptografia?",
+    "Opcoes": {
+      A: "Um algoritmo para compressão de dados",
+      B: "Uma técnica de ofuscação de código-fonte",
+      C: "Uma função matemática unidirecional para gerar códigos únicos",
+      D: "Uma linguagem de programação segura"
+    },
+    "Resposta": "C",
+    "Motivo": "Em criptografia, um 'hash' é uma função matemática unidirecional que gera uma sequência única de caracteres para representar dados, sendo usado para verificar a integridade e autenticidade dos mesmos."
+  },
+  {
+    "Pergunta": "O que é o protocolo HTTPS em uma URL?",
+    "Opcoes": {
+      A: "Hypertext Transfer Protocol Secure",
+      B: "Hypertext Transfer Protocol Standard",
+      C: "Hypertext and Text Processing Service",
+      D: "Hypertext and Encryption Service"
+    },
+    "Resposta": "A",
+    "Motivo": "O HTTPS (Hypertext Transfer Protocol Secure) é a versão segura do HTTP, garantindo a transferência segura de dados entre o navegador e o servidor."
+  },
+  {
+    "Pergunta": "O que é um 'container' na tecnologia de virtualização?",
+    "Opcoes": {
+      A: "Um dispositivo de armazenamento externo",
+      B: "Uma unidade de processamento central em um servidor",
+      C: "Uma instância isolada de um sistema operacional e aplicativos",
+      D: "Uma interface gráfica para gerenciar recursos de rede"
+    },
+    "Resposta": "C",
+    "Motivo": "Um 'container' na virtualização é uma instância isolada que inclui um sistema operacional e as dependências necessárias para executar aplicativos, proporcionando portabilidade e eficiência."
+  },
+  {
+    "Pergunta": "Qual é a principal diferença entre linguagens de programação interpretadas e compiladas?",
+    "Opcoes": {
+      A: "Linguagens interpretadas são mais eficientes em termos de desempenho",
+      B: "Linguagens compiladas são traduzidas para código de máquina antes da execução",
+      C: "Linguagens interpretadas são traduzidas antes da execução, enquanto as compiladas são interpretadas durante a execução",
+      D: "Não há diferença significativa entre ambas"
+    },
+    "Resposta": "B",
+    "Motivo": "Linguagens compiladas são traduzidas para código de máquina antes da execução, resultando em um desempenho geralmente mais rápido do programa."
+  },
+  {
+    "Pergunta": "O que é a arquitetura de microsserviços em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Um padrão de design para interfaces de usuário",
+      B: "Um método para compactação de código fonte",
+      C: "Uma abordagem de desenvolvimento que divide um aplicativo em serviços independentes",
+      D: "Uma técnica para otimização de consultas em banco de dados"
+    },
+    "Resposta": "C",
+    "Motivo": "A arquitetura de microsserviços envolve o desenvolvimento de um aplicativo como uma coleção de serviços independentes, facilitando a escalabilidade"},
+    
+  {
+    "Pergunta": "O que é a técnica de programação 'memoization'?",
+    "Opcoes": {
+      A: "Uma técnica para compressão de código fonte",
+      B: "Um método para otimizar a execução de loops",
+      C: "Um padrão de design para interfaces de usuário",
+      D: "Uma técnica de armazenamento em cache para otimizar o desempenho de funções"
+    },
+    "Resposta": "D",
+    "Motivo": "Memoization é uma técnica de armazenamento em cache que otimiza o desempenho de funções, memorizando resultados de chamadas anteriores para evitar recálculos."
+  },
+  {
+    "Pergunta": "O que é a arquitetura de rede 'peer-to-peer'?",
+    "Opcoes": {
+      A: "Um modelo de arquitetura centralizada",
+      B: "Um modelo onde os dispositivos se comunicam diretamente entre si",
+      C: "Um padrão de design para sistemas distribuídos",
+      D: "Uma técnica de redundância de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "Na arquitetura 'peer-to-peer', os dispositivos se comunicam diretamente entre si, sem a necessidade de um servidor central."
+  },
+  {
+    "Pergunta": "O que é 'Machine Learning'?",
+    "Opcoes": {
+      A: "Um algoritmo para compressão de dados",
+      B: "Um campo de estudo que envolve o desenvolvimento de algoritmos que permitem aos computadores aprenderem padrões a partir de dados",
+      C: "Um método para compactação de código fonte",
+      D: "Uma linguagem de programação para automação de tarefas"
+    },
+    "Resposta": "B",
+    "Motivo": "'Machine Learning' é um campo de estudo que envolve o desenvolvimento de algoritmos que permitem aos computadores aprenderem padrões a partir de dados, sem serem explicitamente programados."
+  },
+  {
+    "Pergunta": "O que é um 'framework' em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Uma linguagem de programação",
+      B: "Um conjunto de ferramentas e convenções que facilitam o desenvolvimento de software",
+      C: "Um tipo de banco de dados",
+      D: "Uma técnica de segurança cibernética"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'framework' em desenvolvimento de software é um conjunto de ferramentas e convenções que facilitam o desenvolvimento de aplicativos, proporcionando estrutura e funcionalidades predefinidas."
+  },
+  {
+    "Pergunta": "O que é um 'git repository'?",
+    "Opcoes": {
+      A: "Um repositório de dados para aprendizado de máquina",
+      B: "Um repositório de código fonte versionado pelo sistema de controle de versão Git",
+      C: "Uma interface gráfica para gerenciar projetos de software",
+      D: "Um banco de dados relacional"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'git repository' é um repositório de código fonte versionado pelo sistema de controle de versão Git, permitindo o acompanhamento das alterações ao longo do tempo."
+  },
+  {
+    "Pergunta": "O que é a Lei de Amdahl em computação?",
+    "Opcoes": {
+      A: "Uma teoria sobre a expansão do universo",
+      B: "Uma previsão de que a capacidade dos processadores aumenta exponencialmente",
+      C: "Uma lei que estabelece padrões de segurança em redes",
+      D: "Uma fórmula que descreve a melhoria de desempenho ao otimizar apenas parte de um sistema"
+    },
+    "Resposta": "D",
+    "Motivo": "A Lei de Amdahl descreve a melhoria de desempenho ao otimizar apenas parte de um sistema, indicando que o ganho total é limitado pela fração não otimizada."
+  },
+  {
+    "Pergunta": "O que é 'serverless computing'?",
+    "Opcoes": {
+      A: "Um modelo de cobrança baseado no tempo de uso de servidores",
+      B: "Um modelo onde os servidores não são gerenciados diretamente pelo desenvolvedor",
+      C: "Um padrão de design para sistemas distribuídos",
+      D: "Uma técnica para otimizar consultas em banco de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "'Serverless computing' é um modelo em que os servidores são gerenciados automaticamente pela plataforma, permitindo que os desenvolvedores se concentrem apenas no código e na lógica de negócios."
+  },
+  {
+    "Pergunta": "O que é a linguagem de programação Erlang conhecida por enfatizar?",
+    "Opcoes": {
+      A: "Facilidade de aprendizado",
+      B: "Desempenho extremo em jogos",
+      C: "Concorrência e tolerância a falhas",
+      D: "Integração com sistemas mainframe"
+    },
+    "Resposta": "C",
+    "Motivo": "Erlang é conhecida por enfatizar concorrência e tolerância a falhas, sendo projetada para sistemas de telecomunicações altamente disponíveis."
+  },
+  {
+    "Pergunta": "O que é o método 'Cross-Origin Resource Sharing' (CORS) em desenvolvimento web?",
+    "Opcoes": {
+      A: "Um método de compressão de imagens para transferência eficiente",
+      B: "Uma técnica para criptografar a comunicação entre cliente e servidor",
+      C: "Uma política de segurança para restringir requisições HTTP entre diferentes domínios",
+      D: "Uma abordagem para melhorar a velocidade de carregamento de páginas web"
+    },
+    "Resposta": "C",
+    "Motivo": "O CORS é uma política de segurança que permite ou restringe as requisições HTTP entre diferentes domínios, protegendo contra ataques de solicitação de origem cruzada não autorizados."
+  },
+
+
+    
+    {
+    "Pergunta": "O que é a 'Lei de Moore' e como ela está relacionada à tecnologia?",
+    "Opcoes": {
+      A: "Uma lei que estabelece a taxa de crescimento da inteligência artificial",
+      B: "Uma teoria que prevê a duplicação da capacidade dos dispositivos de armazenamento a cada dois anos",
+      C: "Um princípio fundamental da teoria dos grafos",
+      D: "Um conceito de segurança cibernética"
+    },
+    "Resposta": "B",
+    "Motivo": "A 'Lei de Moore' é uma observação feita por Gordon Moore, co-fundador da Intel, que prevê que a capacidade dos dispositivos de armazenamento, como chips de computador, duplicará aproximadamente a cada dois anos. Essa observação tem sido fundamental para o desenvolvimento tecnológico e o aumento da capacidade de processamento ao longo do tempo."
+  },
+  {
+    "Pergunta": "O que é a 'Teoria Quântica da Informação'?",
+    "Opcoes": {
+      A: "Uma teoria que descreve como a informação é processada em computadores quânticos",
+      B: "Um modelo de algoritmo de compressão de dados",
+      C: "Uma técnica de criptografia clássica",
+      D: "Um método para otimização de redes neurais"
+    },
+    "Resposta": "A",
+    "Motivo": "A 'Teoria Quântica da Informação' é uma área de estudo que descreve como a informação é processada em sistemas quânticos, incluindo computadores quânticos. Ela explora conceitos como bits quânticos (qubits), entrelaçamento quântico e algoritmos quânticos, proporcionando uma compreensão avançada da computação quântica e suas aplicações."
+  },
+  {
+    "Pergunta": "O que é a 'Lei de Zipf' e como ela se aplica a conjuntos de dados?",
+    "Opcoes": {
+      A: "Uma lei que descreve a distribuição de frequência de palavras em textos longos",
+      B: "Um princípio de otimização de algoritmos de compressão de imagens",
+      C: "Uma regra para a codificação de áudio em alta resolução",
+      D: "Um conceito de segurança de redes"
+    },
+    "Resposta": "A",
+    "Motivo": "A 'Lei de Zipf' é uma observação estatística que descreve a distribuição de frequência de palavras em textos longos. Ela afirma que algumas palavras são usadas com muita frequência, enquanto a maioria das palavras é usada raramente. Essa lei tem aplicações em processamento de linguagem natural e análise de dados linguísticos."
+  },
+  {
+    "Pergunta": "O que é a 'Criptografia Quântica' e como ela difere da criptografia clássica?",
+    "Opcoes": {
+      A: "Um método de criptografia baseado em algoritmos quânticos",
+      B: "Um sistema de codificação de mensagens usando códigos de barras quânticos",
+      C: "Um modelo de segurança cibernética para redes sem fio",
+      D: "Uma técnica de criptografia de dados em nuvem"
+    },
+    "Resposta": "A",
+    "Motivo": "A 'Criptografia Quântica' é um método de criptografia baseado em princípios quânticos, como entrelaçamento quântico e superposição. Ela difere da criptografia clássica por ser teoricamente invulnerável a ataques de computadores quânticos, oferecendo um nível avançado de segurança para a transmissão de dados."
+  },
+  {
+    "Pergunta": "O que é 'Blockchain' e como funciona?",
+    "Opcoes": {
+      A: "Um tipo de processamento de dados em nuvem",
+      B: "Uma técnica de criptografia para redes sociais",
+      C: "Um sistema descentralizado de registro de transações usando blocos encadeados",
+      D: "Uma versão avançada de processadores de computador"
+    },
+    "Resposta": "C",
+    "Motivo": "Blockchain é um sistema descentralizado de registro de transações que utiliza blocos encadeados. Cada bloco contém um conjunto de transações, e a cadeia de blocos é distribuída entre vários participantes da rede. Essa tecnologia é conhecida por sua segurança e transparência, sendo amplamente utilizada em criptomoedas, contratos inteligentes e outras aplicações."
+  },
+  {
+    "Pergunta": "O que é 'Edge Computing' e como difere do processamento em nuvem tradicional?",
+    "Opcoes": {
+      A: "Um modelo de otimização de algoritmos de aprendizado de máquina",
+      B: "Um método de resfriamento avançado para servidores de data center",
+      C: "Um modelo de processamento de dados próximo à fonte de dados, em vez de depender de um servidor centralizado",
+      D: "Uma técnica de codificação de vídeos em alta definição"
+    },
+    "Resposta": "C",
+    "Motivo": "Edge Computing é um modelo de processamento de dados que ocorre próximo à fonte de dados, em vez de depender de um servidor centralizado na nuvem. Isso reduz a latência e melhora o desempenho, sendo especialmente útil em casos de uso que exigem respostas rápidas, como internet das coisas, veículos autônomos e automação industrial."
+  },
+  {
+    "Pergunta": "O que é 'Deepfake' e quais são suas implicações?",
+    "Opcoes": {
+      A: "Um modelo de aprendizado de máquina para reconhecimento de voz",
+      B: "Uma técnica de edição de vídeo que usa inteligência artificial para criar vídeos falsos realistas",
+      C: "Uma versão avançada de tecnologia de reconhecimento facial",
+      D: "Uma técnica de otimização de algoritmos de compressão de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "Deepfake é uma técnica de edição de vídeo que utiliza inteligência artificial para criar vídeos falsos realistas, muitas vezes substituindo rostos e vozes em vídeos existentes. Isso levanta preocupações éticas, pois pode ser usado para criar conteúdo enganoso e prejudicial, destacando os desafios associados à disseminação de informações confiáveis na era digital."
+  },
+   {
+    "Pergunta": "O que é 'IoT' (Internet das Coisas) e como ela está transformando setores diversos?",
+    "Opcoes": {
+      A: "Um modelo de otimização de algoritmos de aprendizado de máquina",
+      B: "Uma versão avançada de processadores de computador",
+      C: "Um conceito que se refere à interconexão de dispositivos físicos pela internet para coletar e trocar dados",
+      D: "Um sistema de codificação de mensagens usando códigos de barras quânticos"
+    },
+    "Resposta": "C",
+    "Motivo": "A IoT (Internet das Coisas) é um conceito que se refere à interconexão de dispositivos físicos pela internet, permitindo que eles coletem e troquem dados. Isso está transformando setores diversos, como saúde, agricultura, transporte e manufatura, ao possibilitar monitoramento remoto, automação e análise de dados em tempo real."
+  },
+  {
+    "Pergunta": "O que são 'Algoritmos de Aprendizado Profundo' e como eles diferem de algoritmos de aprendizado de máquina convencionais?",
+    "Opcoes": {
+      A: "Um conjunto de técnicas de criptografia para redes sociais",
+      B: "Um método de resfriamento avançado para servidores de data center",
+      C: "Algoritmos que imitam o aprendizado humano, utilizando redes neurais profundas para análise de padrões complexos",
+      D: "Um modelo de processamento de dados em nuvem"
+    },
+    "Resposta": "C",
+    "Motivo": "Algoritmos de Aprendizado Profundo são algoritmos que imitam o aprendizado humano, utilizando redes neurais profundas para análise de padrões complexos. Eles diferem de algoritmos de aprendizado de máquina convencionais ao processar dados em camadas mais profundas, permitindo a extração de representações mais abstratas e sofisticadas."
+  },
+   {
+    "Pergunta": "O que é 'Machine Learning' e como ele difere de algoritmos tradicionais?",
+    "Opcoes": {
+      A: "Um método de segurança cibernética para proteger sistemas, redes e dados contra ameaças",
+      B: "Algoritmos baseados em regras lógicas pré-definidas",
+      C: "Um modelo de processamento de dados em nuvem",
+      D: "Um conjunto de técnicas que permite que os computadores aprendam com dados e melhorem suas performances ao longo do tempo"
+    },
+    "Resposta": "D",
+    "Motivo": "Machine Learning é um conjunto de técnicas que permite que os computadores aprendam com dados e melhorem suas performances ao longo do tempo. Ao contrário de algoritmos tradicionais baseados em regras lógicas pré-definidas, o Machine Learning permite que os sistemas aprendam padrões e façam previsões ou tomem decisões sem intervenção humana constante."
+  },
+  {
+    "Pergunta": "O que é 'Quantum Computing' e como ele se diferencia da computação clássica?",
+    "Opcoes": {
+      A: "Um sistema de codificação de mensagens usando códigos de barras quânticos",
+      B: "Um modelo de processamento de dados que utiliza supercomputadores",
+      C: "Um método de criptografia baseado em algoritmos quânticos",
+      D: "Um modelo de computação baseado em princípios quânticos, como qubits e superposição"
+    },
+    "Resposta": "D",
+    "Motivo": "Quantum Computing é um modelo de computação baseado em princípios quânticos, como qubits e superposição. Ao contrário da computação clássica, que utiliza bits clássicos que podem ser 0 ou 1, a computação quântica permite que qubits estejam em estados de superposição, proporcionando um potencial significativo para o processamento de certas tarefas complexas de forma mais eficiente."
+  },
+  {
+    "Pergunta": "O que são 'Criptomoedas' e como funciona o processo de mineração?",
+    "Opcoes": {
+      A: "Um modelo de otimização de algoritmos de compressão de dados",
+      B: "Uma versão avançada de processadores de computador",
+      C: "Uma forma de dinheiro digital que utiliza criptografia para garantir transações e controlar a criação de novas unidades",
+      D: "Um método de segurança cibernética para proteger sistemas, redes e dados contra ameaças"
+    },
+    "Resposta": "C",
+    "Motivo": "Criptomoedas são formas de dinheiro digital que utilizam criptografia para garantir transações e controlar a criação de novas unidades. O processo de mineração envolve a validação de transações e a adição de novos blocos ao blockchain, sendo realizado por mineradores que utilizam poder computacional para resolver problemas complexos, garantindo a segurança e integridade da rede."
+  },
+  
+   {
+    "Pergunta": "Explique o princípio de funcionamento da tecnologia de armazenamento de dados em SSDs em comparação com HDDs.",
+    "Opcoes": {
+      A: "SSDs utilizam discos magnéticos para armazenar dados de forma mais eficiente que os HDDs.",
+      B: "HDDs e SSDs armazenam dados de maneira semelhante, mas os SSDs são mais resistentes a impactos físicos.",
+      C: "SSDs utilizam memória flash, não possuindo partes móveis, resultando em acesso mais rápido aos dados em comparação com os HDDs.",
+      D: "HDDs usam células de memória para armazenar dados de maneira mais duradoura do que os SSDs."
+    },
+    "Resposta": "C",
+    "Motivo": "SSDs (Solid State Drives) utilizam memória flash para armazenar dados, não possuindo partes móveis como os HDDs (Hard Disk Drives). Isso resulta em acesso mais rápido aos dados, menor consumo de energia e maior resistência a impactos físicos."
+  },
+  {
+    "Pergunta": "Descreva o conceito de 'Redes Neurais' e como elas são aplicadas em problemas de aprendizado de máquina.",
+    "Opcoes": {
+      A: "Redes Neurais são sistemas de comunicação biológica em computadores, aplicadas para melhorar o desempenho de processadores.",
+      B: "Redes Neurais são algoritmos de compressão de dados utilizados em redes de computadores.",
+      C: "Redes Neurais são modelos computacionais inspirados no cérebro humano, aplicados em problemas de aprendizado de máquina para reconhecimento de padrões e tomada de decisões.",
+      D: "Redes Neurais são métodos de criptografia avançados para proteger transmissões de dados em redes sem fio."
+    },
+    "Resposta": "C",
+    "Motivo": "Redes Neurais são modelos computacionais inspirados no cérebro humano. Em aprendizado de máquina, elas são aplicadas para reconhecimento de padrões e tomada de decisões, utilizando camadas de neurônios artificiais para processar e aprender a partir de dados."
+  },
+  {
+    "Pergunta": "Explique a diferença entre IPv4 e IPv6 e por que a transição para IPv6 é considerada necessária.",
+    "Opcoes": {
+      A: "IPv4 e IPv6 são métodos de compressão de dados, sendo IPv6 uma versão mais recente e eficiente.",
+      B: "IPv4 e IPv6 são protocolos de segurança para redes, sendo IPv6 mais seguro que IPv4.",
+      C: "IPv4 e IPv6 são padrões de endereçamento IP, com IPv6 trazendo um espaço de endereçamento maior para suportar o crescimento da Internet.",
+      D: "IPv4 e IPv6 são técnicas de criptografia para garantir a privacidade dos dados transmitidos pela Internet."
+    },
+    "Resposta": "C",
+    "Motivo": "IPv4 e IPv6 são padrões de endereçamento IP. A transição para IPv6 é necessária devido à escassez de endereços IPv4, oferecendo um espaço de endereçamento significativamente maior para suportar o crescente número de dispositivos conectados à Internet."
+  },{
+    "Pergunta": "Descreva o funcionamento da tecnologia OLED em comparação com LCD e como ela é aplicada em dispositivos eletrônicos.",
+    "Opcoes": {
+      A: "OLED usa cristais líquidos para exibir imagens, superando o LCD em eficiência energética e qualidade de cor.",
+      B: "OLED e LCD funcionam de maneira semelhante, mas o OLED possui uma vida útil mais longa.",
+      C: "OLED utiliza diodos orgânicos para emissão de luz, proporcionando maior contraste e flexibilidade em comparação com o LCD.",
+      D: "OLED é uma técnica de criptografia para proteção de telas em dispositivos eletrônicos."
+    },
+    "Resposta": "C",
+    "Motivo": "OLED utiliza diodos orgânicos para emissão de luz, eliminando a necessidade de retroiluminação como no LCD. Isso resulta em telas mais finas, maior flexibilidade e melhor contraste nas imagens."
+  },
+  {
+    "Pergunta": "Explique o conceito de 'Internet das Coisas (IoT)' e como ela influencia o cenário tecnológico.",
+    "Opcoes": {
+      A: "IoT refere-se à integração de softwares em dispositivos móveis para comunicação eficiente.",
+      B: "IoT é um método de compressão de dados em redes sem fio.",
+      C: "IoT é a interconexão de dispositivos físicos através da internet, permitindo coleta e compartilhamento de dados para automação e análise.",
+      D: "IoT é uma técnica de criptografia para proteger dispositivos eletrônicos de ataques virtuais."
+    },
+    "Resposta": "C",
+    "Motivo": "A 'Internet das Coisas (IoT)' refere-se à interconexão de dispositivos físicos pela internet. Isso possibilita a coleta e compartilhamento de dados entre esses dispositivos, permitindo automação, análise de dados em tempo real e melhorando a eficiência em diversos setores."
+  },
+  {
+    "Pergunta": "Como a tecnologia de carregamento sem fio funciona em dispositivos eletrônicos e quais são suas vantagens em comparação com métodos de carregamento convencionais?",
+    "Opcoes": {
+      A: "Carregamento sem fio utiliza campos magnéticos para transferir energia, eliminando a necessidade de cabos.",
+      B: "Carregamento sem fio é um método de compressão de energia para dispositivos móveis.",
+      C: "Carregamento sem fio utiliza luz solar para carregar dispositivos eletrônicos, sendo mais eficiente que métodos convencionais.",
+      D: "Carregamento sem fio é uma técnica de criptografia para proteção de dados durante o carregamento."
+    },
+    "Resposta": "A",
+    "Motivo": "O carregamento sem fio utiliza campos magnéticos para transferir energia entre uma base e um dispositivo, eliminando a necessidade de cabos. Suas vantagens incluem conveniência, menor desgaste nos conectores e maior facilidade de uso."
+  },
+  {
+    "Pergunta": "Explique o funcionamento da tecnologia de impressão 3D e suas aplicações em diversos setores.",
+    "Opcoes": {
+      A: "Impressão 3D utiliza papel especial para criar objetos tridimensionais, sendo aplicada principalmente na indústria gráfica.",
+      B: "Impressão 3D constrói objetos camada por camada a partir de materiais como plástico, metal e cerâmica, com aplicações em prototipagem, medicina e manufatura.",
+      C: "Impressão 3D é um método de compressão de dados para criar representações físicas de modelos digitais.",
+      D: "Impressão 3D utiliza realidade aumentada para criar objetos virtuais no ambiente físico."
+    },
+    "Resposta": "B",
+    "Motivo": "A tecnologia de impressão 3D constrói objetos camada por camada a partir de materiais diversos. Suas aplicações vão desde prototipagem rápida até produção de peças personalizadas em setores como medicina, manufatura e design."
+  },{
+    "Pergunta": "Como funcionam os veículos elétricos em comparação com os veículos a combustão e quais são os principais desafios enfrentados pelos veículos elétricos?",
+    "Opcoes": {
+      A: "Veículos elétricos utilizam células de combustível, superando veículos a combustão em eficiência e autonomia.",
+      B: "Veículos elétricos funcionam com baterias elétricas, proporcionando menor impacto ambiental e custos operacionais em comparação com veículos a combustão.",
+      C: "Veículos elétricos usam motores a diesel para reduzir as emissões, sendo uma alternativa mais sustentável.",
+      D: "Veículos elétricos são alimentados por etanol, eliminando a dependência de combustíveis fósseis."
+    },
+    "Resposta": "B",
+    "Motivo": "Veículos elétricos funcionam com baterias elétricas, oferecendo vantagens ambientais e custos operacionais reduzidos em comparação com veículos a combustão. Os desafios incluem a autonomia limitada das baterias e a infraestrutura de recarga em desenvolvimento."
+  },
+  {
+    "Pergunta": "Explique a importância da tecnologia 5G na evolução das comunicações móveis e suas possíveis aplicações em diversos setores.",
+    "Opcoes": {
+      A: "Tecnologia 5G é um método de compressão de dados em redes móveis, proporcionando maior velocidade de transmissão.",
+      B: "5G é a quinta geração de comunicação móvel, oferecendo maior velocidade, menor latência e suportando aplicações como internet das coisas, realidade virtual e aumentada.",
+      C: "Tecnologia 5G é uma técnica de criptografia avançada para proteção de dados em dispositivos móveis.",
+      D: "5G utiliza ondas de rádio AM para comunicação, garantindo maior alcance e eficiência."
+    },
+    "Resposta": "B",
+    "Motivo": "5G é a quinta geração de comunicação móvel, proporcionando maior velocidade, menor latência e suportando aplicações avançadas como internet das coisas (IoT), realidade virtual e aumentada, e carros autônomos."
+  },
+  {
+    "Pergunta": "Como a tecnologia Blockchain funciona e quais são os benefícios dessa tecnologia em comparação com os métodos tradicionais de registro e transação?",
+    "Opcoes": {
+      A: "Blockchain utiliza redes sociais para criar registros descentralizados, garantindo maior transparência.",
+      B: "Blockchain é um método de compressão de dados para transações financeiras, oferecendo eficiência e segurança.",
+      C: "Blockchain é um sistema descentralizado de registros encadeados, proporcionando transparência, segurança e resistência a alterações.",
+      D: "Tecnologia Blockchain é um protocolo de segurança para redes Wi-Fi, protegendo informações pessoais."
+    },
+    "Resposta": "C",
+    "Motivo": "Blockchain é um sistema descentralizado de registros encadeados, garantindo transparência, segurança e resistência a alterações. Sua aplicação vai além de transações financeiras, sendo utilizada em contratos inteligentes, cadeias de suprimentos e autenticação de dados."
+  },
+  {
+    "Pergunta": "Explique a tecnologia de realidade aumentada e suas aplicações em campos como educação, medicina e entretenimento.",
+    "Opcoes": {
+      A: "Realidade aumentada é um método de compressão de imagens para jogos em dispositivos móveis.",
+      B: "Realidade aumentada combina elementos virtuais com o ambiente real, proporcionando experiências enriquecidas em campos como educação, medicina e entretenimento.",
+      C: "Tecnologia de realidade aumentada utiliza hologramas para criar ambientes virtuais em dispositivos eletrônicos.",
+      D: "Realidade aumentada é uma técnica de criptografia para proteger dados visuais transmitidos por dispositivos de realidade virtual."
+    },
+    "Resposta": "B",
+    "Motivo": "Realidade aumentada combina elementos virtuais com o ambiente real, oferecendo experiências enriquecidas em educação, medicina e entretenimento. Suas aplicações incluem simulações médicas, treinamento industrial e jogos interativos."
+  },
+  {
+    "Pergunta": "Como a nanotecnologia é aplicada em dispositivos eletrônicos e em que aspectos ela contribui para o avanço tecnológico?",
+    "Opcoes": {
+      A: "Nanotecnologia utiliza ímãs para criar dispositivos eletrônicos em escala nanométrica.",
+      B: "Nanotecnologia é um método de compressão de dados para processadores, melhorando a eficiência.",
+      C: "Nanotecnologia envolve a manipulação de materiais em nível atômico e molecular, contribuindo para o desenvolvimento de dispositivos eletrônicos menores e mais eficientes.",
+      D: "Nanotecnologia é uma técnica de criptografia para proteção de informações transmitidas por redes sem fio."
+    },
+    "Resposta": "C",
+    "Motivo": "Nanotecnologia envolve a manipulação de materiais em nível atômico e molecular. Em dispositivos eletrônicos, ela contribui para o desenvolvimento de componentes menores e mais eficientes, melhorando o desempenho e a funcionalidade."
+  },{
+    "Pergunta": "Como a tecnologia de edição de genes CRISPR-Cas9 funciona e quais são as implicações éticas associadas à sua utilização?",
+    "Opcoes": {
+      A: "CRISPR-Cas9 é um método de compressão de dados em biologia molecular, permitindo uma análise mais eficiente de sequências genéticas.",
+      B: "Edição de genes CRISPR-Cas9 utiliza sequências de RNA para modificar genes de forma precisa, enfrentando implicações éticas relacionadas à edição do genoma humano.",
+      C: "CRISPR-Cas9 é uma técnica de criptografia para proteção de informações genéticas.",
+      D: "Edição de genes CRISPR-Cas9 é baseada em princípios da realidade virtual para manipulação de informações genéticas."
+    },
+    "Resposta": "B",
+    "Motivo": "A edição de genes CRISPR-Cas9 utiliza sequências de RNA para modificar genes de forma precisa. Implicações éticas incluem questões sobre edição do genoma humano, potenciais riscos não intencionais e considerações morais."
+  },
+  {
+    "Pergunta": "Explique a importância da criptografia em comunicações digitais e como os algoritmos de criptografia garantem a segurança da informação.",
+    "Opcoes": {
+      A: "Criptografia é um método de compressão de dados em redes de comunicação, garantindo maior eficiência.",
+      B: "Algoritmos de criptografia protegem a confidencialidade e integridade dos dados através da codificação e decodificação de informações, assegurando a segurança em comunicações digitais.",
+      C: "Criptografia é um protocolo de segurança para redes sociais, protegendo informações compartilhadas online.",
+      D: "Algoritmos de criptografia são baseados em princípios da inteligência artificial para proteção de dados em transmissões digitais."
+    },
+    "Resposta": "B",
+    "Motivo": "Algoritmos de criptografia protegem a confidencialidade e integridade dos dados através da codificação e decodificação, assegurando a segurança em comunicações digitais, incluindo transações online, troca de mensagens e proteção de dados sensíveis."
+  },  "Pergunta": "Descreva os princípios fundamentais por trás da arquitetura RISC (Reduced Instruction Set Computing) em processadores e como ela se diferencia da arquitetura CISC (Complex Instruction Set Computing).",
+    "Opcoes": {
+      A: "Arquitetura RISC utiliza um conjunto reduzido de instruções, executando operações de forma mais eficiente do que a arquitetura CISC, que possui um conjunto mais complexo.",
+      B: "Arquitetura RISC é baseada em linguagens de programação mais simples, enquanto a CISC utiliza linguagens de programação complexas para otimizar o desempenho.",
+      C: "Arquitetura RISC é voltada para sistemas operacionais específicos, enquanto a arquitetura CISC é mais versátil e compatível com diferentes ambientes.",
+      D: "Arquitetura RISC utiliza tecnologias de virtualização, enquanto a CISC prioriza a execução direta de instruções complexas."
+    },
+    "Resposta": "A",
+    "Motivo": "A arquitetura RISC utiliza um conjunto reduzido de instruções, executando operações de forma mais eficiente em comparação com a arquitetura CISC, que possui um conjunto mais complexo. Essa abordagem favorece a simplificação e aceleração da execução de instruções."
+  },
+  {
+    "Pergunta": "Explique o conceito de pipelining em processadores e como ele contribui para o aumento do desempenho no processamento de instruções.",
+    "Opcoes": {
+      A: "Pipelining é uma técnica de compressão de dados que melhora a eficiência do processamento de instruções em processadores modernos.",
+      B: "Pipelining envolve o paralelismo de instruções, dividindo o processamento em estágios sequenciais para aumentar a taxa de execução de instruções em um ciclo de clock.",
+      C: "Pipelining é uma abordagem de programação para otimizar a execução de instruções em ambientes de desenvolvimento de software.",
+      D: "Pipelining é uma estratégia de segurança em processadores que protege contra ataques de injeção de código malicioso."
+    },
+    "Resposta": "B",
+    "Motivo": "Pipelining envolve o paralelismo de instruções, dividindo o processamento em estágios sequenciais para aumentar a taxa de execução de instruções em um ciclo de clock. Isso contribui significativamente para o aumento do desempenho em processadores modernos."
+  },
+  {
+    "Pergunta": "Como funciona a técnica de criptografia homomórfica e quais são os benefícios e desafios associados ao seu uso em segurança da informação?",
+    "Opcoes": {
+      A: "Criptografia homomórfica permite a execução de operações em dados criptografados sem a necessidade de descriptografar, oferecendo benefícios em privacidade, mas enfrentando desafios em desempenho.",
+      B: "Criptografia homomórfica é uma técnica de compressão de dados que permite o armazenamento eficiente de informações criptografadas.",
+      C: "Criptografia homomórfica é utilizada para proteger redes sem fio contra ataques cibernéticos.",
+      D: "Técnica de criptografia homomórfica é baseada em princípios de inteligência artificial para proteção de dados sensíveis."
+    },
+    "Resposta": "A",
+    "Motivo": "Criptografia homomórfica permite a execução de operações em dados criptografados sem a necessidade de descriptografar. Isso oferece benefícios em privacidade, permitindo processamento seguro de dados sensíveis, mas enfrenta desafios em desempenho, pois as operações sobre dados criptografados geralmente são mais intensivas computacionalmente."
+  },
+  {
+    "Pergunta": "Descreva o funcionamento dos algoritmos de roteamento em redes de computadores e como protocolos como o OSPF (Open Shortest Path First) contribuem para a eficiência no encaminhamento de pacotes.",
+    "Opcoes": {
+      A: "Algoritmos de roteamento determinam o caminho mais curto para a transmissão de dados em redes, e protocolos como OSPF otimizam a escolha de rotas através de métricas como a largura de banda disponível.",
+      B: "Algoritmos de roteamento são responsáveis por compactar dados antes da transmissão em redes, e protocolos como OSPF garantem a segurança durante a comunicação.",
+      C: "Roteamento em redes utiliza criptografia para proteger pacotes de dados, e protocolos como OSPF são baseados em inteligência artificial para otimização.",
+      D: "Algoritmos de roteamento escolhem caminhos aleatórios para a transmissão de dados em redes, e protocolos como OSPF garantem a entrega eficiente sem interferências."
+    },
+    "Resposta": "A",
+    "Motivo": "Algoritmos de roteamento determinam o caminho mais curto para a transmissão de dados em redes, e protocolos como OSPF otimizam a escolha de rotas utilizando métricas como a largura de banda disponível. Isso contribui para a eficiência no encaminhamento"},
+    
+    {
+    "Pergunta": "Explique o princípio de funcionamento de um transistor e como ele é amplamente utilizado em eletrônica.",
+    "Opcoes": {
+      A: "Transistor é um dispositivo que comprime sinais elétricos em circuitos eletrônicos.",
+      B: "Transistor é um componente semicondutor que controla o fluxo de corrente em um circuito, sendo essencial em amplificadores e circuitos lógicos.",
+      C: "Transistor é um tipo de bateria recarregável utilizado em dispositivos eletrônicos.",
+      D: "Transistor é um sensor utilizado para medir temperatura em circuitos eletrônicos."
+    },
+    "Resposta": "B",
+    "Motivo": "O transistor é um componente semicondutor que controla o fluxo de corrente em um circuito. Essa capacidade de amplificar e modular sinais elétricos torna o transistor essencial em amplificadores e circuitos lógicos, sendo fundamental para a eletrônica moderna."
+  },
+  {
+    "Pergunta": "Como funcionam os painéis solares fotovoltaicos na geração de energia elétrica a partir da luz solar, e quais são os desafios associados a essa tecnologia?",
+    "Opcoes": {
+      A: "Painéis solares convertem luz solar em calor para gerar eletricidade, enfrentando desafios na eficiência da conversão.",
+      B: "Painéis solares fotovoltaicos convertem a luz solar diretamente em eletricidade por meio do efeito fotovoltaico, enfrentando desafios na eficiência e armazenamento da energia produzida.",
+      C: "Painéis solares utilizam energia térmica para gerar eletricidade em células termofotovoltaicas, eliminando desafios associados à eficiência.",
+      D: "Painéis solares geram eletricidade a partir de reações químicas, enfrentando desafios na durabilidade dos materiais utilizados."
+    },
+    "Resposta": "B",
+    "Motivo": "Painéis solares fotovoltaicos convertem a luz solar diretamente em eletricidade por meio do efeito fotovoltaico. Desafios incluem a eficiência da conversão, armazenamento da energia produzida e materiais utilizados na fabricação dos painéis."
+  },
+  {
+    "Pergunta": "Explique o princípio por trás da ressonância magnética e como essa tecnologia é aplicada em diagnósticos médicos.",
+    "Opcoes": {
+      A: "Ressonância magnética utiliza ondas sonoras para criar imagens do corpo humano, sendo uma técnica de diagnóstico médico.",
+      B: "Ressonância magnética aproveita o alinhamento de átomos em campos magnéticos para gerar imagens detalhadas de tecidos internos, sendo uma poderosa ferramenta de diagnóstico médico.",
+      C: "Ressonância magnética utiliza radiação ionizante para obter imagens de alta resolução, sendo uma técnica de diagnóstico médico avançada.",
+      D: "Ressonância magnética é baseada em princípios de inteligência artificial para interpretar imagens médicas."
+    },
+    "Resposta": "B",
+    "Motivo": "A ressonância magnética aproveita o alinhamento de átomos em campos magnéticos para gerar imagens detalhadas de tecidos internos. Essa técnica é uma poderosa ferramenta de diagnóstico médico, proporcionando imagens de alta resolução sem o uso de radiação ionizante."
+  },
+  {
+    "Pergunta": "Como os robôs cirúrgicos são utilizados em procedimentos médicos e quais são os benefícios associados a essa tecnologia?",
+    "Opcoes": {
+      A: "Robôs cirúrgicos utilizam inteligência artificial para guiar instrumentos médicos durante procedimentos, proporcionando maior precisão e controle.",
+      B: "Robôs cirúrgicos são controlados remotamente por cirurgiões, eliminando a necessidade de intervenção humana durante procedimentos médicos.",
+      C: "Robôs cirúrgicos são baseados em realidade aumentada para simular procedimentos antes da realização efetiva.",
+      D: "Robôs cirúrgicos são equipamentos de ressonância magnética utilizados em procedimentos médicos para obtenção de imagens em tempo real."
+    },
+    "Resposta": "A",
+    "Motivo": "Robôs cirúrgicos utilizam inteligência artificial para guiar instrumentos médicos durante procedimentos, proporcionando maior precisão e controle. Essa tecnologia permite aos cirurgiões realizar intervenções menos invasivas e mais precisas, resultando em recuperações mais rápidas para os pacientes."
+  },
+  
+    ] ;
+    const perguntasInformatica =[
+      
+      
+      
+          
+{
+  "Pergunta": "Qual é o principal protocolo de comunicação utilizado na internet?",
+  "Opcoes": {
+    A: "FTP",
+    B: "SMTP",
+    C: "HTTP",
+    D: "TCP/IP"
+  },
+  "Resposta": "D",
+  "Motivo": "O TCP/IP (Transmission Control Protocol/Internet Protocol) é o conjunto de protocolos de comunicação fundamental para a internet, garantindo a transmissão eficiente de dados entre dispositivos."
+},
+{
+    "Pergunta": "O que significa a sigla HTML em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Hypertext Markup Language",
+      B: "Hyperlink and Text Markup Language",
+      C: "High-level Text Management Language",
+      D: "Hypertext Management and Linking"
+    },
+    "Resposta": "A",
+    "Motivo": "HTML significa Hypertext Markup Language, sendo a linguagem padrão para a criação e estruturação de páginas web."
+  },
+  {
+    "Pergunta": "O que significa a sigla CSS em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Cascading Style Sheet",
+      B: "Computer Style Sheet",
+      C: "Creative Style Sheet",
+      D: "Code Style Sheet"
+    },
+    "Resposta": "A",
+    "Motivo": "CSS significa Cascading Style Sheet, sendo uma linguagem usada para estilizar a apresentação de documentos escritos em HTML."
+  },
+     {
+    "Pergunta": "O que é a técnica de programação 'memoization'?",
+    "Opcoes": {
+      A: "Uma técnica para compressão de código fonte",
+      B: "Um método para otimizar a execução de loops",
+      C: "Um padrão de design para interfaces de usuário",
+      D: "Uma técnica de armazenamento em cache para otimizar o desempenho de funções"
+    },
+    "Resposta": "D",
+    "Motivo": "Memoization é uma técnica de armazenamento em cache que otimiza o desempenho de funções, memorizando resultados de chamadas anteriores para evitar recálculos."
+  },
+  {
+    "Pergunta": "O que é a arquitetura de rede 'peer-to-peer'?",
+    "Opcoes": {
+      A: "Um modelo de arquitetura centralizada",
+      B: "Um modelo onde os dispositivos se comunicam diretamente entre si",
+      C: "Um padrão de design para sistemas distribuídos",
+      D: "Uma técnica de redundância de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "Na arquitetura 'peer-to-peer', os dispositivos se comunicam diretamente entre si, sem a necessidade de um servidor central."
+  },
+  {
+    "Pergunta": "O que é 'Machine Learning'?",
+    "Opcoes": {
+      A: "Um algoritmo para compressão de dados",
+      B: "Um campo de estudo que envolve o desenvolvimento de algoritmos que permitem aos computadores aprenderem padrões a partir de dados",
+      C: "Um método para compactação de código fonte",
+      D: "Uma linguagem de programação para automação de tarefas"
+    },
+    "Resposta": "B",
+    "Motivo": "'Machine Learning' é um campo de estudo que envolve o desenvolvimento de algoritmos que permitem aos computadores aprenderem padrões a partir de dados, sem serem explicitamente programados."
+  },
+  {
+    "Pergunta": "O que é um 'framework' em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Uma linguagem de programação",
+      B: "Um conjunto de ferramentas e convenções que facilitam o desenvolvimento de software",
+      C: "Um tipo de banco de dados",
+      D: "Uma técnica de segurança cibernética"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'framework' em desenvolvimento de software é um conjunto de ferramentas e convenções que facilitam o desenvolvimento de aplicativos, proporcionando estrutura e funcionalidades predefinidas."
+  },
+  {
+    "Pergunta": "O que é um 'git repository'?",
+    "Opcoes": {
+      A: "Um repositório de dados para aprendizado de máquina",
+      B: "Um repositório de código fonte versionado pelo sistema de controle de versão Git",
+      C: "Uma interface gráfica para gerenciar projetos de software",
+      D: "Um banco de dados relacional"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'git repository' é um repositório de código fonte versionado pelo sistema de controle de versão Git, permitindo o acompanhamento das alterações ao longo do tempo."
+  },
+  {
+    "Pergunta": "O que é a Lei de Amdahl em computação?",
+    "Opcoes": {
+      A: "Uma teoria sobre a expansão do universo",
+      B: "Uma previsão de que a capacidade dos processadores aumenta exponencialmente",
+      C: "Uma lei que estabelece padrões de segurança em redes",
+      D: "Uma fórmula que descreve a melhoria de desempenho ao otimizar apenas parte de um sistema"
+    },
+    "Resposta": "D",
+    "Motivo": "A Lei de Amdahl descreve a melhoria de desempenho ao otimizar apenas parte de um sistema, indicando que o ganho total é limitado pela fração não otimizada."
+  },
+  {
+    "Pergunta": "O que é 'serverless computing'?",
+    "Opcoes": {
+      A: "Um modelo de cobrança baseado no tempo de uso de servidores",
+      B: "Um modelo onde os servidores não são gerenciados diretamente pelo desenvolvedor",
+      C: "Um padrão de design para sistemas distribuídos",
+      D: "Uma técnica para otimizar consultas em banco de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "'Serverless computing' é um modelo em que os servidores são gerenciados automaticamente pela plataforma, permitindo que os desenvolvedores se concentrem apenas no código e na lógica de negócios."
+  },
+  {
+    "Pergunta": "O que é a linguagem de programação Erlang conhecida por enfatizar?",
+    "Opcoes": {
+      A: "Facilidade de aprendizado",
+      B: "Desempenho extremo em jogos",
+      C: "Concorrência e tolerância a falhas",
+      D: "Integração com sistemas mainframe"
+    },
+    "Resposta": "C",
+    "Motivo": "Erlang é conhecida por enfatizar concorrência e tolerância a falhas, sendo projetada para sistemas de telecomunicações altamente disponíveis."
+  },
+  {
+    "Pergunta": "O que é o método 'Cross-Origin Resource Sharing' (CORS) em desenvolvimento web?",
+    "Opcoes": {
+      A: "Um método de compressão de imagens para transferência eficiente",
+      B: "Uma técnica para criptografar a comunicação entre cliente e servidor",
+      C: "Uma política de segurança para restringir requisições HTTP entre diferentes domínios",
+      D: "Uma abordagem para melhorar a velocidade de carregamento de páginas web"
+    },
+    "Resposta": "C",
+    "Motivo": "O CORS é uma política de segurança que permite ou restringe as requisições HTTP entre diferentes domínios, protegendo contra ataques de solicitação de origem cruzada não autorizados."
+  },{
+    "Pergunta": "O que é um 'hash' em criptografia?",
+    "Opcoes": {
+      A: "Um algoritmo para compressão de dados",
+      B: "Uma técnica de ofuscação de código-fonte",
+      C: "Uma função matemática unidirecional para gerar códigos únicos",
+      D: "Uma linguagem de programação segura"
+    },
+    "Resposta": "C",
+    "Motivo": "Em criptografia, um 'hash' é uma função matemática unidirecional que gera uma sequência única de caracteres para representar dados, sendo usado para verificar a integridade e autenticidade dos mesmos."
+  },
+  {
+    "Pergunta": "O que é o protocolo HTTPS em uma URL?",
+    "Opcoes": {
+      A: "Hypertext Transfer Protocol Secure",
+      B: "Hypertext Transfer Protocol Standard",
+      C: "Hypertext and Text Processing Service",
+      D: "Hypertext and Encryption Service"
+    },
+    "Resposta": "A",
+    "Motivo": "O HTTPS (Hypertext Transfer Protocol Secure) é a versão segura do HTTP, garantindo a transferência segura de dados entre o navegador e o servidor."
+  },
+  {
+    "Pergunta": "O que é um 'container' na tecnologia de virtualização?",
+    "Opcoes": {
+      A: "Um dispositivo de armazenamento externo",
+      B: "Uma unidade de processamento central em um servidor",
+      C: "Uma instância isolada de um sistema operacional e aplicativos",
+      D: "Uma interface gráfica para gerenciar recursos de rede"
+    },
+    "Resposta": "C",
+    "Motivo": "Um 'container' na virtualização é uma instância isolada que inclui um sistema operacional e as dependências necessárias para executar aplicativos, proporcionando portabilidade e eficiência."
+  },
+  {
+    "Pergunta": "Qual é a principal diferença entre linguagens de programação interpretadas e compiladas?",
+    "Opcoes": {
+      A: "Linguagens interpretadas são mais eficientes em termos de desempenho",
+      B: "Linguagens compiladas são traduzidas para código de máquina antes da execução",
+      C: "Linguagens interpretadas são traduzidas antes da execução, enquanto as compiladas são interpretadas durante a execução",
+      D: "Não há diferença significativa entre ambas"
+    },
+    "Resposta": "B",
+    "Motivo": "Linguagens compiladas são traduzidas para código de máquina antes da execução, resultando em um desempenho geralmente mais rápido do programa."
+  },
+  {
+    "Pergunta": "O que é a arquitetura de microsserviços em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Um padrão de design para interfaces de usuário",
+      B: "Um método para compactação de código fonte",
+      C: "Uma abordagem de desenvolvimento que divide um aplicativo em serviços independentes",
+      D: "Uma técnica para otimização de consultas em banco de dados"
+    },
+    "Resposta": "C",
+    "Motivo": "A arquitetura de microsserviços envolve o desenvolvimento de um aplicativo como uma coleção de serviços independentes, facilitando a escalabilidade "},
+    
+     {
+    "Pergunta": "Qual é o conceito fundamental por trás do paradigma de programação funcional?",
+    "Opcoes": {
+      A: "Estruturas de controle de fluxo",
+      B: "Imutabilidade e funções puras",
+      C: "Programação orientada a objetos",
+      D: "Manipulação direta de registros de memória"
+    },
+    "Resposta": "B",
+    "Motivo": "Na programação funcional, a imutabilidade e o uso de funções puras são centrais, permitindo um estilo de codificação mais declarativo e evitando efeitos colaterais."
+  },
+  {
+    "Pergunta": "Em redes de computadores, o que é um 'subnet'?",
+    "Opcoes": {
+      A: "Um endereço IP público exclusivo",
+      B: "Uma porção de uma rede IP maior dividida em sub-redes menores",
+      C: "Um protocolo de roteamento avançado",
+      D: "Um tipo de firewall"
+    },
+    "Resposta": "B",
+    "Motivo": "Uma 'subnet' é uma subdivisão de uma rede IP maior para melhorar a gestão de endereços e o desempenho da rede."
+  },
+  {
+    "Pergunta": "Qual é a diferença entre Java e JavaScript?",
+    "Opcoes": {
+      A: "Java é apenas para backend, enquanto JavaScript é exclusivamente para frontend",
+      B: "Java é compilado e orientado a objetos, enquanto JavaScript é interpretado e baseado em protótipos",
+      C: "JavaScript é uma versão simplificada de Java",
+      D: "Java é usado apenas para scripts de servidor, enquanto JavaScript é para scripts de cliente"
+    },
+    "Resposta": "B",
+    "Motivo": "Java é compilado e fortemente tipado, enquanto JavaScript é interpretado e baseado em protótipos, sendo mais flexível."
+  },
+  {
+    "Pergunta": "O que é uma injeção de SQL?",
+    "Opcoes": {
+      A: "Um método de otimização de consultas em bancos de dados",
+      B: "Uma técnica para injetar código malicioso em instruções SQL",
+      C: "Um processo de criação dinâmica de tabelas em um banco de dados",
+      D: "Um padrão de design para a criação de interfaces gráficas em SQL"
+    },
+    "Resposta": "B",
+    "Motivo": "Injeção de SQL é uma vulnerabilidade onde um atacante pode inserir comandos SQL maliciosos em entradas de dados, comprometendo a integridade do banco de dados."
+  },
+  {
+    "Pergunta": "O que é o conceito de 'big-O' na análise de algoritmos?",
+    "Opcoes": {
+      A: "Uma linguagem de programação popular",
+      B: "Uma notação para descrever o desempenho ou complexidade de um algoritmo",
+      C: "Um padrão de codificação para algoritmos eficientes",
+      D: "Uma técnica para compressão de dados em algoritmos"
+    },
+    "Resposta": "B",
+    "Motivo": "O 'big-O' é uma notação que descreve a complexidade assintótica de um algoritmo, indicando como o desempenho do algoritmo se comporta em relação ao tamanho da entrada."
+  },
+  {
+    "Pergunta": "O que significa a sigla CSS em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Cascading Style Sheet",
+      B: "Computer Style Sheet",
+      C: "Creative Style Sheet",
+      D: "Code Style Sheet"
+    },
+    "Resposta": "A",
+    "Motivo": "CSS significa Cascading Style Sheet, sendo uma linguagem usada para estilizar a apresentação de documentos escritos em HTML."
+  },
+  {
+    "Pergunta": "O que significa a sigla HTML em termos de desenvolvimento web?",
+    "Opcoes": {
+      A: "Hypertext Markup Language",
+      B: "Hyperlink and Text Markup Language",
+      C: "High-level Text Management Language",
+      D: "Hypertext Management and Linking"
+    },
+    "Resposta": "A",
+    "Motivo": "HTML significa Hypertext Markup Language, sendo a linguagem padrão para a criação e estruturação de páginas web."
+  },
+      
+      
+       {
+    "Pergunta": "Explique o conceito de virtualização de servidores e como ela beneficia a eficiência e a flexibilidade em ambientes de data center.",
+    "Opcoes": {
+      A: "Virtualização de servidores refere-se à simulação de ambientes virtuais para jogos online.",
+      B: "É uma técnica de compactação de dados em servidores para economizar espaço de armazenamento.",
+      C: "Virtualização de servidores permite a criação de instâncias virtuais independentes em um único servidor físico, otimizando recursos, facilitando a escalabilidade e melhorando a utilização de hardware.",
+      D: "Envolve a substituição de servidores físicos por servidores virtuais em nuvem, melhorando a confiabilidade da infraestrutura de TI."
+    },
+    "Resposta": "C",
+    "Motivo": "A virtualização de servidores permite a criação de instâncias virtuais independentes em um único servidor físico, otimizando recursos, facilitando a escalabilidade e melhorando a utilização de hardware em ambientes de data center."
+  },
+  {
+    "Pergunta": "Descreva a arquitetura de microsserviços e como ela se diferencia de abordagens monolíticas no desenvolvimento de software.",
+    "Opcoes": {
+      A: "Microsserviços são dispositivos de armazenamento em miniatura utilizados em computadores pessoais.",
+      B: "Refere-se à compactação de código-fonte em pequenos módulos para facilitar a manutenção de software.",
+      C: "Arquitetura de microsserviços é um modelo de desenvolvimento de software em que aplicações são construídas como conjuntos independentes de serviços, proporcionando flexibilidade, escalabilidade e facilitando atualizações contínuas.",
+      D: "Envolve a utilização exclusiva de uma única aplicação monolítica para todas as funcionalidades, limitando a modularidade e a escalabilidade do sistema."
+    },
+    "Resposta": "C",
+    "Motivo": "A arquitetura de microsserviços é um modelo de desenvolvimento de software em que aplicações são construídas como conjuntos independentes de serviços, proporcionando flexibilidade, escalabilidade e facilitando atualizações contínuas, em contraste com abordagens monolíticas."
+  },
+  {
+    "Pergunta": "Qual o propósito da injeção SQL em segurança de banco de dados?",
+    "Opcoes": {
+      A: "Injeção SQL é uma técnica para compressão de dados em bancos de dados.",
+      B: "Refere-se a um método de criptografia de senhas em sistemas.",
+      C: "Injeção SQL é uma vulnerabilidade que permite a execução de comandos maliciosos em bancos de dados por meio da inserção de código SQL não sanitizado.",
+      D: "É uma prática para melhorar a velocidade de consultas SQL em bancos de dados."
+    },
+    "Resposta": "C",
+    "Motivo": "Injeção SQL é uma vulnerabilidade que permite a execução de comandos maliciosos em bancos de dados por meio da inserção de código SQL não sanitizado."
+  },
+  {
+    "Pergunta": "O que é um ataque de força bruta em segurança da informação?",
+    "Opcoes": {
+      A: "Ataque de força bruta é um método para compactação de arquivos em servidores.",
+      B: "Refere-se a uma técnica de criptografia para proteção de senhas.",
+      C: "Ataque de força bruta é uma tentativa sistemática de quebrar uma senha ou descobrir uma chave por meio de tentativas repetitivas.",
+      D: "É uma prática para melhorar a velocidade de acesso a redes de computadores."
+    },
+    "Resposta": "C",
+    "Motivo": "Ataque de força bruta é uma tentativa sistemática de quebrar uma senha ou descobrir uma chave por meio de tentativas repetitivas."
+  },
+  {
+    "Pergunta": "O que é um algoritmo de hash e qual é sua aplicação em segurança de senhas?",
+    "Opcoes": {
+      A: "Algoritmo de hash é um método para compressão de imagens em servidores.",
+      B: "Refere-se a uma técnica de criptografia de mensagens.",
+      C: "Algoritmo de hash é uma função que converte dados em uma sequência fixa de caracteres, sendo utilizado para armazenar senhas de forma segura.",
+      D: "É uma prática para melhorar a velocidade de consultas em bancos de dados."
+    },
+    "Resposta": "C",
+    "Motivo": "Algoritmo de hash é uma função que converte dados em uma sequência fixa de caracteres, sendo utilizado para armazenar senhas de forma segura."
+  },
+      ];
+    const perguntasProgramacao =[
+      
+        {
+    "Pergunta": "O que é um 'callback' em programação assíncrona?",
+    "Opcoes": {
+      A: "Um tipo de variável",
+      B: "Uma função passada como argumento para outra função",
+      C: "Uma estrutura de controle de fluxo",
+      D: "Um operador lógico"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'callback' em programação assíncrona é uma função que é passada como argumento para outra função, sendo chamada de volta após a conclusão de uma operação assíncrona."
+  },
+  {
+    "Pergunta": "O que é o conceito de 'escopo' em programação?",
+    "Opcoes": {
+      A: "A quantidade de memória disponível para um programa",
+      B: "O conjunto de regras sintáticas de uma linguagem de programação",
+      C: "A área do código onde uma variável é visível",
+      D: "A velocidade de execução de um programa"
+    },
+    "Resposta": "C",
+    "Motivo": "O 'escopo' em programação se refere à área do código onde uma variável é visível e pode ser acessada, delimitando sua disponibilidade."
+  },
+  {
+    "Pergunta": "O que é 'polimorfismo' em programação orientada a objetos?",
+    "Opcoes": {
+      A: "A capacidade de uma classe herdar de múltiplas classes",
+      B: "A capacidade de uma função retornar vários valores",
+      C: "A capacidade de uma variável armazenar diferentes tipos de dados",
+      D: "A capacidade de uma classe ter múltiplos métodos com o mesmo nome"
+    },
+    "Resposta": "D",
+    "Motivo": "O 'polimorfismo' em programação orientada a objetos refere-se à capacidade de uma classe ter múltiplos métodos com o mesmo nome, mas com comportamentos diferentes."
+  },
+  {
+    "Pergunta": "O que é 'refatoração' em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Um método para depurar código",
+      B: "Uma técnica para otimizar o desempenho de um programa",
+      C: "Um processo de reestruturação do código sem alterar seu comportamento externo",
+      D: "Uma prática para adicionar novos recursos a um sistema existente"
+    },
+    "Resposta": "C",
+    "Motivo": "'Refatoração' em desenvolvimento de software é o processo de reestruturar o código sem alterar seu comportamento externo, visando melhorar sua legibilidade, manutenibilidade e eficiência."
+  },
+  {
+    "Pergunta": "O que é um 'ponteiro' em linguagens de programação como C e C++?",
+    "Opcoes": {
+      A: "Uma variável que armazena o endereço de outra variável",
+      B: "Um operador lógico para comparação de valores",
+      C: "Um tipo de dado para armazenar números decimais",
+      D: "Um método para alocação dinâmica de memória"
+    },
+    "Resposta": "A",
+    "Motivo": "Um 'ponteiro' em linguagens como C e C++ é uma variável que armazena o endereço de outra variável, permitindo manipular diretamente a memória."
+  },
+  {
+    "Pergunta": "O que é o padrão de projeto 'Singleton'?",
+    "Opcoes": {
+      A: "Um padrão para projetar interfaces gráficas",
+      B: "Um padrão que garante a existência de apenas uma instância de uma classe",
+      C: "Um método para tratamento de exceções",
+      D: "Um modelo para programação concorrente"
+    },
+    "Resposta": "B",
+    "Motivo": "O padrão de projeto 'Singleton' garante a existência de apenas uma instância de uma classe, sendo útil quando é necessária uma única instância globalmente acessível."
+  },
+  {
+    "Pergunta": "O que é 'debugging' em programação?",
+    "Opcoes": {
+      A: "Um método para otimização de código",
+      B: "Uma prática para documentar o código-fonte",
+      C: "Um processo de identificação e correção de erros em um programa",
+      D: "Uma técnica para criptografar dados"
+    },
+    "Resposta": "C",
+    "Motivo": "'Debugging' em programação é o processo de identificação e correção de erros em um programa, visando garantir seu correto funcionamento."
+  },
+  {
+    "Pergunta": "O que é 'herança' em programação orientada a objetos?",
+    "Opcoes": {
+      A: "Um processo para criar cópias exatas de objetos existentes",
+      B: "Um modelo para implementar interfaces gráficas",
+      C: "A capacidade de uma classe adquirir propriedades e comportamentos de outra classe",
+      D: "Um método para organizar variáveis em uma estrutura de dados"
+    },
+    "Resposta": "C",
+    "Motivo": "'Herança' em programação orientada a objetos é a capacidade de uma classe adquirir propriedades e comportamentos de outra classe, facilitando a reutilização de código."
+  },
+  {
+    "Pergunta": "O que é 'agile' em metodologias de desenvolvimento de software?",
+    "Opcoes": {
+      A: "Um modelo de programação para ambientes gráficos",
+      B: "Uma técnica para otimização de consultas em banco de dados",
+      C: "Uma abordagem iterativa e incremental para o desenvolvimento de software",
+      D: "Um padrão de projeto para interfaces de usuário"
+    },
+    "Resposta": "C",
+    "Motivo": "'Agile' em metodologias de desenvolvimento de software refere-se a uma abordagem iterativa e incremental, focada na entrega contínua de software funcional e na colaboração efetiva entre equipes."
+  },
+  {
+    "Pergunta": "O que é um 'loop for' em linguagens de programação?",
+    "Opcoes": {
+      A: "Um método para tratamento de exceções",
+      B: "Uma estrutura de controle de fluxo",
+      C: "Uma função para ordenação de dados",
+      D: "Um operador lógico para comparação de valores"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'loop for' em linguagens de programação é uma estrutura de controle de fluxo utilizada para repetição "},
+    {
+    "Pergunta": "O que é um 'framework' em desenvolvimento web?",
+    "Opcoes": {
+      A: "Uma linguagem de programação",
+      B: "Um conjunto de ferramentas e convenções que facilitam o desenvolvimento de software",
+      C: "Um tipo de banco de dados",
+      D: "Uma técnica de segurança cibernética"
+    },
+    "Resposta": "B",
+    "Motivo": "Um 'framework' em desenvolvimento web é um conjunto de ferramentas e convenções que facilitam o desenvolvimento de aplicativos, proporcionando estrutura e funcionalidades predefinidas."
+  },
+  {
+    "Pergunta": "O que é 'Git' em desenvolvimento de software?",
+    "Opcoes": {
+      A: "Um sistema de gerenciamento de banco de dados",
+      B: "Uma linguagem de programação",
+      C: "Um sistema de controle de versão distribuído",
+      D: "Uma técnica de otimização de código"
+    },
+    "Resposta": "C",
+    "Motivo": "'Git' é um sistema de controle de versão distribuído amplamente utilizado no desenvolvimento de software, permitindo o acompanhamento de alterações no código fonte ao longo do tempo."
+  },
+  {
+    "Pergunta": "O que é 'API' em programação?",
+    "Opcoes": {
+      A: "Application Programming Interface",
+      B: "Automated Program Integration",
+      C: "Advanced Programming Interface",
+      D: "Application Process Integration"
+    },
+    "Resposta": "A",
+    "Motivo": "'API' significa Application Programming Interface, sendo um conjunto de regras que permite que diferentes softwares se comuniquem entre si, facilitando a integração e o desenvolvimento de aplicativos."
+  },
+  {
+    "Pergunta": "O que é 'SQL' em bancos de dados?",
+    "Opcoes": {
+      A: "Structured Query Language",
+      B: "Simple Query Language",
+      C: "System Query Language",
+      D: "Sequential Query Language"
+    },
+    "Resposta": "A",
+    "Motivo": "'SQL' significa Structured Query Language, sendo uma linguagem de programação utilizada para gerenciar e manipular dados em bancos de dados relacionais."
+  },
+      {
+    "Pergunta": "O que é 'HTML' em desenvolvimento web?",
+    "Opcoes": {
+      A: "Hypertext Markup Language",
+      B: "Hyperlink and Text Management Language",
+      C: "High-Level Text Modeling Language",
+      D: "Home and Textual Markup Language"
+    },
+    "Resposta": "A",
+    "Motivo": "'HTML' significa Hypertext Markup Language, sendo uma linguagem de marcação utilizada para estruturar o conteúdo de páginas web."
+  },
+  {
+    "Pergunta": "O que é 'CSS' em desenvolvimento web?",
+    "Opcoes": {
+      A: "Cascading Style Sheet",
+      B: "Computer Style Sheet",
+      C: "Creative Style Sheet",
+      D: "Code Style Sheet"
+    },
+    "Resposta": "A",
+    "Motivo": "'CSS' significa Cascading Style Sheet, sendo uma linguagem usada para estilizar a apresentação de documentos escritos em HTML."
+  },
+  
+  {
+    "Pergunta": "O que o trecho de código em JavaScript a seguir faz?\n\njavascript\nconst array = [1, 2, 3, 4, 5];\nconst soma = array.reduce((total, num) => total + num, 0);\nconsole.log(soma);\n```",
+    "Opcoes": {
+      A: "Calcula a média dos elementos no array",
+      B: "Concatena todos os elementos do array em uma string",
+      C: "Remove elementos duplicados do array",
+      D: "Calcula a soma dos elementos no array"
+    },
+    "Resposta": "D",
+    "Motivo": "O trecho utiliza o método `reduce` para calcular a soma dos elementos no array, resultando na saída 15."
+  },
+  {
+    "Pergunta": "O que a seguinte função em Python faz?\n\n```python\ndef square_numbers(numbers):\n  return [num ** 2 for num in numbers]\n\nresult = square_numbers([1, 2, 3, 4, 5])\nprint(result)\n```",
+    "Opcoes": {
+      A: "Calcula a raiz quadrada de cada número na lista",
+      B: "Verifica se todos os números na lista são quadrados perfeitos",
+      C: "Remove os números pares da lista",
+      D: "Eleva cada número ao quadrado na lista"
+    },
+    "Resposta": "D",
+    "Motivo": "A função utiliza uma lista de compreensão para elevar cada número ao quadrado na lista original, resultando em [1, 4, 9, 16, 25]."
+  },
+  {
+    "Pergunta": "O que o seguinte trecho de código em Java realiza?\n\n```java\npublic static int factorial(int n) {\n  if (n == 0 || n == 1) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}\n```",
+    "Opcoes": {
+      A: "Calcula o módulo de um número",
+      B: "Calcula a média de uma lista de números",
+      C: "Calcula o fatorial de um número",
+      D: "Ordena uma lista de números"
+    },
+    "Resposta": "C",
+    "Motivo": "O código implementa uma função recursiva para calcular o fatorial de um número inteiro positivo."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C a seguir faz?\n\n```c\n#include <stdio.h>\n\nint main() {\n  int n = 5;\n  while (n >= 0) {\n    printf(\"%d \", n);\n    n--;\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Imprime os números de 0 a 5",
+      B: "Calcula a média de uma lista de números",
+      C: "Inverte a ordem dos elementos em uma lista",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "A",
+    "Motivo": "O código utiliza um loop 'while' para imprimir os números de 5 a 0, resultando na saída '5 4 3 2 1 0'."
+  },
+  {
+    "Pergunta": "O que faz o trecho de código em Python a seguir?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\ndoubled_numbers = list(map(lambda x: x * 2, numbers))\nprint(doubled_numbers)\n```",
+    "Opcoes": {
+      A: "Calcula a soma dos números no array",
+      B: "Filtra os números pares no array",
+      C: "Duplica cada número no array",
+      D: "Remove os números ímpares no array"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho utiliza a função `map` com uma função lambda para duplicar cada número no array, resultando em [2, 4, 6, 8, 10]."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C++ a seguir realiza?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n  for (int i = 0; i < 5; i++) {\n    cout << i * i << ' ';\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Calcula a média dos quadrados de números",
+      B: "Imprime os quadrados dos números de 0 a 4",
+      C: "Inverte a ordem dos quadrados dos números",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "B",
+    "Motivo": "O código utiliza um loop 'for' para imprimir os quadrados dos números de 0 a 4, resultando na saída '0 1 4 9 16'."
+  },
+  {
+    "Pergunta": "O que o trecho de código em JavaScript faz?\n\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filteredNumbers = numbers.filter(num => num % 2 !== 0);\nconsole.log(filteredNumbers);\n```",
+    "Opcoes": {
+      A: "Remove os números pares do array",
+      B: "Calcula a média dos números no array",
+      C: "Ordena os números em ordem crescente",
+      D: "Duplica cada número ímpar no array"
+    },
+    "Resposta": "A",
+    "Motivo": "O trecho utiliza o método `filter` para criar um novo array contendo apenas os números ímpares do array original."
+  },
+  
+  {
+    "Pergunta": "O que o trecho de código em JavaScript a seguir faz?\n\n```javascript\nconst array = [1, 2, 3, 4, 5];\nconst soma = array.reduce((total, num) => total + num, 0);\nconsole.log(soma);\n```",
+    "Opcoes": {
+      A: "Calcula a média dos elementos no array",
+      B: "Concatena todos os elementos do array em uma string",
+      C: "Remove elementos duplicados do array",
+      D: "Calcula a soma dos elementos no array"
+    },
+    "Resposta": "D",
+    "Motivo": "O trecho utiliza o método `reduce` para calcular a soma dos elementos no array, resultando na saída 15."
+  },
+  {
+    "Pergunta": "O que a seguinte função em Python faz?\n\n```python\ndef square_numbers(numbers):\n  return [num ** 2 for num in numbers]\n\nresult = square_numbers([1, 2, 3, 4, 5])\nprint(result)\n```",
+    "Opcoes": {
+      A: "Calcula a raiz quadrada de cada número na lista",
+      B: "Verifica se todos os números na lista são quadrados perfeitos",
+      C: "Remove os números pares da lista",
+      D: "Eleva cada número ao quadrado na lista"
+    },
+    "Resposta": "D",
+    "Motivo": "A função utiliza uma lista de compreensão para elevar cada número ao quadrado na lista original, resultando em [1, 4, 9, 16, 25]."
+  },
+  {
+    "Pergunta": "O que o seguinte trecho de código em Java realiza?\n\n```java\npublic static int factorial(int n) {\n  if (n == 0 || n == 1) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}\n```",
+    "Opcoes": {
+      A: "Calcula o módulo de um número",
+      B: "Calcula a média de uma lista de números",
+      C: "Calcula o fatorial de um número",
+      D: "Ordena uma lista de números"
+    },
+    "Resposta": "C",
+    "Motivo": "O código implementa uma função recursiva para calcular o fatorial de um número inteiro positivo."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C a seguir faz?\n\n```c\n#include <stdio.h>\n\nint main() {\n  int n = 5;\n  while (n >= 0) {\n    printf(\"%d \", n);\n    n--;\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Imprime os números de 0 a 5",
+      B: "Calcula a média de uma lista de números",
+      C: "Inverte a ordem dos elementos em uma lista",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "A",
+    "Motivo": "O código utiliza um loop 'while' para imprimir os números de 5 a 0, resultando na saída '5 4 3 2 1 0'."
+  },
+  {
+    "Pergunta": "O que faz o trecho de código em Python a seguir?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\ndoubled_numbers = list(map(lambda x: x * 2, numbers))\nprint(doubled_numbers)\n```",
+    "Opcoes": {
+      A: "Calcula a soma dos números no array",
+      B: "Filtra os números pares no array",
+      C: "Duplica cada número no array",
+      D: "Remove os números ímpares no array"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho utiliza a função `map` com uma função lambda para duplicar cada número no array, resultando em [2, 4, 6, 8, 10]."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C++ a seguir realiza?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n  for (int i = 0; i < 5; i++) {\n    cout << i * i << ' ';\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Calcula a média dos quadrados de números",
+      B: "Imprime os quadrados dos números de 0 a 4",
+      C: "Inverte a ordem dos quadrados dos números",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "B",
+    "Motivo": "O código utiliza um loop 'for' para imprimir os quadrados dos números de 0 a 4, resultando na saída '0 1 4 9 16'."
+  },
+  {
+    "Pergunta": "O que o trecho de código em JavaScript faz?\n\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filteredNumbers = numbers.filter(num => num % 2 !== 0);\nconsole.log(filteredNumbers);\n```",
+    "Opcoes": {
+      A: "Remove os números pares do array",
+      B: "Calcula a média dos números no array",
+      C: "Ordena os números em ordem crescente",
+      D: "Duplica cada número ímpar no array"
+    },
+    "Resposta": "A",
+    "Motivo": "O trecho utiliza o método `filter` para criar um novo array contendo apenas os números ímpares do array original."
+  },
+  {
+    "Pergunta": "O que realiza a seguinte função em Python?\n\n```python\ndef count_vowels(word):\n  return sum(1 for char in word if char.lower() in 'aeiou')\n\nresult = count_vowels('Hello World')\nprint(result)\n```",
+    "Opcoes": {
+      A: "Conta o número total de caracteres na palavra",
+      B: "Calcula a média dos caracteres na palavra",
+      C: "Remove as vogais da palavra",
+      D: "Conta o número de vogais na palavra"
+    },
+    "Resposta": "D",
+    "Motivo": "A função utiliza uma expressão geradora para contar o número de vogais na palavra 'Hello World', resultando em 3."
+  },
+  
+  {
+    "Pergunta": "Qual é a saída esperada para o seguinte trecho de código em JavaScript?\n\n```javascript\nconsole.log(3 + '2');\n```",
+    "Opcoes": {
+      A: "'32'",
+      B: "5",
+      C: "NaN",
+      D: "Erro de compilação"
+    },
+    "Resposta": "A",
+    "Motivo": "A operação de adição entre um número e uma string em JavaScript resulta na concatenação da string, então a saída seria '32'."
+  },
+  {
+    "Pergunta": "O que faz o código em Python a seguir?\n\n```python\n  def fibonacci(n):\n    if n <= 1:\n      return n\n    else:\n      return fibonacci(n-1) + fibonacci(n-2)\n\n  print(fibonacci(5))\n```",
+    "Opcoes": {
+      A: "Calcula o fatorial de um número",
+      B: "Ordena uma lista de números",
+      C: "Gera a sequência de Fibonacci até o quinto termo",
+      D: "Verifica se um número é primo"
+    },
+    "Resposta": "C",
+    "Motivo": "O código implementa a função recursiva de Fibonacci e imprime o quinto termo da sequência, que é 5."
+  },
+  {
+    "Pergunta": "O que representa o seguinte trecho de código em Java?\n\n```java\npublic class Car {\n  private String model;\n\n  public Car(String model) {\n    this.model = model;\n  }\n\n  public String getModel() {\n    return model;\n  }\n}\n```",
+    "Opcoes": {
+      A: "Um programa que simula a condução de um carro",
+      B: "Uma classe que representa um carro com um modelo",
+      C: "Um código para ordenar carros por modelo",
+      D: "Um script para imprimir modelos de carros"
+    },
+    "Resposta": "B",
+    "Motivo": "Este trecho de código em Java define uma classe 'Car' com um atributo 'model' e métodos para obter e configurar esse modelo."
+  },
+  {
+    "Pergunta": "O que a seguinte função em JavaScript realiza?\n\n```javascript\nfunction reverseString(str) {\n  return str.split('').reverse().join('');\n}\n\nconsole.log(reverseString('hello'));\n```",
+    "Opcoes": {
+      A: "Conta o número de caracteres em uma string",
+      B: "Converte uma string para minúsculas",
+      C: "Inverte os caracteres de uma string",
+      D: "Remove espaços em branco de uma string"
+    },
+    "Resposta": "C",
+    "Motivo": "A função 'reverseString' em JavaScript inverte os caracteres de uma string, então a saída seria 'olleh' para o exemplo dado."
+  },
+  {
+    "Pergunta": "O que o código em C++ a seguir faz?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n  int numbers[] = {1, 2, 3, 4, 5};\n\n  for (int i = 0; i < 5; i++) {\n    cout << numbers[i] << ' ';\n  }\n\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Imprime os números de 1 a 5",
+      C: "Inverte a ordem dos elementos em uma lista",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "B",
+    "Motivo": "Este código em C++ declara um array de números e utiliza um loop 'for' para imprimir cada elemento, resultando em '1 2 3 4 5'."
+  },
+  {
+    "Pergunta": "O que realiza a seguinte função em Python?\n\n```python\ndef filter_even(numbers):\n  return list(filter(lambda x: x % 2 == 0, numbers))\n\nresult = filter_even([1, 2, 3, 4, 5])\nprint(result)\n```",
+    "Opcoes": {
+      A: "Calcula a soma dos números pares em uma lista",
+      B: "Ordena os números em ordem crescente",
+      C: "Filtra os números pares de uma lista",
+      D: "Inverte a ordem dos elementos em uma lista"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho de código em Python utiliza a função `filter` para criar uma lista contendo apenas os números pares da lista original."
+  },
+  {
+    "Pergunta": "Considere a seguinte classe em Java. O que representa essa classe e como ela poderia ser utilizada?\n\n```java\npublic class DatabaseConnector {\n  private Connection connection;\n\n  public DatabaseConnector(String url, String username, String password) {\n    // Implementação do construtor\n  }\n\n  public void connect() {\n    // Implementação para conectar ao banco de dados\n  }\n\n  public void disconnect() {\n    // Implementação para desconectar do banco de dados\n  }\n\n  public ResultSet executeQuery(String query) {\n    // Implementação para executar uma consulta SQL\n    return null;\n  }\n}\n```",
+    "Opcoes": {
+      A: "Uma classe para realizar operações aritméticas em um banco de dados",
+      B: "Uma classe para manipular imagens em um banco de dados",
+      C: "Uma classe para conectar e executar consultas em um banco de dados",
+      D: "Uma classe para gerenciar a interface gráfica de um aplicativo"
+    },
+    "Resposta": "C",
+    "Motivo": "Essa classe representa um conector de banco de dados em Java, permitindo a conexão, desconexão e execução de consultas SQL."
+  },
+  {
+    "Pergunta": "Considere a seguinte função em Python que utiliza o módulo `requests` para fazer uma requisição HTTP. O que essa função faz?\n\n```python\nimport requests\n\ndef fetch_data(url):\n    response = requests.get(url)\n    if response.status_code == 200:\n        return response.json()\n    else:\n        return None\n```\n",
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Faz uma requisição HTTP e retorna os dados em JSON se a resposta for bem-sucedida",
+      C: "Ordena uma lista de strings em ordem alfabética",
+      D: "Converte uma string para minúsculas"
+    },
+    "Resposta": "B",
+    "Motivo": "A função `fetch_data` utiliza o módulo `requests` para fazer uma requisição HTTP e retorna os dados em formato JSON se a resposta for bem-sucedida."
+  },
+  {
+    "Pergunta": "Dado o trecho de código em JavaScript abaixo, o que ele faz?\n\n```javascript\nasync function fetchData(url) {\n  const response = await fetch(url);\n  const data = await response.json();\n  return data;\n}\n```",
+    "Opcoes": {
+      A: "Faz uma requisição HTTP e retorna os dados em formato JSON de forma assíncrona",
+      B: "Calcula a média de uma lista de números",
+      C: "Ordena uma lista de strings em ordem alfabética de forma assíncrona",
+      D: "Converte uma string para minúsculas de forma assíncrona"
+    },
+    "Resposta": "A",
+    "Motivo": "A função `fetchData` utiliza o conceito de async/await para fazer uma requisição HTTP de forma assíncrona e retorna os dados em formato JSON."
+  },
+  {
+    "Pergunta": "Considere o seguinte trecho de código em Python que utiliza a biblioteca `numpy`. O que esse código faz?\n\n```python\nimport numpy as np\n\narray = np.array([1, 2, 3, 4, 5])\nmean = np.mean(array)\nresult = array - mean\n```",
+    "Opcoes": {
+      A: "Calcula a média de uma lista de números",
+      B: "Remove os elementos duplicados de uma lista",
+      C: "Calcula a diferença entre cada elemento da lista e a média",
+      D: "Ordena uma lista de números"
+    },
+    "Resposta": "C",
+    "Motivo": "O código utiliza a biblioteca `numpy` para calcular a média do array e, em seguida, calcula a diferença entre cada elemento do array e a média."
+  },
+  {
+    "Pergunta": "Dada a classe em C# abaixo, o que ela representa e como poderia ser utilizada?\n\n```csharp\npublic class Logger\n{\n    private static Logger instance;\n    private List<string> logMessages;\n\n    private Logger()\n    {\n        logMessages = new List<string>();\n    }\n\n    public static Logger Instance\n    {\n        get\n        {\n            if (instance == null)\n            {\n                instance = new Logger();\n            }\n            return instance;\n        }\n    }\n\n    public void LogMessage(string message)\n    {\n        logMessages.Add(message);\n    }\n\n    public List<string> GetLogMessages()\n    {\n        return logMessages;\n    }\n}\n```",
+    "Opcoes": {
+      A: "Uma classe para manipular imagens em um banco de dados",
+      B: "Uma classe para representar um registro de log em uma aplicação",
+      C: "Uma classe para realizar operações aritméticas em um banco de dados",
+      D: "Uma classe para gerenciar a interface gráfica de um aplicativo"
+    },
+    "Resposta": "B",
+    "Motivo": "Essa classe em C# representa um padrão de design Singleton para um logger, permitindo o registro de mensagens de log em uma aplicação."
+  },
+  {
+    "Pergunta": "O que o trecho de código em JavaScript a seguir faz?\n\n```javascript\nconst array = [1, 2, 3, 4, 5];\nconst soma = array.reduce((total, num) => total + num, 0);\nconsole.log(soma);\n```",
+    "Opcoes": {
+      A: "Calcula a média dos elementos no array",
+      B: "Concatena todos os elementos do array em uma string",
+      C: "Remove elementos duplicados do array",
+      D: "Calcula a soma dos elementos no array"
+    },
+    "Resposta": "D",
+    "Motivo": "O trecho utiliza o método `reduce` para calcular a soma dos elementos no array, resultando na saída 15."
+  },
+  {
+    "Pergunta": "O que a seguinte função em Python faz?\n\n```python\ndef square_numbers(numbers):\n  return [num ** 2 for num in numbers]\n\nresult = square_numbers([1, 2, 3, 4, 5])\nprint(result)\n```",
+    "Opcoes": {
+      A: "Calcula a raiz quadrada de cada número na lista",
+      B: "Verifica se todos os números na lista são quadrados perfeitos",
+      C: "Remove os números pares da lista",
+      D: "Eleva cada número ao quadrado na lista"
+    },
+    "Resposta": "D",
+    "Motivo": "A função utiliza uma lista de compreensão para elevar cada número ao quadrado na lista original, resultando em [1, 4, 9, 16, 25]."
+  },
+  {
+    "Pergunta": "O que o seguinte trecho de código em Java realiza?\n\n```java\npublic static int factorial(int n) {\n  if (n == 0 || n == 1) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}\n```",
+    "Opcoes": {
+      A: "Calcula o módulo de um número",
+      B: "Calcula a média de uma lista de números",
+      C: "Calcula o fatorial de um número",
+      D: "Ordena uma lista de números"
+    },
+    "Resposta": "C",
+    "Motivo": "O código implementa uma função recursiva para calcular o fatorial de um número inteiro positivo."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C a seguir faz?\n\n```c\n#include <stdio.h>\n\nint main() {\n  int n = 5;\n  while (n >= 0) {\n    printf(\"%d \", n);\n    n--;\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Imprime os números de 0 a 5",
+      B: "Calcula a média de uma lista de números",
+      C: "Inverte a ordem dos elementos em uma lista",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "A",
+    "Motivo": "O código utiliza um loop 'while' para imprimir os números de 5 a 0, resultando na saída '5 4 3 2 1 0'."
+  },
+  {
+    "Pergunta": "O que faz o trecho de código em Python a seguir?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\ndoubled_numbers = list(map(lambda x: x * 2, numbers))\nprint(doubled_numbers)\n```",
+    "Opcoes": {
+      A: "Calcula a soma dos números no array",
+      B: "Filtra os números pares no array",
+      C: "Duplica cada número no array",
+      D: "Remove os números ímpares no array"
+    },
+    "Resposta": "C",
+    "Motivo": "O trecho utiliza a função `map` com uma função lambda para duplicar cada número no array, resultando em [2, 4, 6, 8, 10]."
+  },
+  {
+    "Pergunta": "O que o trecho de código em C++ a seguir realiza?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n  for (int i = 0; i < 5; i++) {\n    cout << i * i << ' ';\n  }\n  return 0;\n}\n```",
+    "Opcoes": {
+      A: "Calcula a média dos quadrados de números",
+      B: "Imprime os quadrados dos números de 0 a 4",
+      C: "Inverte a ordem dos quadrados dos números",
+      D: "Multiplica cada número por 2"
+    },
+    "Resposta": "B",
+    "Motivo": "O código utiliza um loop 'for' para imprimir os quadrados dos números de 0 a 4, resultando na saída '0 1 4 9 16'."
+  },
+  {
+    "Pergunta": "O que o trecho de código em JavaScript faz?\n\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filteredNumbers = numbers.filter(num => num % 2 !== 0);\nconsole.log(filteredNumbers);\n```",
+    "Opcoes": {
+      A: "Remove os números pares do array",
+      B: "Calcula a média dos números no array",
+      C: "Ordena os números em ordem crescente",
+      D: "Duplica cada número ímpar no array"
+    },
+    "Resposta": "A",
+    "Motivo": "O trecho utiliza o método `filter` para criar um novo array contendo apenas os números ímpares do array original."
+  },
+  
+    {
+    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+  import React, { useState } from 'react';
+const ToggleComponent = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
+  return (
+    <div>
+      <button onClick={toggleVisibility}>Toggle Visibility</button>
+      {isVisible && <p>This content is visible.</p>}
+    </div>
+  );
+};
+",
+    "Opcoes": {
+      A: "Renderiza uma lista de elementos filtrados",
+      B: "Exibe um botão que alterna a visibilidade de um conteúdo",
+      C: "Define um formulário de entrada de dados",
+      D: "Cria uma tabela de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "O componente ToggleComponent exibe um botão que alterna a visibilidade de um conteúdo condicionalmente, dependendo do estado do isVisible."
+  },
+  {
+    "Pergunta": "Dado o seguinte componente funcional em React, o que ele faz?\n\n
+import React, { useState, useEffect } from 'react';
+
+cnst DataFetchingComponent = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Simulação de uma requisição assíncrona
+    setTimeout(() => {
+      setData("Dados recuperados com sucesso!");
+    }, 2000);
+  }, []);
+
+  return (
+    <div>
+      {data ? <p>{data}</p> : <p>Carregando dados...</p>}
+    </div>
+  );
+};
+",
+    "Opcoes": {
+      A: "Renderiza uma galeria de imagens",
+      B: "Exibe uma mensagem de confirmação de formulário",
+      C: "Realiza uma requisição assíncrona e exibe os dados recuperados",
+      D: "Define um cronômetro interativo"
+    },
+    "Resposta": "C",
+    "Motivo": "O componente `DataFetchingComponent` realiza uma simulação de requisição assíncrona e exibe os dados recuperados ou uma mensagem de carregamento."
+  },
+  {
+    "Pergunta": "O que o seguinte componente funcional em React faz?\n\njsx
+import React, { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
+
+const ThemedComponent = () => {
+  const theme = useContext(ThemeContext);
+
+  return (
+    <div style={{ background: theme.background, color: theme.text }}>
+      <p>This component is themed!</p>
+    </div>
+  );
+};
+",
+    "Opcoes": {
+      A: "Renderiza uma lista de elementos filtrados",
+      B: "Exibe uma mensagem de erro em caso de falha na requisição",
+      C: "Renderiza um componente com base no contexto do tema",
+      D: "Cria um formulário de entrada de dados"
+    },
+    "Resposta": "C",
+    "Motivo": "O componente ThemedComponent renderiza um componente com base no contexto do tema, utilizando o hook useContext para acessar as informações do tema."
+  }  {
+    "Pergunta": "Considere o seguinte componente funcional em React. O que esse componente faz?\n\n
+import React from 'react';
+
+const Greeting = ({ name }) => {
+  return <p>Hello, {name}!</p>;
+};
+
+export default Greeting;
+",
+    "Opcoes": {
+      A: "Renderiza um botão interativo",
+      B: "Exibe uma mensagem de saudação com o nome fornecido",
+      C: "Cria uma lista ordenada de elementos",
+      D: "Define um formulário de entrada de dados"
+    },
+    "Resposta": "B",
+    "Motivo": "O componente  Greeting renderiza uma mensagem de saudação com o nome fornecido como propriedade."
+  },
+  {
+    "Pergunta": "Dado o seguinte componente em React, qual é a principal característica que o torna um componente funcional?\n\n
+import React from 'react';
+
+const Counter = ({ count }) => {
+  return <p>Count: {count}</p>;
+};
+",
+    "Opcoes": {
+      A: "Utiliza um estado local",
+      B: "Aceita propriedades (props) como parâmetros",
+      C: "Define métodos de ciclo de vida",
+      D: "Renderiza uma lista de elementos"
+    },
+    "Resposta": "B",
+    "Motivo": "A principal característica que torna o componente Counter funcional é que ele aceita propriedades (props) como parâmetros."
+  },
+  {
+    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+import React, { useState } from 'react';
+
+const ClickCounter = () => {
+  const [clicks, setClicks] = useState(0);
+
+  const handleButtonClick = () => {
+    setClicks(clicks + 1);
+  };
+
+  return (
+    <div>
+      <p>Clicks: {clicks}</p>
+      <button onClick={handleButtonClick}>Increment</button>
+    </div>
+  );
+};
+",
+    "Opcoes": {
+      A: "Renderiza uma tabela de dados",
+      B: "Exibe a contagem de cliques e permite incrementá-la",
+      C: "Define um formulário de entrada de dados",
+      D: "Cria um menu de navegação"
+    },
+    "Resposta": "B",
+    "Motivo": "O componente ClickCounter renderiza a contagem de cliques e permite incrementá-la quando o botão é clicado, utilizando o estado local com useState."
+  },
+  {
+    "Pergunta": "O que o seguinte componente funcional em React faz?\n\n
+import React, { useEffect, useState } from 'react';
+
+const Timer = () => {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSeconds(seconds + 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [seconds]);
+
+  return <p>Elapsed Time: {seconds} seconds</p>;
+};",
+    "Opcoes": {
+      A: "Renderiza um calendário interativo",
+      B: "Exibe um temporizador que incrementa a cada segundo",
+      C: "Define uma barra de progresso animada",
+      D: "Cria uma galeria de imagens"
+    },
+    "Resposta": "B",
+    "Motivo": "O componente Timer exibe um temporizador que incrementa a cada segundo, utilizando o hook useEffect para gerenciar o ciclo de vida."
+  },
+  
+  
+      
+      ]
     const perguntasQuimica = []
     const perguntasBiologia = []
     const perguntasMatematica = []
