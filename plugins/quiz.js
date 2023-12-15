@@ -210,8 +210,29 @@ else {
         "Resposta": "C", 
         "Motivo": "A teoria da relatividade restrita, proposta por Einstein, lida com fenômenos que ocorrem em altas velocidades ou campos gravitacionais intensos, alterando nossa compreensão clássica do espaço e do tempo." }, 
         
-        { "Pergunta": "O que é a entropia na física?", "Opcoes": { A: "Medida da desordem ou aleatoriedade em um sistema", B: "Força que mantém os planetas em órbita", C: "Propriedade que determina a temperatura de um objeto", D: "Quantidade de matéria em um objeto" }, "Resposta": "A", "Motivo": "A entropia é uma medida da desordem ou aleatoriedade em um sistema físico. Ela está relacionada à quantidade de energia que não pode mais ser utilizada para realizar trabalho." }, { "Pergunta": "O que é a teoria das cordas?", "Opcoes": { A: "Modelo para explicar a formação de cordas musicais", B: "Descrição de cordas cósmicas no universo", C: "Teoria que propõe que as partículas são cordas vibracionais", D: "Estudo sobre a resistência de cordas" }, "Resposta": "C", "Motivo": "A teoria das cordas é uma proposta que sugere que as partículas fundamentais são na verdade cordas vibracionais extremamente pequenas, oferecendo uma abordagem revolucionária na compreensão da natureza da matéria." }, { "Pergunta": "O que é a radiação cósmica de fundo?", "Opcoes": { A: "Radiação emitida por estrelas distantes", B: "Emissões radioativas de planetas", C: "Radiação remanescente do Big Bang", D: "Emissões solares" }, "Resposta": "C", "Motivo": "A radiação cósmica de fundo é uma radiação eletromagnética que preenche o universo e é remanescente do Big Bang, sendo crucial para entender a evolução e a estrutura do cosmos." }
-    ,
+        { "Pergunta": "O que é a entropia na física?", "Opcoes": {
+          A: "Medida da desordem ou aleatoriedade em um sistema", 
+          B: "Força que mantém os planetas em órbita", 
+          C: "Propriedade que determina a temperatura de um objeto", 
+          D: "Quantidade de matéria em um objeto" }, 
+          "Resposta": "A", 
+          "Motivo": "A entropia é uma medida da desordem ou aleatoriedade em um sistema físico. Ela está relacionada à quantidade de energia que não pode mais ser utilizada para realizar trabalho." }, 
+          { "Pergunta": "O que é a teoria das cordas?",
+          "Opcoes": {
+            A: "Modelo para explicar a formação de cordas musicais", 
+            B: "Descrição de cordas cósmicas no universo", 
+            C: "Teoria que propõe que as partículas são cordas vibracionais", 
+            D: "Estudo sobre a resistência de cordas" }, 
+            "Resposta": "C",
+            "Motivo": "A teoria das cordas é uma proposta que sugere que as partículas fundamentais são na verdade cordas vibracionais extremamente pequenas, oferecendo uma abordagem revolucionária na compreensão da natureza da matéria." }, { "Pergunta": "O que é a radiação cósmica de fundo?",
+            "Opcoes": { 
+              A: "Radiação emitida por estrelas distantes",
+            B: "Emissões radioativas de planetas",
+            C: "Radiação remanescente do Big Bang", 
+            D: "Emissões solares" },
+            "Resposta": "C", 
+            "Motivo": "A radiação cósmica de fundo é uma radiação eletromagnética que preenche o universo e é remanescente do Big Bang, sendo crucial para entender a evolução e a estrutura do cosmos." }
+    ,{
        "Pergunta": "O que é a teoria da gravidade quântica de loop?",
     "Opcoes": {
       A: "Teoria sobre a interação entre partículas carregadas",
