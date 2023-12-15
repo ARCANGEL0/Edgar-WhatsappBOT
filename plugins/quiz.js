@@ -4212,7 +4212,7 @@ const ThemedComponent = () => {
     },
     "Resposta": "C",
     "Motivo": "O componente ThemedComponent renderiza um componente com base no contexto do tema, utilizando o hook useContext para acessar as informações do tema."
-  }  {
+  },  {
     "Pergunta": `Considere o seguinte componente funcional em React. O que esse componente faz?\n\n
 import React from 'react';
 
