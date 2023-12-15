@@ -3173,7 +3173,7 @@ else {
     "Resposta": "B",
     "Motivo": "Algoritmos de criptografia protegem a confidencialidade e integridade dos dados através da codificação e decodificação, assegurando a segurança em comunicações digitais, incluindo transações online, troca de mensagens e proteção de dados sensíveis."
   }, 
-  "Pergunta": "Descreva os princípios fundamentais por trás da arquitetura RISC (Reduced Instruction Set Computing) em processadores e como ela se diferencia da arquitetura CISC (Complex Instruction Set Computing).",
+  "Pergunta": "Descreva os princípios fundamentais por trás da arquitetura RISC Reduced Instruction Set Computing em processadores e como ela se diferencia da arquitetura CISC Complex Instruction Set Computing.",
     "Opcoes": {
       A: "Arquitetura RISC utiliza um conjunto reduzido de instruções, executando operações de forma mais eficiente do que a arquitetura CISC, que possui um conjunto mais complexo.",
       B: "Arquitetura RISC é baseada em linguagens de programação mais simples, enquanto a CISC utiliza linguagens de programação complexas para otimizar o desempenho.",
