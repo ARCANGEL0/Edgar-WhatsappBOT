@@ -160,7 +160,7 @@ var effects = [
   },
   {
     'title': 'glitch2',
-    'url': 'https://textpro.me/create-a-glitch-text-effect-online-free-1026.html',
+    'url': 'https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html',
   },
   {
     'title': 'crack',
@@ -279,27 +279,27 @@ var effects = [
     'url': 'https://textpro.me/sand-engraved-3d-text-effect-989.html',
   },
   {
-    'title': 'a-summery-sand-writing',
-    'url': 'https://textpro.me/create-a-summery-sand-writing-text-effect-988.html',
+    'title': 'potter',
+    'url': 'https://textpro.me/create-harry-potter-text-effect-online-1025.html',
   },
   {
-    'title': 'Foil-Balloon--For-Birthday',
-    'url': 'https://textpro.me/foil-balloon-text-effect-for-birthday-987.html',
+    'title': 'sliced',
+    'url': 'https://textpro.me/create-light-glow-sliced-text-effect-online-1068.html#google_vignette',
   },
   {
-    'title': '3d-glue--with-realistic-style',
-    'url': 'https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html',
+    'title': 'batman',
+    'url': 'https://textpro.me/make-a-batman-logo-online-free-1066.html',
   },
   {
-    'title': 'space-3D',
+    'title': 'space3D',
     'url': 'https://textpro.me/create-space-3d-text-effect-online-985.html',
   },
   {
-    'title': 'Metal-Dark-Gold',
+    'title': 'metalgold',
     'url': 'https://textpro.me/metal-dark-gold-text-effect-984.html',
   },
   {
-    'title': 'Glitch--Style-Tik-Tok',
+    'title': 'glitch3',
     'url': 'https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html',
   },
   {
@@ -307,11 +307,11 @@ var effects = [
     'url': 'https://textpro.me/create-a-stone-text-effect-online-982.html',
   },
   {
-    'title': 'Neon-Light--With-Galaxy-Style',
+    'title': 'galaxywolf',
     'url': 'https://textpro.me/neon-light-text-effect-with-galaxy-style-981.html',
   },
   {
-    'title': '1917-Style',
+    'title': '1917',
     'url': 'https://textpro.me/1917-style-text-effect-online-980.html',
   },
   {
