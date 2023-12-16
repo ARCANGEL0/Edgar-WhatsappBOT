@@ -6303,8 +6303,8 @@ public class WordFrequencyCounter {
     
       ]
     const perguntasMatematica = [
-       
   {
+       
     "Pergunta": "Qual é a fórmula para calcular a área de um círculo?",
     "Opcoes": {
       A: "Área = π * r",
@@ -7551,14 +7551,8 @@ public class WordFrequencyCounter {
     "Resposta": "D",
     "Motivo": "Voltaire criticou a intolerância religiosa, a injustiça social e a superstição, defendendo a liberdade de pensamento e expressão como meio de progresso social."
   },
-  {
-    "Pergunta": "Quais eram as principais críticas de Rousseau à sociedade e à desigualdade?",
-    "Opcoes": {
-      A: "A promoção da desigualdade como base da sociedade.",
-      B: "A defesa da aristocracia como forma ideal de governo.",
-      C: "A crítica à propriedade privada como fonte de desigualdade.",
-      D: "A ênfase na importância da monarquia absoluta."
-    },{
+
+    {
     "Pergunta": "Em 'Crime e Castigo' de Dostoiévski, qual é a teoria ética que Raskólnikov utiliza para justificar seu assassinato?",
     "Opcoes": {
       A: "Utilitarismo",
