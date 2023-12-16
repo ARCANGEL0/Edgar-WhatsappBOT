@@ -6303,7 +6303,18 @@ public class WordFrequencyCounter {
   
     
       ]
-    const perguntasMatematica = [];
+    const perguntasMatematica = [
+            {
+    "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
+    "Opcoes": {
+      A: "B.B. King",
+      B: "Eric Clapton",
+      C: "Stevie Ray Vaughan",
+      D: "Jimi Hendrix"
+    },
+    "Resposta": "A",
+    "Motivo": "B.B. King é o lendário guitarrista conhecido por sua habilidade única e contribuições significativas para o blues."
+  },];
     const perguntasMusica = [
       {
     "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
