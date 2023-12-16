@@ -9533,7 +9533,8 @@ public class WordFrequencyCounter {
     },
     "Resposta": "B",
     "Motivo": "Os sistemas democráticos no século XXI enfrentam desafios relacionados à desinformação, ataques cibernéticos e a necessidade de adaptação a um ambiente globalizado, buscando preservar a integridade do processo democrático."
-  }{
+  },
+  {
     "Pergunta": "Quais foram os impactos políticos da crise financeira global de 2008?",
     "Opcoes": {
       A: "Fortalecimento das instituições financeiras internacionais",
