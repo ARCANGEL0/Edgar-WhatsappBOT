@@ -5741,7 +5741,7 @@ public class WordFrequencyCounter {
       D: "Células reprodutivas"
     },
     "Resposta": "B",
-  },
+ 
     "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."},
     
   {
