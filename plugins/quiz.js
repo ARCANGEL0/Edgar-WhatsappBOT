@@ -6303,7 +6303,7 @@ public class WordFrequencyCounter {
     
       ]
     const perguntasMatematica = [
-       },
+       
   {
     "Pergunta": "Qual é a fórmula para calcular a área de um círculo?",
     "Opcoes": {
