@@ -159,7 +159,7 @@ var effects = [
     'url': 'https://textpro.me/create-impressive-glitch-text-effects-online-1027.html',
   },
   {
-    'title': 'glitch2',
+    'title': 'gli2',
     'url': 'https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html',
   },
   {
