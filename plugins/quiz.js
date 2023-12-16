@@ -6085,6 +6085,31 @@ public class WordFrequencyCounter {
       C: "Reino, Ordem, Família, Classe, Gênero, Espécie",
       D: "Filos, Classes, Famílias, Ordens, Gêneros, Espécies, Reinos"
     },
+    "Resposta": "A",
+    "Motivo": "Os níveis hierárquicos usados na taxonomia para classificar os seres vivos, do mais geral ao mais específico, são: Reino, Filo, Classe, Ordem, Família, Gênero, Espécie. Essa sequência representa uma abordagem sistemática para organizar e identificar a diversidade da vida com base em características compartilhadas."
+  },
+  {
+    "Pergunta": "O que diferencia uma célula procarionte de uma célula eucarionte?",
+    "Opcoes": {
+      A: "As células procariontes têm núcleo definido, enquanto as células eucariontes não têm núcleo.",
+      B: "Células procariontes possuem membrana nuclear, ao contrário das células eucariontes.",
+      C: "Células procariontes não possuem membrana plasmática, ao contrário das células eucariontes.",
+      D: "As células procariontes não possuem núcleo definido nem organelas membranosas, ao contrário das células eucariontes."
+    },
+    "Resposta": "D",
+    "Motivo": "A principal diferença entre células procariontes e eucariontes é que as procariontes não possuem núcleo definido nem organelas membranosas internas, como mitocôndrias ou retículo endoplasmático. Já as células eucariontes possuem um núcleo definido e diversas organelas membranosas que desempenham funções específicas dentro da célula."
+  },
+  {
+    "Pergunta": "Qual é o papel da enzima DNA polimerase na replicação do DNA?",
+    "Opcoes": {
+      A: "A DNA polimerase desempenha um papel estrutural na formação do esqueleto do DNA durante a replicação.",
+      B: "É responsável pela transcrição do DNA em RNA durante a replicação.",
+      C: "A DNA polimerase atua na síntese de novas cadeias de DNA complementares às cadeias existentes.",
+      D: "Sua função é realizar a tradução do RNA mensageiro em proteínas durante a replicação.",
+    },
+    "Resposta": "C",
+    "Motivo": "A DNA polimerase desempenha um papel crucial na replicação do DNA, sendo responsável pela síntese de novas cadeias de DNA complementares às cadeias existentes. Ela adiciona nucleotídeos à nova cadeia em crescimento, seguindo o emparelhamento de bases específico (A-T, C-G) com a cadeia molde existente."
+  },
     
     {
     "Pergunta": "Qual é o nível mais amplo de classificação utilizado na taxonomia, que engloba todos os seres vivos?",
