@@ -27,7 +27,7 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
       text = [text.trim()];
     }
     const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
-    const res = await maker(effectoSelect?.url, [...text]).catch(e) { console.log(e) })
+    const res = await maker(effectoSelect?.url, [...text]).catch(e) { console.log(e) }
     
 
     await conn.sendMessage(m.chat, {
