@@ -27,8 +27,8 @@ return list[Math.floor(list.length * Math.random())]}
         'Sociologia',
         'Arqueologia',
         'Criminologia',
-        'CulturaPop',
-        'CulturaGotica',
+        'Fotografia'
+        'Cultura',
         // Adicione mais categorias conforme necessário
     ];
     
@@ -5606,14 +5606,7 @@ public class WordFrequencyCounter {
     "Resposta": "C",
     "Motivo": "A clonagem é o processo de criar organismos geneticamente idênticos, seja por reprodução assexuada natural ou por técnicas de manipulação genética em laboratório."
   },
-  {
-    "Pergunta": "O que é a fotossíntese?",
-    "Opcoes": {
-      A: "Processo de obtenção de energia a partir de alimentos",
-      B: "Processo de conversão de luz solar em energia química",
-      C: "Processo de respiração celular",
-      D: "Processo de produção de proteínas"
-    },
+
     
      {
     "Pergunta": "O que é a mutação genética?",
@@ -6413,19 +6406,3998 @@ public class WordFrequencyCounter {
   
   
   ]
-    const perguntasMusica = []
-    const perguntasFilosofia = []
-    const perguntasLiteratura = []
-    const perguntasMedicina = []
-    const perguntasPolitica = []
-    const perguntasEconomia = []
-    const perguntasAstronomia = []
+    const perguntasMusica = [
+      {
+    "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
+    "Opcoes": {
+      A: "B.B. King",
+      B: "Eric Clapton",
+      C: "Stevie Ray Vaughan",
+      D: "Jimi Hendrix"
+    },
+    "Resposta": "A",
+    "Motivo": "B.B. King é o lendário guitarrista conhecido por sua habilidade única e contribuições significativas para o blues."
+  },
+  {
+    "Pergunta": "Qual é o nome do famoso produtor musical e artista conhecido como 'Wall of Sound'?",
+    "Opcoes": {
+      A: "Quincy Jones",
+      B: "Phil Spector",
+      C: "George Martin",
+      D: "Rick Rubin"
+    },
+    "Resposta": "B",
+    "Motivo": "Phil Spector é o famoso produtor musical conhecido por sua técnica 'Wall of Sound', influenciando a produção de diversas músicas."
+  },
+  {
+    "Pergunta": "Qual é o álbum icônico da banda Nirvana lançado em 1991?",
+    "Opcoes": {
+      A: "In Utero",
+      B: "Nevermind",
+      C: "Bleach",
+      D: "MTV Unplugged in New York"
+    },
+    "Resposta": "B",
+    "Motivo": "'Nevermind' é o álbum icônico da banda Nirvana, apresentando sucessos como 'Smells Like Teen Spirit' e 'Come as You Are'."
+  },
+  {
+    "Pergunta": "Quem é considerado o 'Rei do Reggae'?",
+    "Opcoes": {
+      A: "Peter Tosh",
+      B: "Jimmy Cliff",
+      C: "Bob Marley",
+      D: "Bunny Wailer"
+    },
+    "Resposta": "C",
+    "Motivo": "Bob Marley é considerado o 'Rei do Reggae', sendo uma figura central na popularização e difusão do reggae pelo mundo."
+  },
+  {
+    "Pergunta": "Qual é o nome da vocalista da banda Evanescence?",
+    "Opcoes": {
+      A: "Amy Lee",
+      B: "Sharon den Adel",
+      C: "Lzzy Hale",
+      D: "Floor Jansen"
+    },
+    "Resposta": "A",
+    "Motivo": "Amy Lee é a vocalista da banda Evanescence, conhecida por sua poderosa voz e por sucessos como 'Bring Me to Life' e 'My Immortal'."
+  },
+  {
+    "Pergunta": "Qual é o gênero musical associado ao cantor Frank Sinatra?",
+    "Opcoes": {
+      A: "Jazz",
+      B: "Blues",
+      C: "Country",
+      D: "R&B"
+    },
+    "Resposta": "A",
+    "Motivo": "Frank Sinatra é associado ao gênero musical jazz, sendo uma das figuras mais influentes e aclamadas do século XX."
+  },
+  {
+    "Pergunta": "Quem é a lendária cantora conhecida como 'A Rainha do Jazz'?",
+    "Opcoes": {
+      A: "Nina Simone",
+      B: "Ella Fitzgerald",
+      C: "Billie Holiday",
+      D: "Diana Krall"
+    },
+    "Resposta": "B",
+    "Motivo": "Ella Fitzgerald é conhecida como 'A Rainha do Jazz', destacando-se por sua incrível técnica vocal e interpretação única."
+  },
+  {
+    "Pergunta": "Qual é o álbum clássico da banda Led Zeppelin lançado em 1971?",
+    "Opcoes": {
+      A: "Physical Graffiti",
+      B: "IV",
+      C: "Houses of the Holy",
+      D: "Led Zeppelin I"
+    },
+    "Resposta": "B",
+    "Motivo": "'Led Zeppelin IV', também conhecido como 'Untitled' ou 'Four Symbols', é o álbum clássico da banda Led Zeppelin, incluindo a épica 'Stairway to Heaven'."
+  },
+  {
+    "Pergunta": "Qual é o nome do álbum conceitual da banda Pink Floyd lançado em 1979?",
+    "Opcoes": {
+      A: "Animals",
+      B: "Wish You Were Here",
+      C: "The Wall",
+      D: "The Dark Side of the Moon"
+    },
+    "Resposta": "C",
+    "Motivo": "'The Wall' é o álbum conceitual da banda Pink Floyd lançado em 1979, explorando temas como alienação e isolamento."
+  },
+  {
+    "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade técnica e pelo uso da técnica de tapping?",
+    "Opcoes": {
+      A: "Jimi Hendrix",
+      B: "Eric Clapton",
+      C: "Jimmy Page",
+      D: "Eddie Van Halen"
+    },
+    "Resposta": "D",
+    "Motivo": "Eddie Van Halen é o lendário guitarrista conhecido por sua habilidade técnica e por popularizar a técnica de tapping na guitarra."
+  },
+   {
+    "Pergunta": "Nirvana corresponde a qual gênero musical?",
+    "Opcoes": {
+      A: "Grunge",
+      B: "Post Rock",
+      C: "Nu Metal",
+      D: "Punk"
+    },
+    "Resposta": "A",
+    "Motivo": "Nirvana é associado ao gênero Grunge, sendo uma das bandas mais influentes desse movimento nos anos 90."
+  },
+  {
+    "Pergunta": "Metallica é conhecido por qual estilo musical?",
+    "Opcoes": {
+      A: "Heavy Metal",
+      B: "Death Metal",
+      C: "Metal Alternativo",
+      D: "Thrash Metal"
+    },
+    "Resposta": "D",
+    "Motivo": "Metallica é conhecido pelo estilo Thrash Metal, sendo uma das bandas mais importantes e influentes do gênero."
+  },
+  {
+    "Pergunta": "Qual gênero musical é característico da banda Radiohead?",
+    "Opcoes": {
+      A: "Alternative Rock",
+      B: "Post Punk",
+      C: "Indie Pop",
+      D: "New Wave"
+    },
+    "Resposta": "A",
+    "Motivo": "Radiohead é característico do gênero Alternative Rock, explorando elementos experimentais em sua música."
+  },
+  {
+    "Pergunta": "Que gênero musical é associado à banda Slipknot?",
+    "Opcoes": {
+      A: "Nu Metal",
+      B: "Metalcore",
+      C: "Gothic Metal",
+      D: "Industrial Metal"
+    },
+    "Resposta": "A",
+    "Motivo": "Slipknot é associado ao gênero Nu Metal, conhecido por sua fusão de elementos do metal, rap e música industrial."
+  },
+  {
+    "Pergunta": "Pearl Jam é mais conhecido por qual gênero musical?",
+    "Opcoes": {
+      A: "Grunge",
+      B: "Post Rock",
+      C: "Britpop",
+      D: "Emo"
+    },
+    "Resposta": "A",
+    "Motivo": "Pearl Jam é mais conhecido pelo gênero Grunge, sendo uma das bandas pioneiras desse movimento junto com Nirvana e Soundgarden."
+  },
+  {
+    "Pergunta": "Que estilo musical caracteriza a banda Red Hot Chili Peppers?",
+    "Opcoes": {
+      A: "Funk Rock",
+      B: "Glam Metal",
+      C: "Punk Rock",
+      D: "Prog Rock"
+    },
+    "Resposta": "A",
+    "Motivo": "Red Hot Chili Peppers é caracterizado pelo estilo Funk Rock, incorporando elementos de funk, punk e rock alternativo em sua música."
+  },
+  {
+    "Pergunta": "A que gênero musical a banda AC/DC pertence principalmente?",
+    "Opcoes": {
+      A: "Hard Rock",
+      B: "Thrash Metal",
+      C: "Glam Metal",
+      D: "Prog Metal"
+    },
+    "Resposta": "A",
+    "Motivo": "AC/DC pertence principalmente ao gênero Hard Rock, sendo conhecidos por seus riffs de guitarra poderosos e performances enérgicas."
+  },
+  {
+    "Pergunta": "Que estilo musical é associado à banda Green Day?",
+    "Opcoes": {
+      A: "Punk Rock",
+      B: "Emo",
+      C: "Pop Punk",
+      D: "Goth Rock"
+    },
+    "Resposta": "C",
+    "Motivo": "Green Day é associado ao estilo Pop Punk, contribuindo significativamente para a popularização desse subgênero do punk rock."
+  },
+  {
+    "Pergunta": "A que gênero musical a banda Queen pertence principalmente?",
+    "Opcoes": {
+      A: "Rock",
+      B: "Metal Alternativo",
+      C: "Pop",
+      D: "Glam Rock"
+    },
+    "Resposta": "A",
+    "Motivo": "Queen pertence principalmente ao gênero Rock, mas sua música abrange uma variedade de estilos, incluindo elementos de glam rock e opera."
+  },
+  {
+    "Pergunta": "Que estilo musical é característico da banda Coldplay?",
+    "Opcoes": {
+      A: "Pop Rock",
+      B: "Indie Rock",
+      C: "Post Punk",
+      D: "Metal Alternativo"
+    },
+    "Resposta": "A",
+    "Motivo": "Coldplay é característico do estilo Pop Rock, conhecido por suas melodias cativantes e letras introspectivas."
+  },
+  
+   {
+    "Pergunta": "Em que ano Les Paul anunciou sua primeira guitarra elétrica?",
+    "Opcoes": {
+      A: "1920",
+      B: "1930",
+      C: "1940",
+      D: "1950"
+    },
+    "Resposta": "C",
+    "Motivo": "Les Paul anunciou sua primeira guitarra elétrica, a Gibson Les Paul, na década de 1940, transformando a indústria da música com seu design inovador."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu o famoso festival de Woodstock, um marco na história da música?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "B",
+    "Motivo": "O famoso festival de Woodstock ocorreu em 1969, tornando-se um marco na história da música e um símbolo da contracultura da década de 1970."
+  },
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'Thriller' de Michael Jackson, um dos álbuns mais vendidos de todos os tempos?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'Thriller' de Michael Jackson foi lançado em 1982, tornando-se um dos álbuns mais vendidos de todos os tempos e influenciando a música pop."
+  },
+  {
+    "Pergunta": "Em que ano o álbum 'The Dark Side of the Moon' do Pink Floyd foi lançado?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'The Dark Side of the Moon' do Pink Floyd foi lançado em 1973, tornando-se um clássico do rock progressivo e uma das obras mais emblemáticas da banda."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu o surgimento do movimento punk, com bandas como Ramones e Sex Pistols?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "B",
+    "Motivo": "O surgimento do movimento punk ocorreu na década de 1970, com bandas como Ramones e Sex Pistols, desafiando as normas da música e da sociedade."
+  },
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'Back in Black' da banda AC/DC?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'Back in Black' da banda AC/DC foi lançado em 1980, tornando-se um dos álbuns mais vendidos da história e um clássico do hard rock."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu o festival de rock 'Live Aid', que arrecadou fundos para combater a fome na Etiópia?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "O festival de rock 'Live Aid' ocorreu em 1985, envolvendo apresentações simultâneas em Londres e Filadélfia, arrecadando fundos para combater a fome na Etiópia."
+  },
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'Abbey Road' dos Beatles?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'Abbey Road' dos Beatles foi lançado em 1969, sendo um dos últimos álbuns gravados pela banda e considerado um clássico do rock."
+  },
+  {
+    "Pergunta": "Em que ano foi fundada a lendária banda de heavy metal Iron Maiden?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "A lendária banda de heavy metal Iron Maiden foi fundada em 1975, lançando seu álbum de estreia em 1980 e se tornando uma das principais influências do gênero."
+  },
+  
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'The Wall' do Pink Floyd, uma obra conceitual que se tornou um clássico do rock progressivo?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'The Wall' do Pink Floyd foi lançado em 1979, tornando-se uma obra conceitual e um clássico do rock progressivo, abordando temas como alienação e isolamento."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu a morte de Kurt Cobain, líder da banda Nirvana?",
+    "Opcoes": {
+      A: "1980",
+      B: "1990",
+      C: "2000",
+      D: "2010"
+    },
+    "Resposta": "B",
+    "Motivo": "A morte de Kurt Cobain, líder da banda Nirvana, ocorreu em 1994, marcando o fim de uma era no cenário musical e deixando um impacto duradouro."
+  },
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'A Night at the Opera' do Queen, que inclui a icônica música 'Bohemian Rhapsody'?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "C",
+    "Motivo": "O álbum 'A Night at the Opera' do Queen foi lançado em 1975, incluindo a icônica música 'Bohemian Rhapsody', que se tornou um marco na história da música."
+  },
+  {
+    "Pergunta": "Em que ano foi lançado o álbum 'Rumours' da banda Fleetwood Mac, um dos álbuns mais vendidos de todos os tempos?",
+    "Opcoes": {
+      A: "1970",
+      B: "1980",
+      C: "1990",
+      D: "2000"
+    },
+    "Resposta": "B",
+    "Motivo": "O álbum 'Rumours' da banda Fleetwood Mac foi lançado em 1977, tornando-se um dos álbuns mais vendidos de todos os tempos e conquistando sucesso crítico e comercial."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu o lançamento da música 'Stairway to Heaven' do Led Zeppelin?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "B",
+    "Motivo": "A música 'Stairway to Heaven' do Led Zeppelin foi lançada em 1971, tornando-se uma das músicas mais famosas e influentes do rock clássico."
+  },
+  {
+    "Pergunta": "Em que ano foi lançada a música 'Imagine' de John Lennon, uma das mais conhecidas e inspiradoras de sua carreira solo?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "C",
+    "Motivo": "A música 'Imagine' de John Lennon foi lançada em 1971 como parte de seu álbum solo, tornando-se uma das mais conhecidas e inspiradoras de sua carreira."
+  },
+  {
+    "Pergunta": "Em que ano ocorreu o lançamento do álbum 'Purple Haze' de Jimi Hendrix, um dos guitarristas mais influentes da história do rock?",
+    "Opcoes": {
+      A: "1960",
+      B: "1970",
+      C: "1980",
+      D: "1990"
+    },
+    "Resposta": "A",
+    "Motivo": "O álbum 'Are You Experienced', que inclui a faixa 'Purple Haze', de Jimi Hendrix foi lançado em 1967, marcando o início da carreira do guitarrista e sua influência duradoura no rock."
+  },
+  {
+    "Pergunta": "Em que ano foi lançada a música 'Like a Rolling Stone' de Bob Dylan, considerada uma das maiores canções de todos os tempos?",
+    "Opcoes": {
+      A: "1950",
+      B: "1960",
+      C: "1970",
+      D: "1980"
+    },
+    "Resposta": "B",
+    "Motivo": "A música 'Like a Rolling Stone' de Bob Dylan foi lançada em 1965, sendo considerada uma das maiores canções de todos os tempos e um marco na história da música."
+  },
+      
+      {
+    "Pergunta": "Quem é conhecido como 'The King of Rock and Roll'?",
+    "Opcoes": {
+      A: "Elvis Presley",
+      B: "Chuck Berry",
+      C: "Buddy Holly",
+      D: "Little Richard"
+    },
+    "Resposta": "A",
+    "Motivo": "Elvis Presley é conhecido como 'The King of Rock and Roll' devido à sua influência e sucesso no gênero musical."
+  },
+  {
+    "Pergunta": "Qual é a canção mais reproduzida no Spotify até agora?",
+    "Opcoes": {
+      A: "Shape of You (Ed Sheeran)",
+      B: "Despacito (Luis Fonsi e Daddy Yankee)",
+      C: "Blinding Lights (The Weeknd)",
+      D: "Uptown Funk (Mark Ronson ft. Bruno Mars)"
+    },
+    "Resposta": "A",
+    "Motivo": "'Shape of You' de Ed Sheeran é a canção mais reproduzida no Spotify até agora, alcançando milhões de reproduções."
+  },
+  {
+    "Pergunta": "Qual é o instrumento principal de Charlie Parker, uma lenda do jazz?",
+    "Opcoes": {
+      A: "Saxofone",
+      B: "Trompete",
+      C: "Contrabaixo",
+      D: "Bateria"
+    },
+    "Resposta": "A",
+    "Motivo": "Charlie Parker, conhecido como 'Bird', era um virtuoso do saxofone e uma figura central no desenvolvimento do jazz moderno."
+  },
+  {
+    "Pergunta": "Qual é o nome da vocalista da banda Paramore?",
+    "Opcoes": {
+      A: "Hayley Williams",
+      B: "Amy Lee",
+      C: "Shirley Manson",
+      D: "Lzzy Hale"
+    },
+    "Resposta": "A",
+    "Motivo": "Hayley Williams é a vocalista da banda Paramore, famosa por sucessos como 'Misery Business' e 'Ain't It Fun'."
+  },
+  {
+    "Pergunta": "Quem é o famoso guitarrista da banda Queen?",
+    "Opcoes": {
+      A: "Brian May",
+      B: "Jimi Hendrix",
+      C: "Eric Clapton",
+      D: "Jimmy Page"
+    },
+    "Resposta": "A",
+    "Motivo": "Brian May é o famoso guitarrista da banda Queen, conhecido por suas habilidades únicas e contribuições musicais."
+  },
+  {
+    "Pergunta": "Qual é o nome da banda de rock formada por Mick Jagger e Keith Richards?",
+    "Opcoes": {
+      A: "The Who",
+      B: "The Rolling Stones",
+      C: "Led Zeppelin",
+      D: "The Beatles"
+    },
+    "Resposta": "B",
+    "Motivo": "The Rolling Stones é a banda de rock formada por Mick Jagger e Keith Richards, sendo uma das mais duradouras e influentes da história."
+  },
+  {
+    "Pergunta": "Quem é o lendário pianista de jazz conhecido por seu estilo inovador e virtuosismo?",
+    "Opcoes": {
+      A: "Oscar Peterson",
+      B: "Thelonious Monk",
+      C: "Duke Ellington",
+      D: "Herbie Hancock"
+    },
+    "Resposta": "B",
+    "Motivo": "Thelonious Monk é o lendário pianista de jazz conhecido por seu estilo inovador, dissonâncias e improvisações únicas."
+  },
+  {
+    "Pergunta": "Qual é a canção de David Bowie que se tornou um hino e referência cultural?",
+    "Opcoes": {
+      A: "Life on Mars?",
+      B: "Heroes",
+      C: "Let's Dance",
+      D: "Space Oddity"
+    },
+    "Resposta": "B",
+    "Motivo": "'Heroes' de David Bowie tornou-se um hino e referência cultural, celebrando a resiliência e coragem."
+  },
+  {
+    "Pergunta": "Qual é o gênero musical caracterizado por batidas rápidas, letras faladas e técnicas de scratch?",
+    "Opcoes": {
+      A: "Reggae",
+      B: "Hip Hop",
+      C: "Salsa",
+      D: "R&B"
+    },
+    "Resposta": "B",
+    "Motivo": "Hip Hop é o gênero musical caracterizado por batidas rápidas, letras faladas (rap) e técnicas de scratch, originando-se nas comunidades urbanas."
+  },
+  {
+    "Pergunta": "Quem é conhecido como 'The Boss' e é famoso por sua energia no palco e músicas como 'Born to Run'?",
+    "Opcoes": {
+      A: "Bruce Springsteen",
+      B: "Bob Dylan",
+      C: "Tom Petty",
+      D: "John Mellencamp"
+    },
+    "Resposta": "A",
+    "Motivo": "Bruce Springsteen é conhecido como 'The Boss' e é famoso por sua energia no palco e músicas como 'Born to Run' e 'Dancing in the Dark'."
+  }]
+    const perguntasFilosofia = [
+       {
+    "Pergunta": "Quem é considerado o 'pai da filosofia' na tradição ocidental?",
+    "Opcoes": {
+      A: "Platão",
+      B: "Aristóteles",
+      C: "Sócrates",
+      D: "Tales de Mileto"
+    },
+    "Resposta": "D",
+    "Motivo": "Tales de Mileto é frequentemente considerado o 'pai da filosofia' na tradição ocidental, sendo um dos primeiros pensadores a buscar explicações racionais para o mundo natural."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas contribuições à ética e por ser o mestre de Platão?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Parmênides",
+      D: "Heráclito"
+    },
+    "Resposta": "A",
+    "Motivo": "Sócrates é conhecido por suas contribuições à ética e é considerado o mestre de Platão, influenciando significativamente o desenvolvimento da filosofia ocidental."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por suas obras sobre o materialismo histórico e a crítica ao capitalismo?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Arthur Schopenhauer"
+    },
+    "Resposta": "C",
+    "Motivo": "Karl Marx é conhecido por suas obras sobre o materialismo histórico e a crítica ao capitalismo, sendo uma figura central no pensamento político e econômico."
+  },
+  {
+    "Pergunta": "Qual filósofo existencialista francês é conhecido por suas reflexões sobre a liberdade e a responsabilidade individual?",
+    "Opcoes": {
+      A: "Albert Camus",
+      B: "Jean-Paul Sartre",
+      C: "Simone de Beauvoir",
+      D: "Blaise Pascal"
+    },
+    "Resposta": "B",
+    "Motivo": "Jean-Paul Sartre é conhecido por suas reflexões sobre o existencialismo, destacando a liberdade e a responsabilidade individual na construção do significado da vida."
+  },
+  {
+    "Pergunta": "Qual filósofo chinês é considerado o fundador do taoísmo e autor do 'Tao Te Ching'?",
+    "Opcoes": {
+      A: "Confúcio",
+      B: "Mencius",
+      C: "Laozi",
+      D: "Zhuangzi"
+    },
+    "Resposta": "C",
+    "Motivo": "Laozi é considerado o fundador do taoísmo e é atribuído como autor do 'Tao Te Ching', um texto fundamental que aborda princípios do taoísmo e da filosofia chinesa."
+  },
+  {
+    "Pergunta": "Qual filósofo medieval é conhecido por suas contribuições à filosofia escolástica e por conciliar a fé com a razão?",
+    "Opcoes": {
+      A: "Tomás de Aquino",
+      B: "Agostinho de Hipona",
+      C: "Guilherme de Ockham",
+      D: "Anselmo de Cantuária"
+    },
+    "Resposta": "A",
+    "Motivo": "Tomás de Aquino é conhecido por suas contribuições à filosofia escolástica, buscando conciliar a fé com a razão e influenciando o pensamento cristão."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas ideias sobre a teoria das ideias e a alegoria da caverna?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Platão",
+      D: "Heráclito"
+    },
+    "Resposta": "C",
+    "Motivo": "Platão é conhecido por suas ideias sobre a teoria das ideias e apresentou a alegoria da caverna para explicar a busca pelo conhecimento e a realidade além das aparências."
+  },
+  {
+    "Pergunta": "Qual filósofo francês é conhecido por suas obras sobre a teoria do contrato social e a separação dos poderes?",
+    "Opcoes": {
+      A: "René Descartes",
+      B: "Jean-Jacques Rousseau",
+      C: "Voltaire",
+      D: "Montesquieu"
+    },
+    "Resposta": "B",
+    "Motivo": "Jean-Jacques Rousseau é conhecido por suas obras sobre a teoria do contrato social e influenciou a ideia de governança democrática e a separação dos poderes."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por sua filosofia cínica, que buscava viver de acordo com a natureza e desprezar as convenções sociais?",
+    "Opcoes": {
+      A: "Diógenes de Sinope",
+      B: "Zenão de Cítio",
+      C: "Epicuro",
+      D: "Heráclito"
+    },
+    "Resposta": "A",
+    "Motivo": "Diógenes de Sinope é conhecido por sua filosofia cínica, buscando viver de acordo com a natureza e desprezar as convenções sociais, destacando-se por seu estilo de vida simples e despojado."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua crítica à religião e à ideia de que Deus está morto?",
+    "Opcoes": {
+      A: "Arthur Schopenhauer",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Immanuel Kant"
+    },
+    "Resposta": "B",
+    "Motivo": "Friedrich Nietzsche é conhecido por sua crítica à religião e à ideia de que Deus está morto, explorando temas como a vontade de poder e o super-homem."
+  },
+  
+  {
+    "Pergunta": "Qual filósofo chinês é conhecido por suas ideias sobre a moralidade, respeito aos pais e governança benevolente?",
+    "Opcoes": {
+      A: "Confúcio",
+      B: "Laozi",
+      C: "Mencius",
+      D: "Zhuangzi"
+    },
+    "Resposta": "A",
+    "Motivo": "Confúcio é conhecido por suas ideias sobre a moralidade, respeito aos pais e governança benevolente, sendo uma figura central na filosofia confucionista."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas ideias sobre a felicidade e a busca pelo prazer moderado?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Epicuro",
+      D: "Diógenes de Sinope"
+    },
+    "Resposta": "C",
+    "Motivo": "Epicuro é conhecido por suas ideias sobre a felicidade e a busca pelo prazer moderado, destacando a importância da amizade e da simplicidade na vida."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é considerado o fundador da fenomenologia, explorando a experiência direta e imediata da consciência?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Edmund Husserl"
+    },
+    "Resposta": "D",
+    "Motivo": "Edmund Husserl é considerado o fundador da fenomenologia, uma abordagem filosófica que explora a experiência direta e imediata da consciência, influenciando muitos pensadores subsequentes."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas obras dialéticas e por ser o mestre de Aristóteles?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Platão",
+      C: "Parmênides",
+      D: "Heráclito"
+    },
+    "Resposta": "B",
+    "Motivo": "Platão é conhecido por suas obras dialéticas e é considerado o mestre de Aristóteles, deixando um impacto duradouro na filosofia ocidental."
+  },
+  {
+    "Pergunta": "Qual filósofo inglês é conhecido por suas contribuições à teoria política, especialmente sobre o contrato social e o estado de natureza?",
+    "Opcoes": {
+      A: "John Locke",
+      B: "Thomas Hobbes",
+      C: "David Hume",
+      D: "Bertrand Russell"
+    },
+    "Resposta": "A",
+    "Motivo": "John Locke é conhecido por suas contribuições à teoria política, explorando temas como o contrato social e o estado de natureza, influenciando o pensamento iluminista e democrático."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas reflexões sobre a busca da felicidade e a importância da virtude na vida ética?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Epicuro",
+      D: "Diógenes de Sinope"
+    },
+    "Resposta": "B",
+    "Motivo": "Aristóteles é conhecido por suas reflexões sobre a busca da felicidade e a importância da virtude na vida ética, desenvolvendo uma ética de virtudes que influenciou a filosofia moral ocidental."
+  },
+  
+  
+  {
+    "Pergunta": "De acordo com Aristóteles, qual é a chave para alcançar a felicidade?",
+    "Opcoes": {
+      A: "Poder e riqueza",
+      B: "Prazer imediato",
+      C: "Busca pelo conhecimento e virtude",
+      D: "Isolamento social"
+    },
+    "Resposta": "C",
+    "Motivo": "Aristóteles acreditava que a chave para alcançar a felicidade era a busca pelo conhecimento (filosofia) e o cultivo de virtudes morais, encontrando o equilíbrio e a excelência no caráter."
+  },
+  {
+    "Pergunta": "Na alegoria da caverna de Platão, o que as sombras na parede representam?",
+    "Opcoes": {
+      A: "As ideias perfeitas",
+      B: "A realidade material",
+      C: "Ilusões passageiras",
+      D: "As emoções humanas"
+    },
+    "Resposta": "B",
+    "Motivo": "Na alegoria da caverna de Platão, as sombras na parede representam a realidade material percebida pelos sentidos, que é uma mera ilusão em comparação com as ideias perfeitas."
+  },
+  {
+    "Pergunta": "Qual filósofo grego propôs a ideia de que 'tudo flui' e que a mudança é a única constante no universo?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Parmênides",
+      D: "Heráclito"
+    },
+    "Resposta": "D",
+    "Motivo": "Heráclito propôs a ideia de que 'tudo flui', enfatizando a constante mudança como a única constante no universo, uma ideia oposta à de Parmênides, que defendia a imutabilidade."
+  },
+  {
+    "Pergunta": "Como Sócrates contribuiu para a filosofia, apesar de não ter escrito suas próprias obras?",
+    "Opcoes": {
+      A: "Criou o método científico",
+      B: "Desenvolveu a lógica formal",
+      C: "Influenciou Platão, que registrou seus diálogos",
+      D: "Fundou a Academia de Atenas"
+    },
+    "Resposta": "C",
+    "Motivo": "Embora Sócrates não tenha escrito suas próprias obras, sua filosofia foi registrada por seu discípulo Platão, preservando seus diálogos e contribuições ao método socrático."
+  },
+  {
+    "Pergunta": "Qual era a abordagem filosófica de Epicuro em relação à busca da felicidade?",
+    "Opcoes": {
+      A: "Buscar prazeres intensos a qualquer custo",
+      B: "Evitar todos os tipos de prazer para alcançar a paz interior",
+      C: "Buscar prazeres moderados e a tranquilidade da alma",
+      D: "Buscar poder e domínio sobre os outros"
+    },
+    "Resposta": "C",
+    "Motivo": "Epicuro defendia a busca de prazeres moderados e a tranquilidade da alma (ataraxia) como o caminho para alcançar a verdadeira felicidade e evitar dores excessivas."
+  },
+  {
+    "Pergunta": "Na filosofia grega, o que significa a expressão 'gnōthi seauton' (γνῶθι σεαυτόν)?",
+    "Opcoes": {
+      A: "A busca pelo conhecimento divino",
+      B: "Conheça a ti mesmo",
+      C: "A compreensão do cosmos",
+      D: "A sabedoria da natureza"
+    },
+    "Resposta": "B",
+    "Motivo": "A expressão 'gnōthi seauton' significa 'Conheça a ti mesmo' e é associada à filosofia socrática, incentivando a autoconsciência e a reflexão sobre a própria natureza."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por sua concepção das ideias perfeitas e pela fundação da Academia de Atenas?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Parmênides",
+      D: "Platão"
+    },
+    "Resposta": "D",
+    "Motivo": "Platão é conhecido por suas ideias das formas ou ideias perfeitas, e fundou a Academia de Atenas, onde filósofos importantes como Aristóteles foram educados."
+  },
+  {
+    "Pergunta": "Qual filósofo grego é conhecido por suas obras 'Ética a Nicômaco' e 'Política' e pela tutoria de Alexandre, o Grande?",
+    "Opcoes": {
+      A: "Sócrates",
+      B: "Aristóteles",
+      C: "Parmênides",
+      D: "Heráclito"
+    },
+    "Resposta": "B",
+    "Motivo": "Aristóteles é conhecido por suas obras 'Ética a Nicômaco' e 'Política', além de ser tutor de Alexandre, o Grande, influenciando a filosofia moral e política ocidental."
+  },
+  {
+    "Pergunta": "Na ética aristotélica, como Aristóteles define a virtude?",
+    "Opcoes": {
+      A: "A virtude é inata, presente desde o nascimento.",
+      B: "A virtude é adquirida através do conhecimento teórico.",
+      C: "A virtude é a capacidade de fazer escolhas equilibradas e habituar-se a agir corretamente.",
+      D: "A virtude é exclusivamente determinada pela herança genética."
+    },
+    "Resposta": "C",
+    "Motivo": "Na ética aristotélica, Aristóteles define a virtude como a capacidade de fazer escolhas equilibradas, habituando-se a agir corretamente e alcançando o 'meio-termo' entre excessos e deficiências."
+  },
+  {
+    "Pergunta": "De acordo com Aristóteles, o que é 'aretê'?",
+    "Opcoes": {
+      A: "A busca pela verdade absoluta.",
+      B: "A virtude ou excelência moral.",
+      C: "A abstenção de prazeres sensoriais.",
+      D: "A contemplação filosófica profunda."
+    },
+    "Resposta": "B",
+    "Motivo": "Em Aristóteles, 'aretê' refere-se à virtude ou excelência moral, representando o desenvolvimento de características positivas e a busca pela realização do potencial humano."
+  },
+  {
+    "Pergunta": "Segundo Aristóteles, o que é necessário para alcançar a virtude?",
+    "Opcoes": {
+      A: "Apenas a instrução teórica é suficiente.",
+      B: "A prática habitual de ações virtuosas.",
+      C: "A orientação exclusiva de um mentor.",
+      D: "A aceitação passiva de valores culturais."
+    },
+    "Resposta": "B",
+    "Motivo": "Aristóteles argumenta que para alcançar a virtude, é necessário praticar habitualmente ações virtuosas, desenvolvendo hábitos que levam ao equilíbrio e à excelência moral."
+  },
+  {
+    "Pergunta": "Qual é a relação entre a ética e a política na filosofia de Aristóteles?",
+    "Opcoes": {
+      A: "A ética e a política são independentes e não se relacionam.",
+      B: "A ética é prioritária, enquanto a política é uma questão secundária.",
+      C: "A ética e a política estão interligadas, pois ambas visam o bem comum e a felicidade da sociedade.",
+      D: "A ética é exclusivamente uma questão individual, sem impacto na política."
+    },
+    "Resposta": "C",
+    "Motivo": "Para Aristóteles, a ética e a política estão interligadas, ambas visando o bem comum e a felicidade da sociedade. A virtude individual contribui para a construção de uma comunidade justa."
+  },
+  {
+    "Pergunta": "Qual é o termo usado por Aristóteles para descrever o processo de desenvolver virtudes por meio da prática habitual?",
+    "Opcoes": {
+      A: "Arete",
+      B: "Phronesis",
+      C: "Hexis",
+      D: "Eudaimonia"
+    },
+    "Resposta": "C",
+    "Motivo": "Aristóteles utiliza o termo 'Hexis' para descrever o processo de desenvolver virtudes por meio da prática habitual, criando disposições estáveis na característica moral de uma pessoa."
+  },
+  {
+    "Pergunta": "De acordo com Aristóteles, o que é 'phronesis'?",
+    "Opcoes": {
+      A: "A coragem física em situações perigosas.",
+      B: "A sabedoria prática ou a prudência.",
+      C: "A busca constante por conhecimento teórico.",
+      D: "A devoção religiosa e espiritual."
+    },
+    "Resposta": "B",
+    "Motivo": "Em Aristóteles, 'phronesis' refere-se à sabedoria prática ou prudência, que envolve a capacidade de fazer julgamentos morais discernentes nas situações concretas da vida."
+  },
+  
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua crítica à razão pura e pela distinção entre fenômeno e nôumeno?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Arthur Schopenhauer"
+    },
+    "Resposta": "A",
+    "Motivo": "Immanuel Kant é conhecido por sua crítica à razão pura e pela distinção entre fenômeno (o que aparece) e nôumeno (a realidade em si), influenciando significativamente a filosofia moderna."
+  },
+  {
+    "Pergunta": "Qual é o princípio ético fundamental proposto por Immanuel Kant em sua ética deontológica?",
+    "Opcoes": {
+      A: "Utilitarismo",
+      B: "Imperativo categórico",
+      C: "Vontade de poder",
+      D: "Vontade geral"
+    },
+    "Resposta": "B",
+    "Motivo": "Immanuel Kant propôs o 'Imperativo Categórico' como o princípio ético fundamental em sua ética deontológica, que se baseia na obrigação moral e no respeito pelos deveres universais."
+  },
+  {
+    "Pergunta": "Qual é o conceito-chave na filosofia de Friedrich Nietzsche, que questiona a validade dos valores tradicionais e propõe a 'vontade de poder'?",
+    "Opcoes": {
+      A: "Super-homem",
+      B: "Eterno retorno",
+      C: "Vontade de verdade",
+      D: "Amor fati"
+    },
+    "Resposta": "C",
+    "Motivo": "Friedrich Nietzsche introduziu o conceito de 'Vontade de Verdade' em sua filosofia, questionando a validade dos valores tradicionais e propondo uma abordagem mais crítica à busca pela verdade."
+  },
+  {
+    "Pergunta": "Na filosofia de Nietzsche, o que representa o conceito de 'eterno retorno'?",
+    "Opcoes": {
+      A: "A repetição eterna de eventos históricos.",
+      B: "A ideia de reencarnação.",
+      C: "A constância das leis naturais.",
+      D: "A aceitação alegre da repetição infinita da vida."
+    },
+    "Resposta": "D",
+    "Motivo": "O conceito de 'Eterno Retorno' em Nietzsche representa a aceitação alegre da ideia de que a vida e todos os eventos se repetirão infinitamente, enfatizando uma atitude afirmativa em relação à existência."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua obra 'O Ser e a Nada', que explora a fenomenologia e a ontologia?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Jean-Paul Sartre"
+    },
+    "Resposta": "D",
+    "Motivo": "Jean-Paul Sartre é conhecido por sua obra 'O Ser e a Nada', que explora a fenomenologia e a ontologia, destacando a liberdade e a responsabilidade individual na construção do significado da vida."
+  },
+  {
+    "Pergunta": "Qual é o conceito central na filosofia existencialista de Sartre, que enfatiza a liberdade individual e a responsabilidade pela própria existência?",
+    "Opcoes": {
+      A: "Absurdo",
+      B: "Desespero",
+      C: "Vontade de poder",
+      D: "Mau infinito"
+    },
+    "Resposta": "A",
+    "Motivo": "O conceito central na filosofia existencialista de Sartre é a 'Absurdo', destacando a liberdade individual e a responsabilidade pela própria existência diante da falta de significado inerente à vida."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua crítica à razão pura e pela distinção entre fenômeno e nôumeno?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Arthur Schopenhauer"
+    },
+    "Resposta": "A",
+    "Motivo": "Immanuel Kant é conhecido por sua crítica à razão pura e pela distinção entre fenômeno (o que aparece) e nôumeno (a realidade em si), influenciando significativamente a filosofia moderna."
+  },
+  {
+    "Pergunta": "Qual é o princípio ético fundamental proposto por Immanuel Kant em sua ética deontológica?",
+    "Opcoes": {
+      A: "Utilitarismo",
+      B: "Imperativo categórico",
+      C: "Vontade de poder",
+      D: "Vontade geral"
+    },
+    "Resposta": "B",
+    "Motivo": "Immanuel Kant propôs o 'Imperativo Categórico' como o princípio ético fundamental em sua ética deontológica, que se baseia na obrigação moral e no respeito pelos deveres universais."
+  },
+  {
+    "Pergunta": "Qual é o conceito-chave na filosofia de Friedrich Nietzsche, que questiona a validade dos valores tradicionais e propõe a 'vontade de poder'?",
+    "Opcoes": {
+      A: "Super-homem",
+      B: "Eterno retorno",
+      C: "Vontade de verdade",
+      D: "Amor fati"
+    },
+    "Resposta": "C",
+    "Motivo": "Friedrich Nietzsche introduziu o conceito de 'Vontade de Verdade' em sua filosofia, questionando a validade dos valores tradicionais e propondo uma abordagem mais crítica à busca pela verdade."
+  },
+  {
+    "Pergunta": "Na filosofia de Nietzsche, o que representa o conceito de 'eterno retorno'?",
+    "Opcoes": {
+      A: "A repetição eterna de eventos históricos.",
+      B: "A ideia de reencarnação.",
+      C: "A constância das leis naturais.",
+      D: "A aceitação alegre da repetição infinita da vida."
+    },
+    "Resposta": "D",
+    "Motivo": "O conceito de 'Eterno Retorno' em Nietzsche representa a aceitação alegre da ideia de que a vida e todos os eventos se repetirão infinitamente, enfatizando uma atitude afirmativa em relação à existência."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua obra 'O Ser e a Nada', que explora a fenomenologia e a ontologia?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Karl Marx",
+      D: "Jean-Paul Sartre"
+    },
+    "Resposta": "D",
+    "Motivo": "Jean-Paul Sartre é conhecido por sua obra 'O Ser e a Nada', que explora a fenomenologia e a ontologia, destacando a liberdade e a responsabilidade individual na construção do significado da vida."
+  },
+  {
+    "Pergunta": "Qual é o conceito central na filosofia existencialista de Sartre, que enfatiza a liberdade individual e a responsabilidade pela própria existência?",
+    "Opcoes": {
+      A: "Absurdo",
+      B: "Desespero",
+      C: "Vontade de poder",
+      D: "Mau infinito"
+    },
+    "Resposta": "A",
+    "Motivo": "O conceito central na filosofia existencialista de Sartre é a 'Absurdo', destacando a liberdade individual e a responsabilidade pela própria existência diante da falta de significado inerente à vida."
+  }, {
+    "Pergunta": "Qual termo Nietzsche usou para descrever a vontade fundamental de viver e prosperar?",
+    "Opcoes": {
+      A: "Ubermensch",
+      B: "Eterno Retorno",
+      C: "Vontade de Verdade",
+      D: "Vontade de Poder"
+    },
+    "Resposta": "D",
+    "Motivo": "Nietzsche usou o termo 'Vontade de Poder' para descrever a força vital fundamental que impulsiona os seres humanos a viver, prosperar e buscar a autoafirmação."
+  },
+  {
+    "Pergunta": "O que Nietzsche quis dizer com o conceito de 'Ubermensch' ou 'Além-Humano'?",
+    "Opcoes": {
+      A: "Uma raça superior geneticamente modificada.",
+      B: "Indivíduos que transcenderam as limitações morais e sociais.",
+      C: "A ideia de reencarnação em uma forma superior.",
+      D: "Uma nova forma de governo baseada na força."
+    },
+    "Resposta": "B",
+    "Motivo": "Com 'Ubermensch' ou 'Além-Humano', Nietzsche referiu-se a indivíduos que transcenderam as limitações morais e sociais da sociedade, criando seus próprios valores e significados."
+  },
+  
+  
+  {
+    "Pergunta": "Qual é a crítica fundamental de Nietzsche à moral tradicional, expressa pelo conceito de 'moral de escravos'?",
+    "Opcoes": {
+      A: "A moral tradicional valoriza demasiadamente a nobreza.",
+      B: "A moral tradicional enfatiza demais a obediência e a submissão.",
+      C: "A moral tradicional é excessivamente focada na justiça.",
+      D: "A moral tradicional promove a igualdade e a fraternidade."
+    },
+    "Resposta": "B",
+    "Motivo": "Nietzsche criticou a moral tradicional, especialmente a religiosa, por enfatizar a obediência e a submissão, considerando-a uma 'moral de escravos' que restringe o desenvolvimento pleno do indivíduo."
+  },
+  {
+    "Pergunta": "Como Nietzsche caracteriza a relação entre o 'Apollonian' e o 'Dionysian' em sua obra 'O Nascimento da Tragédia'?",
+    "Opcoes": {
+      A: "Como opostos irreconciliáveis, sem interação.",
+      B: "Como dois princípios equilibrados que coexistem pacificamente.",
+      C: "Como forças criativas que se complementam na arte.",
+      D: "Como estágios evolutivos da sociedade humana."
+    },
+    "Resposta": "C",
+    "Motivo": "Nietzsche caracteriza a relação entre o 'Apollonian' e o 'Dionysian' como forças criativas que se complementam na arte. Apollonian representa a ordem e a clareza, enquanto Dionysian representa o caos e a emoção."
+  },
+  {
+    "Pergunta": "Qual é a crítica de Nietzsche ao conceito de 'verdade' na filosofia tradicional?",
+    "Opcoes": {
+      A: "A verdade é inatingível e inexistente.",
+      B: "A verdade é relativa e subjetiva.",
+      C: "A verdade é uma construção cultural e social.",
+      D: "A verdade é frequentemente usada como um instrumento de poder."
+    },
+    "Resposta": "D",
+    "Motivo": "Nietzsche criticou a ideia tradicional de 'verdade' como frequentemente sendo usada como um instrumento de poder, uma ferramenta para impor valores e perspectivas particulares."
+  },
+  {
+    "Pergunta": "Como Nietzsche se refere ao conceito de 'eterno retorno' em sua obra?",
+    "Opcoes": {
+      A: "Como uma ideia absurda e ilógica.",
+      B: "Como uma possibilidade futura a ser alcançada.",
+      C: "Como uma afirmação alegre da existência.",
+      D: "Como um ciclo inevitável de decadência."
+    },
+    "Resposta": "C",
+    "Motivo": "Nietzsche se refere ao 'eterno retorno' como uma afirmação alegre da existência, sugerindo uma atitude positiva em relação à repetição infinita da vida e dos eventos."
+  },
+  {
+    "Pergunta": "Qual é a crítica de Nietzsche ao conceito de 'bem e mal' na moral tradicional?",
+    "Opcoes": {
+      A: "A moral tradicional valoriza demais o bem.",
+      B: "A moral tradicional é excessivamente centrada na justiça.",
+      C: "A moral tradicional promove uma moralidade de rebanho.",
+      D: "A moral tradicional enfatiza demais a compaixão."
+    },
+    "Resposta": "C",
+    "Motivo": "Nietzsche criticou o conceito de 'bem e mal' na moral tradicional, considerando-a uma moralidade de rebanho que enfraquece a vitalidade e a criatividade individuais em prol da conformidade e da obediência."
+  },
+  {
+    "Pergunta": "Como Nietzsche caracteriza a 'vontade de verdade'?",
+    "Opcoes": {
+      A: "Uma busca constante por verdades universais.",
+      B: "Uma manifestação da fraqueza humana.",
+      C: "Uma expressão da vontade de poder.",
+      D: "Um conceito irrelevante na filosofia."
+    },
+    "Resposta": "C",
+    "Motivo": "Nietzsche caracteriza a 'vontade de verdade' como uma expressão da 'vontade de poder', sugerindo que a busca pela verdade está intrinsecamente relacionada ao desejo de exercer influência e controle sobre o mundo."
+  },
+  {
+    "Pergunta": "Quais eram as principais ideias políticas proclamadas por Maquiavel em sua obra 'O Príncipe'?",
+    "Opcoes": {
+      A: "A importância da virtude moral na liderança.",
+      B: "A defesa do governo democrático.",
+      C: "A necessidade de um líder ser temido do que amado.",
+      D: "A promoção da igualdade social."
+    },
+    "Resposta": "C",
+    "Motivo": "Maquiavel, em 'O Príncipe', proclamou a ideia de que um líder deve ser temido em vez de amado, destacando a importância da astúcia e pragmatismo na política."
+  },
+  {
+    "Pergunta": "Quais eram as principais contribuições de John Locke à teoria política e à filosofia?",
+    "Opcoes": {
+      A: "A defesa do absolutismo e da monarquia divina.",
+      B: "A teoria da mente tabula rasa e a ênfase nos direitos naturais.",
+      C: "A promoção da teoria do contrato social e da soberania absoluta.",
+      D: "A crítica à separação de poderes e à liberdade individual."
+    },
+    "Resposta": "B",
+    "Motivo": "John Locke contribuiu com a teoria da mente tabula rasa e enfatizou os direitos naturais, além de ter influenciado a teoria do contrato social e a democracia moderna."
+  },
+  {
+    "Pergunta": "Quais eram as principais ideias políticas proclamadas por Jean-Jacques Rousseau em 'O Contrato Social'?",
+    "Opcoes": {
+      A: "A defesa da monarquia absoluta.",
+      B: "A ênfase na aristocracia como forma ideal de governo.",
+      C: "A importância da vontade geral e do contrato social.",
+      D: "A promoção da desigualdade como base da sociedade."
+    },
+    "Resposta": "C",
+    "Motivo": "Rousseau, em 'O Contrato Social', proclamou a importância da vontade geral e do contrato social como base da autoridade política legítima, influenciando o pensamento democrático."
+  },
+  {
+    "Pergunta": "Quais eram as principais ideias de Montesquieu sobre a organização política em 'O Espírito das Leis'?",
+    "Opcoes": {
+      A: "A defesa da monarquia absoluta e da centralização do poder.",
+      B: "A promoção da teocracia como forma ideal de governo.",
+      C: "A ênfase na separação de poderes e no sistema de checks and balances.",
+      D: "A importância da aristocracia hereditária na estrutura política."
+    },
+    "Resposta": "C",
+    "Motivo": "Montesquieu, em 'O Espírito das Leis', propôs a ideia da separação de poderes e do sistema de checks and balances para evitar o abuso de autoridade, influenciando a organização política moderna."
+  },
+  {
+    "Pergunta": "Quais eram as principais críticas de Voltaire à sociedade e à religião?",
+    "Opcoes": {
+      A: "A defesa da intolerância religiosa e da monarquia absoluta.",
+      B: "A promoção da censura e da repressão política.",
+      C: "A ênfase na importância da teocracia.",
+      D: "A crítica à intolerância religiosa, à injustiça social e à superstição."
+    },
+    "Resposta": "D",
+    "Motivo": "Voltaire criticou a intolerância religiosa, a injustiça social e a superstição, defendendo a liberdade de pensamento e expressão como meio de progresso social."
+  },
+  {
+    "Pergunta": "Quais eram as principais críticas de Rousseau à sociedade e à desigualdade?",
+    "Opcoes": {
+      A: "A promoção da desigualdade como base da sociedade.",
+      B: "A defesa da aristocracia como forma ideal de governo.",
+      C: "A crítica à propriedade privada como fonte de desigualdade.",
+      D: "A ênfase na importância da monarquia absoluta."
+    },{
+    "Pergunta": "Em 'Crime e Castigo' de Dostoiévski, qual é a teoria ética que Raskólnikov utiliza para justificar seu assassinato?",
+    "Opcoes": {
+      A: "Utilitarismo",
+      B: "Deontologia",
+      C: "Existencialismo",
+      D: "Niilismo"
+    },
+    "Resposta": "A",
+    "Motivo": "Raskólnikov em 'Crime e Castigo' justifica seu assassinato usando uma versão distorcida do utilitarismo, acreditando que poderia sacrificar uma vida pelo bem da humanidade."
+  },
+  {
+    "Pergunta": "Qual é a obra mais conhecida de Dostoiévski que explora questões éticas, religiosas e psicológicas em meio à Rússia do século XIX?",
+    "Opcoes": {
+      A: "Irmãos Karamázov",
+      B: "Crime e Castigo",
+      C: "O Idiota",
+      D: "O Jogador"
+    },
+    "Resposta": "A",
+    "Motivo": "A obra mais conhecida de Dostoiévski que explora questões éticas, religiosas e psicológicas é 'Irmãos Karamázov'. A obra aborda temas como a fé, moralidade e o conflito entre razão e fé."
+  },
+  {
+    "Pergunta": "Como Dostoiévski aborda o conceito de sofrimento em suas obras?",
+    "Opcoes": {
+      A: "O sofrimento é inevitável e inescapável.",
+      B: "O sofrimento é uma ilusão a ser superada.",
+      C: "O sofrimento é uma consequência da falta de virtude.",
+      D: "O sofrimento é uma ferramenta para alcançar a sabedoria."
+    },
+    "Resposta": "A",
+    "Motivo": "Dostoiévski aborda o sofrimento em suas obras como inevitável e inescapável, explorando como os personagens lidam com o sofrimento existencial, moral e psicológico."
+  },
+  {
+    "Pergunta": "Na obra 'Os Irmãos Karamázov', qual personagem expressa a ideia de que 'se Deus não existe, tudo é permitido'?",
+    "Opcoes": {
+      A: "Dmitri Karamázov",
+      B: "Ivan Karamázov",
+      C: "Alyosha Karamázov",
+      D: "Fyodor Pavlovich Karamázov"
+    },
+    "Resposta": "B",
+    "Motivo": "Ivan Karamázov expressa a ideia de que 'se Deus não existe, tudo é permitido' na obra 'Os Irmãos Karamázov', questionando a base moral sem a existência de um ser divino."
+  },
+  {
+    "Pergunta": "Na filosofia, qual é o termo usado para descrever a visão de Dostoiévski sobre a redenção através do sofrimento e da aceitação?",
+    "Opcoes": {
+      A: "Utopia",
+      B: "Niilismo",
+      C: "Resiliência",
+      D: "Soteriologia"
+    },
+    "Resposta": "D",
+    "Motivo": "O termo usado para descrever a visão de Dostoiévski sobre a redenção através do sofrimento e da aceitação é 'Soteriologia', que se refere à teoria da salvação ou redenção."
+  },
+  {
+    "Pergunta": "Qual filósofo existencialista francês é conhecido por sua obra 'O Estrangeiro', que explora a indiferença e a alienação humana?",
+    "Opcoes": {
+      A: "Jean-Paul Sartre",
+      B: "Albert Camus",
+      C: "Simone de Beauvoir",
+      D: "Gabriel Marcel"
+    },
+    "Resposta": "B",
+    "Motivo": "Albert Camus, um filósofo existencialista francês, é conhecido por sua obra 'O Estrangeiro', que explora a indiferença e a alienação humana diante de um mundo aparentemente absurdo."
+  },
+  {
+    "Pergunta": "Qual é o conceito central na filosofia existencialista de Jean-Paul Sartre?",
+    "Opcoes": {
+      A: "Absurdo",
+      B: "Desespero",
+      C: "Mau Infinito",
+      D: "Liberdade"
+    },
+    "Resposta": "D",
+    "Motivo": "O conceito central na filosofia existencialista de Jean-Paul Sartre é 'Liberdade'. Sartre enfatiza a liberdade absoluta do indivíduo para escolher e criar significado em um universo aparentemente sem sentido."
+  },
+  {
+    "Pergunta": "Qual filósofo alemão é conhecido por sua crítica à religião, especialmente em 'O Anticristo' e 'Assim Falou Zaratustra'?",
+    "Opcoes": {
+      A: "Immanuel Kant",
+      B: "Friedrich Nietzsche",
+      C: "Arthur Schopenhauer",
+      D: "Karl Marx"
+    },
+    "Resposta": "B",
+    "Motivo": "Friedrich Nietzsche, o filósofo alemão, é conhecido por sua crítica à religião, especialmente em obras como 'O Anticristo' e 'Assim Falou Zaratustra', questionando valores religiosos tradicionais."
+  },
+  {
+    "Pergunta": "Na filosofia de Jean-Paul Sartre, qual é o conceito que significa 'ser para si' e refere-se à consciência e liberdade humanas?",
+    "Opcoes": {
+      A: "Ser-para-a-morte",
+      B: "Ser-em-si",
+      C: "Ser-para-outro",
+      D: "Ser-para-si"
+    },
+    "Resposta": "D",
+    "Motivo": "Na filosofia de Jean-Paul Sartre, 'Ser-para-si' significa 'ser para si', representando a consciência e liberdade humanas, contrastando com 'Ser-em-si', que refere-se a objetos inanimados."
+  },  {
+    "Pergunta": "Em 'O Príncipe', Maquiavel aborda a moralidade na política. Qual é a visão de Maquiavel sobre a relação entre moralidade e governança?",
+    "Opcoes": {
+      A: "A moralidade deve guiar todas as ações políticas.",
+      B: "A moralidade é irrelevante na política.",
+      C: "A moralidade deve ser adaptada às circunstâncias.",
+      D: "A moralidade deve ser imposta pela força."
+    },
+    "Resposta": "C",
+    "Motivo": "Maquiavel argumenta que a moralidade política deve ser adaptada às circunstâncias, sugerindo uma abordagem pragmática e flexível para alcançar o sucesso na governança."
+  },
+  {
+    "Pergunta": "John Locke introduziu o conceito de 'propriedade' em suas obras. Como Locke via a aquisição legítima de propriedade?",
+    "Opcoes": {
+      A: "Através da conquista militar.",
+      B: "Por herança apenas.",
+      C: "Pelo trabalho e mistura com o trabalho próprio.",
+      D: "Por meio de negociações políticas."
+    },
+    "Resposta": "C",
+    "Motivo": "Locke via a aquisição legítima de propriedade como resultado do trabalho e mistura com o trabalho próprio, destacando a importância do trabalho na justificação da posse."
+  },
+  {
+    "Pergunta": "Em 'O Contrato Social', Rousseau discute a 'vontade geral'. O que Rousseau entende por 'vontade geral' e como ela se relaciona à soberania?",
+    "Opcoes": {
+      A: "A vontade geral é a vontade da maioria e não está ligada à soberania.",
+      B: "A vontade geral é a soma das vontades individuais e determina a soberania.",
+      C: "A vontade geral é a vontade do governante, garantindo a soberania absoluta.",
+      D: "A vontade geral é irrelevante para a teoria política de Rousseau."
+    },
+    "Resposta": "B",
+    "Motivo": "Para Rousseau, a vontade geral é a soma das vontades individuais, e sua determinação é crucial para estabelecer a soberania legítima em um Estado."
+  },
+  {
+    "Pergunta": "Montesquieu defendeu a separação de poderes em 'O Espírito das Leis'. Como ele acreditava que essa separação beneficiaria a sociedade?",
+    "Opcoes": {
+      A: "A separação de poderes leva à concentração de poder nas mãos do executivo.",
+      B: "A separação de poderes impede qualquer forma de governo.",
+      C: "A separação de poderes evita o abuso de autoridade ao distribuir funções distintas.",
+      D: "Montesquieu não via benefícios na separação de poderes."
+    },
+    "Resposta": "C",
+    "Motivo": "Montesquieu via a separação de poderes como uma forma de evitar o abuso de autoridade, distribuindo funções distintas entre legislativo, executivo e judiciário para garantir equilíbrio."
+  },
+  {
+    "Pergunta": "Voltaire, em suas críticas à sociedade, abordou temas como liberdade de expressão. Como Voltaire via a relação entre liberdade de expressão e progresso social?",
+    "Opcoes": {
+      A: "Liberdade de expressão não é importante para o progresso social.",
+      B: "A censura é necessária para manter a ordem social.",
+      C: "Liberdade de expressão é essencial para o progresso social.",
+      D: "A liberdade de expressão deve ser restrita apenas aos filósofos."
+    },
+    "Resposta": "C",
+    "Motivo": "Voltaire defendia que a liberdade de expressão era essencial para o progresso social, acreditando que o livre debate de ideias contribuiria para a evolução da sociedade."
+  },
+  {
+    "Pergunta": "Rousseau criticou a propriedade privada em suas obras. Qual era a crítica principal de Rousseau em relação à propriedade privada?",
+    "Opcoes": {
+      A: "A propriedade privada é a base da sociedade justa.",
+      B: "A propriedade privada é um direito natural inalienável.",
+      C: "A propriedade privada gera desigualdade social e corrompe a sociedade.",
+      D: "A propriedade privada deve ser controlada pelo Estado."
+    },
+    "Resposta": "C",
+    "Motivo": "Rousseau criticava a propriedade privada, argumentando que ela gerava desigualdade social e corrompia a sociedade, defendendo a importância da propriedade comum."
+  }
+  ,
+  
+  
+      ]
+    const perguntasLiteratura = [
+      
+      {
+    "Pergunta": "Quem é o autor da obra 'Dom Casmurro', um romance realista que explora ciúmes e traição?",
+    "Opcoes": {
+      A: "Machado de Assis",
+      B: "Eça de Queirós",
+      C: "José Saramago",
+      D: "Gabriel García Márquez"
+    },
+    "Resposta": "A",
+    "Motivo": "'Dom Casmurro' é uma obra de Machado de Assis, um dos principais escritores brasileiros do realismo, que aborda temas como ciúmes e traição."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de George Orwell que critica regimes totalitários e introduz termos como 'Big Brother'?",
+    "Opcoes": {
+      A: "1984",
+      B: "A Revolução dos Bichos",
+      C: "A Nuvem",
+      D: "O Senhor dos Anéis"
+    },
+    "Resposta": "A",
+    "Motivo": "'1984' é a obra de George Orwell que critica regimes totalitários, introduzindo conceitos como 'Big Brother' e explorando questões de controle governamental."
+  },
+  {
+    "Pergunta": "Quem é o autor do poema épico 'Os Lusíadas', que narra as viagens dos navegadores portugueses?",
+    "Opcoes": {
+      A: "Camões",
+      B: "Fernando Pessoa",
+      C: "Gil Vicente",
+      D: "Saramago"
+    },
+    "Resposta": "A",
+    "Motivo": "Luis de Camões é o autor de 'Os Lusíadas', poema épico que narra as viagens dos navegadores portugueses e é uma das obras mais importantes da literatura portuguesa."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Gabriel García Márquez que conta a história de amor entre Florentino Ariza e Fermina Daza?",
+    "Opcoes": {
+      A: "Cem Anos de Solidão",
+      B: "O Outono do Patriarca",
+      C: "O Amor nos Tempos do Cólera",
+      D: "Crônica de uma Morte Anunciada"
+    },
+    "Resposta": "C",
+    "Motivo": "'O Amor nos Tempos do Cólera' é a obra de Gabriel García Márquez que conta a história de amor entre Florentino Ariza e Fermina Daza, explorando temas como tempo e paixão."
+  },
+  {
+    "Pergunta": "Quem é a autora de 'Orgulho e Preconceito', uma obra clássica que aborda questões sociais e românticas na Inglaterra do século XIX?",
+    "Opcoes": {
+      A: "Charlotte Brontë",
+      B: "Jane Austen",
+      C: "Emily Brontë",
+      D: "Charles Dickens"
+    },
+    "Resposta": "B",
+    "Motivo": "Jane Austen é a autora de 'Orgulho e Preconceito', uma obra clássica que aborda questões sociais e românticas na Inglaterra do século XIX, destacando a ironia e a crítica social."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Franz Kafka que conta a história de Josef K., um homem processado sem saber o motivo?",
+    "Opcoes": {
+      A: "A Metamorfose",
+      B: "O Processo",
+      C: "O Castelo",
+      D: "América"
+    },
+    "Resposta": "B",
+    "Motivo": "'O Processo' é a obra de Franz Kafka que conta a história de Josef K., um homem processado sem saber o motivo, explorando temas como a burocracia e o absurdo."
+  },
+  {
+    "Pergunta": "Quem é o autor de 'O Pequeno Príncipe', uma obra que aborda temas filosóficos por meio das aventuras do Pequeno Príncipe?",
+    "Opcoes": {
+      A: "Antoine de Saint-Exupéry",
+      B: "Jules Verne",
+      C: "Victor Hugo",
+      D: "Gustave Flaubert"
+    },
+    "Resposta": "A",
+    "Motivo": "Antoine de Saint-Exupéry é o autor de 'O Pequeno Príncipe', uma obra que aborda temas filosóficos por meio das aventuras do Pequeno Príncipe e sua relação com outros planetas."
+  },
+  {
+    "Pergunta": "Qual é o autor de 'Crime e Castigo', uma obra que explora a psique de um estudante atormentado por um assassinato?",
+    "Opcoes": {
+      A: "Fiódor Dostoiévski",
+      B: "Lev Tolstói",
+      C: "Anton Tchekhov",
+      D: "Ivan Turguêniev"
+    },
+    "Resposta": "A",
+    "Motivo": "Fiódor Dostoiévski é o autor de 'Crime e Castigo', uma obra que explora a psique de um estudante atormentado por um assassinato, sendo uma das principais obras do existencialismo literário."
+  },
+  {
+    "Pergunta": "Qual é o autor do romance 'Moby Dick', uma obra que narra a obsessão do capitão Ahab por um grande cachalote branco?",
+    "Opcoes": {
+      A: "Herman Melville",
+      B: "Mark Twain",
+      C: "Nathaniel Hawthorne",
+      D: "Edgar Allan Poe"
+    },
+    "Resposta": "A",
+    "Motivo": "'Moby Dick' é um romance escrito por Herman Melville, explorando a obsessão do capitão Ahab pelo grande cachalote branco e abordando temas como vingança e natureza."
+  },
+  {
+    "Pergunta": "Quem é o autor de 'A Moreninha', uma das primeiras obras do romantismo brasileiro?",
+    "Opcoes": {
+      A: "Álvares de Azevedo",
+      B: "José de Alencar",
+      C: "Machado de Assis",
+      D: "Bernardo Guimarães"
+    },
+    "Resposta": "D",
+    "Motivo": "'A Moreninha' é uma obra do escritor brasileiro Bernardo Guimarães, considerada uma das primeiras do romantismo brasileiro, abordando temas românticos e sociais."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Clarice Lispector que explora a interioridade feminina por meio da protagonista anônima?",
+    "Opcoes": {
+      A: "A Hora da Estrela",
+      B: "Perto do Coração Selvagem",
+      C: "Laços de Família",
+      D: "Água Viva"
+    },
+    "Resposta": "A",
+    "Motivo": "'A Hora da Estrela' é uma obra de Clarice Lispector que explora a interioridade feminina por meio da protagonista anônima, discutindo questões existenciais e sociais."
+  },
+  {
+    "Pergunta": "Quem é o autor de 'A Divina Comédia', uma obra épica que narra a jornada de Dante pelo Inferno, Purgatório e Paraíso?",
+    "Opcoes": {
+      A: "Dante Alighieri",
+      B: "Petrarca",
+      C: "Boccaccio",
+      D: "Miguel de Cervantes"
+    },
+    "Resposta": "A",
+    "Motivo": "'A Divina Comédia' é uma obra do poeta italiano Dante Alighieri, narrando sua jornada pelo Inferno, Purgatório e Paraíso, sendo uma das obras-primas da literatura mundial."
+  },
+  {
+    "Pergunta": "Edgar Allan Poe é conhecido como mestre do gênero do terror e suspense. Qual é uma de suas obras mais famosas?",
+    "Opcoes": {
+      A: "Cem Anos de Solidão",
+      B: "O Corvo",
+      C: "Crime e Castigo",
+      D: "Orgulho e Preconceito"
+    },
+    "Resposta": "B",
+    "Motivo": "'O Corvo' é uma das obras mais famosas de Edgar Allan Poe, um poema narrativo que incorpora elementos de terror e melancolia, marcando seu legado no gênero."
+  },
+  {
+    "Pergunta": "Agatha Christie é reconhecida como 'Rainha do Crime'. Qual é um de seus detetives mais famosos, conhecido por sua sagacidade na resolução de casos?",
+    "Opcoes": {
+      A: "Hercule Poirot",
+      B: "Sherlock Holmes",
+      C: "Miss Marple",
+      D: "Sam Spade"
+    },
+    "Resposta": "A",
+    "Motivo": "Hercule Poirot é um dos detetives mais famosos de Agatha Christie, conhecido por sua sagacidade e métodos meticulosos na resolução de casos, tornando-se uma figura icônica da literatura policial."
+  },
+  {
+    "Pergunta": "Sir Arthur Conan Doyle criou um dos mais famosos detetives da literatura. Qual é o nome deste detetive?",
+    "Opcoes": {
+      A: "Hercule Poirot",
+      B: "Sherlock Holmes",
+      C: "Philip Marlowe",
+      D: "Nero Wolfe"
+    },
+    "Resposta": "B",
+    "Motivo": "Sherlock Holmes é o famoso detetive criado por Sir Arthur Conan Doyle, conhecido por sua astúcia, raciocínio lógico e habilidades dedutivas na resolução de mistérios."
+  },
+  {
+    "Pergunta": "Machado de Assis foi um influente escritor brasileiro. Qual é uma de suas obras mais conhecidas que explora temas como a loucura e a hipocrisia social?",
+    "Opcoes": {
+      A: "Dom Casmurro",
+      B: "Memórias Póstumas de Brás Cubas",
+      C: "Quincas Borba",
+      D: "Senhora"
+    },
+    "Resposta": "B",
+    "Motivo": "'Memórias Póstumas de Brás Cubas' é uma obra de Machado de Assis que explora temas como a loucura e a hipocrisia social, sendo considerada uma das grandes obras da literatura brasileira."
+  },
+  {
+    "Pergunta": "Agatha Christie é conhecida por seus finais surpreendentes. Qual é o termo frequentemente usado para descrever a reviravolta inesperada em suas histórias?",
+    "Opcoes": {
+      A: "Twist de Agatha",
+      B: "Reviravolta Quotidiana",
+      C: "Surpresa Literária",
+      D: "Clímax Intrigante"
+    },
+    "Resposta": "A",
+    "Motivo": "O termo frequentemente usado para descrever a reviravolta inesperada nas histórias de Agatha Christie é 'Twist de Agatha', destacando sua habilidade em surpreender os leitores."
+  },
+  {
+    "Pergunta": "Sir Arthur Conan Doyle escreveu diversas histórias sobre Sherlock Holmes. Qual é o título de uma das coleções de contos protagonizados por Holmes e Watson?",
+    "Opcoes": {
+      A: "A Máscara da Morte Rubra",
+      B: "O Vale do Medo",
+      C: "As Aventuras de Sherlock Holmes",
+      D: "O Cão dos Baskervilles"
+    },
+    "Resposta": "C",
+    "Motivo": "'As Aventuras de Sherlock Holmes' é uma coleção de contos escrita por Sir Arthur Conan Doyle, apresentando casos intrigantes protagonizados pelo famoso detetive e seu parceiro, Dr. Watson."
+  }
+  
+ 
+  ,
+   {
+    "Pergunta": "Em qual cidade Edgar Allan Poe nasceu?",
+    "Opcoes": {
+      A: "Boston",
+      B: "Nova Iorque",
+      C: "Baltimore",
+      D: "Filadélfia"
+    },
+    "Resposta": "D",
+    "Motivo": "Edgar Allan Poe nasceu em Boston, Massachusetts, EUA."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Poe que descreve a história de um homem que é obcecado por olhos de uma velha e acaba cometendo um assassinato?",
+    "Opcoes": {
+      A: "O Corvo",
+      B: "A Queda da Casa de Usher",
+      C: "O Gato Preto",
+      D: "O Barril de Amontillado"
+    },
+    "Resposta": "C",
+    "Motivo": "'O Gato Preto' é a obra de Poe que descreve a obsessão de um homem por olhos de uma velha e os eventos que levam a um assassinato."
+  },
+  {
+    "Pergunta": "Qual é o título da poesia de Edgar Allan Poe que apresenta um corvo como um visitante misterioso e repetitivo?",
+    "Opcoes": {
+      A: "O Gato Preto",
+      B: "Annabel Lee",
+      C: "O Corvo",
+      D: "Lenore"
+    },
+    "Resposta": "C",
+    "Motivo": "'O Corvo' é a poesia de Edgar Allan Poe que apresenta um corvo como um visitante misterioso e repetitivo, explorando temas de luto e melancolia."
+  },
+  {
+    "Pergunta": "Em 'A Máscara da Morte Rubra', qual é o objeto usado para simbolizar a presença da morte na festa?",
+    "Opcoes": {
+      A: "Uma caveira",
+      B: "Uma máscara",
+      C: "Um relógio",
+      D: "Um espelho"
+    },
+    "Resposta": "B",
+    "Motivo": "Em 'A Máscara da Morte Rubra', Poe usa uma máscara como símbolo da presença da morte durante a festa, destacando o tema da inevitabilidade da morte."
+  },
+  {
+    "Pergunta": "Edgar Allan Poe é considerado um dos precursores do gênero policial. Qual é a obra em que o detetive C. Auguste Dupin faz sua primeira aparição?",
+    "Opcoes": {
+      A: "A Queda da Casa de Usher",
+      B: "O Assassinato da Rua Morgue",
+      C: "O Barril de Amontillado",
+      D: "O Gato Preto"
+    },
+    "Resposta": "B",
+    "Motivo": "'O Assassinato da Rua Morgue' é a obra em que o detetive C. Auguste Dupin faz sua primeira aparição, sendo considerado um dos primeiros contos de detetive da literatura."
+  },
+  {
+    "Pergunta": "Em 'O Gato Preto', qual é o nome do gato de estimação do protagonista que desempenha um papel significativo na história?",
+    "Opcoes": {
+      A: "Pluto",
+      B: "Cerberus",
+      C: "Hades",
+      D: "Perseu"
+    },
+    "Resposta": "A",
+    "Motivo": "Em 'O Gato Preto', o nome do gato de estimação do protagonista é Pluto, desempenhando um papel simbólico e crucial na narrativa."
+  },
+  {
+    "Pergunta": "Qual é o conto de Edgar Allan Poe que envolve um homem enterrado vivo nas catacumbas de sua casa?",
+    "Opcoes": {
+      A: "O Gato Preto",
+      B: "A Máscara da Morte Rubra",
+      C: "O Barril de Amontillado",
+      D: "O Enterro Prematuro"
+    },
+    "Resposta": "D",
+    "Motivo": "'O Enterro Prematuro' é o conto de Poe que envolve um homem sendo enterrado vivo nas catacumbas de sua casa, explorando o medo do sepultamento prematuro."
+  },
+  {
+    "Pergunta": "Em 'A Máscara da Morte Rubra', qual é a cor da última sala que representa a morte?",
+    "Opcoes": {
+      A: "Preto",
+      B: "Vermelho",
+      C: "Branco",
+      D: "Verde"
+    },
+    "Resposta": "B",
+    "Motivo": "Em 'A Máscara da Morte Rubra', a última sala que representa a morte é vermelha, simbolizando a inevitabilidade e a presença da morte."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Poe que conta a história de um homem que confessa ter enterrado sua esposa viva?",
+    "Opcoes": {
+      A: "O Gato Preto",
+      B: "A Queda da Casa de Usher",
+      C: "Berenice",
+      D: "O Barril de Amontillado"
+    },
+    "Resposta": "C",
+    "Motivo": "'Berenice' é a obra de Poe que conta a história de um homem que confessa ter enterrado sua esposa viva, explorando temas de morbidez e insanidade."
+  },
+  {
+    "Pergunta": "Edgar Allan Poe também escreveu poesias românticas. Qual é a poesia que descreve a beleza e a tristeza da morte de uma mulher jovem?",
+    "Opcoes": {
+      A: "Annabel Lee",
+      B: "Lenore",
+      C: "O Corvo",
+      D: "Ulalume"
+    },
+    "Resposta": "A",
+    "Motivo": "'Annabel Lee' é a poesia romântica de Poe que descreve a beleza e a tristeza da morte de uma mulher jovem, destacando o tema do amor e da perda."
+  },
+  {
+    "Pergunta": "Qual é o nome do narrador em primeira pessoa que narra a história em 'O Corvo', uma das obras mais conhecidas de Poe?",
+    "Opcoes": {
+      A: "Roderick Usher",
+      B: "Montresor",
+      C: "Pym",
+      D: "Desconhecido"
+    },
+    "Resposta": "D",
+    "Motivo": "O narrador em primeira pessoa que narra a história em 'O Corvo' é desconhecido, contribuindo para o mistério e a atmosfera sombria do poema."
+  },
+  
+   {
+    "Pergunta": "Qual é o título da obra de William Shakespeare que conta a história de Romeu e Julieta, dois jovens amantes de famílias inimigas?",
+    "Opcoes": {
+      A: "Otelo",
+      B: "Hamlet",
+      C: "Romeu e Julieta",
+      D: "Macbeth"
+    },
+    "Resposta": "C",
+    "Motivo": "'Romeu e Julieta' é a obra de Shakespeare que conta a trágica história de amor entre dois jovens de famílias inimigas, sendo uma das mais conhecidas da literatura mundial."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'Dom Quixote', um romance que satiriza as novelas de cavalaria e é considerado um dos maiores trabalhos da literatura?",
+    "Opcoes": {
+      A: "Miguel de Cervantes",
+      B: "Fernando Pessoa",
+      C: "García Márquez",
+      D: "Lope de Vega"
+    },
+    "Resposta": "A",
+    "Motivo": "Miguel de Cervantes é o autor de 'Dom Quixote', um romance que satiriza as novelas de cavalaria, sendo considerado um dos maiores trabalhos da literatura mundial."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Jane Austen que narra o romance de Elizabeth Bennet e Mr. Darcy?",
+    "Opcoes": {
+      A: "Emma",
+      B: "Persuasão",
+      C: "Orgulho e Preconceito",
+      D: "Razão e Sensibilidade"
+    },
+    "Resposta": "C",
+    "Motivo": "'Orgulho e Preconceito' é a obra de Jane Austen que narra o romance de Elizabeth Bennet e Mr. Darcy, abordando questões sociais e românticas na Inglaterra do século XIX."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'Os Miseráveis', um romance que segue a vida de Jean Valjean e outros personagens durante a Revolução Francesa?",
+    "Opcoes": {
+      A: "Victor Hugo",
+      B: "Gustave Flaubert",
+      C: "Émile Zola",
+      D: "Stendhal"
+    },
+    "Resposta": "A",
+    "Motivo": "Victor Hugo é o autor de 'Os Miseráveis', um romance que segue a vida de Jean Valjean e outros personagens durante a Revolução Francesa, explorando temas de justiça e redenção."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de Fiódor Dostoiévski que aborda temas como a alienação e a busca por sentido na vida?",
+    "Opcoes": {
+      A: "Crime e Castigo",
+      B: "Os Demônios",
+      C: "O Idiota",
+      D: "Os Irmãos Karamázov"
+    },
+    "Resposta": "C",
+    "Motivo": "'O Idiota' é a obra de Dostoiévski que aborda temas como a alienação e a busca por sentido na vida, centrando-se na figura do Príncipe Míchkin."
+  },
+  {
+    "Pergunta": "Quem é a autora da obra 'Frankenstein', que explora questões éticas relacionadas à criação e responsabilidade?",
+    "Opcoes": {
+      A: "Jane Austen",
+      B: "Emily Brontë",
+      C: "Mary Shelley",
+      D: "Charlotte Brontë"
+    },
+    "Resposta": "C",
+    "Motivo": "Mary Shelley é a autora de 'Frankenstein', obra que explora questões éticas relacionadas à criação e responsabilidade, sendo considerada uma das precursoras da ficção científica."
+  },
+  {
+    "Pergunta": "Qual foi a inspiração principal de Mary Shelley para escrever 'Frankenstein'?",
+    "Opcoes": {
+      A: "Um sonho",
+      B: "Uma experiência científica",
+      C: "Uma lenda urbana",
+      D: "Um conto folclórico"
+    },
+    "Resposta": "A",
+    "Motivo": "Mary Shelley teve a inspiração principal para 'Frankenstein' em um sonho que teve durante uma estadia no Lago Genebra, influenciada pelas discussões científicas da época."
+  },
+  {
+    "Pergunta": "Qual é o nome completo do cientista que cria a criatura em 'Frankenstein', de Mary Shelley?",
+    "Opcoes": {
+      A: "Victor Frankenstein",
+      B: "Henry Clerval",
+      C: "Robert Walton",
+      D: "Alphonse Frankenstein"
+    },
+    "Resposta": "A",
+    "Motivo": "O nome completo do cientista que cria a criatura em 'Frankenstein' é Victor Frankenstein, um personagem central na obra de Mary Shelley."
+  },
+  {
+    "Pergunta": "Como é frequentemente chamada a criatura criada por Victor Frankenstein em 'Frankenstein'?",
+    "Opcoes": {
+      A: "O Homem Inacabado",
+      B: "O Abandonado",
+      C: "O Monstro",
+      D: "O Desconhecido"
+    },
+    "Resposta": "C",
+    "Motivo": "A criatura criada por Victor Frankenstein em 'Frankenstein' é frequentemente chamada de 'O Monstro', refletindo a rejeição e o isolamento que ela enfrenta na história."
+  },
+  {
+    "Pergunta": "Qual é o destino final de Victor Frankenstein em 'Frankenstein', de Mary Shelley?",
+    "Opcoes": {
+      A: "Casamento feliz",
+      B: "Morte na fogueira",
+      C: "Solidão eterna",
+      D: "Sucesso científico"
+    },
+    "Resposta": "C",
+    "Motivo": "O destino final de Victor Frankenstein em 'Frankenstein' é a solidão eterna, devido às consequências de suas escolhas e a perseguição implacável da criatura que ele criou."
+  },
+  {
+    "Pergunta": "Qual é o papel de Elizabeth Lavenza na história de 'Frankenstein'?",
+    "Opcoes": {
+      A: "Criadora da criatura",
+      B: "Noiva de Victor Frankenstein",
+      C: "Rival de Victor",
+      D: "Cientista assistente"
+    },
+    "Resposta": "B",
+    "Motivo": "Elizabeth Lavenza desempenha o papel de noiva de Victor Frankenstein em 'Frankenstein', sendo um personagem significativo na vida do protagonista."
+  },
+  {
+    "Pergunta": "Em 'Frankenstein', qual é a principal razão pela qual a criatura se volta contra Victor Frankenstein?",
+    "Opcoes": {
+      A: "Rejeição e abandono",
+      B: "Ciúmes de outros humanos",
+      C: "Instruções de outros cientistas",
+      D: "Amor por Elizabeth"
+    },
+    "Resposta": "A",
+    "Motivo": "A principal razão pela qual a criatura se volta contra Victor Frankenstein em 'Frankenstein' é a rejeição e o abandono que ela sofre, levando-a a buscar vingança."
+  },
+  
+  {
+    "Pergunta": "Em 'Frankenstein', de Mary Shelley, como a criatura se sente inicialmente em relação a si mesma e ao mundo ao seu redor?",
+    "Opcoes": {
+      A: "Confusa e assustada",
+      B: "Orgulhosa e vingativa",
+      C: "Feliz e aceita",
+      D: "Curiosa e exploradora"
+    },
+    "Resposta": "A",
+    "Motivo": "Inicialmente, a criatura em 'Frankenstein' se sente confusa e assustada em relação a si mesma e ao mundo ao seu redor, pois é confrontada com uma realidade desconhecida."
+  },
+  {
+    "Pergunta": "Qual é a resposta da sociedade à aparência da criatura em 'Frankenstein'?",
+    "Opcoes": {
+      A: "Aceitação imediata",
+      B: "Admiração e respeito",
+      C: "Medo e repulsa",
+      D: "Indiferença total"
+    },
+    "Resposta": "C",
+    "Motivo": "Na obra 'Frankenstein', a sociedade reage com medo e repulsa à aparência da criatura, destacando o tema da intolerância e do preconceito baseado na aparência."
+  },
+  {
+    "Pergunta": "Como Victor Frankenstein justifica sua busca pela criação de vida em 'Frankenstein'?",
+    "Opcoes": {
+      A: "Busca pela imortalidade",
+      B: "Cura para doenças",
+      C: "Avanço científico",
+      D: "Sede de poder"
+    },
+    "Resposta": "C",
+    "Motivo": "Victor Frankenstein justifica sua busca pela criação de vida em 'Frankenstein' como um avanço científico, buscando ultrapassar as limitações da vida humana."
+  },
+  {
+    "Pergunta": "Quais são as consequências da recusa de Victor Frankenstein em criar uma companheira para a criatura em 'Frankenstein'?",
+    "Opcoes": {
+      A: "Felicidade eterna",
+      B: "Morte de Elizabeth",
+      C: "Criação da companheira",
+      D: "Redenção de Victor"
+    },
+    "Resposta": "B",
+    "Motivo": "A recusa de Victor Frankenstein em criar uma companheira para a criatura resulta na morte de Elizabeth, demonstrando as graves consequências de suas decisões."
+  },
+  {
+    "Pergunta": "Qual é o destino final da criatura no final de 'Frankenstein'?",
+    "Opcoes": {
+      A: "Casamento feliz",
+      B: "Morte na fogueira",
+      C: "Solidão eterna",
+      D: "Sucesso científico"
+    },
+    "Resposta": "C",
+    "Motivo": "O destino final da criatura em 'Frankenstein' é a solidão eterna, pois ela percebe a impossibilidade de encontrar aceitação na sociedade devido à sua aparência única."
+  },
+  {
+    "Pergunta": "Quem narra a maior parte da história em 'Frankenstein', fornecendo sua perspectiva sobre os eventos?",
+    "Opcoes": {
+      A: "Victor Frankenstein",
+      B: "Elizabeth Lavenza",
+      C: "A criatura",
+      D: "Robert Walton"
+    },
+    "Resposta": "D",
+    "Motivo": "A maior parte da história em 'Frankenstein' é narrada por Robert Walton, que ouve a história de Victor Frankenstein enquanto busca o Polo Norte."
+  }
+  
+,
+
+ {
+    "Pergunta": "Qual é o título da obra de Charles Dickens que apresenta o protagonista órfão que pede mais comida em um orfanato?",
+    "Opcoes": {
+      A: "David Copperfield",
+      B: "Grandes Esperanças",
+      C: "Oliver Twist",
+      D: "A Tale of Two Cities"
+    },
+    "Resposta": "C",
+    "Motivo": "'Oliver Twist' é a obra de Charles Dickens que apresenta o protagonista órfão que pede mais comida em um orfanato, abordando temas de pobreza e injustiça social."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'O Morro dos Ventos Uivantes', um romance gótico que narra a tumultuada relação entre Heathcliff e Catherine Earnshaw?",
+    "Opcoes": {
+      A: "Jane Austen",
+      B: "Emily Brontë",
+      C: "Charlotte Brontë",
+      D: "George Eliot"
+    },
+    "Resposta": "B",
+    "Motivo": "Emily Brontë é a autora de 'O Morro dos Ventos Uivantes', um romance gótico que narra a tumultuada relação entre Heathcliff e Catherine Earnshaw nas charnecas inglesas."
+  },
+  
+  {
+    "Pergunta": "Quem é o autor da obra 'Dom Quixote', um romance que satiriza as novelas de cavalaria?",
+    "Opcoes": {
+      A: "Miguel de Cervantes",
+      B: "García Márquez",
+      C: "Jorge Luis Borges",
+      D: "Gabriel García Lorca"
+    },
+    "Resposta": "A",
+    "Motivo": "Miguel de Cervantes é o autor de 'Dom Quixote', um romance que satiriza as novelas de cavalaria e é considerado uma das obras mais importantes da literatura mundial."
+  },
+  {
+    "Pergunta": "Quem é conhecido como o 'Bardo de Avon' e é considerado um dos maiores dramaturgos da literatura mundial?",
+    "Opcoes": {
+      A: "William Shakespeare",
+      B: "John Milton",
+      C: "Christopher Marlowe",
+      D: "Ben Jonson"
+    },
+    "Resposta": "A",
+    "Motivo": "William Shakespeare, conhecido como o 'Bardo de Avon', é considerado um dos maiores dramaturgos da literatura mundial, autor de peças como 'Romeu e Julieta' e 'Hamlet'."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'Cem Anos de Solidão', um dos principais representantes do realismo mágico?",
+    "Opcoes": {
+      A: "Gabriel García Márquez",
+      B: "Isabel Allende",
+      C: "Mario Vargas Llosa",
+      D: "Jorge Luis Borges"
+    },
+    "Resposta": "A",
+    "Motivo": "Gabriel García Márquez é o autor de 'Cem Anos de Solidão', uma obra-prima do realismo mágico que explora a história da família Buendía em Macondo."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'Romeu e Julieta', um dos maiores clássicos do teatro e da literatura?",
+    "Opcoes": {
+      A: "William Shakespeare",
+      B: "Jane Austen",
+      C: "Leo Tolstoy",
+      D: "Fyodor Dostoevsky"
+    },
+    "Resposta": "A",
+    "Motivo": "William Shakespeare é o autor de 'Romeu e Julieta', uma tragédia romântica que se tornou um dos maiores clássicos do teatro e da literatura mundial."
+  },
+  {
+    "Pergunta": "Quem é conhecido por escrever 'O Processo' e 'A Metamorfose', obras que exploram temas do absurdo e da alienação?",
+    "Opcoes": {
+      A: "Franz Kafka",
+      B: "Hermann Hesse",
+      C: "Thomas Mann",
+      D: "Albert Camus"
+    },
+    "Resposta": "A",
+    "Motivo": "Franz Kafka é conhecido por escrever 'O Processo' e 'A Metamorfose', obras que exploram temas do absurdo, da alienação e da burocracia."
+  },
+  {
+    "Pergunta": "Quem é o autor da obra 'O Retrato de Dorian Gray', que aborda temas como a decadência moral e a busca pela eterna juventude?",
+    "Opcoes": {
+      A: "Oscar Wilde",
+      B: "James Joyce",
+      C: "Virginia Woolf",
+      D: "D.H. Lawrence"
+    },
+    "Resposta": "A",
+    "Motivo": "Oscar Wilde é o autor de 'O Retrato de Dorian Gray', uma obra que aborda temas como a decadência moral e a busca pela eterna juventude através do retrato do protagonista."
+  },
+  
+  {
+    "Pergunta": "Quem é o autor da obra 'Dom Quixote', considerada uma das maiores obras da literatura mundial?",
+    "Opcoes": {
+      A: "Miguel de Cervantes",
+      B: "William Shakespeare",
+      C: "Jorge Luis Borges",
+      D: "Gabriel García Márquez"
+    },
+    "Resposta": "A",
+    "Motivo": "'Dom Quixote' foi escrito por Miguel de Cervantes e é considerada uma das maiores obras da literatura mundial, sendo uma sátira às novelas de cavalaria."
+  },
+  {
+    "Pergunta": "Qual é o nome do personagem principal de 'Dom Quixote', que enlouquece ao ler muitos livros de cavalaria?",
+    "Opcoes": {
+      A: "Alonso Quixano",
+      B: "Sancho Panza",
+      C: "Dulcinea del Toboso",
+      D: "Rocinante"
+    },
+    "Resposta": "A",
+    "Motivo": "O personagem principal de 'Dom Quixote' é Alonso Quixano, que enlouquece ao ler muitos livros de cavalaria e assume a identidade de Dom Quixote, o cavaleiro andante."
+  },
+  {
+    "Pergunta": "Qual é o nome do fiel escudeiro de Dom Quixote, conhecido por sua simplicidade e lealdade?",
+    "Opcoes": {
+      A: "Sancho Panza",
+      B: "Dulcinea del Toboso",
+      C: "Rocinante",
+      D: "Aldonza Lorenzo"
+    },
+    "Resposta": "A",
+    "Motivo": "O fiel escudeiro de Dom Quixote é chamado Sancho Panza. Sua simplicidade e lealdade são características marcantes na obra."
+  },
+  {
+    "Pergunta": "Qual é o nome da dama idealizada por Dom Quixote, por quem ele se apaixona e dedica suas aventuras?",
+    "Opcoes": {
+      A: "Dulcinea del Toboso",
+      B: "Rocinante",
+      C: "Aldonza Lorenzo",
+      D: "Marcela"
+    },
+    "Resposta": "A",
+    "Motivo": "A dama idealizada por Dom Quixote, por quem ele se apaixona e dedica suas aventuras, é chamada Dulcinea del Toboso."
+  },
+  {
+    "Pergunta": "Em 'Dom Quixote', que objeto é frequentemente confundido por Dom Quixote como um elmo mágico?",
+    "Opcoes": {
+      A: "Bacia de lavar",
+      B: "Moinho de vento",
+      C: "Baú de tesouro",
+      D: "Escudo de cavaleiro"
+    },
+    "Resposta": "B",
+    "Motivo": "Em 'Dom Quixote', Dom Quixote confunde moinhos de vento com gigantes e acredita que um deles é um elmo mágico, resultando em uma das cenas mais famosas da obra."
+  },
+  {
+    "Pergunta": "Qual é o gênero literário de 'Dom Quixote', que combina elementos de sátira, paródia e novela de cavalaria?",
+    "Opcoes": {
+      A: "Romance de cavalaria",
+      B: "Novela picaresca",
+      C: "Romance realista",
+      D: "Novela de amor cortês"
+    },
+    "Resposta": "A",
+    "Motivo": "'Dom Quixote' pertence ao gênero literário do romance de cavalaria, mas é conhecido por combinar elementos de sátira, paródia e crítica social."
+  },
+  
+  {
+    "Pergunta": "Qual é o título da obra de Franz Kafka que aborda a alienação e a burocracia, seguindo o protagonista Josef K. em sua luta contra um sistema opressivo?",
+    "Opcoes": {
+      A: "O Processo",
+      B: "A Metamorfose",
+      C: "O Castelo",
+      D: "América"
+    },
+    "Resposta": "A",
+    "Motivo": "'O Processo' é a obra de Franz Kafka que aborda a alienação e a burocracia, explorando a jornada do protagonista Josef K. contra um sistema opressivo e impessoal."
+  },
+  {
+    "Pergunta": "Em 'A Metamorfose', de Franz Kafka, qual é a condição peculiar que o protagonista Gregor Samsa desperta ao se transformar durante a noite?",
+    "Opcoes": {
+      A: "Inseto gigante",
+      B: "Rato",
+      C: "Ave migratória",
+      D: "Serpente venenosa"
+    },
+    "Resposta": "A",
+    "Motivo": "Em 'A Metamorfose', Gregor Samsa desperta transformado em um inseto gigante, lançando luz sobre temas de isolamento e estranhamento social."
+  },
+  {
+    "Pergunta": "Qual é o tema central da obra 'O Castelo', de Franz Kafka, que segue o protagonista K. em sua busca por reconhecimento e aceitação em uma misteriosa aldeia?",
+    "Opcoes": {
+      A: "Exploração espacial",
+      B: "Amor proibido",
+      C: "Burocracia e alienação",
+      D: "Vingança e traição"
+    },
+    "Resposta": "C",
+    "Motivo": "'O Castelo', de Franz Kafka, explora o tema central da burocracia e alienação, seguindo o protagonista K. em sua busca por reconhecimento em uma aldeia misteriosa dominada por um castelo inacessível."
+  },
+  {
+    "Pergunta": "Em 'América', de Franz Kafka, qual é a jornada do protagonista Karl Roßmann após ser enviado para os Estados Unidos por sua família?",
+    "Opcoes": {
+      A: "Busca por vingança",
+      B: "Revolução política",
+      C: "Procura por identidade",
+      D: "Viagem ao espaço sideral"
+    },
+    "Resposta": "C",
+    "Motivo": "'América', de Franz Kafka, segue a jornada de Karl Roßmann nos Estados Unidos, explorando temas de busca por identidade e pertencimento em um ambiente desconhecido."
+  },
+  {
+    "Pergunta": "Qual é o termo frequentemente associado ao estilo literário de Franz Kafka, que envolve narrativas absurdas e situações inusitadas?",
+    "Opcoes": {
+      A: "Realismo mágico",
+      B: "Romance gótico",
+      C: "Expressionismo",
+      D: "Kafkiano"
+    },
+    "Resposta": "D",
+    "Motivo": "O estilo literário de Franz Kafka é frequentemente associado ao termo 'Kafkiano', que descreve narrativas absurdas, situações inusitadas e uma atmosfera de alienação e perplexidade."
+  },
+  {
+    "Pergunta": "Na obra 'A Metamorfose' de Franz Kafka, qual é a transformação surpreendente que o protagonista Gregor Samsa sofre?",
+    "Opcoes": {
+      A: "Envelhecimento acelerado",
+      B: "Invisibilidade",
+      C: "Transformação em inseto",
+      D: "Viagem no tempo"
+    },
+    "Resposta": "C",
+    "Motivo": "Em 'A Metamorfose', Gregor Samsa sofre a transformação surpreendente de se tornar um inseto gigante, lançando as bases para a reflexão sobre a alienação e o estranhamento."
+  },
+  {
+    "Pergunta": "Como a família de Gregor Samsa reage à sua metamorfose em 'A Metamorfose'?",
+    "Opcoes": {
+      A: "Aceitação imediata",
+      B: "Choque e repulsa",
+      C: "Alegria e comemoração",
+      D: "Indiferença total"
+    },
+    "Resposta": "B",
+    "Motivo": "Na obra 'A Metamorfose', a família de Gregor Samsa reage com choque e repulsa diante de sua metamorfose, contribuindo para o tom alienante da narrativa."
+  },
+  {
+    "Pergunta": "Qual é o impacto da metamorfose de Gregor Samsa em sua relação com o mundo exterior e sua própria identidade?",
+    "Opcoes": {
+      A: "Melhoria de sua posição social",
+      B: "Isolamento e alienação",
+      C: "Ascensão profissional",
+      D: "Ampliação de sua rede social"
+    },
+    "Resposta": "B",
+    "Motivo": "A metamorfose de Gregor Samsa em 'A Metamorfose' resulta em isolamento e alienação, impactando negativamente sua relação com o mundo exterior e sua própria identidade."
+  },
+  {
+    "Pergunta": "Como a sociedade retratada em 'A Metamorfose' responde à presença de Gregor Samsa como inseto?",
+    "Opcoes": {
+      A: "Admiração e respeito",
+      B: "Integração completa",
+      C: "Rejeição e desprezo",
+      D: "Celebração da diferença"
+    },
+    "Resposta": "C",
+    "Motivo": "Na obra 'A Metamorfose', a sociedade responde à presença de Gregor Samsa como inseto com rejeição e desprezo, refletindo a intolerância e a falta de compreensão em relação ao diferente."
+  },
+  
+  {
+    "Pergunta": "Qual é o subgênero literário associado à obra de H.P. Lovecraft, caracterizado por elementos de horror cósmico e entidades sobrenaturais?",
+    "Opcoes": {
+      A: "Romance policial",
+      B: "Realismo mágico",
+      C: "Horror cósmico",
+      D: "Romance histórico"
+    },
+    "Resposta": "C",
+    "Motivo": "A obra de H.P. Lovecraft é frequentemente associada ao subgênero do horror cósmico, que explora a insignificância humana diante de entidades sobrenaturais e desconhecidas."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de H.P. Lovecraft que apresenta o Necronomicon, um fictício livro de magia negra e invocações a seres cósmicos?",
+    "Opcoes": {
+      A: "As Montanhas da Loucura",
+      B: "A Cor que Caiu do Espaço",
+      C: "O Chamado de Cthulhu",
+      D: "O Caso de Charles Dexter Ward"
+    },
+    "Resposta": "D",
+    "Motivo": "'O Caso de Charles Dexter Ward' é a obra de H.P. Lovecraft que apresenta o Necronomicon, um fictício livro de magia negra que desencadeia eventos sinistros."
+  },
+  {
+    "Pergunta": "Quem são os Antigos na mitologia criada por H.P. Lovecraft, frequentemente associados a entidades cósmicas e deidades alienígenas?",
+    "Opcoes": {
+      A: "Deuses gregos",
+      B: "Vampiros",
+      C: "Anjos caídos",
+      D: "Grandes Antigos"
+    },
+    "Resposta": "D",
+    "Motivo": "Na mitologia criada por H.P. Lovecraft, os Antigos são frequentemente associados a entidades cósmicas e deidades alienígenas, representando poderes além da compreensão humana."
+  },
+  {
+    "Pergunta": "Qual é o nome da cidade fictícia frequentemente mencionada nas obras de H.P. Lovecraft, conhecida por ser um centro de atividade paranormal e encontros com seres sobrenaturais?",
+    "Opcoes": {
+      A: "Arkham",
+      B: "Innsmouth",
+      C: "Dunwich",
+      D: "Kingsport"
+    },
+    "Resposta": "A",
+    "Motivo": "Arkham é o nome da cidade fictícia frequentemente mencionada nas obras de H.P. Lovecraft, sendo um cenário recorrente para atividade paranormal e encontros com seres sobrenaturais."
+  },
+  {
+    "Pergunta": "Qual é o título da obra de H.P. Lovecraft que apresenta a entidade cósmica Cthulhu, despertada de seu sono milenar para espalhar o caos?",
+    "Opcoes": {
+      A: "A Sombra sobre Innsmouth",
+      B: "O Chamado de Cthulhu",
+      C: "O Caso de Charles Dexter Ward",
+      D: "Nas Montanhas da Loucura"
+    },
+    "Resposta": "B",
+    "Motivo": "'O Chamado de Cthulhu' é a obra de H.P. Lovecraft que apresenta a entidade cósmica Cthulhu, despertada de seu sono milenar para espalhar o caos e insanidade entre os humanos."
+  },
+  {
+    "Pergunta": "Qual é o conceito recorrente nas obras de H.P. Lovecraft que descreve a impossibilidade de compreender completamente o universo e a insanidade resultante desse conhecimento?",
+    "Opcoes": {
+      A: "Cosmicismo",
+      B: "Realismo mágico",
+      C: "Absurdismo",
+      D: "Existencialismo"
+    },
+    "Resposta": "A",
+    "Motivo": "O conceito recorrente nas obras de H.P. Lovecraft é o 'Cosmicismo', que descreve a impossibilidade de compreender completamente o universo e a insanidade resultante desse conhecimento."
+  },
+  {
+    "Pergunta": "Em 'As Montanhas da Loucura' de H.P. Lovecraft, qual é o foco da expedição que descobre evidências de uma antiga civilização e encontros com seres cósmicos?",
+    "Opcoes": {
+      A: "Exploração espacial",
+      B: "Escavação arqueológica",
+      C: "Pesquisa oceanográfica",
+      D: "Expedição polar"
+    },
+    "Resposta": "D",
+    "Motivo": "'As Montanhas da Loucura' aborda uma expedição polar que descobre evidências de uma antiga civilização e encontros com seres cósmicos nas regiões inexploradas da Antártida."
+  },
+  {
+    "Pergunta": "Em 'O Horror de Dunwich', de H.P. Lovecraft, qual é a ameaça sobrenatural que assola a cidade de Dunwich?",
+    "Opcoes": {
+      A: "Fantasmas",
+      B: "Vampiros",
+      C: "Zumbis",
+      D: "Criatura cósmica"
+    },
+    "Resposta": "D",
+    "Motivo": "'O Horror de Dunwich' apresenta uma ameaça sobrenatural em forma de uma criatura cósmica que assola a cidade de Dunwich, explorando os horrores do desconhecido."
+  },
+  {
+    "Pergunta": "Qual é o tema central da obra 'Nas Montanhas da Loucura', de H.P. Lovecraft, que segue uma expedição à Antártida em busca de descobertas científicas?",
+    "Opcoes": {
+      A: "Descobertas arqueológicas",
+      B: "Encontros amorosos",
+      C: "Horrores cósmicos",
+      D: "Aventuras marítimas"
+    },
+    "Resposta": "C",
+    "Motivo": "'Nas Montanhas da Loucura' tem como tema central os horrores cósmicos descobertos durante uma expedição à Antártida, revelando segredos antigos e a presença de seres inimagináveis."
+  },
+  {
+    "Pergunta": "Em 'O Chamado de Cthulhu', de H.P. Lovecraft, como Cthulhu é descrito em termos físicos?",
+    "Opcoes": {
+      A: "Dragão alado",
+      B: "Polvo gigante",
+      C: "Lobo lunar",
+      D: "Serpente aquática"
+    },
+    "Resposta": "B",
+    "Motivo": "Em 'O Chamado de Cthulhu', Cthulhu é descrito fisicamente como um monstro cósmico com características de polvo gigante, sendo uma das entidades mais icônicas do universo lovecraftiano."
+  },
+  {
+    "Pergunta": "Qual é a característica comum nas histórias de H.P. Lovecraft que envolve o desaparecimento gradual do conhecimento e registros sobre seres cósmicos?",
+    "Opcoes": {
+      A: "Esquecimento cósmico",
+      B: "Perda da razão",
+      C: "Decadência cultural",
+      D: "Amnésia universal"
+    },
+    "Resposta": "A",
+    "Motivo": "Uma característica comum nas histórias de H.P. Lovecraft é o 'Esquecimento Cósmico', que envolve o desaparecimento gradual do conhecimento e registros sobre seres cósmicos, contribuindo para o horror cósmico."
+  },
+  {
+    "Pergunta": "Em 'O Caso de Charles Dexter Ward', de H.P. Lovecraft, qual é o mistério que leva o protagonista a descobrir segredos sombrios relacionados à necromancia?",
+    "Opcoes": {
+      A: "Desaparecimento de pessoas",
+      B: "Arte abstrata",
+      C: "Relíquias antigas",
+      D: "Genealogia familiar"
+    },
+    "Resposta": "D",
+    "Motivo": "'O Caso de Charles Dexter Ward' segue o protagonista que, ao investigar sua genealogia familiar, descobre segredos sombrios relacionados à necromancia e práticas ocultas."
+  }
+  
+  
+  
+  ]
+    const perguntasMedicina = [
+      {
+    "Pergunta": "Explique o mecanismo de ação dos antibióticos beta-lactâmicos, destacando sua interação com as bactérias.",
+    "Opcoes": {
+      A: "Inibição da síntese de proteínas",
+      B: "Bloqueio da replicação do DNA",
+      C: "Inibição da parede celular",
+      D: "Ativação do sistema imunológico"
+    },
+    "Resposta": "C",
+    "Motivo": "Os antibióticos beta-lactâmicos, como a penicilina, agem inibindo a síntese da parede celular bacteriana, levando à lise celular e morte bacteriana."
+  },
+  {
+    "Pergunta": "Como os fármacos anti-inflamatórios não esteroides (AINEs) atuam no organismo, e quais são os possíveis efeitos colaterais associados a seu uso prolongado?",
+    "Opcoes": {
+      A: "Inibição da enzima conversora de angiotensina",
+      B: "Bloqueio de receptores de dopamina",
+      C: "Inibição da síntese de prostaglandinas",
+      D: "Estimulação do sistema imunológico"
+    },
+    "Resposta": "C",
+    "Motivo": "Os AINEs atuam inibindo a síntese de prostaglandinas, substâncias que desencadeiam a inflamação. Os efeitos colaterais podem incluir danos ao trato gastrointestinal e problemas renais."
+  },
+  {
+    "Pergunta": "Descreva o processo de potencial de ação em uma célula nervosa, incluindo os estágios de despolarização, repolarização e hiperpolarização.",
+    "Opcoes": {
+      A: "Despolarização: entrada de íons K+; Repolarização: saída de íons Na+; Hiperpolarização: entrada de íons Ca2+",
+      B: "Despolarização: entrada de íons Na+; Repolarização: saída de íons K+; Hiperpolarização: entrada de íons Cl-",
+      C: "Despolarização: entrada de íons Na+; Repolarização: saída de íons K+; Hiperpolarização: saída de íons Cl-",
+      D: "Despolarização: entrada de íons K+; Repolarização: saída de íons Na+; Hiperpolarização: saída de íons Cl-"
+    },
+    "Resposta": "B",
+    "Motivo": "No potencial de ação, a despolarização envolve a entrada rápida de íons Na+, seguida pela repolarização com saída de íons K+ e, ocasionalmente, hiperpolarização com saída de íons Cl-."
+  },
+  {
+    "Pergunta": "Qual é a diferença entre uma enzima e um hormônio, e como cada um deles desempenha papéis distintos no corpo humano?",
+    "Opcoes": {
+      A: "As enzimas atuam como mensageiros químicos, e os hormônios catalisam reações bioquímicas.",
+      B: "As enzimas são moléculas de sinalização, e os hormônios aceleram reações metabólicas.",
+      C: "As enzimas são catalisadores biológicos, e os hormônios funcionam como mensageiros químicos.",
+      D: "As enzimas regulam a homeostase, e os hormônios acionam reações enzimáticas."
+    },
+    "Resposta": "C",
+    "Motivo": "Enzimas são catalisadores biológicos que aceleram reações químicas, enquanto hormônios são mensageiros químicos que regulam processos fisiológicos no corpo."
+  },
+  {
+    "Pergunta": "Explique o conceito de resistência bacteriana aos antibióticos e mencione estratégias para combater esse problema crescente na prática clínica.",
+    "Opcoes": {
+      A: "Resistência causada por vacinação inadequada; Estratégia: aumento de doses de antibióticos.",
+      B: "Resistência devido ao uso excessivo de antibióticos; Estratégia: prescrição controlada e conscientização.",
+      C: "Resistência relacionada à exposição solar; Estratégia: uso de protetor solar antibacteriano.",
+      D: "Resistência associada à ingestão de alimentos crus; Estratégia: cozimento em alta temperatura."
+    },
+    "Resposta": "B",
+    "Motivo": "A resistência bacteriana aos antibióticos é frequentemente causada pelo uso excessivo ou inadequado desses medicamentos. Estratégias incluem prescrição controlada, conscientização e pesquisa de novos antibióticos."
+  },
+  {
+    "Pergunta": "Descreva o ciclo menstrual feminino, incluindo os eventos hormonais que ocorrem nas fases folicular e lútea.",
+    "Opcoes": {
+      A: "Fase folicular: aumento de progesterona; Fase lútea: liberação de óvulo.",
+      B: "Fase folicular: liberação de óvulo; Fase lútea: aumento de estrogênio.",
+      C: "Fase folicular: aumento de estrogênio; Fase lútea: liberação de óvulo.",
+      D: "Fase folicular: liberação de óvulo; Fase lútea: aumento de progesterona."
+    },
+    "Resposta": "C",
+    "Motivo": "Na fase folicular, há aumento de estrogênio, preparando o útero. Na fase lútea, ocorre a liberação do óvulo e aumento de progesterona para manter o endométrio."
+  },
+  
+  {
+    "Pergunta": "Explique o conceito de medicina regenerativa e forneça exemplos de abordagens terapêuticas baseadas nessa abordagem inovadora.",
+    "Opcoes": {
+      A: "Medicina que regenera memórias; Exemplo: terapia cognitivo-comportamental.",
+      B: "Medicina que restaura órgãos danificados; Exemplo: transplante de órgãos.",
+      C: "Medicina que previne doenças crônicas; Exemplo: vacinação.",
+      D: "Medicina que repara genes defeituosos; Exemplo: terapia gênica."
+    },
+    "Resposta": "D",
+    "Motivo": "Medicina regenerativa visa a reparação ou substituição de tecidos danificados. A terapia gênica é um exemplo, visando corrigir ou substituir genes defeituosos para tratar doenças."
+  },
+  
+    {
+    "Pergunta": "Explique o conceito de ação dos anti-hipertensivos beta-bloqueadores e destaque sua relevância no tratamento da hipertensão arterial.",
+    "Opcoes": {
+      A: "Aumento da pressão arterial; Importância: estabilização do ritmo cardíaco.",
+      B: "Bloqueio dos receptores de adrenalina; Importância: redução da frequência cardíaca e da pressão arterial.",
+      C: "Estimulação do sistema imunológico; Importância: prevenção de infecções.",
+      D: "Aumento da liberação de insulina; Importância: controle da glicose.",
+    },
+    "Resposta": "B",
+    "Motivo": "Os beta-bloqueadores bloqueiam os receptores de adrenalina, reduzindo a frequência cardíaca e a força das contrações, resultando na diminuição da pressão arterial, sendo essenciais no tratamento da hipertensão."
+  },
+  {
+    "Pergunta": "Descreva o mecanismo de ação dos analgésicos opioides e discuta os potenciais efeitos colaterais associados a seu uso prolongado.",
+    "Opcoes": {
+      A: "Estimulação do sistema nervoso central; Efeitos colaterais: hipotensão.",
+      B: "Ativação de receptores opioides; Efeitos colaterais: constipação e dependência.",
+      C: "Inibição da síntese de prostaglandinas; Efeitos colaterais: aumento da pressão arterial.",
+      D: "Estimulação do sistema imunológico; Efeitos colaterais: insônia.",
+    },
+    "Resposta": "B",
+    "Motivo": "Os analgésicos opioides ativam os receptores opioides no sistema nervoso, proporcionando alívio da dor. Efeitos colaterais incluem constipação e o risco de dependência com o uso prolongado."
+  },
+  {
+    "Pergunta": "O que são os antimicrobianos de amplo espectro e qual é a sua importância no tratamento de infecções?",
+    "Opcoes": {
+      A: "Atuam contra vírus e fungos; Importância: tratamento de infecções virais.",
+      B: "Efetivos contra diversos tipos de microrganismos; Importância: tratamento de infecções causadas por diferentes bactérias.",
+      C: "Eficazes contra bactérias Gram-positivas; Importância: tratamento de infecções específicas.",
+      D: "Agem exclusivamente em microrganismos resistentes; Importância: prevenção de resistência.",
+    },
+    "Resposta": "B",
+    "Motivo": "Antimicrobianos de amplo espectro são eficazes contra diversos tipos de microrganismos, sendo essenciais para o tratamento de infecções causadas por diferentes bactérias, especialmente quando a identificação do patógeno é difícil."
+  },
+  {
+    "Pergunta": "Explique o conceito de farmacocinética e farmacodinâmica, destacando suas diferenças e relevância no uso adequado de medicamentos.",
+    "Opcoes": {
+      A: "Farmacocinética: resposta do organismo ao medicamento; Farmacodinâmica: estudo da absorção.",
+      B: "Farmacocinética: estudo do medicamento no corpo; Farmacodinâmica: interação do medicamento com o organismo.",
+      C: "Farmacocinética: interação entre medicamentos; Farmacodinâmica: metabolismo dos medicamentos.",
+      D: "Farmacocinética: escolha do medicamento; Farmacodinâmica: formulação do medicamento.",
+    },
+    "Resposta": "B",
+    "Motivo": "Farmacocinética refere-se ao estudo da absorção, distribuição, metabolismo e excreção do medicamento no corpo. Farmacodinâmica aborda como o medicamento interage com o organismo para produzir seus efeitos, sendo cruciais para o uso adequado de medicamentos."
+  },
+  {
+    "Pergunta": "Discuta a importância do sistema de classificação de risco fetal Apgar e como é aplicado no momento do nascimento.",
+    "Opcoes": {
+      A: "Avaliação da saúde materna; Aplicação: durante o pré-natal.",
+      B: "Avaliação do risco de doenças genéticas; Aplicação: no primeiro trimestre gestacional.",
+      C: "Avaliação do estado de saúde do recém-nascido; Aplicação: minutos após o nascimento.",
+      D: "Determinação do tipo sanguíneo do feto; Aplicação: durante o parto.",
+    },
+    "Resposta": "C",
+    "Motivo": "O sistema de classificação de risco fetal Apgar avalia o estado de saúde do recém-nascido nos primeiros minutos após o nascimento, considerando parâmetros como frequência cardíaca, respiração, reflexos, tônus muscular e cor da pele."
+  },
+  {
+    "Pergunta": "Como a terapia de reposição hormonal é utilizada no tratamento de condições como a menopausa e quais são os riscos associados a esse tipo de intervenção?",
+    "Opcoes": {
+      A: "Substituição de hormônios sexuais; Riscos: aumento do risco de câncer de mama.",
+      B: "Estimulação do sistema imunológico; Riscos: reações alérgicas.",
+      C: "Regulação da pressão arterial; Riscos: hipotensão.",
+      D: "Estabilização do humor; Riscos: aumento do risco de diabetes.",
+    },
+    "Resposta": "A",
+    "Motivo": "A terapia de reposição hormonal envolve a substituição de hormônios sexuais, sendo utilizada no tratamento de sintomas da menopausa. No entanto, está associada ao aumento do risco de câncer de mama, entre outros riscos."
+  },
+{
+    "Pergunta": "Um paciente apresenta cansaço extremo, falta de ar ao esforço e inchaço nas pernas. Qual diagnóstico hipotético poderia ser considerado?",
+    "Opcoes": {
+      A: "Anemia ferropriva",
+      B: "Insuficiência cardíaca congestiva",
+      C: "Pneumonia",
+      D: "Diabetes mellitus"
+    },
+    "Resposta": "B",
+    "Motivo": "Os sintomas descritos, como cansaço extremo e inchaço nas pernas, são indicativos de insuficiência cardíaca congestiva, uma condição na qual o coração não bombeia sangue de maneira eficiente."
+  },
+  {
+    "Pergunta": "Uma paciente apresenta febre, dor abdominal no quadrante inferior direito e sensibilidade à palpação nessa região. Qual diagnóstico hipotético seria mais provável?",
+    "Opcoes": {
+      A: "Infecção do trato urinário",
+      B: "Apendicite aguda",
+      C: "Gastrite",
+      D: "Doença diverticular"
+    },
+    "Resposta": "B",
+    "Motivo": "Os sintomas descritos, incluindo dor no quadrante inferior direito, sugerem apendicite aguda, uma inflamação do apêndice que muitas vezes requer intervenção cirúrgica."
+  },
+  {
+    "Pergunta": "Um paciente apresenta dor nas articulações, fadiga, rigidez matinal e inflamação em várias articulações. Qual diagnóstico hipotético seria mais apropriado?",
+    "Opcoes": {
+      A: "Artrite reumatoide",
+      B: "Osteoartrite",
+      C: "Gota",
+      D: "Fibromialgia"
+    },
+    "Resposta": "A",
+    "Motivo": "Os sintomas descritos são consistentes com artrite reumatoide, uma doença autoimune que afeta as articulações, causando inflamação, dor e eventual deformidade articular."
+  },
+  {
+    "Pergunta": "Um paciente apresenta tosse persistente, perda de peso não intencional, fadiga e dor no peito. Qual diagnóstico hipotético seria mais preocupante e exigiria investigação adicional?",
+    "Opcoes": {
+      A: "Resfriado comum",
+      B: "Pneumonia",
+      C: "Câncer de pulmão",
+      D: "Asma"
+    },
+    "Resposta": "C",
+    "Motivo": "A combinação de tosse persistente, perda de peso não intencional e dor no peito levanta preocupações sobre câncer de pulmão, uma condição que geralmente requer avaliação diagnóstica urgente."
+  },
+  {
+    "Pergunta": "Um paciente apresenta dor abdominal recorrente, diarreia, perda de peso e sangramento retal. Qual diagnóstico hipotético seria mais apropriado para essa apresentação clínica?",
+    "Opcoes": {
+      A: "Síndrome do intestino irritável",
+      B: "Doença de Crohn",
+      C: "Úlcera péptica",
+      D: "Pancreatite"
+    },
+    "Resposta": "B",
+    "Motivo": "A combinação de dor abdominal recorrente, diarreia, perda de peso e sangramento retal sugere a possibilidade de doença de Crohn, uma condição inflamatória intestinal crônica."
+  },
+  {
+    "Pergunta": "Uma paciente apresenta dor intensa e súbita na parte inferior do abdômen, juntamente com sangramento vaginal. Qual diagnóstico hipotético seria mais provável?",
+    "Opcoes": {
+      A: "Endometriose",
+      B: "Ruptura de cisto ovariano",
+      C: "Apendicite aguda",
+      D: "Gravidez ectópica"
+    },
+    "Resposta": "D",
+    "Motivo": "A combinação de dor intensa na parte inferior do abdômen e sangramento vaginal sugere a possibilidade de gravidez ectópica, uma emergência médica."
+  },
+  {
+    "Pergunta": "Um paciente apresenta icterícia, fezes claras e urina escura. Qual diagnóstico hipotético seria mais indicado para esses sintomas?",
+    "Opcoes": {
+      A: "Hepatite",
+      B: "Pancreatite",
+      C: "Doença renal",
+      D: "Insuficiência cardíaca"
+    },
+    "Resposta": "A",
+    "Motivo": "Icterícia, fezes claras e urina escura são características típicas de distúrbios hepáticos, como hepatite, indicando problemas no funcionamento do fígado."
+  },
+  
+  {
+    "Pergunta": "Um paciente que trabalha em um ambiente com exposição a poeira e fumaça apresenta tosse crônica, falta de ar e chiado no peito. Qual diagnóstico hipotético seria mais apropriado?",
+    "Opcoes": {
+      A: "Asma ocupacional",
+      B: "Pneumonia",
+      C: "Tuberculose",
+      D: "Bronquite crônica",
+    },
+    "Resposta": "A",
+    "Motivo": "A associação de exposição a poeira e fumaça com tosse crônica, falta de ar e chiado no peito sugere a possibilidade de asma ocupacional, uma condição respiratória relacionada ao ambiente de trabalho."
+  },
+  {
+    "Pergunta": "Um paciente com histórico de hipertensão arterial, diabetes e tabagismo apresenta dor no peito, falta de ar e sudorese. Qual diagnóstico hipotético seria mais preocupante e exigiria avaliação urgente?",
+    "Opcoes": {
+      A: "Refluxo gastroesofágico",
+      B: "Infarto agudo do miocárdio",
+      C: "Pneumonia",
+      D: "Angina estável",
+    },
+    "Resposta": "B",
+    "Motivo": "Dor no peito, falta de ar e sudorese em um paciente com fatores de risco cardiovascular como hipertensão, diabetes e tabagismo levantam preocupações sobre infarto agudo do miocárdio, uma emergência médica."
+  },
+  {
+    "Pergunta": "Um paciente apresenta febre alta, dor de garganta, manchas vermelhas na pele e gânglios linfáticos aumentados. Qual diagnóstico hipotético seria mais provável?",
+    "Opcoes": {
+      A: "Mononucleose infecciosa",
+      B: "Gripe",
+      C: "Catapora",
+      D: "Escarlatina",
+    },
+    "Resposta": "D",
+    "Motivo": "Os sintomas descritos, incluindo febre alta, dor de garganta, manchas vermelhas na pele e gânglios linfáticos aumentados, são característicos da escarlatina, uma infecção bacteriana."
+  },
+  {
+    "Pergunta": "Uma paciente relata menstruações irregulares, ganho de peso, acne e crescimento de pelos faciais. Qual diagnóstico hipotético seria mais indicado?",
+    "Opcoes": {
+      A: "Síndrome do ovário policístico (SOP)",
+      B: "Menopausa",
+      C: "Endometriose",
+      D: "Gravidez",
+    },
+    "Resposta": "A",
+    "Motivo": "Os sintomas relatados, como menstruações irregulares, ganho de peso, acne e crescimento de pelos faciais, são sugestivos da síndrome do ovário policístico (SOP), um distúrbio hormonal comum em mulheres em idade fértil."
+  },
+  {
+    "Pergunta": "Um paciente idoso apresenta perda de memória progressiva, confusão e dificuldade em realizar atividades diárias. Qual diagnóstico hipotético seria mais apropriado para essa apresentação clínica?",
+    "Opcoes": {
+      A: "Demência vascular",
+      B: "Doença de Alzheimer",
+      C: "Depressão",
+      D: "Delirium",
+    },
+    "Resposta": "B",
+    "Motivo": "A perda de memória progressiva, confusão e dificuldade em realizar atividades diárias são características típicas da doença de Alzheimer, a forma mais comum de demência em idosos."
+  },
+  {
+    "Pergunta": "Um paciente com histórico de exposição ao amianto apresenta tosse persistente, dor no peito e perda de peso. Qual diagnóstico hipotético seria mais apropriado para essa apresentação clínica?",
+    "Opcoes": {
+      A: "Asbestose",
+      B: "Pneumonia",
+      C: "Câncer de pulmão",
+      D: "Tuberculose",
+    },
+    "Resposta": "C",
+    "Motivo": "A associação de exposição ao amianto com tosse persistente, dor no peito e perda de peso sugere a possibilidade de câncer de pulmão, sendo necessária uma avaliação médica para confirmação e manejo adequado."
+  },
+  
+  {
+    "Pergunta": "Um paciente com dor abdominal intensa e súbita, acompanhada de náuseas e vômitos, chega à emergência. Qual diagnóstico hipotético seria mais preocupante?",
+    "Opcoes": {
+      A: "Gastrite",
+      B: "Apendicite aguda",
+      C: "Colite",
+      D: "Pancreatite aguda",
+    },
+    "Resposta": "D",
+    "Motivo": "A dor abdominal intensa e súbita associada a náuseas e vômitos sugere a possibilidade de pancreatite aguda, uma condição grave que requer avaliação médica imediata."
+  },
+  {
+    "Pergunta": "Um paciente apresenta febre, dor de garganta, gânglios linfáticos aumentados e uma erupção cutânea vermelha. Qual diagnóstico hipotético seria mais provável?",
+    "Opcoes": {
+      A: "Mononucleose infecciosa",
+      B: "Catapora",
+      C: "Sífilis",
+      D: "Escabiose",
+    },
+    "Resposta": "A",
+    "Motivo": "A combinação de febre, dor de garganta, gânglios linfáticos aumentados e erupção cutânea vermelha sugere a possibilidade de mononucleose infecciosa, uma infecção viral comum."
+  },
+  {
+    "Pergunta": "Um paciente idoso relata dor nas articulações, rigidez matinal e inchaço nas mãos. Qual diagnóstico hipotético seria mais indicado?",
+    "Opcoes": {
+      A: "Osteoartrite",
+      B: "Artrite reumatoide",
+      C: "Gota",
+      D: "Fibromialgia",
+    },
+    "Resposta": "B",
+    "Motivo": "A dor nas articulações, rigidez matinal e inchaço nas mãos em um paciente idoso sugerem a possibilidade de artrite reumatoide, uma doença autoimune que afeta as articulações."
+  },
+  {
+    "Pergunta": "Um paciente apresenta dor na panturrilha, inchaço, vermelhidão e calor local. Qual diagnóstico hipotético seria mais provável?",
+    "Opcoes": {
+      A: "Trombose venosa profunda",
+      B: "Varizes",
+      C: "Cãibras musculares",
+      D: "Ciática",
+    },
+    "Resposta": "A",
+    "Motivo": "A combinação de dor na panturrilha, inchaço, vermelhidão e calor local sugere a possibilidade de trombose venosa profunda, uma condição que requer avaliação médica urgente."
+  },
+   {
+    "Pergunta": "Qual é o osso longo localizado na parte anterior da perna, conectando o joelho ao tornozelo?",
+    "Opcoes": {
+      A: "Fêmur",
+      B: "Tíbia",
+      C: "Fíbula",
+      D: "Fêmur"
+    },
+    "Resposta": "B",
+    "Motivo": "A tíbia é o osso longo localizado na parte anterior da perna, conectando o joelho ao tornozelo, enquanto a fíbula é outro osso da perna, mas geralmente menor."
+  },
+  {
+    "Pergunta": "Quais são as principais artérias que suprem o coração?",
+    "Opcoes": {
+      A: "Artéria carótida",
+      B: "Artéria pulmonar",
+      C: "Artéria coronária",
+      D: "Artéria aorta"
+    },
+    "Resposta": "C",
+    "Motivo": "As artérias coronárias são responsáveis por fornecer sangue ao músculo cardíaco. Elas são cruciais para a função cardíaca adequada."
+  },
+  {
+    "Pergunta": "O que é uma apendicectomia?",
+    "Opcoes": {
+      A: "Remoção do apêndice",
+      B: "Cirurgia de coração aberto",
+      C: "Transplante renal",
+      D: "Cirurgia de catarata"
+    },
+    "Resposta": "A",
+    "Motivo": "Uma apendicectomia é a remoção cirúrgica do apêndice, geralmente devido a uma inflamação aguda conhecida como apendicite."
+  },
+  {
+    "Pergunta": "Qual é a principal função do pâncreas no sistema digestivo?",
+    "Opcoes": {
+      A: "Produção de bile",
+      B: "Produção de insulina",
+      C: "Digestão de proteínas",
+      D: "Armazenamento de glicose"
+    },
+    "Resposta": "B",
+    "Motivo": "O pâncreas desempenha um papel vital na regulação dos níveis de glicose no sangue produzindo insulina, um hormônio essencial para o metabolismo da glicose."
+  },
+  {
+    "Pergunta": "Onde está localizado o úmero no corpo humano?",
+    "Opcoes": {
+      A: "Coxa",
+      B: "Antebraço",
+      C: "Crânio",
+      D: "Braço"
+    },
+    "Resposta": "D",
+    "Motivo": "O úmero é um osso longo localizado no braço, conectando o ombro ao cotovelo. É um dos principais ossos do membro superior."
+  },
+  {
+    "Pergunta": "O que é a traqueia?",
+    "Opcoes": {
+      A: "Tubo que leva o ar para os pulmões",
+      B: "Tubo digestivo",
+      C: "Canal urinário",
+      D: "Vaso sanguíneo"
+    },
+    "Resposta": "A",
+    "Motivo": "A traqueia é um tubo que leva o ar inspirado para os pulmões, ramificando-se em brônquios para alcançar os pulmões direito e esquerdo."
+  },
+  {
+    "Pergunta": "Quais são os ossos da mão?",
+    "Opcoes": {
+      A: "Fêmur, tíbia e fíbula",
+      B: "Rádio e ulna",
+      C: "Metacarpos e falanges",
+      D: "Úmero e clavícula"
+    },
+    "Resposta": "C",
+    "Motivo": "Os ossos da mão incluem os metacarpos (ossos da palma) e as falanges (ossos dos dedos)."
+  },
+  {
+    "Pergunta": "O que é a vesícula biliar?",
+    "Opcoes": {
+      A: "Órgão responsável pela produção de insulina",
+      B: "Saco muscular que armazena bile",
+      C: "Órgão que produz células sanguíneas",
+      D: "Parte do intestino delgado"
+    },
+    "Resposta": "B",
+    "Motivo": "A vesícula biliar é um saco muscular que armazena bile, liberando-a no intestino delgado para auxiliar na digestão de gorduras."
+  },
+  
+  {
+    "Pergunta": "O que é a cavidade torácica?",
+    "Opcoes": {
+      A: "Espaço onde estão os órgãos abdominais",
+      B: "Área do pescoço",
+      C: "Região da cabeça",
+      D: "Compartimento que abriga os pulmões e o coração",
+    },
+    "Resposta": "D",
+    "Motivo": "A cavidade torácica é o compartimento que abriga os pulmões e o coração, protegendo esses órgãos vitais."
+  },
+  {
+    "Pergunta": "O que é a glândula tireoide responsável por produzir?",
+    "Opcoes": {
+      A: "Insulina",
+      B: "Hormônios relacionados ao crescimento",
+      C: "Hormônios tireoidianos que regulam o metabolismo",
+      D: "Adrenalina",
+    },
+    "Resposta": "C",
+    "Motivo": "A glândula tireoide produz hormônios tireoidianos que desempenham um papel fundamental na regulação do metabolismo e do crescimento."
+  },
+  {
+    "Pergunta": "Qual é a função primária do sistema cardiovascular?",
+    "Opcoes": {
+      A: "Digestão de alimentos",
+      B: "Transporte de oxigênio para as células",
+      C: "Eliminação de resíduos",
+      D: "Defesa contra infecções",
+    },
+    "Resposta": "B",
+    "Motivo": "O sistema cardiovascular é responsável pelo transporte de oxigênio, nutrientes e hormônios para as células do corpo, além de remover resíduos metabólicos."
+  },
+  {
+    "Pergunta": "O que é o cólon?",
+    "Opcoes": {
+      A: "Parte superior do intestino delgado",
+      B: "Última porção do intestino grosso",
+      C: "Órgão responsável pela produção de bile",
+      D: "Glândula endócrina",
+    },
+    "Resposta": "B",
+    "Motivo": "O cólon é a última porção do intestino grosso, desempenhando um papel na absorção de água e na formação das fezes."
+  },
+  {
+    "Pergunta": "O que é a medula óssea responsável por produzir?",
+    "Opcoes": {
+      A: "Insulina",
+      B: "Células sanguíneas, incluindo glóbulos vermelhos, brancos e plaquetas",
+      C: "Hormônios sexuais",
+      D: "Adrenalina",
+    },
+    "Resposta": "B",
+    "Motivo": "A medula óssea é responsável pela produção de células sanguíneas, incluindo glóbulos vermelhos, glóbulos brancos e plaquetas."
+  },
+  {
+    "Pergunta": "Qual é o nome do osso que forma a parte superior da caixa craniana, protegendo o cérebro?",
+    "Opcoes": {
+      A: "Mandíbula",
+      B: "Côndilo",
+      C: "Escápula",
+      D: "Crânio",
+    },
+    "Resposta": "D",
+    "Motivo": "O crânio é o osso que forma a parte superior da caixa craniana, proporcionando proteção ao cérebro."
+  },
+  {
+    "Pergunta": "Onde está localizado o apêndice?",
+    "Opcoes": {
+      A: "Intestino delgado",
+      B: "Fígado",
+      C: "Coração",
+      D: "Ceco (parte inicial do intestino grosso)",
+    },
+    "Resposta": "D",
+    "Motivo": "O apêndice está localizado no ceco, que é a parte inicial do intestino grosso, próximo ao ponto de transição para o intestino delgado."
+  },
+  {
+    "Pergunta": "O que é o pericárdio?",
+    "Opcoes": {
+      A: "Membrana que reveste o pulmão",
+      B: "Membrana que reveste o coração",
+      C: "Osso do quadril",
+      D: "Músculo respiratório",
+    },
+    "Resposta": "B",
+    "Motivo": "O pericárdio é a membrana que reveste o coração, proporcionando proteção e facilitando os movimentos cardíacos."
+  },
+  
+  {
+    "Pergunta": "Qual é o principal papel dos linfócitos T no sistema imunológico?",
+    "Opcoes": {
+      A: "Produção de anticorpos",
+      B: "Fagocitose de bactérias",
+      C: "Ativação de outras células imunológicas",
+      D: "Transporte de oxigênio",
+    },
+    "Resposta": "C",
+    "Motivo": "Os linfócitos T desempenham um papel central na ativação de outras células imunológicas e na coordenação da resposta imunológica."
+  },
+  {
+    "Pergunta": "Quais são os principais tipos de linfócitos no corpo humano?",
+    "Opcoes": {
+      A: "Linfócitos B e monócitos",
+      B: "Linfócitos T e neutrófilos",
+      C: "Linfócitos T e linfócitos B",
+      D: "Linfócitos NK e eosinófilos",
+    },
+    "Resposta": "C",
+    "Motivo": "Os principais tipos de linfócitos são os linfócitos T e os linfócitos B, desempenhando papéis distintos na resposta imunológica."
+  },
+  {
+    "Pergunta": "O que são os linfócitos NK?",
+    "Opcoes": {
+      A: "Linfócitos responsáveis pela produção de anticorpos",
+      B: "Linfócitos especializados na fagocitose de patógenos",
+      C: "Linfócitos que atacam células infectadas ou cancerígenas",
+      D: "Linfócitos envolvidos na coagulação sanguínea",
+    },
+    "Resposta": "C",
+    "Motivo": "Os linfócitos NK (Natural Killer) são células do sistema imunológico que atacam células infectadas ou cancerígenas sem a necessidade de estimulação prévia."
+  },
+  {
+    "Pergunta": "O que é a anemia falciforme?",
+    "Opcoes": {
+      A: "Doença genética que afeta a coagulação sanguínea",
+      B: "Deficiência de ferro no organismo",
+      C: "Alteração na forma das hemácias devido a uma mutação genética",
+      D: "Aumento anormal do número de leucócitos",
+    },
+    "Resposta": "C",
+    "Motivo": "A anemia falciforme é uma doença genética caracterizada pela alteração na forma das hemácias devido a uma mutação no gene da hemoglobina."
+  },
+  {
+    "Pergunta": "O que é a trombose venosa profunda?",
+    "Opcoes": {
+      A: "Obstrução de artérias coronárias",
+      B: "Coágulos sanguíneos em veias profundas, geralmente nas pernas",
+      C: "Inflamação das veias",
+      D: "Aumento da pressão arterial",
+    },
+    "Resposta": "B",
+    "Motivo": "A trombose venosa profunda é caracterizada pela formação de coágulos sanguíneos em veias profundas, geralmente nas pernas, podendo representar um risco sério de complicações."
+  },
+  {
+    "Pergunta": "O que é o teste de Schilling?",
+    "Opcoes": {
+      A: "Avaliação da função hepática",
+      B: "Exame de imagem do sistema nervoso",
+      C: "Avaliação da absorção de vitamina B12",
+      D: "Teste de função renal",
+    },
+    "Resposta": "C",
+    "Motivo": "O teste de Schilling é utilizado para avaliar a absorção de vitamina B12 no intestino, fornecendo informações sobre a função do trato gastrointestinal."
+  },
+  {
+    "Pergunta": "O que caracteriza a síndrome de Stevens-Johnson?",
+    "Opcoes": {
+      A: "Inflamação dos pulmões",
+      B: "Comprometimento dos rins devido a infecção",
+      C: "Reação alérgica grave que afeta a pele e as mucosas",
+      D: "Degeneração muscular progressiva",
+    },
+    "Resposta": "C",
+    "Motivo": "A síndrome de Stevens-Johnson é uma reação alérgica grave que afeta a pele e as mucosas, podendo resultar em descamação da pele e complicações sistêmicas."
+  },
+  
+  {
+    "Pergunta": "O que é uma apendicectomia?",
+    "Opcoes": {
+      A: "Remoção do apêndice",
+      B: "Cirurgia cardíaca para reparo de válvulas",
+      C: "Extração de cálculos biliares",
+      D: "Intervenção cirúrgica no estômago",
+    },
+    "Resposta": "A",
+    "Motivo": "A apendicectomia é a cirurgia de remoção do apêndice, geralmente realizada em casos de apendicite aguda."
+  },
+  {
+    "Pergunta": "O que é uma anastomose em cirurgia?",
+    "Opcoes": {
+      A: "Remoção de órgão afetado por câncer",
+      B: "Ligação cirúrgica entre dois segmentos de tubo ou vasos",
+      C: "Realização de biópsia em tecidos",
+      D: "Transplante de órgãos",
+    },
+    "Resposta": "B",
+    "Motivo": "Em cirurgia, a anastomose refere-se à ligação cirúrgica entre dois segmentos de tubo ou vasos sanguíneos, restabelecendo a continuidade normal."
+  },
+  {
+    "Pergunta": "O que é uma cirurgia de bypass coronariano?",
+    "Opcoes": {
+      A: "Cirurgia para tratar aneurisma cerebral",
+      B: "Intervenção para corrigir deformidades nas válvulas cardíacas",
+      C: "Cirurgia para desobstruir artérias coronárias",
+      D: "Remoção de tumores no coração",
+    },
+    "Resposta": "C",
+    "Motivo": "A cirurgia de bypass coronariano é realizada para desobstruir as artérias coronárias, proporcionando um novo caminho para o fluxo sanguíneo ao redor das áreas bloqueadas."
+  },
+  {
+    "Pergunta": "O que é uma ressecção hepática?",
+    "Opcoes": {
+      A: "Remoção de cálculos renais",
+      B: "Cirurgia para tratar hérnias inguinais",
+      C: "Remoção de parte do fígado",
+      D: "Intervenção para corrigir deformidades na vesícula biliar",
+    },
+    "Resposta": "C",
+    "Motivo": "A ressecção hepática é a cirurgia que envolve a remoção de parte do fígado, podendo ser realizada para tratar tumores, lesões ou outras condições hepáticas."
+  },
+  {
+    "Pergunta": "O que é uma colostomia?",
+    "Opcoes": {
+      A: "Ligação cirúrgica entre dois segmentos de intestino",
+      B: "Remoção do cólon",
+      C: "Abertura artificial no abdômen para eliminar fezes",
+      D: "Cirurgia para tratar úlceras no estômago",
+    },
+    "Resposta": "C",
+    "Motivo": "Uma colostomia envolve a criação de uma abertura artificial no abdômen, conectando o cólon à superfície da pele para a eliminação de fezes quando o trânsito intestinal normal é interrompido."
+  },
+  {
+    "Pergunta": "O que é uma nefrectomia?",
+    "Opcoes": {
+      A: "Cirurgia para tratar problemas no nervo ciático",
+      B: "Remoção de parte do pulmão",
+      C: "Remoção do rim",
+      D: "Intervenção para corrigir deformidades na coluna vertebral",
+    },
+    "Resposta": "C",
+    "Motivo": "A nefrectomia é a cirurgia que envolve a remoção de um ou ambos os rins, geralmente realizada em casos de tumores renais, infecções graves ou outros problemas renais."
+  },
+  {
+    "Pergunta": "O que é uma colecistectomia?",
+    "Opcoes": {
+      A: "Remoção do apêndice",
+      B: "Cirurgia para tratar hérnias inguinais",
+      C: "Remoção da vesícula biliar",
+      D: "Cirurgia para corrigir obstrução intestinal",
+    },
+    "Resposta": "C",
+    "Motivo": "A colecistectomia é a cirurgia de remoção da vesícula biliar, geralmente realizada devido a cálculos biliares ou outras condições que afetam esse órgão."
+  }
+  
+  
+  
+  ]
+    const perguntasPolitica = [
+      {
+    "Pergunta": "O que é um sistema parlamentar de governo?",
+    "Opcoes": {
+      A: "Sistema em que o chefe de Estado é eleito por voto popular",
+      B: "Sistema em que o chefe de governo é eleito por voto popular",
+      C: "Sistema em que o chefe de Estado e o chefe de governo são cargos separados",
+      D: "Sistema em que o chefe de governo é nomeado pelo chefe de Estado",
+    },
+    "Resposta": "D",
+    "Motivo": "No sistema parlamentar, o chefe de governo (primeiro-ministro) é geralmente nomeado pelo chefe de Estado (monarca ou presidente) e não é eleito diretamente pelo voto popular."
+  },
+  {
+    "Pergunta": "O que é uma monarquia constitucional?",
+    "Opcoes": {
+      A: "Forma de governo em que o poder está concentrado nas mãos de um monarca absoluto",
+      B: "Sistema em que o chefe de Estado é eleito por voto popular",
+      C: "Sistema em que o monarca exerce poderes limitados, sujeitos a uma constituição",
+      D: "Forma de governo em que o chefe de governo é hereditário",
+    },
+    "Resposta": "C",
+    "Motivo": "Na monarquia constitucional, o monarca exerce poderes limitados pela constituição, sendo o sistema de governo em que a monarquia coexiste com uma estrutura constitucional."
+  },
+  {
+    "Pergunta": "O que é um sistema presidencialista?",
+    "Opcoes": {
+      A: "Sistema em que o chefe de governo é eleito por voto popular",
+      B: "Sistema em que o chefe de Estado é nomeado pelo chefe de governo",
+      C: "Sistema em que o chefe de Estado e o chefe de governo são cargos separados",
+      D: "Sistema em que o chefe de governo é nomeado pelo parlamento",
+    },
+    "Resposta": "C",
+    "Motivo": "No sistema presidencialista, o chefe de Estado (presidente) e o chefe de governo (primeiro-ministro) são cargos separados, sendo o presidente eleito diretamente pelo voto popular."
+  },
+  {
+    "Pergunta": "O que é um regime democrático?",
+    "Opcoes": {
+      A: "Sistema de governo em que as decisões são tomadas por um único partido",
+      B: "Sistema de governo em que o poder está concentrado em um único líder",
+      C: "Sistema em que o poder é exercido pelo povo, geralmente por meio de eleições",
+      D: "Forma de governo em que a sucessão é determinada por hereditariedade",
+    },
+    "Resposta": "C",
+    "Motivo": "Um regime democrático é caracterizado pelo exercício do poder pelo povo, geralmente por meio de eleições livres e periódicas, assegurando a participação dos cidadãos nas decisões políticas."
+  },
+  {
+    "Pergunta": "O que é uma república parlamentarista?",
+    "Opcoes": {
+      A: "Forma de governo em que o chefe de Estado é hereditário",
+      B: "Sistema em que o chefe de governo é eleito por voto popular",
+      C: "Sistema em que o chefe de Estado e o chefe de governo são cargos separados",
+      D: "Forma de governo em que o chefe de Estado exerce poder absoluto",
+    },
+    "Resposta": "C",
+    "Motivo": "Na república parlamentarista, o chefe de Estado (presidente ou monarca) e o chefe de governo (primeiro-ministro) são cargos separados, com o chefe de governo sendo geralmente eleito pelo parlamento."
+  },
+  {
+    "Pergunta": "O que caracteriza um sistema federal?",
+    "Opcoes": {
+      A: "Concentração de poderes em um único órgão central",
+      B: "Divisão de poderes entre um governo central e entidades subnacionais",
+      C: "Sistema em que o chefe de governo é eleito por voto popular",
+      D: "Forma de governo em que a sucessão é determinada por hereditariedade",
+    },
+    "Resposta": "B",
+    "Motivo": "Um sistema federal é caracterizado pela divisão de poderes entre um governo central e entidades subnacionais (estados, províncias, etc.), cada um com sua esfera de competência definida pela constituição."
+  },
+  {
+    "Pergunta": "O que é um sistema totalitário?",
+    "Opcoes": {
+      A: "Sistema em que o chefe de Estado é eleito por voto popular",
+      B: "Concentração de poderes em um único órgão central",
+      C: "Sistema em que o poder é compartilhado entre diversos órgãos",
+      D: "Forma de governo em que o governo controla todos os aspectos da vida pública e privada",
+    },
+    "Resposta": "D",
+    "Motivo": "Um sistema totalitário é caracterizado pelo controle absoluto do governo sobre todos os aspectos da vida pública e privada, restringindo as liberdades individuais e suprimindo a oposição política."
+  },
+  
+   {
+    "Pergunta": "Quais eventos políticos marcaram o Brasil nos últimos anos?",
+    "Opcoes": {
+      A: "Impeachment da presidente Dilma Rousseff",
+      B: "Eleição de Jair Bolsonaro como presidente",
+      C: "Operação Lava Jato e escândalos de corrupção",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Os últimos anos no Brasil foram marcados por eventos como o impeachment da presidente Dilma Rousseff, a eleição de Jair Bolsonaro como presidente e a Operação Lava Jato, revelando escândalos de corrupção em diferentes setores."
+  },
+  {
+    "Pergunta": "Quais foram alguns dos principais temas discutidos na política internacional recentemente?",
+    "Opcoes": {
+      A: "Pandemia de COVID-19 e resposta global",
+      B: "Tensões comerciais entre Estados Unidos e China",
+      C: "Crise migratória em diferentes regiões",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "A política internacional nos últimos anos abordou temas como a pandemia de COVID-19 e a resposta global, as tensões comerciais entre Estados Unidos e China, além de crises migratórias em diferentes partes do mundo."
+  },
+  {
+    "Pergunta": "Como as redes sociais têm impactado a política nos últimos anos?",
+    "Opcoes": {
+      A: "Contribuindo para a disseminação de notícias falsas e desinformação",
+      B: "Facilitando o engajamento cívico e a mobilização política",
+      C: "Ampliando o diálogo democrático entre diferentes grupos",
+      D: "Apenas uma ferramenta de entretenimento",
+    },
+    "Resposta": "A",
+    "Motivo": "As redes sociais têm impactado a política recentemente, contribuindo para a disseminação de notícias falsas e desinformação, além de influenciar a opinião pública e o comportamento eleitoral."
+  },
+  {
+    "Pergunta": "Quais são algumas das questões ambientais discutidas na política global?",
+    "Opcoes": {
+      A: "Mudanças climáticas e redução das emissões de carbono",
+      B: "Preservação da biodiversidade e conservação de ecossistemas",
+      C: "Uso sustentável dos recursos naturais",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Na política global, questões ambientais como mudanças climáticas, redução das emissões de carbono, preservação da biodiversidade e uso sustentável dos recursos naturais têm sido temas recorrentes."
+  },
+  {
+    "Pergunta": "Como a pandemia de COVID-19 influenciou a política mundial?",
+    "Opcoes": {
+      A: "Fortalecendo a cooperação internacional na busca por soluções",
+      B: "Aumentando o nacionalismo e a polarização política",
+      C: "Diminuindo o interesse da população em assuntos políticos",
+      D: "Apenas afetando questões de saúde pública",
+    },
+    "Resposta": "B",
+    "Motivo": "A pandemia de COVID-19 teve impactos na política mundial, aumentando o nacionalismo e a polarização política em alguns países, enquanto em outros fortaleceu a cooperação internacional na busca por soluções comuns."
+  },
+  {
+    "Pergunta": "Quais movimentos sociais ganharam destaque nos últimos anos?",
+    "Opcoes": {
+      A: "Movimento Black Lives Matter",
+      B: "Protestos pró-democracia em Hong Kong",
+      C: "Greve Global pelo Clima",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Nos últimos anos, movimentos sociais como o Black Lives Matter, os protestos pró-democracia em Hong Kong e a Greve Global pelo Clima ganharam destaque, abordando questões fundamentais de direitos humanos, democracia e meio ambiente."
+  },
+  {
+    "Pergunta": "Quais foram os desdobramentos da saída do Reino Unido da União Europeia, conhecida como Brexit?",
+    "Opcoes": {
+      A: "Fortalecimento da integração europeia",
+      B: "Impactos econômicos e comerciais",
+      C: "Aumento da cooperação bilateral",
+      D: "Somente uma mudança simbólica",
+    },
+    "Resposta": "B",
+    "Motivo": "O Brexit resultou em significativos impactos econômicos e comerciais, com mudanças nas relações comerciais, políticas e sociais entre o Reino Unido e a União Europeia."
+  },
+  {
+    "Pergunta": "Qual é o papel das organizações supranacionais, como a ONU, na condução de questões globais?",
+    "Opcoes": {
+      A: "Intervir militarmente em conflitos regionais",
+      B: "Promover a cooperação internacional e a paz",
+      C: "Definir políticas nacionais de cada país",
+      D: "Atuar exclusivamente na área econômica",
+    },
+    "Resposta": "B",
+    "Motivo": "Organizações supranacionais, como a ONU, têm como papel principal promover a cooperação internacional, a paz e a resolução de conflitos sem intervenção militar direta."
+  },
+  {
+    "Pergunta": "Quais foram os impactos da ascensão do populismo em alguns países nos últimos anos?",
+    "Opcoes": {
+      A: "Fortalecimento das instituições democráticas",
+      B: "Aumento da polarização política",
+      C: "Promoção da diversidade e inclusão social",
+      D: "Somente mudanças superficiais",
+    },
+    "Resposta": "B",
+    "Motivo": "A ascensão do populismo em alguns países nos últimos anos tem sido associada ao aumento da polarização política, gerando debates intensos e divisões na sociedade."
+  },
+  {
+    "Pergunta": "Como a tecnologia tem impactado a política, especialmente em relação à participação cidadã?",
+    "Opcoes": {
+      A: "Redução da participação cidadã devido à complexidade tecnológica",
+      B: "Ampliação do acesso à informação e engajamento por meio das redes sociais",
+      C: "Exclusão de determinados grupos sociais do processo político",
+      D: "Apenas uma ferramenta de comunicação entre políticos",
+    },
+    "Resposta": "B",
+    "Motivo": "A tecnologia, especialmente as redes sociais, tem ampliado o acesso à informação e proporcionado maior engajamento cívico, embora também apresente desafios relacionados à desinformação e à exclusão de alguns grupos."
+  },
+  {
+    "Pergunta": "Como o fenômeno das fake news pode impactar processos eleitorais?",
+    "Opcoes": {
+      A: "Contribuindo para uma campanha eleitoral mais transparente",
+      B: "Influenciando indevidamente a opinião pública",
+      C: "Fortalecendo a confiança no sistema democrático",
+      D: "Tendo impacto mínimo nas eleições",
+    },
+    "Resposta": "B",
+    "Motivo": "As fake news podem influenciar indevidamente a opinião pública, distorcendo informações e prejudicando a transparência e a equidade em processos eleitorais."
+  },
+  {
+    "Pergunta": "Quais são as implicações geopolíticas da disputa entre Estados Unidos e China?",
+    "Opcoes": {
+      A: "Aumento da cooperação econômica global",
+      B: "Rivalidade por influência política e econômica",
+      C: "Fortalecimento da União Europeia",
+      D: "Apenas uma competição tecnológica",
+    },
+    "Resposta": "B",
+    "Motivo": "A disputa entre Estados Unidos e China tem implicações geopolíticas, marcadas por uma rivalidade por influência política e econômica, abrangendo questões comerciais, tecnológicas e estratégicas."
+  },
+  {
+    "Pergunta": "Quais são os desafios enfrentados pelos sistemas democráticos no século XXI?",
+    "Opcoes": {
+      A: "Consolidação plena da democracia em todo o mundo",
+      B: "Riscos relacionados à desinformação e ataques cibernéticos",
+      C: "Redução da participação cidadã devido à globalização",
+      D: "Apenas questões econômicas",
+    },
+    "Resposta": "B",
+    "Motivo": "Os sistemas democráticos no século XXI enfrentam desafios relacionados à desinformação, ataques cibernéticos e a necessidade de adaptação a um ambiente globalizado, buscando preservar a integridade do processo democrático."
+  }{
+    "Pergunta": "Quais foram os impactos políticos da crise financeira global de 2008?",
+    "Opcoes": {
+      A: "Fortalecimento das instituições financeiras internacionais",
+      B: "Aumento da confiança nas políticas econômicas tradicionais",
+      C: "Emergência de movimentos populistas",
+      D: "Impacto mínimo na esfera política",
+    },
+    "Resposta": "C",
+    "Motivo": "A crise financeira global de 2008 contribuiu para a emergência de movimentos populistas em diversos países, refletindo em mudanças na esfera política e econômica."
+  },
+  {
+    "Pergunta": "Como a questão da imigração tem influenciado a política em diferentes regiões do mundo?",
+    "Opcoes": {
+      A: "Promoção da integração e diversidade cultural",
+      B: "Fortalecimento do isolacionismo e xenofobia",
+      C: "Apenas impactos econômicos isolados",
+      D: "Influência mínima na agenda política",
+    },
+    "Resposta": "B",
+    "Motivo": "A questão da imigração tem influenciado a política em diferentes regiões do mundo, provocando debates sobre integração, diversidade cultural, isolacionismo e xenofobia."
+  },
+  {
+    "Pergunta": "Como a pandemia de COVID-19 afetou a agenda política e as relações internacionais?",
+    "Opcoes": {
+      A: "Reforçando a cooperação global e solidariedade entre países",
+      B: "Aumentando o nacionalismo e a competição por recursos",
+      C: "Reduzindo o papel das organizações internacionais",
+      D: "Impacto mínimo nas relações internacionais",
+    },
+    "Resposta": "B",
+    "Motivo": "A pandemia de COVID-19 teve impactos na agenda política e nas relações internacionais, ampliando o nacionalismo e intensificando a competição por recursos, além de desafiar a cooperação global em alguns aspectos."
+  },
+  {
+    "Pergunta": "Quais são os principais desafios enfrentados pela democracia representativa atualmente?",
+    "Opcoes": {
+      A: "Fortalecimento da participação cidadã",
+      B: "Desafios relacionados à representatividade e confiança",
+      C: "Exclusão de minorias no processo político",
+      D: "Apenas questões econômicas",
+    },
+    "Resposta": "B",
+    "Motivo": "A democracia representativa enfrenta desafios relacionados à representatividade e à confiança, buscando superar questões como o distanciamento entre representantes e representados, bem como a representação efetiva de diversidade de perspectivas."
+  },
+  {
+    "Pergunta": "Qual é a importância do ativismo social na influência de mudanças políticas?",
+    "Opcoes": {
+      A: "Impacto mínimo, com mudanças ocorrendo apenas por meio de processos institucionais",
+      B: "Contribuição significativa para a promoção de mudanças políticas",
+      C: "Ativismo social é exclusivamente uma expressão de protesto",
+      D: "Influência restrita a questões específicas, sem impacto duradouro",
+    },
+    "Resposta": "B",
+    "Motivo": "O ativismo social desempenha um papel significativo na promoção de mudanças políticas, influenciando agendas, sensibilizando a opinião pública e mobilizando a sociedade para questões relevantes."
+  }, {
+    "Pergunta": "Quais eventos políticos marcaram o Brasil nos últimos anos?",
+    "Opcoes": {
+      A: "Impeachment da presidente Dilma Rousseff",
+      B: "Eleição de Jair Bolsonaro como presidente",
+      C: "Operação Lava Jato e escândalos de corrupção",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Os últimos anos no Brasil foram marcados por eventos como o impeachment da presidente Dilma Rousseff, a eleição de Jair Bolsonaro como presidente e a Operação Lava Jato, revelando escândalos de corrupção em diferentes setores."
+  },
+  {
+    "Pergunta": "Quais foram alguns dos principais temas discutidos na política internacional recentemente?",
+    "Opcoes": {
+      A: "Pandemia de COVID-19 e resposta global",
+      B: "Tensões comerciais entre Estados Unidos e China",
+      C: "Crise migratória em diferentes regiões",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "A política internacional nos últimos anos abordou temas como a pandemia de COVID-19 e a resposta global, as tensões comerciais entre Estados Unidos e China, além de crises migratórias em diferentes partes do mundo."
+  },
+  {
+    "Pergunta": "Como as redes sociais têm impactado a política nos últimos anos?",
+    "Opcoes": {
+      A: "Contribuindo para a disseminação de notícias falsas e desinformação",
+      B: "Facilitando o engajamento cívico e a mobilização política",
+      C: "Ampliando o diálogo democrático entre diferentes grupos",
+      D: "Apenas uma ferramenta de entretenimento",
+    },
+    "Resposta": "A",
+    "Motivo": "As redes sociais têm impactado a política recentemente, contribuindo para a disseminação de notícias falsas e desinformação, além de influenciar a opinião pública e o comportamento eleitoral."
+  },
+  {
+    "Pergunta": "Quais são algumas das questões ambientais discutidas na política global?",
+    "Opcoes": {
+      A: "Mudanças climáticas e redução das emissões de carbono",
+      B: "Preservação da biodiversidade e conservação de ecossistemas",
+      C: "Uso sustentável dos recursos naturais",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Na política global, questões ambientais como mudanças climáticas, redução das emissões de carbono, preservação da biodiversidade e uso sustentável dos recursos naturais têm sido temas recorrentes."
+  },
+  {
+    "Pergunta": "Como a pandemia de COVID-19 influenciou a política mundial?",
+    "Opcoes": {
+      A: "Fortalecendo a cooperação internacional na busca por soluções",
+      B: "Aumentando o nacionalismo e a polarização política",
+      C: "Diminuindo o interesse da população em assuntos políticos",
+      D: "Apenas afetando questões de saúde pública",
+    },
+    "Resposta": "B",
+    "Motivo": "A pandemia de COVID-19 teve impactos na política mundial, aumentando o nacionalismo e a polarização política em alguns países, enquanto em outros fortaleceu a cooperação internacional na busca por soluções comuns."
+  },
+  {
+    "Pergunta": "Quais movimentos sociais ganharam destaque nos últimos anos?",
+    "Opcoes": {
+      A: "Movimento Black Lives Matter",
+      B: "Protestos pró-democracia em Hong Kong",
+      C: "Greve Global pelo Clima",
+      D: "Todos os anteriores",
+    },
+    "Resposta": "D",
+    "Motivo": "Nos últimos anos, movimentos sociais como o Black Lives Matter, os protestos pró-democracia em Hong Kong e a Greve Global pelo Clima ganharam destaque, abordando questões fundamentais de direitos humanos, democracia e meio ambiente."
+  }
+  
+  
+  ]
+    const perguntasEconomia = [
+      {
+    "Pergunta": "Quais são os principais indicadores econômicos usados para medir o desenvolvimento de um país?",
+    "Opcoes": {
+      A: "Taxa de natalidade e expectativa de vida",
+      B: "Produto Interno Bruto (PIB) e Índice de Desenvolvimento Humano (IDH)",
+      C: "Câmbio e inflação",
+      D: "Apenas a balança comercial",
+    },
+    "Resposta": "B",
+    "Motivo": "O Produto Interno Bruto (PIB) e o Índice de Desenvolvimento Humano (IDH) são indicadores econômicos fundamentais para medir o desenvolvimento de um país, abrangendo aspectos econômicos e sociais."
+  },
+  {
+    "Pergunta": "Como a política monetária pode influenciar a economia de um país?",
+    "Opcoes": {
+      A: "Apenas afetando as taxas de juros",
+      B: "Regulando o comércio internacional",
+      C: "Controlando a quantidade de dinheiro em circulação",
+      D: "Somente intervindo no mercado de ações",
+    },
+    "Resposta": "C",
+    "Motivo": "A política monetária pode influenciar a economia de um país controlando a quantidade de dinheiro em circulação, geralmente por meio de instrumentos como taxas de juros e reservas bancárias."
+  },
+  {
+    "Pergunta": "O que caracteriza uma recessão econômica?",
+    "Opcoes": {
+      A: "Crescimento sustentável do Produto Interno Bruto (PIB)",
+      B: "Aumento constante do emprego e da produção",
+      C: "Diminuição significativa do PIB por dois trimestres consecutivos",
+      D: "Apenas a queda temporária da bolsa de valores",
+    },
+    "Resposta": "C",
+    "Motivo": "Uma recessão econômica é caracterizada pela diminuição significativa do Produto Interno Bruto (PIB) por dois trimestres consecutivos, refletindo uma contração da atividade econômica."
+  },
+  {
+    "Pergunta": "Qual é a diferença entre inflação e deflação?",
+    "Opcoes": {
+      A: "Inflação é o aumento do poder de compra da moeda; deflação é a diminuição.",
+      B: "Ambos os termos se referem ao aumento dos preços de bens e serviços.",
+      C: "Inflação é a queda nos preços; deflação é o aumento.",
+      D: "Inflação é o aumento dos preços; deflação é a queda.",
+    },
+    "Resposta": "D",
+    "Motivo": "Inflação é o aumento geral dos preços de bens e serviços, enquanto deflação é a queda geral dos preços. Ambos são indicadores importantes para a estabilidade econômica."
+  },
+  {
+    "Pergunta": "Como a globalização afeta a economia de um país?",
+    "Opcoes": {
+      A: "Isolando a economia nacional de influências externas",
+      B: "Reduzindo o comércio internacional e a interconexão",
+      C: "Aumentando a interdependência econômica e o comércio global",
+      D: "Restringindo o acesso a tecnologias estrangeiras",
+    },
+    "Resposta": "C",
+    "Motivo": "A globalização afeta a economia de um país ao aumentar a interdependência econômica e o comércio global, permitindo maior movimentação de bens, serviços, capitais e tecnologias entre as nações."
+  },
+  {
+    "Pergunta": "O que é a oferta e demanda na economia?",
+    "Opcoes": {
+      A: "Oferta refere-se à quantidade de dinheiro em circulação; demanda é a procura por bens e serviços.",
+      B: "Oferta é a procura por bens e serviços; demanda é a quantidade disponível no mercado.",
+      C: "Oferta representa a quantidade de bens e serviços disponíveis; demanda é a procura pelos mesmos.",
+      D: "Ambos os termos são intercambiáveis e se referem à procura no mercado.",
+    },
+    "Resposta": "C",
+    "Motivo": "Na economia, oferta representa a quantidade de bens e serviços disponíveis, enquanto demanda é a procura pelos mesmos. O equilíbrio entre oferta e demanda influencia os preços e a alocação de recursos."
+  },
+  {
+    "Pergunta": "O que são medidas de austeridade econômica e em que contexto são frequentemente implementadas?",
+    "Opcoes": {
+      A: "Medidas para estimular o crescimento econômico; implementadas em tempos de recessão.",
+      B: "Ações para controlar a inflação; aplicadas durante períodos de expansão econômica.",
+      C: "Políticas para reduzir os gastos públicos; adotadas em situações de crise fiscal.",
+      D: "Estratégias para aumentar o déficit orçamentário; utilizadas para fortalecer a economia.",
+    },
+    "Resposta": "C",
+    "Motivo": "Medidas de austeridade econômica referem-se a políticas que visam reduzir os gastos públicos, geralmente em situações de crise fiscal, com o objetivo de equilibrar orçamentos e melhorar a estabilidade econômica."
+  },
+  {
+    "Pergunta": "O que é o PIB per capita e qual a sua utilidade na análise econômica?",
+    "Opcoes": {
+      A: "Quantidade total de produtos fabricados por uma pessoa; não é útil na análise econômica.",
+      B: "Produto Interno Bruto (PIB) médio por habitante; útil para avaliar o padrão de vida e desenvolvimento econômico.",
+      C: "Índice que mede a inflação; relevante para a compreensão das condições de mercado.",
+      D: "Acrônimo para o poder de compra internacional; não tem aplicação prática.",
+    },
+    "Resposta": "B",
+    "Motivo": "O PIB per capita é o Produto Interno Bruto (PIB) médio por habitante, sendo útil para avaliar o padrão de vida e o desenvolvimento econômico de uma população, proporcionando insights sobre a distribuição de riqueza."
+  },
+  {
+    "Pergunta": "Como a política fiscal pode ser utilizada para estimular a economia durante uma recessão?",
+    "Opcoes": {
+      A: "Aumentando os impostos para conter a inflação",
+      B: "Reduzindo os gastos públicos para controlar o déficit orçamentário",
+      C: "Elevando os gastos públicos e/ou reduzindo os impostos",
+      D: "Aplicando medidas de austeridade para equilibrar as contas públicas",
+    },
+    "Resposta": "C",
+    "Motivo": "Durante uma recessão, a política fiscal pode ser utilizada para estimular a economia por meio do aumento dos gastos públicos e/ou da redução de impostos, visando impulsionar o consumo e investimento."
+  },
+  {
+    "Pergunta": "O que é a taxa de câmbio e como ela influencia a economia de um país?",
+    "Opcoes": {
+      A: "Índice que mede a variação nos preços dos produtos",
+      B: "Relação entre a quantidade de moeda nacional e estrangeira",
+      C: "Taxa que regula a inflação",
+      D: "Valor total das exportações e importações",
+    },
+    "Resposta": "B",
+    "Motivo": "A taxa de câmbio é a relação entre a quantidade de moeda nacional e estrangeira, influenciando a competitividade das exportações, os preços internos e o equilíbrio da balança comercial, entre outros aspectos da economia."
+  },
+  {
+    "Pergunta": "O que caracteriza uma economia de mercado e quais são seus princípios fundamentais?",
+    "Opcoes": {
+      A: "Controle centralizado pelo governo; ausência de propriedade privada",
+      B: "Propriedade privada dos meios de produção e tomada de decisões descentralizada",
+      C: "Planejamento econômico centralizado e distribuição igualitária de recursos",
+      D: "Participação exclusiva de empresas estatais na produção de bens e serviços",
+    },
+    "Resposta": "B",
+    "Motivo": "Uma economia de mercado é caracterizada pela propriedade privada dos meios de produção e pela tomada de decisões descentralizada, baseada na oferta e demanda. Os princípios incluem livre iniciativa, concorrência e autonomia econômica."
+  },
+  {
+    "Pergunta": "O que é a inflação e quais podem ser suas causas?",
+    "Opcoes": {
+      A: "Diminuição geral nos preços de bens e serviços; causada por aumento na produção",
+      B: "Aumento geral nos preços de bens e serviços; causado por excesso de oferta",
+      C: "Aumento geral nos preços de bens e serviços; causado por excesso de demanda",
+      D: "Redução na quantidade de dinheiro em circulação; causada por medidas deflacionárias",
+    },
+    "Resposta": "C",
+    "Motivo": "A inflação é o aumento geral nos preços de bens e serviços. Pode ser causada por excesso de demanda, quando esta ultrapassa a capacidade de produção da economia, gerando pressão sobre os preços."
+  },
+  {
+    "Pergunta": "O que é o déficit orçamentário de um governo e quais podem ser suas consequências?",
+    "Opcoes": {
+      A: "Superávit nas contas públicas; aumento da dívida governamental",
+      B: "Aumento dos investimentos públicos; redução da carga tributária",
+      C: "Diferença negativa entre receitas e despesas; pode levar ao aumento da dívida pública",
+      D: "Política de austeridade; equilíbrio nas contas do governo",
+    },
+    "Resposta": "C",
+    "Motivo": "O déficit orçamentário de um governo ocorre quando há uma diferença negativa entre suas receitas e despesas. Pode levar ao aumento da dívida pública e requer estratégias para equilibrar as contas, como medidas de austeridade ou reformas fiscais."
+  },
+  {
+    "Pergunta": "Como a tecnologia impacta a economia, especialmente em termos de automação e mercado de trabalho?",
+    "Opcoes": {
+      A: "Redução da produtividade devido à automação",
+      B: "Aumento do desemprego devido à automação",
+      C: "Melhoria na qualidade de vida devido ao avanço tecnológico",
+      D: "Impacto mínimo na dinâmica do mercado de trabalho",
+    },
+    "Resposta": "C",
+    "Motivo": "A tecnologia impacta a economia de diversas formas, incluindo a automação. Embora possa alterar dinâmicas do mercado de trabalho, também pode trazer melhorias na qualidade de vida, eficiência produtiva e desenvolvimento de novos setores econômicos."
+  },
+  {
+    "Pergunta": "O que é a política de juros e qual é seu papel na economia?",
+    "Opcoes": {
+      A: "Controle de preços pelo governo; objetivo de conter a inflação",
+      B: "Taxa que regula o câmbio internacional",
+      C: "Instrumento da política monetária; influencia o consumo, investimento e inflação",
+      D: "Apenas um indicador da atividade econômica; sem impacto direto nas decisões financeiras",
+    },
+    "Resposta": "C",
+    "Motivo": "A política de juros é um instrumento da política monetária que influencia o consumo, investimento e inflação ao regular as taxas de juros. Pode ser utilizada para estimular ou conter a atividade econômica."
+  },
+  {
+    "Pergunta": "O que são os indicadores de mercado, como o índice Dow Jones e o S&P 500?",
+    "Opcoes": {
+      A: "Taxas de câmbio utilizadas no comércio internacional",
+      B: "Índices que medem a variação dos preços de commodities",
+      C: "Indicadores de desempenho das bolsas de valores",
+      D: "Taxas de juros praticadas pelos bancos centrais",
+    },
+    "Resposta": "C",
+    "Motivo": "O índice Dow Jones e o S&P 500 são indicadores de mercado que medem o desempenho das bolsas de valores, refletindo a variação dos preços de ações de empresas listadas, sendo importantes referências para investidores e analistas financeiros."
+  },
+  {
+    "Pergunta": "O que é a dívida pública e como ela pode afetar a estabilidade econômica de um país?",
+    "Opcoes": {
+      A: "Dívida contraída por empresas privadas; sem impacto nas finanças públicas",
+      B: "Dívida interna de uma nação; pode gerar inflação se não for controlada",
+      C: "Dívida externa; não tem relação com as políticas fiscais do governo",
+      D: "Apenas um indicador econômico; sem implicações práticas",
+    },
+    "Resposta": "B",
+    "Motivo": "A dívida pública é a dívida contraída por um governo. A dívida interna, se não controlada, pode afetar a estabilidade econômica, gerando preocupações com inflação, solvência e capacidade de pagamento."
+  },
+  {
+    "Pergunta": "O que são os mercados emergentes e qual é o papel deles na economia global?",
+    "Opcoes": {
+      A: "Mercados de produtos recém-lançados; sem impacto global",
+      B: "Países em desenvolvimento com economias em expansão; influenciam o comércio internacional",
+      C: "Mercados voltados para produtos de luxo; impacto limitado na economia global",
+      D: "Países desenvolvidos com economias consolidadas; principais atores globais",
+    },
+    "Resposta": "B",
+    "Motivo": "Os mercados emergentes são países em desenvolvimento com economias em expansão. Têm um papel significativo na economia global, influenciando o comércio internacional, a produção e o crescimento econômico global."
+  },
+  {
+    "Pergunta": "O que são os conceitos de oferta e demanda agregadas na macroeconomia?",
+    "Opcoes": {
+      A: "Variação nos preços de produtos específicos; não se aplicam à economia como um todo",
+      B: "Relação entre a oferta de moeda e a demanda por investimentos",
+      C: "Oferta total de bens e serviços; demanda total por esses bens e serviços",
+      D: "Apenas conceitos teóricos sem aplicação prática na macroeconomia",
+    },
+    "Resposta": "C",
+    "Motivo": "Na macroeconomia, oferta agregada refere-se à oferta total de bens e serviços, enquanto demanda agregada representa a demanda total por esses bens e serviços. Ambos influenciam o nível geral de atividade econômica."
+  },
+  {
+    "Pergunta": "Como a globalização financeira influencia as políticas econômicas dos países?",
+    "Opcoes": {
+      A: "Isola as economias nacionais de influências externas",
+      B: "Promove a autonomia das políticas monetárias",
+      C: "Aumenta a interconexão dos mercados financeiros globais; limita a autonomia das políticas econômicas",
+      D: "Reduz a volatilidade nos mercados financeiros internacionais",
+    },
+    "Resposta": "C",
+    "Motivo": "A globalização financeira aumenta a interconexão dos mercados financeiros globais, limitando a autonomia das políticas econômicas dos países. Movimentos em um mercado podem impactar outros, exigindo coordenação e adaptação das políticas nacionais."
+  },
+  {
+    "Pergunta": "Como os ciclos econômicos podem afetar o emprego e a produção?",
+    "Opcoes": {
+      A: "Ciclos econômicos não têm impacto no emprego e na produção",
+      B: "Aumentam a estabilidade econômica, reduzindo flutuações no emprego e na produção",
+      C: "Podem gerar períodos de expansão e recessão, influenciando o emprego e a produção",
+      D: "Apenas afetam a distribuição de renda; não influenciam diretamente o emprego",
+    },
+    "Resposta": "C",
+    "Motivo": "Os ciclos econômicos podem gerar períodos de expansão e recessão, influenciando o emprego e a produção. Durante uma expansão, o emprego tende a aumentar, enquanto durante uma recessão, pode haver redução na produção e no emprego."
+  },
+  {
+    "Pergunta": "O que é a política de livre comércio e quais são os potenciais benefícios?",
+    "Opcoes": {
+      A: "Restrição ao comércio internacional para proteger a economia doméstica",
+      B: "Acordos que visam eliminar barreiras comerciais entre países; pode aumentar eficiência e acesso a mercados",
+      C: "Controle estatal sobre todas as transações comerciais",
+      D: "Política que visa exclusivamente beneficiar grandes corporações",
+    },
+    "Resposta": "B",
+    "Motivo": "A política de livre comércio busca eliminar barreiras comerciais entre países, facilitando o fluxo de bens e serviços. Se bem implementada, pode aumentar a eficiência econômica, promover a especialização produtiva e ampliar o acesso a mercados internacionais."
+  },
+  {
+    "Pergunta": "O que é a taxa de desemprego e como ela é calculada?",
+    "Opcoes": {
+      A: "Número total de pessoas em idade de trabalhar; calculada por meio de pesquisas de opinião",
+      B: "Número de pessoas desempregadas em relação à população economicamente ativa; calculada por meio de pesquisas e registros",
+      C: "Número total de pessoas empregadas em relação à população total; calculada mensalmente",
+      D: "Número de pessoas que recebem benefícios de desemprego; calculada pelos órgãos governamentais",
+    },
+    "Resposta": "B",
+    "Motivo": "A taxa de desemprego é o número de pessoas desempregadas em relação à população economicamente ativa. É calculada por meio de pesquisas de opinião, entrevistas ou registros de órgãos governamentais."
+  },
+  {
+    "Pergunta": "O que é a economia informal e qual é seu impacto na economia de um país?",
+    "Opcoes": {
+      A: "Setor econômico composto exclusivamente por grandes empresas",
+      B: "Atividades econômicas não regulamentadas pelo governo; pode impactar a arrecadação de impostos e a proteção dos direitos trabalhistas",
+      C: "Setor voltado exclusivamente para exportação de bens",
+      D: "Empresas que operam apenas online",
+    },
+    "Resposta": "B",
+    "Motivo": "A economia informal refere-se a atividades econômicas não regulamentadas pelo governo, muitas vezes sem registro formal. Seu impacto pode incluir desafios para a arrecadação de impostos, proteção dos direitos trabalhistas e monitoramento estatístico preciso da economia."
+  },
+  {
+    "Pergunta": "O que é a teoria do keynesianismo na economia?",
+    "Opcoes": {
+      A: "Enfoque na livre concorrência e na não intervenção estatal na economia",
+      B: "Teoria que destaca a importância da oferta na determinação dos preços",
+      C: "Teoria econômica que defende a intervenção estatal para estimular a demanda agregada durante recessões",
+      D: "Teoria que enfatiza o equilíbrio automático entre oferta e demanda sem intervenção governamental",
+    },
+    "Resposta": "C",
+    "Motivo": "O keynesianismo é uma teoria econômica que destaca a importância da intervenção estatal para estimular a demanda agregada durante recessões, visando evitar ou mitigar crises econômicas e promover o pleno emprego."
+  },
+  {
+    "Pergunta": "O que é a sustentabilidade econômica e por que é importante?",
+    "Opcoes": {
+      A: "Enfoque exclusivo na maximização dos lucros a curto prazo",
+      B: "Desenvolvimento econômico que atende às necessidades presentes sem comprometer as gerações futuras",
+      C: "Foco na produção em larga escala, mesmo que isso implique no esgotamento de recursos",
+      D: "Abordagem que negligencia as questões ambientais e sociais",
+    },
+    "Resposta": "B",
+    "Motivo": "A sustentabilidade econômica refere-se ao desenvolvimento econômico que atende às necessidades presentes sem comprometer as gerações futuras. É importante para garantir a preservação dos recursos naturais, a estabilidade social e a continuidade do progresso econômico."
+  }, 
+  
+  {
+    "Pergunta": "O que é a política de livre comércio e quais são os potenciais benefícios?",
+    "Opcoes": {
+      A: "Restrição ao comércio internacional para proteger a economia doméstica",
+      B: "Acordos que visam eliminar barreiras comerciais entre países; pode aumentar eficiência e acesso a mercados",
+      C: "Controle estatal sobre todas as transações comerciais",
+      D: "Política que visa exclusivamente beneficiar grandes corporações",
+    },
+    "Resposta": "B",
+    "Motivo": "A política de livre comércio busca eliminar barreiras comerciais entre países, facilitando o fluxo de bens e serviços. Se bem implementada, pode aumentar a eficiência econômica, promover a especialização produtiva e ampliar o acesso a mercados internacionais."
+  },
+  {
+    "Pergunta": "O que é a taxa de desemprego e como ela é calculada?",
+    "Opcoes": {
+      A: "Número total de pessoas em idade de trabalhar; calculada por meio de pesquisas de opinião",
+      B: "Número de pessoas desempregadas em relação à população economicamente ativa; calculada por meio de pesquisas e registros",
+      C: "Número total de pessoas empregadas em relação à população total; calculada mensalmente",
+      D: "Número de pessoas que recebem benefícios de desemprego; calculada pelos órgãos governamentais",
+    },
+    "Resposta": "B",
+    "Motivo": "A taxa de desemprego é o número de pessoas desempregadas em relação à população economicamente ativa. É calculada por meio de pesquisas de opinião, entrevistas ou registros de órgãos governamentais."
+  },
+  {
+    "Pergunta": "O que é a economia informal e qual é seu impacto na economia de um país?",
+    "Opcoes": {
+      A: "Setor econômico composto exclusivamente por grandes empresas",
+      B: "Atividades econômicas não regulamentadas pelo governo; pode impactar a arrecadação de impostos e a proteção dos direitos trabalhistas",
+      C: "Setor voltado exclusivamente para exportação de bens",
+      D: "Empresas que operam apenas online",
+    },
+    "Resposta": "B",
+    "Motivo": "A economia informal refere-se a atividades econômicas não regulamentadas pelo governo, muitas vezes sem registro formal. Seu impacto pode incluir desafios para a arrecadação de impostos, proteção dos direitos trabalhistas e monitoramento estatístico preciso da economia."
+  },
+  {
+    "Pergunta": "O que é a teoria do keynesianismo na economia?",
+    "Opcoes": {
+      A: "Enfoque na livre concorrência e na não intervenção estatal na economia",
+      B: "Teoria que destaca a importância da oferta na determinação dos preços",
+      C: "Teoria econômica que defende a intervenção estatal para estimular a demanda agregada durante recessões",
+      D: "Teoria que enfatiza o equilíbrio automático entre oferta e demanda sem intervenção governamental",
+    },
+    "Resposta": "C",
+    "Motivo": "O keynesianismo é uma teoria econômica que destaca a importância da intervenção estatal para estimular a demanda agregada durante recessões, visando evitar ou mitigar crises econômicas e promover o pleno emprego."
+  },
+  {
+    "Pergunta": "O que é a sustentabilidade econômica e por que é importante?",
+    "Opcoes": {
+      A: "Enfoque exclusivo na maximização dos lucros a curto prazo",
+      B: "Desenvolvimento econômico que atende às necessidades presentes sem comprometer as gerações futuras",
+      C: "Foco na produção em larga escala, mesmo que isso implique no esgotamento de recursos",
+      D: "Abordagem que negligencia as questões ambientais e sociais",
+    },
+    "Resposta": "B",
+    "Motivo": "A sustentabilidade econômica refere-se ao desenvolvimento econômico que atende às necessidades presentes sem comprometer as gerações futuras. É importante para garantir a preservação dos recursos naturais, a estabilidade social e a continuidade do progresso econômico."
+  },
+  {
+    "Pergunta": "O que caracterizou a Crise de 1929 e quais foram suas principais consequências na economia global?",
+    "Opcoes": {
+      A: "Expansão econômica global; aumento do emprego e produção",
+      B: "Colapso do mercado de ações em 1929; queda na produção, aumento do desemprego e aprofundamento da Grande Depressão",
+      C: "Aumento do investimento estrangeiro; fortalecimento das economias nacionais",
+      D: "Crescimento sustentável do PIB mundial; estabilidade econômica",
+    },
+    "Resposta": "B",
+    "Motivo": "A Crise de 1929 foi caracterizada pelo colapso do mercado de ações em 1929, levando a uma queda na produção, aumento do desemprego e aprofundamento da Grande Depressão, impactando significativamente a economia global."
+  },
+  {
+    "Pergunta": "Quais foram os principais fatores que contribuíram para a Crise Financeira de 2008 e como ela afetou a economia mundial?",
+    "Opcoes": {
+      A: "Rápido crescimento econômico; estabilidade nos mercados financeiros",
+      B: "Bolha imobiliária nos Estados Unidos; colapso de instituições financeiras; recessão global",
+      C: "Aumento do investimento em setores inovadores; criação de empregos",
+      D: "Fortalecimento das regulamentações financeiras; prevenção de crises",
+    },
+    "Resposta": "B",
+    "Motivo": "A Crise Financeira de 2008 foi marcada pela bolha imobiliária nos Estados Unidos, colapso de instituições financeiras e uma recessão global, impactando profundamente a economia mundial e levando a medidas para estabilização financeira."
+  },
+  {
+    "Pergunta": "O que motivou a queima de café durante o governo de Getúlio Vargas na era Vargas?",
+    "Opcoes": {
+      A: "Excesso de produção de café; busca por equilíbrio no mercado internacional",
+      B: "Conflitos trabalhistas no setor cafeeiro; busca por melhores condições de trabalho",
+      C: "Medida para estimular a produção de café; promoção do agronegócio",
+      D: "Busca por diversificação econômica; redução da dependência do café na economia brasileira",
+    },
+    "Resposta": "A",
+    "Motivo": "A queima de café durante o governo de Getúlio Vargas ocorreu como uma medida para equilibrar o mercado internacional de café diante do excesso de produção, buscando evitar a queda dos preços e prejuízos para os produtores brasileiros."
+  },
+  {
+    "Pergunta": "Como a política de substituição de importações impactou a economia brasileira durante o governo de Getúlio Vargas?",
+    "Opcoes": {
+      A: "Estímulo às importações para promover a integração global",
+      B: "Promoção da exportação de produtos agrícolas",
+      C: "Política voltada para a industrialização nacional; redução da dependência de bens estrangeiros",
+      D: "Adoção do padrão-ouro como base econômica",
+    },
+    "Resposta": "C",
+    "Motivo": "Durante o governo de Getúlio Vargas, a política de substituição de importações visava reduzir a dependência de bens estrangeiros, promovendo a industrialização nacional e estimulando a produção interna de bens manufaturados."
+  },
+  {
+    "Pergunta": "Quais foram os impactos econômicos da Revolução Industrial no século XIX?",
+    "Opcoes": {
+      A: "Redução da produção industrial; aumento do desemprego",
+      B: "Aumento da produção em larga escala; transformação nos métodos de produção; urbanização",
+      C: "Declínio da urbanização; fortalecimento da agricultura tradicional",
+      D: "Manutenção dos métodos artesanais; ausência de mudanças significativas",
+    },
+    "Resposta": "B",
+    "Motivo": "A Revolução Industrial no século XIX trouxe impactos econômicos significativos, incluindo o aumento da produção em larga escala, a transformação nos métodos de produção e a urbanização, marcando uma transição importante na história econômica."
+  },
+  {
+    "Pergunta": "Como a Primeira Guerra Mundial afetou a economia global e quais foram suas consequências?",
+    "Opcoes": {
+      A: "Estímulo ao crescimento econômico; aumento da produção industrial",
+      B: "Recessão global; endividamento dos países envolvidos; tratado de paz promovendo a estabilidade",
+      C: "Fortalecimento da cooperação internacional; promoção do livre comércio",
+      D: "Isolamento econômico dos países envolvidos; ausência de impacto nas finanças globais",
+    },
+    "Resposta": "B",
+    "Motivo": "A Primeira Guerra Mundial resultou em uma recessão global, endividamento dos países envolvidos e a assinatura de tratados de paz que, em alguns casos, contribuíram para a instabilidade econômica e social."
+  }
+  
+      ]
+    const perguntasAstronomia = [
+      {
+    "Pergunta": "O que é uma supernova e qual é sua importância na astronomia?",
+    "Opcoes": {
+      A: "Fase inicial da formação de uma estrela",
+      B: "Explosão cataclísmica de uma estrela; liberação intensa de energia",
+      C: "Tipo de cometa visível da Terra",
+      D: "Colisão entre dois planetas",
+    },
+    "Resposta": "B",
+    "Motivo": "Uma supernova é a explosão cataclísmica de uma estrela, resultando em uma liberação intensa de energia. Sua importância na astronomia inclui a contribuição para a formação de novos elementos químicos e a liberação de energia que pode ser observada a grandes distâncias."
+  },
+  {
+    "Pergunta": "O que são buracos negros e como eles se formam?",
+    "Opcoes": {
+      A: "Regiões do espaço com alta densidade de estrelas",
+      B: "Estrelas que atingiram o fim de sua vida e colapsaram sob sua própria gravidade",
+      C: "Planetas com atmosferas densas",
+      D: "Regiões do espaço com ausência total de matéria",
+    },
+    "Resposta": "B",
+    "Motivo": "Buracos negros são formados pelo colapso gravitacional de estrelas massivas que atingiram o fim de sua vida. Eles possuem uma gravidade tão intensa que nada, nem mesmo a luz, consegue escapar de sua influência."
+  },
+  {
+    "Pergunta": "O que é a Via Láctea e qual é a posição do Sistema Solar nela?",
+    "Opcoes": {
+      A: "Galáxia vizinha à Via Láctea; o Sistema Solar está no centro",
+      B: "Conjunto de estrelas que formam o Sistema Solar",
+      C: "Galáxia espiral à qual o Sistema Solar pertence; localizado em um de seus braços",
+      D: "Nebulosa próxima à Terra; o Sistema Solar está na borda",
+    },
+    "Resposta": "C",
+    "Motivo": "A Via Láctea é uma galáxia espiral à qual o Sistema Solar pertence. O Sistema Solar está localizado em um dos braços dessa galáxia, conhecido como o Braço de Órion."
+  },
+  {
+    "Pergunta": "O que é um exoplaneta?",
+    "Opcoes": {
+      A: "Planeta dentro do Sistema Solar",
+      B: "Planeta que orbita uma estrela fora do Sistema Solar",
+      C: "Asteroide próximo à Terra",
+      D: "Planeta que orbita duas estrelas simultaneamente",
+    },
+    "Resposta": "B",
+    "Motivo": "Um exoplaneta é um planeta que orbita uma estrela fora do Sistema Solar. Esses planetas são descobertos através de observações indiretas, como variações no brilho da estrela hospedeira."
+  },
+  {
+    "Pergunta": "O que é a expansão do universo e como ela foi descoberta?",
+    "Opcoes": {
+      A: "Contrair do universo; descoberta por observações de galáxias se aproximando umas das outras",
+      B: "Processo de formação de novas estrelas; descoberto por telescópios espaciais",
+      C: "Aumento contínuo das distâncias entre galáxias; descoberto por observações de galáxias se afastando umas das outras",
+      D: "Estágio inicial do universo; descoberto por emissões de radiação cósmica",
+    },
+    "Resposta": "C",
+    "Motivo": "A expansão do universo refere-se ao aumento contínuo das distâncias entre galáxias. Essa descoberta foi feita por observações de galáxias se afastando umas das outras, indicando que o universo está em constante expansão."
+  },
+  {
+    "Pergunta": "O que são pulsares e como eles são formados?",
+    "Opcoes": {
+      A: "Estrelas em estágio inicial de formação",
+      B: "Estrelas que colapsaram em buracos negros",
+      C: "Estrelas de nêutrons em rotação rápida; formados a partir da explosão de supernovas",
+      D: "Conjunto de estrelas em órbita próxima umas das outras",
+    },
+    "Resposta": "C",
+    "Motivo": "Pulsares são estrelas de nêutrons em rotação rápida, formados a partir da explosão de supernovas. Sua rotação regular gera pulsos detectáveis de radiação eletromagnética, tornando-os objetos astronômicos únicos e interessantes."
+  },
+  {
+    "Pergunta": "O que são quasares e qual é sua importância na astronomia?",
+    "Opcoes": {
+      A: "Galáxias pequenas; pouco relevantes para a astronomia",
+      B: "Estágios finais da evolução estelar; contribuem para a formação de nebulosas",
+      C: "Núcleos galácticos ativos; emitem enormes quantidades de energia; importantes para o estudo de galáxias distantes",
+      D: "Sistemas planetários com múltiplos sóis",
+    },
+    "Resposta": "C",
+    "Motivo": "Quasares são núcleos galácticos ativos que emitem enormes quantidades de energia. Sua importância na astronomia reside no fato de que são objetos extremamente luminosos e podem ser observados em distâncias cósmicas, fornecendo informações valiosas sobre o universo primordial."
+  },
+   {
+    "Pergunta": "O que é a Lei de Kepler sobre os movimentos planetários?",
+    "Opcoes": {
+      A: "Aceleração constante dos planetas em suas órbitas",
+      B: "Lei que descreve a trajetória elíptica dos planetas ao redor do Sol",
+      C: "Relação entre a massa dos planetas e suas luas",
+      D: "Padrão de rotação dos planetas em torno de seu próprio eixo",
+    },
+    "Resposta": "B",
+    "Motivo": "A Lei de Kepler sobre os movimentos planetários estabelece que os planetas orbitam o Sol em trajetórias elípticas, sendo uma das leis fundamentais da astronomia."
+  },
+  {
+    "Pergunta": "O que é o cinturão de Kuiper e onde ele está localizado no Sistema Solar?",
+    "Opcoes": {
+      A: "Região entre Marte e Júpiter; contém asteroides",
+      B: "Anel de partículas ao redor de Saturno",
+      C: "Cinturão de asteroides entre a Terra e Marte",
+      D: "Região além da órbita de Netuno; contém corpos celestes como Plutão",
+    },
+    "Resposta": "D",
+    "Motivo": "O cinturão de Kuiper está localizado além da órbita de Netuno no Sistema Solar e contém uma população de corpos celestes, incluindo Plutão e outros objetos transnetunianos."
+  },
+  {
+    "Pergunta": "O que são estrelas de neutrons e como são formadas?",
+    "Opcoes": {
+      A: "Estágio final da evolução estelar; formadas a partir da explosão de supernovas",
+      B: "Estrelas jovens em processo de formação; acumulam matéria interestelar",
+      C: "Estrelas em estágio intermediário de evolução; colapsam em buracos negros",
+      D: "Regiões do espaço com alta densidade de estrelas",
+    },
+    "Resposta": "A",
+    "Motivo": "Estrelas de nêutrons são o estágio final da evolução estelar para estrelas massivas. Elas são formadas a partir da explosão de supernovas, onde o núcleo da estrela colapsa, dando origem a uma estrela extremamente densa composta principalmente por nêutrons."
+  },
+  {
+    "Pergunta": "O que é a Teoria do Big Bang e como ela explica a origem do universo?",
+    "Opcoes": {
+      A: "Teoria que sugere a expansão constante do universo; origem desconhecida",
+      B: "Modelo estático do universo; origem a partir de uma singularidade",
+      C: "Teoria que propõe a contração do universo; origem a partir de colisões cósmicas",
+      D: "Explosão inicial que deu origem ao universo; modelo aceito atualmente",
+    },
+    "Resposta": "D",
+    "Motivo": "A Teoria do Big Bang propõe que o universo teve origem a partir de uma explosão inicial, resultando na expansão contínua do espaço-tempo. Esse modelo é amplamente aceito para explicar a origem do universo."
+  },
+  {
+    "Pergunta": "O que são buracos de minhoca (wormholes) e como eles são teoricamente concebidos?",
+    "Opcoes": {
+      A: "Túneis no espaço-tempo que conectam diferentes regiões do universo; teoricamente concebidos pela teoria da relatividade",
+      B: "Grupos de estrelas próximas; facilitam a comunicação interestelar",
+      C: "Anomalias na órbita dos planetas; causam perturbações gravitacionais",
+      D: "Depressões profundas na superfície de planetas; indicam presença de água subterrânea",
+    },
+    "Resposta": "A",
+    "Motivo": "Buracos de minhoca são teoricamente concebidos como túneis no espaço-tempo que conectam diferentes regiões do universo. Essa concepção é derivada da teoria da relatividade."
+  },
+  {
+    "Pergunta": "Explique o conceito de magnitude aparente e magnitude absoluta em relação às estrelas.",
+    "Opcoes": {
+      A: "Magnitude aparente refere-se ao brilho percebido da estrela a partir da Terra, enquanto a magnitude absoluta é o brilho real da estrela a uma distância padrão.",
+      B: "Magnitude aparente e magnitude absoluta são termos intercambiáveis que descrevem o brilho de uma estrela em diferentes condições atmosféricas.",
+      C: "Magnitude aparente é a medida do tamanho físico da estrela, enquanto magnitude absoluta é a medida de sua luminosidade intrínseca.",
+      D: "Magnitude aparente representa o tamanho angular da estrela no céu, e magnitude absoluta refere-se à sua temperatura superficial.",
+    },
+    "Resposta": "A",
+    "Motivo": "Magnitude aparente é o brilho percebido da estrela da Terra, enquanto magnitude absoluta é o brilho real a uma distância padrão de 10 parsecs."
+  },
+  {
+    "Pergunta": "Descreva o conceito de redshift e blueshift, e como eles são utilizados na astronomia.",
+    "Opcoes": {
+      A: "Redshift ocorre quando uma estrela se aproxima da Terra, enquanto blueshift ocorre quando se afasta; são usados para medir a distância das estrelas.",
+      B: "Redshift e blueshift referem-se à mudança na cor da luz de uma estrela devido ao movimento Doppler; são usados para determinar a velocidade radial e distância das estrelas.",
+      C: "Redshift é associado à luz visível, e blueshift à luz ultravioleta; são usados para classificar estrelas em diferentes espectros.",
+      D: "Redshift é uma ilusão de ótica causada pela atmosfera da Terra; blueshift é uma anomalia rara observada apenas em estrelas muito jovens.",
+    },
+    "Resposta": "B",
+    "Motivo": "Redshift e blueshift referem-se à mudança na cor da luz devido ao movimento Doppler. São usados na astronomia para medir a velocidade radial e distância de objetos celestes."
+  },
+  {
+    "Pergunta": "O que é a paralaxe estelar e como ela é utilizada para medir distâncias astronômicas?",
+    "Opcoes": {
+      A: "Deslocamento aparente de uma estrela no céu devido à rotação da Terra; usado para calcular a velocidade de rotação estelar.",
+      B: "Variação aparente na posição de uma estrela devido à órbita da Terra; usada para medir a distância de estrelas próximas.",
+      C: "Diferença entre a magnitude aparente e absoluta de uma estrela; usada para calcular seu brilho intrínseco.",
+      D: "Variação na luminosidade de uma estrela ao longo de sua vida; usada para estimar sua idade.",
+    },
+    "Resposta": "B",
+    "Motivo": "Paralaxe estelar é a variação aparente na posição de uma estrela devido à órbita da Terra. É utilizada para medir a distância de estrelas relativamente próximas."
+  },
+  {
+    "Pergunta": "O que são buracos negros supermassivos e qual é sua relação com os centros de galáxias?",
+    "Opcoes": {
+      A: "Buracos negros supermassivos são buracos negros de pequena massa que se formam no centro das galáxias; sua relação com os centros galácticos é ainda desconhecida.",
+      B: "Buracos negros supermassivos são buracos negros extremamente grandes encontrados nos centros de galáxias; sua presença influencia a dinâmica galáctica.",
+      C: "Buracos negros supermassivos são aglomerados de estrelas no centro das galáxias; sua relação com os centros é puramente coincidência.",
+      D: "Buracos negros supermassivos são encontrados na borda externa das galáxias; sua influência nas galáxias é mínima.",
+    },
+    "Resposta": "B",
+    "Motivo": "Buracos negros supermassivos são extremamente grandes e encontrados nos centros de galáxias. Sua presença tem influência significativa na dinâmica e evolução dessas galáxias."
+  },
+  {
+    "Pergunta": "O que é a expansão do universo e como foi evidenciada pela observação das galáxias?",
+    "Opcoes": {
+      A: "A expansão do universo é um mito sem evidência observacional; as galáxias estão estáticas e não se afastam umas das outras.",
+      B: "É o movimento das galáxias em direção ao centro do universo; essa evidência foi obtida através da análise da radiação cósmica de fundo.",
+      C: "A expansão do universo é a separação contínua entre as galáxias; a evidência foi obtida através do desvio para o vermelho (redshift) observado nas linhas espectrais das galáxias.",
+      D: "Refere-se à formação de novas galáxias a partir da matéria interestelar; essa evidência foi obtida através da observação de galáxias em estágios iniciais de evolução.",
+    },
+    "Resposta": "C",
+    "Motivo": "A expansão do universo refere-se à separação contínua entre as galáxias. A evidência foi obtida através do desvio para o vermelho (redshift) observado nas linhas espectrais das galáxias. Quanto mais distante uma galáxia, maior o redshift, indicando sua velocidade de afastamento, evidenciando a expansão do cosmos."
+  },
+  {
+    "Pergunta": "O que são neutrinos e por que são particulas tão elusivas na detecção experimental?",
+    "Opcoes": {
+      A: "Partículas subatômicas com carga elétrica que interagem fortemente com a matéria; são elusivas devido à sua alta velocidade.",
+      B: "Partículas com massa neutra e carga elétrica nula; são elusivas devido à sua baixa interação com a matéria, atravessando-a facilmente.",
+      C: "Pequenas partículas presentes no núcleo atômico; são elusivas devido à sua instabilidade e curta vida útil.",
+      D: "Partículas formadas durante a fusão nuclear em estrelas; são elusivas devido à sua propensão a se combinar com outras partículas.",
+    },
+    "Resposta": "B",
+    "Motivo": "Neutrinos são partículas com massa neutra e carga elétrica nula. Eles são elusivos na detecção experimental devido à sua baixa interação com a matéria, o que os permite atravessar a maioria das substâncias sem interagir significativamente, tornando sua detecção um desafio."
+  },
+  {
+    "Pergunta": "O que é o Modelo Padrão da física de partículas e quais são suas principais características?",
+    "Opcoes": {
+      A: "Teoria que descreve as interações gravitacionais entre partículas subatômicas; suas características incluem a unificação das forças fundamentais.",
+      B: "Modelo matemático que prevê as órbitas dos elétrons nos átomos; suas características incluem a explicação da estabilidade dos átomos.",
+      C: "Teoria que descreve as partículas elementares e suas interações; suas características incluem a divisão das forças fundamentais em quatro categorias distintas.",
+      D: "Conjunto de equações que explicam a dinâmica dos planetas no sistema solar; suas características incluem a previsão precisa das posições planetárias ao longo do tempo.",
+    },
+    "Resposta": "C",
+    "Motivo": "O Modelo Padrão é uma teoria que descreve as partículas elementares e suas interações fundamentais. Suas características incluem a divisão das forças fundamentais em quatro categorias distintas: força eletromagnética, força fraca, força forte e gravidade."
+  },
+  {
+    "Pergunta": "O que são quarks e qual é seu papel na estrutura dos prótons e nêutrons?",
+    "Opcoes": {
+      A: "Partículas elementares com carga elétrica que compõem os elétrons; seu papel está na determinação das propriedades magnéticas dos elétrons.",
+      B: "Partículas subatômicas com carga elétrica fracionária; seu papel está na composição dos prótons e nêutrons, que formam o núcleo atômico.",
+      C: "Partículas presentes nos núcleos dos átomos; seu papel está na transmissão de forças nucleares fortes entre os prótons e nêutrons.",
+      D: "Partículas que compõem os neutrinos; seu papel está na estabilidade dessas partículas durante as interações nucleares.",
+    },
+    "Resposta": "B",
+    "Motivo": "Quarks são partículas subatômicas com carga elétrica fracionária. Seu papel está na composição dos prótons e nêutrons, que formam o núcleo atômico. A combinação de quarks dentro dessas partículas contribui para as propriedades e a estabilidade dos prótons e nêutrons."
+  },
+  {
+    "Pergunta": "Como a teoria da relatividade restrita de Einstein aborda a relação entre espaço e tempo?",
+    "Opcoes": {
+      A: "Afirma que espaço e tempo são entidades independentes, sem relação entre si.",
+      B: "Propõe que espaço e tempo são aspectos de uma única entidade chamada espaço-tempo; suas medidas dependem do observador.",
+      C: "Sugere que o tempo é uma ilusão, e o espaço é a única dimensão verdadeira.",
+      D: "Defende que o espaço é uma construção mental, enquanto o tempo é uma dimensão física independente.",
+    },
+    "Resposta": "B",
+    "Motivo": "A teoria da relatividade restrita de Einstein propõe que espaço e tempo são aspectos de uma única entidade chamada espaço-tempo, e suas medidas dependem do observador, introduzindo conceitos como dilatação do tempo e contração do comprimento."
+  },{
+    "Pergunta": "O que é a radiação cósmica de fundo e qual é sua importância na cosmologia?",
+    "Opcoes": {
+      A: "Radiação emitida por estrelas recém-formadas; sua importância está na revelação de informações sobre os estágios iniciais do universo.",
+      B: "Emissão de luz por galáxias distantes; sua importância está na investigação da formação de estruturas no cosmos.",
+      C: "Radiação térmica remanescente do Big Bang; sua importância está na análise do universo primordial e na confirmação da teoria do Big Bang.",
+      D: "Emissão de partículas subatômicas provenientes de eventos astrofísicos violentos; sua importância está na investigação de fenômenos extremos no universo.",
+    },
+    "Resposta": "C",
+    "Motivo": "A radiação cósmica de fundo é a radiação térmica remanescente do Big Bang. Sua importância na cosmologia reside na análise do universo primordial, fornecendo informações cruciais sobre as condições iniciais e confirmando a teoria do Big Bang como o modelo predominante para a origem do universo."
+  },
+  {
+    "Pergunta": "O que é a teoria das cordas e como ela busca unificar as forças fundamentais da natureza?",
+    "Opcoes": {
+      A: "Modelo que descreve a interação entre partículas subatômicas através da troca de cordas vibrantes; busca unificar as forças fundamentais ao considerar as cordas como os blocos básicos da matéria.",
+      B: "Hipótese que sugere que o universo é composto por cordas invisíveis que conectam galáxias distantes; busca unificar a gravidade e o eletromagnetismo.",
+      C: "Teoria que propõe a existência de cordas magnéticas no espaço; busca unificar as forças fundamentais ao integrar a magnetização como uma força universal.",
+      D: "Modelo matemático que descreve as vibrações de partículas subatômicas em forma de cordas; busca unificar as forças fundamentais através da geometria diferencial.",
+    },
+    "Resposta": "A",
+    "Motivo": "A teoria das cordas é um modelo que descreve a interação entre partículas subatômicas através da troca de cordas vibrantes. Ela busca unificar as forças fundamentais ao considerar as cordas como os blocos básicos da matéria, permitindo uma abordagem unificada das interações fundamentais da natureza."
+  },
+  {
+    "Pergunta": "O que são buracos negros supermassivos e qual é sua influência nas galáxias?",
+    "Opcoes": {
+      A: "Buracos negros formados a partir da fusão de buracos negros estelares; sua influência nas galáxias é limitada à região próxima ao núcleo.",
+      B: "Buracos negros com massa equivalente a milhões ou bilhões de vezes a do Sol; sua influência nas galáxias inclui a regulação do crescimento estelar e a formação de estruturas galácticas.",
+      C: "Buracos negros com massa inferior à de estrelas; sua influência nas galáxias é negligenciável devido ao seu tamanho reduzido.",
+      D: "Buracos negros encontrados apenas no centro de pequenas galáxias; sua influência é significativa apenas em aglomerados galácticos.",
+    },
+    "Resposta": "B",
+    "Motivo": "Buracos negros supermassivos são buracos negros com massa equivalente a milhões ou bilhões de vezes a do Sol. Sua influência nas galáxias é significativa e inclui a regulação do crescimento estelar, a formação de estruturas galácticas e a influência na dinâmica do ambiente galáctico."
+  },
+  {
+    "Pergunta": "O que são pulsares e por que emitem pulsos periódicos de radiação?",
+    "Opcoes": {
+      A: "Estrelas em estágio avançado de evolução que emitem pulsos de radiação devido à intensa atividade magnética; são observadas em diferentes regiões do espectro eletromagnético.",
+      B: "Remanescentes de supernovas que emitem pulsos de radiação devido à rotação rápida e à emissão de feixes de radiação direcionados; são observados principalmente em rádio e luz visível.",
+      C: "Estrelas binárias que emitem pulsos de radiação durante interações com suas companheiras; são observadas principalmente em raios X.",
+      D: "Estrelas jovens que emitem pulsos de radiação devido à intensa atividade nuclear em seus núcleos; são observadas em diferentes comprimentos de onda, indicando processos estelares específicos.",
+    },
+    "Resposta": "B",
+    "Motivo": "Pulsares são remanescentes de supernovas que emitem pulsos de radiação devido à rotação rápida e à emissão de feixes de radiação direcionados. Eles são observados principalmente em rádio e luz visível, proporcionando insights valiosos sobre as propriedades dos objetos compactos e os processos físicos em ambientes extremos."
+  },
+  {
+    "Pergunta": "O que é um quasar e qual é a fonte de sua intensa emissão de energia?",
+    "Opcoes": {
+      A: "Quasares são estrelas de nêutrons em rotação rápida que emitem energia devido à compressão gravitacional; sua fonte de energia está relacionada à fusão nuclear.",
+      B: "Quasares são buracos negros supermassivos no centro de galáxias ativas; sua intensa emissão de energia provém do disco de acreção de matéria em torno do buraco negro.",
+      C: "Quasares são estrelas variáveis que emitem flashes de energia devido a explosões termonucleares; sua fonte de energia está associada à instabilidade estelar.",
+      D: "Quasares são aglomerados de estrelas jovens; sua intensa emissão de energia é resultado da atividade magnética em sua atmosfera.",
+    },
+    "Resposta": "B",
+    "Motivo": "Quasares são buracos negros supermassivos no centro de galáxias ativas. Sua intensa emissão de energia provém do disco de acreção de matéria em torno do buraco negro, liberando enormes quantidades de energia conforme a matéria é consumida e aquecida antes de entrar no buraco negro."
+  },
+  {
+    "Pergunta": "Como a teoria da relatividade geral de Einstein explica a curvatura do espaço-tempo ao redor de massas elevadas, como planetas e estrelas?",
+    "Opcoes": {
+      A: "A relatividade geral não aborda a curvatura do espaço-tempo; essa curvatura é uma ilusão causada pela forma como percebemos o espaço.",
+      B: "Afirma que a gravidade é uma força fundamental que age a distância, atraindo objetos uns em direção aos outros.",
+      C: "Propõe que a curvatura do espaço-tempo é causada por partículas subatômicas presentes na vizinhança de massas elevadas.",
+      D: "Postula que a presença de massa e energia no espaço-tempo causa uma curvatura nesse espaço-tempo, afetando a trajetória de objetos em sua proximidade.",
+    },
+    "Resposta": "D",
+    "Motivo": "A teoria da relatividade geral de Einstein postula que a presença de massa e energia no espaço-tempo causa uma curvatura nesse espaço-tempo. Essa curvatura é responsável pela influência gravitacional que afeta a trajetória de objetos em sua proximidade, explicando fenômenos como a órbita dos planetas ao redor do Sol."
+  },
+  {
+    "Pergunta": "O que são aglomerados de galáxias e qual é sua importância na cosmologia?",
+    "Opcoes": {
+      A: "Conjuntos de estrelas unidas por forças gravitacionais; sua importância reside na formação de estruturas estelares complexas.",
+      B: "Grupos de galáxias interagindo gravitacionalmente; são importantes para entender a dinâmica do universo em larga escala e a distribuição de matéria.",
+      C: "Estrelas situadas próximas umas das outras no espaço; sua importância está na formação de sistemas planetários coesos.",
+      D: "Regiões do espaço onde a densidade de matéria é excepcionalmente baixa; sua importância reside na investigação de condições primordiais do universo.",
+    },
+    "Resposta": "B",
+    "Motivo": "Aglomerados de galáxias são grupos de galáxias que interagem gravitacionalmente. Sua importância na cosmologia está em entender a dinâmica do universo em larga escala, a distribuição de matéria, e como essas estruturas evoluem ao longo do tempo cósmico."
+  },
+  {
+    "Pergunta": "O que é a expansão do universo e como foi evidenciada pela observação das galáxias?",
+    "Opcoes": {
+      A: "A expansão do universo é um mito sem evidência observacional; as galáxias estão estáticas e não se afastam umas das outras.",
+      B: "É o movimento das galáxias em direção ao centro do universo; essa evidência foi obtida através da análise da radiação cósmica de fundo.",
+      C: "A expansão do universo é a separação contínua entre as galáxias; a evidência foi obtida através do desvio para o vermelho (redshift) observado nas linhas espectrais das galáxias.",
+      D: "Refere-se à formação de novas galáxias a partir da matéria interestelar; essa evidência foi obtida através da observação de galáxias em estágios iniciais de evolução.",
+    },
+    "Resposta": "C",
+    "Motivo": "A expansão do universo refere-se à separação contínua entre as galáxias. A evidência foi obtida através do desvio para o vermelho (redshift) observado nas linhas espectrais das galáxias. Quanto mais distante uma galáxia, maior o redshift, indicando sua velocidade de afastamento, evidenciando a expansão do cosmos."
+  },
+  {
+    "Pergunta": "O que é a Teoria da Grande Unificação na física de partículas?",
+    "Opcoes": {
+      A: "Hipótese de que todas as partículas subatômicas são compostas por unidades fundamentais chamadas 'grandes unificações'; busca unificar as forças fundamentais em uma única força.",
+      B: "Modelo que descreve a formação de grandes aglomerados de partículas no universo primitivo; busca explicar a origem da matéria escura.",
+      C: "Conceito que propõe a existência de partículas subatômicas maiores do que os quarks; busca unificar as forças fundamentais através do aumento da complexidade das partículas.",
+      D: "Teoria que busca unificar as forças fundamentais da natureza, excluindo a força gravitacional; sugere que essas forças eram uma única força durante os primeiros instantes do universo.",
+    },
+    "Resposta": "D",
+    "Motivo": "A Teoria da Grande Unificação na física de partículas busca unificar as forças fundamentais da natureza, excluindo a força gravitacional. Sugere que essas forças eram uma única força durante os primeiros instantes do universo, antes de se separarem em forças distintas à medida que o cosmos se expandiu e esfriou."
+  }
+      ]
     const perguntasPsicologia = []
     const perguntasSociologia = []
     const perguntasArqueologia =[];
     const perguntasCriminologia = []
-    const perguntasCulturaPop =[]
-    const perguntasCulturaGotica = []
+    const perguntasCultura =[]
+    const perguntasFotografia =[]
+    
     
         
         
