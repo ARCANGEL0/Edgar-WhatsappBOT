@@ -5742,7 +5742,8 @@ public class WordFrequencyCounter {
     },
     "Resposta": "B",
   },
-    "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."
+    "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."},
+    
   {
     "Pergunta": "Descreva o processo de osmose em uma célula.",
     "Opcoes": {
