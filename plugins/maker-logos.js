@@ -27,16 +27,7 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
       text = [text.trim()];
     }
     const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
-    const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw `${mg} 
-╭━━━━━━━━━⬣
-┃
-┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐟𝐚𝐥𝐡𝐨𝐮  
-┃ 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞. 𝐝𝐢𝐠𝐢𝐭𝐞 𝐮𝐦 
-┃ 𝐭𝐞𝐱𝐭𝐨
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣
-` })
+    const res = await maker(effectoSelect?.url, [...text]).catch(e) { console.log(e) })
     
 
     await conn.sendMessage(m.chat, {
@@ -45,6 +36,7 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
     }, { quoted: m });
 
   } catch (e) {
+    console.log(e)
     await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
     console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
     console.log(e)
