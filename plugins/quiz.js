@@ -27,7 +27,7 @@ return list[Math.floor(list.length * Math.random())]}
         'Sociologia',
         'Arqueologia',
         'Criminologia',
-        'Fotografia'
+        'Fotografia',
         'Cultura',
         // Adicione mais categorias conforme necessário
     ];
