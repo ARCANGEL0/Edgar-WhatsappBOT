@@ -16,7 +16,7 @@ return list[Math.floor(list.length * Math.random())]}
         'Quimica',
         'Biologia',
         'Matematica',
-        'Música',
+        'Musica',
         'Filosofia',
         'Literatura',
         'Medicina',
@@ -29,6 +29,7 @@ return list[Math.floor(list.length * Math.random())]}
         'Criminologia',
         'Fotografia',
         'Cultura',
+        'Direito'
         // Adicione mais categorias conforme necessário
     ];
     
@@ -6126,12 +6127,12 @@ public class WordFrequencyCounter {
     "Pergunta": "Quantos reinos principais são comumente reconhecidos no sistema de classificação biológica?",
     "Opcoes": {
       A: "4",
-      B: "6",
+      B: "5",
       C: "8",
       D: "10"
     },
     "Resposta": "B",
-    "Motivo": "Atualmente, são comumente reconhecidos seis reinos principais no sistema de classificação biológica: Bacteria, Archaea, Protista, Fungi, Plantae e Animalia. Essa classificação reflete as relações evolutivas entre os diferentes grupos de organismos."
+    "Motivo": "Atualmente, são comumente reconhecidos seis reinos principais no sistema de classificação biológica: Monera, Protista, Fungi, Plantae e Animalia. Essa classificação reflete as relações evolutivas entre os diferentes grupos de organismos."
   },
   {
     "Pergunta": "Qual é o reino que engloba organismos multicelulares, eucariontes, autotróficos e que realizam fotossíntese?",
@@ -6304,16 +6305,15 @@ public class WordFrequencyCounter {
       ]
     const perguntasMatematica = [
   {
-       
     "Pergunta": "Qual é a fórmula para calcular a área de um círculo?",
     "Opcoes": {
       A: "Área = π * r",
       B: "Área = 2 * π * r",
-      C: "Área = 1/2 * π * r^2",
-      D: "Área = π * d"
+      C: "Área = π * (r^2)",
+      D: "Área = π * (d^2 / 4)"
     },
     "Resposta": "C",
-    "Motivo": "A fórmula correta para calcular a área de um círculo é Área = π * raio^2."
+    "Motivo": "A fórmula correta para calcular a área de um círculo é Área = π * (raio^2)."
   },
   {
     "Pergunta": "Se um retângulo tem comprimento 8 e largura 5, qual é a sua área?",
@@ -6337,14 +6337,13 @@ public class WordFrequencyCounter {
     "Resposta": "C",
     "Motivo": "A soma dos ângulos de um quadrado é sempre 360 graus, pois todos os seus ângulos internos são ângulos retos (90 graus)."
   },
-  
   {
     "Pergunta": "Resolva a equação: 2x² - 5x + 3 = 0. Quais são as raízes reais?",
     "Opcoes": {
       A: "x = 1 e x = 3",
       B: "x = -1 e x = -3",
       C: "x = 1/2 e x = 3/2",
-      D: "x = -1/2 e x = -3/2"
+      D: "x = -1/2 e x = 3/2"
     },
     "Resposta": "A",
     "Motivo": "As raízes reais da equação 2x² - 5x + 3 = 0 são x = 1 e x = 3."
@@ -6358,7 +6357,7 @@ public class WordFrequencyCounter {
       D: "f(2) = 27"
     },
     "Resposta": "C",
-    "Motivo": "Substituindo x por 2 na função, obtemos f(2) = 3(2)² + 2(2) + 1 = 3(4) + 4 + 1 = 12 + 4 + 1 = 17."
+    "Motivo": "Substituindo x por 2 na função, obtemos f(2) = 3(2)² + 2(2) + 1 = 3(4) + 4 + 1 = 17."
   },
   {
     "Pergunta": "Qual é o valor de x na equação log₂(x) = 3?",
@@ -6415,10 +6414,396 @@ public class WordFrequencyCounter {
     "Resposta": "B",
     "Motivo": "Na solução da equação sen(x) + cos(x) = 1, as soluções são x = π/2 e x = 3π/2 no intervalo [0, 2π]."
   },
+  {
+    "Pergunta": "Resolva a equação: 3x - 7 = 2x + 4. Qual é o valor de x?",
+    "Opcoes": {
+      A: "x = 11",
+      B: "x = 6",
+      C: "x = 3",
+      D: "x = -3"
+    },
+    "Resposta": "A",
+    "Motivo": "Resolvendo a equação, obtemos x = 11."
+  },
+  {
+    "Pergunta": "Fatorize a expressão: x² - 9.",
+    "Opcoes": {
+      A: "(x + 3)(x - 3)",
+      B: "(x + 3)(x + 3)",
+      C: "(x - 3)(x - 3)",
+      D: "(x - 9)(x + 1)"
+    },
+    "Resposta": "A",
+    "Motivo": "A expressão fatorizada é (x + 3)(x - 3)."
+  },
+  {
+    "Pergunta": "Se 2y - 5 = 11, qual é o valor de y?",
+    "Opcoes": {
+      A: "y = 8",
+      B: "y = 9",
+      C: "y = 7",
+      D: "y = 10"
+    },
+    "Resposta": "B",
+    "Motivo": "Resolvendo a equação, obtemos y = 8."
+  },
+  {
+    "Pergunta": "Simplifique a expressão: 4a + 2b - 3a + 5b.",
+    "Opcoes": {
+      A: "a + 7b",
+      B: "b + a",
+      C: "a - b",
+      D: "7a + 5b"
+    },
+    "Resposta": "A",
+    "Motivo": "Simplificando a expressão, temos a + 7b."
+  },
+  {
+    "Pergunta": "Resolva a inequação: 2x + 7 < 15. Quais são os valores de x?",
+    "Opcoes": {
+      A: "x < 4",
+      B: "x > 4",
+      C: "x < 6",
+      D: "x > 6"
+    },
+    "Resposta": "A",
+    "Motivo": "Os valores de x que satisfazem a inequação são x < 4."
+  },
+  {
+    "Pergunta": "Calcule a integral definida: ∫(2x + 3) dx de 1 a 4.",
+    "Opcoes": {
+      A: "23",
+      B: "33",
+      C: "43",
+      D: "53"
+    },
+    "Resposta": "C",
+    "Motivo": "Ao integrar 2x + 3 em relação a x e avaliar de 1 a 4, obtemos 43."
+  },
+  {
+    "Pergunta": "Encontre a integral indefinida: ∫(4x^3 - 2x^2 + 5) dx.",
+    "Opcoes": {
+      A: "x^4 - (2/3)x^3 + 5x + C",
+      B: "x^4 - (2/3)x^3 + 5x^2 + C",
+      C: "x^4 - (1/2)x^2 + 5x + C",
+      D: "x^4 - x^2 + 5x^3 + C"
+    },
+    "Resposta": "A",
+    "Motivo": "Ao integrar 4x^3 - 2x^2 + 5 em relação a x, obtemos x^4 - (2/3)x^3 + 5x + C, onde C é a constante de integração."
+  },
+  {
+    "Pergunta": "Calcule a área sob a curva y = x^2 de x = 0 a x = 2.",
+    "Opcoes": {
+      A: "2/3",
+      B: "8/3",
+      C: "4/3",
+      D: "2"
+    },
+    "Resposta": "B",
+    "Motivo": "A área sob a curva y = x^2 de x = 0 a x = 2 é dada pela integral definida ∫(x^2) dx de 0 a 2, resultando em 8/3."
+  },
+  {
+    "Pergunta": "Encontre a derivada da função F(x) = ∫(2t + 1) dt de 0 até x.",
+    "Opcoes": {
+      A: "2x + 1",
+      B: "2x",
+      C: "2x - 1",
+      D: "2"
+    },
+    "Resposta": "A",
+    "Motivo": "A derivada da função F(x) = ∫(2t + 1) dt de 0 até x é dada por 2x + 1."
+  },
+  {
+    "Pergunta": "Calcule a integral definida: ∫(cos(x)) dx de 0 a π/2.",
+    "Opcoes": {
+      A: "0",
+      B: "1",
+      C: "2",
+      D: "π/2"
+    },
+    "Resposta": "B",
+    "Motivo": "Ao calcular a integral definida de cos(x) de 0 a π/2, obtemos o valor 1."
+  },
+  
+  {
+    "Pergunta": "Resolva o sistema de equações:\n 2x + y = 5\n x - 3y = -2",
+    "Opcoes": {
+      A: "x = 2, y = 1",
+      B: "x = 1, y = 2",
+      C: "x = -1, y = 3",
+      D: "x = 3, y = -1"
+    },
+    "Resposta": "A",
+    "Motivo": "A solução do sistema é x = 2, y = 1."
+  },
+  {
+    "Pergunta": "Resolva o sistema de equações:\n 3x - 2y = 4\n 6x + y = 9",
+    "Opcoes": {
+      A: "x = 2, y = 1",
+      B: "x = 1, y = 2",
+      C: "x = -1, y = 3",
+      D: "x = 3, y = -1"
+    },
+    "Resposta": "A",
+    "Motivo": "A solução do sistema é x = 2, y = 1."
+  },
+  {
+    "Pergunta": "Resolva o sistema de equações:\n 2x + y - z = 1\n x - 3y + 2z = -2\n 3x - 2y + z = 3",
+    "Opcoes": {
+      A: "x = 1, y = -1, z = 2",
+      B: "x = 2, y = 1, z = -1",
+      C: "x = -1, y = 2, z = 3",
+      D: "x = 0, y = 0, z = 1"
+    },
+    "Resposta": "A",
+    "Motivo": "A solução do sistema é x = 1, y = -1, z = 2."
+  },
+  {
+    "Pergunta": "Resolva o sistema de equações:\n x + y + z = 6\n 2x - y + z = 3\n 3x + 2y - z = 7",
+    "Opcoes": {
+      A: "x = 1, y = 2, z = 3",
+      B: "x = 2, y = 1, z = -1",
+      C: "x = -1, y = 2, z = 3",
+      D: "x = 3, y = -1, z = 2"
+    },
+    "Resposta": "A",
+    "Motivo": "A solução do sistema é x = 1, y = 2, z = 3."
+  },
+  {
+    "Pergunta": "Resolva o sistema de equações:\n 4x - 2y = 10\n 2x + 3y = 1",
+    "Opcoes": {
+      A: "Sem solução",
+      B: "x = 2, y = -3",
+      C: "x = -1, y = 2",
+      D: "Infinitas soluções"
+    },
+    "Resposta": "A",
+    "Motivo": "O sistema não possui solução."
+  },
+  {
+    "Pergunta": "Resolva a equação quadrática 2x^2 - 5x + 2 = 0. Qual é o valor de x?",
+    "Opções": {
+      A: "1/2 e 2",
+      B: "1 e 2",
+      C: "-1/2 e -2",
+      D: "-1 e -1/2",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque ao fatorar a equação, obtemos (2x - 1)(x - 2) = 0, resultando em x = 1/2 e x = 2.",
+  },
+  {
+    "Pergunta": "Calcule a derivada de f(x) = 3x^2 + 2x - 1 em relação a x.",
+    "Opções": {
+      A: "6x + 2",
+      B: "9x + 2",
+      C: "6x - 2",
+      D: "9x - 2",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque a derivada de x^n é nx^(n-1), aplicando isso a cada termo, obtemos f'(x) = 6x + 2.",
+  },
+  {
+    "Pergunta": "Dada a matriz A = [[1, 2], [3, 4]], qual é a transposta de A?",
+    "Opções": {
+      A: "[[1, 3], [2, 4]]",
+      B: "[[1, 2], [3, 4]]",
+      C: "[[4, 3], [2, 1]]",
+      D: "[[4, 2], [3, 1]]",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque a transposta de uma matriz troca suas linhas por colunas.",
+  },
+  {
+    "Pergunta": "Se log₂(x) = 3, qual é o valor de x?",
+    "Opções": {
+      A: "6",
+      B: "8",
+      C: "9",
+      D: "12",
+    },
+    "Resposta": "B",
+    "Motivo": "A resposta é B porque log₂(x) = 3 implica que 2^3 = x, resultando em x = 8.",
+  },
+  {
+    "Pergunta": "Resolva a inequação 2x - 5 < 3. Qual é o conjunto solução?",
+    "Opções": {
+      A: "x < 4",
+      B: "x > 4",
+      C: "x < 2",
+      D: "x > 2",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque ao resolver a inequação, obtemos x < 4 como solução.",
+  },
+  {
+    "Pergunta": "Dada a matriz B = [[2, 1], [4, 3]], qual é o determinante de B?",
+    "Opções": {
+      A: "5",
+      B: "8",
+      C: "6",
+      D: "2",
+    },
+    "Resposta": "C",
+    "Motivo": "A resposta é C porque o determinante de uma matriz 2x2 é dado por (ad - bc), onde a, b, c, d são os elementos da matriz. Neste caso, (2*3 - 1*4) = 6.",
+  },
+  {
+    "Pergunta": "Calcule a derivada de g(x) = ln(x) + 2x em relação a x.",
+    "Opções": {
+      A: "1/x + 2",
+      B: "1/x - 2",
+      C: "1/x + 2x",
+      D: "1/x - 2x",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque a derivada de ln(x) é 1/x, e a derivada de 2x é 2.",
+  },
+  {
+    "Pergunta": "Resolva a equação log₃(x) = 2. Qual é o valor de x?",
+    "Opções": {
+      A: "3",
+      B: "6",
+      C: "9",
+      D: "27",
+    },
+    "Resposta": "D",
+    "Motivo": "A resposta é D porque log₃(x) = 2 implica que 3^2 = x, resultando em x = 9.",
+  },
+  {
+    "Pergunta": "Resolva a inequação 4x² - 9 < 0. Qual é o conjunto solução?",
+    "Opções": {
+      A: "-3/2 < x < 3/2",
+      B: "x < -3/2 ou x > 3/2",
+      C: "-3/2 < x < 0 ou 0 < x < 3/2",
+      D: "x < -3/2 e x > 3/2",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque ao resolver a inequação, obtemos -3/2 < x < 3/2 como solução.",
+  },
+  {
+    "Pergunta": "Seja f(x) = x³ - 4x² + 4x + 3. Qual é o valor de f'(x)?",
+    "Opções": {
+      A: "3x² - 8x + 4",
+      B: "3x² - 8x - 4",
+      C: "3x² - 8x - 2",
+      D: "3x² - 8x + 2",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque ao aplicar a regra do poder, obtemos f'(x) = 3x² - 8x + 4.",
+  },
+  {
+    "Pergunta": "Dadas as equações x + y = 8 e 2x - y = 1, qual é o valor de x?",
+    "Opções": {
+      A: "3",
+      B: "2",
+      C: "4",
+      D: "5",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque ao resolver o sistema de equações, encontramos que x = 3 e y = 5, satisfazendo ambas as equações.",
+  },
+  {
+    "Pergunta": "Seis pessoas estão em uma fila para tirar uma foto. De quantas maneiras diferentes elas podem se posicionar?",
+    "Opções": {
+      A: "720",
+      B: "120",
+      C: "30",
+      D: "7200",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque o número de maneiras de organizar n elementos distintos é n!, neste caso, 6! = 720.",
+  },
+  {
+    "Pergunta": "Se jogarmos dois dados justos, qual é a probabilidade de que a soma dos números seja 9?",
+    "Opções": {
+      A: "1/12",
+      B: "1/9",
+      C: "1/6",
+      D: "1/8",
+    },
+    "Resposta": "D",
+    "Motivo": "A resposta é D porque há 4 maneiras de obter a soma 9 (3+6, 4+5, 5+4, 6+3) em um total de 6 * 6 = 36 resultados possíveis.",
+  },
+  {
+    "Pergunta": "Dado o sistema de equações 3x - y = 4 e 2x + y = 5, qual é o valor de x?",
+    "Opções": {
+      A: "1",
+      B: "2",
+      C: "3",
+      D: "4",
+    },
+    "Resposta": "B",
+    "Motivo": "A resposta é B porque, ao resolver o sistema de equações, encontramos que x = 2 e y = 1, satisfazendo ambas as equações.",
+  },
+  {
+    "Pergunta": "Quantos anagramas diferentes podemos formar com a palavra 'MATEMATICA'?",
+    "Opções": {
+      A: "3628800",
+      B: "362880",
+      C: "40320",
+      D: "1440",
+    },
+    "Resposta": "B",
+    "Motivo": "A resposta é B porque o número de anagramas de uma palavra com letras repetidas é dado por n!/(r1! * r2! * ... * rk!), onde n é o total de letras e r1, r2, ... , rk são as repetições de cada letra. Neste caso, 11!/(2! * 2! * 2!) = 362880.",
+  },
+  {
+    "Pergunta": "Se lançarmos um dado justo, qual é a probabilidade de obter um número ímpar ou maior que 3?",
+    "Opções": {
+      A: "1/2",
+      B: "2/3",
+      C: "3/4",
+      D: "5/6",
+    },
+    "Resposta": "D",
+    "Motivo": "A resposta é D porque há 3 resultados favoráveis (1, 3, 5) em um total de 6 resultados possíveis.",
+  },
+  {
+    "Pergunta": "Dado o sistema de equações 2x + y = 5 e x - y = 1, qual é o valor de y?",
+    "Opções": {
+      A: "1",
+      B: "2",
+      C: "3",
+      D: "4",
+    },
+    "Resposta": "C",
+    "Motivo": "A resposta é C porque, ao resolver o sistema de equações, encontramos que x = 2 e y = 1, satisfazendo ambas as equações.",
+  },
+  {
+    "Pergunta": "Se escolhermos aleatoriamente três cartas de um baralho, sem reposição, qual é a probabilidade de que todas sejam cartas de ouros?",
+    "Opções": {
+      A: "1/208",
+      B: "1/416",
+      C: "1/17576",
+      D: "1/58905",
+    },
+    "Resposta": "C",
+    "Motivo": "A resposta é C porque a probabilidade de obter uma carta de ouros na primeira escolha é 1/4, na segunda escolha é 1/3, e na terceira escolha é 1/2, então a probabilidade total é (1/4) * (1/3) * (1/2) = 1/17576.",
+  },
+  {
+    "Pergunta": "Dado o sistema de equações 3x + 2y = 10 e x - y = 3, qual é o valor de x?",
+    "Opções": {
+      A: "1",
+      B: "2",
+      C: "3",
+      D: "4",
+    },
+    "Resposta": "C",
+    "Motivo": "A resposta é C porque, ao resolver o sistema de equações, encontramos que x = 3 e y = 0, satisfazendo ambas as equações.",
+  },
+  {
+    "Pergunta": "Se escolhermos aleatoriamente duas cartas de um baralho, com reposição, qual é a probabilidade de ambas serem ases?",
+    "Opções": {
+      A: "1/104",
+      B: "1/136",
+      C: "1/169",
+      D: "1/208",
+    },
+    "Resposta": "A",
+    "Motivo": "A resposta é A porque a probabilidade de obter um ás em cada escolha é 4/52, então a probabilidade total é (4/52) * (4/52) = 1/104.",
+  },
   
   
   
-  ]
+];
     const perguntasMusica = [
       {
     "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
@@ -10405,7 +10790,7 @@ public class WordFrequencyCounter {
     const perguntasCriminologia = []
     const perguntasCultura =[]
     const perguntasFotografia =[]
-    
+    const perguntasDireito = []
     
         
         
