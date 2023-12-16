@@ -27,7 +27,16 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
       text = [text.trim()];
     }
     const effectoSelect = effects.find((effectz) => new RegExp(effectz?.title, 'i').test(effect));
-    const res = await maker(effectoSelect?.url, [...text]).catch(e) { console.log(e) }
+    const res = await maker(effectoSelect?.url, [...text]).catch(_ => { throw `${mg} 
+╭━━━━━━━━━⬣
+┃
+┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐟𝐚𝐥𝐡𝐨𝐮  
+┃ 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞. 𝐝𝐢𝐠𝐢𝐭𝐞 𝐮𝐦 
+┃ 𝐭𝐞𝐱𝐭𝐨
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣
+` })
     
 
     await conn.sendMessage(m.chat, {
@@ -36,7 +45,6 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
     }, { quoted: m });
 
   } catch (e) {
-    console.log(e)
     await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
     console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
     console.log(e)
@@ -769,43 +777,59 @@ var effects = [
   },
 ];
 
-async function maker(url, textInput) {
-   if (/https?:\/\/(ephoto360|photooxy|pro)\/\.(com|me)/i.test(url)) throw new Error("URL Invalid")
 
-   const texts = textInput.split(',').map(text => text.trim());
-   const text1 = texts[0];
-   const text2 = texts[1];
 
+
+async function maker(url, text) {
+   if (/https?:\/\/(ephoto360|photooxy|textpro)\/\.(com|me)/i.test(url)) throw new Error("URL Invalid")
    try {
-      // ... (rest of the code remains unchanged)
-
+      let a = await axios.get(url, {
+         headers: {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "Origin": (new URL(url)).origin,
+            "Referer": url,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.188"
+         }
+      })
+      let $ = cheerio.load(a.data)
+      let server = $('#build_server').val()
+      let serverId = $('#build_server_id').val()
+      let token = $('#token').val()
+      let submit = $('#submit').val()
+      let types = [];
+      $('input[name="radio0[radio]"]').each((i, elem) => {
+         types.push($(elem).attr("value"));
+      })
       let post;
-      if (types.length !== 0) {
+      if (types.length != 0) {
          post = {
             'radio0[radio]': types[Math.floor(Math.random() * types.length)],
             'submit': submit,
             'token': token,
             'build_server': server,
-            'build_server_id': Number(serverId),
-            'text1': text1,  // Add text1 to the post data
-            'text2': text2   // Add text2 to the post data
+            'build_server_id': Number(serverId)
          };
-      } else {
+      }
+      else {
          post = {
             'submit': submit,
             'token': token,
             'build_server': server,
-            'build_server_id': Number(serverId),
-            'text1': text1,  // Add text1 to the post data
-            'text2': text2   // Add text2 to the post data
+            'build_server_id': Number(serverId)
          }
       }
       let form = new FormData()
       for (let i in post) {
          form.append(i, post[i])
       }
-      if (typeof text == "string") text = [text]
-      for (let i of text) form.append("text[]", i)
+
+      if (typeof text === "string") {
+         const textArray = text.split(',').map(item => item.trim());
+         for (let i of textArray) {
+            form.append("text[]", i);
+         }
+      }
+
       let b = await axios.post(url, form, {
          headers: {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -816,7 +840,9 @@ async function maker(url, textInput) {
             ...form.getHeaders()
          }
       })
+
       $ = cheerio.load(b.data)
+
       let out = ($('#form_value').first().text() || $('#form_value_input').first().text() || $('#form_value').first().val() || $('#form_value_input').first().val())
       let c = await axios.post((new URL(url)).origin + "/effect/create-image", JSON.parse(out), {
          headers: {
@@ -828,6 +854,7 @@ async function maker(url, textInput) {
             "Cookie": a.headers.get("set-cookie").join("; ")
          }
       })
+
       return {status: c.data?.success, image: server + (c.data?.fullsize_image || c.data?.image || ""), session: c.data?.session_id}
    } catch (e) {
       throw e
