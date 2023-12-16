@@ -491,26 +491,26 @@ let menuall = `💀🕯️ Olá @${username}
 `.trim()
 
 
-if(command=="mall")
+if(command=="menu1")
 await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkontak)
 
-if(command=="mbuscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
+if(command=="buscas") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
 
-if(command=="mbot") conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
+if(command=="menu0") conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
 
-if(command=="mia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuia, fkontak)
-if(command=="mmd") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
+if(command=="menu6") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuia, fkontak)
+if(command=="menu8") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
 
-if(command=="mvoto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
-if(command=="mbaixar") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
+if(command=="menu7") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
+if(command=="menu5") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
 
-if(command=="mgp") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
+if(command=="menu9") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
 
 
-if(command=="mtools") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
+if(command=="menu2") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
 
-if(command=="mjogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
-if(command=="mcv") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
+if(command=="menu3") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
+if(command=="menu4") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
 
 
 }
@@ -519,7 +519,7 @@ await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() 
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
-handler.command = /^(mall|all|mmd|mgp|mbot|mtools|mjogos|mvoto|mia|mcv|mbaixar|mbuscas|\?)$/i
+handler.command = /^(menu1|all|menu8|menu9|menu0|menu2|menu3|menu7|menu6|menu4|menu5|buscas|\?)$/i
 //handler.register = true
 export default handler
 
