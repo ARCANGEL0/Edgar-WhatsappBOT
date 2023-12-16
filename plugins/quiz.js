@@ -5686,14 +5686,8 @@ public class WordFrequencyCounter {
     "Motivo": "As enzimas são moléculas que atuam como catalisadores, acelerando reações químicas em organismos vivos sem serem consumidas durante o processo."
   },
   
-  {
-    "Pergunta": "O que são os seres autotróficos?",
-    "Opcoes": {
-      A: "Seres vivos que se alimentam de outros organismos",
-      B: "Seres vivos capazes de produzir seu próprio alimento",
-      C: "Seres vivos que se alimentam de detritos",
-      D: "Seres vivos que se alimentam de plantas"
-    },
+
+
     {
     "Pergunta": "Explique o processo de transcrição do DNA.",
     "Opcoes": {
