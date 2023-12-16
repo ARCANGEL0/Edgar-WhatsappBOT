@@ -6304,17 +6304,195 @@ public class WordFrequencyCounter {
     
       ]
     const perguntasMatematica = [
-            {
-    "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
-    "Opcoes": {
-      A: "B.B. King",
-      B: "Eric Clapton",
-      C: "Stevie Ray Vaughan",
-      D: "Jimi Hendrix"
+      {
+  "Pergunta": "Qual é o valor de lim x->0 (sin(x)/x)?",
+  "Opcoes": {
+    A: "0",
+    B: "1",
+    C: "∞",
+    D: "Indeterminado"
+  },
+  "Resposta": "B",
+  "Motivo": "Esse limite é conhecido como o limite fundamental e é igual a 1."
+},
+{
+        "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
+        "Opcoes": {
+            "A": "B.B. King",
+            "B": "Eric Clapton",
+            "C": "Stevie Ray Vaughan",
+            "D": "Jimi Hendrix"
+        },
+        "Resposta": "A",
+        "Motivo": "B.B. King é o lendário guitarrista conhecido por sua habilidade única e contribuições significativas para o blues."
     },
-    "Resposta": "A",
-    "Motivo": "B.B. King é o lendário guitarrista conhecido por sua habilidade única e contribuições significativas para o blues."
-  },];
+    {
+        "Pergunta": "Qual é a derivada da função f(x) = e^(2x) * cos(3x)?",
+        "Opcoes": {
+            "A": "2e^(2x) * cos(3x) - 3e^(2x) * sen(3x)",
+            "B": "2e^(2x) * sen(3x) + 3e^(2x) * cos(3x)",
+            "C": "4e^(2x) * cos(3x) - 9e^(2x) * sen(3x)",
+            "D": "4e^(2x) * sen(3x) + 9e^(2x) * cos(3x)"
+        },
+        "Resposta": "A",
+        "Motivo": "Utilizando a regra do produto e a regra da cadeia, obtemos a derivada como 2e^(2x) * cos(3x) - 3e^(2x) * sen(3x)."
+    },
+    {
+        "Pergunta": "Qual é o valor de lim x->0 (sin(x)/x)?",
+        "Opcoes": {
+            "A": "0",
+            "B": "1",
+            "C": "∞",
+            "D": "Indeterminado"
+        },
+        "Resposta": "B",
+        "Motivo": "Esse limite é conhecido como o limite fundamental e é igual a 1."
+    },
+    {
+        "Pergunta": "Se A é uma matriz invertível, qual é a inversa de A^T (transposta de A)?",
+        "Opcoes": {
+            "A": "A",
+            "B": "A^(-1)",
+            "C": "A^T",
+            "D": "A^(-T)"
+        },
+        "Resposta": "B",
+        "Motivo": "A inversa da transposta de uma matriz invertível é a transposta da inversa da matriz original."
+    },
+    {
+        "Pergunta": "Qual é o teorema que relaciona derivadas parciais mistas?",
+        "Opcoes": {
+            "A": "Teorema de Green",
+            "B": "Teorema de Stokes",
+            "C": "Teorema Fundamental do Cálculo",
+            "D": "Teorema de Schwarz"
+        },
+        "Resposta": "D",
+        "Motivo": "O Teorema de Schwarz estabelece a igualdade das derivadas parciais mistas em certas condições."
+    },
+    {
+        "Pergunta": "O que representa o Teorema de Taylor na análise matemática?",
+        "Opcoes": {
+            "A": "Aproximação de funções por polinômios",
+            "B": "Integração de funções trigonométricas",
+            "C": "Soma de séries infinitas",
+            "D": "Solução de equações diferenciais"
+        },
+        "Resposta": "A",
+        "Motivo": "O Teorema de Taylor descreve a aproximação de funções por polinômios."
+    },
+    {
+        "Pergunta": "Qual é a integral definida de x^2 de 0 a 1?",
+        "Opcoes": {
+            "A": "1/3",
+            "B": "1/4",
+            "C": "1/6",
+            "D": "1/2"
+        },
+        "Resposta": "A",
+        "Motivo": "A integral definida de x^2 de 0 a 1 é (1/3)."
+    },
+    {
+        "Pergunta": "Qual é a soma dos coeficientes binomiais na expansão de (a + b)^4?",
+        "Opcoes": {
+            "A": "16",
+            "B": "32",
+            "C": "8",
+            "D": "1"
+        },
+        "Resposta": "B",
+        "Motivo": "Os coeficientes binomiais na expansão de (a + b)^4 são 1, 4, 6, 4, 1, e a soma é 16."
+    },
+    {
+        "Pergunta": "O que é a transformada de Fourier de uma função?",
+        "Opcoes": {
+            "A": "A derivada da função",
+            "B": "A integral da função",
+            "C": "A função inversa",
+            "D": "A representação em termos de senos e cossenos"
+        },
+        "Resposta": "D",
+        "Motivo": "A transformada de Fourier representa uma função como uma soma de senos e cossenos."
+    },
+    {
+        "Pergunta": "Qual é a equação diferencial que descreve a propagação do calor em uma barra unidimensional?",
+        "Opcoes": {
+            "A": "Equação de onda",
+            "B": "Equação de Laplace",
+            "C": "Equação de Poisson",
+            "D": "Equação do calor"
+        },
+        "Resposta": "D",
+        "Motivo": "A equação do calor descreve a variação da temperatura ao longo do tempo em uma barra unidimensional."
+    },
+    {
+        "Pergunta": "O que é a matriz Jacobiana?",
+        "Opcoes": {
+            "A": "Determinante de uma matriz",
+            "B": "Inversa de uma matriz",
+            "C": "Matriz de coeficientes em um sistema linear",
+            "D": "Matriz das derivadas parciais de um vetor de funções"
+        },
+        "Resposta": "D",
+        "Motivo": "A matriz Jacobiana contém as derivadas parciais de um vetor de funções."
+    },
+    
+    {
+  "Pergunta": "Se uma função afim g(x) tem uma inclinação de 4 e passa pelo ponto (2, 10), qual é a equação de g(x)?",
+  "Opcoes": {
+    A: "g(x) = 4x + 2",
+    B: "g(x) = 4x - 2",
+    C: "g(x) = 2x + 4",
+    D: "g(x) = 2x - 4"
+  },
+  "Resposta": "A",
+  "Motivo": "Substituindo a inclinação (m) e o ponto (2, 10) na forma y = mx + b, obtemos g(x) = 4x + 2."
+}, {
+  "Pergunta": "Dada a função afim k(x) = -0.8x - 6, qual é o valor de x para k(x) = 0?",
+  "Opcoes": {
+    A: "-7.5",
+    B: "-5",
+    C: "-4",
+    D: "-3"
+  },
+  "Resposta": "B",
+  "Motivo": "Para encontrar o ponto onde k(x) = 0, resolvemos a equação -0.8x - 6 = 0, resultando em x = -5."
+},{
+  "Pergunta": "Se i(t) é a função que representa o investimento ao longo do tempo, e i(2) = 500 e i(5) = 1200, qual é a taxa de variação média?",
+  "Opcoes": {
+    A: "100",
+    B: "200",
+    C: "300",
+    D: "400"
+  },
+  "Resposta": "C",
+  "Motivo": "A taxa de variação média é calculada como (i(5) - i(2)) / (5 - 2), resultando em 300."
+},
+{
+  "Pergunta": "Dada a reta definida por h(x) = 0.5x - 3, qual é a ordenada na origem?",
+  "Opcoes": {
+    A: "2",
+    B: "-3",
+    C: "0.5",
+    D: "-1.5"
+  },
+  "Resposta": "D",
+  "Motivo": "A ordenada na origem é o valor de y quando x = 0. Substituindo, obtemos h(0) = -3."
+},
+{
+  "Pergunta": "Qual é a inclinação da reta definida pela função afim g(x) = -2x + 5?",
+  "Opcoes": {
+    A: "2",
+    B: "-2",
+    C: "-5",
+    D: "5"
+  },
+  "Resposta": "B",
+  "Motivo": "Na forma y = mx + b, a inclinação é o coeficiente angular. Para g(x), a inclinação é -2."
+}
+
+      
+];
     const perguntasMusica = [
       {
     "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
