@@ -6315,17 +6315,6 @@ public class WordFrequencyCounter {
   "Resposta": "B",
   "Motivo": "Esse limite é conhecido como o limite fundamental e é igual a 1."
 },
-{
-        "Pergunta": "Quem é o lendário guitarrista conhecido por sua habilidade única e contribuições para o blues?",
-        "Opcoes": {
-            "A": "B.B. King",
-            "B": "Eric Clapton",
-            "C": "Stevie Ray Vaughan",
-            "D": "Jimi Hendrix"
-        },
-        "Resposta": "A",
-        "Motivo": "B.B. King é o lendário guitarrista conhecido por sua habilidade única e contribuições significativas para o blues."
-    },
     {
         "Pergunta": "Qual é a derivada da função f(x) = e^(2x) * cos(3x)?",
         "Opcoes": {
