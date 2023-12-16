@@ -5823,7 +5823,7 @@ public class WordFrequencyCounter {
 
     
     {
-    "Pergunta": "Descreva a estrutura do DNA e explique a importância da sua dupla hélice.",
+    "Pergunta": "Descreva a estrutura do DNA e explique a importância da sua dupla hélice",
     "Opcoes": {
       A: "DNA é uma molécula única em forma de hélice, e a dupla hélice não tem relevância biológica",
       B: "DNA é composto por duas fitas antiparalelas, formando uma dupla hélice, e essa estrutura é essencial para a replicação e transmissão de informações genéticas",
