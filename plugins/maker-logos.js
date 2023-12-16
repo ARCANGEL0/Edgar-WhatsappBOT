@@ -822,14 +822,8 @@ async function maker(url, text) {
       for (let i in post) {
          form.append(i, post[i])
       }
-
-      if (typeof text === "string") {
-         const textArray = text.split(',').map(item => item.trim());
-         for (let i of textArray) {
-            form.append("text[]", i);
-         }
-      }
-
+      if (typeof text == "string") text = [text]
+      for (let i of text) form.append("text[]", i)
       let b = await axios.post(url, form, {
          headers: {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -840,9 +834,7 @@ async function maker(url, text) {
             ...form.getHeaders()
          }
       })
-
       $ = cheerio.load(b.data)
-
       let out = ($('#form_value').first().text() || $('#form_value_input').first().text() || $('#form_value').first().val() || $('#form_value_input').first().val())
       let c = await axios.post((new URL(url)).origin + "/effect/create-image", JSON.parse(out), {
          headers: {
@@ -854,7 +846,6 @@ async function maker(url, text) {
             "Cookie": a.headers.get("set-cookie").join("; ")
          }
       })
-
       return {status: c.data?.success, image: server + (c.data?.fullsize_image || c.data?.image || ""), session: c.data?.session_id}
    } catch (e) {
       throw e
