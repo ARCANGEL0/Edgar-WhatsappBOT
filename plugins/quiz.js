@@ -5741,8 +5741,8 @@ public class WordFrequencyCounter {
       D: "Células reprodutivas"
     },
     "Resposta": "B",
-    "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."
   },
+    "Motivo": "Células-tronco são células com potencial de se diferenciar em diversos tipos celulares. Seu potencial terapêutico reside na capacidade de regenerar tecidos danificados ou substituir células perdidas devido a lesões ou doenças."
   {
     "Pergunta": "Descreva o processo de osmose em uma célula.",
     "Opcoes": {
@@ -5820,14 +5820,7 @@ public class WordFrequencyCounter {
     "Resposta": "B",
     "Motivo": "A variabilidade genética é fundamental para a evolução das espécies, pois proporciona a matéria-prima para a seleção natural atuar. A adaptação das espécies a diferentes ambientes ocorre através da preservação e transmissão de características vantajosas presentes na variabilidade genética."
   },
-  {
-    "Pergunta": "O que são os fatores abióticos em um ecossistema e como eles influenciam os seres vivos?",
-    "Opcoes": {
-      A: "São fatores relacionados à atividade biológica, como a presença de predadores",
-      B: "São fatores físicos e químicos não vivos, como luz, temperatura, umidade e solo, que influenciam os seres vivos",
-      C: "Fatores abióticos não têm impacto nos seres vivos",
-      D: "São apenas os fatores bióticos que influenciam os seres vivos em um ecossistema"
-    },
+
     
     {
     "Pergunta": "Descreva a estrutura do DNA e explique a importância da sua dupla hélice.",
