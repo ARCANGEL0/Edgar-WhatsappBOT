@@ -252,7 +252,7 @@ var effects = [
   },
   {
     'title': 'blackpink',
-    'url': 'https://textpro.me/create-blackpink-logo-style-online-1001.html',
+    'url': 'https://textpro.me/create-neon-light-blackpink-logo-text-effect-online-1081.html',
   },
   {
     'title': 'lightbulb',
