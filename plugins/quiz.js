@@ -11154,7 +11154,7 @@ public class WordFrequencyCounter {
         "Motivo": "Cultura, na perspectiva sociológica, abrange o conjunto de valores, crenças, normas e práticas compartilhadas por membros de uma sociedade."
     },
     {
-        "Pergunta": "O que é o conceito de "capital cultural" segundo Pierre Bourdieu?",
+        "Pergunta": "O que é o conceito de capital cultural segundo Pierre Bourdieu?",
         "Opcoes": {
             "A": "Recursos financeiros acumulados ao longo do tempo.",
             "B": "Conjunto de conhecimentos e habilidades adquiridos por meio da educação e experiências culturais.",
