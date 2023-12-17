@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
     let id = m.chat;
     global.quiz = global.quiz ? global.quiz : {}
-    
+
     if (global.quiz.math) {
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     } else {
@@ -27,7 +27,7 @@ let handler = async (m, { conn, text }) => {
         try {
             console.log(val);
 
-            let result = (new Function('factorial, limit', 'return ' + val))(factorial, limit);
+            let result = (new Function('factorial', 'limit', 'return ' + val))(factorial, limit);
 
             if (!result) throw result;
 
@@ -51,9 +51,13 @@ function factorial(n) {
 
 function limit(expression, value, approaching) {
     try {
-        let result = eval(`(${expression})`);
+        // Substitua x pelo valor de aproximação
+        let expressionWithX = expression.replace(/x/g, approaching);
 
-        if (!result) throw result;
+        // Avalie a expressão com o valor substituído
+        let result = eval(expressionWithX);
+
+        if (!result && result !== 0) throw result;
 
         return result;
     } catch (e) {
