@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     } else {
       
-      console.log("test  "+6%15)
+      console.log(6%15)
         let val = text
             .replace(/[^0-9\-\/+*×÷^πEe()%!.,]/g, '') // Adicionado vírgula (,) para reconhecer decimais
             .replace(/×/g, '*')
