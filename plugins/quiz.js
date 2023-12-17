@@ -11820,12 +11820,14 @@ public class WordFrequencyCounter {
     {
         "Pergunta": "Como as teorias psicológicas explicam o comportamento de serial killers e assassinos em série?",
         "Opcoes": {
-            "A": "Análise de movimentos sociais",
-            "B": "Estudo de padrões comportamentais",
-            "C": "Estudo de fenômenos geológicos",
-            "D": "Interpretação de documentos históricos"
+
+            "A": "Estudo de padrões comportamentais",
+          
+"B": "Uso de técnicas de DNA para identificar perfis genéticos, para uma melhor compreensão dos padrões comportamentais e de risco" ,
+"C": "Estudos dos fatores ambientais e sociais que podem contribuir para a violência",
+"D": "Uma combinação de fatores biológicos e ambientais, para entender as complexas origens e motivações desses tipos de crime."
         },
-        "Resposta": "B",
+        "Resposta": "A",
         "Motivo": "Teorias psicológicas buscam explicar o comportamento de serial killers através do estudo de padrões comportamentais, fatores de risco e possíveis motivações, contribuindo para a identificação e compreensão desses criminosos."
     },
     {
