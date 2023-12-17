@@ -69,7 +69,7 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-function limit(expression, value, approaching) {
+function limit(value, approaching, expression) {
   console.log(expression)
   console.log(value)
   console.log(approaching)
