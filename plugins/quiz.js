@@ -12740,11 +12740,14 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     // Update the current question and answer
     
 global.quiz = {
+  math: false,
   "cp": Pergunta,
   "ca": Resposta,
   "cm": Motivo
 }
-
+if(selectedCategoryIndex==11){
+  global.quiz.math = true
+}
 console.log(global.quiz)
 
 console.log('pergunta   '  + Resposta)
