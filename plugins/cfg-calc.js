@@ -70,8 +70,16 @@ function factorial(n) {
 
 function limit(expression, value, approaching) {
     try {
+        // Convert the value and approaching to numbers
+        let numericValue = parseFloat(value);
+        let numericApproaching = parseFloat(approaching);
+
+        if (isNaN(numericValue) || isNaN(numericApproaching)) {
+            throw `${fg}Invalid numeric values for limit calculation.`;
+        }
+
         // Substitua x pelo valor de aproximação
-        let expressionWithX = expression.replace(/x/g, approaching);
+        let expressionWithX = expression.replace(/x/g, numericApproaching);
 
         // Avalie a expressão com o valor substituído
         let result = eval(expressionWithX);
