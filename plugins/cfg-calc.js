@@ -6,15 +6,14 @@ let handler = async (m, { conn, text }) => {
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     } else {
         let val = text
-            .replace(/[^0-9\-\/+*×÷^πEe()%!]/g, '') // Adicionado %
+            .replace(/[^0-9\-\/+*×÷^πEe()%!.,[\]\s]/g, '') // Adicionado vírgula (,) e colchetes ([,]) para reconhecer matrizes
             .replace(/×/g, '*')
             .replace(/÷/g, '/')
             .replace(/\^|\*\*/g, '**')
             .replace(/π|pi/gi, 'Math.PI')
             .replace(/e/gi, 'Math.E')
-            .replace(/\//g, '/')
-            .replace(/(\d+)(!)/g, 'factorial($1)')
-            .replace(/(\d+)%(\d+)/g, '($1 % $2)') // Corrigido para calcular corretamente o módulo
+            .replace(/(\d+)(!)/g, 'factorial($1)'.replace(/(\d+)%(\d+)/g, '($1 % $2)') //
+            .replace(/(\d+\.\d+)/g, '($1)')
             .replace(/\*×/g, '×');
 
         let format = val
@@ -24,11 +23,22 @@ let handler = async (m, { conn, text }) => {
             .replace(/\*×/g, '×')
             .replace(/!/g, '!')
             .replace(/\*\*/g, '^');
+            
+        let matrixRegex = /(\[[\d\s.,;]+\])/g;
+        let matrices = val.match(matrixRegex);
+        
+        if (matrices) {
+            matrices.forEach((matrix, index) => {
+                val = val.replace(matrix, `matrix${index}`);
+                format = format.replace(matrix, `matrix${index}`);
+                conn.math[`matrix${index}`] = eval(matrix);
+            });
+        }
 
         try {
             console.log(val);
 
-            let result = (new Function('factorial', 'return ' + val))(factorial);
+            let result = (new Function('factorial', ...Object.keys(conn.math), `return ${val}`))(factorial, ...Object.values(conn.math));
 
             if (!result) throw result;
 
@@ -53,5 +63,5 @@ function factorial(n) {
 handler.help = ['calc <expression>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
-
+handler.exp = 5;
 export default handler;
