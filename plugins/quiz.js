@@ -45,11 +45,19 @@ if (!text) {
     const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
 
     throw `
-╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
+╭━━━『 𝐐𝐮𝐢𝐳 』━━━⬣
 ┃ 
-┃ 🥀🦇 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐭ó𝐩𝐢𝐜𝐨 𝐣𝐚𝐳 
-┃ 𝐞𝐦 𝐬𝐞𝐮𝐬 𝐩𝐞𝐧𝐬𝐚𝐦𝐞𝐧𝐭𝐨𝐬 
-┃ 𝐜𝐮𝐫𝐢𝐨𝐬𝐨𝐬
+┃ 🥀🦇 𝐒𝐞𝐥𝐞𝐜𝐢𝐨𝐧𝐞 𝐨 𝐧ú𝐦𝐞𝐫𝐨 𝐩𝐚𝐫𝐚 
+┃ 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫 𝐚 𝐪𝐮𝐞𝐬𝐭ã𝐨 𝐯𝐢𝐧𝐝𝐚 
+┃ 𝐝𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬,
+┃ 𝐮𝐬𝐞 𝐨 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 .quiz r 𝐩𝐚𝐫𝐚
+┃ 𝐭𝐫𝐚𝐳𝐞𝐫 𝐥𝐮𝐳 𝐚 
+┃ 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚 𝐝𝐞 𝐟𝐨𝐬𝐬𝐚 𝐢𝐠𝐧𝐨𝐫𝐚𝐧𝐜𝐢𝐚
+┃
+┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
+┃ .quiz 8 _*(Perguntas de física)*_
+┃ .quiz r _*(Revela a resposta)*__count__
+┃━━━━━━━⬣
 ┃
 ${categoryList}
 ┃
@@ -6327,6 +6335,372 @@ public class WordFrequencyCounter {
         "Motivo": "Utilizando a regra do produto e a regra da cadeia, obtemos a derivada como 2e^(2x) * cos(3x) - 3e^(2x) * sen(3x)."
     },
     {
+        "Pergunta": "Calcule a integral definida ∫(2x + 3)dx de 1 a 5.",
+        "Opcoes": {
+            "A": "20",
+            "B": "22",
+            "C": "24",
+            "D": "26"
+        },
+        "Resposta": "C",
+        "Motivo": "A integral definida de (2x + 3) de 1 a 5 é [x^2 + 3x] de 1 a 5, resultando em 24."
+    },
+    {
+        "Pergunta": "Resolva a equação diferencial dy/dx = 2x - 1.",
+        "Opcoes": {
+            "A": "y = x^2 - x + C",
+            "B": "y = x^2 - x",
+            "C": "y = x^2 + x + C",
+            "D": "y = x^2 + x"
+        },
+        "Resposta": "A",
+        "Motivo": "A solução da equação diferencial dy/dx = 2x - 1 é y = x^2 - x + C, onde C é a constante de integração."
+    },
+    {
+        "Pergunta": "Encontre a raiz quadrada positiva da equação x^2 - 4x + 4 = 0.",
+        "Opcoes": {
+            "A": "2",
+            "B": "4",
+            "C": "6",
+            "D": "8"
+        },
+        "Resposta": "A",
+        "Motivo": "A equação é equivalente a (x - 2)^2 = 0, então a raiz quadrada positiva é x - 2 = 0, resultando em x = 2."
+    },
+    {
+        "Pergunta": "Calcule o limite lim x->2 (x^2 - 4) / (x - 2).",
+        "Opcoes": {
+            "A": "2",
+            "B": "4",
+            "C": "6",
+            "D": "8"
+        },
+        "Resposta": "A",
+        "Motivo": "Simplificando a expressão, obtemos lim x->2 (x + 2), que resulta em 4."
+    },
+    {
+        "Pergunta": "Dada a matriz A = [[3, 1], [2, 4]], calcule A^2.",
+        "Opcoes": {
+            "A": "[[11, 7], [10, 14]]",
+            "B": "[[9, 5], [6, 16]]",
+            "C": "[[13, 9], [8, 18]]",
+            "D": "[[7, 3], [4, 12]]"
+        },
+        "Resposta": "B",
+        "Motivo": "A multiplicação de A por ela mesma (A^2) é [[9, 5], [6, 16]]."
+    },
+    {
+        "Pergunta": "Se log(a) = 2 e log(b) = 3, qual é o valor de log(ab)?",
+        "Opcoes": {
+            "A": "5",
+            "B": "6",
+            "C": "7",
+            "D": "8"
+        },
+        "Resposta": "C",
+        "Motivo": "Usando a propriedade dos logaritmos, log(ab) = log(a) + log(b) = 2 + 3 = 5."
+    },
+    {
+        "Pergunta": "Resolva a equação sen(2x) = cos(x) para x no intervalo [0, 2π].",
+        "Opcoes": {
+            "A": "π/4",
+            "B": "π/2",
+            "C": "3π/4",
+            "D": "π"
+        },
+        "Resposta": "C",
+        "Motivo": "Simplificando a equação, encontramos que x = 3π/4 está no intervalo [0, 2π]."
+    },
+      {
+        "Pergunta": "Quantos anagramas diferentes podem ser formados utilizando todas as letras da palavra 'MATHEMATICA'?",
+        "Opcoes": {
+            "A": "3628800",
+            "B": "40320",
+            "C": "181440",
+            "D": "120960"
+        },
+        "Resposta": "A",
+        "Motivo": "O número de anagramas é dado por 11!, pois há 11 letras na palavra 'MATHEMATICA'."
+    },
+    {
+        "Pergunta": "De quantas maneiras diferentes é possível escolher uma equipe de 3 pessoas de um grupo de 10?",
+        "Opcoes": {
+            "A": "120",
+            "B": "210",
+            "C": "252",
+            "D": "1200"
+        },
+        "Resposta": "C",
+        "Motivo": "O número de maneiras de escolher uma equipe de 3 pessoas de um grupo de 10 é dado por C(10, 3) = 252."
+    },
+    {
+        "Pergunta": "Quantos números de 3 algarismos distintos podem ser formados usando os dígitos 1, 2 e 3?",
+        "Opcoes": {
+            "A": "3",
+            "B": "6",
+            "C": "9",
+            "D": "12"
+        },
+        "Resposta": "B",
+        "Motivo": "Há 3 opções para o primeiro algarismo, 2 opções para o segundo e 1 opção para o terceiro, totalizando 3 * 2 * 1 = 6 números."
+    },
+    {
+        "Pergunta": "De quantas maneiras diferentes é possível organizar 5 livros em uma prateleira?",
+        "Opcoes": {
+            "A": "20",
+            "B": "60",
+            "C": "120",
+            "D": "240"
+        },
+        "Resposta": "C",
+        "Motivo": "O número de maneiras de organizar 5 livros em uma prateleira é dado por 5!, que é igual a 120."
+    },
+    {
+        "Pergunta": "Quantos subconjuntos diferentes podem ser formados a partir de um conjunto com 4 elementos?",
+        "Opcoes": {
+            "A": "8",
+            "B": "12",
+            "C": "16",
+            "D": "24"
+        },
+        "Resposta": "D",
+        "Motivo": "Um conjunto com n elementos tem 2^n subconjuntos, portanto, um conjunto com 4 elementos tem 2^4 = 16 subconjuntos."
+    },
+    {
+        "Pergunta": "De quantas maneiras diferentes é possível distribuir 10 livros idênticos entre 4 alunos?",
+        "Opcoes": {
+            "A": "210",
+            "B": "84",
+            "C": "120",
+            "D": "252"
+        },
+        "Resposta": "B",
+        "Motivo": "O problema é equivalente a distribuir 10 bolas idênticas em 4 urnas, o que é representado por C(13, 3) = 84."
+    },
+    {
+        "Pergunta": "Quantos anagramas diferentes podem ser formados utilizando as letras da palavra 'PROBABILIDADE'?",
+        "Opcoes": {
+            "A": "3628800",
+            "B": "2540160",
+            "C": "181440",
+            "D": "90720"
+        },
+        "Resposta": "B",
+        "Motivo": "O número de anagramas é dado por 13!/(2! * 2!), pois há repetições de algumas letras."
+    },
+    {
+        "Pergunta": "De quantas maneiras diferentes é possível escolher 2 cartas distintas de um baralho de 52 cartas?",
+        "Opcoes": {
+            "A": "102",
+            "B": "104",
+            "C": "156",
+            "D": "260"
+        },
+        "Resposta": "C",
+        "Motivo": "O número de maneiras de escolher 2 cartas distintas de um baralho de 52 cartas é dado por C(52, 2) = 156."
+    },
+    
+    {
+        "Pergunta": "Resolva a equação quadrática x^2 - 4x + 4 = 0.",
+        "Opcoes": {
+            "A": "Solução única: x = 2",
+            "B": "Solução única: x = 4",
+            "C": "Duas soluções reais: x = 2",
+            "D": "Duas soluções reais: x = 4"
+        },
+        "Resposta": "A",
+        "Motivo": "A equação é equivalente a (x - 2)^2 = 0, resultando em uma solução única: x = 2."
+    },
+    {
+        "Pergunta": "Resolva a inequação x^2 - 9 > 0.",
+        "Opcoes": {
+            "A": "x < -3 ou x > 3",
+            "B": "-3 < x < 3",
+            "C": "x < -3 e x > 3",
+            "D": "Nenhuma solução real"
+        },
+        "Resposta": "A",
+        "Motivo": "Os pontos críticos são x = -3 e x = 3. Testando intervalos, encontramos que a inequação é verdadeira para x < -3 ou x > 3."
+    },
+    {
+        "Pergunta": "Resolva a equação log₂(x) = 3.",
+        "Opcoes": {
+            "A": "x = 2",
+            "B": "x = 4",
+            "C": "x = 6",
+            "D": "x = 8"
+        },
+        "Resposta": "D",
+        "Motivo": "A solução da equação log₂(x) = 3 é x = 2^3 = 8."
+    },
+    {
+        "Pergunta": "Resolva a inequação 2x + 5 < 3x - 1.",
+        "Opcoes": {
+            "A": "x < 6",
+            "B": "x > 6",
+            "C": "x < 3",
+            "D": "x > 3"
+        },
+        "Resposta": "C",
+        "Motivo": "Subtraindo 2x de ambos os lados, obtemos 5 < x - 1. Adicionando 1, resulta em 6 < x, ou seja, x > 3."
+    },
+    {
+        "Pergunta": "Resolva a equação sen(x) = 0 para 0 ≤ x ≤ 2π.",
+        "Opcoes": {
+            "A": "x = 0, x = π, x = 2π",
+            "B": "x = π/2, x = 3π/2",
+            "C": "x = π, x = 2π",
+            "D": "x = π/2, x = 5π/2"
+        },
+        "Resposta": "C",
+        "Motivo": "As soluções são x = π e x = 2π, pois sen(x) = 0 nos múltiplos de π."
+    },
+    {
+        "Pergunta": "Resolva a inequação -2x + 7 ≥ 5x - 3.",
+        "Opcoes": {
+            "A": "x ≤ 2",
+            "B": "x ≥ 2",
+            "C": "x ≤ 5",
+            "D": "x ≥ 5"
+        },
+        "Resposta": "B",
+        "Motivo": "Adicionando 2x e subtraindo 7 de ambos os lados, obtemos 10 ≥ 7x. Dividindo por 7, resulta em x ≤ 10/7."
+    },
+    {
+        "Pergunta": "Resolva a equação exponencial 2^x = 16.",
+        "Opcoes": {
+            "A": "x = 2",
+            "B": "x = 3",
+            "C": "x = 4",
+            "D": "x = 5"
+        },
+        "Resposta": "C",
+        "Motivo": "A solução da equação 2^x = 16 é x = 4, pois 2 elevado à potência de 4 é igual a 16."
+    },
+    {
+        "Pergunta": "Resolva a inequação 3x - 2 < 4 e 2x + 1 > 5.",
+        "Opcoes": {
+            "A": "1 < x < 2",
+            "B": "x < 1 ou x > 2",
+            "C": "x < 1 e x > 2",
+            "D": "1 ≤ x ≤ 2"
+        },
+        "Resposta": "A",
+        "Motivo": "A solução para 3x - 2 < 4 é x < 2, e a solução para 2x + 1 > 5 é x > 2/1, portanto, 1 < x < 2."
+    },
+     {
+        "Pergunta": "Calcule a soma dos primeiros 10 termos da sequência aritmética: 3, 7, 11, ...",
+        "Opcoes": {
+            "A": "140",
+            "B": "150",
+            "C": "160",
+            "D": "170"
+        },
+        "Resposta": "A",
+        "Motivo": "A fórmula da soma dos primeiros n termos de uma sequência aritmética é Sn = n/2 * (a₁ + an). Neste caso, Sn = 10/2 * (3 + 39) = 140."
+    },
+    {
+        "Pergunta": "Se log₃(x) = 2, qual é o valor de x?",
+        "Opcoes": {
+            "A": "3",
+            "B": "6",
+            "C": "8",
+            "D": "9"
+        },
+        "Resposta": "D",
+        "Motivo": "A definição de logaritmo nos diz que log₃(x) = 2 significa que 3^2 = x, então x = 9."
+    },
+    {
+        "Pergunta": "Qual é a área de um triângulo com base 6 unidades e altura 8 unidades?",
+        "Opcoes": {
+            "A": "24",
+            "B": "32",
+            "C": "36",
+            "D": "48"
+        },
+        "Resposta": "C",
+        "Motivo": "A área de um triângulo é dada por (base * altura) / 2. Neste caso, (6 * 8) / 2 = 24."
+    },
+    {
+        "Pergunta": "Se a + b = 10 e a - b = 4, qual é o valor de a?",
+        "Opcoes": {
+            "A": "3",
+            "B": "5",
+            "C": "7",
+            "D": "9"
+        },
+        "Resposta": "C",
+        "Motivo": "Somando as duas equações, obtemos 2a = 14, então a = 7."
+    },
+    {
+        "Pergunta": "Calcule o produto escalar entre os vetores [2, -3] e [-4, 1].",
+        "Opcoes": {
+            "A": "11",
+            "B": "-11",
+            "C": "-14",
+            "D": "14"
+        },
+        "Resposta": "C",
+        "Motivo": "O produto escalar é dado por (2 * -4) + (-3 * 1) = -8 - 3 = -11."
+    },
+    {
+        "Pergunta": "Qual é o valor de sen(π/6)?",
+        "Opcoes": {
+            "A": "1/2",
+            "B": "√3/2",
+            "C": "√2/2",
+            "D": "1"
+        },
+        "Resposta": "B",
+        "Motivo": "Sen(π/6) é igual a 1/2, de acordo com os valores trigonométricos comuns."
+    },
+    
+    {
+        "Pergunta": "Se f(x) = 2x + 1 e g(x) = x² - 3, qual é o valor de f(g(2))?",
+        "Opcoes": {
+            "A": "5",
+            "B": "7",
+            "C": "9",
+            "D": "11"
+        },
+        "Resposta": "A",
+        "Motivo": "Primeiro, encontramos g(2): g(2) = 2² - 3 = 1. Em seguida, calculamos f(g(2)): f(1) = 2 * 1 + 1 = 3."
+    },
+    {
+        "Pergunta": "Resolva a equação log₄(x) = 2.",
+        "Opcoes": {
+            "A": "x = 2",
+            "B": "x = 4",
+            "C": "x = 8",
+            "D": "x = 16"
+        },
+        "Resposta": "D",
+        "Motivo": "A solução da equação log₄(x) = 2 é x = 4^2 = 16."
+    },
+    {
+        "Pergunta": "Qual é o valor da média aritmética entre 15, 20, 25 e 30?",
+        "Opcoes": {
+            "A": "20",
+            "B": "22.5",
+            "C": "25",
+            "D": "27.5"
+        },
+        "Resposta": "C",
+        "Motivo": "A média aritmética é calculada somando os números e dividindo pelo número de elementos: (15 + 20 + 25 + 30) / 4 = 25."
+    },
+    {
+        "Pergunta": "Se log₃(y) = 1/2, qual é o valor de y?",
+        "Opcoes": {
+            "A": "1",
+            "B": "3",
+            "C": "9",
+            "D": "27"
+        },
+        "Resposta": "C",
+        "Motivo": "A definição de logaritmo nos diz que log₃(y) = 1/2 significa que 3^(1/2) = y, então y = 9."
+    },
+    
+    {
         "Pergunta": "Qual é o valor de lim x->0 (sin(x)/x)?",
         "Opcoes": {
             "A": "0",
@@ -10462,13 +10836,1848 @@ public class WordFrequencyCounter {
     "Motivo": "A Teoria da Grande Unificação na física de partículas busca unificar as forças fundamentais da natureza, excluindo a força gravitacional. Sugere que essas forças eram uma única força durante os primeiros instantes do universo, antes de se separarem em forças distintas à medida que o cosmos se expandiu e esfriou."
   }
       ]
-    const perguntasPsicologia = []
-    const perguntasSociologia = []
-    const perguntasArqueologia =[];
-    const perguntasCriminologia = []
-    const perguntasCultura =[]
-    const perguntasFotografia =[]
-    const perguntasDireito = []
+    const perguntasPsicologia = [
+      {
+        "Pergunta": "O que é o conceito de personalidade na psicologia?",
+        "Opcoes": {
+            "A": "É a mesma coisa que temperamento.",
+            "B": "É a forma como uma pessoa se veste.",
+            "C": "São as características psicológicas consistentes e duradouras de uma pessoa.",
+            "D": "É apenas o comportamento observável de alguém."
+        },
+        "Resposta": "C",
+        "Motivo": "A personalidade na psicologia refere-se às características psicológicas distintivas que uma pessoa exibe ao longo do tempo e em diferentes situações."
+    },
+    {
+        "Pergunta": "O que é o condicionamento operante de acordo com a teoria comportamental?",
+        "Opcoes": {
+            "A": "É uma forma de aprendizagem associativa.",
+            "B": "É o aprendizado através da observação de modelos.",
+            "C": "É o reforço ou punição do comportamento para aumentar ou diminuir sua probabilidade de ocorrer novamente.",
+            "D": "É um processo de assimilação de novas informações em estruturas cognitivas existentes."
+        },
+        "Resposta": "C",
+        "Motivo": "O condicionamento operante é um processo no qual o comportamento é fortalecido ou enfraquecido por meio de reforço ou punição, de acordo com as consequências que se seguem ao comportamento."
+    },
+    {
+        "Pergunta": "Qual é o principal foco da psicologia humanista?",
+        "Opcoes": {
+            "A": "Estudar comportamentos observáveis.",
+            "B": "Explorar o inconsciente e os impulsos sexuais.",
+            "C": "Entender o impacto das experiências passadas na personalidade.",
+            "D": "Promover o crescimento pessoal, a autoatualização e a compreensão do potencial humano."
+        },
+        "Resposta": "D",
+        "Motivo": "A psicologia humanista enfatiza o crescimento pessoal, a autoatualização e a compreensão do potencial humano, focando nas experiências subjetivas e na busca pelo significado da vida."
+    },
+    {
+        "Pergunta": "O que é a teoria psicanalítica de Sigmund Freud?",
+        "Opcoes": {
+            "A": "Uma abordagem que destaca a importância do inconsciente e dos conflitos psíquicos.",
+            "B": "Uma teoria que se concentra exclusivamente em comportamentos observáveis.",
+            "C": "Uma visão que enfatiza a importância do condicionamento e da aprendizagem.",
+            "D": "Uma abordagem que se concentra na observação de comportamentos manifestos."
+        },
+        "Resposta": "A",
+        "Motivo": "A teoria psicanalítica de Freud destaca a importância do inconsciente, dos conflitos psíquicos e da influência de experiências infantis na formação da personalidade."
+    },
+    {
+        "Pergunta": "O que é a inteligência emocional?",
+        "Opcoes": {
+            "A": "A habilidade de resolver problemas matemáticos complexos.",
+            "B": "A capacidade de entender e gerenciar as próprias emoções e as emoções dos outros.",
+            "C": "A capacidade de lembrar e recuperar informações de forma eficiente.",
+            "D": "A aptidão para realizar tarefas físicas com habilidade e destreza."
+        },
+        "Resposta": "B",
+        "Motivo": "A inteligência emocional refere-se à capacidade de entender, gerenciar e utilizar as próprias emoções de maneira eficaz, bem como reconhecer e responder às emoções dos outros."
+    },
+    {
+        "Pergunta": "O que é a teoria da aprendizagem social de Albert Bandura?",
+        "Opcoes": {
+            "A": "A teoria de que o comportamento é determinado principalmente por recompensas e punições.",
+            "B": "A ideia de que a personalidade é moldada pela interação entre o id, o ego e o superego.",
+            "C": "A abordagem que enfatiza a importância da observação e da imitação na aprendizagem.",
+            "D": "A teoria que sugere que as pessoas são motivadas por necessidades básicas, como alimentação e segurança."
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria da aprendizagem social de Bandura destaca a importância da observação e imitação de modelos na aprendizagem de comportamentos."
+    },
+    {
+        "Pergunta": "O que é o conceito de cognição na psicologia?",
+        "Opcoes": {
+            "A": "É a mesma coisa que emoção.",
+            "B": "São processos mentais relacionados à percepção, memória, raciocínio e resolução de problemas.",
+            "C": "É o mesmo que comportamento observável.",
+            "D": "São instintos inatos que guiam o comportamento humano."
+        },
+        "Resposta": "B",
+        "Motivo": "Cognição na psicologia refere-se aos processos mentais envolvidos na percepção, memória, raciocínio e resolução de problemas, distinguindo-se do comportamento observável e das emoções."{ "Pergunta": "O que é um transtorno de ansiedade?", "Opcoes": { "A": "Uma resposta normal ao estresse.", "B": "Um estado temporário de preocupação moderada.", "C": "Um padrão persistente e excessivo de preocupação e medo.", "D": "A ausência completa de ansiedade." }, "Resposta": "C", "Motivo": "Transtornos de ansiedade envolvem um padrão persistente e excessivo de preocupação e medo, muitas vezes interferindo nas atividades diárias." }, { "Pergunta": "O que é empatia?", "Opcoes": { "A": "A capacidade de prever o futuro.", "B": "A habilidade de entender e compartilhar os sentimentos de outra pessoa.", "C": "A tendência a evitar situações sociais.", "D": "A capacidade de controlar as emoções dos outros." }, "Resposta": "B", "Motivo": "Empatia é a habilidade de compreender e compartilhar os sentimentos de outra pessoa, mostrando compaixão e consideração." }, { "Pergunta": "O que é o conceito de reforço positivo na psicologia?", "Opcoes": { "A": "A remoção de algo desagradável para aumentar a probabilidade de um comportamento.", "B": "A apresentação de algo desagradável para aumentar a probabilidade de um comportamento.", "C": "A apresentação de algo agradável para aumentar a probabilidade de um comportamento.", "D": "A remoção de algo agradável para diminuir a probabilidade de um comportamento." }, "Resposta": "C", "Motivo": "Reforço positivo envolve a apresentação de algo agradável para aumentar a probabilidade de um comportamento ser repetido." }, { "Pergunta": "O que é a teoria da gestalt na psicologia?", "Opcoes": { "A": "A ideia de que o comportamento é determinado por instintos inatos.", "B": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.", "C": "A abordagem que se concentra na percepção e organização de experiências sensoriais.", "D": "A teoria que sugere que o comportamento é moldado principalmente por recompensas e punições." }, "Resposta": "C", "Motivo": "A teoria da gestalt destaca a importância da percepção e organização de experiências sensoriais para compreender o comportamento humano." }, { "Pergunta": "O que é o conceito de estresse na psicologia?", "Opcoes": { "A": "A ausência de desafios na vida.", "B": "Uma resposta adaptativa do corpo a situações ameaçadoras.", "C": "A falta de significado na vida.", "D": "Uma condição permanente de tensão extrema." }, "Resposta": "B", "Motivo": "Stresse na psicologia refere-se a uma resposta adaptativa do corpo a situações ameaçadoras ou desafios." }, { "Pergunta": "O que é a teoria do desenvolvimento cognitivo de Jean Piaget?", "Opcoes": { "A": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.", "B": "A abordagem que destaca a influência de experiências sociais na aprendizagem.", "C": "A ideia de que o desenvolvimento cognitivo ocorre em estágios sequenciais.", "D": "A teoria que sugere que o comportamento é determinado por instintos inatos." }, "Resposta": "C", "Motivo": "A teoria de Piaget postula que o desenvolvimento cognitivo ocorre em estágios sequenciais, cada um caracterizado por formas específicas de pensar." },
+        
+        {
+        "Pergunta": "Qual parte da mente, segundo a teoria psicanalítica de Freud, age como um mediador entre os impulsos do id e os padrões morais do superego?",
+        "Opcoes": {
+            "A": "Id",
+            "B": "Ego",
+            "C": "Superego",
+            "D": "Consciente"
+        },
+        "Resposta": "B",
+        "Motivo": "O ego, na teoria psicanalítica de Freud, age como um mediador entre os impulsos do id e os padrões morais do superego."
+    },
+    {
+        "Pergunta": "O que a técnica da associação livre, desenvolvida por Freud, visa explorar nos pacientes?",
+        "Opcoes": {
+            "A": "Sonhos recorrentes",
+            "B": "Pensamentos conscientes",
+            "C": "Material inconsciente",
+            "D": "Traumas recentes"
+        },
+        "Resposta": "C",
+        "Motivo": "A associação livre visa explorar o material inconsciente nos pacientes, permitindo que pensamentos e emoções inconscientes se manifestem livremente."
+    },
+    {
+        "Pergunta": "Qual princípio da teoria da Gestalt sugere que a mente organiza estímulos em padrões significativos e holísticos?",
+        "Opcoes": {
+            "A": "Proximidade",
+            "B": "Continuidade",
+            "C": "Fechamento",
+            "D": "Totalidade"
+        },
+        "Resposta": "D",
+        "Motivo": "O princípio da totalidade na teoria da Gestalt sugere que a mente organiza estímulos em padrões significativos e holísticos."
+    },
+    {
+        "Pergunta": "De acordo com a teoria da Gestalt, qual é o termo para descrever a percepção de elementos similares agrupados visualmente?",
+        "Opcoes": {
+            "A": "Proximidade",
+            "B": "Semelhança",
+            "C": "Continuidade",
+            "D": "Fechamento"
+        },
+        "Resposta": "B",
+        "Motivo": "Na teoria da Gestalt, o princípio de semelhança refere-se à percepção de elementos similares agrupados visualmente."
+    },
+    {
+        "Pergunta": "Em qual parte da mente, segundo Freud, estão armazenados pensamentos, desejos e memórias muitas vezes não reconhecidos?",
+        "Opcoes": {
+            "A": "Id",
+            "B": "Ego",
+            "C": "Superego",
+            "D": "Inconsciente"
+        },
+        "Resposta": "D",
+        "Motivo": "Freud postulou que pensamentos, desejos e memórias muitas vezes não reconhecidos são armazenados no inconsciente."
+    },
+    {
+        "Pergunta": "Qual termo Freud utilizou para descrever a parte da mente que contém pensamentos ou desejos inaceitáveis, mas que são transferidos para o inconsciente?",
+        "Opcoes": {
+            "A": "Racionalização",
+            "B": "Deslocamento",
+            "C": "Repressão",
+            "D": "Sublimação"
+        },
+        "Resposta": "C",
+        "Motivo": "Repressão é o termo utilizado por Freud para descrever o processo pelo qual pensamentos ou desejos inaceitáveis são transferidos para o inconsciente."
+    },
+    {
+        "Pergunta": "Na teoria da Gestalt, o que significa o princípio da continuidade?",
+        "Opcoes": {
+            "A": "Agrupar elementos semelhantes visualmente",
+            "B": "Perceber elementos próximos como parte de um padrão contínuo",
+            "C": "Organizar elementos em totalidades significativas",
+            "D": "Fechar formas visuais incompletas"
+        },
+        "Resposta": "B",
+        "Motivo": "O princípio da continuidade na teoria da Gestalt envolve perceber elementos próximos como parte de um padrão contínuo."
+    },
+    {
+        "Pergunta": "Qual é o termo utilizado por Freud para descrever a fase do desenvolvimento infantil caracterizada pelo foco na região genital?",
+        "Opcoes": {
+            "A": "Fase Oral",
+            "B": "Fase Anal",
+            "C": "Fase Fálica",
+            "D": "Fase Latente"
+        },
+        "Resposta": "C",
+        "Motivo": "A fase fálica é a fase do desenvolvimento infantil, segundo Freud, caracterizada pelo foco na região genital e questões relacionadas ao complexo de Édipo."
+    },
+    {
+        "Pergunta": "Na teoria da Gestalt, qual é o termo para descrever a percepção de formas ou padrões visuais completos, mesmo quando partes estão faltando?",
+        "Opcoes": {
+            "A": "Proximidade",
+            "B": "Semelhança",
+            "C": "Fechamento",
+            "D": "Totalidade"
+        },
+        "Resposta": "C",
+        "Motivo": "O princípio do fechamento na teoria da Gestalt refere-se à percepção de formas ou padrões visuais completos, mesmo quando partes estão faltando."
+    },
+    {
+        "Pergunta": "De acordo com Freud, qual parte da mente opera de acordo com o princípio do prazer, buscando gratificação imediata?",
+        "Opcoes": {
+            "A": "Id",
+            "B": "Ego",
+            "C": "Superego",
+            "D": "Consciente"
+        },
+        "Resposta": "A",
+        "Motivo": "O id, segundo Freud, é a parte da mente que opera de acordo com o princípio do prazer, buscando gratificação imediata de desejos e impulsos."
+    },
+      
+      ]
+    const perguntasSociologia = [
+      {
+        "Pergunta": "O que é a mobilidade social?",
+        "Opcoes": {
+            "A": "A capacidade de mover objetos facilmente.",
+            "B": "A mudança de posição social de um indivíduo ou grupo ao longo do tempo.",
+            "C": "A habilidade de se comunicar eficientemente em uma sociedade.",
+            "D": "A adaptação de um grupo social às mudanças ambientais."
+        },
+        "Resposta": "B",
+        "Motivo": "A mobilidade social refere-se à mudança de posição social de um indivíduo ou grupo ao longo do tempo, geralmente em termos de classe social."
+    },
+    {
+        "Pergunta": "Qual teoria sociológica enfatiza a importância dos símbolos e da interação simbólica na sociedade?",
+        "Opcoes": {
+            "A": "Funcionalismo",
+            "B": "Conflito",
+            "C": "Interação simbólica",
+            "D": "Estruturalismo"
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria da interação simbólica enfatiza a importância dos símbolos e da comunicação simbólica na construção da realidade social."
+    },
+    {
+        "Pergunta": "O que é a anomia, conforme proposto por Émile Durkheim?",
+        "Opcoes": {
+            "A": "A integração social através de rituais.",
+            "B": "A solidariedade baseada em semelhanças.",
+            "C": "A falta de normas sociais claras e compartilhadas.",
+            "D": "A mobilidade social ascendente."
+        },
+        "Resposta": "C",
+        "Motivo": "Anomia, segundo Durkheim, refere-se à falta de normas sociais claras e compartilhadas, levando a um estado de desintegração social."
+    },
+    {
+        "Pergunta": "Qual é o conceito de mais-valia, associado à teoria de Karl Marx?",
+        "Opcoes": {
+            "A": "Lucro obtido através de investimentos financeiros.",
+            "B": "O valor adicional criado pelo trabalho além do necessário para a subsistência.",
+            "C": "A igualdade de oportunidades na sociedade.",
+            "D": "A desigualdade social inevitável."
+        },
+        "Resposta": "B",
+        "Motivo": "A mais-valia, em termos marxistas, refere-se ao valor adicional criado pelo trabalho além do necessário para a subsistência, que é apropriado pelos proprietários dos meios de produção."
+    },
+    {
+        "Pergunta": "O que é a teoria da ação social proposta por Max Weber?",
+        "Opcoes": {
+            "A": "A ideia de que as ações humanas são determinadas apenas por fatores econômicos.",
+            "B": "O estudo das estruturas sociais e suas funções.",
+            "C": "A compreensão das ações humanas considerando significados e intenções.",
+            "D": "A crença na inevitabilidade do conflito social."
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria da ação social de Weber enfatiza a compreensão das ações humanas considerando os significados e intenções por trás delas."
+    },
+    {
+        "Pergunta": "O que é a teoria do conflito social, conforme proposta por Karl Marx?",
+        "Opcoes": {
+            "A": "A ideia de que os conflitos sociais são inevitáveis e necessários para a mudança social.",
+            "B": "A crença na harmonia e estabilidade social como base da coesão social.",
+            "C": "A ênfase na integração social por meio de normas compartilhadas.",
+            "D": "A igualdade natural entre todas as classes sociais."
+        },
+        "Resposta": "A",
+        "Motivo": "A teoria do conflito social de Marx sugere que os conflitos sociais são inevitáveis e necessários para a mudança social, especialmente no contexto da luta de classes."
+    },
+    {
+        "Pergunta": "O que é o conceito de cultura, na perspectiva sociológica?",
+        "Opcoes": {
+            "A": "Apenas as expressões artísticas de uma sociedade.",
+            "B": "Os hábitos alimentares de uma comunidade.",
+            "C": "O conjunto de valores, crenças, normas e práticas compartilhadas por membros de uma sociedade.",
+            "D": "Apenas a língua falada por um grupo social."
+        },
+        "Resposta": "C",
+        "Motivo": "Cultura, na perspectiva sociológica, abrange o conjunto de valores, crenças, normas e práticas compartilhadas por membros de uma sociedade."
+    },
+    {
+        "Pergunta": "O que é o conceito de "capital cultural" segundo Pierre Bourdieu?",
+        "Opcoes": {
+            "A": "Recursos financeiros acumulados ao longo do tempo.",
+            "B": "Conjunto de conhecimentos e habilidades adquiridos por meio da educação e experiências culturais.",
+            "C": "A força física e mental de um indivíduo.",
+            "D": "A influência política de uma pessoa na sociedade."
+        },
+        "Resposta": "B",
+        "Motivo": "O capital cultural, segundo Bourdieu, refere-se ao conjunto de conhecimentos e habilidades adquiridos por meio da educação e experiências culturais, contribuindo para a posição social."
+    },
+    {
+        "Pergunta": "Na teoria funcionalista de Émile Durkheim, o que é a solidariedade mecânica?",
+        "Opcoes": {
+            "A": "A coesão social baseada na interdependência e especialização.",
+            "B": "A coesão social baseada em semelhanças e valores compartilhados.",
+            "C": "A integração social por meio de regras e normas especializadas.",
+            "D": "A harmonia social alcançada pela igualdade de oportunidades."
+        },
+        "Resposta": "B",
+        "Motivo": "A solidariedade mecânica, na teoria funcionalista de Durkheim, refere-se à coesão social baseada em semelhanças e valores compartilhados, com pouca especialização."
+    },
+    {
+        "Pergunta": "O que é a socialização?",
+        "Opcoes": {
+            "A": "Apenas o processo de ensino formal em instituições educacionais.",
+            "B": "A influência da mídia na formação de opiniões.",
+            "C": "O processo pelo qual os indivíduos aprendem e internalizam normas, valores e comportamentos de uma sociedade.",
+            "D": "Apenas a interação entre pessoas em ambientes sociais."
+        },
+        "Resposta": "C",
+        "Motivo": "Socialização refere-se ao processo pelo qual os indivíduos aprendem e internalizam normas, valores e comportamentos de uma sociedade, ocorrendo ao longo da vida."
+    },
+    {
+        "Pergunta": "Qual teoria sociológica enfatiza a ideia de que as interações diárias e pequenos símbolos são essenciais para entender a sociedade?",
+        "Opcoes": {
+            "A": "Funcionalismo",
+            "B": "Teoria do Conflito",
+            "C": "Interacionismo Simbólico",
+            "D": "Estruturalismo"
+        },
+        "Resposta": "C",
+        "Motivo": "O Interacionismo Simbólico enfatiza as interações diárias e pequenos símbolos como essenciais para entender a sociedade."
+    },
+    {
+        "Pergunta": "O que é a teoria da estratificação social?",
+        "Opcoes": {
+            "A": "A análise das mudanças sociais ao longo do tempo.",
+            "B": "A investigação da formação de grupos sociais.",
+            "C": "O estudo das desigualdades entre diferentes grupos na sociedade.",
+            "D": "A igualdade total entre todas as classes sociais."
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria da estratificação social foca no estudo das desigualdades entre diferentes grupos na sociedade, incluindo questões de classe social."
+    },
+    {
+        "Pergunta": "O que é a teoria da socialização secundária?",
+        "Opcoes": {
+            "A": "O processo de aprendizagem de normas e valores na infância.",
+            "B": "A influência da mídia na formação de opiniões.",
+            "C": "A adaptação contínua às normas sociais ao longo da vida.",
+            "D": "A socialização ocorrida na vida adulta."
+        },
+        "Resposta": "D",
+        "Motivo": "A socialização secundária refere-se à socialização ocorrida na vida adulta, muitas vezes em novos contextos ou papéis sociais."
+    },
+    {
+        "Pergunta": "O que é a teoria do funcionalismo na sociologia?",
+        "Opcoes": {
+            "A": "A ênfase nas mudanças sociais e na evolução das sociedades.",
+            "B": "A análise das desigualdades sociais e dos conflitos de classe.",
+            "C": "O estudo da sociedade como um sistema interdependente.",
+            "D": "A ideia de que a sociedade deve permanecer estática para ser funcional."
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria do funcionalismo na sociologia vê a sociedade como um sistema interdependente, onde cada parte contribui para a estabilidade do todo."
+    },
+    {
+        "Pergunta": "O que é a cultura popular?",
+        "Opcoes": {
+            "A": "A cultura compartilhada por todas as classes sociais.",
+            "B": "Os elementos culturais preferidos por intelectuais.",
+            "C": "A cultura produzida e consumida pelas massas.",
+            "D": "A cultura restrita a grupos de elite."
+        },
+        "Resposta": "C",
+        "Motivo": "Cultura popular refere-se à cultura produzida e consumida pelas massas, refletindo gostos e valores predominantes na sociedade."
+    },
+    
+    ]
+    const perguntasArqueologia =[
+      {
+        "Pergunta": "O que é a estratigrafia na arqueologia?",
+        "Opcoes": {
+            "A": "O estudo das mudanças culturais ao longo do tempo.",
+            "B": "A escavação de locais arqueológicos.",
+            "C": "A análise da camada geológica em um sítio arqueológico.",
+            "D": "O estudo das ferramentas antigas."
+        },
+        "Resposta": "C",
+        "Motivo": "A estratigrafia na arqueologia envolve a análise das camadas geológicas em um sítio arqueológico para compreender a sequência temporal dos artefatos."
+    },
+    {
+        "Pergunta": "O que é a datação por carbono-14?",
+        "Opcoes": {
+            "A": "Um método para datar materiais orgânicos com base na desintegração radioativa do carbono-14.",
+            "B": "A análise da cerâmica em sítios arqueológicos.",
+            "C": "A contagem de anéis de crescimento em troncos de árvores antigas.",
+            "D": "A determinação da idade de fósseis."
+        },
+        "Resposta": "A",
+        "Motivo": "A datação por carbono-14 é um método para datar materiais orgânicos usando a desintegração radioativa do carbono-14 presente nesses materiais."
+    },
+    {
+        "Pergunta": "O que é um sítio arqueológico?",
+        "Opcoes": {
+            "A": "Um local onde são encontrados artefatos modernos.",
+            "B": "Uma área de escavação usada por arqueólogos.",
+            "C": "Um lugar onde eventos históricos significativos ocorreram.",
+            "D": "Uma localização onde evidências de atividades humanas passadas são preservadas."
+        },
+        "Resposta": "D",
+        "Motivo": "Um sítio arqueológico é uma localização onde evidências de atividades humanas passadas são preservadas e podem ser estudadas pelos arqueólogos."
+    },
+    {
+        "Pergunta": "O que é a cerâmica arqueológica frequentemente usada para datar?",
+        "Opcoes": {
+            "A": "Eventos geológicos.",
+            "B": "Mudanças climáticas.",
+            "C": "Estruturas arquitetônicas.",
+            "D": "Sequências temporais em sítios arqueológicos."
+        },
+        "Resposta": "D",
+        "Motivo": "A cerâmica arqueológica é frequentemente usada para datar sequências temporais em sítios arqueológicos, pois os estilos e técnicas de produção podem indicar diferentes períodos."
+    },
+    {
+        "Pergunta": "O que é um artefato na arqueologia?",
+        "Opcoes": {
+            "A": "Qualquer objeto feito pelo homem que é interpretado como culturalmente significativo.",
+            "B": "Um item de grande valor monetário.",
+            "C": "Um objeto natural que é considerado uma relíquia.",
+            "D": "Uma estrutura arquitetônica antiga."
+        },
+        "Resposta": "A",
+        "Motivo": "Na arqueologia, um artefato é qualquer objeto feito pelo homem que é interpretado como culturalmente significativo e pode fornecer insights sobre as sociedades passadas."
+    },
+    
+    {
+        "Pergunta": "O que é a dendrocronologia?",
+        "Opcoes": {
+            "A": "A datação por meio de análise de anéis de crescimento em troncos de árvores.",
+            "B": "A análise de inscrições em monumentos antigos.",
+            "C": "A pesquisa de antiguidades em locais específicos.",
+            "D": "A escavação de sítios arqueológicos costeiros."
+        },
+        "Resposta": "A",
+        "Motivo": "A dendrocronologia é o método de datação por meio da análise dos anéis de crescimento em troncos de árvores, proporcionando informações sobre o clima e a cronologia de eventos passados."
+    },
+    {
+        "Pergunta": "O que é a arqueologia experimental?",
+        "Opcoes": {
+            "A": "A investigação de práticas funerárias.",
+            "B": "A reconstrução de estruturas antigas.",
+            "C": "A análise de cerâmica.",
+            "D": "A reprodução de práticas antigas para compreender técnicas e processos."
+        },
+        "Resposta": "D",
+        "Motivo": "A arqueologia experimental envolve a reprodução de práticas antigas para compreender técnicas e processos, permitindo experimentação prática para insights arqueológicos."
+    },
+    {
+        "Pergunta": "O que são petróglifos?",
+        "Opcoes": {
+            "A": "Artefatos cerâmicos decorativos.",
+            "B": "Desenhos ou gravuras em rochas.",
+            "C": "Ferramentas líticas.",
+            "D": "Restos de construções antigas."
+        },
+        "Resposta": "B",
+        "Motivo": "Petróglifos são desenhos ou gravuras em rochas, muitas vezes criados por povos indígenas como forma de expressão artística ou comunicação."
+    },
+    {
+        "Pergunta": "O que é a arqueologia subaquática?",
+        "Opcoes": {
+            "A": "A análise de sítios arqueológicos nas montanhas.",
+            "B": "A escavação de locais arqueológicos subterrâneos.",
+            "C": "A pesquisa de antiguidades em regiões desérticas.",
+            "D": "O estudo de sítios arqueológicos submersos em corpos d'água."
+        },
+        "Resposta": "D",
+        "Motivo": "A arqueologia subaquática envolve o estudo de sítios arqueológicos submersos em corpos d'água, como oceanos, lagos e rios."
+    },
+    {
+        "Pergunta": "O que são sambaquis?",
+        "Opcoes": {
+            "A": "Montanhas artificiais feitas de terra.",
+            "B": "Construções arquitetônicas antigas.",
+            "C": "Sítios arqueológicos subaquáticos.",
+            "D": "Montículos de conchas e restos alimentares."
+        },
+        "Resposta": "D",
+        "Motivo": "Sambaquis são montículos de conchas e restos alimentares, muitas vezes utilizados por povos pré-históricos, encontrados em regiões costeiras."
+    },
+     {
+        "Pergunta": "O que são petroformas?",
+        "Opcoes": {
+            "A": "Ferramentas líticas antigas.",
+            "B": "Construções de pedra em locais arqueológicos.",
+            "C": "Desenhos ou padrões feitos com pedras no solo.",
+            "D": "Instrumentos musicais antigos."
+        },
+        "Resposta": "C",
+        "Motivo": "Petroformas são desenhos ou padrões feitos com pedras no solo, muitas vezes associados a práticas rituais ou culturais de povos indígenas."
+    },
+    {
+        "Pergunta": "O que é a arqueologia cognitiva?",
+        "Opcoes": {
+            "A": "A escavação de estruturas religiosas antigas.",
+            "B": "Uma abordagem que estuda como as sociedades passadas pensavam e processavam informações.",
+            "C": "A análise de registros escritos antigos.",
+            "D": "A pesquisa de restos humanos mumificados."
+        },
+        "Resposta": "B",
+        "Motivo": "A arqueologia cognitiva é uma abordagem que estuda como as sociedades passadas pensavam, processavam informações e expressavam suas ideias."
+    },
+    {
+        "Pergunta": "O que são mamoas?",
+        "Opcoes": {
+            "A": "Montanhas artificiais feitas de terra.",
+            "B": "Estruturas cerimoniais antigas.",
+            "C": "Sítios arqueológicos subaquáticos.",
+            "D": "Montículos funerários construídos com pedras e terra."
+        },
+        "Resposta": "D",
+        "Motivo": "Mamoas são montículos funerários construídos com pedras e terra, comumente encontrados em contextos funerários pré-históricos."
+    },
+    {
+        "Pergunta": "O que é um kiva?",
+        "Opcoes": {
+            "A": "Uma escavação arqueológica profunda.",
+            "B": "Uma câmara funerária.",
+            "C": "Uma estrutura cerimonial subterrânea utilizada por povos indígenas americanos.",
+            "D": "Uma escultura pré-histórica."
+        },
+        "Resposta": "C",
+        "Motivo": "Um kiva é uma estrutura cerimonial subterrânea utilizada por povos indígenas americanos para rituais e encontros comunitários."
+    },
+    {
+        "Pergunta": "O que é o método de escavação em testemunha na arqueologia?",
+        "Opcoes": {
+            "A": "A escavação de sítios arqueológicos subaquáticos.",
+            "B": "A análise de artefatos em laboratório.",
+            "C": "A escavação em pequenas áreas para investigar estruturas específicas.",
+            "D": "A reprodução de práticas antigas para compreender técnicas e processos."
+        },
+        "Resposta": "C",
+        "Motivo": "O método de escavação em testemunha na arqueologia envolve a escavação em pequenas áreas para investigar estruturas específicas sem impactar todo o sítio."
+    },  {
+        "Pergunta": "O que é o método de escavação em área aberta na arqueologia?",
+        "Opcoes": {
+            "A": "A escavação de locais arqueológicos subterrâneos.",
+            "B": "A análise de registros escritos antigos.",
+            "C": "A escavação em grandes áreas para revelar padrões de assentamento.",
+            "D": "A investigação de práticas funerárias."
+        },
+        "Resposta": "C",
+        "Motivo": "O método de escavação em área aberta na arqueologia envolve a escavação em grandes áreas para revelar padrões de assentamento e relacionamentos entre diferentes estruturas."
+    },
+    {
+        "Pergunta": "O que é a arqueologia de contrato?",
+        "Opcoes": {
+            "A": "A escavação de sítios arqueológicos por interesse acadêmico.",
+            "B": "A análise de artefatos em museus.",
+            "C": "A prática de conduzir pesquisas arqueológicas como parte de projetos de construção.",
+            "D": "A pesquisa de antiguidades em regiões montanhosas."
+        },
+        "Resposta": "C",
+        "Motivo": "A arqueologia de contrato refere-se à prática de conduzir pesquisas arqueológicas como parte de projetos de construção, muitas vezes para cumprir regulamentações de preservação cultural."
+    },
+    {
+        "Pergunta": "O que é uma estela na arqueologia?",
+        "Opcoes": {
+            "A": "Uma antiga ferramenta agrícola.",
+            "B": "Uma pedra vertical inscrita ou esculpida.",
+            "C": "Um tipo de cerâmica antiga.",
+            "D": "Uma estrutura arquitetônica subterrânea."
+        },
+        "Resposta": "B",
+        "Motivo": "Uma estela na arqueologia é uma pedra vertical inscrita ou esculpida, muitas vezes usada para marcar eventos importantes ou homenagear pessoas."
+    },
+    {
+        "Pergunta": "O que é a arqueologia pós-processual?",
+        "Opcoes": {
+            "A": "Uma técnica de escavação.",
+            "B": "Uma abordagem crítica que se concentra na interpretação subjetiva e nas relações de poder.",
+            "C": "A pesquisa de fósseis em sítios arqueológicos.",
+            "D": "A reconstrução de estruturas antigas em parques temáticos."
+        },
+        "Resposta": "B",
+        "Motivo": "A arqueologia pós-processual é uma abordagem crítica que se concentra na interpretação subjetiva e nas relações de poder nas sociedades passadas."
+    },
+    {
+        "Pergunta": "O que é um ecofato na arqueologia?",
+        "Opcoes": {
+            "A": "Um tipo de cerâmica antiga.",
+            "B": "Um objeto de culto religioso.",
+            "C": "Um elemento ambiental não modificado usado como evidência arqueológica.",
+            "D": "Uma estrutura arquitetônica antiga."
+        },
+        "Resposta": "C",
+        "Motivo": "Um ecofato na arqueologia refere-se a um elemento ambiental não modificado usado como evidência arqueológica, como restos de plantas ou animais."
+    },  {
+        "Pergunta": "O que é a tecnologia LiDAR e como ela é usada na arqueologia?",
+        "Opcoes": {
+            "A": "Uma técnica de escavação.",
+            "B": "Um método de datação de artefatos.",
+            "C": "Um sistema de imagem por satélite.",
+            "D": "Uma tecnologia de mapeamento aéreo que usa laser para revelar características do solo."
+        },
+        "Resposta": "D",
+        "Motivo": "A tecnologia LiDAR é um método de mapeamento aéreo que utiliza laser para escanear o solo, revelando características e estruturas que podem não ser visíveis na superfície."
+    },
+    {
+        "Pergunta": "O que é arqueobotânica?",
+        "Opcoes": {
+            "A": "O estudo de ossos de animais em sítios arqueológicos.",
+            "B": "A análise de sementes e plantas antigas em contextos arqueológicos.",
+            "C": "A pesquisa de restos humanos mumificados.",
+            "D": "A escavação de fósseis vegetais em cavernas."
+        },
+        "Resposta": "B",
+        "Motivo": "Arqueobotânica é o estudo de sementes, plantas e restos vegetais antigos encontrados em sítios arqueológicos, fornecendo informações sobre a dieta e o ambiente."
+    },
+    {
+        "Pergunta": "O que é uma cista na arqueologia?",
+        "Opcoes": {
+            "A": "Uma ferramenta de escavação.",
+            "B": "Uma câmara funerária de pedra ou madeira.",
+            "C": "Um tipo de cerâmica antiga.",
+            "D": "Um sistema de transporte de água em antigas civilizações."
+        },
+        "Resposta": "B",
+        "Motivo": "Uma cista na arqueologia refere-se a uma câmara funerária, muitas vezes construída com pedra ou madeira, usada para enterrar os mortos."
+    },
+    {
+        "Pergunta": "O que são geofísicas aplicadas à arqueologia?",
+        "Opcoes": {
+            "A": "A interpretação de inscrições antigas.",
+            "B": "A análise de fósseis em sítios arqueológicos.",
+            "C": "Métodos de prospecção não invasivos, como radar de penetração no solo, para mapear características arqueológicas.",
+            "D": "A análise de registros escritos antigos."
+        },
+        "Resposta": "C",
+        "Motivo": "Geofísica aplicada à arqueologia envolve métodos de prospecção não invasivos, como radar de penetração no solo, para mapear características arqueológicas sem escavação direta."
+    },
+    {
+        "Pergunta": "O que são artefatos culturais?",
+        "Opcoes": {
+            "A": "Objetos feitos pelo homem que têm significado cultural.",
+            "B": "Objetos raros de alto valor monetário.",
+            "C": "Instrumentos musicais antigos.",
+            "D": "Estruturas arquitetônicas antigas."
+        },
+        "Resposta": "A",
+        "Motivo": "Artefatos culturais são objetos feitos pelo homem que têm significado cultural, frequentemente utilizados para compreender as práticas e crenças de sociedades passadas."
+    },{
+        "Pergunta": "O que é a dendrocronologia?",
+        "Opcoes": {
+            "A": "A datação por meio de análise de anéis de crescimento em troncos de árvores.",
+            "B": "A análise de inscrições em monumentos antigos.",
+            "C": "A pesquisa de antiguidades em locais específicos.",
+            "D": "A escavação de sítios arqueológicos costeiros."
+        },
+        "Resposta": "A",
+        "Motivo": "A dendrocronologia é o método de datação por meio da análise dos anéis de crescimento em troncos de árvores, proporcionando informações sobre o clima e a cronologia de eventos passados."
+    },
+    {
+        "Pergunta": "O que é a arqueologia experimental?",
+        "Opcoes": {
+            "A": "A investigação de práticas funerárias.",
+            "B": "A reconstrução de estruturas antigas.",
+            "C": "A análise de cerâmica.",
+            "D": "A reprodução de práticas antigas para compreender técnicas e processos."
+        },
+        "Resposta": "D",
+        "Motivo": "A arqueologia experimental envolve a reprodução de práticas antigas para compreender técnicas e processos, permitindo experimentação prática para insights arqueológicos."
+    },
+    {
+        "Pergunta": "O que são petróglifos?",
+        "Opcoes": {
+            "A": "Artefatos cerâmicos decorativos.",
+            "B": "Desenhos ou gravuras em rochas.",
+            "C": "Ferramentas líticas.",
+            "D": "Restos de construções antigas."
+        },
+        "Resposta": "B",
+        "Motivo": "Petróglifos são desenhos ou gravuras em rochas, muitas vezes criados por povos indígenas como forma de expressão artística ou comunicação."
+    },
+    {
+        "Pergunta": "O que é a arqueologia subaquática?",
+        "Opcoes": {
+            "A": "A análise de sítios arqueológicos nas montanhas.",
+            "B": "A escavação de locais arqueológicos subterrâneos.",
+            "C": "A pesquisa de antiguidades em regiões desérticas.",
+            "D": "O estudo de sítios arqueológicos submersos em corpos d'água."
+        },
+        "Resposta": "D",
+        "Motivo": "A arqueologia subaquática envolve o estudo de sítios arqueológicos submersos em corpos d'água, como oceanos, lagos e rios."
+    },
+    {
+        "Pergunta": "O que são sambaquis?",
+        "Opcoes": {
+            "A": "Montanhas artificiais feitas de terra.",
+            "B": "Construções arquitetônicas antigas.",
+            "C": "Sítios arqueológicos subaquáticos.",
+            "D": "Montículos de conchas e restos alimentares."
+        },
+        "Resposta": "D",
+        "Motivo": "Sambaquis são montículos de conchas e restos alimentares, muitas vezes utilizados por povos pré-históricos, encontrados em regiões costeiras."
+    },
+    {
+        "Pergunta": "O que são geoglifos de Nasca?",
+        "Opcoes": {
+            "A": "Desenhos ou padrões feitos com pedras no solo.",
+            "B": "Construções de pedra usadas como túmulos.",
+            "C": "Ferramentas líticas usadas por povos antigos.",
+            "D": "Esculturas de argila em sítios arqueológicos."
+        },
+        "Resposta": "A",
+        "Motivo": "Os geoglifos de Nasca são desenhos ou padrões feitos com pedras no solo do deserto de Nasca, no Peru, notáveis por sua escala e complexidade."
+    },
+    {
+        "Pergunta": "O que é o método de datação por termoluminescência?",
+        "Opcoes": {
+            "A": "A análise de registros escritos antigos.",
+            "B": "Uma técnica de escavação profunda.",
+            "C": "Um método de datação que utiliza a emissão de luz por minerais aquecidos.",
+            "D": "A escavação de sítios arqueológicos subterrâneos."
+        },
+        "Resposta": "C",
+        "Motivo": "A termoluminescência é um método de datação que utiliza a emissão de luz por minerais aquecidos, permitindo a determinação da última vez que o material foi aquecido ou exposto à luz."
+    },
+    {
+        "Pergunta": "O que é a arqueologia do período clássico?",
+        "Opcoes": {
+            "A": "A escavação de estruturas religiosas antigas.",
+            "B": "O estudo de sítios arqueológicos com menos de 100 anos.",
+            "C": "A pesquisa de fósseis em sítios arqueológicos.",
+            "D": "A reconstrução de eventos históricos usando evidências arqueológicas."
+        },
+        "Resposta": "D",
+        "Motivo": "A arqueologia do período clássico concentra-se na reconstrução de eventos históricos durante períodos clássicos de civilizações antigas, como Grécia e Roma."
+    },
+    {
+        "Pergunta": "O que são os petróglifos do Vale do Côa?",
+        "Opcoes": {
+            "A": "Desenhos ou padrões feitos com pedras no solo.",
+            "B": "Gravuras rupestres em Portugal.",
+            "C": "Estruturas cerimoniais subterrâneas.",
+            "D": "Monumentos megalíticos na França."
+        },
+        "Resposta": "B",
+        "Motivo": "Os petróglifos do Vale do Côa são gravuras rupestres encontradas em Portugal, representando animais, figuras humanas e outros símbolos."
+    },
+    {
+        "Pergunta": "O que é uma oferenda funerária na arqueologia?",
+        "Opcoes": {
+            "A": "Um tipo de cerâmica antiga.",
+            "B": "Um objeto de culto religioso.",
+            "C": "Um depósito de bens colocados no túmulo de um falecido.",
+            "D": "Uma estrutura arquitetônica pré-histórica."
+        },
+        "Resposta": "C",
+        "Motivo": "Uma oferenda funerária na arqueologia refere-se a um depósito de bens, muitas vezes rituais, colocados no túmulo de um falecido como parte dos rituais funerários."
+    },
+    
+      ];
+    const perguntasCriminologia = [
+      
+      {
+        "Pergunta": "Qual serial killer era conhecido como 'O Estrangulador de Boston'?",
+        "Opcoes": {
+            "A": "Ed Gein",
+            "B": "Albert DeSalvo",
+            "C": "Jeffrey Dahmer",
+            "D": "Aileen Wuornos"
+        },
+        "Resposta": "B",
+        "Motivo": "O 'Estrangulador de Boston' foi identificado como Albert DeSalvo, que confessou ser o responsável por uma série de assassinatos de mulheres na década de 1960."
+    },
+    {
+        "Pergunta": "Quem era conhecido como o 'Assassino do Cinto de Couro'?",
+        "Opcoes": {
+            "A": "Ted Bundy",
+            "B": "David Berkowitz",
+            "C": "Dennis Rader",
+            "D": "Amaro Batista"
+        },
+        "Resposta": "C",
+        "Motivo": "O 'Assassino do Cinto de Couro' foi identificado como Dennis Rader, também conhecido como BTK (Bind, Torture, Kill), responsável por uma série de assassinatos em Kansas entre 1970 e 2004."
+    },
+    {
+        "Pergunta": "Quem era conhecido como o 'Canibal de Milwaukee'?",
+        "Opcoes": {
+            "A": "John Wayne Gacy",
+            "B": "Ed Gein",
+            "C": "Jeffrey Dahmer",
+            "D": "Richard Ramirez"
+        },
+        "Resposta": "C",
+        "Motivo": "O 'Canibal de Milwaukee' era Jeffrey Dahmer, um serial killer que cometeu assassinatos e mutilações em Milwaukee, Wisconsin, entre 1978 e 1991."
+    },
+    {
+        "Pergunta": "Qual era o modus operandi de Ted Bundy?",
+        "Opcoes": {
+            "A": "Estrangulamento",
+            "B": "Envenenamento",
+            "C": "Atropelamento",
+            "D": "Esfaqueamento"
+        },
+        "Resposta": "A",
+        "Motivo": "Ted Bundy era conhecido por estrangular suas vítimas. Ele era um assassino em série ativo nas décadas de 1970 e 1980, envolvido em uma série de crimes nos Estados Unidos."
+    },
+    {
+        "Pergunta": "O que caracterizou os crimes de John Wayne Gacy?",
+        "Opcoes": {
+            "A": "Assassinato de prostitutas",
+            "B": "Assassinato de crianças",
+            "C": "Assassinato de idosos",
+            "D": "Assassinato de políticos"
+        },
+        "Resposta": "B",
+        "Motivo": "John Wayne Gacy, conhecido como o 'Palhaço Assassino', cometeu seus crimes principalmente contra jovens do sexo masculino, muitos dos quais eram adolescentes."
+    },
+    {
+        "Pergunta": "Quem foi conhecido como o 'Assassino do Sonâmbulo'?",
+        "Opcoes": {
+            "A": "Ricardo Ramirez",
+            "B": "David Berkowitz",
+            "C": "Jack the Ripper",
+            "D": "Richard Chase"
+        },
+        "Resposta": "D",
+        "Motivo": "O 'Assassino do Sonâmbulo' foi Richard Chase, que cometeu uma série de assassinatos em Sacramento, Califórnia, durante os anos 1970, envolvendo canibalismo e mutilação."
+    },
+    {
+        "Pergunta": "Quem foi conhecido como o 'Assassino do Vale da Morte'?",
+        "Opcoes": {
+            "A": "Ted Bundy",
+            "B": "Zodiac Killer",
+            "C": "Richard Ramirez",
+            "D": "David Berkowitz"
+        },
+        "Resposta": "C",
+        "Motivo": "Richard Ramirez, conhecido como o 'Assassino do Vale da Morte', cometeu uma série de assassinatos e estupros na Califórnia durante a década de 1980."
+    },
+    {
+        "Pergunta": "Quem foi conhecido como o 'Estripador de Yorkshire'?",
+        "Opcoes": {
+            "A": "Ted Bundy",
+            "B": "David Berkowitz",
+            "C": "Peter Sutcliffe",
+            "D": "Aileen Wuornos"
+        },
+        "Resposta": "C",
+        "Motivo": "Peter Sutcliffe, conhecido como o 'Estripador de Yorkshire', foi um serial killer britânico que cometeu uma série de assassinatos na década de 1970."
+    },
+    {
+        "Pergunta": "Quem foi o 'Estrangulador de Hillside'?",
+        "Opcoes": {
+            "A": "Richard Ramirez",
+            "B": "John Wayne Gacy",
+            "C": "Albert DeSalvo",
+            "D": "Kenneth Bianchi e Angelo Buono"
+        },
+        "Resposta": "D",
+        "Motivo": "Kenneth Bianchi e Angelo Buono, conhecidos como o 'Estrangulador de Hillside', foram responsáveis por uma série de assassinatos em Los Angeles na década de 1970."
+    },
+    {
+        "Pergunta": "Quem foi conhecido como o 'Vampiro de Düsseldorf'?",
+        "Opcoes": {
+            "A": "Peter Kürten",
+            "B": "Ed Gein",
+            "C": "Richard Ramirez",
+            "D": "Ted Bundy"
+        },
+        "Resposta": "A",
+        "Motivo": "Peter Kürten, conhecido como o 'Vampiro de Düsseldorf', foi um serial killer alemão que cometeu uma série de assassinatos e crimes sexuais na década de 1920."
+    },
+    {
+        "Pergunta": "O que é o perfil criminal e como a psicologia contribui para sua elaboração?",
+        "Opcoes": {
+            "A": "Análise de textos literários",
+            "B": "Estudo do comportamento criminoso",
+            "C": "Estudo de movimentos artísticos",
+            "D": "Análise de dados financeiros"
+        },
+        "Resposta": "B",
+        "Motivo": "O perfil criminal envolve a análise do comportamento criminoso para criar um perfil psicológico do suspeito, contribuindo para investigações criminais."
+    },
+    {
+        "Pergunta": "Explique o conceito de modus operandi e como ele é relevante na análise psicológica de crimes.",
+        "Opcoes": {
+            "A": "Estudo de línguas estrangeiras",
+            "B": "Método de operação de criminosos",
+            "C": "Análise de fenômenos meteorológicos",
+            "D": "Estudo de processos químicos"
+        },
+        "Resposta": "B",
+        "Motivo": "O modus operandi refere-se ao método de operação específico usado por um criminoso, sendo crucial na análise psicológica para identificar padrões e características individuais."
+    },
+    {
+        "Pergunta": "Como a psicologia forense difere da psicologia clínica tradicional?",
+        "Opcoes": {
+            "A": "Análise de obras de arte",
+            "B": "Análise de evidências criminais",
+            "C": "Estudo de manifestações culturais",
+            "D": "Interpretação de peças musicais"
+        },
+        "Resposta": "B",
+        "Motivo": "A psicologia forense concentra-se na aplicação de princípios psicológicos para entender comportamentos criminosos e contribuir para investigações, enquanto a psicologia clínica trata de questões de saúde mental em um contexto mais amplo."
+    },
+    {
+        "Pergunta": "Quais são as principais técnicas psicológicas utilizadas em interrogatórios e como elas podem afetar a obtenção de confissões?",
+        "Opcoes": {
+            "A": "Análise de movimentos sociais",
+            "B": "Técnicas de sugestão",
+            "C": "Estudo de fenômenos geológicos",
+            "D": "Interpretação de documentos históricos"
+        },
+        "Resposta": "B",
+        "Motivo": "Técnicas psicológicas em interrogatórios incluem sugestão, empatia e manipulação emocional, afetando a obtenção de confissões por meio da influência sobre o comportamento do suspeito."
+    },
+    {
+        "Pergunta": "Explique a importância da psicologia na análise de testemunhas oculares em investigações criminais.",
+        "Opcoes": {
+            "A": "Estudo de civilizações antigas",
+            "B": "Uso de técnicas de observação",
+            "C": "Análise de fenômenos astronômicos",
+            "D": "Estudo de plantas medicinais"
+        },
+        "Resposta": "B",
+        "Motivo": "A psicologia é crucial na análise de testemunhas oculares, ajudando a compreender como fatores psicológicos, como estresse e memória, podem impactar a precisão dos relatos em investigações criminais."
+    },
+    {
+        "Pergunta": "Como a avaliação psicológica de criminosos sexuais contribui para o processo legal?",
+        "Opcoes": {
+            "A": "Análise de animais marinhos",
+            "B": "Uso de técnicas de DNA",
+            "C": "Estudo de fenômenos meteorológicos",
+            "D": "Análise de dinossauros extintos"
+        },
+        "Resposta": "B",
+        "Motivo": "A avaliação psicológica de criminosos sexuais, juntamente com outras evidências, pode fornecer insights sobre padrões comportamentais, ajudando no processo legal e na tomada de decisões sobre sentenças e tratamentos."
+    },
+    {
+        "Pergunta": "Qual é o papel da psicologia na análise de perfis de vítimas em casos criminais?",
+        "Opcoes": {
+            "A": "Análise de obras de arte",
+            "B": "Entendimento de vulnerabilidades",
+            "C": "Estudo de manifestações culturais",
+            "D": "Interpretação de peças musicais"
+        },
+        "Resposta": "B",
+        "Motivo": "A psicologia desempenha um papel importante na análise de perfis de vítimas, ajudando a compreender as vulnerabilidades e características individuais que podem influenciar a escolha de alvos por parte de criminosos."
+    },
+    {
+        "Pergunta": "Como as teorias psicológicas explicam o comportamento de serial killers e assassinos em série?",
+        "Opcoes": {
+            "A": "Análise de movimentos sociais",
+            "B": "Estudo de padrões comportamentais",
+            "C": "Estudo de fenômenos geológicos",
+            "D": "Interpretação de documentos históricos"
+        },
+        "Resposta": "B",
+        "Motivo": "Teorias psicológicas buscam explicar o comportamento de serial killers através do estudo de padrões comportamentais, fatores de risco e possíveis motivações, contribuindo para a identificação e compreensão desses criminosos."
+    },
+    {
+        "Pergunta": "Na necropsia, qual é o objetivo principal da análise toxicológica?",
+        "Opcoes": {
+            "A": "Identificar a presença de drogas no corpo",
+            "B": "Determinar o tipo sanguíneo da vítima",
+            "C": "Avaliar a composição genética do indivíduo",
+            "D": "Analisar o conteúdo estomacal da vítima"
+        },
+        "Resposta": "A",
+        "Motivo": "A análise toxicológica na necropsia visa identificar a presença de substâncias tóxicas, como drogas, no corpo da vítima."
+    },
+    {
+        "Pergunta": "Qual técnica é utilizada para análise de resíduos de disparos em uma cena de crime?",
+        "Opcoes": {
+            "A": "Espectroscopia de Massas",
+            "B": "Cromatografia Líquida",
+            "C": "Espectroscopia de Ressonância Magnética",
+            "D": "Espectrometria de Absorção Atômica"
+        },
+        "Resposta": "A",
+        "Motivo": "A análise de resíduos de disparos é comumente realizada por Espectroscopia de Massas, identificando padrões de projéteis e resíduos."
+    },
+    {
+        "Pergunta": "Em que consiste a técnica de papiloscopia?",
+        "Opcoes": {
+            "A": "Identificação por íris",
+            "B": "Análise de padrões de veias",
+            "C": "Comparação de impressões digitais",
+            "D": "Avaliação de microexpressões faciais"
+        },
+        "Resposta": "C",
+        "Motivo": "A papiloscopia consiste na análise e comparação de impressões digitais, sendo uma técnica crucial para a identificação individual."
+    },
+    
+      {
+        "Pergunta": "Quem foi o serial killer conhecido como 'Estrangulador de Boston'?",
+        "Opcoes": {
+            "A": "Albert Fish",
+            "B": "Richard Angelo",
+            "C": "BTK (Dennis Rader)",
+            "D": "Albert DeSalvo"
+        },
+        "Resposta": "D",
+        "Motivo": "Albert DeSalvo, também conhecido como o Estrangulador de Boston, confessou ser o responsável por uma série de assassinatos na região de Boston na década de 1960."
+    },
+    {
+        "Pergunta": "Qual serial killer foi retratado no filme 'O Silêncio dos Inocentes'?",
+        "Opcoes": {
+            "A": "John Wayne Gacy",
+            "B": "Ted Bundy",
+            "C": "Ed Gein",
+            "D": "Hannibal Lecter"
+        },
+        "Resposta": "D",
+        "Motivo": "Hannibal Lecter, embora fictício, é um personagem conhecido por ser um canibalisticamente inteligente e astuto serial killer, retratado no filme 'O Silêncio dos Inocentes'."
+    },
+    
+    {
+        "Pergunta": "Quais são os passos iniciais ao chegar em uma cena de crime para garantir a preservação das evidências?",
+        "Opcoes": {
+            "A": "Coletar imediatamente todas as evidências visíveis",
+            "B": "Entrevistar testemunhas antes de qualquer intervenção",
+            "C": "Isolar a área e garantir a segurança, evitando contaminação das evidências",
+            "D": "Iniciar a análise forense imediatamente"
+        },
+        "Resposta": "C",
+        "Motivo": "Os passos iniciais ao chegar em uma cena de crime incluem isolar a área para garantir a segurança e evitar a contaminação das evidências antes de qualquer intervenção."
+    },
+    {
+        "Pergunta": "O que é o princípio de Locard na perícia criminal?",
+        "Opcoes": {
+            "A": "Todo criminoso deixa vestígios na cena do crime, e todo crime é uma troca",
+            "B": "A importância da observação direta na coleta de evidências",
+            "C": "A confiança na intuição do perito",
+            "D": "A preservação de evidências apenas em crimes de grande magnitude"
+        },
+        "Resposta": "A",
+        "Motivo": "O princípio de Locard afirma que todo criminoso deixa vestígios na cena do crime, e toda interação é uma troca, sendo crucial para a coleta de evidências."
+    },
+    {
+        "Pergunta": "Qual é a finalidade da fotografia forense em uma cena de crime?",
+        "Opcoes": {
+            "A": "Registrar detalhes da cena para análise posterior",
+            "B": "Substituir a coleta física de evidências",
+            "C": "Criar reconstruções 3D imediatas",
+            "D": "Identificar criminosos pela imagem"
+        },
+        "Resposta": "A",
+        "Motivo": "A fotografia forense tem como finalidade registrar detalhes da cena para análise posterior, auxiliando na reconstrução e preservação da informação."
+    },
+    {
+        "Pergunta": "Quais são os métodos comuns de coleta de evidências biológicas em uma cena de crime?",
+        "Opcoes": {
+            "A": "Uso exclusivo de fotografia",
+            "B": "Swabs e coleta de amostras de sangue",
+            "C": "Interrogação de suspeitos",
+            "D": "Depoimentos de testemunhas"
+        },
+        "Resposta": "B",
+        "Motivo": "Os métodos comuns de coleta de evidências biológicas incluem o uso de swabs e a coleta de amostras de sangue para análises laboratoriais."
+    },
+     {
+        "Pergunta": "Quais são os cuidados necessários ao manipular uma arma de fogo encontrada em uma cena de crime?",
+        "Opcoes": {
+            "A": "Desmontar imediatamente para análise detalhada",
+            "B": "Manusear com luvas, preservando as impressões digitais",
+            "C": "Testar sua funcionalidade no local",
+            "D": "Limpar para remover resíduos e preservar a evidência"
+        },
+        "Resposta": "B",
+        "Motivo": "Ao manipular uma arma de fogo encontrada em uma cena de crime, é crucial manuseá-la com luvas para preservar as impressões digitais e evitar contaminação."
+    },
+    {
+        "Pergunta": "O que é a análise de padrões de sangue em uma cena de crime?",
+        "Opcoes": {
+            "A": "Identificação de grupos sanguíneos",
+            "B": "Avaliação da quantidade de sangue derramado",
+            "C": "Estudo da forma como o sangue foi depositado",
+            "D": "Análise da composição química do sangue"
+        },
+        "Resposta": "C",
+        "Motivo": "A análise de padrões de sangue em uma cena de crime envolve o estudo da forma como o sangue foi depositado, fornecendo informações sobre os eventos que ocorreram."
+    },
+    {
+        "Pergunta": "Qual é a importância da análise de fibras em perícia criminal?",
+        "Opcoes": {
+            "A": "Identificar marcas de veículos",
+            "B": "Estabelecer a cronologia dos eventos",
+            "C": "Determinar a presença de substâncias tóxicas",
+            "D": "Associar suspeitos à cena do crime"
+        },
+        "Resposta": "D",
+        "Motivo": "A análise de fibras é importante na perícia criminal para associar suspeitos à cena do crime, identificando se há correspondência entre as fibras encontradas no local e as associadas a um indivíduo."
+    },
+    {
+        "Pergunta": "O que é o registro balístico nacional e como ele contribui para investigações?",
+        "Opcoes": {
+            "A": "Cadastro de armas de fogo",
+            "B": "Banco de dados de projéteis",
+            "C": "Identificação de veículos",
+            "D": "Registro de substâncias químicas"
+        },
+        "Resposta": "B",
+        "Motivo": "O registro balístico nacional é um banco de dados de projéteis e cartuchos, permitindo a identificação de armas de fogo utilizadas em crimes e contribuindo para investigações."
+    },
+    
+      {
+        "Pergunta": "Qual é a importância da cadeia de custódia na perícia forense?",
+        "Opcoes": {
+            "A": "Identificar a vítima",
+            "B": "Preservar as evidências e garantir sua integridade",
+            "C": "Realizar testes de DNA",
+            "D": "Reconstituir a cena do crime"
+        },
+        "Resposta": "B",
+        "Motivo": "A cadeia de custódia é crucial na perícia forense para preservar as evidências e garantir sua integridade ao longo do processo investigativo."
+    },
+    {
+        "Pergunta": "O que é a análise de entomologia forense e como ela contribui para a investigação?",
+        "Opcoes": {
+            "A": "Análise de padrões de veias",
+            "B": "Estudo de insetos para estimar o tempo desde a morte",
+            "C": "Análise de resíduos de disparos",
+            "D": "Identificação de drogas na cena do crime"
+        },
+        "Resposta": "B",
+        "Motivo": "A análise de entomologia forense envolve o estudo de insetos para estimar o tempo desde a morte, contribuindo para a determinação do intervalo pós-morte."
+    },
+    {
+        "Pergunta": "Como a perícia utiliza a espectroscopia de massas em investigações criminais?",
+        "Opcoes": {
+            "A": "Análise de padrões de veias",
+            "B": "Identificação de drogas",
+            "C": "Estudo de fenômenos geológicos",
+            "D": "Análise de resíduos de disparos"
+        },
+        "Resposta": "B",
+        "Motivo": "A espectroscopia de massas é utilizada na perícia para identificar substâncias, incluindo drogas, contribuindo para análises químicas em investigações criminais."
+    },
+    {
+        "Pergunta": "Qual é o papel da balística na perícia criminal?",
+        "Opcoes": {
+            "A": "Identificação de padrões de veias",
+            "B": "Determinação do tempo desde a morte",
+            "C": "Estudo de resíduos de disparos",
+            "D": "Análise de fibras"
+        },
+        "Resposta": "C",
+        "Motivo": "A balística na perícia criminal envolve o estudo de resíduos de disparos para identificar armas de fogo utilizadas em crimes e auxiliar em investigações."
+    },
+    
+    
+    ]
+    const perguntasCultura =[
+      {
+        "Pergunta": "Qual é o planeta natal do personagem Superman?",
+        "Opcoes": {
+            "A": "Krypton",
+            "B": "Tatooine",
+            "C": "Alderaan",
+            "D": "Mars"
+        },
+        "Resposta": "A",
+        "Motivo": "Krypton é o planeta natal do Superman, antes de ser destruído, forçando-o a ser enviado para a Terra."
+    },
+    {
+        "Pergunta": "Quem é o criador do universo de 'Star Wars'?",
+        "Opcoes": {
+            "A": "J.K. Rowling",
+            "B": "George Lucas",
+            "C": "J.R.R. Tolkien",
+            "D": "Stan Lee"
+        },
+        "Resposta": "B",
+        "Motivo": "George Lucas é o criador do universo de 'Star Wars', uma saga de ficção científica que se tornou um fenômeno cultural."
+    },
+    {
+        "Pergunta": "Qual é o nome do famoso feiticeiro da série de livros 'Harry Potter'?",
+        "Opcoes": {
+            "A": "Gandalf",
+            "B": "Merlin",
+            "C": "Dumbledore",
+            "D": "Saruman"
+        },
+        "Resposta": "C",
+        "Motivo": "Albus Dumbledore é o famoso feiticeiro da série de livros 'Harry Potter', escrito por J.K. Rowling."
+    },
+    {
+        "Pergunta": "Em 'The Legend of Zelda', qual é o nome do protagonista principal que resgata a Princesa Zelda?",
+        "Opcoes": {
+            "A": "Link",
+            "B": "Mario",
+            "C": "Luigi",
+            "D": "Ganondorf"
+        },
+        "Resposta": "A",
+        "Motivo": "Link é o protagonista principal da série de jogos 'The Legend of Zelda', conhecido por resgatar a Princesa Zelda e combater o mal."
+    },
+      {
+        "Pergunta": "Em 'Doctor Who', qual é o nome da nave espacial/temporal do Doutor?",
+        "Opcoes": {
+            "A": "TARDIS",
+            "B": "Falcon",
+            "C": "Millennium Falcon",
+            "D": "Serenity"
+        },
+        "Resposta": "A",
+        "Motivo": "TARDIS é o nome da nave espacial/temporal do Doutor na série 'Doctor Who'."
+    },
+    
+    {
+        "Pergunta": "Em 'The Witcher', qual é o nome do protagonista que é um caçador de monstros conhecido como Witcher?",
+        "Opcoes": {
+            "A": "Geralt of Rivia",
+            "B": "Ezio Auditore",
+            "C": "Arthas Menethil",
+            "D": "Joel Miller"
+        },
+        "Resposta": "A",
+        "Motivo": "O protagonista de 'The Witcher' é Geralt of Rivia, um caçador de monstros conhecido como Witcher."
+    },
+    
+    {
+        "Pergunta": "Em 'The Matrix', qual é o nome do personagem interpretado por Keanu Reeves?",
+        "Opcoes": {
+            "A": "Trinity",
+            "B": "Morpheus",
+            "C": "Neo",
+            "D": "Agent Smith"
+        },
+        "Resposta": "C",
+        "Motivo": "O personagem interpretado por Keanu Reeves em 'The Matrix' é Neo, o Escolhido."
+    },
+    
+    {
+        "Pergunta": "Qual é o nome do criador da série de animação 'Os Simpsons'?",
+        "Opcoes": {
+            "A": "Seth MacFarlane",
+            "B": "Matt Groening",
+            "C": "Mike Judge",
+            "D": "Trey Parker"
+        },
+        "Resposta": "B",
+        "Motivo": "Matt Groening é o criador da série de animação 'Os Simpsons', que se tornou uma das mais longas da história da televisão."
+    },
+    {
+        "Pergunta": "Em que ano foi lançado o primeiro filme da saga 'Jurassic Park'?",
+        "Opcoes": {
+            "A": "1989",
+            "B": "1993",
+            "C": "2001",
+            "D": "2010"
+        },
+        "Resposta": "B",
+        "Motivo": "O primeiro filme da saga 'Jurassic Park' foi lançado em 1993, dirigido por Steven Spielberg."
+    },
+    {
+        "Pergunta": "Quem é o protagonista da série de TV 'Breaking Bad', que se transforma de um professor de química em um traficante de drogas?",
+        "Opcoes": {
+            "A": "Jesse Pinkman",
+            "B": "Walter White",
+            "C": "Saul Goodman",
+            "D": "Gus Fring"
+        },
+        "Resposta": "B",
+        "Motivo": "Walter White é o protagonista de 'Breaking Bad', interpretado por Bryan Cranston, que se transforma de um professor de química em um traficante de drogas."
+    },
+     {
+        "Pergunta": "Qual é o nome do movimento artístico que surgiu no início do século XX e é caracterizado por formas geométricas abstratas?",
+        "Opcoes": {
+            "A": "Impressionismo",
+            "B": "Renascimento",
+            "C": "Cubismo",
+            "D": "Barroco"
+        },
+        "Resposta": "C",
+        "Motivo": "O Cubismo é um movimento artístico que surgiu no início do século XX, caracterizado por formas geométricas abstratas e representações fragmentadas."
+    },
+    {
+        "Pergunta": "Quem é o autor da obra literária 'Dom Quixote', considerada uma das maiores obras da literatura espanhola?",
+        "Opcoes": {
+            "A": "Miguel de Cervantes",
+            "B": "Fernando Pessoa",
+            "C": "Gabriel García Márquez",
+            "D": "William Shakespeare"
+        },
+        "Resposta": "A",
+        "Motivo": "Miguel de Cervantes é o autor da obra literária 'Dom Quixote', publicada no início do século XVII."
+    },
+    {
+        "Pergunta": "Qual é o nome da primeira mulher a ganhar dois prêmios Nobel, um em Física e outro em Química?",
+        "Opcoes": {
+            "A": "Marie Curie",
+            "B": "Rosalind Franklin",
+            "C": "Dorothy Crowfoot Hodgkin",
+            "D": "Irene Joliot-Curie"
+        },
+        "Resposta": "A",
+        "Motivo": "Marie Curie foi a primeira mulher a ganhar dois prêmios Nobel, em Física em 1903 e em Química em 1911."
+    },
+    {
+        "Pergunta": "Qual é o nome do quadro mais famoso de Leonardo da Vinci, retratando uma mulher com um sorriso enigmático?",
+        "Opcoes": {
+            "A": "A Última Ceia",
+            "B": "Mona Lisa",
+            "C": "A Natividade",
+            "D": "A Dama com Arminho"
+        },
+        "Resposta": "B",
+        "Motivo": "Mona Lisa é o quadro mais famoso de Leonardo da Vinci, retratando uma mulher com um sorriso enigmático."
+    },
+    {
+        "Pergunta": "Quem é o autor da escultura 'O Pensador', uma das obras mais conhecidas do movimento artístico conhecido como 'Rodinismo'?",
+        "Opcoes": {
+            "A": "Michelangelo",
+            "B": "Auguste Rodin",
+            "C": "Donatello",
+            "D": "Pablo Picasso"
+        },
+        "Resposta": "B",
+        "Motivo": "O Pensador é uma escultura do artista francês Auguste Rodin, considerada uma das obras mais conhecidas do movimento artístico conhecido como 'Rodinismo'."
+    },
+       {
+        "Pergunta": "Qual é o nome do movimento cultural e artístico que emergiu nos Estados Unidos nas décadas de 1950 e 1960, envolvendo música, moda e comportamento?",
+        "Opcoes": {
+            "A": "Beat Generation",
+            "B": "Hippie",
+            "C": "Swinging Sixties",
+            "D": "Roaring Twenties"
+        },
+        "Resposta": "B",
+        "Motivo": "O movimento cultural e artístico dos anos 1960, envolvendo música, moda e comportamento, é conhecido como a cultura Hippie."
+    },
+    {
+        "Pergunta": "Qual é o nome do quadro icônico de Grant Wood retratando um casal de agricultores com expressões sérias?",
+        "Opcoes": {
+            "A": "American Gothic",
+            "B": "Starry Night",
+            "C": "Guernica",
+            "D": "The Persistence of Memory"
+        },
+        "Resposta": "A",
+        "Motivo": "'American Gothic' é o nome do quadro icônico de Grant Wood, retratando um casal de agricultores com expressões sérias."
+    },
+    
+     {
+        "Pergunta": "Qual é o nome da banda virtual criada pelos músicos Damon Albarn e Jamie Hewlett, conhecida por sucessos como 'Feel Good Inc.' e 'Clint Eastwood'?",
+        "Opcoes": {
+            "A": "Radiohead",
+            "B": "Gorillaz",
+            "C": "Arctic Monkeys",
+            "D": "Coldplay"
+        },
+        "Resposta": "B",
+        "Motivo": "Gorillaz é a banda virtual criada pelos músicos Damon Albarn e Jamie Hewlett, conhecida por sucessos como 'Feel Good Inc.' e 'Clint Eastwood'."
+    },
+    {
+        "Pergunta": "Qual é o nome do filme de animação que segue as aventuras de um ratinho chef em Paris, lançado pela Pixar em 2007?",
+        "Opcoes": {
+            "A": "Moana",
+            "B": "Up - Altas Aventuras",
+            "C": "Ratatouille",
+            "D": "Zootopia"
+        },
+        "Resposta": "C",
+        "Motivo": "'Ratatouille' é o filme de animação da Pixar que segue as aventuras de um ratinho chef em Paris."
+    },
+    {
+        "Pergunta": "Qual é o nome da série de TV que segue as desventuras de um cientista idoso e seu neto, envolvendo viagens interdimensionais e humor peculiar?",
+        "Opcoes": {
+            "A": "The Simpsons",
+            "B": "Futurama",
+            "C": "Rick and Morty",
+            "D": "South Park"
+        },
+        "Resposta": "C",
+        "Motivo": "'Rick and Morty' é a série de TV que segue as desventuras de um cientista idoso e seu neto, envolvendo viagens interdimensionais e humor peculiar."
+    },
+    {
+        "Pergunta": "Qual é o nome da atriz que interpreta Hermione Granger na série de filmes 'Harry Potter'?",
+        "Opcoes": {
+            "A": "Emma Watson",
+            "B": "Emma Stone",
+            "C": "Emma Roberts",
+            "D": "Emma Thompson"
+        },
+        "Resposta": "A",
+        "Motivo": "Emma Watson é a atriz que interpreta Hermione Granger na série de filmes 'Harry Potter'."
+    },
+    {
+        "Pergunta": "Qual é o nome da personagem principal da série de jogos de videogame 'Tomb Raider', conhecida por suas aventuras arqueológicas?",
+        "Opcoes": {
+            "A": "Lara Croft",
+            "B": "Joanna Dark",
+            "C": "Aloy",
+            "D": "Chell"
+        },
+        "Resposta": "A",
+        "Motivo": "Lara Croft é a personagem principal da série de jogos de videogame 'Tomb Raider', conhecida por suas aventuras arqueológicas."
+    },
+    {
+        "Pergunta": "Qual é o nome da série de TV que apresenta um grupo de sobreviventes enfrentando zumbis em um mundo pós-apocalíptico?",
+        "Opcoes": {
+            "A": "Breaking Bad",
+            "B": "Stranger Things",
+            "C": "The Walking Dead",
+            "D": "Westworld"
+        },
+        "Resposta": "C",
+        "Motivo": "'The Walking Dead' é a série de TV que apresenta um grupo de sobreviventes enfrentando zumbis em um mundo pós-apocalíptico."
+    },
+      ]
+    const perguntasFotografia =[
+      
+        {
+        "Pergunta": "Qual é a função do diafragma em uma câmera fotográfica?",
+        "Opcoes": {
+            "A": "Controlar a exposição",
+            "B": "Focar a imagem",
+            "C": "Armazenar fotos",
+            "D": "Transmitir dados para o computador"
+        },
+        "Resposta": "A",
+        "Motivo": "O diafragma controla a quantidade de luz que entra na câmera, influenciando a exposição da fotografia."
+    },
+    {
+        "Pergunta": "O que é o ISO em fotografia?",
+        "Opcoes": {
+            "A": "Índice de Saturação de Ordem",
+            "B": "International Standard Organization",
+            "C": "Infrared Sensitivity Operation",
+            "D": "Internal Shutter Optics"
+        },
+        "Resposta": "B",
+        "Motivo": "ISO significa International Standard Organization e representa a sensibilidade do sensor à luz."
+    },
+    {
+        "Pergunta": "O que é o obturador em uma câmera?",
+        "Opcoes": {
+            "A": "Lente responsável pela nitidez",
+            "B": "Dispositivo que controla a exposição",
+            "C": "Material sensível à luz",
+            "D": "Cobertura que protege a lente"
+        },
+        "Resposta": "B",
+        "Motivo": "O obturador é um dispositivo que controla o tempo durante o qual a luz atinge o sensor, influenciando a exposição da imagem."
+    },
+    {
+        "Pergunta": "Qual é a principal diferença entre uma câmera DSLR e uma câmera mirrorless?",
+        "Opcoes": {
+            "A": "Peso",
+            "B": "Tamanho do sensor",
+            "C": "Tipo de lente",
+            "D": "Visor óptico"
+        },
+        "Resposta": "D",
+        "Motivo": "A principal diferença está no visor: as DSLRs usam um visor óptico, enquanto as mirrorless têm um visor eletrônico ou nenhum visor."
+    },
+    {
+        "Pergunta": "O que é o balanço de branco em fotografia?",
+        "Opcoes": {
+            "A": "Ajuste da nitidez",
+            "B": "Correção de distorção",
+            "C": "Ajuste da temperatura de cor",
+            "D": "Modo de foco"
+        },
+        "Resposta": "C",
+        "Motivo": "O balanço de branco ajusta a temperatura de cor da imagem para garantir que as cores sejam reproduzidas de maneira precisa."
+    },  {
+        "Pergunta": "O que é um histograma em fotografia?",
+        "Opcoes": {
+            "A": "Um gráfico que mostra a distribuição de elementos em uma foto",
+            "B": "Um tipo de filtro de lente",
+            "C": "Um dispositivo para medir a intensidade da luz",
+            "D": "Um tipo de tripé para câmeras profissionais"
+        },
+        "Resposta": "A",
+        "Motivo": "Um histograma em fotografia é um gráfico que mostra a distribuição de elementos tonais em uma imagem, ajudando na análise da exposição."
+    },
+    {
+        "Pergunta": "O que é a profundidade de campo em fotografia?",
+        "Opcoes": {
+            "A": "A distância entre a câmera e o objeto",
+            "B": "A área nítida em uma foto",
+            "C": "O tempo de exposição da imagem",
+            "D": "A intensidade da luz ambiente"
+        },
+        "Resposta": "B",
+        "Motivo": "A profundidade de campo refere-se à área em uma foto que aparece nítida. Uma profundidade de campo estreita significa que apenas uma pequena parte da imagem está nítida."
+    },
+    {
+        "Pergunta": "O que é a técnica de light painting?",
+        "Opcoes": {
+            "A": "Técnica para medir a luz ambiente",
+            "B": "Manipulação digital de luz na pós-produção",
+            "C": "Utilização de luzes para criar desenhos durante uma exposição longa",
+            "D": "Técnica de iluminação de estúdio"
+        },
+        "Resposta": "C",
+        "Motivo": "Light painting é uma técnica que envolve o uso de fontes de luz durante uma exposição longa para criar desenhos ou padrões na imagem final."
+    },
+    {
+        "Pergunta": "O que é o formato de arquivo RAW em fotografia?",
+        "Opcoes": {
+            "A": "Um tipo de lente",
+            "B": "Um formato de compressão de imagem",
+            "C": "Um arquivo de imagem não processado",
+            "D": "Um modo de disparo automático"
+        },
+        "Resposta": "C",
+        "Motivo": "O formato de arquivo RAW é um tipo de arquivo de imagem não processado que preserva todos os dados capturados pelo sensor da câmera."
+    },
+    {
+        "Pergunta": "O que é a regra dos terços em composição fotográfica?",
+        "Opcoes": {
+            "A": "Um método de organização de equipamentos fotográficos",
+            "B": "Uma técnica de pós-produção",
+            "C": "Uma abordagem para escolher as configurações da câmera",
+            "D": "Um guia para posicionar elementos chave na imagem"
+        },
+        "Resposta": "D",
+        "Motivo": "A regra dos terços é um guia de composição que sugere posicionar elementos chave em pontos de interseção imaginários que dividem a imagem em terços."
+    },
+    
+       {
+        "Pergunta": "O que é o bokeh em fotografia?",
+        "Opcoes": {
+            "A": "Uma técnica de iluminação de estúdio",
+            "B": "Um tipo de tripé para câmeras profissionais",
+            "C": "A área nítida em uma foto",
+            "D": "A qualidade estética do desfoque de fundo"
+        },
+        "Resposta": "D",
+        "Motivo": "Bokeh refere-se à qualidade estética do desfoque de fundo em uma imagem, muitas vezes usado para criar um efeito artístico."
+    },
+    {
+        "Pergunta": "O que é a distância focal em uma lente de câmera?",
+        "Opcoes": {
+            "A": "A distância entre a câmera e o objeto",
+            "B": "A capacidade da lente para focar",
+            "C": "O comprimento da lente",
+            "D": "A intensidade da luz ambiente"
+        },
+        "Resposta": "C",
+        "Motivo": "A distância focal em uma lente de câmera é o comprimento óptico da lente, afetando a perspectiva e o campo de visão da imagem."
+    },
+    {
+        "Pergunta": "O que é o modo bulb em fotografia?",
+        "Opcoes": {
+            "A": "Um modo de disparo automático",
+            "B": "Uma técnica de iluminação de estúdio",
+            "C": "Um modo de exposição",
+            "D": "Um modo que permite exposições longas"
+        },
+        "Resposta": "D",
+        "Motivo": "O modo bulb em fotografia permite exposições longas, onde o obturador permanece aberto enquanto o botão do obturador é mantido pressionado."
+    },
+    {
+        "Pergunta": "O que é um filtro polarizador em fotografia?",
+        "Opcoes": {
+            "A": "Um filtro para proteção da lente",
+            "B": "Um dispositivo para medir a intensidade da luz",
+            "C": "Um filtro para correção de cores",
+            "D": "Um filtro para reduzir reflexos e aumentar contraste"
+        },
+        "Resposta": "D",
+        "Motivo": "Um filtro polarizador em fotografia é usado para reduzir reflexos em superfícies não metálicas e aumentar o contraste na imagem."
+    },
+    {
+        "Pergunta": "O que é o modo manual em uma câmera?",
+        "Opcoes": {
+            "A": "Um modo de disparo automático",
+            "B": "Um modo que ajusta automaticamente todas as configurações",
+            "C": "Um modo que permite ao fotógrafo ajustar manualmente as configurações",
+            "D": "Um modo específico para retratos"
+        },
+        "Resposta": "C",
+        "Motivo": "O modo manual em uma câmera permite ao fotógrafo ajustar manualmente configurações como abertura, velocidade do obturador e ISO."
+    },
+    
+    
+    ]
+    const perguntasDireito = [
+      
+       {
+        "Pergunta": "Qual é o princípio que estabelece que ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei?",
+        "Opcoes": {
+            "A": "Princípio da Legalidade",
+            "B": "Princípio da Igualdade",
+            "C": "Princípio da Fraternidade",
+            "D": "Princípio da Impessoalidade"
+        },
+        "Resposta": "A",
+        "Motivo": "O Princípio da Legalidade estabelece que ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei."
+    },
+    {
+        "Pergunta": "O que é habeas corpus?",
+        "Opcoes": {
+            "A": "Ação que visa proteger o direito à liberdade de locomoção",
+            "B": "Ação de indenização por danos morais",
+            "C": "Ação de divórcio",
+            "D": "Ação de despejo"
+        },
+        "Resposta": "A",
+        "Motivo": "Habeas corpus é uma ação que visa proteger o direito à liberdade de locomoção, assegurando o direito de ir e vir."
+    },
+    {
+        "Pergunta": "O que significa 'in dubio pro reo'?",
+        "Opcoes": {
+            "A": "A favor do réu",
+            "B": "A favor do autor",
+            "C": "Em dúvida a favor da vítima",
+            "D": "Em dúvida a favor do juiz"
+        },
+        "Resposta": "A",
+        "Motivo": "'In dubio pro reo' significa que, em caso de dúvida, a decisão deve ser a favor do réu, presumindo-se sua inocência."
+    },
+    {
+        "Pergunta": "O que é a presunção de inocência?",
+        "Opcoes": {
+            "A": "Princípio que presume a culpa do acusado",
+            "B": "Princípio que presume a inocência do acusado",
+            "C": "Princípio que concede direitos apenas aos inocentes",
+            "D": "Princípio que valida a inversão do ônus da prova"
+        },
+        "Resposta": "B",
+        "Motivo": "A presunção de inocência é um princípio que presume a inocência do acusado até que sua culpa seja comprovada."
+    },
+    {
+        "Pergunta": "O que é um habeas data?",
+        "Opcoes": {
+            "A": "Ação que assegura o acesso a informações pessoais",
+            "B": "Ação de reparação por danos morais",
+            "C": "Ação de execução de alimentos",
+            "D": "Ação de divórcio"
+        },
+        "Resposta": "A",
+        "Motivo": "Habeas data é uma ação que assegura o acesso a informações pessoais constantes em registros ou bancos de dados de entidades governamentais ou de caráter público."
+    },{
+        "Pergunta": "O que é o princípio da presunção de veracidade?",
+        "Opcoes": {
+            "A": "Presume-se que as alegações da parte sejam verdadeiras",
+            "B": "Presume-se a veracidade das provas apresentadas",
+            "C": "Presume-se a culpa do acusado",
+            "D": "Presume-se a inconstitucionalidade de uma lei"
+        },
+        "Resposta": "A",
+        "Motivo": "O princípio da presunção de veracidade estabelece que se presume verdadeiras as alegações da parte, até prova em contrário."
+    },
+    {
+        "Pergunta": "O que é o habeas data ambiental?",
+        "Opcoes": {
+            "A": "Ação que assegura o acesso a informações ambientais",
+            "B": "Ação de indenização por dano ambiental",
+            "C": "Ação de despejo por dano ambiental",
+            "D": "Ação de divórcio por dano ambiental"
+        },
+        "Resposta": "A",
+        "Motivo": "O habeas data ambiental é uma ação que assegura o acesso a informações ambientais, buscando a transparência e proteção do meio ambiente."
+    },
+    {
+        "Pergunta": "O que é a coisa julgada?",
+        "Opcoes": {
+            "A": "Decisão transitada em julgado",
+            "B": "Sentença de primeiro grau",
+            "C": "Recurso em segunda instância",
+            "D": "Decisão liminar"
+        },
+        "Resposta": "A",
+        "Motivo": "Coisa julgada é a qualidade da decisão judicial que não pode mais ser modificada, pois transitou em julgado e tornou-se definitiva."
+    },
+    {
+        "Pergunta": "O que é o foro privilegiado?",
+        "Opcoes": {
+            "A": "Privilégio concedido a advogados",
+            "B": "Privilégio concedido a políticos e autoridades",
+            "C": "Privilégio concedido a réus primários",
+            "D": "Privilégio concedido a vítimas de crimes graves"
+        },
+        "Resposta": "B",
+        "Motivo": "O foro privilegiado é um privilégio concedido a políticos e autoridades, garantindo que sejam julgados por instâncias superiores."
+    },
+    {
+        "Pergunta": "O que é o princípio do contraditório?",
+        "Opcoes": {
+            "A": "Princípio que estabelece que todos são iguais perante a lei",
+            "B": "Princípio que garante o direito ao silêncio",
+            "C": "Princípio que assegura o direito de defesa e contestação",
+            "D": "Princípio que estabelece a presunção de inocência"
+        },
+        "Resposta": "C",
+        "Motivo": "O princípio do contraditório assegura o direito das partes de serem ouvidas e de contestar as alegações apresentadas no processo."
+    },{
+        "Pergunta": "Qual é o prazo prescricional para a propositura da ação de reparação de danos em caso de responsabilidade civil contratual?",
+        "Opcoes": {
+            "A": "1 ano",
+            "B": "3 anos",
+            "C": "5 anos",
+            "D": "10 anos"
+        },
+        "Resposta": "B",
+        "Motivo": "A ação de reparação de danos em caso de responsabilidade civil contratual possui prazo prescricional de 3 anos, conforme o artigo 206, § 3º, V, do Código Civil."
+    },
+    {
+        "Pergunta": "Nos crimes contra a Administração Pública, qual é o prazo prescricional para a ação penal, de acordo com a legislação brasileira?",
+        "Opcoes": {
+            "A": "2 anos",
+            "B": "3 anos",
+            "C": "5 anos",
+            "D": "8 anos"
+        },
+        "Resposta": "C",
+        "Motivo": "Nos crimes contra a Administração Pública, o prazo prescricional para a ação penal é de 5 anos, conforme o artigo 109, IV, do Código Penal."
+    },
+    {
+        "Pergunta": "Em um contrato de compra e venda, qual é o princípio que permite ao comprador exigir a entrega da coisa, e ao vendedor, o recebimento do preço?",
+        "Opcoes": {
+            "A": "Princípio da Boa-fé Objetiva",
+            "B": "Princípio da Consensualidade",
+            "C": "Princípio da Função Social do Contrato",
+            "D": "Princípio da Autonomia da Vontade"
+        },
+        "Resposta": "D",
+        "Motivo": "No contrato de compra e venda, vigora o Princípio da Autonomia da Vontade, que permite ao comprador exigir a entrega da coisa e ao vendedor, o recebimento do preço."
+    },
+    {
+        "Pergunta": "Quando é cabível a prisão preventiva, de acordo com o Código de Processo Penal brasileiro?",
+        "Opcoes": {
+            "A": "Sempre que houver indícios de autoria e materialidade do crime",
+            "B": "Quando presentes os requisitos da prisão temporária",
+            "C": "Somente em crimes hediondos",
+            "D": "Diante da demonstração de perigo gerado pela liberdade do acusado"
+        },
+        "Resposta": "D",
+        "Motivo": "A prisão preventiva é cabível quando demonstrada a necessidade da medida para a garantia da ordem pública, ordem econômica, conveniência da instrução criminal ou para assegurar a aplicação da lei penal, nos termos do artigo 312 do CPP."
+    },
+    {
+        "Pergunta": "Qual é o recurso cabível contra decisão interlocutória que resolve mérito do processo?",
+        "Opcoes": {
+            "A": "Agravo de Instrumento",
+            "B": "Apelação",
+            "C": "Recurso Especial",
+            "D": "Embargos de Declaração"
+        },
+        "Resposta": "B",
+        "Motivo": "Contra decisão interlocutória que resolve mérito do processo, cabe o recurso de apelação, conforme previsto no artigo 1.009 do Código de Processo Civil."
+    },
+    
+    {
+        "Pergunta": "Na ação de mandado de segurança, em que situação é cabível a impetração coletiva?",
+        "Opcoes": {
+            "A": "Somente quando a violação atingir direitos individuais",
+            "B": "Quando houver ameaça a direito líquido e certo de grupo, categoria ou classe",
+            "C": "Exclusivamente para proteção de direitos políticos",
+            "D": "Em casos de prisão ilegal"
+        },
+        "Resposta": "B",
+        "Motivo": "A impetração coletiva de mandado de segurança é cabível quando houver ameaça a direito líquido e certo de grupo, categoria ou classe, conforme o artigo 21 da Lei 12.016/2009."
+    },
+    {
+        "Pergunta": "O que caracteriza a chamada Súmula Vinculante no ordenamento jurídico brasileiro?",
+        "Opcoes": {
+            "A": "Decisão proferida pelo Superior Tribunal de Justiça (STJ)",
+            "B": "Entendimento consolidado em súmulas do Supremo Tribunal Federal (STF)",
+            "C": "Norma infraconstitucional de caráter geral",
+            "D": "Precedente obrigatório para todos os órgãos do Poder Judiciário"
+        },
+        "Resposta": "D",
+        "Motivo": "A Súmula Vinculante, prevista no artigo 103-A da Constituição Federal, é um entendimento consolidado em súmulas do Supremo Tribunal Federal (STF) que se torna precedente obrigatório para todos os órgãos do Poder Judiciário."
+    },
+    {
+        "Pergunta": "No Direito Tributário, o que caracteriza a denúncia espontânea?",
+        "Opcoes": {
+            "A": "Pagamento do tributo antes do início de fiscalização",
+            "B": "Pagamento do tributo após a notificação fiscal",
+            "C": "Confissão de débito após a instauração de processo administrativo",
+            "D": "Parcelamento do débito tributário"
+        },
+        "Resposta": "A",
+        "Motivo": "A denúncia espontânea ocorre quando o contribuinte, antes de qualquer procedimento administrativo ou fiscalização, efetua o pagamento do tributo devido."
+    },
+    {
+        "Pergunta": "Em que consiste a tutela inibitória no Direito do Consumidor?",
+        "Opcoes": {
+            "A": "Reparação por danos morais",
+            "B": "Proibição da prática de ato ilícito",
+            "C": "Compensação financeira",
+            "D": "Anulação de contrato"
+        },
+        "Resposta": "B",
+        "Motivo": "A tutela inibitória no Direito do Consumidor consiste na proibição da prática de ato ilícito, visando evitar a continuidade de condutas prejudiciais aos consumidores."
+    },
+    {
+        "Pergunta": "O que é o instituto da Repercussão Geral no Supremo Tribunal Federal?",
+        "Opcoes": {
+            "A": "Possibilidade de recurso especial",
+            "B": "Requisito para a concessão de medida liminar",
+            "C": "Critério para a escolha de relator",
+            "D": "Instrumento de seleção de processos de relevância jurídica e social"
+        },
+        "Resposta": "D",
+        "Motivo": "A Repercussão Geral é um instituto do Supremo Tribunal Federal que serve como instrumento de seleção de processos de relevância jurídica e social, permitindo a apreciação de casos que tenham grande impacto."
+    },{
+        "Pergunta": "Na responsabilidade civil extracontratual, qual é a diferença entre culpa exclusiva da vítima e culpa concorrente?",
+        "Opcoes": {
+            "A": "Não há diferença; os termos são sinônimos",
+            "B": "Culpa exclusiva da vítima significa que ela contribuiu totalmente para o dano, enquanto culpa concorrente indica contribuição parcial da vítima",
+            "C": "Culpa exclusiva da vítima é quando ela age com dolo, enquanto culpa concorrente refere-se a atos negligentes",
+            "D": "Culpa exclusiva da vítima é uma modalidade de dolo"
+        },
+        "Resposta": "B",
+        "Motivo": "Na culpa exclusiva da vítima, ela contribui totalmente para o dano, enquanto na culpa concorrente há contribuição parcial tanto do agente quanto da vítima."
+    },
+    {
+        "Pergunta": "Qual é a diferença entre concessão de anistia e indulto?",
+        "Opcoes": {
+            "A": "Ambos os termos são sinônimos",
+            "B": "Anistia perdoa o crime, enquanto indulto extingue a pena",
+            "C": "Anistia é aplicada somente a crimes políticos, enquanto indulto é para crimes comuns",
+            "D": "Indulto é concedido exclusivamente pelo Poder Legislativo"
+        },
+        "Resposta": "B",
+        "Motivo": "A anistia perdoa o crime, eliminando suas consequências penais, enquanto o indulto extingue a pena imposta ao condenado."
+    },
+    {
+        "Pergunta": "O que caracteriza a teoria finalista da ação penal?",
+        "Opcoes": {
+            "A": "Ação penal é a busca da verdade real",
+            "B": "Ação penal é um direito subjetivo do Estado",
+            "C": "Ação penal é a pretensão punitiva do Estado",
+            "D": "Ação penal é o exercício do direito de punir"
+        },
+        "Resposta": "C",
+        "Motivo": "A teoria finalista da ação penal destaca que a ação penal é a pretensão punitiva do Estado, voltada para a aplicação da pena."
+    },
+    {
+        "Pergunta": "Qual é a diferença entre inquérito policial e ação penal?",
+        "Opcoes": {
+            "A": "Inquérito policial é fase preparatória da ação penal, que é a fase judicial",
+            "B": "Inquérito policial é ato unilateral do Ministério Público, enquanto ação penal é ato bilateral",
+            "C": "Inquérito policial é ato judicial, enquanto ação penal é ato extrajudicial",
+            "D": "Inquérito policial é realizado pelo juiz, enquanto ação penal é conduzida pela autoridade policial"
+        },
+        "Resposta": "A",
+        "Motivo": "O inquérito policial é a fase preparatória da ação penal, que é a fase judicial do processo criminal."
+    },
+    {
+        "Pergunta": "O que é o princípio da insignificância no Direito Penal?",
+        "Opcoes": {
+            "A": "Crimes de pouca relevância não são punidos",
+            "B": "Todos os crimes são puníveis, independentemente de sua gravidade",
+            "C": "Princípio aplicado apenas em crimes contra o patrimônio",
+            "D": "Crimes cometidos por pessoas influentes são considerados insignificantes"
+        },
+        "Resposta": "A",
+        "Motivo": "O princípio da insignificância estabelece que crimes de pouca relevância, que não causam lesão significativa, não são punidos, visando a racionalidade e economia do sistema penal."
+    },
+    ]
     
         
         
