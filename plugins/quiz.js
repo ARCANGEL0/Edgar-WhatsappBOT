@@ -12452,7 +12452,9 @@ public class WordFrequencyCounter {
     
     
     ]
-    const perguntasDireito = [
+console.log(global.quiz)
+
+const perguntasDireito = [
       
        {
         "Pergunta": "Qual é o princípio que estabelece que ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei?",
@@ -12752,6 +12754,7 @@ global.quiz = {
   "cm": Motivo
 }
 
+console.log(global.quiz)
 
 console.log('pergunta   '  + Resposta)
 
