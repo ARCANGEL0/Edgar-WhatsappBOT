@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => { let id = m.chat; global.quiz = glob
         .replace(/π|pi/gi, 'Math.PI')
         .replace(/e/gi, 'Math.E')
         .replace(/(\d+)(!)/g, 'factorial($1)')
-        .replace(/(\d+)%(\d+)/g, '($1%$2) ') // Atualizado para calcular corretamente o módulo .replace(/(\d+.\d+)/g, '($1)'); // Adicionado para reconhecer decimaislet format = val
+        .replace(/(\d+)%(\d+)/g, '($1%$2*100) ') // Atualizado para calcular corretamente o módulo .replace(/(\d+.\d+)/g, '($1)'); // Adicionado para reconhecer decimaislet format = val
         .replace(/Math\.PI/g, 'π')
         .replace(/Math\.E/g, 'e')
         .replace(/\//g, '÷')
