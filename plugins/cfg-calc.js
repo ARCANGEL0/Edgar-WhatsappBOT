@@ -12,7 +12,8 @@ let handler = async (m, { conn, text }) => {
             .replace(/\^|\*\*/g, '**')
             .replace(/π|pi/gi, 'Math.PI')
             .replace(/e/gi, 'Math.E')
-            .replace(/(\d+)(!)/g, 'factorial($1)'.replace(/(\d+)%(\d+)/g, '($1 % $2)') //
+            .replace(/(\d+)(!)/g, 'factorial($1)')
+            .replace(/(\d+)%(\d+)/g, '($1 % $2)') //
             .replace(/(\d+\.\d+)/g, '($1)')
             .replace(/\*×/g, '×');
 
