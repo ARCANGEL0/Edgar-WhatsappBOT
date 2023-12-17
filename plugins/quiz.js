@@ -6417,10 +6417,10 @@ public class WordFrequencyCounter {
             "A": "3628800",
             "B": "40320",
             "C": "181440",
-            "D": "120960"
+            "D": "1663200"
         },
-        "Resposta": "A",
-        "Motivo": "O número de anagramas é dado por 11!, pois há 11 letras na palavra 'MATHEMATICA'."
+        "Resposta": "D",
+        "Motivo": "O número de anagramas é dado por 11! no número de letras dividido pelos indixes em repetição, Portanto, temos 11 letras, a letra A que repete-se 3x, a letra M e T que repetem-se 2x. portanto devemos dividir o fatorial total pelas repetições 11! / 3! . 2! . 2! o que resulta na letra D 1663200"
     },
     {
         "Pergunta": "De quantas maneiras diferentes é possível escolher uma equipe de 3 pessoas de um grupo de 10?",
