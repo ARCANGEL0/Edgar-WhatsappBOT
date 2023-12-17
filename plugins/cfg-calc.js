@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
             .replace(/π|pi/gi, 'Math.PI')
             .replace(/e/gi, 'Math.E')
             .replace(/(\d+)(!)/g, 'factorial($1)')
-            .replace(/(\d+)%(\d+)/g, '($1 % $2)/100') // Atualizado para calcular corretamente o módulo
+.replace(/(\d+)%(\d+)/g, '($1 % $2)/100').toFixed(2) // Corrigido para calcular corretamente o módulo e limitar a duas casas decimais
             .replace(/(\d+\.\d+)/g, '($1)'); // Adicionado para reconhecer decimais
         
         let format = val
