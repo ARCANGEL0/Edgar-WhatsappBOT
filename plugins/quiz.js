@@ -56,7 +56,7 @@ if (!text) {
 ┃
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ .quiz 8 _*(Perguntas de física)*_
-┃ .quiz r _*(Revela a resposta)*
+┃ .quiz r _*(Revela a resposta)*_
 ┃━━━━━━━⬣
 ┃
 ${categoryList}
