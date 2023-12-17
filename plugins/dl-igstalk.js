@@ -50,12 +50,9 @@ let iggs = `╭━━━━━━━━━⬣
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim() 
 let aa = `${res3.result.photo_profile || res.profile}`
 await conn.sendFile(m.chat, aa, 'error.jpg', iggs, m)
-conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*`, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
-body: 'Super Bot WhatsApp',         
-previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `https://github.com/GataNina-Li/GataBot-MD`}}})}
+
+  
+}
 handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['downloader']
 handler.command = /^(igstalk|verig|igver)$/i
