@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
             .replace(/e/gi, 'Math.E')
             .replace(/\//g, '/')
             .replace(/(\d+)(!)/g, 'factorial($1)')
-            .replace(/%/g, '/100') // Adicionado módulo %
+            .replace(/(\d+)%(\d+)/g, '($1 % $2)') // Corrigido para calcular corretamente o módulo
             .replace(/\*×/g, '×');
 
         let format = val
