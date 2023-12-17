@@ -10912,7 +10912,56 @@ public class WordFrequencyCounter {
             "D": "São instintos inatos que guiam o comportamento humano."
         },
         "Resposta": "B",
-        "Motivo": "Cognição na psicologia refere-se aos processos mentais envolvidos na percepção, memória, raciocínio e resolução de problemas, distinguindo-se do comportamento observável e das emoções."{ "Pergunta": "O que é um transtorno de ansiedade?", "Opcoes": { "A": "Uma resposta normal ao estresse.", "B": "Um estado temporário de preocupação moderada.", "C": "Um padrão persistente e excessivo de preocupação e medo.", "D": "A ausência completa de ansiedade." }, "Resposta": "C", "Motivo": "Transtornos de ansiedade envolvem um padrão persistente e excessivo de preocupação e medo, muitas vezes interferindo nas atividades diárias." }, { "Pergunta": "O que é empatia?", "Opcoes": { "A": "A capacidade de prever o futuro.", "B": "A habilidade de entender e compartilhar os sentimentos de outra pessoa.", "C": "A tendência a evitar situações sociais.", "D": "A capacidade de controlar as emoções dos outros." }, "Resposta": "B", "Motivo": "Empatia é a habilidade de compreender e compartilhar os sentimentos de outra pessoa, mostrando compaixão e consideração." }, { "Pergunta": "O que é o conceito de reforço positivo na psicologia?", "Opcoes": { "A": "A remoção de algo desagradável para aumentar a probabilidade de um comportamento.", "B": "A apresentação de algo desagradável para aumentar a probabilidade de um comportamento.", "C": "A apresentação de algo agradável para aumentar a probabilidade de um comportamento.", "D": "A remoção de algo agradável para diminuir a probabilidade de um comportamento." }, "Resposta": "C", "Motivo": "Reforço positivo envolve a apresentação de algo agradável para aumentar a probabilidade de um comportamento ser repetido." }, { "Pergunta": "O que é a teoria da gestalt na psicologia?", "Opcoes": { "A": "A ideia de que o comportamento é determinado por instintos inatos.", "B": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.", "C": "A abordagem que se concentra na percepção e organização de experiências sensoriais.", "D": "A teoria que sugere que o comportamento é moldado principalmente por recompensas e punições." }, "Resposta": "C", "Motivo": "A teoria da gestalt destaca a importância da percepção e organização de experiências sensoriais para compreender o comportamento humano." }, { "Pergunta": "O que é o conceito de estresse na psicologia?", "Opcoes": { "A": "A ausência de desafios na vida.", "B": "Uma resposta adaptativa do corpo a situações ameaçadoras.", "C": "A falta de significado na vida.", "D": "Uma condição permanente de tensão extrema." }, "Resposta": "B", "Motivo": "Stresse na psicologia refere-se a uma resposta adaptativa do corpo a situações ameaçadoras ou desafios." }, { "Pergunta": "O que é a teoria do desenvolvimento cognitivo de Jean Piaget?", "Opcoes": { "A": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.", "B": "A abordagem que destaca a influência de experiências sociais na aprendizagem.", "C": "A ideia de que o desenvolvimento cognitivo ocorre em estágios sequenciais.", "D": "A teoria que sugere que o comportamento é determinado por instintos inatos." }, "Resposta": "C", "Motivo": "A teoria de Piaget postula que o desenvolvimento cognitivo ocorre em estágios sequenciais, cada um caracterizado por formas específicas de pensar." },
+        "Motivo": "Cognição na psicologia refere-se aos processos mentais envolvidos na percepção, memória, raciocínio e resolução de problemas, distinguindo-se do comportamento observável e das emoções."},
+        { "Pergunta": "O que é um transtorno de ansiedade?",
+        "Opcoes": {
+          "A": "Uma resposta normal ao estresse.", "B": "Um estado temporário de preocupação moderada.", 
+          "C": "Um padrão persistente e excessivo de preocupação e medo.", 
+          "D": "A ausência completa de ansiedade." },
+          "Resposta": "C", 
+          "Motivo": "Transtornos de ansiedade envolvem um padrão persistente e excessivo de preocupação e medo, muitas vezes interferindo nas atividades diárias." },
+        
+        { "Pergunta": "O que é empatia?",
+        "Opcoes": {
+          "A": "A capacidade de prever o futuro.",
+        "B": "A habilidade de entender e compartilhar os sentimentos de outra pessoa.",
+        "C": "A tendência a evitar situações sociais.", 
+        "D": "A capacidade de controlar as emoções dos outros." },
+        "Resposta": "B",
+        "Motivo": "Empatia é a habilidade de compreender e compartilhar os sentimentos de outra pessoa, mostrando compaixão e consideração." },
+        
+        { "Pergunta": "O que é o conceito de reforço positivo na psicologia?", "Opcoes": {
+          "A": "A remoção de algo desagradável para aumentar a probabilidade de um comportamento.", 
+          "B": "A apresentação de algo desagradável para aumentar a probabilidade de um comportamento.", "C": "A apresentação de algo agradável para aumentar a probabilidade de um comportamento.",
+          "D": "A remoção de algo agradável para diminuir a probabilidade de um comportamento." },
+        "Resposta": "C", 
+        "Motivo": "Reforço positivo envolve a apresentação de algo agradável para aumentar a probabilidade de um comportamento ser repetido." },
+        
+        {
+          "Pergunta": "O que é a teoria da gestalt na psicologia?", 
+        "Opcoes": {
+          "A": "A ideia de que o comportamento é determinado por instintos inatos.",
+        "B": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.", "C": "A abordagem que se concentra na percepção e organização de experiências sensoriais.",
+        "D": "A teoria que sugere que o comportamento é moldado principalmente por recompensas e punições."
+        },
+        "Resposta": "C", 
+        "Motivo": "A teoria da gestalt destaca a importância da percepção e organização de experiências sensoriais para compreender o comportamento humano." }, 
+        { 
+          "Pergunta": "O que é o conceito de estresse na psicologia?", 
+          "Opcoes": { "A": "A ausência de desafios na vida.", "B": "Uma resposta adaptativa do corpo a situações ameaçadoras.",
+        "C": "A falta de significado na vida.",
+        "D": "Uma condição permanente de tensão extrema." }, 
+        "Resposta": "B", 
+        "Motivo": "Stresse na psicologia refere-se a uma resposta adaptativa do corpo a situações ameaçadoras ou desafios." },
+        
+        { "Pergunta": "O que é a teoria do desenvolvimento cognitivo de Jean Piaget?", 
+        "Opcoes": { 
+          "A": "A teoria que enfatiza a importância do inconsciente na formação da personalidade.",
+        "B": "A abordagem que destaca a influência de experiências sociais na aprendizagem.", "C": "A ideia de que o desenvolvimento cognitivo ocorre em estágios sequenciais.",
+        "D": "A teoria que sugere que o comportamento é determinado por instintos inatos." },
+        "Resposta": "C", 
+        
+        "Motivo": "A teoria de Piaget postula que o desenvolvimento cognitivo ocorre em estágios sequenciais, cada um caracterizado por formas específicas de pensar." },
         
         {
         "Pergunta": "Qual parte da mente, segundo a teoria psicanalítica de Freud, age como um mediador entre os impulsos do id e os padrões morais do superego?",
