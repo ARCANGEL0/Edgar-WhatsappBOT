@@ -69,29 +69,31 @@ function factorial(n) {
 }
 
 function limit(expression, value, approaching) {
+  console.log(expression)
+  console.log(value)
+  console.log(approaching)
     try {
         // Convert the value and approaching to numbers
         let numericValue = parseFloat(value);
         let numericApproaching = parseFloat(approaching);
 
         if (isNaN(numericValue) || isNaN(numericApproaching)) {
-            throw `${fg}Invalid numeric values for limit calculation.`;
+            throw "Invalid numeric values for limit calculation.";
         }
 
-        // Substitua x pelo valor de aproximação
+        // Replace x with the value of approaching
         let expressionWithX = expression.replace(/x/g, `(${numericApproaching})`);
 
-        // Avalie a expressão com o valor substituído
-        let result = eval(expressionWithX);
+        // Evaluate the expression with the substituted value
+        let result = math.evaluate(expressionWithX);
 
         if (!result && result !== 0) throw result;
 
         return result;
     } catch (e) {
-        throw `${fg}Erro ao calcular o limite. Certifique-se de que a expressão está correta e tente novamente.`;
+        throw "Error calculating the limit. Make sure the expression is correct and try again.";
     }
 }
-
 handler.help = ['calc <expression>', 'calc lim <expression>-><value> <approaching>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
