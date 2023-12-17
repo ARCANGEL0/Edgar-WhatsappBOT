@@ -17,6 +17,11 @@ let handler = async (m, { conn, text }) => {
         .replace(/e/gi, 'Math.E')
         .replace(/!/g, 'factorial')
         .replace(/\//g, '/')
+        .replace(/π|pi/gi, 'Math.PI')
+.replace(/e/gi, 'Math.E')
+.replace(/(\d+)!/g, 'factorial($1)')
+.replace(/\^|\*\*/g, '**')
+.replace(/!/g, ''); // Remover outros caracteres ! não relacionados ao fatorial
         .replace(/\*×/g, '×');
         
     let format = val
