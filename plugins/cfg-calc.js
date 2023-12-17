@@ -1,10 +1,10 @@
 let handler = async (m, { conn, text }) => {
     let id = m.chat;
-    conn.math = conn.math ? conn.math : {};
+    global.quiz = global.quiz ? global.quiz : {}
     
-    if (id in conn.math) {
-        clearTimeout(conn.math[id][3]);
-        delete conn.math[id];
+    if (conn.quiz.math) {
+        
+        
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     }
     
