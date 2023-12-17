@@ -11796,16 +11796,7 @@ public class WordFrequencyCounter {
         "Resposta": "B",
         "Motivo": "A psicologia é crucial na análise de testemunhas oculares, ajudando a compreender como fatores psicológicos, como estresse e memória, podem impactar a precisão dos relatos em investigações criminais."
     },
-    {
-        "Pergunta": "Como a avaliação psicológica de criminosos sexuais contribui para o processo legal?", "Opcoes": {
- "A": "Avaliando as causas que levaram o individuo a cometer o ato criminoso",
- "B": "Uso de técnicas de DNA para identificar perfis genéticos",
- "C": "Estudo do comportamento humano através de entrevistas profundas",
- "D": "Uma combinação de fatores biológicos e ambientais"
-},
-        "Resposta": "B",
-        "Motivo": "A avaliação psicológica de criminosos sexuais, juntamente com outras evidências, pode fornecer insights sobre padrões comportamentais, ajudando no processo legal e na tomada de decisões sobre sentenças e tratamentos."
-    },
+
     {
         "Pergunta": "Qual é o papel da psicologia na análise de perfis de vítimas em casos criminais?",
         "Opcoes": {
