@@ -5,6 +5,22 @@ let handler = async (m, { conn, text }) => {
     if (global.quiz.math) {
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     } else {
+         if (text.toLowerCase().includes('lim')) {
+            try {
+                let limitExpression = text.substring(text.indexOf('('), text.lastIndexOf(')') + 1);
+                let limitResult = (new Function('x', `return ${limitExpression}`))(0); // x → 0
+
+                if (!isNaN(limitResult)) {
+                    m.reply(`Limite de *${text}* para x → 0 é _${limitResult}_`);
+                } else {
+                    throw "O limite não pôde ser calculado.";
+                }
+            } catch (e) {
+                throw `${fg}Erro ao calcular o limite. Certifique-se de que a expressão está correta.`;
+            }
+        }
+    else{
+      
         let val = text
             .replace(/[^0-9\-\/+*×÷^πEe()%!]/g, '') // Adicionado %
             .replace(/×/g, '*')
@@ -41,7 +57,7 @@ let handler = async (m, { conn, text }) => {
 
             throw `${fg}𝙎𝙊𝙇𝙊 𝙎𝙀 𝘼𝘿𝙈𝙄𝙏𝙀𝙉 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙔 𝙎𝙄𝙈𝘽𝙊𝙇𝙊𝙎, 𝙊𝙉𝙇𝙔 𝙉𝙐𝙈𝘽𝙀𝙍𝙎 𝘼𝙉𝘿 𝙎𝙔𝙈𝘽𝙊𝙇𝙎 𝘼𝙍𝙀 𝘼𝙇𝙇𝙊𝙒𝙀𝘿 -, +, * , /, ×, ÷, π, e, (, ), !, ^, **, %`
         }
-    }
+    }}
 }
 
 function factorial(n) {
