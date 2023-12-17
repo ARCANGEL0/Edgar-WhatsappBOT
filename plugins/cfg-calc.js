@@ -9,15 +9,14 @@ let handler = async (m, { conn, text }) => {
         if (text.startsWith("lim ")) {
             try {
                 // Extract the expression, value, and approaching from the input
- let [, value, approaching, expression] = /lim (.*?)->(.*?) (.*)/.exec(text);
-
+                let [, value, approaching, expression] = /lim (.*?)->(.*?) (.*)/.exec(text);
 
                 // Calculate the limit using the provided values
-                let result = limit(expression, value, approaching);
+                let result = limit(value, approaching, expression);
 
                 m.reply(`Limit of *${expression}* as x approaches ${approaching} is _${result}_`);
             } catch (e) {
-              console.log(e)
+                console.log(e);
                 m.reply(`${fg}Error calculating the limit. Make sure the expression is correct and try again.`);
             }
         } else {
@@ -61,7 +60,6 @@ let handler = async (m, { conn, text }) => {
     }
 }
 
-
 function factorial(n) {
     n = parseInt(n);
     if (isNaN(n)) return 0;
@@ -70,9 +68,6 @@ function factorial(n) {
 }
 
 function limit(value, approaching, expression) {
-  console.log(expression)
-  console.log(value)
-  console.log(approaching)
     try {
         // Convert the value and approaching to numbers
         let numericValue = parseFloat(value);
@@ -95,6 +90,7 @@ function limit(value, approaching, expression) {
         throw "Error calculating the limit. Make sure the expression is correct and try again.";
     }
 }
+
 handler.help = ['calc <expression>', 'calc lim <expression>-><value> <approaching>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
