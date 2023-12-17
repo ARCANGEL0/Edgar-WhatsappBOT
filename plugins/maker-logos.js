@@ -9,7 +9,7 @@ const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command
 🥀 𝐍𝐨 𝐜𝐫𝐞𝐩𝐮𝐬𝐜𝐮𝐥𝐨 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞, 𝐚𝐠𝐮𝐚𝐫𝐝𝐨 𝐨 𝐬𝐞𝐮 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐩𝐚𝐫𝐚 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫 𝐮𝐦 𝐞𝐟𝐞𝐢𝐭𝐨 𝐚 𝐚𝐩𝐥𝐢𝐜𝐚𝐫.
 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐞𝐟𝐞𝐢𝐭𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐬 𝐣𝐮𝐧𝐭𝐨 𝐜𝐨𝐦 𝐨 𝐭𝐞𝐱𝐭𝐨
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
-❖─┅ ${usedPrefix + command}  magma Inferno
+❖─┅ ${usedPrefix + command}  magma texto1 | texto2
 ╰━━━━━━━━━━━━━━━━━━⬣
 *🕯️𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎*\n\n🪶📜${usedPrefix + command} ` + effects.map(v => v.title).join(`\n🪶📜 ${usedPrefix + command} `);
 
