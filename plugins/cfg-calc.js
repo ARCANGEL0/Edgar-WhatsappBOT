@@ -12,9 +12,7 @@ let handler = async (m, { conn, text }) => {
             .replace(/\^|\*\*/g, '**')
             .replace(/π|pi/gi, 'Math.PI')
             .replace(/e/gi, 'Math.E')
-            .replace(/(\d+)(!)/g, 'factorial($1)')
-.replace(/(\d+)(!)/g, 'factorial($1)')
-.replace(/(\d+)%(\d+)/g, '($1 % $2) / 100') // Atualizado para calcular corretamente o módulo
+            .replace(/(\d+)%(\d+)/g, '($1 % $2) / 100') // Corrigido para calcular corretamente o módulo
             .replace(/(\d+\.\d+)/g, '($1)'); // Adicionado para reconhecer decimais
         
         let format = val
@@ -53,4 +51,4 @@ function factorial(n) {
 handler.help = ['calc <expression>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
-export default handler
+export default handler;
