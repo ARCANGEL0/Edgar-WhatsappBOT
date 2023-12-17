@@ -79,7 +79,7 @@ function limit(expression, value, approaching) {
         }
 
         // Substitua x pelo valor de aproximação
-        let expressionWithX = expression.replace(/x/g, numericApproaching);
+        let expressionWithX = expression.replace(/x/g, `(${numericApproaching})`);
 
         // Avalie a expressão com o valor substituído
         let result = eval(expressionWithX);
