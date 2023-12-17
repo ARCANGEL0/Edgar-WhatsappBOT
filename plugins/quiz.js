@@ -12747,7 +12747,10 @@ global.quiz = {
 }
 if(selectedCategoryIndex==11){
   global.quiz.math = true
+} else {
+  global.quiz.math = false
 }
+
 console.log(global.quiz)
 
 console.log('pergunta   '  + Resposta)
