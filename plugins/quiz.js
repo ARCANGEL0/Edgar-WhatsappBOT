@@ -6400,17 +6400,17 @@ public class WordFrequencyCounter {
         "Resposta": "C",
         "Motivo": "Usando a propriedade dos logaritmos, log(ab) = log(a) + log(b) = 2 + 3 = 5."
     },
-    {
-        "Pergunta": "Resolva a equação sen(2x) = cos(x) para x no intervalo [0, 2π].",
-        "Opcoes": {
-            "A": "π/4",
-            "B": "π/2",
-            "C": "3π/4",
-            "D": "π"
-        },
-        "Resposta": "C",
-        "Motivo": "Simplificando a equação, encontramos que x = 3π/4 está no intervalo [0, 2π]."
+{
+    "Pergunta": "Resolva a equação sen(2x) = cos(x) para x no intervalo [0, 2π].",
+    "Opcoes": {
+        "A": "π/6",
+        "B": "5π/6",
+        "C": "11π/6",
+        "D": "7π/6"
     },
+    "Resposta": "B",
+    "Motivo": "Simplificando a equação, encontramos que x = π/6 ou x = 5π/6 estão no intervalo [0, 2π]."
+},
       {
         "Pergunta": "Quantos anagramas diferentes podem ser formados utilizando todas as letras da palavra 'MATHEMATICA'?",
         "Opcoes": {
