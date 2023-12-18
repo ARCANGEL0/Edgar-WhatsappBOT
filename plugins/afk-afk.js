@@ -1,21 +1,35 @@
-let handler = async (m, { text, args, usedPrefix, command, conn}) => { 
-let user = global.db.data.users[m.sender]
-  
-if (args.length >= 1) {
-text = args.slice(0).join(" ")
-} else if (m.quoted && m.quoted.text) {
-text = m.quoted.text
-} else return m.reply(`${lenguajeGB['smsAfkQ1'](usedPrefix, command)}`)
-  
-if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
-user.afk = + new Date
-user.afkReason = text
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
- *🕯️💀𝐍𝐚𝐨 𝐜𝐡𝐚𝐦𝐞* *@${m.sender.split("@")[0]}* 
-*「 𝐈𝐫𝐚 𝐬𝐞 𝐚𝐮𝐬𝐞𝐧𝐭𝐚𝐫 𝐛𝐫𝐞𝐯𝐞𝐦𝐞𝐧𝐭𝐞 𝐩𝐚𝐫𝐚 𝐟𝐢𝐧𝐬 𝐩𝐚𝐫𝐭𝐢𝐜𝐮𝐥𝐚𝐫𝐞𝐬」*
-  
-  *𝐂𝐚𝐮𝐬𝐚:*${text ? '\n ' + text : ''}`, m, { mentions: [m.sender] })
-}
+let handler = async (m, { text, args, usedPrefix, command, conn }) => {
+  let user = global.db.data.users[m.sender];
+  let id = m.chat;
 
-handler.command = /^afk$/i
-export default handler
+  // Check if it's a specific chat where AFK status needs to be set
+  if (m.chat !== 'your_specific_chat_id') {
+    return; // Exit function if not the specified chat
+  }
+
+  if (args.length >= 1) {
+    text = args.slice(0).join(" ");
+  } else if (m.quoted && m.quoted.text) {
+    text = m.quoted.text;
+  } else return m.reply(`${lenguajeGB['smsAfkQ1'](usedPrefix, command)}`);
+
+  if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`);
+  
+  // Check if the AFK status is set for the specific chat
+  if (user.afkChat && user.afkChat !== m.chat) {
+    return; // Exit function if AFK status is set for another chat
+  }
+
+  user.afk = +new Date;
+  user.afkReason = text;
+  user.afkChat = m.chat; // Set the AFK chat ID
+
+  await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
+    *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
+    *「 𝕴𝖗𝖆 𝖉𝖎𝖛𝖆𝖌𝖆𝖗 𝖕𝖊𝖑𝖆𝖘 𝖘𝖔𝖒𝖇𝖗𝖆𝖘 𝖉𝖔 𝖉𝖊𝖘𝖈𝖔𝖓𝖍𝖊𝖈𝖎𝖉𝖔, 𝖘𝖊 𝖆𝖚𝖘𝖊𝖓𝖙𝖆𝖓𝖉𝖔 𝖉𝖊𝖘𝖙𝖊 𝖛𝖆𝖑𝖊 𝖘𝖔𝖒𝖇𝖗𝖎𝖔.」*
+  
+  *𝕸𝖊𝖗𝖎𝖙𝖚𝖒 𝖈𝖆𝖚𝖘𝖆𝖊:*${text ? '\n ' + text : ''}`, m, { mentions: [m.sender] });
+};
+
+handler.command = /^afk$/i;
+export default handler;
