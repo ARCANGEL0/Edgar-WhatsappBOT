@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
                 .replace(/e/gi, 'Math.E')
                 .replace(/\//g, '/')
                 .replace(/(\d+)(!)/g, 'factorial($1)')
-                .replace(/lim (.*)->(.*) (.*)/, 'limit($1, $2, $3)');
+                .replace(/,/g, '.'); // Trocado vírgula (,) por ponto (.) para evitar problemas com decimais
 
             let format = val
                 .replace(/Math\.PI/g, 'π')
