@@ -37,7 +37,7 @@ let handler = async (m, { conn, text }) => {
             try {
                 console.log(val);
 
-                let result = (new Function('factorial', 'return ' + val))(factorial, limit);
+                let result = (new Function('factorial', 'return ' + val))(factorial);
 
                 if (!result) throw result;
 
