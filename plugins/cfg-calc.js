@@ -1,3 +1,5 @@
+import math from 'mathjs';
+
 let handler = async (m, { conn, text }) => {
     let id = m.chat;
     global.quiz = global.quiz ? global.quiz : {}
