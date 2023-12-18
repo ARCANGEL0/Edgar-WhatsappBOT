@@ -12740,7 +12740,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     // Update the current question and answer
     
 global.quiz = { 
-  id:{
+  m.chat: {
   math: false,
   "cp": Pergunta,
   "ca": Resposta,
