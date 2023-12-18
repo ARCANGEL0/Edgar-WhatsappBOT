@@ -12750,9 +12750,9 @@ global.quiz[m.chat] = {
 console.log(global.quiz[m.chat])
 console.log(selectedCategoryIndex)
 if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
-  global.quiz.math = true
+  global.quiz[id].math = true
 } else {
-  global.quiz.math = false
+  global.quiz[id].math = false
 }
 
 console.log(global.quiz)
