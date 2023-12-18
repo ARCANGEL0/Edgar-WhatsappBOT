@@ -11,9 +11,9 @@ let handler = async (m, { conn, text }) => {
 if (text.startsWith("lim ")) {
     try {
         // Extract the expression, value, and approaching from the input
-       let [, expression, value, approaching] = /lim .*?->(.*?) (.*)/.exec(text);
+       let [, value, value, approaching] = /lim (.*?)->(.*?) (.*)/.exec(text);
 
-console.log("exp "+expression+"\nvalue "+value+"\n app "+ approaching)
+console.log("exp "+value+"\nvalue "+value+"\n app "+ approaching)
         // Calculate the limit using the provided values
         let result = limit(value, approaching, expression);
 
