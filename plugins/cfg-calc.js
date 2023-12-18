@@ -95,11 +95,14 @@ function factorial(n) {
 }
 
 function limit(approach, expression) {
-  console.log(approach,expression)
-    // Use eval to evaluate the expression with the approaching value
-    const result = eval(expression.replace(/x/g, approach));
-console.log(result)
+ // Replace occurrences of 'x' with the approach value
+    const substitutedExpression = expression.replace(/x/g, `(${approach})`);
+
+    // Use eval to evaluate the expression
+    const result = eval(substitutedExpression);
+
     return result;
+}
 }
 handler.help = ['calc <expression>', 'calc lim <expression>-><value> <approaching>'];
 handler.tags = ['tools'];
