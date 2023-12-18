@@ -37,7 +37,7 @@ if (text.startsWith("lim ")) {
         console.log("Approaching:", approaching);
 
         // Calculate the limit using the provided values
-        let result = limit(2, "(x^2 - 4) / (x - 2)");
+        let result = limit(2, "(x^2 - 4)/(x - 2)");
 
         m.reply(`Limit of *(${expression}) / (${value})* as x approaches ${approaching} is _${result}_`);
     } catch (e) {
