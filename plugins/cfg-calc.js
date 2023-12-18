@@ -8,23 +8,21 @@ let handler = async (m, { conn, text }) => {
         m.reply('😨 𝙉𝙊 𝙃𝘼𝙂𝘼𝙎 𝙏𝙍𝘼𝙈𝙋𝘼!!\n𝘿𝙊 𝙉𝙊𝙏 𝘾𝙃𝙀𝘼𝙏!!');
     } else {
        // Check if the user is attempting a limit calculation
+// Check if the user is attempting a limit calculation
 if (text.startsWith("lim ")) {
     try {
         // Extract the expression, value, and approaching from the input
-       let [, value, value, approaching] = /lim (.*?)->(.*?) (.*)/.exec(text);
+        let [, exp, value] = /lim .*?->(.*?) \((.*?)\) \/ \((.*?)\)/.exec(text);
 
-console.log("exp "+value+"\nvalue "+value+"\n app "+ approaching)
         // Calculate the limit using the provided values
-        let result = limit(value, approaching, expression);
+        let result = limit(value, exp, 'x');
 
-        m.reply(`Limit of *${expression}* as x approaches ${approaching} is _${result}_`);
+        m.reply(`Limit of *(${exp}) / (${value})* as x approaches 2 is _${result}_`);
     } catch (e) {
         console.log(e);
-        
-        
         m.reply(`${fg}Error calculating the limit. Make sure the expression is correct and try again.`);
     }
-}  else {
+} else {
             // Regular calculation logic
             let val = text
                 .replace(/[^0-9\-\/+*×÷^πEe()%!.]/g, '')
