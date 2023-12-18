@@ -12742,7 +12742,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     await m.reply(`Please wait ${remainingTime} seconds before asking another question.`);
     return; // Exit the function without setting a new question
   }
-
+else{
   const perguntaObj = pickRandom(selectedPerguntasArray);
   const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
   const optionsString = Object.entries(Opcoes)
@@ -12776,7 +12776,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     ${optionsString}
     ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
     ╰━━━━━━━━━━━━━━━━━━⬣`);
-
+}
   // Update the last question time
   lastQuestionTime[m.chat] = currentTime;
 
