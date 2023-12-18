@@ -12739,7 +12739,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .join("\n");
     // Update the current question and answer
     
-global.quiz[id] = { 
+global.quiz[m.chat] = { 
  
   math: false,
   "cp": Pergunta,
@@ -12747,7 +12747,7 @@ global.quiz[id] = {
   "cm": Motivo
   
 }
-console.log(global.quiz)
+console.log(global.quiz[m.chat])
 console.log(selectedCategoryIndex)
 if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
   global.quiz.math = true
