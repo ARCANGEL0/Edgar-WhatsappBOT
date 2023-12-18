@@ -19,6 +19,8 @@ if (text.startsWith("lim ")) {
         m.reply(`Limit of *${expression}* as x approaches ${approaching} is _${result}_`);
     } catch (e) {
         console.log(e);
+        console.log("exp "+expression+"\nvalue "+value+"\n app "+ approaching)
+        
         m.reply(`${fg}Error calculating the limit. Make sure the expression is correct and try again.`);
     }
 }  else {
