@@ -95,15 +95,25 @@ function factorial(n) {
 }
 
 function limit(approach, expression) {
- // Replace occurrences of 'x' with the approach value
-    const substitutedExpression = expression.replace(/x/g, `(${approach})`);
+    // Replace occurrences of 'x' with the approach value
+    const substitutedExpression = expression.replace(/x/g, approach);
 
     // Use eval to evaluate the expression
-    const result = eval(substitutedExpression);
+    const numerator = eval(substitutedExpression);
 
-    return result;
+    // Check for division by zero
+    if (approach !== 2) {
+        const denominator = approach - 2;
+        const result = numerator / denominator;
+        return result;
+    } else {
+        // Handle the case where the denominator is zero separately
+        return "Undefined (division by zero)";
+    }
 }
-}
+
+
+
 handler.help = ['calc <expression>', 'calc lim <expression>-><value> <approaching>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
