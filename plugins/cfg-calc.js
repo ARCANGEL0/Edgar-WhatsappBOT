@@ -3,7 +3,7 @@ import * as math from 'mathjs';
 let handler = async (m, { conn, text }) => {
     let id = m.chat;
     global.quiz = global.quiz ? global.quiz : {}
-console.log(id)
+console.log(global.quiz[id])
     if (global.quiz[id].math) {
         m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
