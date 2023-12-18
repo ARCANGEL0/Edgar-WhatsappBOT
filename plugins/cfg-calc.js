@@ -9,20 +9,44 @@ let handler = async (m, { conn, text }) => {
     } else {
        // Check if the user is attempting a limit calculation
 // Check if the user is attempting a limit calculation
+// Check if the user is attempting a limit calculation
 if (text.startsWith("lim ")) {
     try {
         // Extract the expression, value, and approaching from the input
-        let [, exp, value] = /lim .*?->(.*?) \((.*?)\) \/ \((.*?)\)/.exec(text);
+        let match = /lim .*?->(.*)/.exec(text);
+
+        if (!match || match.length < 2) {
+            throw "Invalid format for limit calculation.";
+        }
+
+        let expression = match[1].trim();
+        let value = 'x'; // default value
+        let approaching = 'undefined';
+
+        // Extract value and approaching if provided
+        let valueMatch = /(.*) \((.*)\) \/ \((.*)\)/.exec(expression);
+
+        if (valueMatch && valueMatch.length === 4) {
+            value = valueMatch[2].trim();
+            approaching = valueMatch[3].trim();
+            expression = valueMatch[1].trim();
+        }
+
+        console.log("Expression:", expression);
+        console.log("Value:", value);
+        console.log("Approaching:", approaching);
 
         // Calculate the limit using the provided values
-        let result = limit(value, exp, 'x');
+        let result = limit(value, approaching, expression);
 
-        m.reply(`Limit of *(${exp}) / (${value})* as x approaches 2 is _${result}_`);
+        m.reply(`Limit of *(${expression}) / (${value})* as x approaches ${approaching} is _${result}_`);
     } catch (e) {
         console.log(e);
         m.reply(`${fg}Error calculating the limit. Make sure the expression is correct and try again.`);
     }
-} else {
+} 
+
+else {
             // Regular calculation logic
             let val = text
                 .replace(/[^0-9\-\/+*×÷^πEe()%!.]/g, '')
