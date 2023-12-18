@@ -37,7 +37,7 @@ if (text.startsWith("lim ")) {
         console.log("Approaching:", approaching);
 
         // Calculate the limit using the provided values
-        let result = limit("x", 2, "(x^2 - 4) / (x - 2)");
+        let result = limit(2, "(x^2 - 4) / (x - 2)");
 
         m.reply(`Limit of *(${expression}) / (${value})* as x approaches ${approaching} is _${result}_`);
     } catch (e) {
@@ -94,31 +94,12 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-function limit(value, approaching, expression) {
-    try {
-        // Convert the value and approaching to numbers
-        let numericValue = parseFloat(value);
-        let numericApproaching = parseFloat(approaching);
+function limit(approach, expression) {
+    // Use eval to evaluate the expression with the approaching value
+    const result = eval(expression.replace(/x/g, approach));
 
-        if (isNaN(numericValue) || isNaN(numericApproaching)) {
-            throw "Invalid numeric values for limit calculation.";
-        }
-
-        // Replace x with the value of approaching
-        let expressionWithX = expression.replace(/x/g, `(${numericApproaching})`);
-
-        // Evaluate the expression with the substituted value
-        let result = math.evaluate(expressionWithX);
-
-        if (!result && result !== 0) throw result;
-
-        return result;
-    } catch (e) {
-        console.error(e);
-        throw "Error calculating the limit. Make sure the expression is correct and try again.";
-    }
+    return result;
 }
-
 handler.help = ['calc <expression>', 'calc lim <expression>-><value> <approaching>'];
 handler.tags = ['tools'];
 handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i;
