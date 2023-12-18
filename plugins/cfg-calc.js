@@ -89,6 +89,7 @@ function limit(value, approaching, expression) {
 
         return result;
     } catch (e) {
+        console.error(e);
         throw "Error calculating the limit. Make sure the expression is correct and try again.";
     }
 }
