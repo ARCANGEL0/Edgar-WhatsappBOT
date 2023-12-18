@@ -12746,7 +12746,7 @@ global.quiz = {
   "ca": Resposta,
   "cm": Motivo
   }
-}
+console.log(global.quiz)
 console.log(selectedCategoryIndex)
 if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
   global.quiz.math = true
