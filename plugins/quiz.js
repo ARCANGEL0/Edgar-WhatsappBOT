@@ -12739,13 +12739,13 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .join("\n");
     // Update the current question and answer
     
-global.quiz = { 
-  m.chat: {
+global.quiz[id] = { 
+ 
   math: false,
   "cp": Pergunta,
   "ca": Resposta,
   "cm": Motivo
-  }
+  
 }
 console.log(global.quiz)
 console.log(selectedCategoryIndex)
