@@ -1,4 +1,4 @@
-import math from 'mathjs';
+import * as math from 'mathjs';
 
 let handler = async (m, { conn, text }) => {
     let id = m.chat;
