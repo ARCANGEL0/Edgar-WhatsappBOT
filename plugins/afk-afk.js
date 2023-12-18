@@ -3,9 +3,7 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   let id = m.chat;
 
   // Check if it's a specific chat where AFK status needs to be set
-  if (m.chat !== 'your_specific_chat_id') {
-    return; // Exit function if not the specified chat
-  }
+
 
   if (args.length >= 1) {
     text = args.slice(0).join(" ");
