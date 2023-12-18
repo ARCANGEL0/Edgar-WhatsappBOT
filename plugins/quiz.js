@@ -32,7 +32,7 @@ return list[Math.floor(list.length * Math.random())]}
         'Direito'
         // Adicione mais categorias conforme necessário
     ];
-    
+    let id = m.chat;
     let currentQuestion = "";
 let currentAnswer = "";
 
@@ -12739,11 +12739,13 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .join("\n");
     // Update the current question and answer
     
-global.quiz = {
+global.quiz = { 
+  id:{
   math: false,
   "cp": Pergunta,
   "ca": Resposta,
   "cm": Motivo
+  }
 }
 console.log(selectedCategoryIndex)
 if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
