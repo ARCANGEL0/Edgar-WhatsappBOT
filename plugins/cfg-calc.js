@@ -10,43 +10,7 @@ let handler = async (m, { conn, text }) => {
        // Check if the user is attempting a limit calculation
 // Check if the user is attempting a limit calculation
 // Check if the user is attempting a limit calculation
-if (text.startsWith("lim ")) {
-    try {
-        // Extract the expression, value, and approaching from the input
-        let match = /lim .*?->(.*)/.exec(text);
 
-        if (!match || match.length < 2) {
-            throw "Invalid format for limit calculation.";
-        }
-
-        let expression = match[1].trim();
-        let value = 'x'; // default value
-        let approaching = 'undefined';
-
-        // Extract value and approaching if provided
-        let valueMatch = /(.*) \((.*)\) \/ \((.*)\)/.exec(expression);
-
-        if (valueMatch && valueMatch.length === 4) {
-            value = valueMatch[2].trim();
-            approaching = valueMatch[3].trim();
-            expression = valueMatch[1].trim();
-        }
-
-        console.log("Expression:", expression);
-        console.log("Value:", value);
-        console.log("Approaching:", approaching);
-
-        // Calculate the limit using the provided values
-        let result = limit(2, "(x^2 - 4)/(x - 2)");
-
-        m.reply(`Limit of *(${expression}) / (${value})* as x approaches ${approaching} is _${result}_`);
-    } catch (e) {
-        console.log(e);
-        m.reply(`${fg}Error calculating the limit. Make sure the expression is correct and try again.`);
-    }
-} 
-
-else {
             // Regular calculation logic
             let val = text
                 .replace(/[^0-9\-\/+*×÷^πEe()%!.]/g, '')
@@ -85,7 +49,7 @@ else {
             }
         }
     }
-}
+
 
 function factorial(n) {
     n = parseInt(n);
@@ -94,23 +58,6 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-function limit(approach, expression) {
-    // Replace occurrences of 'x' with the approach value
-    const substitutedExpression = expression.replace(/x/g, approach);
-
-    // Use eval to evaluate the expression
-    const numerator = eval(substitutedExpression);
-
-    // Check for division by zero
-    if (approach !== 2) {
-        const denominator = approach - 2;
-        const result = numerator / denominator;
-        return result;
-    } else {
-        // Handle the case where the denominator is zero separately
-        return "Undefined (division by zero)";
-    }
-}
 
 
 
