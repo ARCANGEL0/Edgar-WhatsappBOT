@@ -12748,7 +12748,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   } 
   else {
     // Save the current time for the new question
-    lastQuestionTime = currentTime;
+    
 
     // Rest of your code for generating and sending the question goes here
     const perguntaObj = pickRandom(selectedPerguntasArray);
@@ -12773,6 +12773,7 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
+lastQuestionTime = currentTime
   }
 }
 
