@@ -4,8 +4,8 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn }) {
   let user = global.db.data.users[m.sender];
 
   // Check if it's a specific chat where the AFK status needs to be checked
-console.log(user.afkChat)
-console.log(user.afkChat.includes(m.chat))
+console.log(global.db.data.users[m.sender])
+console.log("tetse varalhooo " + user.afkChat.includes(m.chat))
 try {
   if (user.afk > -1 && Array.isArray(user.afkChat) && user.afkChat.includes(m.chat)) {
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
