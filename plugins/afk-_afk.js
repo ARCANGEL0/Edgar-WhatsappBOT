@@ -6,7 +6,7 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn }) {
   // Check if it's a specific chat where the AFK status needs to be checked
 
 try {
-  if (user.afk > -1 ) {
+  if (user.afk > -1 && Array.isArray(user.afkChat) && user.afkChat.includes(m.chat)) {
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
     *@${m.sender.split("@")[0]}*
     ${lenguajeGB['smsAfkM1']()}
@@ -15,7 +15,9 @@ try {
     ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afk).toTimeString()}*`.trim(), m, { mentions: [m.sender] })
     user.afk = -1;
     user.afkReason = '';
-    user.afkChat = '';
+    if (Array.isArray(user.afkChat)) {
+  user.afkChat = user.afkChat.filter(chatId => chatId !== m.chat);
+}
   }
 
   let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])];
