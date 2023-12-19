@@ -32,13 +32,13 @@ console.log("tetse varalhooo " + user.afkChat.includes(m.chat))
     if (!afkTime || afkTime < 0) continue;
 
     let reason = user.afkReason || '';
-    console.log(global.db.data.users[m.sender].afkChat)
+    
     console.log(m.chat)
     // Check if the AFK status is set for the specific chat
-    if (user.afkChat && user.afkChat !== m.chat) {
+    if (user.afkChat && !user.afkChat.includes(m.chat) {
       continue; // Skip processing if AFK status is set for another chat
     }
-if(global.db.data.users[m.sender].afkChat.includes(m.chat)){
+if( global.db.data.users[m.sender].afk > -1 && global.db.data.users[m.sender].afkChat.includes(m.chat)){
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
     ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
