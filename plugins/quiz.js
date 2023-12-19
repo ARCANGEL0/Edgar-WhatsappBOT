@@ -12736,9 +12736,8 @@ const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const currentTime = Date.now();
-  console.log("Current Time (Date.now()):", Date.now());
-  console.log("Current Time:", currentTime);
+  const currentTime = +new Date
+  console.log("Current Time:", new Date.toTimeString());
 console.log("Last Question Time:", lastQuestionTime);
 console.log("Time Since Last Question:", currentTime - lastQuestionTime);
 
