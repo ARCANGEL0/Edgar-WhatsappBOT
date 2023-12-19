@@ -12737,7 +12737,7 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = +new Date
-  console.log("Current Time:", new Date.toTimeString());
+  console.log("Current Time:", new Date);
 console.log("Last Question Time:", lastQuestionTime);
 console.log("Time Since Last Question:", currentTime - lastQuestionTime);
 
