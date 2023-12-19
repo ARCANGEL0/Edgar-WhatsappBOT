@@ -12723,7 +12723,65 @@ const perguntasDireito = [
     ]
     
         
-   
+   // Assuming you have these variables defined somewhere in your script
+let lastQuestionTime = 0; // Variable to track the time of the last question
+const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+
+// Your existing code...
+
+const selectedCategory = categories[selectedCategoryIndex];
+const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
+
+if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
+  const currentTime = Date.now();
+
+  if (currentTime - lastQuestionTime < delayBetweenQuestions) {
+    // If the user attempts to ask a question too soon, provide a warning
+    const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
+    await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
+  } else {
+    const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+
+    // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+    };
+
+    console.log(global.quiz[m.chat]);
+    console.log(selectedCategoryIndex);
+
+    if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
+
+    console.log(global.quiz);
+    console.log('pergunta   ' + Resposta);
+
+    // Send the question
+    await m.reply(`
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+${optionsString}
+
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+╰━━━━━━━━━━━━━━━━━━⬣`);
+
+    // Update the last question time after sending the question
+    lastQuestionTime = currentTime;
+  }
+}
 }
     else if(text === "r"){
       await m.reply(`
