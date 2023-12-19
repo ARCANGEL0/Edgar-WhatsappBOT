@@ -12737,8 +12737,13 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Date.now();
+  
+  console.log(lastQuestionTime)
 console.log(currentTime)
+
+
   if (currentTime - lastQuestionTime < delayBetweenQuestions) {
+    console.log("ok")
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
     console.log(remainingTime)
