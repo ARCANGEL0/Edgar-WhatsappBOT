@@ -5,6 +5,7 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   user.afkChat = []; // Initialize as an array if not already
 }
 
+console.log(user.afkChat)
   // Check if it's a specific chat where AFK status needs to be set
 
 
