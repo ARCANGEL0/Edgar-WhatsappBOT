@@ -4,6 +4,10 @@ const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
+
+let lastQuestionTime = 0; // Variable to track the time of the last question
+const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+
   const categories = [
         'Geral',
         'Historia',
@@ -12724,8 +12728,7 @@ const perguntasDireito = [
     
         
    // Assuming you have these variables defined somewhere in your script
-let lastQuestionTime = 0; // Variable to track the time of the last question
-const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+
 
 // Your existing code...
 
@@ -12783,6 +12786,8 @@ ${optionsString}
     lastQuestionTime = currentTime;
   }
 }
+
+
 }
     else if(text === "r"){
       await m.reply(`
