@@ -3,9 +3,8 @@ let handler = m => m;
 handler.before = async function (m, { text, args, usedPrefix, command, conn }) {
   let user = global.db.data.users[m.sender];
 
-  // Check if it's a specific chat where the AFK status needs to be checked
-console.log(global.db.data.users[m.sender])
-console.log("tetse varalhooo " + user.afkChat.includes(m.chat))
+  // Check if it's a specific chat where the AFK status needs to be checkedc
+
 try {
   if (user.afk > -1 && Array.isArray(user.afkChat) && user.afkChat.includes(m.chat)) {
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
@@ -22,7 +21,7 @@ try {
   }
 
   let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])];
-
+console.log("tetse varalhooo " + user.afkChat.includes(m.chat))
   for (let jid of jids) {
     let user = global.db.data.users[jid];
 
