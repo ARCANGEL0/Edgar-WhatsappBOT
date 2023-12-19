@@ -12785,10 +12785,10 @@ ${optionsString}
     else if(text === "r"){
       await m.reply(`
 ╭━━━━━━━━━⬣
-💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz.ca}
+💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
 ┃ ─┅──┅❖ 
 
-${global.quiz.cm}
+${global.quiz[m.chat].cm}
 
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
