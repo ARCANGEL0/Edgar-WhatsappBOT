@@ -12738,6 +12738,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   if (currentTime - lastQuestionTime < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
+    console.log(remainingTime)
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
