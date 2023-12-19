@@ -18,9 +18,6 @@ console.log(user.afkChat)
   if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`);
   
   // Check if the AFK status is set for the specific chat
-  if (user.afk > -1 && Array.isArray(user.afkChat) && !user.afkChat.includes(m.chat)) {
-  return; // Exit function if AFK status is set for another chat
-}
 
   user.afk = +new Date;
   user.afkReason = text;
