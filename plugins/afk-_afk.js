@@ -5,6 +5,7 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn }) {
 
   // Check if it's a specific chat where the AFK status needs to be checked
 console.log(user.afkChat)
+console.log(user.afkChat.includes(m.chat))
 try {
   if (user.afk > -1 && Array.isArray(user.afkChat) && user.afkChat.includes(m.chat)) {
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
@@ -38,7 +39,7 @@ try {
     if (user.afkChat && user.afkChat !== m.chat) {
       continue; // Skip processing if AFK status is set for another chat
     }
-if(global.db.data.users[m.sender].afkChat== m.chat){
+if(global.db.data.users[m.sender].afkChat.includes(chat)){
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
     ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
