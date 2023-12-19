@@ -5,7 +5,7 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn }) {
 
   // Check if it's a specific chat where the AFK status needs to be checked
 
-
+console.log("test" + user.afkChat)
   if (user.afk > -1) {
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
     *@${m.sender.split("@")[0]}*
