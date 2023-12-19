@@ -4,10 +4,6 @@ const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
-
-const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
-
-
   const categories = [
         'Geral',
         'Historia',
@@ -12741,30 +12737,27 @@ else {
   lastQuestionTime = currentTime;
 
   // Your existing logic for picking and sending the question goes here
-const selectedCategory = categories[selectedCategoryIndex]; 
-const selectedPerguntasArray = eval(perguntas${selectedCategory.replace(/\s+/g, '')});
-// Dynamically get the array based on category
-if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const perguntaObj = pickRandom(selectedPerguntasArray);
-  const { Pergunta, Opcoes, Resposta , Motivo} = perguntaObj; 
-  const optionsString = Object.entries(Opcoes).map(([key, value]) => ${key}: ${value}) .join("\n"); // Update the current question and answer
-  global.quiz[m.chat] = {
-    math: false,
-    "cp": Pergunta,
-    "ca": Resposta, 
-    "cm": Motivo
-    
-  } 
-  console.log(global.quiz[m.chat])
-  console.log(selectedCategoryIndex)
-  
-  if (selectedCategoryIndex==11 || selectedCategory == 'Matematica'){ global.quiz[id].math = true } else { global.quiz[id].math = false }
-    
+
   // Adapted code for the next question
   // ...
 
   // Update the current question and answer
-  
+  global.quiz[m.chat] = {
+    math: false,
+    "cp": nextPergunta,
+    "ca": nextResposta,
+    "cm": nextMotivo,
+  };
+
+if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
+  global.quiz[id].math = true
+} else {
+  global.quiz[id].math = false
+}
+
+console.log(global.quiz)
+
+console.log('pergunta   '  + Resposta)
 
 
 
@@ -12789,9 +12782,9 @@ ${optionsString}
   // (Send the next question after the delay)
   // ...
 }       
-        
+    }     
 // yeste 
-   
+        
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
