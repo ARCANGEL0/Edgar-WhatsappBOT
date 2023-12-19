@@ -37,7 +37,7 @@ try {
     if (user.afkChat && user.afkChat !== m.chat) {
       continue; // Skip processing if AFK status is set for another chat
     }
-
+if(user.afkChat == m.chat){
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
     ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
@@ -46,6 +46,7 @@ try {
     ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
 
     ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+  }
   }
 
   return true;
