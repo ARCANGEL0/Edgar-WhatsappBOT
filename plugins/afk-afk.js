@@ -5,7 +5,7 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   user.afkChat = []; // Initialize as an array if not already
 }
 
-console.log(user.afkChat)
+console.log('test  '+user)
   // Check if it's a specific chat where AFK status needs to be set
 
 
@@ -22,7 +22,9 @@ console.log(user.afkChat)
   user.afk = +new Date;
   user.afkReason = text;
   
-user.afkChat.push(m.chat);
+if (!user.afkChat.includes(m.chat)) {
+  user.afkChat.push(m.chat);
+}
 
   await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
