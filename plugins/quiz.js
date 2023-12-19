@@ -12723,64 +12723,7 @@ const perguntasDireito = [
     ]
     
         
-        
-        
-
-        const selectedCategory = categories[selectedCategoryIndex];
-const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
-
-if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  
-  
-  const perguntaObj = pickRandom(selectedPerguntasArray);
-    const { Pergunta, Opcoes, Resposta , Motivo} = perguntaObj;
-    const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
-    // Update the current question and answer
-    
-global.quiz[m.chat] = { 
- 
-  math: false,
-  "cp": Pergunta,
-  "ca": Resposta,
-  "cm": Motivo
-  
-}
-console.log(global.quiz[m.chat])
-console.log(selectedCategoryIndex)
-if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
-  global.quiz[id].math = true
-} else {
-  global.quiz[id].math = false
-}
-
-console.log(global.quiz)
-
-console.log('pergunta   '  + Resposta)
-
-
-
-      // Add a callback event to the message
-      
-
-    // Add a callback event to the message
-    
-    await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-╰━━━━━━━━━━━━━━━━━━⬣`)
-  
-  
-
-
-};
+   
 }
     else if(text === "r"){
       await m.reply(`
