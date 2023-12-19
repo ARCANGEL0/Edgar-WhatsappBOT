@@ -2,7 +2,7 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   let user = global.db.data.users[m.sender];
   let id = m.chat;
   if (!Array.isArray(user.afkChat)) {
-  user.afkChat = []; // Initialize as an array if not already
+  user.afkChat = [m.chat]; // Initialize as an array if not already
 }
 
 console.log(user.afkChat)
