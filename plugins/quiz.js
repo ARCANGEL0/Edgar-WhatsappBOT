@@ -12741,7 +12741,12 @@ else {
   lastQuestionTime = currentTime;
 
   // Your existing logic for picking and sending the question goes here
-
+const nextPerguntaObj = pickRandom(selectedPerguntasArray);
+  const { Pergunta: nextPergunta, Opcoes: nextOpcoes, Resposta: nextResposta, Motivo: nextMotivo } = nextPerguntaObj;
+  const nextOptionsString = Object.entries(nextOpcoes)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join("\n");
+    
   // Adapted code for the next question
   // ...
 
