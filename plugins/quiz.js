@@ -12750,6 +12750,7 @@ console.log("Time Since Last Question:", currentTime - lastQuestionTime);
     console.log(remainingTime)
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } else {
+    lastQuestionTime = Date.now()
     const perguntaObj = pickRandom(selectedPerguntasArray);
     const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
     const optionsString = Object.entries(Opcoes)
@@ -12789,7 +12790,7 @@ ${optionsString}
 ╰━━━━━━━━━━━━━━━━━━⬣`);
 
     // Update the last question time after sending the question
-    lastQuestionTime = currentTime;
+    
   }
 }
 
