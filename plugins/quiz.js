@@ -12722,8 +12722,7 @@ const perguntasDireito = [
     },
     ]
     
-        
- let lastQuestionTime = 0; // Variable to track the time of the last question
+   let lastQuestionTime = 0; // Variable to track the time of the last question
 
 // Inside your existing logic, after sending a question
 const currentTime = Date.now();
@@ -12760,28 +12759,6 @@ console.log(global.quiz)
 console.log('pergunta   '  + Resposta)
 
 
-
-      // Add a callback event to the message
-      
-
-    // Add a callback event to the message
-    
-    await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-╰━━━━━━━━━━━━━━━━━━⬣`)
-  
-  
-  // ...
-  // (Send the next question after the delay)
-  // ...
-}       
     }     
 // yeste 
         
