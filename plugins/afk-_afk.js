@@ -32,7 +32,8 @@ try {
     if (!afkTime || afkTime < 0) continue;
 
     let reason = user.afkReason || '';
-    
+    console.log(global.db.data.users[m.sender].afkChat)
+    console.log(m.chat)
     // Check if the AFK status is set for the specific chat
     if (user.afkChat && user.afkChat !== m.chat) {
       continue; // Skip processing if AFK status is set for another chat
