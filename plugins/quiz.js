@@ -12735,46 +12735,32 @@ const perguntasDireito = [
 const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
-if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const currentTime = +new Date
-  console.log("Current Time:", new Date);
-console.log("Last Question Time:", lastQuestionTime);
-console.log("Time Since Last Question:", currentTime - lastQuestionTime);
+const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+let lastQuestionTime = 0; // Initialize last question time
 
+if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
+  const currentTime = +new Date();
 
   if (currentTime - lastQuestionTime < delayBetweenQuestions) {
-    console.log("ok")
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
-    console.log(remainingTime)
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
-  } else {
-    lastQuestionTime = +new Date
+  } 
+  else {
+    // Save the current time for the new question
+    lastQuestionTime = currentTime;
+
+    // Rest of your code for generating and sending the question goes here
     const perguntaObj = pickRandom(selectedPerguntasArray);
-    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
-    const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
+    // ...
 
     // Update the current question and answer
     global.quiz[m.chat] = {
-      math: false,
+      math: selectedCategoryIndex == 11 || selectedCategory == 'Matematica',
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
     };
-
-    console.log(global.quiz[m.chat]);
-    console.log(selectedCategoryIndex);
-
-    if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
-    } else {
-      global.quiz[id].math = false;
-    }
-
-    console.log(global.quiz);
-    console.log('pergunta   ' + Resposta);
 
     // Send the question
     await m.reply(`
@@ -12787,14 +12773,10 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
-
-    // Update the last question time after sending the question
-    
   }
 }
 
 
-}
     else if(text === "r"){
       await m.reply(`
 ╭━━━━━━━━━⬣
