@@ -4,6 +4,10 @@ const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
+
+const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+
+
   const categories = [
         'Geral',
         'Historia',
