@@ -39,7 +39,7 @@ try {
     if (user.afkChat && user.afkChat !== m.chat) {
       continue; // Skip processing if AFK status is set for another chat
     }
-if(global.db.data.users[m.sender].afkChat.includes(chat)){
+if(global.db.data.users[m.sender].afkChat.includes(m.chat)){
     await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
     ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
