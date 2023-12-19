@@ -4,8 +4,6 @@ const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
-let lastQuestionTime = {};
-
   const categories = [
         'Geral',
         'Historia',
@@ -12727,61 +12725,92 @@ const perguntasDireito = [
         
         
         
-// Add a global variable to track the last time a question was set
 
-// ... Your existing code ...
+        const selectedCategory = categories[selectedCategoryIndex];
+const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  // Check if enough time has passed since the last question
-  const currentTime = new Date().getTime();
-  const lastTime = lastQuestionTime[m.chat] || 0;
-  const timeDifference = currentTime - lastTime;
-
-  if (timeDifference < 45000) { // If less than 45 seconds have passed
-    const remainingTime = Math.ceil((45000 - timeDifference) / 1000);
-    await m.reply(`Please wait ${remainingTime} seconds before asking another question.`);
-    return; // Exit the function without setting a new question
-  }
-else{
+  
+  
   const perguntaObj = pickRandom(selectedPerguntasArray);
-  const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
-  const optionsString = Object.entries(Opcoes)
-    .map(([key, value]) => `${key}: ${value}`)
-    .join("\n");
-
-  global.quiz[m.chat] = {
-    math: false,
-    "cp": Pergunta,
-    "ca": Resposta,
-    "cm": Motivo,
-  };
-
-  console.log(global.quiz[m.chat]);
-  console.log(selectedCategoryIndex);
-
-  if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-    global.quiz[id].math = true;
-  } else {
-    global.quiz[id].math = false;
-  }
-
-  console.log(global.quiz);
-  console.log('pergunta   ' + Resposta);
-
-  await m.reply(`
-    ╭━━━『 ${selectedCategory} 』━━━⬣
-    ┃
-    ┃ ${Pergunta}
-    ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-    ${optionsString}
-    ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-    ╰━━━━━━━━━━━━━━━━━━⬣`);
+    const { Pergunta, Opcoes, Resposta , Motivo} = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+    // Update the current question and answer
+    
+global.quiz[m.chat] = { 
+ 
+  math: false,
+  "cp": Pergunta,
+  "ca": Resposta,
+  "cm": Motivo
+  
 }
-  // Update the last question time
-  lastQuestionTime[m.chat] = currentTime;
-
-  // ... The rest of your existing code ...
+console.log(global.quiz[m.chat])
+console.log(selectedCategoryIndex)
+if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
+  global.quiz[id].math = true
+} else {
+  global.quiz[id].math = false
 }
+
+console.log(global.quiz)
+
+console.log('pergunta   '  + Resposta)
+
+
+
+      // Add a callback event to the message
+      
+
+    // Add a callback event to the message
+    
+    await m.reply(`
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+${optionsString}
+
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+╰━━━━━━━━━━━━━━━━━━⬣`)
+  
+  
+
+
+};
+}
+    else if(text === "r"){
+      await m.reply(`
+╭━━━━━━━━━⬣
+💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz.ca}
+┃ ─┅──┅❖ 
+
+${global.quiz.cm}
+
+╰━━━━━━━━━━━━━━━━━━⬣
+      `)
+    }
+    else {
+      
+      const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
+
+    throw `
+╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
+┃ 
+┃ 🥀🦇 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐭ó𝐩𝐢𝐜𝐨 𝐣𝐚𝐳 
+┃ 𝐞𝐦 𝐬𝐞𝐮𝐬 𝐩𝐞𝐧𝐬𝐚𝐦𝐞𝐧𝐭𝐨𝐬 
+┃ 𝐜𝐮𝐫𝐢𝐨𝐬𝐨𝐬
+┃
+${categoryList}
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`;
+
+    }
 }
 }
 
