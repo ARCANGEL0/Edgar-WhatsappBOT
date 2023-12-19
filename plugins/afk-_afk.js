@@ -46,9 +46,11 @@ try {
   }
 
   return true;
-}
+
 }
 catch(e){
   console.log(e)
+}
+
 }
 export default handler;
