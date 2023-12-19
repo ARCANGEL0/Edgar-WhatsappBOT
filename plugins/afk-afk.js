@@ -2,9 +2,9 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   let user = global.db.data.users[m.sender];
   let id = m.chat;
   if (!Array.isArray(user.afkChat)) {
-  user.afkChat = [m.chat]; // Initialize as an array if not already
+  user.afkChat = []; // Initialize as an array if not already
 }
-console.log(m.chat)
+
 console.log(user.afkChat)
   // Check if it's a specific chat where AFK status needs to be set
 
@@ -18,7 +18,7 @@ console.log(user.afkChat)
   if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`);
   
   // Check if the AFK status is set for the specific chat
-  if (Array.isArray(user.afkChat) && !user.afkChat.includes(m.chat)) {
+  if (user.afk > -1 && Array.isArray(user.afkChat) && !user.afkChat.includes(m.chat)) {
   return; // Exit function if AFK status is set for another chat
 }
 
