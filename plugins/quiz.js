@@ -12446,7 +12446,6 @@ public class WordFrequencyCounter {
     
     
     ]
-console.log(global.quiz)
 
 const perguntasDireito = [
       
@@ -12760,7 +12759,6 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       "ca": Resposta,
       "cm": Motivo,
     };
-console.log("test")
     // Send the question
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
