@@ -5,8 +5,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
-let lastQuestionTime = 0; // Variable to track the time of the last question
-const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+
 
   const categories = [
         'Geral',
@@ -12761,7 +12760,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       "ca": Resposta,
       "cm": Motivo,
     };
-
+console.log("test")
     // Send the question
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
