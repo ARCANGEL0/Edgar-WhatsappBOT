@@ -14,13 +14,14 @@ let handler = async (m, { text, args, usedPrefix, command, conn }) => {
   if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`);
   
   // Check if the AFK status is set for the specific chat
-  if (user.afkChat && user.afkChat !== m.chat) {
-    return; // Exit function if AFK status is set for another chat
-  }
+  if (Array.isArray(user.afkChat) && !user.afkChat.includes(m.chat)) {
+  return; // Exit function if AFK status is set for another chat
+}
 
   user.afk = +new Date;
   user.afkReason = text;
-  user.afkChat = m.chat; // Set the AFK chat ID
+  
+user.afkChat.push(m.chat);
 
   await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
