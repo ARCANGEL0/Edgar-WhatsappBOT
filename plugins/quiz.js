@@ -12722,32 +12722,33 @@ const perguntasDireito = [
     },
     ]
     
-   let lastQuestionTime = 0; // Variable to track the time of the last question
+        
+        
+        
 
-// Inside your existing logic, after sending a question
-const currentTime = Date.now();
-if (currentTime - lastQuestionTime < delayBetweenQuestions) {
-  // If the user attempts to ask a question too soon, provide a warning
-  const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
-  await m.reply(`⚠️  ${remainingTime} segundos`);
+        const selectedCategory = categories[selectedCategoryIndex];
+const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
+
+if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
+  
+  
+  const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta , Motivo} = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+    // Update the current question and answer
+    
+global.quiz[m.chat] = { 
+ 
+  math: false,
+  "cp": Pergunta,
+  "ca": Resposta,
+  "cm": Motivo
+  
 }
-else {
-  // User can proceed with the question
-  lastQuestionTime = currentTime;
-
-  // Your existing logic for picking and sending the question goes here
-
-  // Adapted code for the next question
-  // ...
-
-  // Update the current question and answer
-  global.quiz[m.chat] = {
-    math: false,
-    "cp": nextPergunta,
-    "ca": nextResposta,
-    "cm": nextMotivo,
-  };
-
+console.log(global.quiz[m.chat])
+console.log(selectedCategoryIndex)
 if(selectedCategoryIndex==11 || selectedCategory == 'Matematica'){
   global.quiz[id].math = true
 } else {
@@ -12759,9 +12760,39 @@ console.log(global.quiz)
 console.log('pergunta   '  + Resposta)
 
 
-    }     
-// yeste 
-        
+
+      // Add a callback event to the message
+      
+
+    // Add a callback event to the message
+    
+    await m.reply(`
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+${optionsString}
+
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+╰━━━━━━━━━━━━━━━━━━⬣`)
+  
+  
+
+
+};
+}
+    else if(text === "r"){
+      await m.reply(`
+╭━━━━━━━━━⬣
+💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz.ca}
+┃ ─┅──┅❖ 
+
+${global.quiz.cm}
+
+╰━━━━━━━━━━━━━━━━━━⬣
+      `)
+    }
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
