@@ -396,6 +396,17 @@ throw false
 chat.simi = isEnable
 break
 
+case 'quiz':
+case 'quizxp':
+case 'competicao':
+isAll = true;
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn);
+throw false;
+}
+bot.quizxp = isEnable;      
+break;      
+
 case 'modoia':
 case 'chatgpt':
 case 'ia':
@@ -406,6 +417,7 @@ throw false;
 }
 bot.modoia = isEnable;      
 break;      
+
       case 'bot':
 isAll = true;
 if (!isOwner) {
