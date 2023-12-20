@@ -12841,7 +12841,7 @@ ${global.quiz.cm}
       `)
     }
     else if(text=== "xp"){
-      await m.reply(text[1])
+      await m.reply(m.text)
     }
     else {
       
