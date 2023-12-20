@@ -12768,7 +12768,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     }
 
     
-    console.log('ghhh   ' + new Date.getTime());
+    console.log('ghhh   ' + new Date().getTime());
 
     // Send the question
     await m.reply(`
