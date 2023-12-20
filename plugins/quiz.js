@@ -12773,7 +12773,7 @@ ${optionsString}
 lastQuestionTime = currentTime
   }
 }
-}}
+}
 
     else if(text === "r"){
       await m.reply(`
