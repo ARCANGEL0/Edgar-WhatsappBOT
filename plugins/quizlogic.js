@@ -12,7 +12,7 @@ global.quizxp = global.quizxp ? global.quizxp : {}
 global.xppergunta= global.xppergunta ? global.xppergunta : ""
 
 
-    
+    console.log(m.quoted)
     if (!(global.xppergunta)) return m.reply('terminado!')
     if (m.quoted) {
         
