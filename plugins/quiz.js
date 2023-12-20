@@ -12749,7 +12749,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");c
+      .join("\n");
     // Update the current question and answer
     global.quiz[m.chat] = {
       math: false,
