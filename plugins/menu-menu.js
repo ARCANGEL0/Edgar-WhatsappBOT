@@ -110,7 +110,7 @@ let menujogos = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
 ┃🐈‍⬛➺ _${usedPrefix}poemas_
-┃🐈‍⬛➺ _${usedPrefix}culturagotica_
+┃🐈‍⬛➺ _${usedPrefix}morceguices_
 ┃🐈‍⬛➺ _${usedPrefix}biografia_ 
 ┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
@@ -323,7 +323,7 @@ let menuall = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
 ┃🐈‍⬛➺ _${usedPrefix}quiz_
 ┃🐈‍⬛➺ _${usedPrefix}poemas_
-┃🐈‍⬛➺ _${usedPrefix}culturagotica_
+┃🐈‍⬛➺ _${usedPrefix}morceguices_
 ┃🐈‍⬛➺ _${usedPrefix}biografia_ 
 ┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━━━━━━━━⬣*
