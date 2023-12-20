@@ -12721,7 +12721,11 @@ const perguntasDireito = [
     
         
    // Assuming you have these variables defined somewhere in your script
-
+if(!global.quizxp[m.chat]){
+  global.quizxp[m.chat] = {
+    "modo": false
+  }
+}
 
 // Your existing code...
 
