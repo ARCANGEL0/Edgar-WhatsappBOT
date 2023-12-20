@@ -12756,18 +12756,6 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
 
-    // Update the current question and answer
-    global.quiz[m.chat] = {
-      math: selectedCategoryIndex === 11 || selectedCategory === 'Matematica',
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-    };
-
-    console.log(global.quiz[m.chat]);
-
-    console.log('ghhh   ' + new Date().getTime());
-
     // Send the question
     await m.reply(`
       ╭━━━『 ${selectedCategory} 』━━━⬣
@@ -12779,13 +12767,14 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
       ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
       ╰━━━━━━━━━━━━━━━━━━⬣`);
-    lastQuestionTime = currentTime;  // Update last question time after sending a new question
+
+    // Update the last question time after sending a new question
+    lastQuestionTime = Math.floor(new Date().getTime() / 1000);
 
     // Additional code specific to your application logic can go here...
     // For example, you might want to handle user responses or perform other actions.
   }
 }
-
 
 }
     else if(text === "r"){
