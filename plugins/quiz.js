@@ -12743,7 +12743,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
 
-  const timeDifference = currentTime - global.quiz[m.chat].time;
+  const timeDifference = global.quiz[m.chat].time - currentTime;
   console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
 
