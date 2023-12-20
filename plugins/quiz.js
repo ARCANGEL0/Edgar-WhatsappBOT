@@ -12735,57 +12735,36 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 
 const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
 let lastQuestionTime = 0; // Initialize last question time
-let currentTime = new Date().getTime()
-console.log("tempo c    " + (currentTime - lastQuestionTime < delayBetweenQuestions))
-if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  
 
+let currentTime = new Date().getTime();
+console.log("Current Time: " + currentTime);
+
+console.log("Time Difference: " + (currentTime - lastQuestionTime));
+console.log("Delay: " + delayBetweenQuestions);
+
+if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   if (currentTime - lastQuestionTime < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
-    const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000); // Remaining time in seconds
+    const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000);
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
-  } 
-  else {
-  const perguntaObj = pickRandom(selectedPerguntasArray);
-    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
-    const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
-    // Update the current question and answer
-    global.quiz[m.chat] = {
-      math: false,
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-    };
+  } else {
+    // Rest of your code...
 
-    console.log(global.quiz[m.chat]);
-    console.log(selectedCategoryIndex);
-
-    if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
-    } else {
-      global.quiz[id].math = false;
-    }
-
-    
     console.log('ghhh   ' + new Date().getTime());
 
     // Send the question
     await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+      ╭━━━『 ${selectedCategory} 』━━━⬣
+      ┃
+      ┃ ${Pergunta}
+      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 
-${optionsString}
+      ${optionsString}
 
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-╰━━━━━━━━━━━━━━━━━━⬣`);
-lastQuestionTime = currentTime
-
+      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+      ╰━━━━━━━━━━━━━━━━━━⬣`);
+    lastQuestionTime = currentTime;  // Update last question time after sending a new question
   }
-}
 }
 
     else if(text === "r"){
