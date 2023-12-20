@@ -12772,15 +12772,15 @@ await m.reply(`⚠️ Please wait ${remainingTimeInSeconds} seconds before askin
     
     // Send the question
     await m.reply(`
-      ╭━━━『 ${selectedCategory} 』━━━⬣
-      ┃
-      ┃ ${Pergunta}
-      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 
-      ${optionsString}
+${optionsString}
 
-      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-      ╰━━━━━━━━━━━━━━━━━━⬣`);
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+╰━━━━━━━━━━━━━━━━━━⬣`);
 
     // Update the last question time after sending a new question
     
