@@ -12846,7 +12846,7 @@ let user = global.db.data.users[m.sender];
 if (matches) {
   const status = matches[1]; // "on" or "off"
   // Now you can use the 'status' variable as 
-console.log(user)
+console.log(user?.isAdmin)
   await m.reply(`Quiz XP  ${status}`);} 
   
 
