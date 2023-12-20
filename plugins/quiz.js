@@ -12842,17 +12842,14 @@ ${global.quiz.cm}
     }
     else if( text.includes("xp") ){
       const matches = m.text.match(/\.quiz xp (on|off)/);
-
+let user = global.db.data.users[m.sender];
 if (matches) {
   const status = matches[1]; // "on" or "off"
-  // Now you can use the 'status' variable as needed
-  if (!(isAdmin || isOwner)) {
-await m.reply("nao tem admin")
-} 
-else {
+  // Now you can use the 'status' variable as 
+console.log(user)
   await m.reply(`Quiz XP  ${status}`);} 
   
-}
+
 
 else {
   // Handle the case when the pattern is not found
