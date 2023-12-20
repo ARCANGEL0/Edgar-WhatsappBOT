@@ -12738,19 +12738,54 @@ const delayBetweenQuestions = 45; // 45 seconds
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
+  
+  if(global.quiz[m.chat].time != null) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
-if (global.quiz[m.chat].time){
+
   const timeDifference = currentTime - global.quiz[m.chat].time;
   console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
-}
+
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
+  } 
+  else {
+    const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+
+ // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "time": new Date().getTime()
+    };
+    
+    // Send the question
+    await m.reply(`
+      ╭━━━『 ${selectedCategory} 』━━━⬣
+      ┃
+      ┃ ${Pergunta}
+      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+      ${optionsString}
+
+      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+      ╰━━━━━━━━━━━━━━━━━━⬣`);
+
+    // Update the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
   }
-  
+  }
   else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
     const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
