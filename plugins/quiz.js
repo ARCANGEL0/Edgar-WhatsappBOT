@@ -12817,7 +12817,7 @@ ${optionsString}
       ${optionsString}
 
       ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
+${global.quizxp[m.chat] ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
     // Updte the last question time after sending a new question
@@ -12852,11 +12852,11 @@ throw false
 } 
 else {
   if(status=="on"){
-    global.quizxp = true
+    global.quizxp[m.chat] = true
   }
   
  else if (status=="off"){
-   global.quizxp == false
+   global.quizxp[m.chat] == false
  }
   
 }
