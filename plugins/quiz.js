@@ -12875,7 +12875,7 @@ else {
    ━━━━━━━━━⬣ 🐈‍⬛ ${vs} ⬣━━━━━━━━`);
 }
     
-    
+    }  
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
