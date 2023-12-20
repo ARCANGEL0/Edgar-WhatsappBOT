@@ -12734,7 +12734,7 @@ const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
 const delayBetweenQuestions = 45; // 45 seconds
-let lastQuestionTime = 0; // Initialize last question time
+let lastQuestionTime; // Initialize last question time
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
