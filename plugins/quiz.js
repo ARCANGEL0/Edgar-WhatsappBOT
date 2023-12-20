@@ -12740,16 +12740,18 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
-
+if (global.quiz[m.chat].time){
   const timeDifference = currentTime - global.quiz[m.chat].time;
   console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
-
+}
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
-  } else {
+  }
+  
+  else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
     const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
     const optionsString = Object.entries(Opcoes)
