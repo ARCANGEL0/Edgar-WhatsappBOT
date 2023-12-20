@@ -12732,12 +12732,11 @@ const perguntasDireito = [
 
 const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
-
-const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
+const delayBetweenQuestions = 45; // 45 seconds
 let lastQuestionTime = 0; // Initialize last question time
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const currentTime = new Date().getTime();
+  const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + lastQuestionTime);
 
@@ -12747,7 +12746,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
-    const remainingTime = Math.ceil((delayBetweenQuestions - timeDifference) / 1000);
+    const remainingTime = delayBetweenQuestions - timeDifference;
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
@@ -12785,7 +12784,6 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     // For example, you might want to handle user responses or perform other actions.
   }
 }
-
 
 }
     else if(text === "r"){
