@@ -6,7 +6,7 @@ handler.before = async function (m) {
     let id = m.chat
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
     
-    
+    console.log(m.quoted.id)
     global.quiz = global.quiz ? global.quiz : {}
 global.quizxp = global.quizxp ? global.quizxp : {}
 global.xppergunta= global.xppergunta ? global.xppergunta : ""
