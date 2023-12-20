@@ -12749,6 +12749,20 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } else {
     // Rest of your code...
+   const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+
+    // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+    };
+
 
     console.log('ghhh   ' + new Date().getTime());
 
