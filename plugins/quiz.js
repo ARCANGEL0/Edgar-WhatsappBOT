@@ -6340,13 +6340,18 @@ public class WordFrequencyCounter {
     {
         "Pergunta": "Calcule a integral definida ∫(2x + 3)dx de 1 a 5.",
         "Opcoes": {
-            "A": "20",
-            "B": "22",
-            "C": "24",
-            "D": "26"
+            "A": "26",
+            "B": "32",
+            "C": "42",
+            "D": "36"
         },
-        "Resposta": "C",
-        "Motivo": "A integral definida de (2x + 3) de 1 a 5 é [x^2 + 3x] de 1 a 5, resultando em 24."
+        "Resposta": "D", 
+        "Motivo":`
+        ∫(2x + 3)dx = (x^2 + 3x) avaliada de 1 a 5
+        Avalie no limite superior (5): (5^2 + 3 * 5) = 25 + 15 = 40
+        Avalie no limite inferior (1): (1^2 + 3 * 1) = 1 + 3 = 4
+        Subtraia o limite inferior do superior: 40 - 4 = 36
+        Portanto, resposta D. 36`
     },
     {
         "Pergunta": "Resolva a equação diferencial dy/dx = 2x - 1.",
@@ -7361,10 +7366,10 @@ public class WordFrequencyCounter {
   {
     "Pergunta": "Qual é o gênero musical caracterizado por batidas rápidas, letras faladas e técnicas de scratch?",
     "Opcoes": {
-      A: "Reggae",
+      A: "Drum & Bass",
       B: "Hip Hop",
-      C: "Salsa",
-      D: "R&B"
+      C: "Rap",
+      D: "Reggaton"
     },
     "Resposta": "B",
     "Motivo": "Hip Hop é o gênero musical caracterizado por batidas rápidas, letras faladas (rap) e técnicas de scratch, originando-se nas comunidades urbanas."
@@ -12836,10 +12841,10 @@ ${optionsString}
     else if(text === "r"){
       await m.reply(`
 ╭━━━━━━━━━⬣
-💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz.ca}
+💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
 ┃ ─┅──┅❖ 
 
-${global.quiz.cm}
+${global.quiz[m.chat].cm}
 
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
@@ -12851,7 +12856,9 @@ if (matches) {
   const status = matches[1]; // "on" or "off"
   // Now you can use the 'status' variable as needed
   if (!(isAdmin || isOwner)) {
-await m.reply("nao tem admin")
+global.dfail('admin', m, conn)
+throw false
+
 } 
 else {
   await m.reply(`Quiz XP  ${status}`);} 
