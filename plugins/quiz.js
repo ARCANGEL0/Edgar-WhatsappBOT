@@ -1,6 +1,6 @@
 global.quiz = global.quiz ? global.quiz : {}
 global.quizxp = global.quizxp ? global.quizxp : {}
-
+global.xppergunta= global.xppergunta ? global.xppergunta : ""
 const handler = async (m, {conn, isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
@@ -12441,7 +12441,6 @@ public class WordFrequencyCounter {
     
     
     ]
-
 const perguntasDireito = [
       
        {
@@ -12737,7 +12736,7 @@ const delayBetweenQuestions = 45000; // 45 seconds
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = new Date().getTime() ; // Current time in seconds
-  
+  if(global.quizxp[m.chat].modo==false){
   if(global.quiz[m.chat] != null) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
@@ -12831,6 +12830,94 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     // Additional code specific to your application logic can go here...
     // For example, you might want to handle user responses or perform other actions.
   }
+  }
+  else if(global.quizxp[m.chat].modo==true){
+  
+  if (global.xppergunta==true) {
+    await m.reply(`
+     ━━━━━━━━━⬣ 💀 𝔔𝔲𝔦𝔷 💀 ⬣━━━━━━━━ 
+ 
+ 🪶📜    ℜ𝔢𝔰𝔭𝔬𝔫𝔡𝔞-𝔪𝔢 𝔞 𝔦𝔫𝔡𝔞𝔤𝔞𝔠𝔞𝔬 𝔞𝔫𝔱𝔢𝔯𝔦𝔬𝔯, 𝔡𝔢 𝔪𝔬𝔡𝔬 𝔞 𝔭𝔯𝔬𝔰𝔰𝔢𝔤𝔲𝔦𝔯 𝔞 𝔱𝔯𝔦𝔩𝔥𝔞 𝔫𝔢𝔰𝔱𝔢 𝔳𝔞𝔩𝔢 𝔡𝔢 𝔰𝔬𝔪𝔟𝔯𝔞𝔰 𝔡𝔬 𝔠𝔬𝔫𝔥𝔢𝔠𝔦𝔪𝔢𝔫𝔱𝔬
+     
+     ━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━
+    `)
+  }
+  else{  
+    if(global.quiz[m.chat] != null) {
+ 
+ 
+    const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+    global.xppergunta = true
+ // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "xp": 25,
+      "time": new Date().getTime()
+    };
+
+    // Send the question
+    await m.reply(`
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+${optionsString}
+
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+
+    // Update the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  
+  }
+  else {
+    const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo} = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+    global.xppergunta= true
+ // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "xp": 25,
+      "time": new Date().getTime()
+    };
+    console.log("test" + global.quizxp[m.chat].modo)
+    // Send the question
+    await m.reply(`
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+
+${optionsString}
+
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
+      `);
+
+    // Updte the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  }
+  } //fim estado pergunta
+  } // fim elseif if competitivo
+  
 }
 
 }
