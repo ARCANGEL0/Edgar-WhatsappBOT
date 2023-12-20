@@ -12922,6 +12922,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 
 }
     else if(text === "r"){
+      if(global )
       await m.reply(`
 ╭━━━━━━━━━⬣
 💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
@@ -12973,6 +12974,12 @@ else {
 }
     
     }  
+    else if(text.includes("placar") ) {
+      
+      
+      
+      
+    }
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
