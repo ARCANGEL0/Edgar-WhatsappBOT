@@ -12754,7 +12754,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
 await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 
-🕰️🕯️ 𝓐𝓰𝓾𝓪𝓻𝓭𝓪 𝓹𝓸𝓻 𝓮𝓽𝓮𝓻𝓷𝓸𝓼 𝓧 𝓼𝓮𝓰𝓾𝓷𝓭𝓸𝓼, 𝓪𝓷𝓽𝓮𝓼 𝓺𝓾𝓮 𝓽𝓾𝓪 𝓹𝓻𝓸𝔁𝓲𝓶𝓪 𝓹𝓮𝓻𝓰𝓾𝓷𝓽𝓪 𝓸𝓾𝓼𝓮 𝓹𝓮𝓻𝓽𝓾𝓻𝓫𝓪𝓻 𝓸 𝓻𝓮𝓹𝓸𝓾𝓼𝓸 𝓶𝓪𝓬𝓪𝓫𝓻𝓸 𝓭𝓮𝓼𝓽𝓮 𝓭𝓲𝓪𝓵𝓸𝓰𝓸.
+🕰️🕯️ 𝓐𝓰𝓾𝓪𝓻𝓭𝓪 𝓹𝓸𝓻 𝓮𝓽𝓮𝓻𝓷𝓸𝓼 ${remainingTimeInSeconds} 𝓼𝓮𝓰𝓾𝓷𝓭𝓸𝓼, 𝓪𝓷𝓽𝓮𝓼 𝓺𝓾𝓮 𝓽𝓾𝓪 𝓹𝓻𝓸𝔁𝓲𝓶𝓪 𝓹𝓮𝓻𝓰𝓾𝓷𝓽𝓪 𝓸𝓾𝓼𝓮 𝓹𝓮𝓻𝓽𝓾𝓻𝓫𝓪𝓻 𝓸 𝓻𝓮𝓹𝓸𝓾𝓼𝓸 𝓶𝓪𝓬𝓪𝓫𝓻𝓸 𝓭𝓮𝓼𝓽𝓮 𝓭𝓲𝓪𝓵𝓸𝓰𝓸.
 
 
  ━━━━━━━━━⬣ ${vs} ⬣━━━━━━━━`);
@@ -12839,6 +12839,9 @@ ${global.quiz.cm}
 
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
+    }
+    else if(text=== "xp"){
+      await m.reply(text[1])
     }
     else {
       
