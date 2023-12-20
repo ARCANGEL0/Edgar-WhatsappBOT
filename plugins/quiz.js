@@ -12847,8 +12847,7 @@ if (matches) {
   const status = matches[1]; // "on" or "off"
   // Now you can use the 'status' variable as needed
   if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
+await m.reply("nao tem admin")
 } 
 else {
   await m.reply(`Quiz XP  ${status}`);} 
