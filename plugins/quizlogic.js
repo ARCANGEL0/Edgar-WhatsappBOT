@@ -14,7 +14,7 @@ global.xppergunta= global.xppergunta ? global.xppergunta : ""
 
     
     if (!(global.xppergunta)) return m.reply('terminado!')
-    if (m.quoted.id == global.quiz[id][0].id) {
+    if (m.quoted) {
         
         // m.reply(JSON.stringify(json, null, '\t'))
         if (m.text == global.quiz[m.chat].ca {
