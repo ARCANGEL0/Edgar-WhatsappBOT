@@ -12733,7 +12733,7 @@ const perguntasDireito = [
 const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
-const delayBetweenQuestions = 1200; // 45 seconds
+const delayBetweenQuestions = 100; // 45 seconds
 
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
