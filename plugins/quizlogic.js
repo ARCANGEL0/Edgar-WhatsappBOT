@@ -13,7 +13,7 @@ global.xppergunta= global.xppergunta ? global.xppergunta : ""
 
 
     
-    if (!(global.xppergunta)) return m.reply('Ese juego ya ha terminado!')
+    if (!(global.xppergunta)) return m.reply('terminado!')
     if (m.quoted.id == global.quiz[id][0].id) {
         
         // m.reply(JSON.stringify(json, null, '\t'))
