@@ -12737,13 +12737,13 @@ const delayBetweenQuestions = 5; // 45 seconds
 
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
+  const currentTime = new Date().getTime() ; // Current time in seconds
   
   if(global.quiz[m.chat] != null) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
 
-  const timeDifference = global.quiz[m.chat].time - currentTime;
+  const timeDifference = currentTime - global.quiz[m.chat].time;
   console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
 
