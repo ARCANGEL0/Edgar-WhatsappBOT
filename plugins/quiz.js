@@ -12734,14 +12734,14 @@ const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
 const delayBetweenQuestions = 45; // 45 seconds
-let lastQuestionTime; // Initialize last question time
+
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
   console.log("Current Time: " + currentTime);
-  console.log("Last Question Time: " + lastQuestionTime);
+  console.log("Last Question Time: " + global.quiz[m.chat].time);
 
-  const timeDifference = currentTime - lastQuestionTime;
+  const timeDifference = currentTime - global.quiz[m.chat].time;
   console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
 
@@ -12756,6 +12756,15 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
 
+ // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "time": new Date().getTime()
+    };
+    
     // Send the question
     await m.reply(`
       ╭━━━『 ${selectedCategory} 』━━━⬣
@@ -12769,8 +12778,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       ╰━━━━━━━━━━━━━━━━━━⬣`);
 
     // Update the last question time after sending a new question
-    lastQuestionTime = Math.floor(new Date().getTime() / 1000);
-console.log(lastQuestionTime)
+    
     // Additional code specific to your application logic can go here...
     // For example, you might want to handle user responses or perform other actions.
   }
