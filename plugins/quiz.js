@@ -7372,7 +7372,7 @@ public class WordFrequencyCounter {
       D: "Reggaton"
     },
     "Resposta": "B",
-    "Motivo": "Hip Hop é o gênero musical caracterizado por batidas rápidas, letras faladas (rap) e técnicas de scratch, originando-se nas comunidades urbanas."
+    "Motivo": "Hip Hop é o gênero musical caracterizado por batidas rápidas, letras faladas (como o subgenero rap) e técnicas de scratch, originando-se nas comunidades urbanas."
   },
   {
     "Pergunta": "Quem é conhecido como 'The Boss' e é famoso por sua energia no palco e músicas como 'Born to Run'?",
