@@ -12840,7 +12840,7 @@ ${global.quiz.cm}
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
     }
-    else if( "xp" in text ){
+    else if( text.includes("xp") ){
       await m.reply(m.text)
     }
     else {
