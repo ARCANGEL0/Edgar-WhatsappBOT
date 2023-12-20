@@ -12770,7 +12770,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
     // Update the last question time after sending a new question
     lastQuestionTime = Math.floor(new Date().getTime() / 1000);
-
+console.log(lastQuestionTime)
     // Additional code specific to your application logic can go here...
     // For example, you might want to handle user responses or perform other actions.
   }
