@@ -7287,17 +7287,6 @@ public class WordFrequencyCounter {
     "Motivo": "Elvis Presley é conhecido como 'The King of Rock and Roll' devido à sua influência e sucesso no gênero musical."
   },
   {
-    "Pergunta": "Qual é a canção mais reproduzida no Spotify até agora?",
-    "Opcoes": {
-      A: "Shape of You (Ed Sheeran)",
-      B: "Despacito (Luis Fonsi e Daddy Yankee)",
-      C: "Blinding Lights (The Weeknd)",
-      D: "Uptown Funk (Mark Ronson ft. Bruno Mars)"
-    },
-    "Resposta": "A",
-    "Motivo": "'Shape of You' de Ed Sheeran é a canção mais reproduzida no Spotify até agora, alcançando milhões de reproduções."
-  },
-  {
     "Pergunta": "Qual é o instrumento principal de Charlie Parker, uma lenda do jazz?",
     "Opcoes": {
       A: "Saxofone",
