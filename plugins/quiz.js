@@ -12739,7 +12739,7 @@ const delayBetweenQuestions = 45; // 45 seconds
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
   
-  if(global.quiz[m.chat].time != null) {
+  if(global.quiz[m.chat] != null) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.quiz[m.chat].time);
 
