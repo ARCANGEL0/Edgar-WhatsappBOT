@@ -12806,7 +12806,7 @@ ${optionsString}
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    
+    console.log(global.quizxp[m.chat])
     // Send the question
     await m.reply(`
       ╭━━━『 ${selectedCategory} 』━━━⬣
@@ -12817,7 +12817,7 @@ ${optionsString}
       ${optionsString}
 
       ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat] ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
+${global.quizxp[m.chat]== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
     // Updte the last question time after sending a new question
