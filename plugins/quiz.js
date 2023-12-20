@@ -12749,8 +12749,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
-console.log(global.quiz[m.chat])
+      .join("\n");c
     // Update the current question and answer
     global.quiz[m.chat] = {
       math: false,
@@ -12769,7 +12768,7 @@ console.log(global.quiz[m.chat])
     }
 
     
-    console.log('ghhh   ' + new Date);
+    console.log('ghhh   ' + new Date.getTime());
 
     // Send the question
     await m.reply(`
