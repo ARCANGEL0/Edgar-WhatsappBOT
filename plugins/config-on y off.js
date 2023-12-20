@@ -370,15 +370,15 @@ break
 case 'antiprivado':
 case 'privado':
 isAll = true
-if (!isROwner) {
-global.dfail('rowner', m, conn)
+if (!isOwner) {
+global.dfail('owner', m, conn)
 throw false
 }
 bot.antiPrivate = isEnable
 break
 
-case 'antitrabas':
-case 'antitraba':
+case 'antitravas':
+case 'antitrava':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
