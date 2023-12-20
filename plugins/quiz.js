@@ -12806,7 +12806,7 @@ ${optionsString}
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    console.log(global.quizxp[m.chat])
+    console.log("test" + global.quizxp[m.chat])
     // Send the question
     await m.reply(`
       ╭━━━『 ${selectedCategory} 』━━━⬣
