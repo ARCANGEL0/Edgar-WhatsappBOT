@@ -12733,7 +12733,7 @@ const perguntasDireito = [
 const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
 
-const delayBetweenQuestions = 45; // 45 seconds
+const delayBetweenQuestions = 5; // 45 seconds
 
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
@@ -12750,7 +12750,9 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
-    await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
+    
+    const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
+await m.reply(`⚠️ Please wait ${remainingTimeInSeconds} seconds before asking another question.`);
   } 
   else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
