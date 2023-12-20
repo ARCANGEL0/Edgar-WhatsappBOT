@@ -1,4 +1,5 @@
 global.quiz = global.quiz ? global.quiz : {}
+global.quizxp = global.quizxp ? global.quizxp : {}
 
 const handler = async (m, {conn, isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
@@ -12768,7 +12769,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    global.quizxp[m.chat] = false
+    
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
       global.quiz[id].math = true;
     } else {
@@ -12784,7 +12785,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-╰━━━━━━━━━━━━━━━━━━⬣`);
+${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
 
     // Update the last question time after sending a new question
     
@@ -12807,18 +12808,18 @@ ${optionsString}
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    console.log("test" + global.quizxp[m.chat])
+    console.log("test" + Global.quizxp[m.chat].modo)
     // Send the question
     await m.reply(`
-      ╭━━━『 ${selectedCategory} 』━━━⬣
-      ┃
-      ┃ ${Pergunta}
-      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+╭━━━『 ${selectedCategory} 』━━━⬣
+┃
+┃ ${Pergunta}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 
-      ${optionsString}
+${optionsString}
 
-      ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat]== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
+${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
     // Updte the last question time after sending a new question
@@ -12853,11 +12854,15 @@ throw false
 } 
 else {
   if(status=="on"){
-    global.quizxp[m.chat] = true
+    Global.quizxp[m.chat] = {
+      "modo":true
+    }
   }
   
  else if (status=="off"){
-   global.quizxp[m.chat] == false
+   Global.quizxp[m.chat]= {
+     "modo":false
+   }
  }
   
 }
