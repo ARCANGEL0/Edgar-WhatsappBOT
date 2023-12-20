@@ -12774,7 +12774,11 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
     // Send the question
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
