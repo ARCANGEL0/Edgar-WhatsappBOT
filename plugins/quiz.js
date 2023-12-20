@@ -12745,20 +12745,32 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } 
   else {
-    // Save the current time for the new question
-    
-
-    // Rest of your code for generating and sending the question goes here
-    const perguntaObj = pickRandom(selectedPerguntasArray);
-    // ...
-
+  const perguntaObj = pickRandom(selectedPerguntasArray);
+    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+console.log(global.quiz[m.chat])
     // Update the current question and answer
     global.quiz[m.chat] = {
-      math: selectedCategoryIndex == 11 || selectedCategory == 'Matematica',
+      math: false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
     };
+
+    console.log(global.quiz[m.chat]);
+    console.log(selectedCategoryIndex);
+
+    if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
+
+    
+    console.log('ghhh   ' + new Date);
+
     // Send the question
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
