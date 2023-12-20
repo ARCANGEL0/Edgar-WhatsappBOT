@@ -12846,12 +12846,21 @@ ${global.quiz.cm}
 if (matches) {
   const status = matches[1]; // "on" or "off"
   // Now you can use the 'status' variable as needed
-  await m.reply(`Quiz XP  ${status}`);
-} else {
+  if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+} 
+else {
+  await m.reply(`Quiz XP  ${status}`);} 
+  else {
   // Handle the case when the pattern is not found
   await m.reply("Invalido");
 }
+}
     }
+    
+    
+    
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
