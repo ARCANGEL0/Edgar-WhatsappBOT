@@ -70,17 +70,17 @@ let fsizedoc = '1'.repeat(10)
 let menuh = `╭━━━━━━━━━⬣
 ┃ 🕯️💀 𝐥𝐢𝐬𝐭𝐚 𝐝𝐞 𝐦𝐞𝐧𝐮
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ *${usedPrefix}mall*  - _TUDO_
-┃ *${usedPrefix}mbuscas*  - _BUSCAS_
-┃ *${usedPrefix}mtools*  - _FERRAMENTAS_
-┃ *${usedPrefix}mjogos*  - _JOGOS_
-┃ *${usedPrefix}mbaixar*  - _DOWNLOADS_
-┃ *${usedPrefix}mcv*  - _CONVERSORES_
-┃ *${usedPrefix}mmd*  - _MIDIAS_
-┃ *${usedPrefix}mia*  - _IA E CHATGPT_
-┃ *${usedPrefix}mgp*  - _GRUPO_
+┃ *${usedPrefix}menu0*  - _TUDO_
+┃ *${usedPrefix}menu1*  - _BUSCAS_
+┃ *${usedPrefix}menu2*  - _FERRAMENTAS_
+┃ *${usedPrefix}menu3*  - _JOGOS_
+┃ *${usedPrefix}menu4*  - _DOWNLOADS_
+┃ *${usedPrefix}menu5*  - _CONVERSORES_
+┃ *${usedPrefix}menu6*  - _MIDIAS_
+┃ *${usedPrefix}menu7*  - _IA E CHATGPT_
+┃ *${usedPrefix}menu8*  - _VOTOS_
+┃ *${usedPrefix}menu9*  - _GRUPO_
 ┃ *${usedPrefix}mbot*  - _BOT_
-┃ *${usedPrefix}mvoto*  - _VOTOS_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
