@@ -12841,7 +12841,16 @@ ${global.quiz.cm}
       `)
     }
     else if( text.includes("xp") ){
-      await m.reply(m.text[2])
+      const matches = m.text.match(/\.quiz xp (on|off)/);
+
+if (matches) {
+  const status = matches[1]; // "on" or "off"
+  // Now you can use the 'status' variable as needed
+  await m.reply(`Quiz XP  ${status}`);
+} else {
+  // Handle the case when the pattern is not found
+  await m.reply("Invalido");
+}
     }
     else {
       
