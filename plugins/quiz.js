@@ -12768,6 +12768,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
       "cm": Motivo,
       "time": new Date().getTime()
     };
+    global.quizxp[m.chat] = false
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
       global.quiz[id].math = true;
     } else {
