@@ -12732,6 +12732,7 @@ const perguntasDireito = [
 
 const selectedCategory = categories[selectedCategoryIndex];
 const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g, '')}`); // Dynamically get the array based on category
+
 const delayBetweenQuestions = 45; // 45 seconds
 let lastQuestionTime = 0; // Initialize last question time
 
@@ -12784,6 +12785,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     // For example, you might want to handle user responses or perform other actions.
   }
 }
+
 
 }
     else if(text === "r"){
