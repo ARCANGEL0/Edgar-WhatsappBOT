@@ -12735,19 +12735,19 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 
 const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
 let lastQuestionTime = 0; // Initialize last question time
-const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
-let lastQuestionTime = 0; // Initialize last question time
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  let currentTime = new Date().getTime(); // Move this line inside the loop
-
+  const currentTime = new Date().getTime();
   console.log("Current Time: " + currentTime);
-  console.log("Time Difference: " + (currentTime - lastQuestionTime));
+  console.log("Last Question Time: " + lastQuestionTime);
+
+  const timeDifference = currentTime - lastQuestionTime;
+  console.log("Time Difference: " + timeDifference);
   console.log("Delay: " + delayBetweenQuestions);
 
-  if (currentTime - lastQuestionTime < delayBetweenQuestions) {
+  if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
-    const remainingTime = Math.ceil((delayBetweenQuestions - (currentTime - lastQuestionTime)) / 1000);
+    const remainingTime = Math.ceil((delayBetweenQuestions - timeDifference) / 1000);
     await m.reply(`⚠️ Please wait ${remainingTime} seconds before asking another question.`);
   } else {
     const perguntaObj = pickRandom(selectedPerguntasArray);
@@ -12758,20 +12758,13 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
 
     // Update the current question and answer
     global.quiz[m.chat] = {
-      math: false,
+      math: selectedCategoryIndex === 11 || selectedCategory === 'Matematica',
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
     };
 
     console.log(global.quiz[m.chat]);
-    console.log(selectedCategoryIndex);
-
-    if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
-    } else {
-      global.quiz[id].math = false;
-    }
 
     console.log('ghhh   ' + new Date().getTime());
 
@@ -12789,10 +12782,10 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
     lastQuestionTime = currentTime;  // Update last question time after sending a new question
 
     // Additional code specific to your application logic can go here...
-
     // For example, you might want to handle user responses or perform other actions.
   }
 }
+
     else if(text === "r"){
       await m.reply(`
 ╭━━━━━━━━━⬣
