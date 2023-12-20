@@ -12737,7 +12737,7 @@ const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
 let lastQuestionTime = 0; // Initialize last question time
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
-  const currentTime = +new Date();
+  const currentTime = new Date().getTime();
 
   if (currentTime - lastQuestionTime < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
@@ -12782,6 +12782,7 @@ ${optionsString}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
 lastQuestionTime = currentTime
+console.log(lastQuestionTime)
   }
 }
 }
