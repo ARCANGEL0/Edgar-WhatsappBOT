@@ -31,6 +31,7 @@ if (!user.afkChat.includes(m.chat)) {
   
   *𝕸𝖊𝖗𝖎𝖙𝖚𝖒 𝖈𝖆𝖚𝖘𝖆𝖊:*${text ? '\n ' + text : ''}`, m, { mentions: [m.sender] });
 };
-
+handler.owner = false
+handlwr.admin= false
 handler.command = /^afk$/i;
 export default handler;
