@@ -12851,10 +12851,12 @@ await m.reply("nao tem admin")
 } 
 else {
   await m.reply(`Quiz XP  ${status}`);} 
-  else {
+  
+}
+
+else {
   // Handle the case when the pattern is not found
   await m.reply("Invalido");
-}
 }
     }
     
