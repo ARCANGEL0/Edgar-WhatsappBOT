@@ -12735,7 +12735,7 @@ const selectedPerguntasArray = eval(`perguntas${selectedCategory.replace(/\s+/g,
 
 const delayBetweenQuestions = 45000; // 45 seconds in milliseconds
 let lastQuestionTime = 0; // Initialize last question time
-
+console.log("tempo c" + (currentTime - lastQuestionTime ))
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = new Date().getTime();
 
@@ -12782,7 +12782,7 @@ ${optionsString}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ╰━━━━━━━━━━━━━━━━━━⬣`);
 lastQuestionTime = currentTime
-console.log(lastQuestionTime)
+
   }
 }
 }
