@@ -31,7 +31,7 @@ conn.reply(m.chat, `* @${number} RESETADO NA BASE DE DADOS*`, null, { mentions: 
 }}
 
 handler.tags = ['owner']
-handler.command = ['reiniciaruser', 'borrardatos', 'deletedatauser'] 
+handler.command = ['reiniciaruser', 'resetuser', 'deletedatauser'] 
 handler.owner = false
 handler.admin = true
 
