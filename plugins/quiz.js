@@ -12817,9 +12817,10 @@ ${optionsString}
       ${optionsString}
 
       ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-      ╰━━━━━━━━━━━━━━━━━━⬣`);
+${global.quizxp ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "      ╰━━━━━━━━━━━━━━━━━━⬣"}
+      `);
 
-    // Update the last question time after sending a new question
+    // Updte the last question time after sending a new question
     
     // Additional code specific to your application logic can go here...
     // For example, you might want to handle user responses or perform other actions.
@@ -12850,16 +12851,29 @@ throw false
 
 } 
 else {
-  await m.reply(`Quiz XP  ${status}`);} 
+  if(status=="on"){
+    global.quizxp = true
+  }
+  
+ else if (status=="off"){
+   global.quizxp == false
+ }
   
 }
 
-else {
-  // Handle the case when the pattern is not found
-  await m.reply("Invalido");
-}
+
     }
-    
+    else {
+  // Handle the case when the pattern is not found
+  await m.reply(`
+   ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━ 
+   
+   ✖️ ℭ𝔬𝔪𝔞𝔫𝔡𝔬 𝔦𝔫𝔳𝔞𝔩𝔦𝔡𝔬, 𝔭𝔬𝔟𝔯𝔢 𝔞𝔩𝔪𝔞
+𝔄𝔤𝔲𝔞𝔯𝔡𝔬 𝔬 𝔠𝔬𝔪𝔞𝔫𝔡𝔬 𝔠𝔬𝔯𝔯𝔢𝔱𝔬 𝔞 𝔰𝔢𝔯 𝔡𝔢𝔠𝔦𝔣𝔯𝔞𝔡𝔬 𝔫𝔞𝔰 𝔰𝔬𝔪𝔟𝔯𝔞𝔰 𝔡𝔢𝔰𝔱𝔢 𝔮𝔲𝔢𝔰𝔱𝔦𝔬𝔫𝔞𝔯𝔦𝔬. 
+𝔖𝔲𝔰𝔰𝔲𝔯𝔯𝔢-𝔪𝔢 _*on*_ 𝔬𝔲 _*off*_ 𝔭𝔞𝔯𝔞 𝔥𝔞𝔟𝔦𝔩𝔦𝔱𝔞𝔯 𝔪𝔬𝔡𝔬 𝔠𝔬𝔪𝔭𝔢𝔱𝔦𝔱𝔦𝔳𝔬 𝔡𝔬 𝔮𝔲𝔦𝔷
+   
+   ━━━━━━━━━⬣ 🐈‍⬛ ${vs} ⬣━━━━━━━━`);
+}
     
     
     else {
