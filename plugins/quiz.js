@@ -12925,6 +12925,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       if(global.xppergunta==true){
         global.xppergunta=false
       }
+      await m.reply(m.quoted.id)
       await m.reply(`
 ╭━━━━━━━━━⬣
 💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
