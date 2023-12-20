@@ -12765,7 +12765,7 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
       ╰━━━━━━━━━━━━━━━━━━⬣`);
     lastQuestionTime = currentTime;  // Update last question time after sending a new question
   }
-}
+}}
 
     else if(text === "r"){
       await m.reply(`
