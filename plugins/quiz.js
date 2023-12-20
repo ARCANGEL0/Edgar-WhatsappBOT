@@ -12785,7 +12785,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
 
     // Update the last question time after sending a new question
     
@@ -12808,7 +12808,7 @@ ${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       "cm": Motivo,
       "time": new Date().getTime()
     };
-    console.log("test" + Global.quizxp[m.chat].modo)
+    console.log("test" + global.quizxp[m.chat].modo)
     // Send the question
     await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
@@ -12819,7 +12819,7 @@ ${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${Global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
+${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
     // Updte the last question time after sending a new question
@@ -12854,13 +12854,13 @@ throw false
 } 
 else {
   if(status=="on"){
-    Global.quizxp[m.chat] = {
+    global.quizxp[m.chat] = {
       "modo":true
     }
   }
   
  else if (status=="off"){
-   Global.quizxp[m.chat]= {
+   global.quizxp[m.chat]= {
      "modo":false
    }
  }
