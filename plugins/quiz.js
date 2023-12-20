@@ -12786,6 +12786,8 @@ if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   }
 }
 
+
+}
     else if(text === "r"){
       await m.reply(`
 ╭━━━━━━━━━⬣
