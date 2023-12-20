@@ -1,6 +1,6 @@
 global.quiz = global.quiz ? global.quiz : {}
 
-const handler = async (m, {conn, text, args, usedPrefix, command, reply}) => {
+const handler = async (m, {conn, isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
@@ -12842,14 +12842,17 @@ ${global.quiz.cm}
     }
     else if( text.includes("xp") ){
       const matches = m.text.match(/\.quiz xp (on|off)/);
-let user = global.db.data.users[m.sender];
+
 if (matches) {
   const status = matches[1]; // "on" or "off"
-  // Now you can use the 'status' variable as 
-console.log(isOwner)
+  // Now you can use the 'status' variable as needed
+  if (!(isAdmin || isOwner)) {
+await m.reply("nao tem admin")
+} 
+else {
   await m.reply(`Quiz XP  ${status}`);} 
   
-
+}
 
 else {
   // Handle the case when the pattern is not found
