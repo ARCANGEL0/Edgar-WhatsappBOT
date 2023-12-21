@@ -12873,7 +12873,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       "id": qid,
       "time": new Date().getTime()
     };
-
+    console.log("on quiz  "+ global.quiz[m.chat].id)
     // Send the question
     
 
@@ -12915,7 +12915,7 @@ global.quiz[m.chat] = {
       "id": qid,
       "time": new Date().getTime()
     };
-    
+    console.log("on quiz  "+ global.quiz[m.chat].id)
     // Updte the last question time after sending a new question
     
     // Additional code specific to your application logic can go here...
