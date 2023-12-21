@@ -22,8 +22,8 @@ if (user.afkInfo[m.chat]) {
     return !0
 }
 
-
-console.log(user.afkInfo[m.chat])
+let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
+console.log(jids)
 if (     user.afkInfo[m.chat].afkTime > -1){
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
@@ -36,7 +36,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
+
 /* for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
