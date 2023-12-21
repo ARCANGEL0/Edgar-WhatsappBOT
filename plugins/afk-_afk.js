@@ -44,7 +44,9 @@ continue
 let afkTime = user.afkInfo[m.chat].afkTime
 if (!afkTime || afkTime < 0)
 continue
-let reason = user.afkInfo[m.chat].afkReason || ''
+let reason = user.afkInfo[m.chat].afkReason || '' */
+
+if (user.afkInfo[m.chat] > -1 && m.quoted.sender != user.afkInfo[m.chat].number)
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
@@ -54,7 +56,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString(
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 
-} */
+
 console.log(jids)
 return true
 
