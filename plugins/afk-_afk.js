@@ -37,7 +37,7 @@ user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
-for (let jid of jids) {
+/* for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
 continue
@@ -54,7 +54,8 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString(
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 
-}
+} */
+console.log(jids)
 return true
 
 
