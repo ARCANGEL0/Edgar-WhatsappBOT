@@ -21,9 +21,9 @@ if (user.afkInfo[m.chat]) {
     // Set AFK information for this group only if text is not empty
     return !0
 }
+console.log('quote  '+ m.quoted.sender)
 
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
-console.log(m.quoted.sender)
 if (     user.afkInfo[m.chat].afkTime > -1){
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
