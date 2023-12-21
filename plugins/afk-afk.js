@@ -9,7 +9,7 @@ text = args.slice(0).join(" ")
 } else if (m.quoted && m.quoted.text) {
 text = m.quoted.text
 } else return m.reply(`${lenguajeGB['smsAfkQ1'](usedPrefix, command)}`)
-  
+  console.log(user)
 if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 user.afk = + new Date
 user.afkReason = text
