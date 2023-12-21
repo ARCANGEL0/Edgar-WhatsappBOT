@@ -4,9 +4,11 @@ handler.before = async function (m) {
   global.quiz = global.quiz ? global.quiz : {}
     let id = m.chat
     
-    if(m.quoted){
+    if(m.quoted.id == global.quiz[m.chat].id){
       console.log("id  "+m.quoted.id)
       console.log("id2  "+ global.quiz[m.chat].id)
+      
+      await m.reply("teste")
     }
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
     
