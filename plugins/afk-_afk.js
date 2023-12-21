@@ -6,7 +6,7 @@ if(!global.afks[m.chat]) {
   return !0;
 }
 
-if (global.afks[m.chat].usuario != m.sender && global.afks[m.chat].tempo > -1 && m.quoted.sender == global.afks[m.chat].usuario) {
+if (global.afks[m.chat].usuario == m.sender && global.afks[m.chat].tempo > -1 && m.quoted.sender == global.afks[m.chat].usuario) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
