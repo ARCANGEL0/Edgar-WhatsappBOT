@@ -9,7 +9,7 @@ if(!user.afkInfo[m.chat])
 {
   return !0;
 }
-
+console.log(user.afkInfo[m.chat])
 if (     user.afkInfo[m.chat].afkTime > -1)
 
 
