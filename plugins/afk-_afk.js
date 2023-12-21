@@ -23,7 +23,7 @@ if (user.afkInfo[m.chat]) {
 }
 
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
-console.log(jids)
+console.log(m.quoted.sender)
 if (     user.afkInfo[m.chat].afkTime > -1){
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
