@@ -13,7 +13,7 @@ if (text.length < 3) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 
 global.afks[m.chat] ={
   "usuario": m.sender,
-  "chat": m.chat,
+  
   "razao" : text,
   "tempo": new Date()
 }
