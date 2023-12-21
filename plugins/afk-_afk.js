@@ -1,6 +1,51 @@
 
 
 
+
+let handler = m => m 
+handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
+let user = global.db.data.users[m.sender]
+if(!user.afkInfo[m.chat])
+{
+  return !0;
+}
+
+if (     user.afkInfo[m.chat].afkTime > -1)
+
+
+{await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
+      *@${m.sender.split("@")[0]}*
+      ${lenguajeGB['smsAfkM1']()}
+      ${user.afkInfo[m.chat].afkReason ? `\n${lenguajeGB['smsAfkM2']()}🕯️ ` +user.afkInfo[m.chat].afkReason : ''}
+
+      ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString()}*`.trim(), m, { mentions: [m.sender] });
+
+user.afkInfo[m.chat].afkTime = -1
+user.afkInfo[m.chat].afkReason = ''
+}
+let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
+for (let jid of jids) {
+let user = global.db.data.users[jid]
+if (!user)
+continue
+let afkTime = user.afkInfo[m.chat].afkTime
+if (!afkTime || afkTime < 0)
+continue
+let reason = user.afkInfo[m.chat].afkReason || ''
+await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
+╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
+
+🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+
+${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
+
+╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+
+}
+return true
+}
+export default handler
+/*
 let handler = m => m 
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
