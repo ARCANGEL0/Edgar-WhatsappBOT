@@ -5,7 +5,8 @@ let user = global.db.data.users[m.sender]
 if(!global.afks[m.chat]) {
   return !0;
 }
-if (global.afks[m.chat].tempo > -1) {
+
+if (global.afks[m.chat].usuario == m.sender && global.afks[m.chat].tempo > -1) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
@@ -17,6 +18,7 @@ global.afks[m.chat].razao = ''
 }
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
+  console.log(jid)
 let user = global.db.data.users[jid]
 if (!user)
 continue
