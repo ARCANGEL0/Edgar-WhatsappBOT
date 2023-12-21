@@ -19,8 +19,7 @@ global.afks[m.chat].razao = ''
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
   console.log(jid)
-let user = global.db.data.users[jid]
-if (!user)
+let user = global.afks[m.chat].usuario
 continue
 let afkTime = global.afks[m.chat].tempo
 if (!afkTime || afkTime < 0)
