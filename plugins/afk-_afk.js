@@ -1,30 +1,28 @@
-global.afks = global.afks ? global.afks : {}
+
+
+
 let handler = m => m 
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
-if(!global.afks[m.chat]) {
-  return !0;
-}
-
-if (global.afks[m.chat].usuario == m.sender && global.afks[m.chat].tempo > -1) {
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
+if (user.afk > -1) {await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
       ${global.afks[m.chat].razao ? `\n${lenguajeGB['smsAfkM2']()}🕯️ ` + global.afks[m.chat].razao : ''}
 
       ${lenguajeGB['smsAfkM3']()}\n *${(new Date - global.afks[m.chat].tempo).toTimeString()}*`.trim(), m, { mentions: [m.sender] });
-global.afks[m.chat].tempo = -1
-global.afks[m.chat].razao = ''
+
+user.afk = -1
+user.afkReason = ''
 }
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
-  console.log(jid)
-let user = global.afks[m.chat].usuario
+let user = global.db.data.users[jid]
+if (!user)
 continue
-let afkTime = global.afks[m.chat].tempo
+let afkTime = user.afk
 if (!afkTime || afkTime < 0)
 continue
-let reason = global.afks[m.chat].razao || ''
+let reason = user.afkReason || ''
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
@@ -33,6 +31,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - global.afks[m.chat].tempo).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+
 }
 return true
 }
