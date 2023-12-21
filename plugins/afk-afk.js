@@ -7,6 +7,7 @@
 let handler = async (m, { text, args, usedPrefix, command, conn}) => { 
 let user = global.db.data.users[m.sender]
   
+  
 if (args.length >= 1 ) {
 text = args.slice(0).join(" ")
 } else if (m.quoted && m.quoted.text) {
@@ -30,7 +31,8 @@ if (user.afkInfo[m.chat]) {
     // Set AFK information for this group
     user.afkInfo[m.chat] = {
         afkTime: +new Date(),
-        afkReason: text
+        afkReason: text,
+        number: m.sender
     };
 }
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
