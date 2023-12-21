@@ -58,7 +58,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString(
 }
 
 
-return true
+// return true
 
 
 }
