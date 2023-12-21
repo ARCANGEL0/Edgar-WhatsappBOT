@@ -52,14 +52,11 @@ let afkTime = user.afkInfo[m.chat].afkTime
 if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkInfo[m.chat].afkReason || ''
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
-╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
+await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}✴️ *A F K* ✴️
+*▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔*
+😾 ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '👉 ' + reason : `${lenguajeGB['smsAfkM6']()}`}
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
-
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
-
-╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+${lenguajeGB['smsAfkM3']()}\n👉 *${(new Date - afkTime).toTimeString()}*`.trim(), m)
 }
 return true
 /*
