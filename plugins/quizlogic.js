@@ -1,14 +1,15 @@
 
 let handler = m => m
 handler.before = async function (m) {
+  global.quiz = global.quiz ? global.quiz : {}
     let id = m.chat
     
     if(m.quoted){
       console.log("id  "+m.quoted.id)
-      console.log("texto  "+ m.quoted.text)
+      console.log("id2  "+ global.quiz[m.chat].id)
     }
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
-    global.quiz = global.quiz ? global.quiz : {}
+    
     if (!(id in global.quiz)) return m.reply(' terminado!')
     if (m.quoted.id == global.quiz[id].id) {
       console.log("dentro do if:  "+ m.quoted.id)
