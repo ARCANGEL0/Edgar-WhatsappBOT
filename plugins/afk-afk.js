@@ -16,7 +16,7 @@ global.afks[m.chat] ={
   "razao" : text,
   "tempo": new Date()
 }
-console.log(global.afks)
+console.log(global.afks[m.chat])
 // user.afkReason = text
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
