@@ -4,8 +4,8 @@ handler.before = async function (m) {
     let id = m.chat
     
     if(m.quoted){
-      console.log(m.quoted.id)
-      console.log(m.quoted.text)
+      console.log("id  "+m.quoted.id)
+      console.log("texto  " m.quoted.text)
     }
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
     global.quiz = global.quiz ? global.quiz : {}
