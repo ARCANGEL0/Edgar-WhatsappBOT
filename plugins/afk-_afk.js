@@ -56,7 +56,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString(
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 }
 
-console.log(jids)
+
 return true
 
 
