@@ -24,10 +24,7 @@ if (user.afkInfo[m.chat]) {
 
 
 if (     user.afkInfo[m.chat].afkTime > -1){
- if (m.quoted) {
-await m.reply(m.quoted.text)
 
-}
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
