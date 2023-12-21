@@ -9,6 +9,9 @@ if(m.quoted.sender){
   await conn.reply("teste")
 }
 
+}
+
+
 /*
 if (!m.quoted) return
 if (m.quoted.sender != conn.user.jid) return
