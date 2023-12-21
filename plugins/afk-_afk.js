@@ -23,8 +23,7 @@ if (user.afkInfo[m.chat]) {
 }
 
 
-if (     user.afkInfo[m.chat].afkTime > -1){
-console.log(" tes   " + m.quoted)
+if (     user.afkInfo[m.chat].afkTime > -1){q
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
