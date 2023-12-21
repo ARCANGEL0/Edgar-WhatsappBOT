@@ -14,7 +14,7 @@ if (!user.afkInfo) {
 if (user.afkInfo[m.chat]) {
     const afkTime = user.afkInfo[m.chat].afkTime;
     const afkReason = user.afkInfo[m.chat].afkReason;
-    
+    const number = user.afkInfo[m.chat].number
     // Now you can use afkTime and afkReason as needed
 } else {
     // User is not AFK in this group
@@ -45,6 +45,7 @@ if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkInfo[m.chat].afkReason || '' */
 
+console.log("quoted id   " + m.quoted.sender+"\nuswr that is replying "+m.sender)
 if (user.afkInfo[m.chat] > -1 && m.quoted.sender != user.afkInfo[m.chat].number) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
