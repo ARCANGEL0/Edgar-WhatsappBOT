@@ -27,13 +27,13 @@ if (!afkTime || afkTime < 0)
 continue
 let reason = global.afks[m.chat].razao || ''
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
-        ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
+╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-        🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
 
-        ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - global.afks[m.chat].tempo).toTimeString()}*
+${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - global.afks[m.chat].tempo).toTimeString()}*
 
-        ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 }
 return true
 }
