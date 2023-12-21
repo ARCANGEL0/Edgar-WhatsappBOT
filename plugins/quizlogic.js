@@ -5,7 +5,7 @@ handler.before = async function (m) {
     
     if(m.quoted){
       console.log("id  "+m.quoted.id)
-      console.log("texto  " m.quoted.text)
+      console.log("texto  "+ m.quoted.text)
     }
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
     global.quiz = global.quiz ? global.quiz : {}
