@@ -24,7 +24,10 @@ if (user.afkInfo[m.chat]) {
 
 
 if (     user.afkInfo[m.chat].afkTime > -1){
+ if (m.quoted) {
+await m.reply(m.quoted.text)
 
+}
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
@@ -44,9 +47,7 @@ let afkTime = user.afkInfo[m.chat].afkTime
 if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkInfo[m.chat].afkReason || '' */
-if(m.quoted){
-console.log("quoted id   " + m.quoted.sender+"\nuswr that is replying "+m.sender)
-}
+
 if (user.afkInfo[m.chat] > -1 && m.quoted.sender == user.afkInfo[m.chat].number) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
