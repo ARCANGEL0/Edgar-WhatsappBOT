@@ -7,8 +7,20 @@ handler.before = async function (m) {
     if(m.quoted.id == global.quiz[m.chat].id){
       console.log("id  "+m.quoted.id)
       console.log("id2  "+ global.quiz[m.chat].id)
-      
-      await m.reply("teste")
+      if(global.quizxp[m.chat].modo==false)
+      {
+        await m.reply(`
+        apenas em modo xp
+        `)
+      }
+      else {
+        if(m.text==global.quiz[m.chat].ca){
+          await m.reply(`correto`)
+        }
+        else {
+          await m.reply(`errado`)
+        }
+      }
     }
     if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
     
