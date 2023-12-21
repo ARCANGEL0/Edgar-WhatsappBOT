@@ -5,11 +5,23 @@
 let handler = m => m 
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
-if(!user.afkInfo[m.chat])
-{
-  return !0;
+// Initialize user object if it doesn't exist
+if (!user.afkInfo) {
+    user.afkInfo = {};
 }
-else {
+
+// Check if user is AFK in this group
+if (user.afkInfo[m.chat]) {
+    const afkTime = user.afkInfo[m.chat].afkTime;
+    const afkReason = user.afkInfo[m.chat].afkReason;
+    
+    // Now you can use afkTime and afkReason as needed
+} else {
+    // User is not AFK in this group
+    // Set AFK information for this group only if text is not empty
+    return !0
+}
+
 
 console.log(user.afkInfo[m.chat])
 if (     user.afkInfo[m.chat].afkTime > -1){
@@ -44,7 +56,8 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString(
 
 }
 return true
-}
+
+
 }
 export default handler
 /*
