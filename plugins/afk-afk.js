@@ -10,12 +10,13 @@ text = m.quoted.text
   
 if (text.length < 3) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 // user.afk = + new Date
-console.log(m.sender)
+
 global.afks[m.chat] ={
   "usuario": m.sender,
   "razao" : text,
   "tempo": new Date
 }
+console.log(global.afks)
 // user.afkReason = text
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
