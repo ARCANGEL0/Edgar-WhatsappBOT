@@ -19,6 +19,7 @@ if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 if (!user.afkInfo) {
     user.afkInfo = {};
 }
+console.log(m.sender+"  on set afk code")
 
 // Check if user is AFK in this group
 if (user.afkInfo[m.chat]) {
