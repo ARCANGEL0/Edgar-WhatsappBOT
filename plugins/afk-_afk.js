@@ -45,7 +45,8 @@ if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkInfo[m.chat].afkReason || '' */
 
-if (user.afkInfo[m.chat] > -1 && m.quoted.sender == user.afkInfo[m.chat].number) {
+if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
+  console.log(m.quoted)
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
