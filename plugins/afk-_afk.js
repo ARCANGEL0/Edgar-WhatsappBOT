@@ -1,7 +1,10 @@
-global.afks = global.afks ? global.afks : {"tempo":-1,}
+global.afks = global.afks ? global.afks : {}
 let handler = m => m 
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
+if(!global.afks[m.chat]) {
+  return !0;
+}
 if (global.afks[m.chat].tempo > -1) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
