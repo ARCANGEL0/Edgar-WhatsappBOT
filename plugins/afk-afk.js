@@ -66,4 +66,4 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰�
 }
 
 handler.command = /^afk$/i
-export default handler
+export default handler*/
