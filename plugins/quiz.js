@@ -12852,18 +12852,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
     global.xppergunta = true
- // Update the current question and answer
-    global.quiz[m.chat] = {
-      math: false,
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-      "xp": 25,
-      "time": new Date().getTime()
-    };
-
-    // Send the question
-    await m.reply(`
+    let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
 ┃ ${Pergunta}
@@ -12873,6 +12862,20 @@ ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
 ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+
+ // Update the current question and answer
+    global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "xp": 25,
+      "id": qid,
+      "time": new Date().getTime()
+    };
+
+    // Send the question
+    
 
     // Update the last question time after sending a new question
     
@@ -12888,17 +12891,10 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       .join("\n");
     global.xppergunta= true
  // Update the current question and answer
-    global.quiz[m.chat] = {
-      math: false,
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-      "xp": 25,
-      "time": new Date().getTime()
-    };
+    
     console.log("test" + global.quizxp[m.chat].modo)
     // Send the question
-    await m.reply(`
+   let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
 ┃ ${Pergunta}
@@ -12910,6 +12906,16 @@ ${optionsString}
 ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
+global.quiz[m.chat] = {
+      math: false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "xp": 25,
+      "id": qid,
+      "time": new Date().getTime()
+    };
+    
     // Updte the last question time after sending a new question
     
     // Additional code specific to your application logic can go here...
