@@ -8,6 +8,8 @@ console.log("inicio logica")
 if(m.quoted){
   await conn.reply("teste")
 }
+
+/*
 if (!m.quoted) return
 if (m.quoted.sender != conn.user.jid) return
 if (!/^𝘾𝙪𝙖𝙡 𝙚𝙨 𝙧𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 𝙙𝙚/i.test(m.quoted.text)) return
@@ -36,7 +38,7 @@ else {
 }
 
 
-
+*/
 handler.customPrefix = /^[a-zA-Z]+$/
 handler.command = new RegExp
 
