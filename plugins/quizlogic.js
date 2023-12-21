@@ -18,19 +18,23 @@ global.db.data.users[m.sender].limit += global.quiz[m.chat].xp
 
 global.xppergunta=false
 delete global.quiz[m.chat]
-} else {
+} 
+else {
+ await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼 𝙄𝙉𝘾𝙊𝙍𝙍𝙀𝘾𝙏𝘼!!\n𝙏𝙀 𝙌𝙐𝙀𝘿𝘼𝙉 *${global.math[id][2]}* 𝙊𝙋𝙊𝙍𝙏𝙐𝙉𝙄𝘿𝘼𝘿𝙀𝙎 😱\n\n𝙒𝙍𝙊𝙉𝙂 𝘼𝙉𝙎𝙒𝙀𝙍!!\n𝙄𝙏 𝙁𝙄𝙏𝙎 𝙔𝙊𝙐 *${global.math[id][2]}* 𝙏𝙐𝙍𝙉𝙎 🤯`, m)
+}
   
-if (--global.math[id][2] == 0) {
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙎𝙀 𝘼𝘾𝘼𝘽𝘼𝙍𝙊𝙉 𝙏𝙐𝙎 𝙊𝙋𝙊𝙍𝙏𝙐𝙉𝙄𝘿𝘼𝘿𝙀𝙎\n𝙇𝘼 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼 𝙀𝙎 *${math.result}*\n\n𝙔𝙊𝙐𝙍 𝙏𝙐𝙍𝙉𝙎 𝘼𝙍𝙀 𝙊𝙑𝙀𝙍\n𝙏𝙃𝙀 𝘼𝙉𝙎𝙒𝙀𝙍 𝙄𝙎 *${math.result}*`, m)
-//conn.sendButton(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙎𝙀 𝘼𝘾𝘼𝘽𝘼𝙍𝙊𝙉 𝙏𝙐𝙎 𝙊𝙋𝙊𝙍𝙏𝙐𝙉𝙄𝘿𝘼𝘿𝙀𝙎\n𝙇𝘼 𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼 𝙀𝙎 *${math.result}*\n\n𝙔𝙊𝙐𝙍 𝙏𝙐𝙍𝙉𝙎 𝘼𝙍𝙀 𝙊𝙑𝙀𝙍\n𝙏𝙃𝙀 𝘼𝙉𝙎𝙒𝙀𝙍 𝙄𝙎 *${math.result}*`, wm, null, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖 𝙅𝙪𝙜𝙖𝙧 🧮', `/math ${math.mode}`], ['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `.top`]], m)
-clearTimeout(global.math[id][3])
-delete global.math[id]
-} else conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}𝙍𝙀𝙎𝙋𝙐𝙀𝙎𝙏𝘼 𝙄𝙉𝘾𝙊𝙍𝙍𝙀𝘾𝙏𝘼!!\n𝙏𝙀 𝙌𝙐𝙀𝘿𝘼𝙉 *${global.math[id][2]}* 𝙊𝙋𝙊𝙍𝙏𝙐𝙉𝙄𝘿𝘼𝘿𝙀𝙎 😱\n\n𝙒𝙍𝙊𝙉𝙂 𝘼𝙉𝙎𝙒𝙀𝙍!!\n𝙄𝙏 𝙁𝙄𝙏𝙎 𝙔𝙊𝙐 *${global.math[id][2]}* 𝙏𝙐𝙍𝙉𝙎 🤯`, m)
-}}}
+  
+}
+  
+  
+  
+}
 
-handler.customPrefix = /^-?[0-9]+(\.[0-9]+)?$/
+
+
+handler.customPrefix = /^[a-zA-Z]+$/
 handler.command = new RegExp
-handler.exp = 0
+
 export default handler
 /*
 global.math[id] = [
