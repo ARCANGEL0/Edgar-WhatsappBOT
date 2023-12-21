@@ -12870,7 +12870,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       "ca": Resposta,
       "cm": Motivo,
       "xp": 25,
-      "id": qid,
+      "id": qid.id,
       "time": new Date().getTime()
     };
     console.log("on quiz  "+ global.quiz[m.chat].id)
@@ -12912,7 +12912,7 @@ global.quiz[m.chat] = {
       "ca": Resposta,
       "cm": Motivo,
       "xp": 25,
-      "id": qid,
+      "id": qid.id,
       "time": new Date().getTime()
     };
     console.log("on quiz  "+ global.quiz[m.chat].id)
