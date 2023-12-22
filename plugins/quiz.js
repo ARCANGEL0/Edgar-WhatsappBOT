@@ -13000,8 +13000,11 @@ else {
     
     }  
     else if(text.includes("placar") ) {
-      console.log(m.key)
+      console.log(m.key.participant)
+      console.log(m.key.id)
+      console.log(global.db.data.users[m.sender].silenced)
      let ps = groupMetadata.participants.map(v => v.id) // todos os membros
+     await conn.sendMessage(jid, { delete: m.key.id })
      await m.reply("placar")
       
       
