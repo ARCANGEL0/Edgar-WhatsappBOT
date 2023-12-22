@@ -219,8 +219,7 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 if (!global.db.data.users[m.sender].silencedChat[m.chat]) {
-    global.db.data.users[m.sender].silencedChat[m.chat] = // Create the array if it doesn't exist
-   
+    global.db.data.users[m.sender].silencedChat[m.chat] ={ // Create the array if it doesn't exi
    
         silenced: false,
         chat: m.chat
