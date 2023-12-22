@@ -32,20 +32,20 @@ await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: 
 return
 }}
 
-if (!global.db.data.users[m.sender]) {
-    global.db.data.users[m.sender] = {};
+if (!global.db.data.users[user]) {
+    global.db.data.users[user] = {};
 }
 
 // Assuming global.db.data.users[m.sender].silencedChat is defined
-if (!global.db.data.users[m.sender].silencedChat) {
-    global.db.data.users[m.sender].silencedChat = {};
+if (!global.db.data.users[user].silencedChat) {
+    global.db.data.users[user].silencedChat = {};
 }
 
 // Check if the specific chat exists
 const chatIdToCheck = m.chat;
-if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
+if (!global.db.data.users[user].silencedChat[chatIdToCheck]) {
     // Create the array if it doesn't exist
-    global.db.data.users[m.sender].silencedChat[chatIdToCheck] = {
+    global.db.data.users[user].silencedChat[chatIdToCheck] = {
         silenced: false ,
         chat: chatIdToCheck
     };
