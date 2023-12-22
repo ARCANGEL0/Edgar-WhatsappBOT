@@ -1174,10 +1174,8 @@ return
 }}
 
 if (m.text && user.silenced && !isROwner) {
-if (user.antispam > 2) return
-m.reply(`🚫 *ESTÁ BANIDO(A), NÃO PODE USAR COMANDOS*\n
-📑 *MOTIVO: ${user.messageSpam === 0 ? 'NAO ESPECIFICADO' : user.messageSpam}*\n
-`)
+ return
+m.reply(`🚫 teste`)
 user.antispam++	
 return
 }}
