@@ -79,7 +79,7 @@ if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
-    (m.mentionedJid || m.quoted) &&
+    m.quoted &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
 ) {
   
