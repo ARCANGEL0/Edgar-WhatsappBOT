@@ -76,8 +76,8 @@ if (!isNumber(user.limit)) user.limit = 15
 
 
 if (!isNumber(user.money)) user.money = 150
- (!isNumber(user.spammer)) user.spammer = 0
- (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
+if (!isNumber(user.spammer)) user.spammer = 0
+ if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]'
 
 }
 else
