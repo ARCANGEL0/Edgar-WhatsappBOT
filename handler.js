@@ -57,7 +57,7 @@ if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
-
+if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat].silenced = 0
 
 if (!isNumber(user.money)) user.money = 150
 if (!isNumber(user.limit)) user.limit = 15 	       
