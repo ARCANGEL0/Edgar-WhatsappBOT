@@ -8,7 +8,7 @@ let user = global.db.data.users[m.sender]
 // Initialize user object if it doesn't exist
 if (!user.afkInfo[m.chat]) {
     user.afkInfo[m.chat] = {
-      afkTime: 0
+      afkTime: -2
     };
 }
 
