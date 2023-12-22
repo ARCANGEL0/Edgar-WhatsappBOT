@@ -109,12 +109,7 @@ exp:0,
 }
 
 
-		if (m.msg && isOwner) {
-    
-console.log("teste 2")
-conn.sendMessage(m.chat, { delete: m.key })
- // return
-} 
+		
 let chat = global.db.data.chats[m.chat]
 if (typeof chat !== 'object')
 global.db.data.chats[m.chat] = {}
@@ -224,7 +219,12 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-
+if (m.msg && isOwner) {
+    
+console.log("teste 2")
+conn.sendMessage(m.chat, { delete: m.key })
+ // return
+} 
 if (m.isBaileys) return
 m.exp += Math.ceil(Math.random() * 10)
 let usedPrefix
