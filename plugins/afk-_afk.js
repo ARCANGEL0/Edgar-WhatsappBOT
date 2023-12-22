@@ -25,39 +25,8 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-else {
-  
-/* for (let jid of jids) {
-let user = global.db.data.users[jid]
-if (!user)
-continue
-let afkTime = user.afkInfo[m.chat].afkTime
-if (!afkTime || afkTime < 0)
-continue
-let reason = user.afkInfo[m.chat].afkReason || '' */
-let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
-for (let jid of jids) {
-let user = global.db.data.users[jid]
-if (!user)
-continue
-console.log(m.quoted?.sender ? m.quoted.sender : "")
 
-const afkReason = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkReason || '') : '';
 
-const afkTime = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkTime > 0 ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime : '') : '';
-
-console.log(global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime >1)
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
-╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
-
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${afkReason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + afkreason  : `${lenguajeGB['smsAfkM6']()}`}
-
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - afkTime).toTimeString()}*
-
-╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m)
-}
-}
-return true
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
