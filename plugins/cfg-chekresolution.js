@@ -31,6 +31,8 @@ aa = ownerNumber + '@s.whatsapp.net'
 await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: [aa] })
 return
 }}
+console.log("gesy")
+console.log(m)
 users = global.db.data.users
 if (users[user].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
 users[user].silenced = true
