@@ -51,7 +51,7 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
     m.mentionedJid&&
-  global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
+  glo tubal.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
 ) {
   
   
@@ -60,9 +60,9 @@ if (
  
 
 
- let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkTime
 
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
