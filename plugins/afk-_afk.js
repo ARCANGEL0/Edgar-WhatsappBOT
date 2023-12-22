@@ -12,15 +12,6 @@ if (!user.afkInfo[m.chat]) {
     };
 }
 
-// Check if user is AFK in this group
-if (!global.db.data.users[m.sender]) {
-    global.db.data.users[m.sender] = {};
-}
-
-// Assuming global.db.data.users[m.sender].silencedChat is defined
-if (!global.db.data.users[m.sender].silencedChat) {
-    global.db.data.users[m.sender].silencedChat = {};
-}
 
 
 }if (user.afkInfo[m.chat]) {
