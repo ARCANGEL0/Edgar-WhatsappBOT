@@ -43,8 +43,7 @@ const numero = m.sender;
 
 global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filter(element => element !== numero);
 
-user.afkInfo[m.chat].afkTime = -1
-user.afkInfo[m.chat].afkReason = ''
+delete user.afkInfo[m.chat]
 }
 /*
 if (
