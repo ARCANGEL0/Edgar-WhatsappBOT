@@ -9,7 +9,7 @@ let user = global.db.data.users[m.sender]
 
 
 
-}if (user.afkInfo[m.chat]) {
+if (user.afkInfo[m.chat]) {
     const afkTime = user.afkInfo[m.chat].afkTime;
     const afkReason = user.afkInfo[m.chat].afkReason;
     const number = user.afkInfo[m.chat].number
@@ -21,7 +21,7 @@ let user = global.db.data.users[m.sender]
 }
 console.log("afk event")
 console.log(user.afkInfo[m.chat])
-if (     user.afkInfo[m.chat].afkTime > -1){
+if ( user.afkInfo[m.chat].afkTime > -1){
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
