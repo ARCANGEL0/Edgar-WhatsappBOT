@@ -55,6 +55,7 @@ global.chatgpt.data.users[m.sender] = [];
 /*------------------------------------------------*/
 if (typeof user !== 'object')
 global.db.data.users[m.sender] = {}
+global.db.data.users[m.sender].silencedChat[m.chat]={}
 if (user) {
 if (!isNumber(user.exp)) user.exp = 0
 if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat].silenced = 0
