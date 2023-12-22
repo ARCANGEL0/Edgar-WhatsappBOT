@@ -48,6 +48,34 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
+if (
+  global.db.data.chats &&
+    global.db.data.chats[m.chat] &&
+    global.db.data.chats[m.chat].chatafk &&
+    m.mentionedJid&&
+  global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim())
+) {
+  
+  
+  
+  
+ 
+
+
+ let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
+
+let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
+
+  await m.reply(`
+  ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
+
+🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+
+${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+
+╰━━━━━━━━━━━━━━━━━━⬣`);
+  
+}
 
 if (
   global.db.data.chats &&
