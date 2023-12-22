@@ -1177,8 +1177,7 @@ if (m.text && user.silenced && !isROwner) {
  return
 m.reply(`🚫 teste`)
 	
-return
-}}
+}
 
 let hl = _prefix 
 let adminMode = global.db.data.chats[m.chat].modoadmin
