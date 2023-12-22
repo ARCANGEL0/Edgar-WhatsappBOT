@@ -13,7 +13,7 @@ let user = global.db.data.users[m.sender]
 
 
 console.log("afk event")
-console.log(user.afkInfo[m.chat])
+
 if ( user.afkInfo[m.chat].afkTime > -1){
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
