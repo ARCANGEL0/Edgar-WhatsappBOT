@@ -25,12 +25,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-else if(user.afkInfo[m.chat].afkTime < 0 || !user.afkInfo[m.chat]) {
 
-
-await m.reply("test")
-
-}
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
