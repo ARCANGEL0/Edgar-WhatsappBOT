@@ -52,7 +52,7 @@ const afkReason = m.quoted ? (global.db.data.users[m.quoted.sender].afkInfo[m.ch
 
 const afkTime = m.quoted ? (global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime > 0 ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime : '') : '';
 
-
+console.log(global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime >1)
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
