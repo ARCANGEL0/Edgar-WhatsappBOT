@@ -7,8 +7,10 @@ let username = conn.getName(who)
 conn.getName(who)
   console.log(global.db.data.users[${text ? text : mentionedJid
   }])
-conn.reply(m.chat, "---Log enviado 🕯️---") })
+conn.reply(m.chat, "---Log enviado 🕯️---")
+
 }
+
 handler.help = ['userdata *<nome>*']
 handler.tags = ['fun']
 handler.command = /^userdata/i
