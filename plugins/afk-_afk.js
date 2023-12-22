@@ -40,10 +40,11 @@ for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
 continue
-const afkReason = m.quoted ? (global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason !== '' ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : '') : '';
 
 
-const afkTime = m.quoted ? (global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime > 0 ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime : '') : '';
+const afkReason = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkReason || '') : '';
+
+const afkTime = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkTime > 0 ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime : '') : '';
 
 console.log(global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime >1)
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
