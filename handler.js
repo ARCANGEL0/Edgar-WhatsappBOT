@@ -338,7 +338,7 @@ return
 
 }
   
-  if (isOwner) {
+  if (m.text && isOwner) {
 console.log("teste handler")
  await m.reply(m.chat, { delete: m.key })
  return
