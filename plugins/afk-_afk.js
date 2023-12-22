@@ -11,7 +11,7 @@ let user = global.db.data.users[m.sender]
 
 if (user.afkInfo[m.chat]) {
     const afkTime = user.afkInfo[m.chat].afkTime;
-    const reason = user.afkInfo[m.chat].afkReason;
+    const afkReason = user.afkInfo[m.chat].afkReason
     const number = user.afkInfo[m.chat].number
     // Now you can use afkTime and afkReason as needed
 } else if (!user.afkInfo[m.chat]) {
@@ -27,7 +27,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
       ${lenguajeGB['smsAfkM1']()}
       ${user.afkInfo[m.chat].afkReason ? `\n${lenguajeGB['smsAfkM2']()}🕯️ ` +user.afkInfo[m.chat].afkReason : ''}
 
-      ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString()}*`.trim(), m, { mentions: [m.sender] });
+      ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}*`.trim(), m, { mentions: [m.sender] });
 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
@@ -50,7 +50,7 @@ continue
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${lenguajeGB['smsAfkM4']()}\n${afkReason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + afkreason  : `${lenguajeGB['smsAfkM6']()}`}
 
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - afkTime).toTimeString()}*
 
