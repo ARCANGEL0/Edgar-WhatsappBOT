@@ -48,7 +48,7 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-if
+
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
