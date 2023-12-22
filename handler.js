@@ -243,6 +243,7 @@ if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
         chat: chatIdToCheck
     };
 }
+console.log(global.db.data.users[m.sender].silencedChat[m.chat].silenced) 
 if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced && !isOwner) {
   
    console.log(global.db.data.users[m.sender].silencedChat[m.chat].silenced) 
