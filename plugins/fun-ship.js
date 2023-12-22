@@ -28,7 +28,7 @@ let users = m.isGroup ? participants.find(u => u.jid == user) : {}
 let number = user.split('@')[0]
   
 
-global.db.data.users[m.sender].silencedChat[m.chat].silenced = false
+global.db.data.users[user].silencedChat[m.chat].silenced = false
     
 console.log(global.db.data.users[m.sender].silencedChat[m.chat] )
 
