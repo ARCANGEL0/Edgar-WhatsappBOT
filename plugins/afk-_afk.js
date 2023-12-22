@@ -51,6 +51,7 @@ if (
   
   
  let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
+ console.log(m.mentionedJid)
 console.log(global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid))
 let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
 
