@@ -9,16 +9,9 @@ let user = global.db.data.users[m.sender]
 
 
 
-if (user.afkInfo[m.chat]) {
-    const afkTime = user.afkInfo[m.chat].afkTime;
-    const afkReason = user.afkInfo[m.chat].afkReason
-    const number = user.afkInfo[m.chat].number
-    // Now you can use afkTime and afkReason as needed
-} else if (!user.afkInfo[m.chat]) {
-    // User is not AFK in this group
-    // Set AFK information for this group only if text is not empty
-    return !0
-}
+
+
+
 console.log("afk event")
 console.log(user.afkInfo[m.chat])
 if ( user.afkInfo[m.chat].afkTime > -1){
