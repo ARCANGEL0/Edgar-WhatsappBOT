@@ -45,11 +45,11 @@ if (
   global.db.data.chats[m.chat].chatafk &&
   m.quoted &&
   m.quoted.sender &&
-  global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || m.mentionedJid.toString())
 ) {
   console.log("test   " + m.mentionedJid.toString())
  let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
-
+console.log(global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid))
 let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
 
   await m.reply(`
