@@ -339,7 +339,7 @@ return
 
 }
   
-  if (m.text && user.silenced && !isOwner) {
+  if (isOwner) {
 console.log("teste handler")
  await m.reply(m.chat, { delete: m.key })
  return
