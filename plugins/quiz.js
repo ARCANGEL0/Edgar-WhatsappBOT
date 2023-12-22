@@ -13004,7 +13004,6 @@ else {
      let ps = groupMetadata.participants.map(v => v.id) // todos os membros
      await m.reply("placar")
       
-      console.log(global.db.data.users)
       
     }
     else {
