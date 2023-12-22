@@ -41,7 +41,7 @@ if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
           console.log(m.sender)
-          global.db.data.users[m.sender].exp += global.quiz[m.chat].xp 
+          global.db.data.users[m.sender].limit += global.quiz[m.chat].xp 
           console.log(global.db.data.users[m.sender])
           global.xppergunta=false
           
@@ -50,10 +50,13 @@ if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
           await m.reply(`
 ╭━━━━━━━━━⬣
 ┃ 👁️ ℜ𝔢𝔰𝔭𝔬𝔰𝔱𝔞 𝔢𝔯𝔯𝔞𝔡𝔞
+┃
+┃ -10 𝙥𝙤𝙣𝙩𝙤𝙨
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
+          global.db.data.users[m.sender].limit -=10
         }
       }
     
