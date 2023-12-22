@@ -68,6 +68,7 @@ if (!isNumber(user.afk)) user.afk = -1
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '𝘼𝙥𝙧𝙚𝙣𝙙𝙞𝙯 🕯️'
 
+if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat].silenced = false
 if (!isNumber(user.antispam)) user.antispam = 0
 if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
 
