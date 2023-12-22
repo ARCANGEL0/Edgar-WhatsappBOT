@@ -1176,7 +1176,7 @@ return
 if (m.text && user.silenced && !isROwner) {
  return
 m.reply(`🚫 teste`)
-user.antispam++	
+	
 return
 }}
 
