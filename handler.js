@@ -338,7 +338,7 @@ return
 
 }
   console.log("msg   " + m.message)
-  if (m.text && isOwner) {
+  if (m.message.conversation.trim() !== ''  && isOwner) {
     console.log(m.message)
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
