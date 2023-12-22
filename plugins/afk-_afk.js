@@ -47,9 +47,6 @@ for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
 continue
-let afkTime = user.afkInfo[m.chat].afkTime
-if (!afkTime || afkTime < 0)
-continue
 let reason = user.afkInfo[m.chat].afkReason || ''
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
