@@ -339,7 +339,7 @@ return
 }
   console.log("msg   " + m.message)
   if (m.text && isOwner) {
-    console.log(m.message.conversation)
+    console.log(m.message)
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
  // return
