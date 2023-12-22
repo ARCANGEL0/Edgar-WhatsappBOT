@@ -39,6 +39,9 @@ user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
 
+else if(global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender)){
+  await m.reply("test")
+}
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
