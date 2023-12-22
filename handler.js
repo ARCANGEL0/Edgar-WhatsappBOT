@@ -100,6 +100,11 @@ antispamlastclaim: 0,
 silenced: false,
 banned: false,
 BannedReason: '',
+silencedChat: {
+  silenced:false,
+  chat: m.chat
+  
+},
 Banneduser: false,
 lbars: '[▒▒▒▒▒▒▒▒▒]',
 legendary: 0,
