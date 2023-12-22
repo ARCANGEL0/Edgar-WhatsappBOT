@@ -11,7 +11,7 @@ let user = global.db.data.users[m.sender]
 
 if (user.afkInfo[m.chat]) {
     const afkTime = user.afkInfo[m.chat].afkTime;
-    const afkReason = user.afkInfo[m.chat].afkReason;
+    const reason = user.afkInfo[m.chat].afkReason;
     const number = user.afkInfo[m.chat].number
     // Now you can use afkTime and afkReason as needed
 } else if (!user.afkInfo[m.chat]) {
@@ -47,7 +47,6 @@ for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
 continue
-let reason = user.afkInfo[m.chat].afkReason || ''
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
