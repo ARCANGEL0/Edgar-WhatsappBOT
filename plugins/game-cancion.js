@@ -5,7 +5,8 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let username = conn.getName(who)	
 conn.getName(who)
-  console.log(global.db.data.users[who])
+  console.log(global.db.data.users[${text ? text : mentionedJid
+  }])
 conn.reply(m.chat, "---Log enviado 🕯️---") })
 }
 handler.help = ['userdata *<nome>*']
