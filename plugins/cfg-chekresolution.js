@@ -12,8 +12,7 @@ number = text
 user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
 bot = conn.user.jid.split`@`[0] 
 bant = lenguajeGB.smsPropban1(usedPrefix, command, bot)
-if (!text && !m.quoted) console.log("gesy")
-console.log(m)  return conn.reply(m.chat, bant, null, { mentions: [user] })               
+if (!text && !m.quoted) return conn.reply(m.chat, bant, null, { mentions: [user] })               
 try {
 if(text) {
 user = number + '@s.whatsapp.net'
