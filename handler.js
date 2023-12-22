@@ -1165,21 +1165,21 @@ let user = global.db.data.users[m.sender]
 if (!['owner-unbanchat.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
 if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && name != 'tool-delete.js' && chat?.isBanned && !isROwner) return 
 if (m.text && user.banned && !isROwner) {
-  
-if (user.antispam > 2) return
-console.log(m.key)
-m.sendMessage(m.chat, { delete: m.key })
+ 
+m.sendMessage({ delete: m.key })
 m.reply(`🚫 *ESTÁ BANIDO(A), NÃO PODE USAR COMANDOS*\n
 📑 *MOTIVO: ${user.messageSpam === 0 ? 'NAO ESPECIFICADO' : user.messageSpam}*\n
 `)
-user.antispam++	
-return 
-}}
-
-if (m && user.silenced && !isROwner) {
+}
+  
+  if (m.text && user.silenced && !isROwner) {
  return
 m.sendMessage(m.chat, { delete: m.key })
 }
+  
+}
+
+
 
 let hl = _prefix 
 let adminMode = global.db.data.chats[m.chat].modoadmin
