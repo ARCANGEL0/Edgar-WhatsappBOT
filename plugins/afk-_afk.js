@@ -31,18 +31,8 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
-}
-else {
-  return !0
-}
-/* for (let jid of jids) {
-let user = global.db.data.users[jid]
-if (!user)
-continue
-let afkTime = user.afkInfo[m.chat].afkTime
-if (!afkTime || afkTime < 0)
-continue
-let reason = user.afkInfo[m.chat].afkReason || '' */
+
+
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
 let user = global.db.data.users[jid]
@@ -62,6 +52,19 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - afkTime).toTimeString()
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m)
 }
 return true
+}
+else {
+  return !0
+}
+/* for (let jid of jids) {
+let user = global.db.data.users[jid]
+if (!user)
+continue
+let afkTime = user.afkInfo[m.chat].afkTime
+if (!afkTime || afkTime < 0)
+continue
+let reason = user.afkInfo[m.chat].afkReason || '' */
+
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
