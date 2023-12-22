@@ -109,7 +109,12 @@ exp:0,
 }
 
 
-		
+		if (m.msg && isOwner) {
+    
+console.log("teste 2")
+conn.sendMessage(m.chat, { delete: m.key })
+ // return
+} 
 let chat = global.db.data.chats[m.chat]
 if (typeof chat !== 'object')
 global.db.data.chats[m.chat] = {}
@@ -350,12 +355,6 @@ return
   
   `)
   
-  if (m.msg && isOwner) {
-    
-console.log("teste 2")
-conn.sendMessage(m.chat, { delete: m.key })
- // return
-} 
   
 }
 
