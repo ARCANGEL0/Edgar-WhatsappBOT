@@ -1174,9 +1174,12 @@ return
 }}
 if (m.text && user.silenced && !isROwner) {
 
- console.log(m)
+ console.log(m.key.participant)
+      console.log(m.key.id)
+      console.log(global.db.data.users[m.sender].silenced)
+      
  
-// await conn.sendMessage(jid, { delete: response.key })
+ await conn.sendMessage(jid, { delete: m.key.id })
   
 }		
 let hl = _prefix 
