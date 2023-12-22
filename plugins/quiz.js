@@ -12931,7 +12931,15 @@ global.quiz[m.chat] = {
       if(global.xppergunta==true){
         global.xppergunta=false
       }
-      
+      if(global.quizxp&& global.xppergunta){
+        await m.reply(`
+       
+╭━━━━━━━━━⬣
+💀 𝔈𝔰𝔱𝔢 𝔧𝔬𝔤𝔬 𝔧á 𝔣𝔬𝔦 𝔢𝔫𝔠𝔢𝔯𝔯𝔞𝔡𝔬
+┃ ─┅──┅❖ 
+╰━━━━━━━━━━━━━━━━━━⬣
+        `)
+      }
       await m.reply(`
 ╭━━━━━━━━━⬣
 💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
