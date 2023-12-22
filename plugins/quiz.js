@@ -1,7 +1,7 @@
 global.quiz = global.quiz ? global.quiz : {}
 global.quizxp = global.quizxp ? global.quizxp : {}
 global.xppergunta= global.xppergunta ? global.xppergunta : ""
-const handler = async (m, {conn, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
+const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
