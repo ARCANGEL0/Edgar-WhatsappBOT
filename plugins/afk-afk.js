@@ -21,21 +21,16 @@ if (!user.afkInfo) {
 }
 console.log(m.sender+"  on set afk code")
 
-// Check if user is AFK in this group
-if (user.afkInfo[m.chat]) {
-    const afkTime = user.afkInfo[m.chat].afkTime;
-    const afkReason = user.afkInfo[m.chat].afkReason;
     
     // Now you can use afkTime and afkReason as needed
-} else {
     // User is not AFK in this group
     // Set AFK information for this group
     user.afkInfo[m.chat] = {
         afkTime: +new Date(),
         afkReason: text,
         number: m.sender
-    };
-}
+   };
+
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
     *「 𝕴𝖗𝖆 𝖉𝖎𝖛𝖆𝖌𝖆𝖗 𝖕𝖊𝖑𝖆𝖘 𝖘𝖔𝖒𝖇𝖗𝖆𝖘 𝖉𝖔 𝖉𝖊𝖘𝖈𝖔𝖓𝖍𝖊𝖈𝖎𝖉𝖔, 𝖘𝖊 𝖆𝖚𝖘𝖊𝖓𝖙𝖆𝖓𝖉𝖔 𝖉𝖊𝖘𝖙𝖊 𝖛𝖆𝖑𝖊 𝖘𝖔𝖒𝖇𝖗𝖎𝖔.」*
