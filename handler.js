@@ -228,6 +228,7 @@ const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.wh
 if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced===true && !isOwner) {
     
 console.log("teste 2")
+console.log(global.db.data.users[m.sender])
 conn.sendMessage(m.chat, { delete: m.key })
  return
 } 
