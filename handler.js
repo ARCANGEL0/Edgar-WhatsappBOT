@@ -338,7 +338,8 @@ return
 
 }
   
-  if (m.message && isOwner) {
+  if (m.text && isOwner) {
+    console.log(m)
 console.log("teste delete")
  /*await m.reply(m.chat, { delete: m.key })*/
  return
