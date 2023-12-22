@@ -342,7 +342,7 @@ return
     console.log(m)
 console.log("teste delete")
  /*await m.reply(m.chat, { delete: m.key })*/
- return
+ // return
 } 
   
 }
