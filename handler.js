@@ -289,7 +289,6 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-s,
 chatUpdate,
 __dirname: ___dirname,
 __filename
