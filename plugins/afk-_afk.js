@@ -43,9 +43,9 @@ if (
   global.db.data.chats &&
   global.db.data.chats[m.chat] &&
   global.db.data.chats[m.chat].chatafk &&
-  m.quoted &&
-  m.quoted.sender &&
-  global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.trim() )
+  ((m.quoted &&
+  m.quoted.sender) || m.mentionedJid) &&
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
 ) {
   
   
