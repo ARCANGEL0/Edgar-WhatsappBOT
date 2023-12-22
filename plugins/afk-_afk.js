@@ -58,7 +58,7 @@ let time = global.db.data.users[m.sender].afkInfo[m.chat].afkTime
 
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
-╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m););
+╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
   
 }
 /*
