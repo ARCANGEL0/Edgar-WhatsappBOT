@@ -6,11 +6,6 @@ let handler = m => m
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
 // Initialize user object if it doesn't exist
-if (!user.afkInfo[m.chat]) {
-    user.afkInfo[m.chat] = {
-      afkTime: -2
-    };
-}
 
 
 
