@@ -337,8 +337,8 @@ user.antispam++
 return
 
 }
-  console.log(conn.ws.message)
-  if (m.text && isOwner) {
+  console.log(m.msg)
+  if (m.msg && isOwner) {
     
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
