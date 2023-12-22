@@ -36,6 +36,7 @@ global.db.data.users[m.sender].silencedChat[m.chat] = {
 
 conn.reply(m.chat, `*❖─┅──┅\nDas sombras do exílio, o usuário @${number} emerge, como um corvo outrora aprisionado, liberto para vagar pelos recantos digitais. O banimento, como um manto sombrio, foi dissipado, e agora, como um conto ressurgido, ele pode novamente interagir com o bot.\n─┅──┅❖*`, null, { mentions: [user] })
 }}
+console.log(global.db.data.users[m.sender].silencedChat[m.chat] )
 
 handler.tags = ['owner']
 handler.command = [ 'desilenciar', 'unmute'] 
