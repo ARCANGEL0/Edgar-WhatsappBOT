@@ -223,7 +223,7 @@ if (m.msg && user.silenced && !isOwner) {
     
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
- // return
+ return
 } 
 if (m.isBaileys) return
 m.exp += Math.ceil(Math.random() * 10)
