@@ -13,12 +13,22 @@ if (!user.afkInfo[m.chat]) {
 }
 
 // Check if user is AFK in this group
-if (user.afkInfo[m.chat]) {
+if (!global.db.data.users[m.sender]) {
+    global.db.data.users[m.sender] = {};
+}
+
+// Assuming global.db.data.users[m.sender].silencedChat is defined
+if (!global.db.data.users[m.sender].silencedChat) {
+    global.db.data.users[m.sender].silencedChat = {};
+}
+
+
+}if (user.afkInfo[m.chat]) {
     const afkTime = user.afkInfo[m.chat].afkTime;
     const afkReason = user.afkInfo[m.chat].afkReason;
     const number = user.afkInfo[m.chat].number
     // Now you can use afkTime and afkReason as needed
-} else {
+} else if (!user.afkInfo[m.chat]) {
     // User is not AFK in this group
     // Set AFK information for this group only if text is not empty
     return !0
@@ -36,7 +46,9 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-
+else {
+  return !0
+}
 /* for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
