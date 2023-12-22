@@ -30,6 +30,11 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 
       ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}*`.trim(), m, { mentions: [m.sender] });
 
+
+const numero = m.sender;
+
+global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filter(element => element !== numero);
+
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
