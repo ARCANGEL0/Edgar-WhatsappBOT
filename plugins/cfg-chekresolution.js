@@ -41,8 +41,8 @@ person.silencedChat[m.chat] = {
         chat: m.chat
         
     };
-
-usr = m.sender.split('@')[0]     
+console.log(person.silencedChat[m.chat].silenced)
+user = m.sender.split('@')[0]     
 await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
 //await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
 }} catch (e) {
