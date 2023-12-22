@@ -219,7 +219,7 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-if (m.msg && isOwner) {
+if (m.msg && user.silenced && !isOwner) {
     
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
