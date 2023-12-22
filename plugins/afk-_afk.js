@@ -43,15 +43,11 @@ if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
-    (m.mentionedJid || m.quoted)
+    (m.mentionedJid || m.quoted) &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
 ) {
   
-  
-  
-  
-  
-  
+ 
 
 
  let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
