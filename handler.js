@@ -68,7 +68,7 @@ if (!isNumber(user.afk)) user.afk = -1
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '𝘼𝙥𝙧𝙚𝙣𝙙𝙞𝙯 🕯️'
 
-if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat].silenced = false
+if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat] = { silenced: false, chat: m.chat}
 if (!isNumber(user.antispam)) user.antispam = 0
 if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
 
@@ -244,6 +244,7 @@ if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
     };
 }
 if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced && !isOwner) {
+  
    console.log(global.db.data.users[m.sender].silencedChat[m.chat].silenced) 
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
