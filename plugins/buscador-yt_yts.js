@@ -36,7 +36,6 @@ let link = v.url;
 vids_.urls.push(link);
 return `[${i + 1}]\n🐦‍⬛༻ *TÍTULO:*  ${v.title}
 🐈‍⬛༻ *LINK$* ${v.url}
-🥀༻ *DURACAO:* ${v.timestamp.toLocaleString('pt-BR')}
 🦇༻ *DATA:* ${v.ago}
 ✒️༻ *VISUALIZACOES* ${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
 conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, fkontak, m)
