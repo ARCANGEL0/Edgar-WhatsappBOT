@@ -45,7 +45,7 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 
 delete user.afkInfo[m.chat]
 }
-/*
+
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
@@ -75,7 +75,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
   
 }
 
-*/
+
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
