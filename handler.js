@@ -217,7 +217,7 @@ m.text = ''
 const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-//const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+//const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
 
 if (m.isBaileys) return
@@ -289,7 +289,7 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-isPrems,
+s,
 chatUpdate,
 __dirname: ___dirname,
 __filename
@@ -369,10 +369,7 @@ if (plugin.mods && !isMods) { // Moderator
 fail('mods', m, this)
 continue
 }
-if (plugin.premium && !isPrems) { // Premium
-fail('premium', m, this)
-continue
-}
+
 if (plugin.group && !m.isGroup) { //Solo el grupo
 fail('group', m, this)
 continue
@@ -397,13 +394,13 @@ let xp = 'exp' in plugin ? parseInt(plugin.exp) : 10 // Ganancia de XP por coman
 if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
-if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
+if (plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
 this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎`, m)
 continue     
 }
 			
 m.exp += xp
-if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+if ( && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
 this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
@@ -429,16 +426,13 @@ isOwner,
 isRAdmin,
 isAdmin,
 isBotAdmin,
-isPrems,
 chatUpdate,
 __dirname: ___dirname,
 __filename
 }
 try {
 await plugin.call(this, m, extra)
-if (!isPrems)
-m.limit = m.limit || plugin.limit || false
-m.money = m.money || plugin.money || false
+
 } catch (e) {
 // Error occured
 m.error = e
