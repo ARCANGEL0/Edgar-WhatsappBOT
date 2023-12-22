@@ -13000,7 +13000,7 @@ else {
     
     }  
     else if(text.includes("placar") ) {
-      console.log(m)
+      console.log(m.sender)
      let ps = groupMetadata.participants.map(v => v.id) // todos os membros
      await m.reply("placar")
       
