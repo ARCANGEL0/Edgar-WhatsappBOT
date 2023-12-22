@@ -45,17 +45,13 @@ if (
   global.db.data.chats[m.chat].chatafk &&
   m.quoted &&
   m.quoted.sender &&
-  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || m.mentionedJid.toString())
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim()))
 ) {
   
   
   
   
-  console.log(global.db.data.chats[m.chat].chatafk);
-console.log(m.mentionedJid.toString());
-
-// Ensure m.mentionedJid is a string before trimming
-console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim()));
+  
   
 
 
