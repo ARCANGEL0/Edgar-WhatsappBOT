@@ -39,8 +39,15 @@ user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
 
-else if(global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender)){
-  await m.reply("test")
+if (
+  global.db.data.chats &&
+  global.db.data.chats[m.chat] &&
+  global.db.data.chats[m.chat].chatafk &&
+  m.quoted &&
+  m.quoted.sender &&
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender)
+) {
+  await m.reply("test");
 }
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
