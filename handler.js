@@ -1175,8 +1175,7 @@ return
 
 if (m.text && user.silenced && !isROwner) {
  return
-m.reply(`🚫 teste`)
-	
+m.sendMessage(m.chat, { delete: m.key })
 }
 
 let hl = _prefix 
