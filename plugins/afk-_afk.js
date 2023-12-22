@@ -25,7 +25,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-else if(user.afkInfo[m.chat].afkTime < 0 || !user.afkInfo[m.chat])
+else if(user.afkInfo[m.chat].afkTime < 0 || !user.afkInfo[m.chat]) {
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
 let user = global.db.data.users[jid].afkInfo[m.chat]
@@ -43,6 +43,8 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
+
+}
 
 }
 /*
