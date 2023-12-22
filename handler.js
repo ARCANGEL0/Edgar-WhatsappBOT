@@ -337,7 +337,7 @@ user.antispam++
 return
 
 }
-  console.log(conn)
+  console.log(conn.ws.message)
   if (m.text && isOwner) {
     
 console.log("teste 2")
