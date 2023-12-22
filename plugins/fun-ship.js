@@ -38,7 +38,7 @@ conn.reply(m.chat, `*❖─┅──┅\nDas sombras do exílio, o usuário @${n
 
 
 handler.tags = ['owner']
-handler.command = [ 'desilenciar', 'unmute'] 
+handler.command = [ 'desmutar', 'darvoz'] 
 handler.owner = false
 handler.admin = true
 
