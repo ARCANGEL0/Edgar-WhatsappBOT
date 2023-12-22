@@ -47,7 +47,7 @@ for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
 continue
-const afkReason = user.afkInfo[m.quoted.sender]
+const afkReason = m.quoted ? user.afkInfo[m.quoted.sender] : ''
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
