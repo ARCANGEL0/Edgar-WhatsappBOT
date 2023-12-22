@@ -47,7 +47,7 @@ if (
   m.quoted.sender &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || m.mentionedJid.toString().replace('@', '') + '@s.whatsapp.net')
 ) {
-  console.log(m.mentionedJid.toString().replace('@', '') + '@s.whatsapp.net')
+  
  let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
 
 let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
