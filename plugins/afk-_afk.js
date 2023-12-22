@@ -47,7 +47,19 @@ if (
   m.quoted.sender &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender)
 ) {
-  await m.reply("test");
+ let reason = global.db.data.users[m.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.sender].afkInfo[m.chat].afkReason : ''
+
+let time = global.db.data.users[m.sender].afkInfo[m.chat].afkTime
+
+  await m.reply(`
+  ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
+
+🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+
+${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+
+╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m););
+  
 }
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
