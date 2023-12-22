@@ -41,10 +41,9 @@ user.afkInfo[m.chat].afkReason = ''
 
 if (
   global.db.data.chats &&
-  global.db.data.chats[m.chat] &&
-  global.db.data.chats[m.chat].chatafk &&
-  ((m.quoted &&
-  m.quoted.sender) || m.mentionedJid) &&
+    global.db.data.chats[m.chat] &&
+    global.db.data.chats[m.chat].chatafk &&
+    (m.mentionedJid || m.quoted)
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
 ) {
   
