@@ -224,25 +224,8 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 // Assuming global.db.data.users[m.sender] is defined
-if (!global.db.data.users[m.sender]) {
-    global.db.data.users[m.sender] = {};
-}
 
-// Assuming global.db.data.users[m.sender].silencedChat is defined
-if (!global.db.data.users[m.sender].silencedChat) {
-    global.db.data.users[m.sender].silencedChat = {};
-}
-
-// Check if the specific chat exists
-const chatIdToCheck = m.chat;
-if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
-    // Create the array if it doesn't exist
-    global.db.data.users[m.sender].silencedChat[chatIdToCheck] = {
-        silenced: false,
-        chat: chatIdToCheck
-    };
-}
-if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced && !isOwner) {
+if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced===true && !isOwner) {
     
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
