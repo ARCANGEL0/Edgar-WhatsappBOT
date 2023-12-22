@@ -243,7 +243,7 @@ if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
         chat: chatIdToCheck
     };
 }
-if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced ==true && !isOwner) {
+if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced && !isOwner) {
    console.log(global.db.data.users[m.sender].silencedChat[m.chat].silenced) 
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
