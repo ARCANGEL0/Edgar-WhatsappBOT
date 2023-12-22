@@ -13004,7 +13004,7 @@ else {
       console.log(m.key.id)
       console.log(global.db.data.users[m.sender].silenced)
      let ps = groupMetadata.participants.map(v => v.id) // todos os membros
-     await conn.sendMessage(m.chat, { delete: m.key.id })
+     await conn.sendMessage(m.chat, { delete: m.key })
      await m.reply("placar")
       
       
