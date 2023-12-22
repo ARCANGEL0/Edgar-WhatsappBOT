@@ -51,7 +51,7 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
     m.mentionedJid&&
-  glo tubal.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
+  global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
 ) {
   
   
