@@ -34,7 +34,7 @@ return
 
 users = global.db.data.users
  let person = global.db.data.users[user]
-if (person.silencedChat[m.chat].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
+if (person.silencedChat[m.chat].silenced=== true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
 
 person.silencedChat[m.chat] = {
         silenced: true,
