@@ -40,6 +40,9 @@ if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 ┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
+          console.log(m.sender)
+          global.db.data.users[m.sender].exp += global.quiz[m.chat].xp 
+          console.log(global.db.data.users[m.sender])
           global.xppergunta=false
           
         }
