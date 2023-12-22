@@ -1167,6 +1167,7 @@ if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-ex
 if (m.text && user.banned && !isROwner) {
   
 if (user.antispam > 2) return
+console.log(m.key)
 m.sendMessage(m.chat, { delete: m.key })
 m.reply(`🚫 *ESTÁ BANIDO(A), NÃO PODE USAR COMANDOS*\n
 📑 *MOTIVO: ${user.messageSpam === 0 ? 'NAO ESPECIFICADO' : user.messageSpam}*\n
