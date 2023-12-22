@@ -219,7 +219,7 @@ const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-if (m.msg && global.db.data.users[m.sender].silenced && !isOwner) {
+if (m.msg && global.db.data.users[m.sender].silenced && !isOwner && Array.isArray(global.db.data.users[m.sender].silencedChat) && global.db.data.users[m.sender].silencedChat.includes(m.chat)) {
     
 console.log("teste 2")
 conn.sendMessage(m.chat, { delete: m.key })
