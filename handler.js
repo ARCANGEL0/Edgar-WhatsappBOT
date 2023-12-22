@@ -467,8 +467,9 @@ __filename
 }
 try {
 await plugin.call(this, m, extra)
-
-} catch (e) {
+return
+} 
+catch (e) {
 // Error occured
 m.error = e
 console.error(e)
