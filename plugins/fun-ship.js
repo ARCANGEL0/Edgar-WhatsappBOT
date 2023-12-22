@@ -1,14 +1,39 @@
-let handler = async (m, { conn, command, text }) => {
-if (!text) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n𝙀𝙎𝘾𝙍𝙄𝘽𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝘿𝙊𝙎 𝙋𝙀𝙍𝙎𝙊𝙉𝘼𝙎 𝙋𝘼𝙍𝘼 𝘾𝘼𝙇𝘾𝙐𝙇𝘼𝙍 𝙎𝙐 𝘼𝙈𝙊𝙍`
-let [text1, ...text2] = text.split(' ')
-text2 = (text2 || []).join(' ')
-if (!text2) throw `⚠️ 𝙁𝘼𝙇𝙏𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙇𝘼 𝙎𝙀𝙂𝙐𝙉𝘿𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼`
-let love = `_❤️ *${text1}* tu oportunidad de enamorarte de *${text2}* es de *${Math.floor(Math.random() * 100)}%* 👩🏻‍❤️‍👨🏻_ 
 
-`.trim()
-m.reply(love, null, { mentions: conn.parseMention(love) })
+let handler = async (m, { conn, text }) => {
+function no(number){
+return number.replace(/\s/g,'').replace(/([@+-])/g,'')}
+text = no(text)
+
+if(isNaN(text)) {
+var number = text.split`@`[1]
+} else if(!isNaN(text)) {
+var number = text
 }
-handler.help = ['ship']
-handler.tags = ['fun']
-handler.command = /^ship|shippear$/i
+
+if(!text && !m.quoted) return conn.reply(m.chat, `*MARQUE O USUARIO, ESCREVA O NUMERO OU RESPONDA UMA MENSAGEM PARA DESBANIR*`, m)
+if(isNaN(number)) return conn.reply(m.chat, `*O NÚMERO QUE DIGITOU NÃO É VÁLIDO PARA DESBANIR*`, m)
+try {
+if(text) {
+var user = number + '@s.whatsapp.net'
+} else if(m.quoted.sender) {
+var user = m.quoted.sender
+} else if(m.mentionedJid) {
+var user = number + '@s.whatsapp.net'
+}} catch (e) {
+} finally {
+  
+let groupMetadata = m.isGroup ? await conn.groupMetadata(m.chat) : {}
+let participants = m.isGroup ? groupMetadata.participants : []
+let users = m.isGroup ? participants.find(u => u.jid == user) : {}
+let number = user.split('@')[0]
+  
+global.global.db.data.users[user].silenced  = false
+conn.reply(m.chat, `*❖─┅──┅\nDas sombras do exílio, o usuário @${number} emerge, como um corvo outrora aprisionado, liberto para vagar pelos recantos digitais. O banimento, como um manto sombrio, foi dissipado, e agora, como um conto ressurgido, ele pode novamente interagir com o bot.\n─┅──┅❖*`, null, { mentions: [user] })
+}}
+
+handler.tags = ['owner']
+handler.command = [ 'desilenciar', 'unmute'] 
+handler.owner = false
+handler.admin = true
+
 export default handler
