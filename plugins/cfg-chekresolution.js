@@ -33,6 +33,7 @@ return
 }}
 
 users = global.db.data.users
+console.log(users[user].silenced)
 if (users[user].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
 users[user].silenced = true
 usr = m.sender.split('@')[0]     
