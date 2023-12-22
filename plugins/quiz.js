@@ -13008,7 +13008,7 @@ else {
     
     }  
     else if(text.includes("placar") ) {
- global.topjogadores[m.chat] = {}
+ 
  
  const users = participants.map((u) => conn.decodeJid(u.id));
  console.log(users)
