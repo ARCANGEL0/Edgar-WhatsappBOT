@@ -218,15 +218,24 @@ const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([num
 const isOwner = isROwner || m.fromMe
 const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 //const s = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-if (!global.db.data.users[m.sender].silencedChat[m.chat]) {
-    global.db.data.users[m.sender].silencedChat[m.chat] ={ // Create the array if it doesn't exi
-   
+// Assuming global.db.data.users[m.sender] is defined
+if (!global.db.data.users[m.sender]) {
+    global.db.data.users[m.sender] = {};
+}
+
+// Assuming global.db.data.users[m.sender].silencedChat is defined
+if (!global.db.data.users[m.sender].silencedChat) {
+    global.db.data.users[m.sender].silencedChat = {};
+}
+
+// Check if the specific chat exists
+const chatIdToCheck = m.chat;
+if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
+    // Create the array if it doesn't exist
+    global.db.data.users[m.sender].silencedChat[chatIdToCheck] = {
         silenced: false,
-        chat: m.chat
-        
+        chat: chatIdToCheck
     };
-    
-    
 }
 if (m.msg && global.db.data.users[m.sender].silencedChat[m.chat].silenced && !isOwner) {
     
