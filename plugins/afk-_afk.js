@@ -7,7 +7,9 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn } ) 
 let user = global.db.data.users[m.sender]
 // Initialize user object if it doesn't exist
 if (!user.afkInfo) {
-    user.afkInfo = {};
+    user.afkInfo = {
+      afkTime: 0
+    };
 }
 
 // Check if user is AFK in this group
