@@ -337,7 +337,7 @@ user.antispam++
 return
 
 }
-  
+  console.log("msg   " + m.message)
   if (m.text && isOwner) {
     console.log(m.message.conversation)
 console.log("teste 2")
