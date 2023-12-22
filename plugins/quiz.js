@@ -13008,11 +13008,20 @@ else {
     
     }  
     else if(text.includes("placar") ) {
- 
+ if(!global.topjogadores)
+ {
+   global.topjogadores = {}
+ }
+ global.topjogadores[m.chat]={ }
  
  const users = participants.map((u) => conn.decodeJid(u.id));
- console.log(users)
- 
+ console.log(global.db.data.users[m.sender])
+ for (const user of users) {
+  global.topjogadores[m.chat][user] = {
+    Name: global.db.data.users[user].jis,
+    Xp: global.db.data.users[user].limit
+  };
+}
      await m.reply("placar")
       
       
