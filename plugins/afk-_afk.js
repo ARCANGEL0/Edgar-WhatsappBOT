@@ -46,7 +46,7 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-
+/*
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
@@ -76,7 +76,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
   
 }
 
-
+*/
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
