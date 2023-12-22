@@ -43,7 +43,7 @@ continue
 
 
 const afkReason = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkReason || '') : '';
-
+console.log(m.quoted?.sender ? m.quoted.sender : "")
 const afkTime = m.quoted?.sender ? (global.db.data.users[m.quoted.sender]?.afkInfo[m.chat]?.afkTime > 0 ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime : '') : '';
 
 console.log(global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime >1)
