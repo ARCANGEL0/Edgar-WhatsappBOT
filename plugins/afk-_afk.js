@@ -84,8 +84,8 @@ if (
 ) {
   
   
-  
-  console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid)))
+  console.log(global.db.data.chats[m.chat].chatafk)
+  console.log(global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid))
  
 
 
