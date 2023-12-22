@@ -41,7 +41,7 @@ return `[${i + 1}]\n🐦‍⬛༻ *TÍTULO:*  ${v.title}
 ✒️༻ *VISUALIZACOES* ${v.views}`}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n')
 conn.sendFile(m.chat, results.all[0].thumbnail, 'yts.jpeg', textoInfo + '\n\n' + teks, fkontak, m)
 global.videoList.push(vids_);
-} catch { 
+} catch (e){ 
   console.log(e)
 }}
 handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
