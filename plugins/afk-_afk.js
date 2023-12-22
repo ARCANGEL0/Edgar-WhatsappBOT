@@ -46,13 +46,13 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
 }
-/*
+
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
     m.mentionedJid&&
-  global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim())
+  global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
 ) {
   
   
@@ -75,7 +75,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
 }
-*/
+
 
 if (
   global.db.data.chats &&
