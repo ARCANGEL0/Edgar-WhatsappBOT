@@ -30,9 +30,13 @@ console.log(m.sender+"  on set afk code")
         afkReason: text,
         number: m.sender
    };
-   if(!global.chatafk[m.chat]){
-     global.chatafk[m.chat] = []
-   }
+   if (!global.chatafk) {
+  global.chatafk = {};
+}
+
+if (!global.chatafk[m.chat]) {
+  global.chatafk[m.chat] = [];
+}
 global.chatafk[m.chat].push(m.sender)
 console.log(global.chatafk[m.chat])
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
