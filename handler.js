@@ -1172,16 +1172,16 @@ m.reply(`🚫 *ESTÁ BANIDO(A), NÃO PODE USAR COMANDOS*\n
 user.antispam++	
 return
 }}
-if (m.text && user.silenced && !isROwner) {
 
- console.log(m.key.participant)
-      console.log(m.key.id)
-      console.log(global.db.data.users[m.sender].silenced)
-      
-    await conn.sendMessage(m.chat, { delete: m.key })
- 
-  
-}		
+if (m.text && user.silenced && !isROwner) {
+if (user.antispam > 2) return
+m.reply(`🚫 *ESTÁ BANIDO(A), NÃO PODE USAR COMANDOS*\n
+📑 *MOTIVO: ${user.messageSpam === 0 ? 'NAO ESPECIFICADO' : user.messageSpam}*\n
+`)
+user.antispam++	
+return
+}}
+
 let hl = _prefix 
 let adminMode = global.db.data.chats[m.chat].modoadmin
 let gata = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
