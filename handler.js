@@ -341,7 +341,7 @@ return
   if (m.message.conversation && isOwner) {
     console.log(m)
 console.log("teste 2")
- /*await m.reply(m.chat, { delete: m.key })*/
+ await m.reply(m.chat, { delete: m.key })
  // return
 } 
   
