@@ -47,9 +47,9 @@ if (
   m.quoted.sender &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender)
 ) {
- let reason = global.db.data.users[m.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.sender].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.sender].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
 
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
