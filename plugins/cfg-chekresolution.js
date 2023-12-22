@@ -12,7 +12,8 @@ number = text
 user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
 bot = conn.user.jid.split`@`[0] 
 bant = lenguajeGB.smsPropban1(usedPrefix, command, bot)
-if (!text && !m.quoted) return conn.reply(m.chat, bant, null, { mentions: [user] })               
+if (!text && !m.quoted) console.log("gesy")
+console.log(m)  return conn.reply(m.chat, bant, null, { mentions: [user] })               
 try {
 if(text) {
 user = number + '@s.whatsapp.net'
@@ -31,8 +32,7 @@ aa = ownerNumber + '@s.whatsapp.net'
 await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: [aa] })
 return
 }}
-console.log("gesy")
-console.log(m)
+
 users = global.db.data.users
 if (users[user].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
 users[user].silenced = true
