@@ -56,7 +56,7 @@ if (
 ) {
   
   
-  console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim())
+  console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim()))
   
  
 
