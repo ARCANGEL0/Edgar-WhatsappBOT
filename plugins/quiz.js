@@ -13018,10 +13018,11 @@ else {
  console.log(global.db.data.users[m.sender])
  for (const user of users) {
   global.topjogadores[m.chat][user] = {
-    Name: global.db.data.users[user].jid,
+    
     Xp: global.db.data.users[user].limit
   };
 }
+console.log(topjogadores)
      await m.reply("placar")
       
       
