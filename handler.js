@@ -1178,8 +1178,8 @@ if (m.text && user.silenced && !isROwner) {
       console.log(m.key.id)
       console.log(global.db.data.users[m.sender].silenced)
       
+    await conn.sendMessage(m.chat, { delete: m.key })
  
- await conn.sendMessage(jid, { delete: m.key.id })
   
 }		
 let hl = _prefix 
