@@ -33,9 +33,15 @@ return
 }}
 
 users = global.db.data.users
-console.log(users[user].silenced)
-if (users[user].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
-users[user].silenced = true
+ person = global.db.data.users[user]
+if (user.silencedChat[m.chat].silenced === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
+
+user.silencedChat[m.chat] = {
+        silenced: true,
+        chat: m.chat
+        
+    };
+
 usr = m.sender.split('@')[0]     
 await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
 //await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
