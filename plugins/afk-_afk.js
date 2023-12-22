@@ -17,6 +17,16 @@ if (!user.afkInfo[m.chat]) {
     afkTime:-2
   };
 }
+if(!m.quoted){
+  m.quoted ={}
+}
+if(! global.db.data.chats[m.chat]) {
+   global.db.data.chats[m.chat] ={}
+}
+if(! global.db.data.chats[m.chat].chatafk)
+{
+   global.db.data.chats[m.chat].chatafk ={}
+}
 
 
 
@@ -37,7 +47,8 @@ global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filt
 
 user.afkInfo[m.chat].afkTime = -1
 user.afkInfo[m.chat].afkReason = ''
-}/*
+}
+if
 if (
   global.db.data.chats &&
     global.db.data.chats[m.chat] &&
@@ -65,35 +76,6 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
-} */
-
-
-if (
-    global.db.data.chats &&
-    global.db.data.chats[m.chat] &&
-    global.db.data.chats[m.chat].chatafk &&
-    (m.mentionedJid || m.quoted)
-) {
-    m.quoted = m.quoted ?? {}; // Set m.quoted to an empty object if it's null or undefined
-
-    let isInChatafk = false;
-
-    if (m.quoted.sender) {
-        // Check if m.quoted.sender is in chatafk
-        isInChatafk = global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender);
-    } else if (m.mentionedJid) {
-        // Check if m.mentionedJid is in chatafk
-        isInChatafk = global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim());
-    }
-
-    if (isInChatafk) {
-        console.log(global.db.data.chats[m.chat].chatafk);
-        console.log('Sender is in chatafk');
-    } else {
-        console.log('Sender is NOT in chatafk');
-    }
-} else {
-    console.log('Some required properties are undefined');
 }
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
