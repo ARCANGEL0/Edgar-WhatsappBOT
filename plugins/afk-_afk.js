@@ -40,17 +40,25 @@ user.afkInfo[m.chat].afkReason = ''
 }
 
 if (
-  global.db.data.chats &&
+    global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].chatafk &&
-    (m.mentionedJid || m.quoted) &&
-  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
+    (m.mentionedJid || m.quoted)
 ) {
-  
- 
+    let isInChatafk = false;
 
+    if (m.quoted && m.quoted.sender) {
+        // Check if m.quoted.sender is in chatafk
+        isInChatafk = global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender);
+    } else if (m.mentionedJid) {
+        // Check if m.mentionedJid is in chatafk
+        isInChatafk = global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim());
+    }
 
- let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
+    if (isInChatafk) {
+        
+        
+        let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
 
 let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
 
@@ -62,6 +70,32 @@ let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
+        
+        
+        
+    } else {
+        return !0;
+    }
+} else {
+    console.log('error');
+}
+
+
+
+
+
+if (
+  global.db.data.chats &&
+    global.db.data.chats[m.chat] &&
+    global.db.data.chats[m.chat].chatafk &&
+    (m.mentionedJid || m.quoted) &&
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
+) {
+  
+ 
+
+
+ 
   
 }
 /*
