@@ -341,7 +341,7 @@ return
   if (m.message.conversation && isOwner) {
     console.log(m)
 console.log("teste 2")
- await conn.sendMessage(m.chat, { delete: m.key })
+conn.sendMessage(m.chat, { delete: m.key })
  // return
 } 
   
