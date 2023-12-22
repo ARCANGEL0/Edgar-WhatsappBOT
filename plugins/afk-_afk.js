@@ -84,20 +84,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 
 
-if (
-  global.db.data.chats &&
-    global.db.data.chats[m.chat] &&
-    global.db.data.chats[m.chat].chatafk &&
-    (m.mentionedJid || m.quoted) &&
-  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
-) {
-  
- 
 
-
- 
-  
-}
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
