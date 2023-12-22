@@ -18,7 +18,7 @@ if (!user.afkInfo[m.chat]) {
   };
 }
 if(!m.quoted){
-  m.quoted ={}
+  return 0
 }
 if(! global.db.data.chats[m.chat]) {
    global.db.data.chats[m.chat] ={}
