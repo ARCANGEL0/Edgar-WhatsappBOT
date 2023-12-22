@@ -400,7 +400,7 @@ continue
 }
 			
 m.exp += xp
-if ( && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+if ( plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
 this.reply(m.chat, `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`, m)
 continue //Sin límite
 }
