@@ -68,7 +68,6 @@ if (!isNumber(user.afk)) user.afk = -1
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '𝘼𝙥𝙧𝙚𝙣𝙙𝙞𝙯 🕯️'
 
-if (!isNumber(user.silencedChat[m.chat])) user.silencedChat[m.chat] = { silenced: false, chat: m.chat}
 if (!isNumber(user.antispam)) user.antispam = 0
 if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
 
@@ -101,11 +100,6 @@ antispamlastclaim: 0,
 silenced: false,
 banned: false,
 BannedReason: '',
-silencedChat: {
-  silenced:false,
-  chat: m.chat
-  
-},
 Banneduser: false,
 lbars: '[▒▒▒▒▒▒▒▒▒]',
 legendary: 0,
@@ -239,7 +233,7 @@ const chatIdToCheck = m.chat;
 if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
     // Create the array if it doesn't exist
     global.db.data.users[m.sender].silencedChat[chatIdToCheck] = {
-        silenced: false,
+        silenced: false ,
         chat: chatIdToCheck
     };
 }
