@@ -46,11 +46,16 @@ if (
   m.quoted &&
   m.quoted.sender &&
   global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || m.mentionedJid.toString())
-) {console.log(global.db.data.chats[m.chat].chatafk);
+) {
+  
+  
+  
+  
+  console.log(global.db.data.chats[m.chat].chatafk);
 console.log(m.mentionedJid.toString());
 
-// Trim both strings before checking inclusion
-console.log(global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.trim()));
+// Ensure m.mentionedJid is a string before trimming
+console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim()));
   
 
 
