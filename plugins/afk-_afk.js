@@ -28,10 +28,10 @@ user.afkInfo[m.chat].afkReason = ''
 
 let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 for (let jid of jids) {
-let user = global.db.data.users[jid]
+let user = global.db.data.users[jid].afkInfo[m.chat]
 if (!user)
 continue
-let afkTime = user.afk
+let afkTime = user.afkTime
 if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkReason || ''
