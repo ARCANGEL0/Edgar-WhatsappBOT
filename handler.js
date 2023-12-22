@@ -339,7 +339,7 @@ return
 }
   
   if (m.message && isOwner) {
-console.log("teste handler")
+console.log("teste delete")
  /*await m.reply(m.chat, { delete: m.key })*/
  return
 } 
