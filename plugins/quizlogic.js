@@ -19,9 +19,8 @@ if (m.text == "placar") {
 }
 else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
-
-      console.log("id  "+m.quoted.id)
-      console.log("id2  "+ global.quiz[m.chat].id)
+console.log(global.db.data.chats[m.chat].jogadores[m.sender])
+      
       if(global.quizxp[m.chat].modo==false)
       {
         await m.reply(`
@@ -31,9 +30,9 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
       else {
         if(m.text==global.quiz[m.chat].ca){
           
-           await m.reply(global.db.data.chats[m.chat].jogadores[m.sender])
+           
           global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
-          console.log(global.db.data.users[m.sender])
+          
           await m.reply(`
 ╭━━━━━━━━━⬣
 ┃ ┅──┅❖ 𝙾𝚙𝚌𝚊𝚘 ${global.quiz[m.chat].ca}
