@@ -13007,51 +13007,48 @@ else {
 }
     
     }  
-    else if(text.includes("placar") ) {
- if(!global.topjogadores)
- {
-   global.topjogadores = {}
- }
- global.topjogadores[m.chat]={ }
- 
- const users = participants.map((u) => conn.decodeJid(u.id));
- console.log(global.db.data.users[m.sender])
- for (const user of users) {
-  global.topjogadores[m.chat][user] = {
-    
-    xp: global.db.data.users[user].limit,
-    name: global.db.data.users[user].name
-  };
-}
-console.log(topjogadores)
+    if (text.includes("placar")) {
+  if (!global.topjogadores) {
+    global.topjogadores = {};
+  }
+  global.topjogadores[m.chat] = {};
 
+  const users = participants.map((u) => conn.decodeJid(u.id));
+  console.log(global.db.data.users[m.sender]);
+  for (const user of users) {
+    global.topjogadores[m.chat][user] = {
+      xp: global.db.data.users[user].limit,
+      name: global.db.data.users[user].name,
+    };
+  }
+  console.log(topjogadores);
 
-let people = '';
-
-let formattedMessage = `
+  let formattedMessage = `
        ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
-Object.entries(topjogadores).forEach(([group, players]) => {
-  const sortedPlayers = Object.entries(players)
-    .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
-    .slice(0, 10) // Take only the first 10 players
-    .map(([number, { xp, name }]) => `🪦 ${number}\n🕯️ ${name}\n🪶 ${xp}\n       ━━━━━━━⬣`)
-    .join('\n');
+  Object.entries(topjogadores).forEach(([group, players]) => {
+    const sortedPlayers = Object.entries(players)
+      .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
+      .slice(0, 10) // Take only the first 10 players
+      .map(
+        ([number, { xp, name }]) => `🪦 ${number}\n🕯️ ${name}\n🪶 ${xp}\n       ━━━━━━━⬣`
+      )
+      .join('\n');
 
-  formattedMessage += `
+    formattedMessage += `
        ${sortedPlayers}
        ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
 `;
-      m.reply(formattedMessage)
-    }
-    }}   
-    
-    else {
-      
-      const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
+  });
 
-    throw `
+  m.reply(formattedMessage);
+} else {
+  const categoryList = categories
+    .map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`)
+    .join('\n');
+
+  throw `
 ╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
 ┃ 
 ┃ 🥀🦇 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐭ó𝐩𝐢𝐜𝐨 𝐣𝐚𝐳 
@@ -13063,8 +13060,7 @@ ${categoryList}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`;
-
-    }
+}
 }
 }
 
