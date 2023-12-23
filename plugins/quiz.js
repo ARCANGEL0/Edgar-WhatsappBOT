@@ -13022,7 +13022,7 @@ else {
       name: global.db.data.users[user].name,
     };
   }
-const namesOnly = Object.keys(topjogadores);
+const namesOnly = Object.keys(topjogadores[m.chat]);
 console.log(namesOnly);
 /*
   let formattedMessage = `
