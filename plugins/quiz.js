@@ -12950,7 +12950,7 @@ ${global.quiz[m.chat].cm}
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
     }
-    else if( text.includes("xp") ){
+    else if(text.includes("xp") ){
       const matches = m.text.match(/\.quiz xp (on|off)/);
 
 if (matches) {
@@ -13007,7 +13007,7 @@ else {
 }
     
     }  
-    if (text.includes("placar")) {
+   else if (text.includes("placar")) {
     /*  
   if (!global.topjogadores) {
     global.topjogadores = {};
