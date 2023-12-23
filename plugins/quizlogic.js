@@ -14,7 +14,6 @@ handler.before = async function (m) {
    "id": ""
   }
 }
-try{
 if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 
@@ -62,10 +61,8 @@ if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
       }
     
     
-}
-}catch(e) {
-    
-    console.log(e)
+} else {
+    console.log('m.quoted is null or m.quoted.id is not equal to global.quiz[m.chat].id');
 }
 
     
