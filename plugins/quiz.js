@@ -13022,8 +13022,14 @@ else {
       name: global.db.data.users[user].name,
     };
   }
-const namesOnly = Object.keys(topjogadores);
-console.log(namesOnly[m.chat]);
+// Count the number of keys with @g.us
+
+
+// Filter keys with @s.whatsapp.net
+const swnetKeys = Object.keys(topjogadores[m.chat]).filter(key => key.includes('@s.whatsapp.net'));
+
+// Output the results
+console.log('Keys with @s.whatsapp.net:', swnetKeys);
 /*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
