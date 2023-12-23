@@ -13016,6 +13016,15 @@ else {
 
 let mentionIds = [];
 let sortedPlayers
+const users = participants.map((u) => conn.decodeJid(u.id));
+  console.log(global.db.data.users[m.sender]);
+  for (const user of users) {
+    global.topjogadores[m.chat][user] = {
+      xp: global.db.data.users[user].limit,
+      name: global.db.data.users[user].name,
+    };
+  }
+  console.log(topjogadores);
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
@@ -13031,8 +13040,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
         const userId = number.split('@')[0];
         mentionIds.push(number); // Add each number to the mentionIds array
         return `
-🪦 @${userId}
-🕯️ ${name}
+🪦 @${userId} || 🕯️ ${name}
 🪶 ${xp} _Pontos_
    ─┅──┅❖ ❖─┅──┅`;
       }
