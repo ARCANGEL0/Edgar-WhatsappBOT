@@ -13030,7 +13030,7 @@ const sortedJogadores = Object.entries(topjogadores)
   .join("\n");
       
       
-     await m.reply(sortedJogadores)
+     console.log(sortedJogadores)
       
       
     }
