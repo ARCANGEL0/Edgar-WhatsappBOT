@@ -13022,8 +13022,8 @@ else {
       name: global.db.data.users[user].name,
     };
   }
-const namesOnly = Object.keys(topjogadores[m.chat]);
-console.log(namesOnly);
+const namesOnly = Object.keys(topjogadores);
+console.log(namesOnly[m.chat]);
 /*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
