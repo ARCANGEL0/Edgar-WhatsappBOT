@@ -13068,7 +13068,7 @@ ${sortedPlayers}
   
   
   
-    conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionIds });
+    conn.sendMessage(m.chat, { text: formattedMessage});
     
 
   }
