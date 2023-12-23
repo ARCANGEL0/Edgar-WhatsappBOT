@@ -13020,7 +13020,7 @@ else {
 let sortedPlayers
 
 console.log(m.chat)
-
+console.log("CHAT")
 console.log("teste inicio -------+")
 console.log(topjogadores[m.chat])
 console.log("teste fim--------+")
