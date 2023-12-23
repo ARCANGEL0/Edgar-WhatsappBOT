@@ -13025,6 +13025,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
     };
   }
   console.log(topjogadores);
+  console.log("acima e topjogadores")
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
