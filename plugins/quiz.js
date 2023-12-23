@@ -13027,7 +13027,8 @@ const users = participants.map((u) => conn.decodeJid(u.id));
       }
     }
     global.topjogadores[m.chat][user] = {
-      xp: global.db.data.users[user].limit
+      xp: global.db.data.users[user].limit,
+      name: global.db.data.users[user].name
     };
   }
   console.log(topjogadores);
@@ -13046,7 +13047,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
     .map(
       ([number, { xp, name }]) => {
         const userId = number.split('@')[0];
-        mentionIds.push(userId); // Add each number to the mentionIds array
+        mentionIds.push(number); // Add each number to the mentionIds array
         return `
 🪦 @${userId} | ${name}
 🪶 ${xp} _Pontos_
