@@ -14,7 +14,9 @@ handler.before = async function (m) {
    "id": ""
   }
 }
-if (m.text == "placar") return !0
+if (m.text == "placar") {
+  console.log("placar")
+}
 else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 
