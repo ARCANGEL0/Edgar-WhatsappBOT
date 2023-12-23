@@ -13046,9 +13046,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
-  if(!mentionIds){
-    let mentionIds 
-  } 
+  
   
 mentionIds = [];
 
