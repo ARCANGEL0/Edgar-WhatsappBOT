@@ -13008,9 +13008,7 @@ else {
     
     }  
    else if (text.includes("placar")) {
-      if(sortedPlayers){
-  delete sortedPlayers
-}
+
 
   if (!global.topjogadores) {
     global.topjogadores = {};
