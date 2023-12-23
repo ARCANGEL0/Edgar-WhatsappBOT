@@ -13049,13 +13049,13 @@ let mentionedId = [];
 
 
   // Extract keys, sort by xp in descending order, and limit to top 5
-  const top5Users = Object.keys(data)
-    .sort((a, b) => data[b].xp - data[a].xp)
+  const top5Users = Object.keys(players)
+    .sort((a, b) => players[b].xp - players[a].xp)
     .slice(0, 5);
 
   
   top5Users.forEach((key) => {
-    const { xp, name } = data[key];
+    const { xp, name } = players[key];
     mentionedId.push(key);
 
     formattedMessage += `
