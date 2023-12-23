@@ -13024,12 +13024,10 @@ else {
   }
 // Count the number of keys with @g.us
 
-console.log(topjogadores)
-// Filter keys with @s.whatsapp.net
-const swnetKeys = Object.keys(topjogadores).filter(key => key.includes('@s.whatsapp.net'));
+const numbers = Object.keys(topjogadores[m.chat]).map(key => key.split('@')[0]);
 
 // Output the results
-console.log('Keys with @s.whatsapp.net:', swnetKeys);
+console.log('Numbers:', numbers);
 /*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
