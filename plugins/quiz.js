@@ -13022,7 +13022,8 @@ else {
       name: global.db.data.users[user].name,
     };
   }
-  console.log(topjogadores);
+const namesOnly = Object.keys(topjogadores);
+console.log(namesOnly);
 /*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
