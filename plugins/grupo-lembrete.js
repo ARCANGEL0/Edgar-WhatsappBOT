@@ -75,6 +75,7 @@ const timeoutset = endDate - startDate;
   console.log("hora atual    "+horaatual+"\ntipo:  "+typeof horaatual)
   console.log("hora definida    "+horario+"\ntipo   "+typeof horario)
   console.log(timeoutset*/
+  await conn.sendMessage(m.chat, { delete: m.key })
   await conn.reply(m.chat, `━━━━━━━━━⬣⬣━━━━━━━━
 
 🕰📜 𝐦𝐞𝐧𝐬𝐚𝐠𝐞𝐦  𝐦𝐚𝐫𝐜𝐚𝐝𝐚  𝐩𝐚𝐫𝐚 *${horario}*
