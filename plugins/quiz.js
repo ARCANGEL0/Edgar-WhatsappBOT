@@ -13027,26 +13027,41 @@ else {
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
-  Object.entries(topjogadores).forEach(([group, players]) => {
-    const sortedPlayers = Object.entries(players)
-      .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
-      .slice(0, 10) // Take only the first 10 players
-      .map(
-        ([number, { xp, name }]) => `
-🪦 @${number.split('@')[0]}
+  const mentionIds = [];
+
+Object.entries(topjogadores).forEach(([group, players]) => {
+  const sortedPlayers = Object.entries(players)
+    .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
+    .slice(0, 10) // Take only the first 10 players
+    .map(
+      ([number, { xp, name }]) => {
+        const userId = number.split('@')[0];
+        mentionIds.push('@'+userId); // Add each number to the mentionIds array
+        return `
+🪦 @${userId}
 🕯️ ${name}
 🪶 ${xp} _Pontos_
-   ─┅──┅❖ ❖─┅──┅`
-      )
-      .join('\n');
+   ─┅──┅❖ ❖─┅──┅`;
+      }
+    )
+    .join('\n');
+});
+
+// Use mentionIds array as needed
+console.log(mentionIds);
 
     formattedMessage += `
 ${sortedPlayers}
 ━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━ 
 `;
   });
-
-  m.reply(formattedMessage);
+  const mentionIds = [];
+  
+  
+    conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionIds });
+    
+    
+ 
 } else {
   const categoryList = categories
     .map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`)
