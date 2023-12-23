@@ -13019,11 +13019,17 @@ else {
  for (const user of users) {
   global.topjogadores[m.chat][user] = {
     
-    Xp: global.db.data.users[user].limit
+    xp: global.db.data.users[user].limit
+    name: global.db.data.users[user].name
   };
 }
 console.log(topjogadores)
-     await m.reply("placar")
+const jogadores = Object.entries(topjogadores)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join("\n");
+      
+      
+     await m.reply(jogadores)
       
       
     }
