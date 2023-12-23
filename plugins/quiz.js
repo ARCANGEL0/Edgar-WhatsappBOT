@@ -13065,7 +13065,7 @@ ${sortedPlayers}
   }
 
     
- */
+ 
  console.log("fim placar")
 } else {
   const categoryList = categories
