@@ -13043,7 +13043,7 @@ Object.entries(topjogadores[m.chat]).forEach(([group, players]) => {
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
     .slice(0, 5) // Take only the first 10 players
     .map(
-      ([number, { xp }]) => {
+      ([number, { xp,name }]) => {
         const userId = number.split('@')[0];
         mentionIds.push(number); // Add each number to the mentionIds array
         return `
