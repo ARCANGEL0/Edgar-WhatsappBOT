@@ -13023,21 +13023,21 @@ else {
     };
   }
 //*/
-
+let mentionIds = [];
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
-  const mentionIds = [];
+  
 
 Object.entries(topjogadores).forEach(([group, players]) => {
   const sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
-    .slice(0, 10) // Take only the first 10 players
+    .slice(0, 5) // Take only the first 10 players
     .map(
       ([number, { xp, name }]) => {
         const userId = number.split('@')[0];
-        mentionIds.push('@'+userId); // Add each number to the mentionIds array
+        mentionIds.push(number); // Add each number to the mentionIds array
         return `
 🪦 @${userId}
 🕯️ ${name}
@@ -13055,12 +13055,15 @@ console.log(mentionIds);
 ${sortedPlayers}
 ━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━ 
 `;
-  });
-  const mentionIds = [];
+
+  
   
   
     conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionIds });
     
+
+  }
+
     
  */
  console.log("fim placar")
