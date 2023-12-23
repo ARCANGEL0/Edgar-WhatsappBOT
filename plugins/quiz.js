@@ -13024,12 +13024,13 @@ else {
   };
 }
 console.log(topjogadores)
-const jogadores = Object.entries(topjogadores)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
+const sortedJogadores = Object.entries(topjogadores)
+  .sort(([, a], [, b]) => b.Xp - a.Xp) // Sort by XP level in descending order
+  .map(([key, value]) => `${key}: ${value.Xp}`)
+  .join("\n");
       
       
-     await m.reply(jogadores)
+     await m.reply(sortedJogadores)
       
       
     }
