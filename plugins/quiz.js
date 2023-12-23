@@ -13045,10 +13045,39 @@ const users = participants.map((u) => conn.decodeJid(u.id));
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
+let mentionedId = [];
+
+
+  // Extract keys, sort by xp in descending order, and limit to top 5
+  const top5Users = Object.keys(data)
+    .sort((a, b) => data[b].xp - data[a].xp)
+    .slice(0, 5);
 
   
+  top5Users.forEach((key) => {
+    const { xp, name } = data[key];
+    mentionedId.push(key);
+
+    formattedMessage += `
+🪦 @${key} | ${name}
+🪶 ${xp} _Pontos_
+   ─┅──┅❖ ❖─┅──┅
+`;
+  })
+
   
-let mentionIds = [];
+
+// Example usage
+console.log(generateTop5List(jsonData));
+console.log('Mentioned IDs:', mentionedId);
+
+conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionedId});
+
+// Reset mentionedId for the next cycle
+mentionedId = [];
+  
+  
+
 /*
 Object.entries(players).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
@@ -13059,7 +13088,7 @@ Object.entries(players).forEach(([group, players]) => {
         const userId = number.split('@')[0];
         mentionIds.push(number); // Add each number to the mentionIds array
         return `
-🪦 @${userId} | ${name}
+🪦 @${key} | ${name}
 🪶 ${xp} _Pontos_
    ─┅──┅❖ ❖─┅──┅`;
       }
