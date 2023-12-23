@@ -13008,20 +13008,20 @@ else {
     
     }  
    else if (text.includes("placar")) {
-      
+      if(sortedPlayers){
+  delete sortedPlayers
+}
+if(mentionIds !== [] )
+{
+  delete sortedPlayers
+}
   if (!global.topjogadores) {
     global.topjogadores = {};
   }
   global.topjogadores[m.chat] = {};
 
 let mentionIds = [];
-if(sortedPlayers){
-  delete sortedPlayers
-}
-if(mentionIds !== [] )
-{
-  mentionIds = []
-}
+
 let sortedPlayers
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
