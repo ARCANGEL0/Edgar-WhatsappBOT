@@ -13045,7 +13045,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
 `;
       m.reply(formattedMessage)
     }
-      
+    }}   
     
     else {
       
