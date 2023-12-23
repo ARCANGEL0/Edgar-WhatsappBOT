@@ -13043,7 +13043,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
 
   
 
-Object.entries(topjogadores).forEach(([group, players]) => {
+Object.entries(topjogadores[m.chat]).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
     .slice(0, 5) // Take only the first 10 players
