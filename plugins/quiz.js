@@ -13031,7 +13031,15 @@ const sortedJogadores = Object.entries(topjogadores)
       
       
      console.log(sortedJogadores)
-      
+      let people = '';
+
+Object.entries(topjogadores).forEach(([group, players]) => {
+  Object.entries(players).forEach(([number, { xp, name }]) => {
+    people += `${number}\n${name}\n${xp}\n\n`;
+  });
+});
+
+console.log(people);
       
     }
     else {
