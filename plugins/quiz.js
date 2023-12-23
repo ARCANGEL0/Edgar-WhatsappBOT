@@ -13033,7 +13033,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
         limit:0,
       }
     }
-    if(players[user]){
+    if(!players[user]){
     players[user] = {
       xp: 0
       name: global.db.data.users[user].name
@@ -13049,7 +13049,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
   
   
 mentionIds = [];
-
+/*
 Object.entries(players).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
@@ -13080,6 +13080,7 @@ ${sortedPlayers}
   
     conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionIds});
     
+*/
 
   }
 
