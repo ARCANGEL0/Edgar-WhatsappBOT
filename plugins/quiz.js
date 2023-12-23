@@ -13022,7 +13022,7 @@ let sortedPlayers
 console.log(m.chat)
 console.log("CHAT")
 console.log("teste inicio -------+")
-console.log(topjogadores[m.chat])
+console.log(topjogadores['120363202611492303@g.us'])
 console.log("teste fim--------+")
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
