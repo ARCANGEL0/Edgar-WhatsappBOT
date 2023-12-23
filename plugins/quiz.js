@@ -13039,8 +13039,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
         
          
         return `
-🪦 @${userId}
-🕯️ ${name}
+🪦 @${userId} | 🕯️ ${name}
 🪶 ${xp} _Pontos_
    ─┅──┅❖ ❖─┅──┅`;
       }
