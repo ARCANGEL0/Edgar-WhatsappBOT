@@ -13015,7 +13015,7 @@ else {
  global.topjogadores[m.chat]={ }
  
  const users = participants.map((u) => conn.decodeJid(u.id));
- console.log(global.db.data.users[m.sender])
+ console.log(global.db.data.users[m.sender].name)
  for (const user of users) {
   global.topjogadores[m.chat][user] = {
     
@@ -13024,10 +13024,7 @@ else {
   };
 }
 console.log(topjogadores)
-const sortedJogadores = Object.entries(topjogadores)
-  .sort(([, a], [, b]) => b.Xp - a.Xp) // Sort by XP level in descending order
-  .map(([key, value]) => `${key}: ${value.Xp}`)
-  .join("\n");
+
       
       
      await m.reply(sortedJogadores)
