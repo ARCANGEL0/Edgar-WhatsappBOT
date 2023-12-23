@@ -13035,8 +13035,8 @@ Object.entries(topjogadores).forEach(([group, players]) => {
     .slice(0, 10) // Take only the first 10 players
     .map(
       ([number, { xp, name }]) => {
-        const userId = number.split('@')[0];
-        mentionIds.push('@'+userId); // Add each number to the mentionIds array
+        
+        mentionIds.push(number); // Add each number to the mentionIds array
         return `
 🪦 @${userId}
 🕯️ ${name}
