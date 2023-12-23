@@ -13009,11 +13009,12 @@ else {
     }  
    else if (text.includes("placar")) {
 
-
-  if (!global.topjogadores) {
-    global.topjogadores = {};
+    let chatdb = global.db.data.chats[m.chat]
+  let players = chatdb.jogadores   
+  if (!players) {
+    chatdb.jogadores = {};
   }
-  global.topjogadores[m.chat] = {};
+  players = {};
 
 
 
@@ -13022,7 +13023,7 @@ let sortedPlayers
 console.log(m.chat)
 console.log("CHAT")
 console.log("teste inicio -------+")
-console.log(topjogadores[m.chat.toString()])
+console.log(jogadores)
 console.log("teste fim--------+")
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
@@ -13032,21 +13033,26 @@ const users = participants.map((u) => conn.decodeJid(u.id));
         limit:0,
       }
     }
-    global.topjogadores[m.chat][user] = {
-      xp: global.db.data.users[user].limit,
+    if(players[user]){
+    players[user] = {
+      xp: 0
       name: global.db.data.users[user].name
-    };
+    }
+    }
   }
-  console.log(topjogadores);
+  console.log(players);
   console.log("acima e topjogadores")
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
+  if(!mentionIds){
+    let mentionIds 
+  } 
   
-let mentionIds = [];
+mentionIds = [];
 
-Object.entries(topjogadores).forEach(([group, players]) => {
+Object.entries(players).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
     .slice(0, 5) // Take only the first 5 players
