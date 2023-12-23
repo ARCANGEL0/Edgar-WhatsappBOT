@@ -30,7 +30,12 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       else {
         if(m.text==global.quiz[m.chat].ca){
           
-           
+           if(!global.db.data.chats[m.chat].jogadores[m.sender]){
+             global.db.data.chats[m.chat].jogadores[m.sender] = {
+               xp:0,
+               name: global.db.data.users[m.sender].name
+             }
+           }
           global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
           
           await m.reply(`
