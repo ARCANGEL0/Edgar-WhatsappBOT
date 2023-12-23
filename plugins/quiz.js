@@ -13059,7 +13059,7 @@ let mentionedId = [];
     mentionedId.push(key);
 
     formattedMessage += `
-🪦 @${key} | ${name}
+🪦 @${key.split('@')[0} | ${name}
 🪶 ${xp} _Pontos_
    ─┅──┅❖ ❖─┅──┅
 `;
