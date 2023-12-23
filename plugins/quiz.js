@@ -13013,17 +13013,9 @@ else {
     global.topjogadores = {};
   }
   global.topjogadores[m.chat] = {};
-/*
-  const users = participants.map((u) => conn.decodeJid(u.id));
-  console.log(global.db.data.users[m.sender]);
-  for (const user of users) {
-    global.topjogadores[m.chat][user] = {
-      xp: global.db.data.users[user].limit,
-      name: global.db.data.users[user].name,
-    };
-  }
-//*/
+
 let mentionIds = [];
+let sortedPlayers
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
