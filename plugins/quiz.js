@@ -13024,29 +13024,27 @@ else {
   };
 }
 console.log(topjogadores)
-const sortedJogadores = Object.entries(topjogadores)
-  .sort(([, a], [, b]) => b.Xp - a.Xp) // Sort by XP level in descending order
-  .map(([key, value]) => `${key}: ${value.Xp}`)
-  .join("\n");
-      
-      
-     console.log(sortedJogadores)
-      
+
 
 let people = '';
+
+let formattedMessage = `
+       ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
+`;
 
 Object.entries(topjogadores).forEach(([group, players]) => {
   const sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
     .slice(0, 10) // Take only the first 10 players
-    .map(([number, { xp, name }]) => `${number}\n${name}\n${xp}\n\n`)
-    .join('');
+    .map(([number, { xp, name }]) => `🪦 ${number}\n🕯️ ${name}\n🪶 ${xp}\n       ━━━━━━━⬣`)
+    .join('\n');
 
-  people += `${group}\n${sortedPlayers}`;
-});
-
-console.log(people);
+  formattedMessage += `
+       ${sortedPlayers}
+       ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
+`;
       
+      await m.reply(formattedMessage)
     }
     else {
       
