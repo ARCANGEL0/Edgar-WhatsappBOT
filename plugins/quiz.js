@@ -13048,7 +13048,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
         const userId = number.split('@')[0];
         mentionIds.push(userId); // Add each number to the mentionIds array
         return `
-🪦 @${userId}
+🪦 @${userId} | ${name}
 🪶 ${xp} _Pontos_
    ─┅──┅❖ ❖─┅──┅`;
       }
@@ -13067,7 +13067,7 @@ ${sortedPlayers}
   
   
   
-    conn.sendMessage(m.chat, { text: formattedMessage});
+    conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionIds});
     
 
   }
