@@ -13048,7 +13048,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
 });
 
 // Use mentionIds array as needed
-console.log(mentionIds);
+console.log(topjogadores[m.chat]);
 
     formattedMessage += `
 ${sortedPlayers}
