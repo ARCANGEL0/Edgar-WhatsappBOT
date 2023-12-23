@@ -44,7 +44,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
           console.log(m.sender)
-          global.db.data.users[m.sender].limit += global.quiz[m.chat].xp 
+          global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
           console.log(global.db.data.users[m.sender])
           global.xppergunta=false
           
@@ -59,7 +59,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 ┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
-          global.db.data.users[m.sender].limit -=10
+          global.db.data.chats[m.chat].jogadores[m.sender].xp -=10
         }
       }
     
@@ -78,7 +78,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
         let resposta = global.quiz[m.chat].ca
         // m.reply(JSON.stringify(json, null, '\t'))
         if (m.text == resposta ){
-            global.db.data.users[m.sender].limit += global.quiz[id].xp
+            global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[id].xp
             m.reply(`*Respesta correcta!*\n+${global.quiz[id].xp} Exp`)
             
             delete global.quiz[id]
