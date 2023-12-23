@@ -13027,19 +13027,7 @@ console.log(players)
 console.log("teste fim--------+")
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
-  for (const user of users) {
-    if(!global.db.data.users[user]){
-      global.db.data.users[user] = {
-        limit:0,
-      }
-    }
-    if(!players[user]){
-    players[user] = {
-      xp: 0,
-      name: global.db.data.users[user].name
-    }
-    }
-  }
+
   console.log(players);
   console.log("acima e topjogadores")
   let formattedMessage = `
