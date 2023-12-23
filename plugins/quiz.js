@@ -13018,6 +13018,10 @@ let mentionIds = [];
 if(sortedPlayers){
   delete sortedPlayers
 }
+if(mentionIds !== [] )
+{
+  mentionIds = []
+}
 let sortedPlayers
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
