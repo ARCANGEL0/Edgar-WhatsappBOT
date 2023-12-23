@@ -13044,7 +13044,7 @@ Object.entries(topjogadores).forEach(([group, players]) => {
        ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
 `;
       
-      await m.reply(formattedMessage)
+      m.reply(formattedMessage)
     }
     else {
       
