@@ -13066,9 +13066,8 @@ ${sortedPlayers}
 
     
  
- console.log("fim placar")
-} 
-}else {
+ 
+else {
   const categoryList = categories
     .map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`)
     .join('\n');
