@@ -13024,7 +13024,7 @@ else {
   console.log(topjogadores);
 
   let formattedMessage = `
-       ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
+━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
 
   Object.entries(topjogadores).forEach(([group, players]) => {
@@ -13032,13 +13032,17 @@ else {
       .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
       .slice(0, 10) // Take only the first 10 players
       .map(
-        ([number, { xp, name }]) => `🪦 ${number}\n🕯️ ${name}\n🪶 ${xp}\n       ━━━━━━━⬣`
+        ([number, { xp, name }]) => `
+🪦 @${number.split('@')[0]}
+🕯️ ${name}
+🪶 ${xp} _Pontos_
+   ─┅──┅❖ ❖─┅──┅`
       )
       .join('\n');
 
     formattedMessage += `
-       ${sortedPlayers}
-       ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
+${sortedPlayers}
+━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━ 
 `;
   });
 
