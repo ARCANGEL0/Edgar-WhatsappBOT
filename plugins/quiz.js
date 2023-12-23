@@ -13055,7 +13055,7 @@ ${sortedPlayers}
 ━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━ 
 `;
   });
-  const mentionIds = [];
+  console.log(mentionIds)
   
   
     conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionIds });
