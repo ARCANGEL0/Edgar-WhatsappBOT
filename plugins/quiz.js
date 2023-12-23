@@ -13009,15 +13009,11 @@ else {
     }  
    else if (text.includes("placar")) {
 console.log(global.db.data.chats[m.chat].jogadores)
-  
-  let players = global.db.data.chats[m.chat].jogadores
-  if (!players) {
+  if (!global.db.data.chats[m.chat].jogadores) {
     global.db.data.chats[m.chat].jogadores = {};
   }
+  let players = global.db.data.chats[m.chat].jogadores
   
-
-
-
 let sortedPlayers
 
 console.log(m.chat)
@@ -13065,7 +13061,7 @@ conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionedId});
 // Reset mentionedId for the next cycle
 mentionedId = [];
   
-  
+  players = {}
 
 /*
 Object.entries(players).forEach(([group, players]) => {
