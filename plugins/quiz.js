@@ -13024,7 +13024,7 @@ else {
   }
 // Count the number of keys with @g.us
 
-
+console.log(topjogadores)
 // Filter keys with @s.whatsapp.net
 const swnetKeys = Object.keys(topjogadores).filter(key => key.includes('@s.whatsapp.net'));
 
