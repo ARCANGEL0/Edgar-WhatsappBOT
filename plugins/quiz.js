@@ -13008,7 +13008,7 @@ else {
     
     }  
    else if (text.includes("placar")) {
-
+console.log("text")
     let chatdb = global.db.data.chats[m.chat]
   let players = chatdb.jogadores   
   if (!players) {
