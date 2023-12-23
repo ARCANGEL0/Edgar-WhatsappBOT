@@ -30,6 +30,10 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
       }
       else {
         if(m.text==global.quiz[m.chat].ca){
+          
+            console.log(global.db.data.chats[m.chat].jogadores[m.sender])
+          global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
+          console.log(global.db.data.users[m.sender])
           await m.reply(`
 ╭━━━━━━━━━⬣
 ┃ ┅──┅❖ 𝙾𝚙𝚌𝚊𝚘 ${global.quiz[m.chat].ca}
@@ -43,9 +47,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 ┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
-          console.log(m.sender)
-          global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
-          console.log(global.db.data.users[m.sender])
+        
           global.xppergunta=false
           
         }
