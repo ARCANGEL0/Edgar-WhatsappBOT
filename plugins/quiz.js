@@ -13009,10 +13009,10 @@ else {
     }  
    else if (text.includes("placar")) {
 console.log("text")
-    let chatdb = global.db.data.chats[m.chat]
-  let players = chatdb.jogadores   
+    
+  let players = global.db.data.chats[m.chat].jogadores
   if (!players) {
-    chatdb.jogadores = {};
+    global.db.data.chats[m.chat].jogadores = {};
   }
   players = {};
 
@@ -13026,7 +13026,8 @@ console.log("teste inicio -------+")
 console.log(players)
 console.log("teste fim--------+")
 const users = participants.map((u) => conn.decodeJid(u.id));
-  console.log(global.db.data.users[m.sender]);
+  
+  
 
   console.log(players);
   console.log("acima e topjogadores")
