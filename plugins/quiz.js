@@ -13035,7 +13035,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
     }
     if(!players[user]){
     players[user] = {
-      xp: 0
+      xp: 0,
       name: global.db.data.users[user].name
     }
     }
