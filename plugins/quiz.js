@@ -13026,7 +13026,7 @@ else {
 
 
 // Filter keys with @s.whatsapp.net
-const swnetKeys = Object.keys(topjogadores[m.chat]).filter(key => key.includes('@s.whatsapp.net'));
+const swnetKeys = Object.keys(topjogadores).filter(key => key.includes('@s.whatsapp.net'));
 
 // Output the results
 console.log('Keys with @s.whatsapp.net:', swnetKeys);
