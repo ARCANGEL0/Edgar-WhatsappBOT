@@ -13048,7 +13048,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
 
   
   
-mentionIds = [];
+let mentionIds = [];
 /*
 Object.entries(players).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
