@@ -31,7 +31,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
       else {
         if(m.text==global.quiz[m.chat].ca){
           
-            console.log(global.db.data.chats[m.chat].jogadores[m.sender])
+           await m.reply(global.db.data.chats[m.chat].jogadores[m.sender])
           global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
           console.log(global.db.data.users[m.sender])
           await m.reply(`
