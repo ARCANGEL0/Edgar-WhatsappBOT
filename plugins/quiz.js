@@ -13043,7 +13043,6 @@ Object.entries(topjogadores).forEach(([group, players]) => {
        ${sortedPlayers}
        ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
 `;
-      
       m.reply(formattedMessage)
     }
     else {
