@@ -13015,6 +13015,9 @@ else {
   global.topjogadores[m.chat] = {};
 
 let mentionIds = [];
+if(sortedPlayers){
+  delete sortedPlayers
+}
 let sortedPlayers
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
