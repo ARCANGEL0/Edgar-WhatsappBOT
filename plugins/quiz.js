@@ -13015,7 +13015,7 @@ else {
   }
   global.topjogadores[m.chat] = {};
 
-let mentionIds = [];
+
 
 let sortedPlayers
 const users = participants.map((u) => conn.decodeJid(u.id));
@@ -13037,15 +13037,16 @@ const users = participants.map((u) => conn.decodeJid(u.id));
 `;
 
   
+let mentionIds = [];
 
 Object.entries(topjogadores[m.chat]).forEach(([group, players]) => {
   sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
-    .slice(0, 5) // Take only the first 10 players
+    .slice(0, 5) // Take only the first 5 players
     .map(
-      ([number, { xp,name }]) => {
+      ([number, { xp, name }]) => {
         const userId = number.split('@')[0];
-        mentionIds.push(number); // Add each number to the mentionIds array
+        mentionIds.push(userId); // Add each number to the mentionIds array
         return `
 🪦 @${userId}
 🪶 ${xp} _Pontos_
