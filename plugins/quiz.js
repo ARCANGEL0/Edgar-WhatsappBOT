@@ -13023,7 +13023,7 @@ let sortedPlayers
   
 
 Object.entries(topjogadores).forEach(([group, players]) => {
-  const sortedPlayers = Object.entries(players)
+  sortedPlayers = Object.entries(players)
     .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
     .slice(0, 5) // Take only the first 10 players
     .map(
