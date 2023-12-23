@@ -13008,7 +13008,7 @@ else {
     
     }  
    else if (text.includes("placar")) {
-    /*  
+      
   if (!global.topjogadores) {
     global.topjogadores = {};
   }
@@ -13023,7 +13023,7 @@ else {
     };
   }
   console.log(topjogadores);
-
+/*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
