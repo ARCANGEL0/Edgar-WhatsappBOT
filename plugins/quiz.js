@@ -13008,6 +13008,7 @@ else {
     
     }  
     if (text.includes("placar")) {
+    /*  
   if (!global.topjogadores) {
     global.topjogadores = {};
   }
@@ -13061,7 +13062,8 @@ ${sortedPlayers}
     conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionIds });
     
     
- 
+ */
+ console.log("fim placar")
 } else {
   const categoryList = categories
     .map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`)
