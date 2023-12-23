@@ -13011,16 +13011,13 @@ else {
       if(sortedPlayers){
   delete sortedPlayers
 }
-if(!mentionIds)
-{
-  let mentionIds
-}
+
   if (!global.topjogadores) {
     global.topjogadores = {};
   }
   global.topjogadores[m.chat] = {};
 
-mentionIds = [];
+let mentionIds = [];
 
 let sortedPlayers
 const users = participants.map((u) => conn.decodeJid(u.id));
