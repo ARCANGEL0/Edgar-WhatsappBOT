@@ -13009,12 +13009,12 @@ else {
     }  
    else if (text.includes("placar")) {
 console.log(global.db.data.chats[m.chat].jogadores)
-    
+  
   let players = global.db.data.chats[m.chat].jogadores
   if (!players) {
     global.db.data.chats[m.chat].jogadores = {};
   }
-  players = {};
+  
 
 
 
