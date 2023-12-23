@@ -13013,7 +13013,7 @@ else {
     global.topjogadores = {};
   }
   global.topjogadores[m.chat] = {};
-
+/*
   const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
   for (const user of users) {
@@ -13022,13 +13022,8 @@ else {
       name: global.db.data.users[user].name,
     };
   }
-// Count the number of keys with @g.us
+//*/
 
-const numbers = Object.keys(topjogadores[m.chat]).map(key => key.split('@')[0]);
-
-// Output the results
-console.log('Numbers:', numbers);
-/*
   let formattedMessage = `
 ━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
 `;
