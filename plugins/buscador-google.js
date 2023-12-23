@@ -17,8 +17,16 @@ const ss = `https://image.thum.io/get/fullpage/${url}`
 conn.sendFile(m.chat, ss, 'error.png', teks, fkontak)
 //m.reply(teks)
 })
-} catch {    
-handler.limit = 0
+} catch(e) {    
+console(e)
+await m.reply(`
+ ━━━━━━━━━⬣『⚠』⬣━━━━━━━━ 
+ 
+ 🪶🕯️ 𝔈𝔯𝔯𝔬 𝔡𝔢 𝔠𝔬𝔫𝔢𝔵𝔞𝔬
+𝔓𝔬𝔯 𝔣𝔞𝔳𝔬𝔯 𝔱𝔢𝔫𝔱𝔢 𝔫𝔬𝔳𝔞𝔪𝔢𝔫𝔱𝔢 𝔪𝔞𝔦𝔰 𝔱𝔞𝔯𝔡𝔢, 𝔪𝔦𝔫𝔥𝔞 𝔠𝔞𝔯𝔞 𝔞𝔩𝔪𝔞 𝔞𝔱𝔬𝔯𝔪𝔢𝔫𝔱𝔞𝔡𝔞
+
+ ━━━━━━━⬣🌒⬣━━━━━━━━
+`)
 }}
 handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
 handler.tags = ['internet']
