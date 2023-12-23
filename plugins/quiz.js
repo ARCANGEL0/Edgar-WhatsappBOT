@@ -13020,7 +13020,7 @@ else {
 let sortedPlayers
 
 console.log("teste inicio -------+")
-console.log(topjogadores)
+console.log(topjogadores[m.chat])
 console.log("teste fim--------+")
 const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(global.db.data.users[m.sender]);
