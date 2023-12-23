@@ -13009,10 +13009,6 @@ else {
     }  
    else if (text.includes("placar")) {
 console.log(global.db.data.chats[m.chat].jogadores)
-
-const participants = (await conn.groupMetadata(id)).participants.map(v => v.id);
-
-console.log(participants)
   if (!global.db.data.chats[m.chat].jogadores) {
     global.db.data.chats[m.chat].jogadores = {};
   }
@@ -13060,7 +13056,7 @@ let mentionedId = [];
 
 console.log('Mentioned IDs:', mentionedId);
 
-conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionedId});
+conn.sendMessage(m.chat, { text: formattedMessage, mentions: mentionedId});
 
 // Reset mentionedId for the next cycle
 mentionedId = [];
