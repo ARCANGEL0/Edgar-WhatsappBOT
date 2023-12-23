@@ -13044,7 +13044,9 @@ Object.entries(topjogadores).forEach(([group, players]) => {
        ━━━━━━━━━⬣🌒 ${vs} ⬣━━━━━━━━ 
 `;
       m.reply(formattedMessage)
-    }}
+    }
+      
+    
     else {
       
       const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
