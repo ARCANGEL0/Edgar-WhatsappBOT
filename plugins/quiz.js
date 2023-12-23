@@ -13031,12 +13031,18 @@ const sortedJogadores = Object.entries(topjogadores)
       
       
      console.log(sortedJogadores)
-      let people = '';
+      
+
+let people = '';
 
 Object.entries(topjogadores).forEach(([group, players]) => {
-  Object.entries(players).forEach(([number, { xp, name }]) => {
-    people += `${number}\n${name}\n${xp}\n\n`;
-  });
+  const sortedPlayers = Object.entries(players)
+    .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
+    .slice(0, 10) // Take only the first 10 players
+    .map(([number, { xp, name }]) => `${number}\n${name}\n${xp}\n\n`)
+    .join('');
+
+  people += `${group}\n${sortedPlayers}`;
 });
 
 console.log(people);
