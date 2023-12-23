@@ -13011,9 +13011,9 @@ else {
       if(sortedPlayers){
   delete sortedPlayers
 }
-if(mentionIds !== [] )
+if(mentionIds)
 {
-  delete sortedPlayers
+  delete mentionIds
 }
   if (!global.topjogadores) {
     global.topjogadores = {};
