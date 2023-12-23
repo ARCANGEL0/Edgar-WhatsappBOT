@@ -13068,7 +13068,7 @@ let mentionedId = [];
   
 
 // Example usage
-console.log(generateTop5List(jsonData));
+
 console.log('Mentioned IDs:', mentionedId);
 
 conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionedId});
