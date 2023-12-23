@@ -13008,7 +13008,7 @@ else {
     
     }  
    else if (text.includes("placar")) {
-console.log("text")
+console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
   let players = global.db.data.chats[m.chat].jogadores
   if (!players) {
