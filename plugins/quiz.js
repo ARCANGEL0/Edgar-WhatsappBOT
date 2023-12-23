@@ -13009,6 +13009,10 @@ else {
     }  
    else if (text.includes("placar")) {
 console.log(global.db.data.chats[m.chat].jogadores)
+
+const participants = (await conn.groupMetadata(id)).participants.map(v => v.id);
+
+console.log(participants)
   if (!global.db.data.chats[m.chat].jogadores) {
     global.db.data.chats[m.chat].jogadores = {};
   }
