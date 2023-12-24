@@ -3,10 +3,10 @@ import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-	
+	const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 	console.log("-----")
     let q = m.quoted ? m.quoted : m
-    let avatar= await conn.profilePictureUrl(q, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+    let avatar= await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
     
     console.log(avatar)
     
