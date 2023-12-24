@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
     let js = await fetch(`https://api.popcat.xyz/communism?image=${encodeURIComponent(url)}`)
     console.log(js)
-    await m.sendFile(m.chat, js, "error.jpg", "teste")
+    await m.sendFile(m.chat, js.url, "error.jpg", "teste")
     
 }
 
