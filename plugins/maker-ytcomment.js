@@ -14,9 +14,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let mime = (q.msg || q).mimetype || ''
     let img = await avatar.download?.()
     console.log(img)
-//    let url = await uploadImage(img)
+   let url = await uploadImage(img)
     
-    let js = await fetch(`https://api.popcat.xyz/communism?image=${encodeURIComponent(img)}`)
+    let js = await fetch(`https://api.popcat.xyz/communism?image=${encodeURIComponent(url)}`)
     console.log(js)
     await conn.sendFile(m.chat, js.url, "error.jpg", "teste")
     
