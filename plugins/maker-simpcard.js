@@ -8,7 +8,7 @@ const handler = async (m, {conn}) => {
   let response = await fetch(`https://api.popcat.xyz/communism?image=${imagem}`);
   let resultado = await response.json();
 console.log(resultadi)
-  conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 ${who} ☭`, m);
+  conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 ${who.split("@")[0]} ☭`, m);
 } catch (error) {
   console.error('Error sending API request:', error);
   // Handle the error or provide a default result if needed
