@@ -6,5 +6,5 @@ const handler = async (m, {conn, args}) => {
 };
 handler.help = ['commie', 'ussr', 'comunista'];
 handler.tags = ['maker'];
-handler.command = /^(itssostupid|iss|stupid)$/i;
+handler.command = /^(commie|ussr|comunista)$/i;
 export default handler;
