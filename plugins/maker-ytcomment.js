@@ -6,7 +6,11 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 	
 	console.log("-----")
     let q = m.quoted ? m.quoted : m
-    let avatar= await conn.profilePictureUrl(q, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
+    let avatar= await conn.profilePictureUrl(q, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+    
+    console.log(avatar)
+    
+    
     let mime = (q.msg || q).mimetype || ''
     let img = await q.download?.()
     let url = await uploadImage(img)
