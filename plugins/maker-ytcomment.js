@@ -17,7 +17,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['agedetect']
 handler.tags = ['maker']
 handler.command = /^(mkpooh|pooh)$/i
-handler.limit = true
+handler.limit = false
 
 export default handler
 
