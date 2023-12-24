@@ -3,6 +3,17 @@ import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
+  
+  
+  if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+   ━━━━━━━━━⬣🌕⬣━━━━━━━━
+𝗗𝗶𝗴𝗮-𝗺𝗲 𝗾𝘂𝗮𝗹 𝗵𝘂𝗺𝗼𝗿 𝘃𝗶𝘀𝗰𝗲𝗿𝗮𝗹 𝗳𝗹𝗼𝗿𝗲𝘀𝗰𝗲 𝗱𝗲 𝘀𝘂𝗮 𝗺𝗲𝗻𝘁𝗲 𝗲 𝗳𝗼𝗿𝗻𝗲𝗰𝗮 𝗺𝗲 𝗼𝘀 𝘁𝗲𝘅𝘁𝗼𝘀 𝘀𝗲𝗽𝗮𝗿𝗮𝗱𝗼𝘀 𝗽𝗼𝗿 | , 𝗲 𝗰𝗿𝗶𝗮𝗿𝗲𝗶 𝗼 𝗺𝗲𝗺𝗲 𝗱𝗼 𝘀𝗲𝘂 𝗽𝗼𝗼𝗵 𝗲𝗹𝗲𝗴𝗮𝗻𝘁𝗲.
+
+𝗘𝘅𝗲𝗺𝗽𝗹𝗼:
+.𝗽𝗼𝗼𝗵 𝗲𝘀𝗰𝗿𝗲𝘃𝗲𝗿 𝗽𝗼𝗲𝗺𝗮𝘀 𝘀𝗼𝗯𝗿𝗲 𝗮𝗺𝗼𝗿 𝗲 𝗯𝗲𝗹𝗲𝘇𝗮 | 𝗱𝗲𝘀𝗰𝗿𝗲𝘃𝗲𝗿 𝗮 𝗺𝗼𝗿𝗯𝗶𝗱𝗮 𝗻𝗮𝘁𝘂𝗿𝗲𝘇𝗮 𝗵𝘂𝗺𝗮𝗻𝗮 𝗱𝗲 𝗳𝗼𝗿𝗺𝗮 𝗺𝗲𝘁𝗮𝗳ó𝗿𝗶𝗰𝗮 𝗲 𝗹𝗶𝗿𝗶𝗰𝗮
+   ━━━━━━━━━⬣🌒⬣━━━━━━━━
+  `, m)
+  
 	const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 	
   let [txt1, txt2] = text.split('|').map(item => item.trim());
@@ -14,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
 }
 
-handler.help = ['agedetect']
+handler.help = ['memepooh']
 handler.tags = ['maker']
 handler.command = /^(mkpooh|pooh)$/i
 handler.limit = false
