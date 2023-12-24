@@ -1,7 +1,7 @@
 const handler = async (m, {conn, args}) => {
   const text = args.slice(1).join(' ');
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-  conn.sendFile(m.chat, `https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')} `,`𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`, m);
+  conn.sendFile(m.chat, `https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')} `,`𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`;
 };
 handler.help = ['commie', 'ussr', 'comunista'];
 handler.tags = ['maker'];
