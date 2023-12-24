@@ -1,12 +1,20 @@
 const handler = async (m, {conn}) => {
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   
-  let imagem=  await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+  try {
+  let imagem = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
+
+  // Make API request
+  let response = await fetch(`https://api.popcat.xyz/communism?image=${imagem}`);
+  let resultado = await response.json();
+
+  conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 ${who} ☭`, m);
+} catch (error) {
+  console.error('Error sending API request:', error);
+  // Handle the error or provide a default result if needed
   
-  
-  conn.sendFile(m.chat,imagem,"error.png","a",m)
-  
-  
+  conn.sendMessage(m.chat, "Erro", "error.png", "", m);
+}
   
 };
 handler.help = ['comunista'];
