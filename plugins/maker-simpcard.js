@@ -22,10 +22,10 @@ export default handler
 
 async function GDriveDl(url) {
 	let id
-	console.log(url)
+	
 	if (!(url && url.match(/drive\.google/i))) throw 'Invalid URL'
 	id = (url.match(/\/?id=(.+)/i) || url.match(/\/d\/(.*?)\//))[1]
-	console.log(id)
+	console.log(url.match(/\/?id=(.+)/i) )
 	if (!id) throw 'ID Not Found'
 	let res = await fetch(`https://drive.google.com/uc?id=${id}&authuser=0&export=download`, {
 		method: 'post',
