@@ -3,9 +3,10 @@ import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-	console.log(m.quoted ? m.quoted : m.profilePictureUrl)
+	
 	console.log("-----")
     let q = m.quoted ? m.quoted : m
+    let avatar= await conn.profilePictureUrl(q, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
     let mime = (q.msg || q).mimetype || ''
     let img = await q.download?.()
     let url = await uploadImage(img)
