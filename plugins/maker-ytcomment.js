@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let img = await q.download?.()
     let url = await uploadImage(img)
     
-    let js = await fetch(`https://api.lolhuman.xyz/api/agedetect?apikey=${lolkey}&img=${encodeURIComponent(url)}`)
+    let js = await fetch(`https://api.lolhuman.xyz/api/agedetect?apikey=apikeymu&img=${encodeURIComponent(url)}`)
     let has = await js.json()
     await m.reply('Hasil deteksi Usia dar gambar tersebut adalah ' + has.result + ' Tahun')
     
