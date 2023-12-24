@@ -1,12 +1,27 @@
-const handler = async (m, {conn, text}) => {
-  if (!text) throw `${lenguajeGB['smsAvisoMG']()} Y EL TEXTO?`
-  conn.sendFile(m.chat, global.API('https://some-random-api.com', '/canvas/youtube-comment', {
-    avatar: await conn.profilePictureUrl(m.sender, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
-    comment: text,
-    username: conn.getName(m.sender),
-  }), 'error.png', '*HAS COMENTADO EN YOUTUBE!!* ?', m);
-};
-handler.help = ['ytcomment <comment>'];
-handler.tags = ['maker'];
-handler.command = /^(ytcomment)$/i;
-export default handler;
+import fetch from 'node-fetch'
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+	
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || ''
+    let img = await q.download?.()
+    let url = await uploadImage(img)
+    
+    let js = await fetch(`https://api.lolhuman.xyz/api/agedetect?apikey=${lolkey}&img=${encodeURIComponent(url)}`)
+    let has = await js.json()
+    await m.reply('Hasil deteksi Usia dar gambar tersebut adalah ' + has.result + ' Tahun')
+    
+}
+
+handler.help = ['agedetect']
+handler.tags = ['maker']
+handler.command = /^(agedetect|usia)$/i
+handler.limit = true
+
+export default handler
+
+const isUrl = (text) => {
+  return text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/, 'gi'))
+}
