@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     
     
     let mime = (q.msg || q).mimetype || ''
-    let img = await q.download?.()
+    let img = await avatar.download?.()
     let url = await uploadImage(img)
     
     let js = await fetch(`https://api.popcat.xyz/communism?image=${encodeURIComponent(url)}`)
