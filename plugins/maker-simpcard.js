@@ -5,7 +5,8 @@ const handler = async (m, {conn}) => {
   let imagem = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
 
   // Make API request
-  let response = await fetch(`https://api.popcat.xyz/communism?image=https://telegra.ph/file/24fa902ead26340f3df2c.png'`);
+  let response = await fetch(`https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')}'`);
+  console.log(conn.profilePictureUrl(who, 'image'))
   let resultado = await response.json();
 console.log(resultado)
   conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 @${who.split("@")[0]} ☭`, m);
