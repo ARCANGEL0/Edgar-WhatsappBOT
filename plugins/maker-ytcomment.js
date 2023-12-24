@@ -4,27 +4,19 @@ import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-	console.log("-----")
-    let q = m.quoted ? m.quoted : m
-    let avatar= await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+	
+  let [txt1, txt2] = m.text.split('|').map(item => item.trim());
+  
     
-    console.log(avatar)
-    
-    
-    let mime = (q.msg || q).mimetype || ''
-    let img = await avatar.download?.()
-    console.log(img)
-   let url = await uploadImage(img)
-    
-    let js = await fetch(`https://api.popcat.xyz/communism?image=${encodeURIComponent(url)}`)
+    let js = await fetch(`https://api.popcat.xyz/pooh?text1=${txt1}&text2=${txt2}`)
     console.log(js)
-    await conn.sendFile(m.chat, js.url, "error.jpg", "teste")
+    await conn.sendFile(m.chat, js.url, "error.jpg", "")
     
 }
 
 handler.help = ['agedetect']
 handler.tags = ['maker']
-handler.command = /^(agedetect|usia)$/i
+handler.command = /^(mkpooh|pooh)$/i
 handler.limit = true
 
 export default handler
