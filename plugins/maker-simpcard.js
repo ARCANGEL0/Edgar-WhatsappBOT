@@ -3,7 +3,7 @@ const handler = async (m, {conn}) => {
   
   try {
   let imagem = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
-
+console.log(imagem)
   // Make API request
   let response = await fetch(`https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')}'`);
   console.log(conn.profilePictureUrl(who))
