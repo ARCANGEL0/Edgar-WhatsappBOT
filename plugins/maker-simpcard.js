@@ -2,12 +2,15 @@ const handler = async (m, {conn}) => {
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   
   try {
-  let imagem = await conn.profilePictureUrl(who).catch(_ => gataImg.getRandom())
+    console.log(conn)
+  let imagem = await conn.profilePictureUrl(who)
 console.log(imagem)
   // Make API request
-  let response = await fetch(`https://api.popcat.xyz/communism?image=${imagem}`);
+  let response = 
+  fetch(`https://api.popcat.xyz/communism?image=${imagem}`);
+
   console.log(conn.profilePictureUrl(who))
-  let resultado = await response.json();
+  let resultado =  response.json();
 console.log(resultado)
   conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 @${who.split("@")[0]} ☭`, m);
 } catch (error) {
