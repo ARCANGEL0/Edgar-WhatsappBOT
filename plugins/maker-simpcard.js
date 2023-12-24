@@ -2,7 +2,7 @@ const handler = async (m, {conn}) => {
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   
   try {
-  let imagem = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
+  let imagem = conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
 console.log(imagem)
   // Make API request
   let response = await fetch(`https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')}'`);
