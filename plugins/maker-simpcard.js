@@ -14,7 +14,7 @@ console.log(resultado)
   console.error('Error sending API request:', error);
   // Handle the error or provide a default result if needed
   
-  conn.sendMessage(m.chat, "Erro", "error.png", "", m);
+  conn.sendMessage(m.chat, "Erro", "error.png", "", m,{mentions:who});
 }
   
 };
