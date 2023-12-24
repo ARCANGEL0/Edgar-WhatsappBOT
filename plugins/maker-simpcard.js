@@ -6,7 +6,7 @@ const handler = async (m, {conn}) => {
 
   // Make API request
   let response = await fetch(`https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')}'`);
-  console.log(conn.profilePictureUrl(who, 'image'))
+  console.log(conn.profilePictureUrl(who))
   let resultado = await response.json();
 console.log(resultado)
   conn.sendFile(m.chat, resultado, "error.png", `𝙲𝚊𝚖𝚊𝚛𝚊𝚍𝚊 @${who.split("@")[0]} ☭`, m);
