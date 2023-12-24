@@ -5,7 +5,7 @@ import uploadImage from '../lib/uploadImage.js'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 	
-  let [txt1, txt2] = m.text.split('|').map(item => item.trim());
+  let [txt1, txt2] = text.split('|').map(item => item.trim());
   
     
     let js = await fetch(`https://api.popcat.xyz/pooh?text1=${txt1}&text2=${txt2}`)
