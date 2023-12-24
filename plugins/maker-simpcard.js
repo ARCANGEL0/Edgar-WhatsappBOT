@@ -5,7 +5,7 @@ const handler = async (m, {conn}) => {
   let imagem = await conn.profilePictureUrl(who).catch(_ => gataImg.getRandom())
 console.log(imagem)
   // Make API request
-  let response = await fetch(`https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image')}'`);
+  let response = await fetch(`https://api.popcat.xyz/communism?image=${imagem}`);
   console.log(conn.profilePictureUrl(who))
   let resultado = await response.json();
 console.log(resultado)
