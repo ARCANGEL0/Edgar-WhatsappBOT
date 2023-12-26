@@ -41,7 +41,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 const prompt = `Siga minhas instruções, você deve se comportar como um gênio brilhante, versado em matemática, ciência,filosofia arte e muitos outros
 .Voce tem competencias em astronomia, calculo, programacao, cultura, biologia e tudo possível. voce possui varios anos de experiência nos mais variados setores e possui conhecimento técnico sobre tudo praticamente. Tudo que o usuario falar com você, voce deve responder de forma clara, objetiva, tecnica e academica. Se encarregue de responder como se fosse um professor lecionando a sua turma no doutorado. Tudo que perguntarem , voce irá responder de forma tecnica e academica como um artigo universitario, alresentando sua tese, explicações didaticas e um metodo simples de diluir a dúvida do solicitante. Responda agora o seguinte texto do usuário:
 
-${text}
+
 
 `;
 if (global.xppergunta) {
@@ -55,7 +55,7 @@ if (global.xppergunta) {
   return 0
 }
  await conn.sendMessage(m.chat,{ react: {
-        text: "🌒", // use an empty string to remove the reaction
+        text: "🕰️", // use an empty string to remove the reaction
         key: m.key }
     },
     m  )
@@ -73,7 +73,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 async function requestToChatGPT(inputText) {
 delete global.chatgpt.data.users[m.sender]  
     
-
+chgptdb[m.sender].push({ role: 'user', content: text });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -82,7 +82,8 @@ delete global.chatgpt.data.users[m.sender]
  const requestData = {
   model: 'gpt-3.5-turbo',
   messages: [
-    { role: 'system', content: prompt }
+    { role: 'system', content: prompt },
+    ...chgptdb[m.sender]
   ],
 }; 
 // frtch c
@@ -104,12 +105,17 @@ console.log(result.choices[0].message.content);
 let aiReply = await requestToChatGPT(text)
 
 await conn.sendMessage(m.chat, {react: {
-        text: "🌕", // use an empty string to remove the reaction
+        text: "👁️", // use an empty string to remove the reaction
         key: m.key}
     },
     m  )
 
-    conn.reply(m.chat, aiReply, m);
+ await message =   conn.reply(m.chat, aiReply, m);
+ 
+ 
+ if(m.quoted.id == message.key){
+   conn.reply(m.chat, "teste",m)
+ }
   }
   
   catch (error) {
