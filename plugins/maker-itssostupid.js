@@ -4,16 +4,27 @@ const handler = async (m, {conn, args}) => {
   
   console.log(conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
   let imaag = conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-  conn.sendFile(
-  m.chat,
-  `https://api.popcat.xyz/communism?image=${conn
-    .profilePictureUrl(who, 'image')
-    .catch((e) => console.log(e))
-  }`,
-  "error.jpg",
-  `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`,
-  m
-);
+  try {
+  const profilePictureUrl = await conn.profilePictureUrl(who, 'image').catch((e) => {
+    console.error(e);
+    throw e; // rethrow the error to be caught by the outer catch block
+  });
+
+  if (profilePictureUrl) {
+    conn.sendFile(
+      m.chat,
+      `https://api.popcat.xyz/communism?image=${profilePictureUrl}`,
+      "error.jpg",
+      `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`,
+      m
+    );
+  } else {
+    console.log("Error fetching profile picture URL");
+  }
+} catch (error) {
+  console.error("An error occurred:", error);
+}
+
 };
 handler.help = ['commie', 'ussr', 'comunista'];
 handler.tags = ['maker'];
