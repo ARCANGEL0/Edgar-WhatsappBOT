@@ -18,7 +18,7 @@ teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 /*
 m.quoted.reply(teks)
 */
-console.log(conn.sendMessage)
+console.log(conn.sendMessage())
 
 
 }
