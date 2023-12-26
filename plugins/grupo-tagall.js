@@ -18,7 +18,7 @@ teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 /*
 m.quoted.reply(teks)
 */
-await m.quoted.reply(teks, {mentions: ['@351927285125']},  )
+conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) },{messageId:m.quoted })  
 
 
 }
