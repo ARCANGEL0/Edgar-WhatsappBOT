@@ -18,7 +18,7 @@ teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 /*
 m.quoted.reply(teks)
 */
-m.quoted.reply(teks)
+m.quoted.reply(teks, {mentions:participants.map(a => a.id)})
 
 
 }
