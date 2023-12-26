@@ -14,9 +14,10 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 *╰═┅ৡৢ͜͡✦═╡ 𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛  ╞═┅ৡৢ͜͡✦═╯*`,  m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-else if (m.quoted && m.quoted.id) {
+else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
   console.log(m.quoted)
   console.log(global.db.data.chats[m.chat].chatgpt["config"])
+  m.reply("teste")
 }
 
 
