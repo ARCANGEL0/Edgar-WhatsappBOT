@@ -16,7 +16,7 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 }
 else if (m.quoted && m.quoted.id) {
   console.log(m.quoted)
-  console.log(global.db.data.chats[m.chat].chatgpt)
+  console.log(global.db.data.chats[m.chat].chatgpt["config"])
 }
 
 
