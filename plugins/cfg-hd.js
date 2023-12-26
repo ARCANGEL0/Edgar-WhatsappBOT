@@ -127,9 +127,11 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-
- let message = await  conn.reply(m.chat, aiReply, m);
+    let message = await  conn.reply(m.chat, aiReply, m);
  
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key.id
+ 
+ global.db.data.chats[m.chat].chatgpt["config"].resposta = aiReply
  
  
   }
