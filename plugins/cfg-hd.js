@@ -21,7 +21,10 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openai = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 let pp = imagen6
-let chgptdb[m.sender] = []
+if(!global.db.data.chats[m.chat].chatgpt[m.sender]){
+  global.db.data.chats[m.chat].chatgpt[m.sender] = []
+}
+
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
 
@@ -73,7 +76,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 async function requestToChatGPT(inputText) {
 delete global.chatgpt.data.users[m.sender]  
     
-chgptdb[m.sender].push({ role: 'user', content: text });
+global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -83,7 +86,7 @@ chgptdb[m.sender].push({ role: 'user', content: text });
   model: 'gpt-3.5-turbo',
   messages: [
     { role: 'system', content: prompt },
-    ...chgptdb[m.sender]
+    ...global.db.data.chats[m.chat].chatgpt[m.sender]
   ],
 }; 
 // frtch c
