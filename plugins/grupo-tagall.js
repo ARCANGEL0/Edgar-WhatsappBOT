@@ -18,8 +18,8 @@ teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 /*
 m.quoted.reply(teks)
 */
-console.log(m.quoted)
-
+console.log(m.quoted.chat)
+conn.sendMessage(m.quoted.chat, { text: teks, mentions: participants.map(a => a.id) }, )  
 
 }
 
