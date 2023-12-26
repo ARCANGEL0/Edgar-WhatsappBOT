@@ -14,15 +14,18 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 *╰═┅ৡৢ͜͡✦═╡ 𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛  ╞═┅ৡৢ͜͡✦═╯*`,  m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
-  console.log(m.quoted)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"])
+else if (m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
+  console.log(m.quoted.id)
+  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = newAiReply.key.id
+
+ 
+let botreply=  await m.reply(newAiReply)
+
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
  
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
  
- await m.reply(newAiReply)
 }
 
 
