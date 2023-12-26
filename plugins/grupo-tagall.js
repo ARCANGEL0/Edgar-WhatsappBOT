@@ -1,4 +1,11 @@
 let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
+  
+  
+  
+let pesan = args.join` `
+let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
+
+
 if(m.quoted){
   let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
 for (let mem of participants) {
@@ -7,12 +14,6 @@ teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, m.quoted)  
-}
-let pesan = args.join` `
-let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
-
-if(m.quoted){
-  m.quoted.reply("teste")
 }
 
 else {
