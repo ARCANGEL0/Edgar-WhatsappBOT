@@ -25,6 +25,12 @@ let pp = imagen6
 
 
 
+
+//const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
+
+
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+
 if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
@@ -37,10 +43,7 @@ if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
   global.db.data.chats[m.chat].chatgpt[m.sender] = [];
 }
 
-//const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
-
-const handler = async (m, {conn, text, usedPrefix, command}) => {
 
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
