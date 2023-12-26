@@ -9,4 +9,4 @@ handler.help = ['comunista', 'ussr'];
 handler.tags = ['maker'];
 handler.command = /^comunista|ussr|urss|commie$/i;
 export default handler;
-let
+
