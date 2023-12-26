@@ -25,7 +25,14 @@ let media = await q.download()
 let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
 let link = await (isTele ? uploadImage : uploadFile)(media)
 let caption = `📜 𝙇𝙄𝙉𝙆:\n${link}\n📜 𝙏𝘼𝙈𝘼𝙉𝙃𝙊: ${media.length}\n📜 𝘿𝙐𝙍𝘼𝘾𝘼𝙊: ${isTele ? 'INDEFINIDK' : 'DESCONHECIDO'}\n📜 𝙏𝙄𝙉𝙔𝙐𝙍𝙇: ${await shortUrl(link)}`
-conn.reply(m.chat, caption, m, { contextInfo: {externalAdReply :{mediaUrl: md, mediaType: 2, title: wm, body: botdate, thumbnail: await conn.profilePictureUrl(who).catch(_ => gataImg.getRandom()), sourceUrl: link }}})}
+
+
+let js = await fetch(`https://api.popcat.xyz/communism?image=${link}`)
+    console.log(js)
+    await conn.sendFile(m.chat, js.url, "error.jpg", "")
+  
+  
+}
 handler.help = ['commie']
 handler.tags = ['maker']
 handler.command = /^(urss|ussr|comunista|commie|soviet)$/i
