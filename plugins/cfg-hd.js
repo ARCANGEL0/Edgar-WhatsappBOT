@@ -40,7 +40,7 @@ if (!global.db.data.chats[m.chat].chatgpt) {
 }
 
 if (!global.db.data.chats[m.chat].chatgpt["config"]) {
-  global.db.data.chats[m.chat].chatgpt = {
+  global.db.data.chats[m.chat].chatgpt["config"] = {
    lastQuestion: '',
    resposta:''
   };
