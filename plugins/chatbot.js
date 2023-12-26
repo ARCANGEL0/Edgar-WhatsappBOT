@@ -17,7 +17,8 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
   console.log(m.quoted)
   console.log(global.db.data.chats[m.chat].chatgpt["config"])
-  m.reply("teste")
+  m.reply(text)
+
 }
 
 
@@ -25,6 +26,37 @@ return !0
 }
 
 export default handler
+async function requestToChatGPT(inputText) {
+delete global.chatgpt.data.users[m.sender]  
+    
+global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
+
+
+  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
+  const endpoint = "https://api.naga.ac/v1/chat/completions"
+  // ////
+ const requestData = {
+  model: 'gpt-3.5-turbo',
+  messages: [
+    { role: 'system', content: prompt },
+    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+  ],
+}; 
+// frtch c
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { 
+    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
+    
+  },
+  body: JSON.stringify(requestData), 
+});
+
+const result = await response.json();
+console.log(result.choices[0].message.content);
+  return result.choices[0].message.content
+    
+}
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
