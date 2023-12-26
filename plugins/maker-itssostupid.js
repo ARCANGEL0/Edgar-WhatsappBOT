@@ -14,7 +14,7 @@ const handler = async (m, {conn, args}) => {
     console.log(profilePictureUrl)
     conn.sendFile(
       m.chat,
-      `https://api.popcat.xyz/communism?image=${profilePictureUrl}`
+      `https://api.popcat.xyz/communism?image=https://pps.whatsapp.net/v/t61.24694-24/370342352_314360971515487_1514397351139663528_n.jpg?ccb=11-4&oh=01_AdTo5xnnOwdBDuZLEZmqZ_hsLOY-CY92V2NLMN2rIW2w9g&oe=659826D2&_nc_sid=e6ed6c&_nc_cat=109`
     );
   } else {
     console.log("Error fetching profile picture URL");
