@@ -12,7 +12,7 @@ const handler = async (m, {conn, args}) => {
 
   if (profilePictureUrl) {
     conn.sendFile(
-      m.chat,
+      m.chat,"error.jpg",
       `https://api.popcat.xyz/communism?image=${profilePictureUrl}`,
       `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who.split('@')[0]}*  ☭`,
       {mentions:who}
