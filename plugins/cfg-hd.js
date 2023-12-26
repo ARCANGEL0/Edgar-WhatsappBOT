@@ -78,12 +78,9 @@ if (global.xppergunta) {
   `)
   return 0
 }
- await conn.sendMessage(m.chat,{ react: {
-        text: "🕰️", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
+ 
 if(!m.quoted){
+  
 const data = {
     "model": "gpt-3.5-turbo",
     "temperature":0.3,
@@ -93,7 +90,11 @@ const data = {
   
 try {
 conn.sendPresenceUpdate('typing', m.chat);
-
+await conn.sendMessage(m.chat,{ react: {
+        text: "🕰️", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
 async function requestToChatGPT(inputText) {
 delete global.chatgpt.data.users[m.sender]  
     
@@ -149,13 +150,20 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key.id
   }
 }
 
-  else if(m.quoted)
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
+/*  console.log(m.quoted.id)
+  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
+  let newAiReply = requestToChatGPT(m.text)
+
  
-  {
-    console.log(m.quoted)
-    console.log(message)
-    await m.reply("tst")
-  }
+let botreply =  conn.reply(newAiReply)
+
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
+ 
+ global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
+ */
+ await conn.rey("teste")
+}
   
   
   
