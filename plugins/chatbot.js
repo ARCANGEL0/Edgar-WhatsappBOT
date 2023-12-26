@@ -6,20 +6,7 @@ let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 
 
-if (m.quoted && m.quoted.id /* global.db.data.chats[m.chat].chatgpt["config"].lastQuestion  */) {
-/* console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
-  let newAiReply = requestToChatGPT(m.text)
 
- 
-lt botreply =  conn.reply(newAiReply)
-
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
- 
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
- */
- await conn.reply("teste")
-}
   
   
   
