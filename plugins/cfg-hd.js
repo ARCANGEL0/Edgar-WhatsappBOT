@@ -130,10 +130,8 @@ await conn.sendMessage(m.chat, {react: {
 
  let message = await  conn.reply(m.chat, aiReply, m);
  
+ console.log(message)
  
- if(m.quoted.id == message.key){
-   conn.reply(m.chat, "teste",m)
- }
   }
   
   catch (error) {
