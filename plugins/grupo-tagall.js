@@ -1,5 +1,7 @@
 let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, command }) => {
-
+if(m.quoted){
+  console.log("teste")
+}
 let pesan = args.join` `
 let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
 let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
