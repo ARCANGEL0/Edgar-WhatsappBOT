@@ -1,42 +1,37 @@
+/* 
+# Créditos a https://github.com/Undefined17
+•• @Azami19 ••
+*/
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
-import fetch from 'node-fetch
-
-const handler = async (m, {conn, args}) => {
-  const text = args.slice(1).join(' ');
-  const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-  
-  
-  
-  try {
-
-
-
-const profilePictureUrl = await conn.profilePictureUrl(who, 'image').catch((e) => {
-    console.error(e);
-    throw e; // rethrow the error to be caught by the outer catch block
-  });
+import fetch from 'node-fetch'
+let handler = async (m) => {
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let pp = await conn.profilePictureUrl(who).catch(_ => gataImg.getRandom())
 let name = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-
-
-  if (profilePictureUrl) {
-    console.log(profilePictureUrl)
-    let media = await q.download()
+if (!mime) throw `${mg}╭━━━━━━━━━⬣
+┃
+┃ 💀🕯️𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐚 𝐚 𝐮𝐦𝐚 𝐦í𝐝𝐢𝐚
+┃ 𝐝𝐢𝐠𝐢𝐭𝐚𝐥 𝐬𝐞𝐣𝐚 𝐞𝐥𝐚 𝐯í𝐝𝐞𝐨, 𝐟𝐨𝐭𝐨
+┃ 𝐨𝐮 á𝐮𝐝𝐢𝐨, 𝐪𝐮𝐞 𝐥𝐡𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐚𝐫𝐞𝐢
+┃ 𝐮𝐦 𝐥𝐢𝐧𝐤 𝐩𝐚𝐫𝐚 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`
+let media = await q.download()
 let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
 let link = await (isTele ? uploadImage : uploadFile)(media)
 let caption = `📜 𝙇𝙄𝙉𝙆:\n${link}\n📜 𝙏𝘼𝙈𝘼𝙉𝙃𝙊: ${media.length}\n📜 𝘿𝙐𝙍𝘼𝘾𝘼𝙊: ${isTele ? 'INDEFINIDK' : 'DESCONHECIDO'}\n📜 𝙏𝙄𝙉𝙔𝙐𝙍𝙇: ${await shortUrl(link)}`
-conn.reply(m.chat, caption, m, { contextInfo: {externalAdReply :{mediaUrl: md, mediaType: 2, title: wm, body: botdate, thumbnail: await(await fetch(link)).buffer(), sourceUrl: link }}})}
-  } else {
-    console.log("Error fetching profile picture URL");
-  }
-} catch (error) {
-  console.error("An error occurred:", error);
-}
+conn.reply(m.chat, caption, m, { contextInfo: {externalAdReply :{mediaUrl: md, mediaType: 2, title: wm, body: botdate, thumbnail: pp, sourceUrl: link }}})}
+handler.help = ['commie']
+handler.tags = ['maker']
+handler.command = /^(urrs|ussr|comunista|commie|soviet)$/i
+export default handler
 
-};
-handler.help = ['commie', 'ussr', 'comunista'];
-handler.tags = ['maker'];
-handler.command = /^(commie|ussr|comunista)$/i;
-export default handler;
+async function shortUrl(url) {
+let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+return await res.text()
+}
