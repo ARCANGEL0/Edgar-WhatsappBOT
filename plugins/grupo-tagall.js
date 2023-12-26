@@ -16,7 +16,7 @@ teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 
-m.quoted.reply(teks, {mentions: participants.map(a => a.id)})
+m.quoted.reply(teks)
 /*
 m.quoted.reply({ text: teks, mentions: participants.map(a => a.id) })  
 
