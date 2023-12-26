@@ -6,7 +6,7 @@ let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 
 
-if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
+if (m.quoted && m.quoted.id /* global.db.data.chats[m.chat].chatgpt["config"].lastQuestion  */) {
 /* console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
