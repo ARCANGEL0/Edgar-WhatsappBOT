@@ -77,7 +77,7 @@ if (global.xppergunta) {
         key: m.key }
     },
     m  )
-
+if(!m.quoted){
 const data = {
     "model": "gpt-3.5-turbo",
     "temperature":0.3,
@@ -130,9 +130,7 @@ await conn.sendMessage(m.chat, {react: {
 
  let message = await  conn.reply(m.chat, aiReply, m);
  
- if(m.quoted.id==message.key.id){
-   await conn.reply("test")
- }
+ 
  
   }
   
@@ -141,7 +139,18 @@ await conn.sendMessage(m.chat, {react: {
     // Handle error response or throw an error
     conn.reply(m.chat, 'Error processing request', m);
   }
+  else if(m.quoted.id==message.key.id)
+  
+  {
+    await m.reply("tst")
+  }
+  
+  
+  
+  
 /*
+  
+
 catch {
 try {
 const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
