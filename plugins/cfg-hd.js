@@ -110,7 +110,7 @@ await conn.sendMessage(m.chat, {react: {
     },
     m  )
 
- await message =   conn.reply(m.chat, aiReply, m);
+ let message = await  conn.reply(m.chat, aiReply, m);
  
  
  if(m.quoted.id == message.key){
