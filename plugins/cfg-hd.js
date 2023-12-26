@@ -39,7 +39,13 @@ if (!global.db.data.chats[m.chat].chatgpt) {
   global.db.data.chats[m.chat].chatgpt = {};
 }
 
-if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
+if (!global.db.data.chats[m.chat].chatgpt["config"]) {
+  global.db.data.chats[m.chat].chatgpt = {
+   lastQuestion: '',
+   resposta:''
+  };
+}
+  if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
   global.db.data.chats[m.chat].chatgpt[m.sender] = [];
 }
 
