@@ -28,7 +28,7 @@ let caption = `📜 𝙇𝙄𝙉𝙆:\n${link}\n📜 𝙏𝘼𝙈𝘼𝙉𝙃�
 conn.reply(m.chat, caption, m, { contextInfo: {externalAdReply :{mediaUrl: md, mediaType: 2, title: wm, body: botdate, thumbnail: pp, sourceUrl: link }}})}
 handler.help = ['commie']
 handler.tags = ['maker']
-handler.command = /^(urrs|ussr|comunista|commie|soviet)$/i
+handler.command = /^(urss|ussr|comunista|commie|soviet)$/i
 export default handler
 
 async function shortUrl(url) {
