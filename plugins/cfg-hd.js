@@ -21,8 +21,20 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openai = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 let pp = imagen6
-if(!global.db.data.chats[m.chat].chatgpt[m.sender]){
-  global.db.data.chats[m.chat].chatgpt[m.sender] = [{ role:"user",content: text}]
+
+
+
+
+if (!global.db.data.chats[m.chat]) {
+  global.db.data.chats[m.chat] = {};
+}
+
+if (!global.db.data.chats[m.chat].chatgpt) {
+  global.db.data.chats[m.chat].chatgpt = {};
+}
+
+if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
+  global.db.data.chats[m.chat].chatgpt[m.sender] = [];
 }
 
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
