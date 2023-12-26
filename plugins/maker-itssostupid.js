@@ -1,21 +1,33 @@
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch
+
 const handler = async (m, {conn, args}) => {
   const text = args.slice(1).join(' ');
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   
-  console.log(conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
-  let imaag = conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+  
+  
   try {
-  const profilePictureUrl = await conn.profilePictureUrl(who, 'image').catch((e) => {
+
+
+
+const profilePictureUrl = await conn.profilePictureUrl(who, 'image').catch((e) => {
     console.error(e);
     throw e; // rethrow the error to be caught by the outer catch block
   });
+let name = await conn.getName(who)
+let q = m.quoted ? m.quoted : m
+let mime = (q.msg || q).mimetype || ''
+
 
   if (profilePictureUrl) {
     console.log(profilePictureUrl)
-    conn.sendFile(
-      m.chat,
-      `https://api.popcat.xyz/communism?image=https://pps.whatsapp.net/v/t61.24694-24/370342352_314360971515487_1514397351139663528_n.jpg?ccb=11-4&oh=01_AdTo5xnnOwdBDuZLEZmqZ_hsLOY-CY92V2NLMN2rIW2w9g&oe=659826D2&_nc_sid=e6ed6c&_nc_cat=109`
-    );
+    let media = await q.download()
+let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+let link = await (isTele ? uploadImage : uploadFile)(media)
+let caption = `📜 𝙇𝙄𝙉𝙆:\n${link}\n📜 𝙏𝘼𝙈𝘼𝙉𝙃𝙊: ${media.length}\n📜 𝘿𝙐𝙍𝘼𝘾𝘼𝙊: ${isTele ? 'INDEFINIDK' : 'DESCONHECIDO'}\n📜 𝙏𝙄𝙉𝙔𝙐𝙍𝙇: ${await shortUrl(link)}`
+conn.reply(m.chat, caption, m, { contextInfo: {externalAdReply :{mediaUrl: md, mediaType: 2, title: wm, body: botdate, thumbnail: await(await fetch(link)).buffer(), sourceUrl: link }}})}
   } else {
     console.log("Error fetching profile picture URL");
   }
