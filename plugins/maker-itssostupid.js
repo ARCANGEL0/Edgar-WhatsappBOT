@@ -14,9 +14,8 @@ const handler = async (m, {conn, args}) => {
     conn.sendFile(
       m.chat,
       `https://api.popcat.xyz/communism?image=${profilePictureUrl}`,
-      "error.jpg",
-      `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`,
-      m
+      `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who.split('@')[0]}*  ☭`,
+      {mentions:who}
     );
   } else {
     console.log("Error fetching profile picture URL");
