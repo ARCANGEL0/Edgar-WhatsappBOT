@@ -4,8 +4,16 @@ const handler = async (m, {conn, args}) => {
   
   console.log(conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'))
   let imaag = conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-  conn.sendFile(m.chat, `https://api.popcat.xyz/communism?image=${conn.profilePictureUrl(who, 'image').catch(e) => console.log(e)
-  } `,"error.jpg", `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`, m);
+  conn.sendFile(
+  m.chat,
+  `https://api.popcat.xyz/communism?image=${conn
+    .profilePictureUrl(who, 'image')
+    .catch((e) => console.log(e))
+  }`,
+  "error.jpg",
+  `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who}*  ☭`,
+  m
+);
 };
 handler.help = ['commie', 'ussr', 'comunista'];
 handler.tags = ['maker'];
