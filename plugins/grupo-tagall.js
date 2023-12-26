@@ -12,7 +12,7 @@ teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
-conn.sendMessage(m.quoted.id, { text: teks, mentions: participants.map(a => a.id) }, )  
+conn.sendMessage(m.quoted, { text: teks, mentions: participants.map(a => a.id) }, )  
 }
 
 else {
