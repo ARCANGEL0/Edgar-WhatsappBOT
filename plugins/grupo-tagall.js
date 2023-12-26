@@ -11,7 +11,13 @@ teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )  
+
+if(m.quoted){
+  conn.sendMessage(m.quoted, { text: teks, mentions: participants.map(a => a.id) }, )  
 }
+
+}
+
 handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i
 
 handler.admin = true
