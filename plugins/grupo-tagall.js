@@ -19,7 +19,7 @@ teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 m.quoted.reply(teks)
 */
 console.log(m.quoted)
-conn.sendMessage(m.quoted.id, { text: teks, mentions: participants.map(a => a.id) }, )  
+conn.sendMessage(m.quoted.sender, { text: teks, mentions: participants.map(a => a.id) }, )  
 
 }
 
