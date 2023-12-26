@@ -7,14 +7,17 @@ let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
 
 
 if(m.quoted){
-  m.quoted.reply('test')
- /*
+  
+ 
   let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
 for (let mem of participants) {
 teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `┃\n`
 teks += `┃ ${wm}\n`
 teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
+
+m.quoted.reply(teks, {mentions: participants.map(a => a.id)})
+/*
 m.quoted.reply({ text: teks, mentions: participants.map(a => a.id) })  
 
 */
