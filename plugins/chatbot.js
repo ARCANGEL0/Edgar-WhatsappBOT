@@ -17,9 +17,14 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
   console.log(m.quoted)
   console.log(global.db.data.chats[m.chat].chatgpt["config"])
-  m.reply(text)
-
+  let newAiReply = requestToChatGPT(m.text)
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = newAiReply.key.id
+ 
+ global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
+ 
+ await m.reply(newAiReply)
 }
+
 
 
 return !0 
@@ -29,7 +34,20 @@ export default handler
 async function requestToChatGPT(inputText) {
 delete global.chatgpt.data.users[m.sender]  
     
-global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
+    
+    
+    let reply = `
+    Esta foi a sua ultima mensagem:
+    ${global.db.data.chats[m.chat].chatgpt["config"].resposta} 
+    
+    e o usuario esta respondendo esta mensagem que voce enviou com a seguinte mensagem:
+    
+    ${inputText}
+    
+    ------
+    responda ele de acordo como se fosse uma conversa interativa entre ambos. 
+    `
+global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: reply });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
