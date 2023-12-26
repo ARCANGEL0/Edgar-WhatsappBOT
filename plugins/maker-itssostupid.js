@@ -11,8 +11,9 @@ const handler = async (m, {conn, args}) => {
   });
 
   if (profilePictureUrl) {
+    console.log(profilePictureUrl)
     conn.sendFile(
-      m.chat,"error.jpg",
+      m.chat,
       `https://api.popcat.xyz/communism?image=${profilePictureUrl}`,
       `𝘾𝙖𝙢𝙖𝙧𝙖𝙙𝙖 *@${who.split('@')[0]}*  ☭`
     );
