@@ -141,9 +141,11 @@ await conn.sendMessage(m.chat, {react: {
   }
 }
 
-  else if(m.quoted.id==message.key.id)
-  
+  else if(m.quoted)
+ 
   {
+    console.log(m.quoted)
+    console.log(message)
     await m.reply("tst")
   }
   
