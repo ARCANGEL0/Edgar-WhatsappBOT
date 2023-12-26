@@ -22,7 +22,7 @@ const openai = new OpenAIApi(configuration);
 const idioma = 'pt-br'
 let pp = imagen6
 if(!global.db.data.chats[m.chat].chatgpt[m.sender]){
-  global.db.data.chats[m.chat].chatgpt[m.sender] = []
+  global.db.data.chats[m.chat].chatgpt[m.sender] = [{ role:"user",content: text}]
 }
 
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
