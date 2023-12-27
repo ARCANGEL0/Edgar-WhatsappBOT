@@ -41,20 +41,20 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
       ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}*`.trim(), m, { mentions: [m.sender] });
 
 
-const numero = m.sender;
+const numero = m.sender; 
 delete user.afkInfo[m.chat]
 // global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filter(element => element !== numero);
   global.db.data.chats[m.chat].afks = global.db.data.chats[m.chat].afks.filter(item => item !== m.sender);
 
 
 }
-/*
+
 if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
-    Array.isArray(global.db.data.chats[m.chat].chatafk) && // Check if chatafk is an array
+    // Check if chatafk is an array
     m.mentionedJid &&
-    global.db.data.chats[m.chat].chatafk.includes(m.mentionedJid.toString())
+    global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
 ) {
   
   
@@ -82,9 +82,8 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
-    Array.isArray(global.db.data.chats[m.chat].chatafk) &&
     m.quoted &&
-  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender || String(m.mentionedJid).trim())
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender))
 ) {
   
   
@@ -108,7 +107,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
   
 }
 
-*/
+
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
