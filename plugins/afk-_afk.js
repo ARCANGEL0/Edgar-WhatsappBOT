@@ -48,8 +48,8 @@ delete user.afkInfo[m.chat]
 
 
 }
-/*
-else if (
+
+ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     // Check if chatafk is an array
@@ -78,8 +78,8 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
   
 }
 
-
-else if (
+/*
+if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     m.quoted &&
