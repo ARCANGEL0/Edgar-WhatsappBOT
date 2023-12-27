@@ -53,9 +53,9 @@ delete user.afkInfo[m.chat]
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     // Check if chatafk is an array
-    m.mentionedJid
+    global.db.data.users[m.mentionedJid].afkInfo[m.chat])
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
-) {
+ {
 
   
   console.log(global.db.data.chats[m.chat].afks)
@@ -76,6 +76,9 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
+}
+else{
+  return 0
 }
 
 /*
