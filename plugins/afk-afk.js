@@ -29,7 +29,16 @@ user.afkInfo[m.chat] = {
     afkReason: text,
     number: m.sender,
 };
+if (!global.db.data.chats[m.chat].afks) {
+  // If afks array doesn't exist, create it
+  global.db.data.chats[m.chat].afks = [];
+}
 
+// Your single item to push
+
+
+// Push the single item into afks array
+global.db.data.chats[m.chat].afks.push(m.sender);
 // Ensure m.sender is not already in the array before pushing
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
