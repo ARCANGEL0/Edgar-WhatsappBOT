@@ -108,13 +108,8 @@ else {
         else m.reply('Respsta incorrecta!')
     }
     return !0
-}
-
-handler.exp = 0
-
-export default handler
-
-async function requestToChatGPT(inputText) {
+    
+    async function requestToChatGPT(inputText) {
 delete global.chatgpt.data.users[m.sender]  
     
     
@@ -158,3 +153,9 @@ console.log(result.choices[0].message.content);
   return result.choices[0].message.content
     
 }
+}
+
+handler.exp = 0
+
+export default handler
+
