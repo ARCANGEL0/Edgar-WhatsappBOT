@@ -44,7 +44,7 @@ if (!global.db.data.chats[m.chat].afks) {
 if (global.db.data.chats[m.chat].afks.indexOf(m.sender) === -1) {
   global.db.data.chats[m.chat].afks.push(m.sender);
 }
-
+console.log( global.db.data.chats[m.chat].afks)
 // Ensure m.sender is not already in the array before pushing
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
