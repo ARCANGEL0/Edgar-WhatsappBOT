@@ -34,12 +34,11 @@ console.log(m.sender+"  on set afk code")
   global.db.data.chats[m.chat] = {};
 }
 
-if (!global.db.data.chats[m.chat].chatafk || !Array.isArray(global.db.data.chats[m.chat].chatafk)) {
+if (!global.db.data.chats[m.chat].chatafk) {
   global.db.data.chats[m.chat].chatafk = [];
 }
-
-global.db.data.chats[m.chat].chatafk.push(m.sender);
-console.log(global.db.data.chats[m.chat].chatafk);
+global.db.data.chats[m.chat].chatafk.push(m.sender)
+console.log(global.db.data.chats[m.chat].chatafk)
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
