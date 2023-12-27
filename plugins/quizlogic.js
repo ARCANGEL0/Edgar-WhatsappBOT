@@ -71,7 +71,7 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
     
 }
-else if (m.quoted && m.quoted.id ) {
+else if (m.quoted && m.quoted.id ==global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.key.id ) {
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
 /*  let newAiReply = requestToChatGPT(m.text)
@@ -83,7 +83,7 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
  
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
  */
- await conn.reply("teste")
+ await m.reply("teste")
 }
   
 else {
