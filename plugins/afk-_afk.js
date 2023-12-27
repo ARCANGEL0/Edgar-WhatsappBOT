@@ -32,7 +32,7 @@ if(!global.db.data.chats[m.chat].chatafk)
 
 console.log("afk event")
 
-if ( global.db.data.chats[m.chat].chatafk.includes(m.sender) && user.afkInfo[m.chat].afkTime > 0){
+if (user.afkInfo[m.chat].afkTime > 0) {
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
