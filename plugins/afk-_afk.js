@@ -44,7 +44,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F 
 const numero = m.sender; 
 delete user.afkInfo[m.chat]
 // global.db.data.chats[m.chat].chatafk = global.db.data.chats[m.chat].chatafk.filter(element => element !== numero);
-  global.db.data.chats[m.chat].afks = global.db.data.chats[m.chat].afks.filter(item => item !== m.sender);
+  delete global.db.data.chats[m.chat].afks[m.sender]
 
 
 }
@@ -52,10 +52,8 @@ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
-  
-    global.db.data.users[m.mentionedJid] &&
-    global.db.data.users[m.mentionedJid].afkInfo &&
-    global.db.data.users[m.mentionedJid].afkInfo[m.chat]
+  global.db.data.chats[m.chat].afks[m.mentionedJid]
+  ]
 )
  
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
