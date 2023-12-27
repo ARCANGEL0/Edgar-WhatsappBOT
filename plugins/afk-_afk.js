@@ -62,7 +62,15 @@ if (
  {
 
   console.log(m.mentionedJid)
-  console.log(global.db.data.chats[m.chat].afks.includes(m.mentionedJid))
+ 
+ 
+ const mentionedUser = m.mentionedJid // Replace this with your actual mentioned user
+const afksArray = global.db.data.chats[m.chat].afks;
+
+const isUserAFK = afksArray.includes(mentionedUser);
+
+console.log(isUserAFK);
+
   
  
 
