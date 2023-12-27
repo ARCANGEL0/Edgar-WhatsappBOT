@@ -77,7 +77,7 @@ else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config
  let newAiReply = requestToChatGPT(m.text)
 
  
-let botreply =  m.reply(newAiReply)
+let botreply = await  m.reply(newAiReply)
 
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key
  
