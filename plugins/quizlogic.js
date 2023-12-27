@@ -88,7 +88,7 @@ await conn.sendMessage(m.chat,{ react: {
         key: m.key}
     },
     m  )
-let botreply = await  m.reply(newAiReply)
+let botreply = await m.reply(m.chat,newAiReply)
 
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key
  
