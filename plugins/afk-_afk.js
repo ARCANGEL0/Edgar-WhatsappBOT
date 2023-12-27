@@ -52,7 +52,9 @@ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
-  global.db.data.chats[m.chat].afks[m.mentionedJid]
+  global.db.data.chats[m.chat].afks[m.mentionedJid] &&
+  global.db.data.chats[m.chat].afks[m.mentionedJid].afkTime > -1
+  
   ]
 )
  
