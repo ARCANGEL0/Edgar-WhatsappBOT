@@ -39,6 +39,7 @@ if (!global.db.data.chats[m.chat].afks) {
 
 // Push the single item into afks array
 global.db.data.chats[m.chat].afks.push(m.sender);
+console.log(global.db.data.chats[m.chat].afks )
 // Ensure m.sender is not already in the array before pushing
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
