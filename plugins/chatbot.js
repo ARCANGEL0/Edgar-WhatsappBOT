@@ -28,50 +28,7 @@ return !0
 }
 
 export default handler
-async function requestToChatGPT(inputText) {
-delete global.chatgpt.data.users[m.sender]  
-    
-    
-    
-    let reply = `
-    Esta foi a sua ultima mensagem:
-    ${global.db.data.chats[m.chat].chatgpt["config"].resposta} 
-    
-    e o usuario esta respondendo esta mensagem que voce enviou com a seguinte mensagem:
-    
-    ${inputText}
-    
-    ------
-    responda ele de acordo como se fosse uma conversa interativa entre ambos. 
-    `
-global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: reply });
 
-
-  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
-  const endpoint = "https://api.naga.ac/v1/chat/completions"
-  // ////
- const requestData = {
-  model: 'gpt-3.5-turbo',
-  messages: [
-    { role: 'system', content: prompt },
-    ...global.db.data.chats[m.chat].chatgpt[m.sender]
-  ],
-}; 
-// frtch c
-const response = await fetch(endpoint, {
-  method: "POST",
-  headers: { 
-    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
-    
-  },
-  body: JSON.stringify(requestData), 
-});
-
-const result = await response.json();
-console.log(result.choices[0].message.content);
-  return result.choices[0].message.content
-    
-}
 
 function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)]
