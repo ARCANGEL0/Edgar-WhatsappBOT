@@ -48,7 +48,7 @@ delete user.afkInfo[m.chat]
 
 
 }
-
+/*
 else if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
@@ -107,7 +107,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
   
 }
 
-
+*/
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
