@@ -29,19 +29,8 @@ user.afkInfo[m.chat] = {
     afkReason: text,
     number: m.sender,
 };
-if (!global.db.data.chats[m.chat]) {
-    global.db.data.chats[m.chat] = {};
-}
-
-if (!global.db.data.chats[m.chat].chatafk) {
-    global.db.data.chats[m.chat].chatafk = [];
-}
 
 // Ensure m.sender is not already in the array before pushing
-if (!global.db.data.chats[m.chat].chatafk.includes(m.sender)) {
-    global.db.data.chats[m.chat].chatafk.push(m.sender);
-}
-console.log(global.db.data.chats[m.chat].chatafk);
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
