@@ -14,23 +14,25 @@ if (!user.afkInfo) {
 
 if (!user.afkInfo[m.chat]) {
   user.afkInfo[m.chat] = {
-    afkTime:-2
+    afkTime:-2,
+    number: m.sender,
+    afkReason: ''
   };
 }
 
-if(! global.db.data.chats[m.chat]) {
+if(!global.db.data.chats[m.chat]) {
    global.db.data.chats[m.chat] ={}
 }
-if(! global.db.data.chats[m.chat].chatafk)
+if(!global.db.data.chats[m.chat].chatafk)
 {
-   global.db.data.chats[m.chat].chatafk ={}
+   global.db.data.chats[m.chat].chatafk =[]
 }
 
 
 
 console.log("afk event")
 
-if ( user.afkInfo[m.chat].afkTime > -1){
+if ( global.db.data.chats[m.chat].chatafk.includes(m.sender) && user.afkInfo[m.chat].afkTime > 0){
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
       ${lenguajeGB['smsAfkM1']()}
