@@ -62,7 +62,7 @@ if (
  {
 
   console.log(m.mentionedJid)
-  console.log(global.db.data.chats[m.chat].afks)
+  console.log(global.db.data.chats[m.chat].afks.includes(m.mentionedJid))
   
  
 
