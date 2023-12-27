@@ -19,26 +19,29 @@ if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 if (!user.afkInfo) {
     user.afkInfo = {};
 }
-console.log(m.sender+"  on set afk code")
+console.log(m.sender + "  on set afk code");
 
-    
-    // Now you can use afkTime and afkReason as needed
-    // User is not AFK in this group
-    // Set AFK information for this group
-    user.afkInfo[m.chat] = {
-        afkTime: +new Date(),
-        afkReason: text,
-        number: m.sender
-   };
-   if (!global.db.data.chats[m.chat]) {
-  global.db.data.chats[m.chat] = {};
+// Now you can use afkTime and afkReason as needed
+// User is not AFK in this group
+// Set AFK information for this group
+user.afkInfo[m.chat] = {
+    afkTime: +new Date(),
+    afkReason: text,
+    number: m.sender,
+};
+if (!global.db.data.chats[m.chat]) {
+    global.db.data.chats[m.chat] = {};
 }
 
 if (!global.db.data.chats[m.chat].chatafk) {
-  global.db.data.chats[m.chat].chatafk = [];
+    global.db.data.chats[m.chat].chatafk = [];
 }
-global.db.data.chats[m.chat].chatafk.push(m.sender)
-console.log(global.db.data.chats[m.chat].chatafk)
+
+// Ensure m.sender is not already in the array before pushing
+if (!global.db.data.chats[m.chat].chatafk.includes(m.sender)) {
+    global.db.data.chats[m.chat].chatafk.push(m.sender);
+}
+console.log(global.db.data.chats[m.chat].chatafk);
 
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
     *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
