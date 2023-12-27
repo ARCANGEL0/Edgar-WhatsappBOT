@@ -49,7 +49,7 @@ delete user.afkInfo[m.chat]
 
 }
 
-if (
+else if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     // Check if chatafk is an array
