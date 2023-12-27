@@ -51,6 +51,8 @@ delete user.afkInfo[m.chat]
 if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
+    global.db.data.chats[m.chat].afks &&
+    global.db.data.chats[m.chat].afks.includes(m.mentionedJid) && 
     global.db.data.users[m.mentionedJid] &&
     global.db.data.users[m.mentionedJid].afkInfo &&
     global.db.data.users[m.mentionedJid].afkInfo[m.chat]
