@@ -19,6 +19,9 @@ if (text.length < 10) return m.reply(`${lenguajeGB['smsAfkQ2']()}`)
 if (!user.afkInfo) {
     user.afkInfo = {};
 }
+if (!user.afkInfo[m.chat]) {
+    user.afkInfo[m.chat] = {};
+}
 console.log(m.sender + "  on set afk code");
 
 // Now you can use afkTime and afkReason as needed
