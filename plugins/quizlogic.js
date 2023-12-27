@@ -81,18 +81,21 @@ await conn.sendMessage(m.chat,{ react: {
 
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
- let newAiReply = requestToChatGPT(m.text)
+ 
+ 
 
- await conn.sendMessage(m.chat, {react: {
+ let newReply = await requestToChatGPT(m.text)
+
+await conn.sendMessage(m.chat, {react: {
         text: "👁️", // use an empty string to remove the reaction
         key: m.key}
     },
     m  )
-let botreply = await m.reply(m.chat,newAiReply)
-
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key
+    let message = await  conn.reply(m.chat, newReply, m);
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
+ 
+ global.db.data.chats[m.chat].chatgpt["config"].resposta = newReply
  
  
 }
