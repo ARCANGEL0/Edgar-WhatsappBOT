@@ -53,12 +53,12 @@ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     // Check if chatafk is an array
-    m.mentionedJid &&
-    global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
+    m.mentionedJid
+ //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
 ) {
+  console.log(global.db.data.users[m.mentionedJid].afkInfo)
   
-  
-  console.log(global.db.data.chats[m.chat].chatafk.includes(String(m.mentionedJid).trim()))
+  console.log(global.db.data.chats[m.chat].afks)
   
  
 
@@ -79,7 +79,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 }
 
 
-if (
+else if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     m.quoted &&
