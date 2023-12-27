@@ -40,7 +40,7 @@ if (!global.db.data.chats[m.chat].afks) {
 if (!global.db.data.chats[m.chat].afks[m.sender]) {
   // If afks array doesn't exist, create it
   global.db.data.chats[m.chat].afks[m.sender]= {
-    afkTime: -1,
+    afkTime: -2,
     afkReason: '',
     number: m.sender,
 }
