@@ -72,11 +72,22 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
 }
 else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id) {
+
+await conn.sendMessage(m.chat,{ react: {
+        text: "🕰️", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
+
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
  let newAiReply = requestToChatGPT(m.text)
 
- 
+ await conn.sendMessage(m.chat, {react: {
+        text: "👁️", // use an empty string to remove the reaction
+        key: m.key}
+    },
+    m  )
 let botreply = await  m.reply(newAiReply)
 
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key
