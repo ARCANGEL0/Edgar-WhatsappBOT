@@ -61,8 +61,8 @@ if (
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
 
-  console.log(m.mentionedJid)
- 
+  console.log("mention  " + m.mentionedJid)
+ console.log("chatban  "+global.db.data.chats[m.chat].afks )
  
  const mentionedUser = m.mentionedJid // Replace this with your actual mentioned user
 const afksArray = global.db.data.chats[m.chat].afks;
@@ -79,6 +79,9 @@ console.log(isUserAFK);
 
 let time = global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkTime
 
+
+await m.reply("🕯️")
+/*
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
@@ -87,7 +90,7 @@ let time = global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkTi
 ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
-  
+  */
 }
 else{
   return 0
