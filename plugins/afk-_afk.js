@@ -23,9 +23,9 @@ if (!user.afkInfo[m.chat]) {
 if(!global.db.data.chats[m.chat]) {
    global.db.data.chats[m.chat] ={}
 }
-if(!global.db.data.chats[m.chat].chatafk)
+if(!global.db.data.chats[m.chat].afks)
 {
-   global.db.data.chats[m.chat].chatafk =[]
+   global.db.data.chats[m.chat].afks =[]
 }
 
 
