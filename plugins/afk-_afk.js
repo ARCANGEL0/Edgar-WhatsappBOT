@@ -48,12 +48,14 @@ delete user.afkInfo[m.chat]
 
 
 }
-
- if (
+if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
-    // Check if chatafk is an array
-    global.db.data.users[m.mentionedJid].afkInfo[m.chat])
+    global.db.data.users[m.mentionedJid] &&
+    global.db.data.users[m.mentionedJid].afkInfo &&
+    global.db.data.users[m.mentionedJid].afkInfo[m.chat]
+)
+ 
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
 
