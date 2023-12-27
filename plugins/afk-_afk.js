@@ -56,6 +56,11 @@ delete user.afkInfo[m.chat]
     m.mentionedJid
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
 ) {
+  if(!global.db.data.users[m.mentionedJid].afkInfo[m.mentionedJid]){
+    global.db.data.users[m.mentionedJid].afkInfo[m.mentionedJid] ={}
+  }
+  
+  
   console.log(global.db.data.users[m.mentionedJid].afkInfo[m.mentionedJid])
   
   console.log(global.db.data.chats[m.chat].afks)
