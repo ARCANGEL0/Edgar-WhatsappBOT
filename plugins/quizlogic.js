@@ -74,16 +74,16 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
 else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id) {
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
-/*  let newAiReply = requestToChatGPT(m.text)
+ let newAiReply = requestToChatGPT(m.text)
 
  
 let botreply =  conn.reply(newAiReply)
 
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key
  
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
- */
- await m.reply("teste")
+ 
+ 
 }
   
 else {
@@ -113,3 +113,48 @@ else {
 handler.exp = 0
 
 export default handler
+
+async function requestToChatGPT(inputText) {
+delete global.chatgpt.data.users[m.sender]  
+    
+    
+    
+    let reply = `
+    Esta foi a sua ultima mensagem:
+    ${global.db.data.chats[m.chat].chatgpt["config"].resposta} 
+    
+    e o usuario esta respondendo esta mensagem que voce enviou com a seguinte mensagem:
+    
+    ${inputText}
+    
+    ------
+    responda ele de acordo como se fosse uma conversa interativa entre ambos. 
+    `
+global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: reply });
+
+
+  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
+  const endpoint = "https://api.naga.ac/v1/chat/completions"
+  // ////
+ const requestData = {
+  model: 'gpt-3.5-turbo',
+  messages: [
+    { role: 'system', content: prompt },
+    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+  ],
+}; 
+// frtch c
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { 
+    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
+    
+  },
+  body: JSON.stringify(requestData), 
+});
+
+const result = await response.json();
+console.log(result.choices[0].message.content);
+  return result.choices[0].message.content
+    
+}
