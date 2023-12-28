@@ -98,7 +98,7 @@ if (
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
 console.log(m.quoted.sender)
-  console.log(global.db.data.chats[m.chat].afks[m.quoted.sender])
+  console.log(global.db.data.chats[m.chat].afks)
 
   
  
