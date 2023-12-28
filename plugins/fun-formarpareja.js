@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
   encodedParams.set('language', 'py');
 
 
-const url: 'https://api.codex.jaagrav.in',
+const url: 'https://api.codex.jaagrav.in'
     
   
   const options = {
