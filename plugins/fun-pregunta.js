@@ -56,7 +56,7 @@ const teks = results.map((v, i) => {
     : ''
     
     const editora = v.publisher
-    ? `┃ ➥ _*Contribuidores:*_ ${v.publisher}
+    ? `\n┃ ➥ _*Editora:*_ ${v.publisher}
 ┃━━━━━━━━━⬣⬣━━━━━━━━`
     : ''
     
@@ -70,8 +70,7 @@ const teks = results.map((v, i) => {
 ┃━━━━━━━━━⬣⬣━━━━━━━━
 ${contributorsString}
 ┃ ➥ _*DATA DE PUBLICAÇÃO:*_  ${formattedDate}
-┃━━━━━━━━━⬣⬣━━━━━━━━
-${editora}
+┃━━━━━━━━━⬣⬣━━━━━━━━${editora}
 `;
 }).join('\n\n─┅──┅❖ ❖─┅──┅\n\n');
 
