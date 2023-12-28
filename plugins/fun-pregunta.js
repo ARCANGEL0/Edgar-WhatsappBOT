@@ -16,7 +16,17 @@ const filteredResults = results.map(obj => {
 
 console.log(filteredResults);
   // Extract the first 10 objects from the results array and remove 'fulltext' and 'abstract' keys
+const teks = results.map((v, i) => {
+  let link = v.downloadUrl || v.url; // Assuming 'downloadUrl' property exists, else use 'url'
+  return `[${i + 1}]
+🐦‍⬛༻ *TÍTULO:*  ${v.title}
+🐈‍⬛༻ *LINK:* ${link}
+🦇༻ *DATA:* ${v.publishedDate || v.createdDate} // Assuming 'publishedDate' or 'createdDate' exists
+✒️༻ *VISUALIZAÇÕES:* ${v.views || 0} // Assuming 'views' property exists, default to 0 if not
+`;
+}).join('\n\n••••••••••••••••••••••••••••••••••••\n\n');
 
+conn.sendFile(m.chat,'./media/menus/Menu4.jpg' , 'error.jpeg',teks, fkontak, m)
   
   
   } catch (error) {
