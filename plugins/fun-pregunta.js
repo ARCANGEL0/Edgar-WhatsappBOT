@@ -40,7 +40,11 @@ let textoInfo = `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim()  
-
+const formatDate = (isoDateString) => {
+  const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
+  const date = new Date(isoDateString);
+  return date.toLocaleString('pt-BR', options);
+};
   // Extract the first 10 objects from the results array and remove 'fulltext' and 'abstract' keys
 const teks = results.map((v, i) => {
   let link = v.downloadUrl
@@ -51,7 +55,8 @@ const teks = results.map((v, i) => {
    ━━━━━━━━━⬣⬣━━━━━━━━`
     : ''
   const authorNames = v.authors ? v.authors.map(author => author.name).join(', ') : '';
-  
+    const formattedDate = v.publishedDate ? formatDate(v.publishedDate) : '';
+    
   return `『${i + 1}』
   
 ➥ _*TÍTULO:*_  ${v.title}
@@ -59,7 +64,8 @@ const teks = results.map((v, i) => {
 ➥ _*AUTORES:*_ ${authorNames}
  ━━━━━━━━━⬣⬣━━━━━━━━
 ${contributorsString}
-➥ _*DATA: DE PUBLICAÇÃO:*_  ${v.publishedDate || v.createdDate}
+➥ _*DATA DE PUBLICAÇÃO:*_  ${formattedDate}
+ ━━━━━━━━━⬣⬣━━━━━━━━
 `;
 }).join('\n\n─┅──┅❖ ❖─┅──┅\n\n');
 
