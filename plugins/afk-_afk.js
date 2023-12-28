@@ -84,9 +84,6 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
 }
-else{
-  return 0
-}
 if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
