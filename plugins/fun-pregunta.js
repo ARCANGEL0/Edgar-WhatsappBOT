@@ -15,10 +15,39 @@ const filteredResults = results.map(obj => {
 });
 
 console.log(filteredResults);
+
+let pdfs_ = { 
+from: m.sender, 
+urls: [] 
+}
+if (!global.artigosLista) {
+global.artigosLista = [];
+}
+if (global.artigosLista[0]?.from == m.sender) {
+delete global.artigosLista;
+}
+
+let textoInfo = `
+╭━━━━━━━━━⬣
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝗕𝗮𝗶𝘅𝗲 𝗼 𝘃í𝗱𝗲𝗼 𝗾𝘂𝗲 𝗱𝗲𝘀𝗲𝗷𝗮𝗿𝗲𝘀 ,
+┃ 𝘀𝗲𝗴𝘂𝗶𝗻𝗱𝗼 𝗺𝗲𝘂𝘀 𝗽𝗮𝘀𝘀𝗼𝘀 𝗱𝗲
+┃ 𝗲𝘅𝗲𝗺𝗽𝗹𝗼 𝗽𝗮𝗿𝗮 𝘀𝘂𝗮 𝗽𝗼𝗯𝗿𝗲 𝗮𝗹𝗺𝗮
+┃ 𝗶𝗻𝗰𝗮𝗽𝗮𝘇
+┃
+┃ *${usedPrefix}coredl 2 
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`.trim()  
+
   // Extract the first 10 objects from the results array and remove 'fulltext' and 'abstract' keys
 const teks = results.map((v, i) => {
-  let link = v.downloadUrl || v.url; // Assuming 'downloadUrl' property exists, else use 'url'
-  return `[${i + 1}]
+  let link = v.downloadUrl
+  
+  pdfs_.urls.push(link);
+  
+  return `『${i + 1}』
 🐦‍⬛༻ *TÍTULO:*  ${v.title}
 🐈‍⬛༻ *LINK:* ${link}
 🦇༻ *DATA:* ${v.publishedDate || v.createdDate} // Assuming 'publishedDate' or 'createdDate' exists
@@ -27,7 +56,7 @@ const teks = results.map((v, i) => {
 }).join('\n\n••••••••••••••••••••••••••••••••••••\n\n');
 
 await m.reply(teks)
-  
+  global.artigosLista.push(pdfs_);
   
   } catch (error) {
     console.error('Error fetching data:', error);
