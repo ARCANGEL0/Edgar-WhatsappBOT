@@ -71,7 +71,7 @@ ${contributorsString}
 
 await m.reply(teks)
   global.artigosLista.push(pdfs_);
-  
+  console.log(global.artigosLista)
   } catch (error) {
     console.error('Error fetching data:', error);
     // Handle the error appropriately
