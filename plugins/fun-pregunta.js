@@ -9,7 +9,12 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const jsonData = await response.json();
 let results = jsonData.results
 
-console.log(results)
+const filteredResults = results.map(obj => {
+  const { fullText, abstract, ...rest } = obj;
+  return rest;
+});
+
+console.log(filteredResults);
   // Extract the first 10 objects from the results array and remove 'fulltext' and 'abstract' keys
 
   
