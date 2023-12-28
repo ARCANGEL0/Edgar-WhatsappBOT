@@ -91,16 +91,16 @@ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
-    m.quoted &&
-  global.db.data.chats[m.chat].afks[m.quoted.id] &&
-  global.db.data.chats[m.chat].afks[m.quoted.id].afkTime > -1
+    m.quoted
+ //   &&  global.db.data.chats[m.chat].afks[m.quoted.id] &&
+//  global.db.data.chats[m.chat].afks[m.quoted.id].afkTime > -1
   
   
 )
  
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
-
+console.log(m.quoted)
   console.log(global.db.data.chats[m.chat].afks[m.quoted])
 
   
