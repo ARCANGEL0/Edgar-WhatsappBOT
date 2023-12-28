@@ -147,7 +147,7 @@ conn.sendHydrated(m.chat, info, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 }
 handler.help = ['infobot']
 handler.tags = ['info', 'tools']
-handler.command = /^(infobot|informacionbot|infopoe|informacióngata|informaciongata)$/i
+handler.command = /^(infobot|informacionbot|getdata|informacióngata|informaciongata)$/i
 export default handler
 
 function clockString(ms) {
