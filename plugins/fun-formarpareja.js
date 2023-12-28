@@ -1,18 +1,29 @@
-let toM = a => '@' + a.split('@')[0]
-function handler(m, { groupMetadata }) {
-let ps = groupMetadata.participants.map(v => v.id)
-let a = ps.getRandom()
-let b
-do b = ps.getRandom()
-while (b === a)
-m.reply(`*${toM(a)}, 𝙔𝙖 𝙚𝙨 𝙝𝙤𝙧𝙖 𝙙𝙚 𝙦𝙪𝙚 𝙩𝙚 💍 𝘾𝙖𝙨𝙚𝙨 𝙘𝙤𝙣 ${toM(b)}, 𝙇𝙞𝙣𝙙𝙖 𝙋𝙖𝙧𝙚𝙟𝙖 😉💓*
+import fetch from 'node-fetch';
 
-*${toM(a)}, 𝙄𝙩'𝙨 𝙖𝙗𝙤𝙪𝙩 𝙩𝙞𝙢𝙚 𝙮𝙤𝙪 💍 𝙈𝙖𝙧𝙧𝙮 ${toM(b)}, 𝘾𝙪𝙩𝙚 𝙋𝙤𝙪𝙥𝙡𝙚 🤩💓*`, null, {
-mentions: [a, b]
-  
-})}
-handler.help = ['formarpareja']
-handler.tags = ['main', 'fun']
-handler.command = ['formarpareja','formarparejas']
-handler.group = true
-export default handler
+let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
+  const encodedParams = new URLSearchParams();
+  encodedParams.set('code', 'print("Hello World!")');
+  encodedParams.set('language', 'py');
+
+  const url = 'https://codex7.p.rapidapi.com/';
+  const options = {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      'X-RapidAPI-Key': '24d7bf0c8cmsha764a5967745dc8p19a4b7jsn864667d8ba41',
+      'X-RapidAPI-Host': 'codex7.p.rapidapi.com'
+    },
+    body: encodedParams
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+handler.command = /^code/i;
+export default handler;
