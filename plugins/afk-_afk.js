@@ -89,8 +89,8 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
     m.quoted
- //   &&  global.db.data.chats[m.chat].afks[m.quoted.id] &&
-//  global.db.data.chats[m.chat].afks[m.quoted.id].afkTime > -1
+    &&  global.db.data.chats[m.chat].afks[m.quoted.sender] &&
+  global.db.data.chats[m.chat].afks[m.quoted.sender].afkTime > -1
   
   
 )
@@ -104,9 +104,9 @@ console.log(m.quoted)
  
 
 
- let reason = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkTime
 
 
 
@@ -121,9 +121,7 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
 }
-else{
-  return 0
-}/*
+
 
 
 
