@@ -13,7 +13,7 @@ const url: 'https://api.codex.jaagrav.in',
     method: 'POST',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
-    },
+    }
 
     },
     body: encodedParams
