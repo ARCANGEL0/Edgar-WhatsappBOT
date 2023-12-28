@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    if (data && data.data && data.data.length > 0) {
+    if (data) {
       const first10Entries = data.data.slice(0, 10);
 
       for (const entry of first10Entries) {
