@@ -89,8 +89,8 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
     m.quoted
-  //  &&  global.db.data.chats[m.chat].afks[m.quoted.sender] &&
- // global.db.data.chats[m.chat].afks[m.quoted.sender].afkTime > -1
+    &&  global.db.data.chats[m.chat].afks[m.quoted.sender] &&
+  global.db.data.chats[m.chat].afks[m.quoted.sender].afkTime > -1
   
   
 )
