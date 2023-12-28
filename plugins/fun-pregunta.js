@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const data = await response.json();
 
     if (data) {
-      const first10Entries = data.data.slice(0, 10);
+      const first10Entries = data.slice(0, 10);
 
       for (const entry of first10Entries) {
         const { abstract, fullText, ...rest } = entry;
