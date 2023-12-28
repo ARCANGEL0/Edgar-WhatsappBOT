@@ -26,7 +26,7 @@ const teks = results.map((v, i) => {
 `;
 }).join('\n\n••••••••••••••••••••••••••••••••••••\n\n');
 
-console.log(teks)
+await m.reply(teks)
   
   
   } catch (error) {
