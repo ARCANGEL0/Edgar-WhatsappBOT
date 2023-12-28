@@ -48,8 +48,10 @@ const teks = results.map((v, i) => {
   pdfs_.urls.push(link);
   
   return `『${i + 1}』
-🐦‍⬛༻ *TÍTULO:*  ${v.title}
-🐈‍⬛༻ *LINK:* ${link}
+➥ _*TÍTULO:*_  ${v.title}
+ ━━━━━━━━━⬣⬣━━━━━━━━
+➥ _*AUTORES:* ${v.authors.name}
+
 🦇༻ *DATA:* ${v.publishedDate || v.createdDate} // Assuming 'publishedDate' or 'createdDate' exists
 ✒️༻ *VISUALIZAÇÕES:* ${v.views || 0} // Assuming 'views' property exists, default to 0 if not
 `;
