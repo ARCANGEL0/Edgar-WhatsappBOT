@@ -8,18 +8,26 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    const jsonData = JSON.parse(data.results);
+     // Parse the JSON data
+  const jsonData = JSON.parse(data);
 
-  // Modify each object to exclude 'abstract' and 'fulltext'
-  const modifiedData = jsonData.map(obj => {
+  // Extract the "results" array
+  const resultsArray = jsonData.results || [];
+
+  // Modify each object in "results" to exclude 'abstract' and 'fulltext'
+  const modifiedResults = resultsArray.map(obj => {
     const { abstract, fulltext, ...rest } = obj;
     return rest;
   });
 
-  // Return the first 10 modified objects
-  const first10Objects = modifiedData.slice(0, 10);
+  // Update the jsonData with the modified "results" array
+  jsonData.results = modifiedResults;
+
+  // Return the first 10 modified objects in "results"
+  const first10Objects = modifiedResults.slice(0, 10);
 
   console.log(first10Objects);
+  
   
   } catch (error) {
     console.error('Error fetching data:', error);
