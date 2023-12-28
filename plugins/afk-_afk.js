@@ -55,7 +55,7 @@ if (
   global.db.data.chats[m.chat].afks[m.mentionedJid] &&
   global.db.data.chats[m.chat].afks[m.mentionedJid].afkTime > -1
   
-  ]
+  
 )
  
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
