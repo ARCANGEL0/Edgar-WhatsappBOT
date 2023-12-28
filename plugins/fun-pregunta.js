@@ -28,18 +28,18 @@ delete global.artigosLista;
 }
 
 let textoInfo = `
+╭────────────────────⌬...─╮
+       𝙰𝚁𝚃𝙸𝙶𝙾𝚂
+╰─...⌬────────────────────╯
 ╭━━━━━━━━━⬣
+┃ 📜 𝐄𝐬𝐜𝐨𝐥𝐡𝐚 𝐨 𝐧𝐮𝐦𝐞𝐫𝐨 𝐝𝐨 𝐚𝐫𝐭𝐢𝐠𝐨 
+┃ 𝐚𝐜𝐚𝐝𝐞𝐦𝐢𝐜𝐨 𝐪𝐮𝐞 𝐥𝐡𝐞 𝐝𝐞𝐬𝐩𝐞𝐫𝐭𝐚 𝐨
+┃ 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐬𝐞 𝐩𝐚𝐫𝐚 𝐝𝐞𝐬𝐜𝐚𝐫𝐫𝐞𝐠𝐚𝐫
+┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝗕𝗮𝗶𝘅𝗲 𝗼 𝘃í𝗱𝗲𝗼 𝗾𝘂𝗲 𝗱𝗲𝘀𝗲𝗷𝗮𝗿𝗲𝘀 ,
-┃ 𝘀𝗲𝗴𝘂𝗶𝗻𝗱𝗼 𝗺𝗲𝘂𝘀 𝗽𝗮𝘀𝘀𝗼𝘀 𝗱𝗲
-┃ 𝗲𝘅𝗲𝗺𝗽𝗹𝗼 𝗽𝗮𝗿𝗮 𝘀𝘂𝗮 𝗽𝗼𝗯𝗿𝗲 𝗮𝗹𝗺𝗮
-┃ 𝗶𝗻𝗰𝗮𝗽𝗮𝘇
-┃
 ┃ *${usedPrefix}coredl 2 
-┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣`.trim()  
+┃ `.trim()  
 const formatDate = (isoDateString) => {
   const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
   const date = new Date(isoDateString);
@@ -51,29 +51,35 @@ const teks = results.map((v, i) => {
   
   pdfs_.urls.push(link);
    const contributorsString = v.contributors
-    ? `➥ _*Contribuidores:*_\n${v.contributors.map(contributor => `${contributor}`).join(', ')}
-   ━━━━━━━━━⬣⬣━━━━━━━━`
+    ? `┃ ➥ _*Contribuidores:*_\n${v.contributors.map(contributor => `${contributor}`).join(', ')}
+┃━━━━━━━━━⬣⬣━━━━━━━━`
     : ''
+    
+    const editora = v.publisher
+    ? `┃ ➥ _*Contribuidores:*_ ${v.publisher}
+┃━━━━━━━━━⬣⬣━━━━━━━━`
+    : ''
+    
   const authorNames = v.authors ? v.authors.map(author => author.name).join(', ') : '';
     const formattedDate = v.publishedDate ? formatDate(v.publishedDate) : '';
     
-  return `『${i + 1}』
-  
-➥ _*TÍTULO:*_  ${v.title}
- ━━━━━━━━━⬣⬣━━━━━━━━
-➥ _*AUTORES:*_ ${authorNames}
- ━━━━━━━━━⬣⬣━━━━━━━━
+  return `┃━━⬣『${i + 1}』
+┃ ➥ _*TÍTULO:*_  ${v.title}
+┃━━━━━━━━━⬣⬣━━━━━━━━
+┃ ➥ _*AUTORES:*_ ${authorNames}
+┃━━━━━━━━━⬣⬣━━━━━━━━
 ${contributorsString}
-➥ _*DATA DE PUBLICAÇÃO:*_  ${formattedDate}
- ━━━━━━━━━⬣⬣━━━━━━━━
+┃ ➥ _*DATA DE PUBLICAÇÃO:*_  ${formattedDate}
+┃━━━━━━━━━⬣⬣━━━━━━━━
+${editora}
 `;
 }).join('\n\n─┅──┅❖ ❖─┅──┅\n\n');
 
-await m.reply(teks)
+await m.reply(textoInfo + '\n'+ teks)
   global.artigosLista.push(pdfs_);
   console.log(global.artigosLista)
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error('Erro:', error);
     // Handle the error appropriately
   }
 };
