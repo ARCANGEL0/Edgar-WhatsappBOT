@@ -92,8 +92,8 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
     m.quoted &&
-  global.db.data.chats[m.chat].afks[m.quoted.sender] &&
-  global.db.data.chats[m.chat].afks[m.quoted.sender].afkTime > -1
+  global.db.data.chats[m.chat].afks[m.quoted] &&
+  global.db.data.chats[m.chat].afks[m.quoted].afkTime > -1
   
   
 )
@@ -101,15 +101,15 @@ if (
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
 
-  console.log(global.db.data.chats[m.chat].afks[m.quoted.sender])
+  console.log(global.db.data.chats[m.chat].afks[m.quoted])
 
   
  
 
 
- let reason = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkTime
 
 
 
@@ -138,8 +138,8 @@ if (
     global.db.data.chats[m.chat] &&
     global.db.data.chats[m.chat].afks &&
     m.quoted &&
-  global.db.data.chats[m.chat].afks[m.quoted.sender] &&
-  global.db.data.chats[m.chat].afks[m.quoted.sender].afkTime > -1
+  global.db.data.chats[m.chat].afks[m.quoted] &&
+  global.db.data.chats[m.chat].afks[m.quoted].afkTime > -1
   
   
 )
@@ -147,15 +147,15 @@ if (
  //   && global.db.data.chats[m.chat].afks.includes(m.mentionedJid.toString())
  {
 
-  console.log(global.db.data.chats[m.chat].afks[m.quoted.sender])
+  console.log(global.db.data.chats[m.chat].afks[m.quoted])
 
   
  
 
 
- let reason = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkTime
 
 
 
@@ -178,7 +178,7 @@ if (
     global.db.data.chats &&
     global.db.data.chats[m.chat] &&
     m.quoted &&
-  global.db.data.chats[m.chat].chatafk.includes(m.quoted.sender))
+  global.db.data.chats[m.chat].chatafk.includes(m.quoted))
 ) {
   
   
@@ -187,9 +187,9 @@ if (
  
 
 
- let reason = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkReason : ''
+ let reason = global.db.data.users[m.quoted].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted].afkInfo[m.chat].afkReason : ''
 
-let time = global.db.data.users[m.quoted.sender].afkInfo[m.chat].afkTime
+let time = global.db.data.users[m.quoted].afkInfo[m.chat].afkTime
 
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
@@ -236,7 +236,7 @@ if (user.afk > -1) {await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖�
 user.afk = -1
 user.afkReason = ''
 }
-let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
+let jids = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted] : [])])]
 for (let jid of jids) {
 let user = global.db.data.users[jid]
 if (!user)
