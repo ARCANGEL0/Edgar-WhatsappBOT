@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
  
    
 
-const apiUrl = `https://api.core.ac.uk/v3/search/works?q=${text}?apiKey=${apiKey}`;
+const apiUrl = `https://api.core.ac.uk/v3/search/works?q=${text}`;
 
 
   try {
