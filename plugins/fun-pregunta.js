@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
   };
 
   try {
-    const response = await fetch(`${url}?entity_type=${entityType}`, {
+    const response = await fetch(`${url}`, {
       method: 'POST', // or 'GET' depending on the API
       headers: {
         'Content-Type': 'application/json',
