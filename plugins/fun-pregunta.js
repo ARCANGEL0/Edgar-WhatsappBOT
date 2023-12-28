@@ -46,12 +46,15 @@ const teks = results.map((v, i) => {
   let link = v.downloadUrl
   
   pdfs_.urls.push(link);
+  const contributorsString = v.contributors ? `_**Contribuidores:*_ ${v.contributors.join(', ')}` : '';
+  const authorNames = v.authors ? v.authors.map(author => author.name).join(', ') : '';
   
   return `『${i + 1}』
+  
 ➥ _*TÍTULO:*_  ${v.title}
  ━━━━━━━━━⬣⬣━━━━━━━━
-➥ _*AUTORES:* ${v.authors.name}
-
+➥ _*AUTORES:* ${authorNames}
+ ━━━━━━━━━⬣⬣━━━━━━━━
 🦇༻ *DATA:* ${v.publishedDate || v.createdDate} // Assuming 'publishedDate' or 'createdDate' exists
 ✒️༻ *VISUALIZAÇÕES:* ${v.views || 0} // Assuming 'views' property exists, default to 0 if not
 `;
