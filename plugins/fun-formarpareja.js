@@ -5,13 +5,16 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
   encodedParams.set('code', 'print("Hello World!")');
   encodedParams.set('language', 'py');
 
-  const url = 'https://codex7.p.rapidapi.com/';
+
+const url: 'https://api.codex.jaagrav.in',
+    
+  
   const options = {
     method: 'POST',
     headers: {
-      'content-type': 'application/x-www-form-urlencoded',
-      'X-RapidAPI-Key': '24d7bf0c8cmsha764a5967745dc8p19a4b7jsn864667d8ba41',
-      'X-RapidAPI-Host': 'codex7.p.rapidapi.com'
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+
     },
     body: encodedParams
   };
