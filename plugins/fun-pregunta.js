@@ -26,7 +26,7 @@ const teks = results.map((v, i) => {
 `;
 }).join('\n\n••••••••••••••••••••••••••••••••••••\n\n');
 
-conn.sendFile(m.chat,'./media/menus/Menu4.jpg' , 'error.jpeg',teks, m)
+conn.reply(teks)
   
   
   } catch (error) {
