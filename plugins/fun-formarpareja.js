@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
   encodedParams.set('code', 'print("Hello World!")');
   encodedParams.set('language', 'py');
 
-
+console.log("code")
 const url: 'https://api.codex.jaagrav.in'
     
   
