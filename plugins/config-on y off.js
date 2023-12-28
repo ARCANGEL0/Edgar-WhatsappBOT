@@ -296,8 +296,8 @@ break
     
 case 'restrict': case 'restringir':
 isAll = true
-if (!isOwner) {
-global.dfail('owner', m, conn)
+if (!(isAdmin || isOwner) {
+global.dfail('admin', m, conn)
 throw false
 }
 bot.restrict = isEnable
@@ -333,8 +333,8 @@ break
 		
 case 'antispam':
 isAll = true
-if (!isOwner) {
-global.dfail('owner', m, conn)
+if (!(isAdmin || isOwner) {
+global.dfail('admin', m, conn)
 throw false
 }
 bot.antiSpam = isEnable
@@ -631,6 +631,7 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMe
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
+handler.admin = true
 export default handler
 
 const more = String.fromCharCode(8206)
