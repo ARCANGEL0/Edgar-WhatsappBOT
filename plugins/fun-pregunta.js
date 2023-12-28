@@ -7,14 +7,11 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
   try {
     const response = await fetch(apiUrl);
     const jsonData = await response.json();
+let results = jsonData.results
 
+console.log(results)
   // Extract the first 10 objects from the results array and remove 'fulltext' and 'abstract' keys
-const modifiedResults = jsonData.results.slice(0, jsonData.limit).map(result => {
-  const { fulltext, abstract, ...rest } = Object.values(result)[0];
-  return { ...rest };
-});
 
-console.log(modifiedResults);
   
   
   } catch (error) {
