@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    const jsonData = JSON.parse(data);
+    const jsonData = JSON.parse(data.results);
 
   // Modify each object to exclude 'abstract' and 'fulltext'
   const modifiedData = jsonData.map(obj => {
