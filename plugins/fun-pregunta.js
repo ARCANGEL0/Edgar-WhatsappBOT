@@ -9,22 +9,11 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
 
   const payload = {
     q: text,
-    scroll: true,
-    offset: 0,
-    limit: 0,
-    scroll_id: 'string',
-    entity_id: 'string',
-    entity_type: entityType,
-    stats: true,
-    raw_stats: true,
-    exclude: ['string'],
-    sort: ['string'],
-    accept: 'string',
-    measure: true,
+    
   };
 
   try {
-    const response = await fetch(`${url}`, {
+    const response = await fetch(url, {
       method: 'POST', // or 'GET' depending on the API
       headers: {
         'Content-Type': 'application/json',
