@@ -3,18 +3,17 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
  
  
- fetch(`https://ipapi.co/json/${text}`)
-.then(function(response) {
-  response.text().then(txt => {
-    console.log(txt);
+ const apiKey = 'uaxjboqGrX63On79gMPc8zd5iKUtFYLI'
+const searchQuery = text
+
+fetch(`https://api.core.ac.uk/v3/search/${searchQuery}?apiKey=${apiKey}`)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
   });
-})
-.catch(function(error) {
-  console.log(error)
-});
 
 
 };
 
-handler.command = /^ip/i;
+handler.command = /^core|pesquisar/i;
 export default handler;
