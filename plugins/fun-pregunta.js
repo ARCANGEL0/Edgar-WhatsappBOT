@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const response = await fetch(apiUrl);
     const jsonData = await response.json();
 let results = jsonData.results
-console.log(results)
+
 const filteredResults = results.map(obj => {
   const { fullText, abstract, ...rest } = obj;
   return rest;
@@ -22,10 +22,18 @@ name: [],
 urls: [] 
 }
 if (!global.artigosLista) {
-global.artigosLista = [];
+global.artigosLista = {};
 }
-if (global.artigosLista[0]?.from == m.sender) {
-delete global.artigosLista;
+if (!global.artigosLista[m.chat]) {
+global.artigosLista[m.chat] = {
+  urls: [],
+  name: [],
+  
+}
+}
+
+if (global.artigosLista[m.chat]) {
+delete global.artigosLista[m.chat];
 }
 
 let textoInfo = `
@@ -49,8 +57,8 @@ const formatDate = (isoDateString) => {
 const teks = results.map((v, i) => {
   let link = v.downloadUrl
   
-  pdfs_.urls.push(link);
-  pdfs_.name.push(v.title)
+  global.artigosLista[m.chat].urls.push(link);
+  global.artigosLista[m.chat].name.push(v.title)
    const contributorsString = v.contributors
     ? `┃ ➥ _*Contribuidores:*_\n${v.contributors.map(contributor => `${contributor}`).join(', ')}
 ┃━━━━━━━━━⬣⬣━━━━━━━━`
@@ -76,8 +84,8 @@ ${contributorsString}
 }).join('\n\n─┅──┅❖ ❖─┅──┅\n\n');
 
 await m.reply(textoInfo + '\n'+ teks)
-  global.artigosLista.push(pdfs_);
-  console.log(global.artigosLista)
+  
+  console.log(global.artigosLista[m.chat])
   } catch (error) {
     console.error('Erro:', error);
     // Handle the error appropriately
