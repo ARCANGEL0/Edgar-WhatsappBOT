@@ -50,7 +50,7 @@ const teks = results.map((v, i) => {
   let link = v.downloadUrl
   
   pdfs_.urls.push(link);
-  pdfa_.name.push(v.title)
+  pdfs_.name.push(v.title)
    const contributorsString = v.contributors
     ? `┃ ➥ _*Contribuidores:*_\n${v.contributors.map(contributor => `${contributor}`).join(', ')}
 ┃━━━━━━━━━⬣⬣━━━━━━━━`
