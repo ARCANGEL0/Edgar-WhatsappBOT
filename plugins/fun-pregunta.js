@@ -14,7 +14,7 @@ const filteredResults = results.map(obj => {
   return rest;
 });
 
-console.log(filteredResults.links);
+
 
 let pdfs_ = { 
 from: m.sender,
