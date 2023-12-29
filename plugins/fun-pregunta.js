@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
     const response = await fetch(apiUrl);
     const jsonData = await response.json();
 let results = jsonData.results
-
+console.log(results)
 const filteredResults = results.map(obj => {
   const { fullText, abstract, ...rest } = obj;
   return rest;
