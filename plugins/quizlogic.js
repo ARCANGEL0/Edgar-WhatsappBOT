@@ -28,7 +28,7 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
         `)
       }
       else {
-        if(m.text==global.quiz[m.chat].ca){
+        if(m.text.toUpperCase()==global.quiz[m.chat].ca){
           
            if(!global.db.data.chats[m.chat].jogadores[m.sender]){
              global.db.data.chats[m.chat].jogadores[m.sender] = {
