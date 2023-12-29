@@ -14,7 +14,9 @@ const filteredResults = results.map(obj => {
   return rest;
 });
 
-
+if (global.artigosLista[m.chat]) {
+delete global.artigosLista[m.chat];
+}
 
 let pdfs_ = { 
 from: m.sender,
@@ -32,9 +34,7 @@ global.artigosLista[m.chat] = {
 }
 }
 
-if (global.artigosLista[m.chat]) {
-delete global.artigosLista[m.chat];
-}
+
 
 let textoInfo = `
 ╭────────────────────⌬...─╮
