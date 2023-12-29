@@ -17,7 +17,8 @@ const filteredResults = results.map(obj => {
 console.log(filteredResults.links);
 
 let pdfs_ = { 
-from: m.sender, 
+from: m.sender,
+name: [],
 urls: [] 
 }
 if (!global.artigosLista) {
@@ -49,6 +50,7 @@ const teks = results.map((v, i) => {
   let link = v.downloadUrl
   
   pdfs_.urls.push(link);
+  pdfa_.name.push(v.title)
    const contributorsString = v.contributors
     ? `┃ ➥ _*Contribuidores:*_\n${v.contributors.map(contributor => `${contributor}`).join(', ')}
 ┃━━━━━━━━━⬣⬣━━━━━━━━`
@@ -62,7 +64,7 @@ const teks = results.map((v, i) => {
   const authorNames = v.authors ? v.authors.map(author => author.name).join(', ') : '';
     const formattedDate = v.publishedDate ? formatDate(v.publishedDate) : '';
     
-  return `╭━━━⬣『${i + 1}』
+  return `╭━━━⬣『${i}』
 ┃ ➥ _*TÍTULO:*_  ${v.title}
 ┃━━━━━━━━━⬣⬣━━━━━━━━
 ┃ ➥ _*AUTORES:*_ ${authorNames}
