@@ -46,7 +46,7 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let old = performance.now()
   //await m.reply('_Realizando test_')
   let neww = performance.now()
-  let totaljadibot = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])]
+  
   let speed = neww - old
 
 let info = `╭━━━━[ ${gt} ]━━━━━⬣
@@ -79,9 +79,6 @@ let info = `╭━━━━[ ${gt} ]━━━━━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *VELOCIDADE*
 ┃ღ  *${speed}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃➥ *BOT SECUNDARIOS AtiVOS *
-┃ღ *${totaljadibot.length}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃➥ *AUTOREAD*
 ┃ღ ${autoread ? '*Ativado ✔*' : '*Desativado ✘*'}
