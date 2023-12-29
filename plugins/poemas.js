@@ -9,7 +9,7 @@ _${pickRandom(global.poema)}_ 🪶📜
  ━━━━━━━━━⬣⬣━━━━━━━━`)
 }
 handler.tags = ['frases']
-handler.command = ['poemas']
+handler.command = ['poemas','frases']
 export default handler
 
 function pickRandom(list) {
