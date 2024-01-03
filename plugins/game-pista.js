@@ -36,7 +36,7 @@ console.log(randomWallpaperPath);
   } )
     
     
-  })
+  
   .catch(error => console.error('Error:', error));
   
   
