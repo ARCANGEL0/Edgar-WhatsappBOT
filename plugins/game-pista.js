@@ -46,11 +46,11 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
   try {
     const response = await fetch(url, requestOptions);
     const data = await response.buffer(); // Use .buffer() to get ArrayBuffer equivalent
-
+console.log(response)
     // convert raw blob as ArrayBuffer to an image blob with MIME type
     const imageBlob = new Blob([data], { type: "image/jpeg" });
     // console.log(response, imageBlob);
-    
+    console.log(imageBlob)
     conn.sendFile(m.chat, imageBlob, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   } catch (error) {
     console.error("Error while fetching Gen AI model API", error);
