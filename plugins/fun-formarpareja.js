@@ -32,6 +32,7 @@ fetch(url)
 
 // Example usage
 const randomWallpaper = getRandomWallpaper();
+console.log(randomWallpaper)
   conn.sendFile(m.chat, randomWallpaper, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   )
   .catch(error => console.error('Error:', error));
