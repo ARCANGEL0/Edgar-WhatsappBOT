@@ -10,10 +10,36 @@ let url = `https://www.googleapis.com/customsearch/v1?key=AIzaSyBfJhADjAWsap_R3D
 
 fetch(url)
   .then(response => response.json())
-  .then(data => console.log(data))
+  .then((data) =>{  console.log(data)
+  
+ 
+ 
+ // Assuming 'result' is your variable containing the data
+
+// Extract the 'data' array from the result
+const wallpaperArray = data.items;
+
+// Get a random index within the length of the array
+const randomIndex = Math.floor(Math.random() * wallpaperArray.length);
+
+// Retrieve the random wallpaper object
+const randomWallpaper = wallpaperArray[randomIndex];
+
+// Retrieve the 'path' property from the random wallpaper object
+const randomWallpaperPath = randomWallpaper.link;
+
+// Display the result or use it as needed
+console.log(randomWallpaperPath);
+
+
+  conn.sendFile(m.chat, randomWallpaperPath, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+  } )
+    
+    
+  })
   .catch(error => console.error('Error:', error));
   
   
 };
-handler.command = /^hint|pista$/i;
+handler.command = /^imagem|fotos|img/i;
 export default handler;
