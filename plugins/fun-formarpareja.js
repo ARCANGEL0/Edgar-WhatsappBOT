@@ -17,8 +17,7 @@ const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
   .then(response => response.json())
-  .then(data => console.log(data); 
-  function getRandomWallpaper() {
+  .then(data => console.log(data);   function getRandomWallpaper() {
   // Get a random index within the data array
   const randomIndex = Math.floor(Math.random() * data.data.length);
 
@@ -26,14 +25,17 @@ fetch(url)
   const randomWallpaper = data.data[randomIndex];
 
   // Return an object with the image URL and path
-  return randomWallpaper.path
+  return {
+    imageUrl: randomWallpaper.path,
+    path: randomWallpaper.path
+  };
     
 }
 
 // Example usage
 const randomWallpaper = getRandomWallpaper();
 console.log(randomWallpaper)
-  conn.sendFile(m.chat, randomWallpaper, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+  conn.sendFile(m.chat, randomWallpaper.path, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   )
   .catch(error => console.error('Error:', error));
 
