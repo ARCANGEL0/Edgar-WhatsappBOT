@@ -39,6 +39,8 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}╭━━━━━━━�
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak, m)
 const d2ata = await facebook.v1(args[0]);
+console.log("facebook")
+console.log(d2ata)
 let r2es = '';
 if (d2ata.urls && d2ata.urls.length > 0) {
 r2es = `${d2ata.urls[0]?.hd || d2ata.urls[1]?.sd || ''}`
