@@ -17,7 +17,8 @@ const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
   .then(response => response.json())
-  .then(data => console.log(data);   
+  .then((data) => {
+    console.log(data) 
   
  
  
@@ -40,7 +41,7 @@ console.log(randomWallpaperPath);
 
 
   conn.sendFile(m.chat, randomWallpaperPath, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
-  )
+  } )
   .catch(error => console.error('Error:', error));
 
 };
