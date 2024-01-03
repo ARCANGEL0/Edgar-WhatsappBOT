@@ -9,7 +9,7 @@ let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
 if(m.quoted){
   
  
-  let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
+  let teks = `teste╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
 for (let mem of participants) {
 teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `┃\n`
