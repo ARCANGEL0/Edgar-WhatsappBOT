@@ -4,13 +4,13 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
  
  
  
-const apiUrl = 'https://newsapi.org/v2';
+const apiUrl = 'https://wallhaven.cc/api/v1/search';
 const apiKey = '7ce080bf8a37489c9dc2ef3a72a88f71';
 
 const params = new URLSearchParams({
-  country: 'br',
-  q: text,
-  apiKey: apiKey,
+  
+  q: text
+  
 });
 
 const url = `${apiUrl}?${params.toString()}`;
