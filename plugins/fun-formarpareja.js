@@ -24,7 +24,7 @@ fetch(url)
  // Assuming 'result' is your variable containing the data
 
 // Extract the 'data' array from the result
-const wallpaperArray = result.data;
+const wallpaperArray = data.data;
 
 // Get a random index within the length of the array
 const randomIndex = Math.floor(Math.random() * wallpaperArray.length);
