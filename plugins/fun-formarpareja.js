@@ -13,8 +13,7 @@ const options = {
 	},
 	body: {
 		language_id: 71,
-		source_code: text,
-		stdin: 'SnVkZ2Uw'
+		source_code: text
 	}
 };
 
