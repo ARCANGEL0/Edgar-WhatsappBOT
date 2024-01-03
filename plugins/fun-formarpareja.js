@@ -2,30 +2,23 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
  
- const url = 'https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&wait=true&fields=*';
-const options = {
-	method: 'POST',
-	headers: {
-		'content-type': 'application/json',
-		'Content-Type': 'application/json',
-		'X-RapidAPI-Key': '24d7bf0c8cmsha764a5967745dc8p19a4b7jsn864667d8ba41',
-		'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
-	},
-	body: {
-		language_id: 71,
-		source_code: "print('hello')"
-	}
-};
+ 
+ 
+const apiUrl = 'https://newsapi.org/v2/top-headlines';
+const apiKey = '7ce080bf8a37489c9dc2ef3a72a88f71';
 
-try {
-  console.log(options)
-	const response = await fetch(url, options);
-console.log(response)
-const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+const params = new URLSearchParams({
+  country: 'br',
+  apiKey: apiKey,
+});
+
+const url = `${apiUrl}?${params.toString()}`;
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
 };
 
 handler.command = /^code/i;
