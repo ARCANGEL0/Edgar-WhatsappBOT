@@ -6,6 +6,8 @@ import {facebook} from '@xct007/frieren-scraper';
 import axios from 'axios';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
+let urllink = args[0]
 if (!urllink) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🕯️💀 𝐑𝐞𝐯𝐞𝐥𝐚-𝐦𝐞 𝐨 𝐞𝐥𝐨 𝐩𝐚𝐫𝐚 𝐨 
@@ -21,7 +23,7 @@ if (!urllink) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}╭━━�
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak, m)
 
-let urllink = urllink;
+
 
 if (urllink.startsWith("http://")) {
     urllink = urllink.substring("http://".length);
