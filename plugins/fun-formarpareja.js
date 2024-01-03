@@ -13,7 +13,7 @@ const options = {
 	},
 	body: {
 		language_id: 71,
-		source_code: text
+		source_code: "print('hello')"
 	}
 };
 
