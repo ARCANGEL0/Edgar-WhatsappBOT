@@ -9,6 +9,7 @@ const apiKey = '7ce080bf8a37489c9dc2ef3a72a88f71';
 
 const params = new URLSearchParams({
   country: 'br',
+  q: text,
   apiKey: apiKey,
 });
 
