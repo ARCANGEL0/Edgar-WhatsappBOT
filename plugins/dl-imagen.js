@@ -1,5 +1,9 @@
-import { googleImage } from '@bochilteam/scraper'
+/* Created by https://github.com/unptoadrih15 */
+
 let handler = async (m, { conn, text, usedPrefix, command }) => {
+  
+ 
+  
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
@@ -16,16 +20,42 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
-/*const prohibited = ['caca', 'polla', 'porno', 'porn', 'gore', 'cum', 'semen', 'puta', 'puto', 'culo', 'putita', 'putito','pussy', 'hentai', 'pene', 'coño', 'asesinato', 'zoofilia', 'mia khalifa', 'desnudo', 'desnuda', 'cuca', 'chocha', 'muertos', 'pornhub', 'xnxx', 'xvideos', 'teta', 'vagina', 'marsha may', 'misha cross', 'sexmex', 'furry', 'furro', 'furra', 'xxx', 'rule34', 'panocha', 'pedofilia', 'necrofilia', 'pinga', 'horny', 'ass', 'nude', 'popo', 'nsfw', 'femdom', 'futanari', 'erofeet', 'sexo', 'sex', 'yuri', 'ero', 'ecchi', 'blowjob', 'anal', 'ahegao', 'pija', 'verga', 'trasero', 'violation', 'violacion', 'bdsm', 'cachonda', '+18', 'cp', 'mia marin', 'lana rhoades', 'cepesito', 'hot', 'buceta', 'xxx']
-if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('⚠️😾')      */
-const res = await googleImage(text)
-let image = res.getRandom()
-let link = image
-conn.sendFile(m.chat, link, 'error.jpg', `*🕯️💀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}*`, m)
-}
-handler.help = ['gimage <query>', 'image <query>']
-handler.tags = ['internet', 'tools']
-handler.command = /^(gimage|image|foto)$/i
-handler.exp = 0
-handler.money = 0
-export default handler
+  
+  
+let url = `https://www.googleapis.com/customsearch/v1?key=AIzaSyBfJhADjAWsap_R3DreKnhOxDqU8XjcSd8&cx=25da83b51f2d2424c&searchType=image&q=${text}`
+
+fetch(url)
+  .then(response => response.json())
+  .then((data) =>{  console.log(data)
+  
+ 
+ 
+ // Assuming 'result' is your variable containing the data
+
+// Extract the 'data' array from the result
+const wallpaperArray = data.items;
+
+// Get a random index within the length of the array
+const randomIndex = Math.floor(Math.random() * wallpaperArray.length);
+
+// Retrieve the random wallpaper object
+const randomWallpaper = wallpaperArray[randomIndex];
+
+// Retrieve the 'path' property from the random wallpaper object
+const randomWallpaperPath = randomWallpaper.link;
+
+// Display the result or use it as needed
+console.log(randomWallpaperPath);
+
+
+  conn.sendFile(m.chat, randomWallpaperPath, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+  } )
+    
+    
+  
+  .catch(error => console.error('Error:', error));
+  
+  
+};
+handler.command = /^imagem|fotos|img/i;
+export default handler;
