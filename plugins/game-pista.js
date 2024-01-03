@@ -22,12 +22,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ╰━━━━━━━━━━━━━━━━━━⬣`
   
   
-  const fetchImages = async (
-  promptCall,
-  seedValue,
-  dropDownValue,
-  radioValue
-) => {
+  
   const url = "https://api.segmind.com/v1/sdxl1.0-txt2img";
    // Replace 'your_search_query' with the actual search query
 
@@ -60,12 +55,11 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
   } catch (error) {
     console.error("Error while fetching Gen AI model API", error);
   }
-};
+
 
 // Replace 'your_search_query' with the actual search query
-fetchImages('your_prompt_call', 'your_seed_value', 'your_drop_down_value', 'your_radio_value');
-  
+
   
 };
-handler.command = /^imagem|fotos|img/i;
+handler.command = /^dalle/i;
 export default handler;
