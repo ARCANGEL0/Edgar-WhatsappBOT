@@ -1,13 +1,19 @@
 /* Created by https://github.com/unptoadrih15 */
 
-const handler = async (m, {conn}) => {
-  conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {};
-  const id = m.chat;
-  if (!(id in conn.tebaklagu)) throw false;
-  const json = conn.tebaklagu[id][1];
-  const nya = json.jawaban;
-  const nyanya = nya.replace(/[bcdfghjklmnñpqrstvwxyzBCDEFGHJKLMNÑPQRSTVWXYZ]/g, '_');
-  m.reply('' + nyanya + '');
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  
+ 
+  
+  
+  
+let url = `https://www.googleapis.com/customsearch/v1?key=AIzaSyBfJhADjAWsap_R3DreKnhOxDqU8XjcSd8&cx=25da83b51f2d2424c&searchType=image&q=${text}`
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+  
+  
 };
 handler.command = /^hint|pista$/i;
 export default handler;
