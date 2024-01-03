@@ -61,5 +61,5 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 
   
 };
-handler.command = /^dalle/i;
+handler.command = /^dalls/i;
 export default handler;
