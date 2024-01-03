@@ -3,13 +3,13 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
   
   
 let pesan = args.join` `
-let oi = `ღ ${lenguajeGB['smsAddB5']()} ${pesan}`
+let oi = `🌒 ${lenguajeGB['smsAddB5']()}`
 
 
 if(m.quoted){
   
  
-  let teks = `teste╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
+  let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}: ${m.quoted.text}\n\n`
 for (let mem of participants) {
 teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `┃\n`
@@ -24,7 +24,7 @@ m.quoted.reply(teks, '',{mentions:participants.map(a => a.id)})
 }
 
 else {
-let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}\n\n`
+let teks = `╭━〔 *${lenguajeGB['smstagaa']()}* 〕\n\n${oi}: ${pesan} \n\n`
 for (let mem of participants) {
 teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
 teks += `┃\n`
