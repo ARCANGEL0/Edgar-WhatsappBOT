@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
  
  
  
-const apiUrl = 'https://newsapi.org/v2/top-headlines';
+const apiUrl = 'https://newsapi.org/v2';
 const apiKey = '7ce080bf8a37489c9dc2ef3a72a88f71';
 
 const params = new URLSearchParams({
