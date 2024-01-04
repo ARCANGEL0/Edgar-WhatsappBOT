@@ -35,9 +35,10 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
       }
     } 
     else if(m.quoted && m.quoted.text!='') {
-  
+  m.react("⏳")
 let fig = encodeURI(m.quoted.text)
 let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
+m.react("✔️")
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
 
     
