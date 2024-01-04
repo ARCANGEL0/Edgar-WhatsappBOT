@@ -19,9 +19,14 @@ let result = await translate(`${text}`, { to: "en", autoCorrect: true })
 let nome = await translate(json.name, { to: "pt", autoCorrect: true })
 
 let summ = await translate(json.summary, { to: "pt", autoCorrect: true })
+
+console.log(summ)
+console.log(nome)
    let elementInfo = 
    
-    ` ⛧°。 ⋆༺♱༻⋆。 °⛧
+    ` 
+    ⛧°。 ⋆༺♱༻⋆。 °⛧
+    
     ⚝ _*Informações do elemento*_ ⚝
      ⌬ *Nome:* ${nome.txt}\n
      ⌬ *Símbolo:* ${json.symbol}\n
