@@ -27,7 +27,7 @@ let result = await translate(`${text}`, { to: "en", autoCorrect: true })
      • *Resumo:* ${trad(json.summary)}`;
 
 function trad(summary) {
-let txt = await translate(summary, { to: "pt", autoCorrect: true })
+let txt = translate(summary, { to: "pt", autoCorrect: true })
     return txt.text;
 }
 
