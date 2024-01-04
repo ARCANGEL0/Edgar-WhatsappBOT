@@ -17,7 +17,7 @@ let result = await translate(`${text}`, { to: "en", autoCorrect: true })
 
    let elementInfo = 
     ` ━━━━━━━━━⬣📜 _*Informações do elemento*_ ⬣━━━━━━━━
-     • *Nome:* ${traduzirNome(json.name)}\n
+     • *Nome:* ${trad(json.name)}\n
      • *Símbolo:* ${json.symbol}\n
      • *Número Atômico:* ${json.atomic_number}\n
      • *Massa Atômica:* ${json.atomic_mass}\n
@@ -27,8 +27,8 @@ let result = await translate(`${text}`, { to: "en", autoCorrect: true })
      • *Resumo:* ${trad(json.summary)}`;
 
 function trad(summary) {
-    // Implemente sua lógica de tradução do resumo aqui
-    return translatedSummary;
+let txt = await translate(summary, { to: "pt", autoCorrect: true })
+    return txt.text;
 }
 
     conn.sendFile(m.chat, json.image, 'element.jpg', elementInfo, m);
