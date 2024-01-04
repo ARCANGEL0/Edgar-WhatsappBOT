@@ -25,9 +25,11 @@ try {
       const imageBuffer = await response.buffer();
       await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
     } else {
+      console.log(response)
       throw '*Image generation failed*';
     }
-  } catch {
+  } catch(e) {
+    console.log(e)
     throw '*Oops! Something went wrong while generating images. Please try again later.*';
   }
   
