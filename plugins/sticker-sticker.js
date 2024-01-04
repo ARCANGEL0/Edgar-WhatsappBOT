@@ -35,11 +35,16 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
       }
     } 
     else if(m.quoted.text!='') {
-      m.reply("is text")
+  
+let fig = encodeURI(m.quoted.text)
+let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
+conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
+
     }
     
     else if (args[0]) {
-      let stiker = await sticker(false,`https://aemt.me/ttp?text=${args[0]}`, global.packname, global.author)
+      let fig = encodeURI(args[0])
+      let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
       return m.reply('erro')
     }
   
