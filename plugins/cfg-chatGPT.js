@@ -121,13 +121,13 @@ const response = await fetch(endpoint, {
 
 const result = await response.json();
 console.log(result.choices[0].message.content);
-  return result.choices[0].message.content
+  
     global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
  
  global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
  
  console.log(global.db.data.chats[m.chat].edgargpt["config"])
- 
+ return result.choices[0].message.content
  
 }
 
