@@ -12,5 +12,5 @@ throw stiker.toString()
 }
 handler.help = ['ttp <teks>']
 handler.tags = ['sticker']
-handler.command = /^ttpfg$/i 
+handler.command = /^ttpg$/i 
 export default handler
