@@ -133,9 +133,11 @@ const handler = async (m, { conn, args }) => {
     return;
   }
 
-  if (feature === 'help') {
+  if (feature === 'info') {
     return conn.reply(m.chat, `
-      🌟 *Chess Game Commands:*
+    
+     ━━━━━━━━━⬣♟️𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂⬣━━━━━━━━
+
 
 *chess create* - Start a chess game
 *chess join* - Join a waiting chess game
@@ -153,6 +155,6 @@ Type *chess join* to join a waiting chess game.
 
 handler.help = ['chess [from to]', 'chess delete', 'chess join', 'chess start'];
 handler.tags = ['game'];
-handler.command = /^(chess|chatur)$/i;
+handler.command = /^(chess|chatur|xadrez)$/i;
 
 export default handler;
