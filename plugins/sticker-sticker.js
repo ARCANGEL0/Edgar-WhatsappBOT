@@ -6,13 +6,12 @@ import { webp2png } from '../lib/webp2mp4.js'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   let stiker = false
   let user = db.data.users[m.sender]
-  let time = user.lastmining + 10000 //tiempo de espera en min
-if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA ALGUNS MINUTOS PARA USAR O COMANDO*`,  m)
+  let time = user.lastmining + 10000 //tiempo de espera en min (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA ALGUNS MINUTOS PARA USAR O COMANDO*`,  m)
   try {
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
-    if (/text|json/g.test(m.quoted.text || text)) {
+    if (m.quoted.text || text)) {
       m.reply("test")
     } 
    else if (/webp|image|video/g.test(mime)) {
