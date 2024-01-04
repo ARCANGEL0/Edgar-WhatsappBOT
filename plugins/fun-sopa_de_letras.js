@@ -1,12 +1,10 @@
-//CREADO POR @gata_dios
- 
-let fila, columna, sopaNube, sopaPalabra, sopaDir, userSP, cambioLetra, diamante = null
-let intentos = 0
+//CREADO POR @gata_diosimport translate from '@vitalets/google-translate-api'
+import translate from '@vitalets/google-translate-api' 
 let handler = async (m, { conn, text, usedPrefix, command}) => {
  if (!text) throw 'Please provide an element symbol or name';
-
+let result = await translate(`${text}`, { to: "en", autoCorrect: true })
   try {
-    let res = await fetch(`https://api.popcat.xyz/periodic-table?element=${text}`);
+    let res = await fetch(`https://api.popcat.xyz/periodic-table?element=${result.text}`);
 
     if (!res.ok) {
       throw new Error(`API status ${res.status}`);
