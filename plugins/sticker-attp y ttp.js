@@ -1,11 +1,13 @@
+
+import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn, text, args, usedPrefix, command }) => {
 
 
 let kt = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 let teks = encodeURI(kt)
-
+let stiker = await sticker(false,`https://aemt.me/ttp?text=${teks}`, global.packname, global.author)
 if (command == 'attp') {
-conn.sendFile(m.chat, `https://aemt.me/ttp?text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
+conn.sendFile(m.chat, stike4, 'sticker.webp', '', m, { asSticker: true })}
     
 if (command == 'attp2') {
 conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp2?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m)}
