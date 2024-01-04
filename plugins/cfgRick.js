@@ -131,7 +131,12 @@ const response = await fetch(endpoint, {
 const result = await response.json();
 console.log(result.choices[0].message.content);
   return result.choices[0].message.content
-    delete global.db.data.chats[m.chat].rickgpt[m.sender]
+    
+global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
+ 
+ global.db.data.chats[m.chat].rickgpt["config"].resposta = aiReply
+ 
+ console.log(global.db.data.chats[m.chat].rickgpt["config"])
 }
 
 let aiReply = await requestToChatGPT(text)
