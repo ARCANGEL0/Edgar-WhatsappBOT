@@ -92,7 +92,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 
 async function requestToChatGPT(inputText) {
 
-delete global.edgargpt.data.users[m.sender]  
+delete global.db.data.chats[m.chat].edgargpt[m.sender]
     
 global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: text });
     
