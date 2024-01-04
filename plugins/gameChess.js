@@ -111,7 +111,10 @@ const handler = async (m, { conn, args }) => {
     try {
       chess.move({ from, to, promotion: 'q' });
     } catch (e) {
-      return conn.reply(m.chat, '❌ *Invalid move.*', m);
+      return conn.reply(m.chat, ` ━━━━━━━━━⬣✖️⬣━━━━━━━━
+      『⚠ 𝙼𝚘𝚟𝚒𝚖𝚎𝚗𝚝𝚘 𝚒𝚗𝚟𝚊𝚕𝚒𝚍𝚘』
+       ━━━━━━━━━⬣✖️⬣━━━━━━━━
+      `, m);
     }
     chessData.fen = chess.fen();
     const currentTurnIndex = players.indexOf(currentTurn);
@@ -134,23 +137,38 @@ const handler = async (m, { conn, args }) => {
   }
 
   if (feature === 'info') {
-    return conn.reply(m.chat, `
-    
-     ━━━━━━━━━⬣♟️𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂⬣━━━━━━━━
+    return conn.reply(m.chat, `━━━━━━━━━⬣♟️𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂⬣━━━━━━━━
 
+*${usedPrefix + command} novo* ➥ Cria uma partida de xadrez
+*${usedPrefix + command} entrar* - ➥ Entra em uma partida em espera
+*${usedPrefix + command} play* ➥ Inicia o jogo se a partida tiver 2 participantes
+*${usedPrefix + command} delete* ➥ Apaga a partida existente 
+*${usedPrefix + command} [posicao inicial] [posicao final]* ➥ Faz um movimento no jogo de xadrez
 
-*chess create* - Start a chess game
-*chess join* - Join a waiting chess game
-*chess start* - Start the chess game if two players have joined
-*chess delete* - Stop the chess game
-*chess [from] [to]* - Make a move in the chess game
-
-*Example:*
-Type *chess create* to start a chess game.
-Type *chess join* to join a waiting chess game.
+─┅──┅❖  _𝐄𝐱𝐞𝐦𝐩𝐥𝐨:_
+*${usedPrefix + command} novo* Cria uma partida
+*${usedPrefix + command} entrar* entra na partida existente
+Após 2 jogadores entrarem, digite ${usedPrefix + command} play 
+para movimentar peças, faça como o exemplo
+${usedPrefix + command} h1 h3
+ ━━━━━━━━━⬣ִ ࣪𖤐⬣━━━━━━━━
     `, m);
   }
-  return conn.reply(m.chat, '❓ Invalid command. Use *"chess help"* to see the available commands.', m);
+  return conn.reply(m.chat, ` 
+  ╭━━━━━━━━━⬣
+┃
+┃ ❌✒️𝐂𝐨𝐦𝐚𝐧𝐝𝐨 𝐢𝐧𝐜𝐨𝐫𝐫𝐞𝐭𝐨! 
+┃ 𝐑𝐞𝐭𝐨𝐫𝐧𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞 𝐧𝐞𝐬𝐭𝐞 
+┃ 𝐯𝐚𝐥𝐞 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐝𝐞 𝐭𝐫𝐮𝐪𝐮𝐞𝐬 𝐝𝐞 
+┃ 𝐥𝐨𝐠𝐢𝐜𝐚 𝐜𝐨𝐦 𝐨 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 
+┃ 𝐚𝐩𝐫𝐨𝐩𝐫𝐢𝐚𝐝𝐨
+┃
+┃ 𝐔𝐬𝐞 ${usedPrefix + command} info 𝐩𝐚𝐫𝐚 
+┃ 𝐯𝐞𝐫 𝐚 𝐥𝐢𝐬𝐭𝐚 𝐝𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬
+┃
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+╰━━━━━━━━━━━━━━━━━━⬣`, m);
 };
 
 handler.help = ['chess [from to]', 'chess delete', 'chess join', 'chess start'];
