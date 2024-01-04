@@ -13,12 +13,13 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
     let mime = (q.msg || q).mimetype || q.mediaType || ''
     if (m.quoted.text || m.text) {
       let datas = m.quoted.text || text
-    let  out = await fetch("https://aemt.me/ttp?text=test")
+    let  out = await fetch(`https://aemt.me/ttp?text=${datas}`)
           stiker = await sticker(false, out, global.packname, global.author)
           
       
     } 
-   else if (/webp|image|video/g.test(mime)) {
+  
+    if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱*𝗔𝗩𝗜𝗦𝗢 * ⊱⚠️⊱╮\𝗻\𝗻𝗢 𝗩𝗜𝗗𝗘𝗢 𝗡𝗔𝗢 𝗗𝗘𝗩𝗘 𝗗𝗨𝗥𝗔𝗥 𝗠𝗔𝗜𝗦 𝗗𝗘 *𝟳* 𝗦𝗘𝗚𝗨𝗡𝗗𝗢𝗦')
       let img = await q.download?.()
       if (!img) throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
@@ -33,7 +34,10 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)
           else if (/video/g.test(mime)) out = await uploadFile(img)
+          else if (/text/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
+          else if (/json/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
           if (typeof out !== 'string') out = await uploadImage(img)
+          else if (typeof out === 'string') out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
           stiker = await sticker(false, out, global.packname, global.author)
         }
       }
@@ -41,9 +45,13 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
     
     
     else if (args[0]) {
-      if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
+      let txtg = "https://aemt.me/ttp?text=" + args[0]
+      if (isUrl(args[0])) stiker = await sticker(false,txtg, global.packname, global.author)
       else return m.reply('URL invalido')
     }
+  
+    
+    
   } catch (e) {
     console.error(e)
     if (!stiker) stiker = e
