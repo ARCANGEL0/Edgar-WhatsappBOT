@@ -44,6 +44,12 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
   };
 
   try {
+    await conn.sendMessage(m.chat,{ react: {
+        text: "🌒", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
+    
     const response = await fetch(url, requestOptions);
     const data = await response.buffer(); // Use .buffer() to get ArrayBuffer equivalent
 console.log(response)
@@ -51,6 +57,11 @@ console.log(response)
     const imageBlob = new Blob([data], { type: "image/jpeg" });
     // console.log(response, imageBlob);
     console.log(imageBlob)
+    await conn.sendMessage(m.chat,{ react: {
+        text: "🌕", // use an empty string to remove the reaction
+        key: m.key }
+    },
+    m  )
     conn.sendFile(m.chat, response.url, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   } catch (error) {
     console.error("Error while fetching Gen AI model API", error);
