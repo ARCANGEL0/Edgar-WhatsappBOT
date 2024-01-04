@@ -3,6 +3,7 @@ let handler = async (m, { conn, text }) => {
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 
 let lls = await fetch(`https://aemt.me/ttp?text=${teks}`)
+console.log(lls)
 let stiker = await sticker(null, lls, global.packname, global.author)
 if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, 
          
