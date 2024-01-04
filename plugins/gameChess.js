@@ -16,7 +16,11 @@ const handler = async (m, { conn, args }) => {
 
   if (feature === 'delete') {
     delete conn.chess[key];
-    return conn.reply(m.chat, '🏳️ *Chess game stopped.*', m);
+    return conn.reply(m.chat, `
+━━━━━━━━━⬣✖️♟️⬣━━━━━━━━
+☥ 𝙰 𝚙𝚊𝚛𝚝𝚒𝚍𝚊 𝚏𝚘𝚒 𝚎𝚗𝚌𝚎𝚛𝚛𝚊𝚍𝚊
+━━━━━━━━━⬣✖️♟️⬣━━━━━━━━`
+,m);
   }
 
   if (feature === 'create') {
