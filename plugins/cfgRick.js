@@ -99,7 +99,8 @@ global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: tex
 
 
 // frtch c
-const response = await fetch(`https://aemt.me/gpt4?text=${resposta}`);
+let msg = encodeURIComponent(resposta)
+const response = await fetch(`https://aemt.me/gpt4?text=${msg}`);
 
 const result = await response.json();
 console.log(result.choices[0].message.content);
