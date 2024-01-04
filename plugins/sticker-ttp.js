@@ -4,7 +4,7 @@ let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 
 let lls = await fetch(`https://aemt.me/ttp?text=${teks}`)
 console.log(lls.buffer())
-let stiker = await sticker(null, lls.buffer(), global.packname, global.author)
+let stiker = await sticker(lls.blob,lls.blob, global.packname, global.author)
 if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, 
          
          
