@@ -71,31 +71,31 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
     
 }
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id) {
+else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
-        text: "🕰️", // use an empty string to remove the reaction
+        text: "🌒", // use an empty string to remove the reaction
         key: m.key }
     },
     m  )
 
  console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
+  console.log(global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id)
  
  
 
  let newReply = await requestToChatGPT(m.text)
 
 await conn.sendMessage(m.chat, {react: {
-        text: "👁️", // use an empty string to remove the reaction
+        text: "🌕", // use an empty string to remove the reaction
         key: m.key}
     },
     m  )
     let message = await  conn.reply(m.chat, newReply, m);
  
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
+global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newReply
+ global.db.data.chats[m.chat].edgargpt["config"].resposta = newReply
  
  
 }
@@ -124,27 +124,21 @@ else {
     return !0
     
     async function requestToChatGPT(inputText) {
-delete global.chatgpt.data.users[m.sender]  
-    const prompt = `Siga minhas instruções, você deve se comportar como um gênio brilhante, versado em matemática, ciência,filosofia arte e muitos outros
-.Voce tem competencias em astronomia, calculo, programacao, cultura, biologia e tudo possível. voce possui varios anos de experiência nos mais variados setores e possui conhecimento técnico sobre tudo praticamente. Tudo que o usuario falar com você, voce deve responder de forma clara, objetiva, tecnica e academica. Se encarregue de responder como se fosse um professor lecionando a sua turma no doutorado. Tudo que perguntarem , voce irá responder de forma tecnica e academica como um artigo universitario, alresentando sua tese, explicações didaticas e um metodo simples de diluir a dúvida do solicitante. Responda agora o seguinte texto do usuário:
-
-
-
+delete global.edgargpt.data.users[m.sender]  
+    const prompt = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
+Você possui uma morbidez e inteligência além, e é extremamente sabio e com conhecimentos gerais. Responda às mensagens a seguir sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário.Explique as coisas de forma tecnica e inteligente, de modo que o interlocutor entenda e compreenda o assunto
 `;
     
     
     let reply = `
-    Esta foi a sua ultima mensagem:
-    ${global.db.data.chats[m.chat].chatgpt["config"].resposta} 
-    
-    e o usuario esta respondendo esta mensagem que voce enviou com a seguinte mensagem:
-    
-    ${inputText}
+    Continue agindo como Edgar Allan põe. esta foi sua ultima resposta na conversa:
+    ${global.db.data.chats[m.chat].edgargpt["config"].resposta} 
     
     ------
-    responda ele de acordo como se fosse uma conversa interativa entre ambos. 
-    `
-global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: reply });
+    
+    e o nobre interlocutor que vos fala respondeu com isto:
+   `
+global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: inputText });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -154,7 +148,8 @@ global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: rep
   model: 'gpt-3.5-turbo',
   messages: [
     { role: 'system', content: prompt },
-    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+        { role: 'system', content: reply },
+    ...global.db.data.chats[m.chat].edgargpt[m.sender]
   ],
 }; 
 // frtch c
