@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
-    if (m.quoted.text || text)) {
+    if (m.quoted.text || text) {
       m.reply("test")
     } 
    else if (/webp|image|video/g.test(mime)) {
