@@ -11,6 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
+    console.log(m.quoted)
     if(m.quoted.text != '') {
       m.reply("is text")
     }
