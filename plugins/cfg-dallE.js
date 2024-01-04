@@ -19,6 +19,7 @@ try {
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
 let msg = encodeURIComponent(text)
     let res = await fetch(`https://aemt.me/bingimg?text=${msg}`)
+    console.log(res)
     let data = await res.json()
     console.log(data)
     let buffer = data.result
