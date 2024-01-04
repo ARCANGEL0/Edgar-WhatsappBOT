@@ -36,7 +36,11 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
     } 
     else if(m.quoted && m.quoted.text!='') {
   m.react("⏳")
-let fig = encodeURI(m.quoted.text)
+  let normalizedText = m.quoted.text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+// Replace special characters
+let cleanedText = normalizedText.replace(/[^\w\s]/gi, '');
+let fig = encodeURI(cleanedText)
 let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
 m.react("✔️")
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
@@ -45,7 +49,11 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
     
     else if (!m.quoted && text) {
       m.react("⏳")
-      let fig = encodeURI(text)
+      let normalizedText = text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+// Replace special characters
+let cleanedText = normalizedText.replace(/[^\w\s]/gi, '');
+      let fig = encodeURI(cleanedText)
       let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
        conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })
       m.react("✔️")
