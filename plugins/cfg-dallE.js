@@ -23,7 +23,8 @@ let msg = encodeURIComponent(text)
     let data = await res.json()
     console.log(data)
     let buffer = data.result
-    conn.sendFile(m.chat, buffer, buffer, `${text}`, m)
+    const imageBuffer = await buffer.buffer();
+      await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
     m.react("✔️")
     
   } catch(e) {
