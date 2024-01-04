@@ -122,11 +122,9 @@ const response = await fetch(endpoint, {
 const result = await response.json();
 console.log(result.choices[0].message.content);
   
-    global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+    
  
- global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
  
- console.log(global.db.data.chats[m.chat].edgargpt["config"])
  return result.choices[0].message.content
  
 }
@@ -139,7 +137,11 @@ await conn.sendMessage(m.chat, {react: {
     },
     m  )
 
-    conn.reply(m.chat, aiReply, m);
+  let message = await  conn.reply(m.chat, aiReply, m);
+ global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+ 
+ global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
+ 
   }
   else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].edgargpt["config"].lastQuestion ) {
     
