@@ -92,7 +92,7 @@ conn.sendPresenceUpdate('typing', m.chat);
 
 async function requestToChatGPT(inputText) {
 
-delete global.db.data.chats[m.chat].edgargpt[m.sender]
+
     
 global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: text });
     
@@ -127,6 +127,8 @@ console.log(result.choices[0].message.content);
  global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
  
  console.log(global.db.data.chats[m.chat].edgargpt["config"])
+ 
+ 
 }
 
 let aiReply = await requestToChatGPT(text)
