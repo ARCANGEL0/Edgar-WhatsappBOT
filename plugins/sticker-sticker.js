@@ -11,14 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
-    if (m.quoted.text || m.text) {
-      let datas = m.quoted.text || text
-    let  out = await fetch(`https://aemt.me/ttp?text=${datas}`)
-          stiker = await sticker(false, out, global.packname, global.author)
-          
-      
-    } 
-  
+    
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱*𝗔𝗩𝗜𝗦𝗢 * ⊱⚠️⊱╮\𝗻\𝗻𝗢 𝗩𝗜𝗗𝗘𝗢 𝗡𝗔𝗢 𝗗𝗘𝗩𝗘 𝗗𝗨𝗥𝗔𝗥 𝗠𝗔𝗜𝗦 𝗗𝗘 *𝟳* 𝗦𝗘𝗚𝗨𝗡𝗗𝗢𝗦')
       let img = await q.download?.()
