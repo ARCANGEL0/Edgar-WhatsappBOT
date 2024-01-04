@@ -11,7 +11,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ┃ ✒️📜 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐦í𝐝𝐢𝐚 
 ┃ 𝐚𝐬𝐬𝐨𝐦𝐛𝐫𝐚 𝐬𝐮𝐚 𝐦𝐞𝐧𝐭𝐞 𝐞 𝐞𝐮 𝐚 
 ┃ 𝐝𝐞𝐬𝐞𝐧𝐭𝐞𝐫𝐫𝐚𝐫𝐞𝐢 𝐩𝐚𝐫𝐚 
-┃ 𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐳ê-𝐥𝐨 🎶🎵
+┃ 𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐳ê-𝐥𝐨 𝄞
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
@@ -22,7 +22,7 @@ try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') {
-additionalText = '𝘼𝙐𝘿𝙄𝙊'
+additionalText = '𝘼𝙐𝘿𝙄𝙊 𝄞'
 } else if (command === 'play2') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊 '}
 let captionvid = `╭━━[${yt_play[0].title}]━━━⬣
