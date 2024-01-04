@@ -23,7 +23,15 @@ const idioma = 'pt-br'
 let pp = imagen6
 
 
-
+const rick = [
+  "https://cdn.dribbble.com/users/1230354/screenshots/4923869/rickandmorty.png",
+  "https://banner2.cleanpng.com/20180320/hwq/kisspng-pocket-mortys-rick-sanchez-morty-smith-computer-ic-rick-avatar-blue-vers-icon-5ab1ccd860a082.9774853115216017523958.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8E7MyaxDZvT9TzylOh8NGyHCcwnNwxhhOg&usqp=CAU",
+  "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fblack-hat-vs-rick-sanchez-v0-ajmcr8iuk82a1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D4e0a7d0e145bcde86432c11dced03bf2c02fc752",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZQay3lMEHolK6tjS0SIm6YGfmzOr7TRgAA&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxUBRaTBXFflwZTqcBpH-BSYeDFxGCXXGYQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXCrRTsXdRnBsL88_aiH5YC7DQY65pLnH-w&usqp=CAU"
+];
 
 
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
@@ -135,7 +143,7 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-    let message = await  conn.sendFile(m.chat, gataVidMenu.getRandom(), 'rick.jpg', aiReply, m)
+    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', aiReply, m)
  
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
  
@@ -152,17 +160,17 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
 }
 
   else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
-/*  console.log(m.quoted.id)
+ console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
 
  
-let botreply =  conn.reply(newAiReply)
+let botreply =  await conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', newAiReply, m)
 
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
  
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
- */
+ 
  
 }
   
@@ -248,6 +256,6 @@ await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype:
   */
   
 }
-handler.command = /^(bard|nlp|allan)$/i;
+handler.command = /^(rick|sanchez)$/i;
 export default handler;
 
