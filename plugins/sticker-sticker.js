@@ -45,7 +45,7 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
     else if (!m.quoted && text) {
       let fig = encodeURI(text)
       let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
-      return m.reply('erro')
+       conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
     }
   
     
