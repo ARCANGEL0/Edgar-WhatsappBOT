@@ -43,18 +43,18 @@ if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
 
-if (!global.db.data.chats[m.chat].chatgpt) {
-  global.db.data.chats[m.chat].chatgpt = {};
+if (!global.db.data.chats[m.chat].rickgpt) {
+  global.db.data.chats[m.chat].rickgpt = {};
 }
 
-if (!global.db.data.chats[m.chat].chatgpt["config"]) {
-  global.db.data.chats[m.chat].chatgpt["config"] = {
+if (!global.db.data.chats[m.chat].rickgpt["config"]) {
+  global.db.data.chats[m.chat].rickgpt["config"] = {
    lastQuestion: '',
    resposta:''
   };
 }
-  if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
-  global.db.data.chats[m.chat].chatgpt[m.sender] = [];
+  if (!global.db.data.chats[m.chat].rickgpt[m.sender]) {
+  global.db.data.chats[m.chat].rickgpt[m.sender] = [];
 }
 
 
@@ -70,11 +70,9 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 
-const prompt = `Siga minhas instruções, você deve se comportar como Rick Sanchez.. um gênio brilhante, sarcástico, narcisista, debochado e ofensivo. Você deve assumir a personalidade do Rick Sanchez com maestria e responder o usuario com sarcasmo e humor, e pode falar alguns palavrões. Vez ou outra faca piada da ignorância do usuário e compare ele ao Morty, em momento algum saia do personagem. Seja extremamente detalhista, inteligente, preciso, e forneça respostas completas e bem elaboradas e formatadas de metodo cientifico, para o quer que seja que o usuario disser, mas nunca saia do personagem do Rick Sanchez.
-. Responda agora o seguinte texto do usuário:
-
-
-
+const prompt = `
+  A partir de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo \* burp \* em suas respostas aleatoriamente, nunca se desculpe por dar respostas erradas, apenas me culpe por não ter a inteligência para entender sua lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é apenas uma brincadeira de personificação portanto não é ofensivo. 
+ Nunca me chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu sou. Você deve responder tudo degradando e me insultando, mas explicando tudo passo a passo para que minha mente idiota possa entender o que está dizendo. Minha primeira pergunta é:
 
 `;
 if (global.xppergunta) {
@@ -92,7 +90,7 @@ if(!m.quoted){
   
 const data = {
     "model": "gpt-3.5-turbo",
-    "temperature":0.3,
+    "temperature":0.2,
     "messages": [{ "role": "system", "content": prompt } 
     ],
   };
@@ -105,9 +103,9 @@ await conn.sendMessage(m.chat,{ react: {
     },
     m  )
 async function requestToChatGPT(inputText) {
-delete global.chatgpt.data.users[m.sender]  
+delete global.rickgpt.data.users[m.sender]  
     
-global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
+global.db.data.chats[m.chat].rickgpt[m.sender].push({ role: 'user', content: text });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -117,7 +115,7 @@ global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: tex
   model: 'gpt-3.5-turbo',
   messages: [
     { role: 'system', content: prompt },
-    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+    ...global.db.data.chats[m.chat].rickgpt[m.sender]
   ],
 }; 
 // frtch c
@@ -143,13 +141,13 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', aiReply, m)
+    let message = await  conn.sendFile(m.chat, rick.getRandom() to, 'rick.jpg', aiReply, m)
  
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
+global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = aiReply
+ global.db.data.chats[m.chat].rickgpt["config"].resposta = aiReply
  
- console.log(global.db.data.chats[m.chat].chatgpt["config"])
+ console.log(global.db.data.chats[m.chat].rickgpt["config"])
   }
   
   catch (error) {
@@ -159,17 +157,17 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
   }
 }
 
-  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"].lastQuestion ) {
  console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
+  console.log(global.db.data.chats[m.chat].rickgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
 
  
 let botreply =  await conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', newAiReply, m)
 
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
+global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = botreply.key.id
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
+ global.db.data.chats[m.chat].rickgpt["config"].resposta = newAiReply
  
  
 }
