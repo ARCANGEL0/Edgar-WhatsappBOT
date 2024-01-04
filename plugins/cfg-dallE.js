@@ -17,17 +17,14 @@ try {
     await conn.sendMessage(m.chat, {text: `╭━━━━━━━━━⬣
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
-
-    const endpoint = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(text)}`;
-    const response = await fetch(endpoint);
+let msg = encodeURIComponent(text)
+    let res = await fetch(`https://aemt.me/bingimg?text=${msg}`)
+    let data = await res.json()
+    console.log(data)
+    let buffer = data.result
+    conn.sendFile(m.chat, buffer, 'image.png', `${text}`, m)
+    m.react("✔️")
     
-    if (response.ok) {
-      const imageBuffer = await response.buffer();
-      await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
-    } else {
-      console.log(response)
-      throw '*Image generation failed*';
-    }
   } catch(e) {
     console.log(e)
     throw '*Oops! Something went wrong while generating images. Please try again later.*';
