@@ -24,9 +24,7 @@ console.log(summ)
 console.log(nome)
    let elementInfo = 
    
-    ` 
-    ⛧°。 ⋆༺♱༻⋆。 °⛧
-    
+    `             ⛧°。 ⋆༺♱༻⋆。 °⛧
     ⚝ _*Informações do elemento*_ ⚝
      ⌬ *Nome:* ${nome.text}\n
      ⌬ *Símbolo:* ${json.symbol}\n
@@ -36,8 +34,7 @@ console.log(nome)
      ⌬ *Fase:* ${json.phase}\n
      ⌬ *Descoberto Por:* ${json.discovered_by}\n
      ⌬ *Resumo:* ${summ.text}
-     
-     ⛧°。 ⋆༺☥༻⋆。 °⛧`;
+             ⛧°。 ⋆༺☥༻⋆。 °⛧`;
 
 
 
