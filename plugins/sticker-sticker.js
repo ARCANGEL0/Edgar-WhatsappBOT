@@ -12,26 +12,9 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
-    if (/text|json/g.test(mime)) {
-    let  datas = text || m.quoted.text
-    // Your text processing logic here
-    let textst = await fetch(`https://aemt.me/ttp?text=${datas}`)
-    try {
-        stiker = await sticker(textst, false, global.packname, global.author)
-      } catch (e) {
-        console.error(e)
-      } finally {
-      m.react("⏳")
-        if (!stiker) {
-          if (/text/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${datas}`)
-          else if (/json/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${datas}`)
-          
-          if (typeof out === 'string') out = await fetch(`https://aemt.me/ttp?text=${datas}`)
-          stiker = await sticker(false, out, global.packname, global.author)
-        }
-      }
-      
-} 
+    if (/text|json/g.test(m.quoted.text || text)) {
+      m.reply("test")
+    } 
    else if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱*𝗔𝗩𝗜𝗦𝗢 * ⊱⚠️⊱╮\𝗻\𝗻𝗢 𝗩𝗜𝗗𝗘𝗢 𝗡𝗔𝗢 𝗗𝗘𝗩𝗘 𝗗𝗨𝗥𝗔𝗥 𝗠𝗔𝗜𝗦 𝗗𝗘 *𝟳* 𝗦𝗘𝗚𝗨𝗡𝗗𝗢𝗦')
       let img = await q.download?.()
