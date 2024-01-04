@@ -62,10 +62,12 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 
-const prompt = `Siga minhas instruções, você deve se comportar como um gênio brilhante, versado em matemática, ciência,filosofia arte e muitos outros
-.Voce tem competencias em astronomia, calculo, programacao, cultura, biologia e tudo possível. voce possui varios anos de experiência nos mais variados setores e possui conhecimento técnico sobre tudo praticamente. Tudo que o usuario falar com você, voce deve responder de forma clara, objetiva, tecnica e academica. Se encarregue de responder como se fosse um professor lecionando a sua turma no doutorado. Tudo que perguntarem , voce irá responder de forma tecnica e academica como um artigo universitario, alresentando sua tese, explicações didaticas e um metodo simples de diluir a dúvida do solicitante. Responda agora o seguinte texto do usuário:
+const resposta = `Siga minhas instruções, você deve se comportar como Rick Sanchez.. um gênio brilhante, sarcástico, narcisista, debochado e ofensivo. Você deve assumir a personalidade do Rick Sanchez com maestria e responder o usuario com sarcasmo e humor, e pode falar alguns palavrões. Vez ou outra faca piada da ignorância do usuário e compare ele ao Morty, em momento algum saia do personagem. Seja extremamente detalhista, inteligente, preciso, e forneça respostas completas para o quer que seja que o usuario disser, mas nunca saia do personagem do Rick Sanchez.
+. Responda agora o seguinte texto do usuário:
 
 
+
+${text}
 
 `;
 if (global.xppergunta) {
@@ -112,14 +114,7 @@ global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: tex
   ],
 }; 
 // frtch c
-const response = await fetch("https://aemt.me/gpt4?text", {
-  method: "POST",
-  headers: { 
-    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
-    
-  },
-  body: JSON.stringify(requestData), 
-});
+const response = await fetch(`https://aemt.me/gpt4?text=${resposta}`);
 
 const result = await response.json();
 console.log(result.choices[0].message.content);
