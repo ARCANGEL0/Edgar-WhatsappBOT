@@ -25,6 +25,23 @@ let chgptdb = []
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
 
+if (!global.db.data.chats[m.chat]) {
+  global.db.data.chats[m.chat] = {};
+}
+
+if (!global.db.data.chats[m.chat].edgargpt) {
+  global.db.data.chats[m.chat].edgargpt = {};
+}
+
+if (!global.db.data.chats[m.chat].edgargpt["config"]) {
+  global.db.data.chats[m.chat].edgargpt["config"] = {
+   lastQuestion: '',
+   resposta:''
+  };
+}
+  if (!global.db.data.chats[m.chat].edgargpt[m.sender]) {
+  global.db.data.chats[m.chat].edgargpt[m.sender] = [];
+}
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
@@ -40,8 +57,6 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 const prompt = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
 Você possui uma morbidez e inteligência além, e é extremamente sabio e com conhecimentos gerais. Responda às mensagens a seguir sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário. 
-
-${text}
 
 `;
 if (global.xppergunta) {
@@ -62,16 +77,20 @@ if (global.xppergunta) {
 
 const data = {
     "model": "gpt-3.5-turbo",
-    "temperature":0.3,
+    "temperature":0.4,
     "messages": [{ "role": "system", "content": prompt } 
     ],
   };
   
 try {
+  if(!m.quoted){
 conn.sendPresenceUpdate('typing', m.chat);
 
 async function requestToChatGPT(inputText) {
-delete global.chatgpt.data.users[m.sender]  
+
+delete global.edgargpt.data.users[m.sender]  
+    
+global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: text });
     
 
 
@@ -82,7 +101,8 @@ delete global.chatgpt.data.users[m.sender]
  const requestData = {
   model: 'gpt-3.5-turbo',
   messages: [
-    { role: 'system', content: prompt }
+    { role: 'system', content: prompt },
+    ...global.db.data.chats[m.chat].edgargpt[m.sender]
   ],
 }; 
 // frtch c
@@ -98,7 +118,11 @@ const response = await fetch(endpoint, {
 const result = await response.json();
 console.log(result.choices[0].message.content);
   return result.choices[0].message.content
-    
+    global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+ 
+ global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
+ 
+ console.log(global.db.data.chats[m.chat].edgargpt["config"])
 }
 
 let aiReply = await requestToChatGPT(text)
@@ -111,6 +135,22 @@ await conn.sendMessage(m.chat, {react: {
 
     conn.reply(m.chat, aiReply, m);
   }
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].edgargpt["config"].lastQuestion ) {
+    
+    console.log(m.quoted.id)
+  console.log(global.db.data.chats[m.chat].edgargpt["config"].lastQuestion)
+  let newAiReply = requestToChatGPT(m.text)
+
+ 
+let botreply =  conn.reply(newAiReply)
+
+global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = botreply.key.id
+ 
+ global.db.data.chats[m.chat].edgargpt["config"].resposta = newAiReply
+  }
+  
+  
+}
   
   catch (error) {
     console.error('Error making GPT-3 request:', error);
