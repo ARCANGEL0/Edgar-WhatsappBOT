@@ -62,7 +62,7 @@ console.log(response)
         key: m.key }
     },
     m  )
-    conn.sendFile(m.chat, response.url, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+    conn.sendFile(m.chat, imageBlob, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   } catch (error) {
     console.error("Error while fetching Gen AI model API", error);
   }
