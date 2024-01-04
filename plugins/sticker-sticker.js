@@ -27,19 +27,19 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)
           else if (/video/g.test(mime)) out = await uploadFile(img)
-          else if (/text/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
-          else if (/json/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
+         
           if (typeof out !== 'string') out = await uploadImage(img)
-          else if (typeof out === 'string') out = await fetch(`https://aemt.me/ttp?text=${m.quoted.text}`)
+          
           stiker = await sticker(false, out, global.packname, global.author)
         }
       }
     } 
-    
+    else if(/text/g.test(mime)) {
+      m.reply("is text")
+    }
     
     else if (args[0]) {
-      let txtg = "https://aemt.me/ttp?text=" + args[0]
-      if (txtg) stiker = await sticker(false,txtg, global.packname, global.author)
+      let stiker = await sticker(false,`https://aemt.me/ttp?text=${args[0]}`, global.packname, global.author)
       else return m.reply('erro')
     }
   
