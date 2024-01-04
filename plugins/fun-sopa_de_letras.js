@@ -28,14 +28,14 @@ console.log(nome)
     ⛧°。 ⋆༺♱༻⋆。 °⛧
     
     ⚝ _*Informações do elemento*_ ⚝
-     ⌬ *Nome:* ${nome.txt}\n
+     ⌬ *Nome:* ${nome.text}\n
      ⌬ *Símbolo:* ${json.symbol}\n
      ⌬ *Número Atômico:* ${json.atomic_number}\n
      ⌬ *Massa Atômica:* ${json.atomic_mass}\n
      ⌬ *Período:* ${json.period}\n
      ⌬ *Fase:* ${json.phase}\n
      ⌬ *Descoberto Por:* ${json.discovered_by}\n
-     ⌬ *Resumo:* ${summ.txt}
+     ⌬ *Resumo:* ${summ.text}
      
      ⛧°。 ⋆༺☥༻⋆。 °⛧`;
 
