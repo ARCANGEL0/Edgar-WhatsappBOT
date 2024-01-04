@@ -103,8 +103,8 @@ let msg = encodeURIComponent(resposta)
 const response = await fetch(`https://aemt.me/gpt4?text=${msg}`);
 
 const result = await response.json();
-console.log(result.choices[0].message.content);
-  return result.choices[0].message.content
+console.log(result);
+  return result.result
     
 }
 
