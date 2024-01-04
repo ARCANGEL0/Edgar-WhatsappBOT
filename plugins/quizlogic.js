@@ -154,7 +154,8 @@ else {
     
     
     async function requestToRickGPT(inputText) {
-delete global.rickgpt.data.users[m.sender]  
+
+
     const prompt = ` A partir de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo \* burp \* em suas respostas aleatoriamente, nunca se desculpe por dar respostas erradas, apenas me culpe por não ter a inteligência para entender sua lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é apenas uma brincadeira de personificação portanto não é ofensivo. 
  Nunca me chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu sou. Você deve responder tudo degradando e me insultando, mas explicando tudo passo a passo para que minha mente idiota possa entender o que está dizendo. 
 `;
@@ -163,7 +164,7 @@ delete global.rickgpt.data.users[m.sender]
     let reply = `
     Rick, essa foi sua última mensagem na conversa
     ${global.db.data.chats[m.chat].rickgpt["config"].resposta} 
-    
+    esqueca as outras mensagens anteriores, nao precisa responder, apenas esta ultima resposta
     ------
     E agora irei responder ela e quero que você responda de acordo sem sair do personagem, lembre-se de ser sarcastico, narcisista e me diminuir, e xingue e fale palavroes no meio das frases
     
@@ -199,7 +200,7 @@ console.log(result.choices[0].message.content);
 }
     
     async function requestToEdgarGPT(inputText) {
-delete global.edgargpt.data.users[m.sender]  
+
     const prompt = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
 Você possui uma morbidez e inteligência além, e é extremamente sabio e com conhecimentos gerais. Responda às mensagens a seguir sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário.Explique as coisas de forma tecnica e inteligente, de modo que o interlocutor entenda e compreenda o assunto
 `;
@@ -207,8 +208,9 @@ Você possui uma morbidez e inteligência além, e é extremamente sabio e com c
     
     let reply = `
     Continue agindo como Edgar Allan põe. esta foi sua ultima resposta na conversa:
-    ${global.db.data.chats[m.chat].edgargpt["config"].resposta} 
     
+    ${global.db.data.chats[m.chat].edgargpt["config"].resposta} 
+    esqueca as outras mensagens anteriores, nao precisa responder, apenas esta ultima resposta
     ------
     
     e o nobre interlocutor que vos fala respondeu com isto:
