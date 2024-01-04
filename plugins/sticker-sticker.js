@@ -13,7 +13,8 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
     let mime = (q.msg || q).mimetype || q.mediaType || ''
     if (m.quoted.text || m.text) {
       let datas = m.quoted.text || m.text
-    let resumt = await fetch(`https://aemt.me/ttp?text=${datas}`)
+    let ggg = await fetch(`https://aemt.me/ttp?text=${datas}`)
+    let resumt = ggg.buffer()
       try {
         stiker = await sticker(resumt, false, global.packname, global.author)
       } catch (e) {
