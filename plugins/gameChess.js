@@ -1,6 +1,6 @@
 import { Chess } from 'chess.js';
 
-const handler = async (m, { conn, args }) => {
+const handler = async (m, { conn, args ,usedPrefix}) => {
   const key = m.chat;
   conn.chess = conn.chess || {};
   let chessData = conn.chess[key] || {
