@@ -12,7 +12,27 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
   	
     let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
-    if (/webp|image|video/g.test(mime)) {
+    if (/text|json/g.test(mime)) {
+    let  datas = text || m.quoted.text
+    // Your text processing logic here
+    let textst = await fetch(`https://aemt.me/ttp?text=${datas}`)
+    try {
+        stiker = await sticker(textst, false, global.packname, global.author)
+      } catch (e) {
+        console.error(e)
+      } finally {
+      m.react("⏳")
+        if (!stiker) {
+          if (/text/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${datas}`)
+          else if (/json/g.test(mime)) out = await fetch(`https://aemt.me/ttp?text=${datas}`)
+          
+          if (typeof out === 'string') out = await fetch(`https://aemt.me/ttp?text=${datas}`)
+          stiker = await sticker(false, out, global.packname, global.author)
+        }
+      }
+      
+} 
+   else if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('╰⊱*𝗔𝗩𝗜𝗦𝗢 * ⊱⚠️⊱╮\𝗻\𝗻𝗢 𝗩𝗜𝗗𝗘𝗢 𝗡𝗔𝗢 𝗗𝗘𝗩𝗘 𝗗𝗨𝗥𝗔𝗥 𝗠𝗔𝗜𝗦 𝗗𝗘 *𝟳* 𝗦𝗘𝗚𝗨𝗡𝗗𝗢𝗦')
       let img = await q.download?.()
       if (!img) throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
@@ -22,7 +42,7 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
       } catch (e) {
         console.error(e)
       } finally {
-      await conn.reply(m.chat, `${eg}⏳ *GERANDO STICKER, AGUARDE...* 🐈`, m)
+      m.react("⏳")
         if (!stiker) {
           if (/webp/g.test(mime)) out = await webp2png(img)
           else if (/image/g.test(mime)) out = await uploadImage(img)
@@ -31,7 +51,10 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
           stiker = await sticker(false, out, global.packname, global.author)
         }
       }
-    } else if (args[0]) {
+    } 
+    
+    
+    else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
       else return m.reply('URL invalido')
     }
@@ -43,7 +66,10 @@ if (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA
        
        
      }}, { quoted: m })
-    else throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
+    else throw `⛧°。 ⋆༺♱༻⋆。 °⛧
+    𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮.  𝙐𝙎𝙀 *${usedPrefix + command}*_
+    ⛧°。 ⋆༺♱༻⋆。 °⛧
+    `
   }
 user.lastmiming = new Date * 1
 }
