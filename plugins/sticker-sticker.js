@@ -46,8 +46,8 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
     
     else if (args[0]) {
       let txtg = "https://aemt.me/ttp?text=" + args[0]
-      if (isUrl(args[0])) stiker = await sticker(false,txtg, global.packname, global.author)
-      else return m.reply('URL invalido')
+      if (txtg) stiker = await sticker(false,txtg, global.packname, global.author)
+      else return m.reply('erro')
     }
   
     
