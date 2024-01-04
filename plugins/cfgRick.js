@@ -128,7 +128,7 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
     // Handle error response or throw an error
     conn.reply(m.chat, 'Error processing request', m);
   }
-}
+
 
   
 /*  console.log(m.quoted.id)
@@ -143,7 +143,7 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
  */
  
-}
+
   
   
   
