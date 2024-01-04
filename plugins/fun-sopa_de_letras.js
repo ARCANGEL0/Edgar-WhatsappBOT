@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command}) => {
     let res = await fetch(`https://api.popcat.xyz/periodic-table?element=${text}`);
 
     if (!res.ok) {
-      throw new Error(`API request failed with status ${res.status}`);
+      throw new Error(`API status ${res.status}`);
     }
 
     let buffer = await res.arrayBuffer();
@@ -17,16 +17,21 @@ let handler = async (m, { conn, text, usedPrefix, command}) => {
 
     console.log('JSON response:', json);
 
-    let elementInfo = 
-    `*Element Information:*\n
-     • *Name:* ${json.name}\n
-     • *Symbol:* ${json.symbol}\n
-     • *Atomic Number:* ${json.atomic_number}\n
-     • *Atomic Mass:* ${json.atomic_mass}\n
-     • *Period:* ${json.period}\n
-     • *Phase:* ${json.phase}\n
-     • *Discovered By:* ${json.discovered_by}\n
-     • *Summary:* ${json.summary}`;
+   let elementInfo = 
+    ` ━━━━━━━━━⬣📜 _*Informações do elemento*_ ⬣━━━━━━━━
+     • *Nome:* ${traduzirNome(json.name)}\n
+     • *Símbolo:* ${json.symbol}\n
+     • *Número Atômico:* ${json.atomic_number}\n
+     • *Massa Atômica:* ${json.atomic_mass}\n
+     • *Período:* ${json.period}\n
+     • *Fase:* ${json.phase}\n
+     • *Descoberto Por:* ${json.discovered_by}\n
+     • *Resumo:* ${trad(json.summary)}`;
+
+function trad(summary) {
+    // Implemente sua lógica de tradução do resumo aqui
+    return translatedSummary;
+}
 
     conn.sendFile(m.chat, json.image, 'element.jpg', elementInfo, m);
   } catch (error) {
