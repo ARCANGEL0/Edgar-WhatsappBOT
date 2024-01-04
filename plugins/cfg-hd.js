@@ -35,18 +35,18 @@ if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
 
-if (!global.db.data.chats[m.chat].chatgpt) {
-  global.db.data.chats[m.chat].chatgpt = {};
+if (!global.db.data.chats[m.chat].bard) {
+  global.db.data.chats[m.chat].bard = {};
 }
 
-if (!global.db.data.chats[m.chat].chatgpt["config"]) {
-  global.db.data.chats[m.chat].chatgpt["config"] = {
+if (!global.db.data.chats[m.chat].bard["config"]) {
+  global.db.data.chats[m.chat].bard["config"] = {
    lastQuestion: '',
    resposta:''
   };
 }
-  if (!global.db.data.chats[m.chat].chatgpt[m.sender]) {
-  global.db.data.chats[m.chat].chatgpt[m.sender] = [];
+  if (!global.db.data.chats[m.chat].bard[m.sender]) {
+  global.db.data.chats[m.chat].bard[m.sender] = [];
 }
 
 
@@ -96,9 +96,9 @@ await conn.sendMessage(m.chat,{ react: {
     },
     m  )
 async function requestToChatGPT(inputText) {
-delete global.chatgpt.data.users[m.sender]  
+delete global.bard.data.users[m.sender]  
     
-global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
+global.db.data.chats[m.chat].bard[m.sender].push({ role: 'user', content: text });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -108,7 +108,7 @@ global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: tex
   model: 'gpt-3.5-turbo',
   messages: [
     { role: 'system', content: prompt },
-    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+    ...global.db.data.chats[m.chat].bard[m.sender]
   ],
 }; 
 // frtch c
@@ -136,11 +136,11 @@ await conn.sendMessage(m.chat, {react: {
     m  )
     let message = await  conn.reply(m.chat, aiReply, m);
  
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
+global.db.data.chats[m.chat].bard["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = aiReply
+ global.db.data.chats[m.chat].bard["config"].resposta = aiReply
  
- console.log(global.db.data.chats[m.chat].chatgpt["config"])
+ console.log(global.db.data.chats[m.chat].bard["config"])
   }
   
   catch (error) {
@@ -150,17 +150,17 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
   }
 }
 
-  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].bard["config"].lastQuestion ) {
 /*  console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
+  console.log(global.db.data.chats[m.chat].bard["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
 
  
 let botreply =  conn.reply(newAiReply)
 
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
+global.db.data.chats[m.chat].bard["config"].lastQuestion = botreply.key.id
  
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
+ global.db.data.chats[m.chat].bard["config"].resposta = newAiReply
  */
  await conn.rey("teste")
 }
