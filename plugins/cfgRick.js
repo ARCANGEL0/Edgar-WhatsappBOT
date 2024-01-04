@@ -103,7 +103,7 @@ await conn.sendMessage(m.chat,{ react: {
     },
     m  )
 async function requestToChatGPT(inputText) {
-delete global.rickgpt.data.users[m.sender]  
+delete global.db.data.chats[m.chat].rickgpt[m.sender]
     
 global.db.data.chats[m.chat].rickgpt[m.sender].push({ role: 'user', content: text });
 
