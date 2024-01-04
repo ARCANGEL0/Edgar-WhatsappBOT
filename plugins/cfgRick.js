@@ -81,14 +81,9 @@ if (global.xppergunta) {
   return 0
 }
  
-if(!m.quoted){
+
   
-const data = {
-    "model": "gpt-3.5-turbo",
-    "temperature":0.3,
-    "messages": [{ "role": "system", "content": prompt } 
-    ],
-  };
+
   
 try {
 conn.sendPresenceUpdate('typing', m.chat);
@@ -103,16 +98,6 @@ delete global.chatgpt.data.users[m.sender]
 global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
 
 
-  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
-  const endpoint = "https://api.naga.ac/v1/chat/completions"
-  // ////
- const requestData = {
-  model: 'gpt-3.5-turbo',
-  messages: [
-    { role: 'system', content: prompt },
-    ...global.db.data.chats[m.chat].chatgpt[m.sender]
-  ],
-}; 
 // frtch c
 const response = await fetch(`https://aemt.me/gpt4?text=${resposta}`);
 
