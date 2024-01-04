@@ -11,97 +11,27 @@ ${usedPrefix + command} Um corvo negro abrindo suas asas
 ${usedPrefix + command} um gato preto deitado sob uma caveira
 
 ╰━━━━━━━━━━━━━━━━━━⬣`
+
+
+try {
     await conn.sendMessage(m.chat, {text: `╭━━━━━━━━━⬣
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
-const apiUrl = "https://api.wizmodel.com/sdapi/v1/txt2img";
-const apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDIxNDQ5NDIsInVzZXJfaWQiOiI2NTc0YWJhZDE0NzE2ODgxNjFiN2JjMjcifQ.S63pCMV8ykEGf__M-5z40WrztqhEU_ZRX9qg9hEE_4M";
-/*
-const generateAndSendImage = async () => {
-    try {
-        const data = {
-            prompt: "puppy dog running on grass",
-            steps: 30
-        };
 
-        const response = await fetch(apiUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + apiKey
-            },
-            body: JSON.stringify(data),
-        });
-
-        const responseData = await response.json();
-        
-
-        const imageBase64 = responseData.images;
-console.log(imageBase64);
-        if (imageBase64) {
-            const imageBuffer = Buffer.from(imageBase64, 'base64')
-
-
-console.log("buffer  "+ imageBuffer)
-            // Send the file with a callback function (cb)
-            await conn.sendFile(
-                m.chat,
-                responseData.images,
-                'error.jpg',
-                null,
-                m
-            );
-        } else {
-            console.log("Image not received");
-        }
-    } catch (error) {
-        console.error(`Error generating and sending image: ${error.message}`);
+    const endpoint = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(text)}`;
+    const response = await fetch(endpoint);
+    
+    if (response.ok) {
+      const imageBuffer = await response.buffer();
+      await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
+    } else {
+      throw '*Image generation failed*';
     }
-};
-*/
-// Assuming 'm' is your message object
-// Call the function to generate and send an image
-
-// Call the function to generate and send images
-
-
-
-
-  try {
-    
-    const url = 'https://animimagine-ai.p.rapidapi.com/generateImage';
-const options = {
-	method: 'POST',
-	headers: {
-		'content-type': 'application/json',
-		'Content-Type': 'application/json',
-		'X-RapidAPI-Key': '5d5bc622a0msh2ccc53929ee80c5p1d5115jsn48fc9f744a85',
-		'X-RapidAPI-Host': 'animimagine-ai.p.rapidapi.com'
-	},
-body: JSON.stringify({
-    selected_model_id: 'anything-v5',
-    selected_model_bsize: '512',
-    prompt: text
-})
-};
-
-try {
-	const response = await fetch(url, options);
-	const result = await response.json();
-	console.log(result);
-	await conn.sendFile(m.chat, {url:result.imageUrl}, "error.jpg",m)
-} catch (error) {
-	console.error(error);
-}
-
-
-
-
-    
+  } catch {
+    throw '*Oops! Something went wrong while generating images. Please try again later.*';
   }
-  catch(e){
-    
-    console.log(e)
-}}
+  
+  
+}
 handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai3', 'a-img', 'aimg', 'imagine'];
 export default handler;
