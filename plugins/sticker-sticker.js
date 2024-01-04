@@ -34,7 +34,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
         }
       }
     } 
-    else if(/text/g.test(mime)) {
+    else if(/text|json/g.test(mime)) {
       m.reply("is text")
     }
     
