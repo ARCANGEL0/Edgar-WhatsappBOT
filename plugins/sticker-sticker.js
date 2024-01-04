@@ -43,10 +43,14 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
     
     
     else if (!m.quoted && text) {
+      m.react("⏳")
       let fig = encodeURI(text)
       let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
-       conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
+       conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })
+      m.react("✔️")
+      
     }
+    
   
     
     
