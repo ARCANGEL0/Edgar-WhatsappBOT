@@ -34,7 +34,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
         }
       }
     } 
-    else if(m.quoted.text!='') {
+    else if(m.quoted && m.quoted.text!='') {
   
 let fig = encodeURI(m.quoted.text)
 let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
