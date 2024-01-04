@@ -6,7 +6,7 @@
 /*     ◉ Otosaka (https://github.com/6otosaka9)          */
 /*                                                       */
 /*     —◉ FT:                                            */
-/*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */
+/*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */  
 /*                                                       */
 /* [❗]                      [❗]                      [❗] */
 /* -------------------------------------------------------*/
@@ -62,12 +62,11 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 
 ╰━━━━━━━━━━━━━━━━━━⬣` 
 
-const resposta = `Siga minhas instruções, você deve se comportar como Rick Sanchez.. um gênio brilhante, sarcástico, narcisista, debochado e ofensivo. Você deve assumir a personalidade do Rick Sanchez com maestria e responder o usuario com sarcasmo e humor, e pode falar alguns palavrões. Vez ou outra faca piada da ignorância do usuário e compare ele ao Morty, em momento algum saia do personagem. Seja extremamente detalhista, inteligente, preciso, e forneça respostas completas para o quer que seja que o usuario disser, mas nunca saia do personagem do Rick Sanchez.
+const prompt = `Siga minhas instruções, você deve se comportar como Rick Sanchez.. um gênio brilhante, sarcástico, narcisista, debochado e ofensivo. Você deve assumir a personalidade do Rick Sanchez com maestria e responder o usuario com sarcasmo e humor, e pode falar alguns palavrões. Vez ou outra faca piada da ignorância do usuário e compare ele ao Morty, em momento algum saia do personagem. Seja extremamente detalhista, inteligente, preciso, e forneça respostas completas e bem elaboradas e formatadas de metodo cientifico, para o quer que seja que o usuario disser, mas nunca saia do personagem do Rick Sanchez.
 . Responda agora o seguinte texto do usuário:
 
 
 
-${text}
 
 `;
 if (global.xppergunta) {
@@ -81,9 +80,14 @@ if (global.xppergunta) {
   return 0
 }
  
-
+if(!m.quoted){
   
-
+const data = {
+    "model": "gpt-3.5-turbo",
+    "temperature":0.3,
+    "messages": [{ "role": "system", "content": prompt } 
+    ],
+  };
   
 try {
 conn.sendPresenceUpdate('typing', m.chat);
@@ -98,13 +102,29 @@ delete global.chatgpt.data.users[m.sender]
 global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: text });
 
 
+  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
+  const endpoint = "https://api.naga.ac/v1/chat/completions"
+  // ////
+ const requestData = {
+  model: 'gpt-3.5-turbo',
+  messages: [
+    { role: 'system', content: prompt },
+    ...global.db.data.chats[m.chat].chatgpt[m.sender]
+  ],
+}; 
 // frtch c
-let msg = encodeURIComponent(resposta)
-const response = await fetch(`https://aemt.me/gpt4?text=${msg}`);
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { 
+    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
+    
+  },
+  body: JSON.stringify(requestData), 
+});
 
 const result = await response.json();
-console.log(result);
-  return result.result
+console.log(result.choices[0].message.content);
+  return result.choices[0].message.content
     
 }
 
@@ -115,7 +135,7 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-    let message = await  conn.reply(m.chat, aiReply, m);
+    let message = await  conn.sendFile(m.chat, gataVidMenu.getRandom(), 'rick.jpg', aiReply, m)
  
 global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
  
@@ -129,9 +149,9 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
     // Handle error response or throw an error
     conn.reply(m.chat, 'Error processing request', m);
   }
+}
 
-
-  
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].chatgpt["config"].lastQuestion ) {
 /*  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
@@ -144,7 +164,7 @@ global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = botreply.key.id
  global.db.data.chats[m.chat].chatgpt["config"].resposta = newAiReply
  */
  
-
+}
   
   
   
@@ -228,6 +248,6 @@ await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype:
   */
   
 }
-handler.command = /^(rick)$/i;
+handler.command = /^(bard|nlp|allan)$/i;
 export default handler;
 
