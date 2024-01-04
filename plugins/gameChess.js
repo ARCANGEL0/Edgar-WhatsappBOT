@@ -10,6 +10,7 @@ const handler = async (m, { conn, args ,command,usedPrefix}) => {
     players: [],
     hasJoined: []
   };
+  global.db.data.chats[m.chat].chess = chessData
   conn.chess[key] = chessData;
   const { gameData, fen, currentTurn, players, hasJoined } = chessData;
   const feature = args[0]?.toLowerCase();
