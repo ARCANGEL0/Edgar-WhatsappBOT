@@ -18,8 +18,9 @@ const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
 .then(data =>{ 
- 
-    
+ return data.arrayBuffer()
+})
+.then(buffer => {
     console.log(data)
     
     
