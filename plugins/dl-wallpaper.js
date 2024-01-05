@@ -20,7 +20,7 @@ fetch(url)
   .then((data) => {
     console.log(data) 
   
- let imgn= new Blob([data], { type: 'image/jpeg' }); // Adjust the type based on your image format
+ let imgn= data.buffer()// Adjust the type based on your image format
 
  
 
