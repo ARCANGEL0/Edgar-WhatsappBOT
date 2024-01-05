@@ -90,7 +90,10 @@ if (global.xppergunta) {
   `)
   return 0
 }
- if(global.db.data.chats[m.chat].ricksan){
+ if(!global.db.data.chats[m.chat].ricksan){
+   m.react(”❌)
+ }
+ else {
 if(!m.quoted){
   
 const data = {
@@ -167,7 +170,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
   }
 }
 
-  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"].lastQuestion ) {
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"CB].lastQuestion ) {
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].rickgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
@@ -183,9 +186,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = botreply.key.id
 }
  } 
   
-  else {
-    m.react(”❌)
-  }
+  
   
 /*
   
