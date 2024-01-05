@@ -24,7 +24,7 @@ fetch(url)
     console.log(buffer)
     
     
-    let message = translate(buffer, { to: "pt", autoCorrect: true })
+    let message = translate(buffer.data, { to: "pt", autoCorrect: true })
     
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
    ⌬   ${message.text}   ⌬
