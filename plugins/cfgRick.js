@@ -92,6 +92,7 @@ if (global.xppergunta) {
 }
  if(global.db.data.chats[m.chat].ricksan===false){
    m.react(”❌)
+   break;
  }
  else {
 if(!m.quoted){
