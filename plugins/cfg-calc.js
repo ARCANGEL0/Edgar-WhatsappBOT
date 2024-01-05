@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
     global.quiz = global.quiz ? global.quiz : {}
     
 console.log(global.quiz[id])
-if(!global.quiz[id]) {
+if(!global.quiz[m.chat]) {
   global.quiz[m.chat] = { 
  
   math: false,
