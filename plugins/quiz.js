@@ -12774,9 +12774,9 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
     };
     
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
+     global.quiz[m.chat].math = true;
     } else {
-      global.quiz[id].math = false;
+     global.quiz[m.chat].math = false;
     }
     // Send the question
     await m.reply(`
@@ -12796,47 +12796,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     // For example, you might want to handle user responses or perform other actions.
   }
   }
-  else {
-    const perguntaObj = pickRandom(selectedPerguntasArray);
-    const { Pergunta, Opcoes, Resposta, Motivo } = perguntaObj;
-    const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join("\n");
-
- // Update the current question and answer
- global.quiz[m.chat] = {
-      
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-      "time": new Date().getTime()
-    };
-    
-     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
-    } else {
-      global.quiz[id].math = false;
-    }
-    
-    console.log("test" + global.quizxp[m.chat].modo)
-    // Send the question
-    await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
-      `);
-
-    // Updte the last question time after sending a new question
-    
-    // Additional code specific to your application logic can go here...
-    // For example, you might want to handle user responses or perform other actions.
-  }
+ 
   }
   else if(global.quizxp[m.chat].modo==true){
   
@@ -12880,9 +12840,9 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     };
     
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
+     global.quiz[m.chat].math = true;
     } else {
-      global.quiz[id].math = false;
+     global.quiz[m.chat].math = false;
     }
     
     console.log("on quiz  "+ global.quiz[m.chat].id)
@@ -12930,9 +12890,9 @@ global.quiz[m.chat] = {
     
     
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
-      global.quiz[id].math = true;
+     global.quiz[m.chat].math = true;
     } else {
-      global.quiz[id].math = false;
+     global.quiz[m.chat].math = false;
     }
     console.log("on quiz  "+ global.quiz[m.chat].id)
     // Updte the last question time after sending a new question
