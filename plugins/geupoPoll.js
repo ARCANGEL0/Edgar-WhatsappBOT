@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
                 await m.reply(result);
             }
         } catch (err) {
-            await sock.sendMessage(chatId, { text: `${err.message}` }, { quoted: msg });
+            console.log(err)
         }
     }
 
