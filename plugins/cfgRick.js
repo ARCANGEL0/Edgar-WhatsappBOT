@@ -91,7 +91,7 @@ if (global.xppergunta) {
   return !0
 }
 
-if(true){
+if(global.db.data.chats[m.chat].ricksan==false)){
    m.react("❌")
    console.log("rick* "+global.db.data.chats[m.chat].ricksan)
    console.log("on loop of fail")
