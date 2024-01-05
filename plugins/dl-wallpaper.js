@@ -17,12 +17,14 @@ const params = new URLSearchParams({
 const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
-  .then((data) => {
-    console.log(data) 
-  
- let imgn= data.buffer()// Adjust the type based on your image format
+.then(response => response.blob())
+  .then(blob => {
+    // Assuming you have a function to create an Object URL from the blob
+    let imgn = URL.createObjectURL(blob);
 
  
+
+ console.log(imgn)
 
 
   conn.sendFile(m.chat, imgn, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
