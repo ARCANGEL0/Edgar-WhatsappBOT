@@ -12766,7 +12766,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 
  // Update the current question and answer
     global.quiz[m.chat] = {
-      math: false,
+      "math": false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
