@@ -9,8 +9,8 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
           m.react("🌒")
             
                 
-                const response = await fetch(url);
-                console.log(response.json())
+                 await fetch(url).then(data=>console.log(data))
+                
                 
        //         let message = await translate(enmsg, { to: "pt", autoCorrect: true })
                 
