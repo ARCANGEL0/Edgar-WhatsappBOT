@@ -22,13 +22,13 @@ const randomIndex = Math.floor(Math.random() * wallpaperArray.length);
 const randomWallpaper = wallpaperArray[randomIndex];
 
 // Retrieve the 'path' property from the random wallpaper object
-const randomWallpaperPath = randomWallpaper;
+
 
 // Display the result or use it as needed
-console.log(randomWallpaperPath);
+console.log(randomWallpaper);
 
 
-   conn.sendFile(m.chat,randomWallpaperPath, imagen1, `╰⊱🐈‍⬛⊱ *𝙀́𝙓𝙄𝙏𝙊 * ⊱⊱╮\n🕯️ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`.trim(), m)
+   conn.sendFile(m.chat,randomWallpaper, imagen1, `╰⊱🐈‍⬛⊱ *𝙀́𝙓𝙄𝙏𝙊 * ⊱⊱╮\n🕯️ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`.trim(), m)
   } )
     
     
@@ -48,7 +48,7 @@ console.log(randomWallpaperPath);
 }
 handler.help = ['pinterest <keyword>']
 handler.tags = ['internet']
-handler.command = /^(pinterest|dlpinterest|pinterestdl)$/i
+handler.command = /^(pinterest|dlpinterest|pin)$/i
 handler.exp = 0
 handler.money = 0
 export default handler
