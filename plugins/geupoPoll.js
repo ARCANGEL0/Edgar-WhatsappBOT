@@ -2,8 +2,10 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api' 
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
-    let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';function getZodiacSign(text) {
-  const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+    let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
+    const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+    function getZodiacSign(text) {
+  
   
   // Normalizing input: converting to lowercase and removing special characters
   const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
