@@ -169,6 +169,7 @@ else {
     E agora irei responder ela e quero que você responda de acordo sem sair do personagem, lembre-se de ser sarcastico, narcisista e me diminuir, e xingue e fale palavroes no meio das frases
     
    `
+   global.db.data.chats[m.chat].rickgpt[m.sender] = []
 global.db.data.chats[m.chat].rickgpt[m.sender].push({ role: 'user', content: inputText });
 
 
