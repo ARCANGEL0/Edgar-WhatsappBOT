@@ -1,6 +1,16 @@
 
 let handler = m => m
 handler.before = async function (m) {
+  const rick = [
+  "https://cdn.dribbble.com/users/1230354/screenshots/4923869/rickandmorty.png",
+  "https://banner2.cleanpng.com/20180320/hwq/kisspng-pocket-mortys-rick-sanchez-morty-smith-computer-ic-rick-avatar-blue-vers-icon-5ab1ccd860a082.9774853115216017523958.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8E7MyaxDZvT9TzylOh8NGyHCcwnNwxhhOg&usqp=CAU",
+  "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fblack-hat-vs-rick-sanchez-v0-ajmcr8iuk82a1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D4e0a7d0e145bcde86432c11dced03bf2c02fc752",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZQay3lMEHolK6tjS0SIm6YGfmzOr7TRgAA&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxUBRaTBXFflwZTqcBpH-BSYeDFxGCXXGYQ&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXCrRTsXdRnBsL88_aiH5YC7DQY65pLnH-w&usqp=CAU"
+];
+
   global.quiz = global.quiz ? global.quiz : {}
     let id = m.chat
     if(!global.xppergunta){
@@ -120,7 +130,7 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-    let message = await  conn.reply(m.chat, newReply, m);
+    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', aiReply, m)
  
 global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
  
@@ -216,6 +226,7 @@ Você possui uma morbidez e inteligência além, e é extremamente sabio e com c
     
     e o nobre interlocutor que vos fala respondeu com isto:
    `
+    global.db.data.chats[m.chat].edgargpt[m.sender] = []
 global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: inputText });
 
 
