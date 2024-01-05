@@ -92,7 +92,7 @@ if (global.xppergunta) {
 }
 console.log("rick* "+global.db.data.chats[m.chat].ricksan)
 if(true){
-   m.react(”❌)
+   m.react("❌")
    console.log("on loop of fail")
    return !0;
  }
