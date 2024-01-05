@@ -426,7 +426,7 @@ global.dfail('admin', m, conn);
 throw false;
 }
 global.db.data.chats[m.chat].ricksan = isEnable; 
-console.log(chat.ricksan)
+console.log("test" + global.db.data.chats[m.chat].ricksan )
 break;      
 
       case 'bot':
