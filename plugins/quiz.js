@@ -12910,6 +12910,7 @@ global.quiz[m.chat] = {
       if(global.xppergunta==true){
         global.xppergunta=false
       }
+      global.quiz[m.chat].math = false
       if(global.quizxp&& global.xppergunta){
         await m.reply(`
        
