@@ -96,7 +96,7 @@ try {
    break;
  }
  else {
-if(!m.quoted){
+else if(!m.quoted){
   
 const data = {
     "model": "gpt-3.5-turbo",
@@ -165,11 +165,6 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
  console.log(global.db.data.chats[m.chat].rickgpt["config"])
   }
   
-  catch (error) {
-    console.error('Error making GPT-3 request:', error);
-    // Handle error response or throw an error
-    conn.reply(m.chat, 'Error processing request', m);
-  }
 }
 
   else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"CB].lastQuestion ) {
@@ -186,7 +181,13 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = botreply.key.id
  
  
 }
- } 
+  
+}   catch (error) {
+    console.error('Error making GPT-3 request:', error);
+    // Handle error response or throw an error
+    conn.reply(m.chat, 'Error processing request', m);
+  }
+  
   
   
   
