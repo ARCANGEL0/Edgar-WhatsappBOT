@@ -25,7 +25,7 @@ fetch(url)
     
     let formula= buffer.data.toString()
     let message = translate(formula, { to: "pt", autoCorrect: true })
-    console.log(message)
+    console.log(message.data)
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
    ⌬   ${message}   ⌬
 ─┅──┅─┅──┅──┅❖❖─┅──┅─┅──┅`)
