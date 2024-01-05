@@ -42,7 +42,9 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
-
+if(!global.db.data.chats[m.chat].ricksan){
+  global.db.data.chats[m.chat].ricksan = true
+}
 if (!global.db.data.chats[m.chat].rickgpt) {
   global.db.data.chats[m.chat].rickgpt = {};
 }
@@ -88,7 +90,7 @@ if (global.xppergunta) {
   `)
   return 0
 }
- 
+ if(global.db.data.chats[m.chat].ricksan){
 if(!m.quoted){
   
 const data = {
@@ -181,7 +183,9 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = botreply.key.id
 }
   
   
-  
+  else {
+    m.react(”❌)
+  }
   
 /*
   
