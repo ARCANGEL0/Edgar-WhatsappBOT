@@ -170,7 +170,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
   
 
 
-  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"CB].lastQuestion ) {
+  else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"].lastQuestion ) {
  console.log(m.quoted.id)
   console.log(global.db.data.chats[m.chat].rickgpt["config"].lastQuestion)
   let newAiReply = requestToChatGPT(m.text)
