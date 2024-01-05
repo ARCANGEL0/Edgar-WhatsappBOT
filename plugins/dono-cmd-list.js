@@ -1,9 +1,48 @@
-let handler = async (m, { conn }) => {
-conn.reply(m.chat, `ღ 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊
-
-${Object.entries(global.db.data.sticker).map(([key, value], index) => `*${index + 1}.-*\n*ღ 𝘾𝙊𝘿𝙄𝙂𝙊:* ${value.locked ? `*(𝚋𝚕𝚘𝚚𝚞𝚎𝚊𝚍𝚘)* ${key}` : key}\n*ღ 𝘾𝙊𝙈𝘼𝙉𝘿𝙊/𝙏𝙀𝙓𝙏𝙊𝙎* ${value.text}`).join('\n\n')}
-`.trim(), null, {mentions: Object.values(global.db.data.sticker).map(x => x.mentionedJid).reduce((a, b) => [...a, ...b], [])})
+let handler = async (m, { conn, text, usedPrefix, command}) => {
+let user, number, bot, bant, ownerNumber, aa, users, usr, q, mime, img
+try {
+function no(number){
+return number.replace(/\s/g,'').replace(/([@+-])/g,'')}
+text = no(text)
+if(isNaN(text)) {
+number = text.split`@`[1]
+} else if(!isNaN(text)) {
+number = text
 }
-handler.command = ['listcmd', 'cmdlist']
-handler.rowner = true
+user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
+bot = conn.user.jid.split`@`[0] 
+bant = lenguajeGB.smsPropban1(usedPrefix, command, bot)
+if (!text && !m.quoted) return conn.reply(m.chat, bant, null, { mentions: [user] })               
+try {
+if(text) {
+user = number + '@s.whatsapp.net'
+} else if(m.quoted.sender) {
+user = m.quoted.sender
+} else if(m.mentionedJid) {
+user = number + '@s.whatsapp.net'
+}} catch (e) {
+} finally {
+number = user.split('@')[0]
+if(user === conn.user.jid) return conn.reply(m.chat, lenguajeGB.smsPropban2(bot), null, { mentions: [user] })   
+for (let i = 0; i < global.owner.length; i++) {
+ownerNumber = global.owner[i][0];
+if (user.replace(/@s\.whatsapp\.net$/, '') === ownerNumber) {
+aa = ownerNumber + '@s.whatsapp.net'
+await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: [aa] })
+return
+}}
+users = global.db.data.users
+await conn.sendMessage(m.chat, { delete: m.key })
+await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
+
+usr = m.sender.split('@')[0]     
+await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
+//await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
+}} catch (e) {
+await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), null, m)
+console.log(e) 
+}}
+handler.command = /^kick|remover|expulsar$/i
+handler.rowner = false
+handler.admin = true
 export default handler
