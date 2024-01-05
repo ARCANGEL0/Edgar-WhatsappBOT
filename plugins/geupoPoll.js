@@ -4,15 +4,13 @@ import translate from '@vitalets/google-translate-api'
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
     const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
-    function getZodiacSign(ft) {
-  
-  console.log(text)
-  // Normalizing input: converting to lowercase and removing special characters
-  const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
-  // Check if the normalized text is in the horoArray
+    
+    const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    console.log(normalizedText)
+    let zod;
+    
   if (horoArray.includes(normalizedText)) {
-    return normalizedText; // Return the input as it is if it's already in the array
+    zod = normalizedText; // Return the input as it is if it's already in the array
   } else {
     // Translations for normalized Portuguese input
     const translations = {
@@ -34,13 +32,19 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     const translatedSign = translations[normalizedText];
     
     // Return the translated sign or a default value if not found
-    return translatedSign ;
+    zod = translatedSign ;
   }
-}
+  
+  // Normalizing input: converting to lowercase and removing special characters
+  
+
+  // Check if the normalized text is in the horoArray
+  
+
 
 // Example usage
 
-const zod = getZodiacSign(text);
+
 console.log(zod); // Output: scorpio (for the given example)
 
     
