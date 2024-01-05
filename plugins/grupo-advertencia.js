@@ -15,6 +15,7 @@ let txt = text.replace('@' + who.split`@`[0], '').trim()
 
 try {
 user.warn += 1
+console.log(user.warn)
 await m.reply(
     `
 ╭━━━━━━━━━⬣
