@@ -20,7 +20,7 @@ user.warn += 1
 console.log(user)
 await m.reply(
     `
-╭━━━━━━━━━⬣
+╭━━━━『ÄÐvêr†êñ¢ïå』━━━━⬣
 *@${who.split`@`[0]}*
 ⚠️ *${user.warn}/4* 
 ${wm} || ${vs}
@@ -34,7 +34,7 @@ ${wm} || ${vs}
 if (user.warn >= 4) {
 user.warn = 0
 await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
-user.banned = true
+
 await conn.groupParticipantsUpdate(m.chat, [who], 'remove') //@${m.sender.split`@`[0]}
 //await this.updateBlockStatus(m.sender, 'block') 
 }	
