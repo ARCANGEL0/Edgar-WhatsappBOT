@@ -4,11 +4,11 @@ import translate from '@vitalets/google-translate-api'
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
     const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
-    function getZodiacSign(text) {
+    function getZodiacSign(ft) {
   
   console.log(text)
   // Normalizing input: converting to lowercase and removing special characters
-  const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const normalizedText = ft.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
   // Check if the normalized text is in the horoArray
   if (horoArray.includes(normalizedText)) {
