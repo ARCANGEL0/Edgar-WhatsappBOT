@@ -1,4 +1,4 @@
-import { cheerio } from 'cheerio';
+const cheerio = require('cheerio');
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
