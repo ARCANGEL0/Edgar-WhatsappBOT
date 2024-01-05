@@ -1,15 +1,48 @@
+import { cheerio } from 'cheerio'
+import { axios } from 'axiox'
+
+
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
-	text = text.split(`|`)
-	
-	await m.reply("test")
-	
-	 await conn.sendPoll(m.chat, "enquete", ["abc","dbfh"])
+  
+
+
+let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
+let horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+
+async function getHoroscope(sock, chatId, msg, msgData) {
+    try {
+        let index = horoArray.indexOf(msgData.msgText.toLowerCase());
+        if (index === -1) {
+            await sock.sendMessage(chatId, { text: "Enter the right spelling" }, { quoted: msg });
+        } else {
+            const { data } = await axios.get(horoscopeUrl + `${index + 1}`);
+            const $ = cheerio.load(data);
+            const horoscope = $("body > div.grid.grid-right-sidebar.primis-rr > main > div.main-horoscope > p:nth-child(2)").text();
+            let result = `*Today's Date:-* ${horoscope.split("-")[0]}\n*Nature Hold's For You:-* ${horoscope.substring(horoscope.indexOf('-') + 1)}`;
+            await sock.sendMessage(chatId, { text: result }, { quoted: msg });
+        }
+    } catch (err) {
+        await sock.sendMessage(chatId, { text: `${err.message}` }, { quoted: msg });
+    }
+}
+
+try {
+  getHoroscope(conn,m.chat,text,horoArray)
+}
+catch(e){
+  console.log(e)
+  await m.reply('error')
+}
+// Example usage:
+// getHoroscope(sock, chatId, msg, msgData);
+        
+
 }
 
 handler.help = ['poll <desc>|opts1|opts2|etc...']
 handler.tags = ['group']
-handler.command = /^((create)?poll(ing)?)$/i
+handler.command = /^(horoscopo)$/i
 
-handler.group = true
+
 
 export default handler
