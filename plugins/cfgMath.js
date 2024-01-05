@@ -21,7 +21,7 @@ fetch(url)
  return data.json()
 })
 .then(buffer => {
-    console.log(buffer)
+    console.log(buffer.data)
     
     
     let message = translate(buffer.data, { to: "pt", autoCorrect: true })
