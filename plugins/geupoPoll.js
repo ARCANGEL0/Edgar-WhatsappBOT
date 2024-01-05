@@ -2,12 +2,48 @@ import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import translate from '@vitalets/google-translate-api' 
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
-    let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
-    let horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
-console.log(text)
-  let tstext = await translate(text, { to: "pt", autoCorrect: true })
+    let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';function getZodiacSign(text) {
+  const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+  
+  // Normalizing input: converting to lowercase and removing special characters
+  const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  // Check if the normalized text is in the horoArray
+  if (horoArray.includes(normalizedText)) {
+    return normalizedText; // Return the input as it is if it's already in the array
+  } else {
+    // Translations for normalized Portuguese input
+    const translations = {
+      "aries": "aries",
+      "taurus": "touro",
+      "gemini": "gemeos",
+      "cancer": "cancer",
+      "leo": "leao",
+      "virgo": "virgem",
+      "libra": "libra",
+      "scorpio": "escorpiao",
+      "sagittarius": "sagitario",
+      "capricorn": "capricornio",
+      "aquarius": "aquario",
+      "pisces": "peixes",
+    };
+
+    // Check if there's a translation for the normalized input text
+    const translatedSign = translations[normalizedText];
+    
+    // Return the translated sign or a default value if not found
+    return translatedSign || "Desconhecido";
+  }
+}
+
+// Example usage
+
+const zod = getZodiacSign(text);
+console.log(zod); // Output: scorpio (for the given example)
+
+    
         try {
-            let index = horoArray.indexOf(tstext.toLowerCase());
+            let index = horoArray.indexOf(zod.toLowerCase());
             if (index === -1) {
                 await m.reply("Enter the right spelling");
             } else {
