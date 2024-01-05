@@ -12766,7 +12766,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 
  // Update the current question and answer
     global.quiz[m.chat] = {
-      "math": false,
+      
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
@@ -12803,8 +12803,9 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
 
- // Update the current question and answerglobal.quiz[m.chat] = {
-      "math": false,
+ // Update the current question and answer
+ global.quiz[m.chat] = {
+      
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
@@ -12871,7 +12872,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 
  // Update the current question and answer
     global.quiz[m.chat] = {
-      "math": false,
+      
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
@@ -12918,7 +12919,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       `);
 
 global.quiz[m.chat] = {
-      "math": false,
+      
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
