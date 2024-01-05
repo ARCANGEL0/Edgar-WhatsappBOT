@@ -21,10 +21,10 @@ fetch(url)
  return data.arrayBuffer()
 })
 .then(buffer => {
-    console.log(data)
+    console.log(buffer)
     
     
-    let message = translate(data, { to: "pt", autoCorrect: true })
+    let message = translate(buffer, { to: "pt", autoCorrect: true })
     
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
    ⌬   ${message.text}   ⌬
