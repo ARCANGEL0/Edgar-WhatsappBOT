@@ -5,9 +5,9 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
     let horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 
-    async function getHoroscope(sock, chatId, msg, msgData) {
+  
         try {
-            let index = horoArray.indexOf(msgData.toLowerCase());
+            let index = horoArray.indexOf(text.toLowerCase());
             if (index === -1) {
                 await m.reply("Enter the right spelling");
             } else {
@@ -21,14 +21,9 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
         } catch (err) {
             console.log(err)
         }
-    }
+    
 
-    try {
-        getHoroscope(conn, m.chat, text, horoArray);
-    } catch (e) {
-        console.log(e);
-        await m.reply('error');
-    }
+    
 };
 
 handler.help = ['poll <desc>|opts1|opts2|etc...'];
