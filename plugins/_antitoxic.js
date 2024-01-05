@@ -1,4 +1,4 @@
-const toxicRegex = /bolsomito|vadia|retardado|seu burro|sua burra|é burro|é burra|eh burro|eh burra|imbecil|sua puta|vagabunda|lugar de mulher|se mata|esquerdalha|feminazi|seu merda|merdinha|é rodada|eh rodada|pedaço de merda|seu bosta|seu lixo/i
+const toxicRegex = /bolsomito|vadia|seu burro|sua burra|é burro|é burra|eh burro|eh burra|imbecil|sua puta|vagabunda|lugar de mulher|esquerdalha|feminazi|seu merda|merdinha|é rodada|eh rodada|pedaço de merda|seu bosta|seu lixo/i
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
  
