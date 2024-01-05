@@ -17,7 +17,7 @@ if(!global.quiz[m.chat]) {
   
   
 }
-console.log(global.quiz[m.chat])
+console.log(global.quiz[m.chat].math)
     if (global.quiz[m.chat].math === true) {
         m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
