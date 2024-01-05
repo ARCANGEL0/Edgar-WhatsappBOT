@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
 	
 	await m.reply("test")
 	
-	 await m.sendPoll(m.chat, "enquete", ["abc","dbfh"])
+	 await connsendPoll(m.chat, "enquete", ["abc","dbfh"])
 }
 
 handler.help = ['poll <desc>|opts1|opts2|etc...']
