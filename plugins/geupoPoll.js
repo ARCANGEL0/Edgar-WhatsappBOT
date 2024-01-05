@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     let horoscopeUrl = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=';
     let horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
-
+console.log(text)
   
         try {
             let index = horoArray.indexOf(text.toLowerCase());
