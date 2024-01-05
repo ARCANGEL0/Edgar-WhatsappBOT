@@ -35,5 +35,5 @@ let msg = encodeURIComponent(text)
   
   
 }
-handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai3', 'a-img', 'aimg', 'imagine'];
+handler.command = ['dall-e', 'dalle', 'ia2'];
 export default handler;
