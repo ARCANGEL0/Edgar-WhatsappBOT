@@ -25,10 +25,10 @@ fetch(url)
     
     let formula= buffer.data.toString()
     let message = translate(formula, { to: "pt", autoCorrect: true })
-    console.log(message.data)
+    console.log(message.text)
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
    ⌬   ${message}   ⌬
-─┅──┅─┅──┅──┅❖❖─┅──┅─┅──┅`)
+─┅──┅──┅──┅❖❖─┅──┅─┅──┅─┅─`)
   })
   
     // Assuming you have a function to create an Object URL from the blob
