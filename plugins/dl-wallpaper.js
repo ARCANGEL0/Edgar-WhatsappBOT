@@ -25,7 +25,7 @@ fetch(url)
  
 
 
-  conn.sendFile(m.chat, img, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+  conn.sendFile(m.chat, imgn, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   } )
   .catch(error => console.error('Error:', error));
 
