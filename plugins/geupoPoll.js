@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
         try {
             let index = horoArray.indexOf(msgData.msgText.toLowerCase());
             if (index === -1) {
-                await sock.sendMessage(chatId, { text: "Enter the right spelling" }, { quoted: msg });
+                await sock.sendMessage(chatId, { text: "Enter the right spelling" }, { quoted: m.sender });
             } else {
                 const response = await fetch(horoscopeUrl + `${index + 1}`);
                 const data = await response.text();
