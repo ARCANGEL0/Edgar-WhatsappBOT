@@ -366,18 +366,7 @@ user.antispam++
 return
 
 }
-  console.log(`
-  ${m.msg}
-  ------------------------------------------------
-  ${m.message}
-  ------------------------------------------------
-  ${m.mtype}
-  ------------------------------------------------
-  ${m.messageTimestamp}
-  ------------------------------------------------
-  ${m}
   
-  `)
   
   
 }
@@ -669,10 +658,12 @@ let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
 if (!msg?.isGroup) return 
-const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
-${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
-${lenguajeGB['smsCont21']()}
-*╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
+const antideleteMessage = `
+*─┅──┅❖ 🕯️🪶 ❖─┅──┅*
+𝔗𝔲𝔡𝔬 𝔥𝔞 𝔡𝔢 𝔰𝔢𝔯 𝔯𝔢𝔳𝔢𝔩𝔞𝔡𝔬 👁️
+༺ @${participant.split`@`[0]}
+༺ ${lenguajeGB['smsCont21']()}
+*─┅──┅❖ ❖─┅──┅*`.trim();
 await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
