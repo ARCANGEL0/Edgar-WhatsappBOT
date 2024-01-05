@@ -38,9 +38,9 @@ fetch(url)
     
     
     
-    let message = await translate(response.data, { to: "pt", autoCorrect: true })
+    let message = translate(response.data, { to: "pt", autoCorrect: true })
     
-    await m.reply(`
+     m.reply(`
     ─┅──┅❖ 👁️ ❖─┅──┅
     ${message.text}
     ─┅──┅❖❖─┅──┅
