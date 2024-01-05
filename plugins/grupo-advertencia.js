@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {//prems
 //conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]],  m)
 
 let who 
-let img = 'https://i.imgur.com/DvHoMc3.jpg'
+let img =  'https://i.imgur.com/DvHoMc3.jpg'
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
 else who = m.chat
 let name = await conn.getName(m.sender)	
@@ -12,7 +12,9 @@ let name = await conn.getName(m.sender)
 let user = global.db.data.users[who]
 if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`,  m)  	
 let txt = text.replace('@' + who.split`@`[0], '').trim()
-
+if(user.warn == null){
+  user.warn =0
+}
 try {
 user.warn += 1
 console.log(user.warn)
