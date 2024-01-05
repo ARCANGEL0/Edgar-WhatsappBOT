@@ -90,6 +90,7 @@ if (global.xppergunta) {
   `)
   return 0
 }
+try {
  if(global.db.data.chats[m.chat].ricksan===false){
    m.react(”❌)
    break;
@@ -104,7 +105,7 @@ const data = {
     ],
   };
   
-try {
+
 conn.sendPresenceUpdate('typing', m.chat);
 await conn.sendMessage(m.chat,{ react: {
         text: "⏳", // use an empty string to remove the reaction
