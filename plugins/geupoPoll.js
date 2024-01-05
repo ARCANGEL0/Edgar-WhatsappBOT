@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
                 const $ = cheerio.load(data);
                 const horoscope = $("body > div.grid.grid-right-sidebar.primis-rr > main > div.main-horoscope > p:nth-child(2)").text();
                 let result = `*Today's Date:-* ${horoscope.split("-")[0]}\n*Nature Hold's For You:-* ${horoscope.substring(horoscope.indexOf('-') + 1)}`;
-                await sock.sendMessage(chatId, { text: result }, { quoted: msg });
+                await m.reply(result);
             }
         } catch (err) {
             await sock.sendMessage(chatId, { text: `${err.message}` }, { quoted: msg });
