@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
 	if (text.length > 13) throw `[!] Too many choices, max *12* !`
 	let array = []
 	text.slice(1).forEach(function(i) { array.push(i) })
-	await conn.sendPoll(m.chat, text[0], array)
+	await conn.sendPoll(m.chat, "enquete", ["abc","dbfh"])
 }
 
 handler.help = ['poll <desc>|opts1|opts2|etc...']
