@@ -22,7 +22,7 @@ let msg = encodeURIComponent(text)
     console.log(res)
     let data = await res.json()
     console.log(data)
-    let buffer = data.result
+    let buffer = data.data
     const imageBuffer = await buffer.buffer();
       m.react("✔️")
       await conn.sendFile(m.chat, imageBuffer, 'image.png', null, m);
