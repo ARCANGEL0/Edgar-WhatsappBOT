@@ -425,7 +425,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('owner', m, conn);
 throw false;
 }
-chat.rickgpt = isEnable;      
+chat.ricksan = isEnable;      
 break;      
 
       case 'bot':
@@ -632,7 +632,7 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-🕯️ ${lenguajeGB.smsParaAdmins()  }${global.rickgpt  ? '🌕' : '🌒'}
+🕯️ ${lenguajeGB.smsParaAdmins()  }${global.ricksan  ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} rick
 🕯️ Desativa a IA Rick Sanchez neste chat
 
