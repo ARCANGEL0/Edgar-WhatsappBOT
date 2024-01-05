@@ -40,11 +40,9 @@ fetch(url)
     
     let message = translate(response.data, { to: "pt", autoCorrect: true })
     
-     m.reply(`
-    ─┅──┅❖ 👁️ ❖─┅──┅
-    ${message.text}
-    ─┅──┅❖❖─┅──┅
-    `)
+     m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
+   ⌬   ${message.text}   ⌬
+─┅──┅─┅──┅❖❖─┅──┅─┅──┅`)
   })
   
     // Assuming you have a function to create an Object URL from the blob
