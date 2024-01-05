@@ -24,12 +24,7 @@ fetch(url)
     console.log(buffer.data)
     
     let formula= buffer.data.toString()
-    let message = translate(formula, { to: "pt", autoCorrect: true })
-    console.log(formula)
-    console.log(message)
-     m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
-   ⌬   ${message}   ⌬
-─┅──┅──┅──┅❖❖─┅──┅─┅──┅─┅─`)
+    
   })
   
     // Assuming you have a function to create an Object URL from the blob
@@ -39,7 +34,13 @@ fetch(url)
 
  
   .catch(error => console.error('Error:', error));
-
+  
+  
+let message = await translate(formula, { to: "pt", autoCorrect: true })
+ )
+    await m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
+   ⌬   ${message}   ⌬
+─┅──┅──┅──┅❖❖─┅──┅─┅──┅─┅─`)
 };
 
 handler.command = /^math|calc/i;
