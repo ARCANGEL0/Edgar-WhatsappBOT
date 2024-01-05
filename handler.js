@@ -662,7 +662,7 @@ const antideleteMessage = `
 *─┅──┅❖ 🕯️🪶 ❖─┅──┅*
 𝔗𝔲𝔡𝔬 𝔥𝔞 𝔡𝔢 𝔰𝔢𝔯 𝔯𝔢𝔳𝔢𝔩𝔞𝔡𝔬 👁️
 ༺ @${participant.split`@`[0]}
-༺ ${lenguajeGB['smsCont21']()}
+𝔈𝔫𝔳𝔦𝔞𝔫𝔡𝔬 𝔞 𝔪𝔢𝔫𝔰𝔞𝔤𝔢𝔪 𝔞 𝔰𝔢𝔯 𝔡𝔢𝔰𝔳𝔢𝔩𝔞𝔡𝔞
 *─┅──┅❖ ❖─┅──┅*`.trim();
 await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
