@@ -17,28 +17,13 @@ const params = new URLSearchParams({
 const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
-.then(response =>{ 
-  if (!response.ok) {
-      console.log(response +"\n\n"+response.status)
-       m.reply(`╭━━━━━━━━━⬣
-┃
-┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
-┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
-┃
-┃ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐞 
-┃ 𝐟𝐮𝐭𝐮𝐫𝐚𝐦𝐞𝐧𝐭𝐞, 𝐩𝐚𝐫𝐚 𝐮𝐦 𝐟𝐮𝐭𝐮𝐫𝐨
-┃ 𝐬𝐨𝐦𝐛𝐫𝐢𝐨 𝐪𝐮𝐞 𝐭𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐜𝐚
-┃ 𝐞𝐱𝐢𝐭𝐨
-┃
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣`)
-    }
+.then(data =>{ 
+ 
     
-    console.log(response)
+    console.log(data)
     
     
-    let message = translate(response.data, { to: "pt", autoCorrect: true })
+    let message = translate(data, { to: "pt", autoCorrect: true })
     
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
    ⌬   ${message.text}   ⌬
