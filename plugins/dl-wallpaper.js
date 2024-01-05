@@ -20,11 +20,12 @@ fetch(url)
   .then((data) => {
     console.log(data) 
   
- 
+ let imgn= new Blob([data], { type: 'image/jpeg' }); // Adjust the type based on your image format
+
  
 
 
-  conn.sendFile(m.chat, data, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
+  conn.sendFile(m.chat, img, 'error.jpg', `*🥀 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤 : ${text}*\n${wm}`, m)
   } )
   .catch(error => console.error('Error:', error));
 
