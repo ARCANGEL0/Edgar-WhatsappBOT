@@ -20,7 +20,7 @@ fetch(url)
 .then(response =>{ 
   if (!response.ok) {
       console.log(response +"\n\n"+response.status)
-      await m.reply(`╭━━━━━━━━━⬣
+       m.reply(`╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
 ┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
