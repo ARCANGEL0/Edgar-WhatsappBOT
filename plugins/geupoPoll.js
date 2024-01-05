@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
   
   console.log(text)
   // Normalizing input: converting to lowercase and removing special characters
-  const normalizedText = ft.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
   // Check if the normalized text is in the horoArray
   if (horoArray.includes(normalizedText)) {
