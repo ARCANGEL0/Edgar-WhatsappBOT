@@ -17,7 +17,6 @@ const params = new URLSearchParams({
 const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
-  .then(response => response.json())
   .then((data) => {
     console.log(data) 
   
