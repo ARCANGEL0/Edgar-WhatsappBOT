@@ -91,7 +91,7 @@ if (global.xppergunta) {
   return 0
 }
 try {
- if(global.db.data.chats[m.chat].ricksan===false){
+ if(global.db.data.chats[m.chat].ricksan==false){
    m.react(”❌)
    break;
  }
