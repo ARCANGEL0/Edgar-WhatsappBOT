@@ -425,7 +425,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn);
 throw false;
 }
-chat.ricksan = isEnable; 
+global.db.data.chats[m.chat].ricksan = isEnable; 
 console.log(chat.ricksan)
 break;      
 
