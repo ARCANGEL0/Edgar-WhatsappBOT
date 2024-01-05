@@ -90,6 +90,7 @@ if (global.xppergunta) {
   `)
   return !0
 }
+console.log("rick* "+global.db.data.chats[m.chat].ricksan)
 if(global.db.data.chats[m.chat].ricksan==false){
    m.react(”❌)
    return !0;
