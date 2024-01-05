@@ -17,10 +17,17 @@ const params = new URLSearchParams({
 const url = `${apiUrl}?${params.toString()}`;
 
 fetch(url)
-.then(response => response.blob())
-  .then(blob => {
+.then(response =>{ 
+  if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.arrayBuffer();
+  })
+  .then(buffer => {
+    let imgn = `data:image/jpeg;base64,${Buffer.from(buffer).toString('base64')}`;
+    
     // Assuming you have a function to create an Object URL from the blob
-    let imgn = URL.createObjectURL(blob);
+  
 
  
 
