@@ -422,10 +422,11 @@ case 'rick':
 case 'ricksanchez':
 isAll = true;
 if (!(isAdmin || isOwner)) {
-global.dfail('owner', m, conn);
+global.dfail('admin', m, conn);
 throw false;
 }
-chat.ricksan = isEnable;      
+chat.ricksan = isEnable; 
+console.log(chat.ricksan)
 break;      
 
       case 'bot':
