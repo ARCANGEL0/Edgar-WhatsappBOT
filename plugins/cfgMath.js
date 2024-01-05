@@ -35,7 +35,7 @@ fetch(url)
 ╰━━━━━━━━━━━━━━━━━━⬣`)
     }
     
-    
+    console.log(response)
     
     
     let message = translate(response.data, { to: "pt", autoCorrect: true })
