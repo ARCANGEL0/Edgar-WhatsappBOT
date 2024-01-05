@@ -4,7 +4,9 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()} ❖─┅──┅𝘿𝙚𝙨�
 let url = `https://aemt.me/pinterest?query=${text}`
 fetch(url)
   .then(response => response.json())
-  .then((data) =>{  console.log(data)
+  .then((data) =>{ 
+    
+    
   
  
  
@@ -20,7 +22,7 @@ const randomIndex = Math.floor(Math.random() * wallpaperArray.length);
 const randomWallpaper = wallpaperArray[randomIndex];
 
 // Retrieve the 'path' property from the random wallpaper object
-const randomWallpaperPath = randomWallpaper.link;
+const randomWallpaperPath = randomWallpaper;
 
 // Display the result or use it as needed
 console.log(randomWallpaperPath);
