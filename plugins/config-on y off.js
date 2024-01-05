@@ -656,12 +656,10 @@ ${wm}`, fkontak, { mentions: [aa,] })
 throw false
 }
 
-let resultado = `
-╰⊱✅⊱ *RESULTADO* ⊱✅⊱╮
-
-ღ *_COMANDO_* *|* ${type}  
-ღ *_ATUALMENTE_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-ღ *_NESTE_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`
+let resultado = `─┅──┅❖ ִ𖤐 ❖─┅──┅
+━━━━⬣ ${type}  
+━━━⬣ ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
+━━⬣ *_NESTE_* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`
 
 
 await conn.reply(m.chat, resultado, fkontak, m)}	
