@@ -181,7 +181,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = botreply.key.id
  
  
 }
-  
+ } 
   
   else {
     m.react(”❌)
