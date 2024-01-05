@@ -399,42 +399,42 @@ break
 case 'quiz':
 case 'quizxp':
 case 'competicao':
-isAll = true;
+if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn);
 throw false;
-}
+}}
 bot.quizxp = isEnable;      
 break;      
 
 case 'xadrez':
 case 'chess':
-isAll = true;
+if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn);
 throw false;
-}
+}}
 chat.xadrez = isEnable;      
 break;      
 
 
 case 'rick':
 case 'ricksanchez':
-isAll = true;
+if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn);
 throw false;
-}
+}}
 global.db.data.chats[m.chat].ricksan = isEnable; 
-console.log("test" + global.db.data.chats[m.chat].ricksan )
+console.log("test" + global.db.data.chats[m.chat].ricksan ) 
 break;      
 
       case 'bot':
-isAll = true;
-if (!isOwner) {
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
 global.dfail('owner', m, conn);
 throw false;
-}
+}}
 chat.isBanned = isEnable;      
 break;      
 case 'swonly': case 'statusonly':
@@ -627,6 +627,12 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.isBanned  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} bot
+🕯️ Desativa o bot neste grupo perdido
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
 🕯️ ${lenguajeGB.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} quizxp
 🕯️ Ativa o modo competição pro quiz
@@ -642,6 +648,8 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 🕯️ ${lenguajeGB.smsParaAdmins()  }${global.xadrez  ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} xadrez
 🕯️ Ativa habilidade de jogar xadrez no grupo
+
+
 ${wm}`, fkontak, { mentions: [aa,] })
 //conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
 //conn.sendMessage(m.chat, texto, {quoted: fkontak})	
