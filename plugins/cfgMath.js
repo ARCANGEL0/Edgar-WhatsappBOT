@@ -23,7 +23,7 @@ fetch(url)
 .then(buffer => {
     console.log(buffer.data)
     
-    let formula= byffer.data.toString()
+    let formula= buffer.data.toString()
     let message = translate(formula, { to: "pt", autoCorrect: true })
     
      m.reply(`─┅──┅─┅──┅❖ 👁️ ❖─┅──┅─┅──┅
