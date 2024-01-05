@@ -59,7 +59,7 @@ if (!global.db.data.chats[m.chat].rickgpt["config"]) {
   global.db.data.chats[m.chat].rickgpt[m.sender] = [];
 }
 
-
+console.log(global.db.data.chats[m.chat].ricksan)
 
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
@@ -90,7 +90,7 @@ if (global.xppergunta) {
   `)
   return 0
 }
- if(!global.db.data.chats[m.chat].ricksan){
+ if(global.db.data.chats[m.chat].ricksan===false){
    m.react(”❌)
  }
  else {
