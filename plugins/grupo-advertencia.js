@@ -17,7 +17,7 @@ if(user.warn == null){
 }
 try {
 user.warn += 1
-console.log(user.warn)
+console.log(user)
 await m.reply(
     `
 ╭━━━━━━━━━⬣
