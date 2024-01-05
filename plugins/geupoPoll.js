@@ -29,7 +29,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     };
 
     // Check if there's a translation for the normalized input text
-    const translatedSign = translations["leao"];
+    const translatedSign = translations["leo"];
     console.log(translatedSign)
     // Return the translated sign or a default value if not found
     zod = translatedSign ;
