@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
 
     async function getHoroscope(sock, chatId, msg, msgData) {
         try {
-            let index = horoArray.indexOf(msgData.msgText.toLowerCase());
+            let index = horoArray.indexOf(msgData.toLowerCase());
             if (index === -1) {
                 await m.reply("Enter the right spelling");
             } else {
