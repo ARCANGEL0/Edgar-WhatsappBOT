@@ -6627,7 +6627,7 @@ public class WordFrequencyCounter {
             "C": "36",
             "D": "48"
         },
-        "Resposta": "C",
+        "Resposta": "A",
         "Motivo": "A área de um triângulo é dada por (base * altura) / 2. Neste caso, (6 * 8) / 2 = 24."
     },
     {
@@ -12918,7 +12918,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       `);
 
 global.quiz[m.chat] = {
-      math: false,
+      "math": false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
@@ -12926,6 +12926,13 @@ global.quiz[m.chat] = {
       "id": qid.id,
       "time": new Date().getTime()
     };
+    
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
     console.log("on quiz  "+ global.quiz[m.chat].id)
     // Updte the last question time after sending a new question
     
