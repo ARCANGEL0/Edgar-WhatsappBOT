@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
             
                 
                 const response = await fetch(url);
-                console.log(response
+                console.log(response.data)
                 
        //         let message = await translate(enmsg, { to: "pt", autoCorrect: true })
                 
