@@ -34,7 +34,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     const translatedSign = translations[normalizedText];
     
     // Return the translated sign or a default value if not found
-    return translatedSign || "Desconhecido";
+    return translatedSign ;
   }
 }
 
@@ -47,7 +47,7 @@ console.log(zod); // Output: scorpio (for the given example)
         try {
             let index = horoArray.indexOf(zod.toLowerCase());
             if (index === -1) {
-                await m.reply("Enter the right spelling");
+                await m.reply("Erro");
             } else {
                 const response = await fetch(horoscopeUrl + `${index + 1}`);
                 const data = await response.text();
