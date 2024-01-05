@@ -36,7 +36,7 @@ await conn.sendMessage(m.chat, { delete: m.key })
 await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
 
 usr = m.sender.split('@')[0]     
-await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
+
 //await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, m.sender] })
 }} catch (e) {
 await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), null, m)
