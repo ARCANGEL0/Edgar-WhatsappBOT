@@ -12803,14 +12803,20 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
 
- // Update the current question and answer
-    global.quiz[m.chat] = {
-      math: false,
+ // Update the current question and answerglobal.quiz[m.chat] = {
+      "math": false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
       "time": new Date().getTime()
     };
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
+    
     console.log("test" + global.quizxp[m.chat].modo)
     // Send the question
     await m.reply(`
@@ -12865,14 +12871,19 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 
  // Update the current question and answer
     global.quiz[m.chat] = {
-      math: false,
+      "math": false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
-      "xp": 25,
-      "id": qid.id,
       "time": new Date().getTime()
     };
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+      global.quiz[id].math = true;
+    } else {
+      global.quiz[id].math = false;
+    }
+    
     console.log("on quiz  "+ global.quiz[m.chat].id)
     // Send the question
     
