@@ -17,8 +17,8 @@ if(!global.quiz[id]) {
   
   
 }
-console.log(global.quiz[id])
-    if (global.quiz[id].math) {
+console.log(global.quiz[m.chat])
+    if (global.quiz[m.chat].math) {
         m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 𝔑ã𝔬 𝔭𝔢𝔯𝔠𝔬𝔯𝔯𝔞 𝔞 𝔬𝔟𝔰𝔠𝔲𝔯𝔦𝔡𝔞𝔡𝔢 𝔡𝔞 𝔦𝔤𝔫𝔬𝔯â𝔫𝔠𝔦𝔞, 𝔢𝔳𝔦𝔱𝔢 𝔬𝔰 𝔞𝔯𝔱𝔦𝔣í𝔠𝔦𝔬𝔰 𝔱𝔯𝔞𝔦ç𝔬𝔢𝔦𝔯𝔬𝔰. 𝔄 𝔳𝔦𝔱ó𝔯𝔦𝔞 𝔰𝔬𝔪𝔟𝔯𝔦𝔞 𝔞𝔤𝔲𝔞𝔯𝔡𝔞 𝔞𝔮𝔲𝔢𝔩𝔢𝔰 𝔮𝔲𝔢 𝔢𝔫𝔣𝔯𝔢𝔫𝔱𝔞𝔪 𝔬 𝔮𝔲𝔦𝔷 𝔰𝔢𝔪 𝔰𝔲𝔠𝔲𝔪𝔟𝔦𝔯 à 𝔱𝔢𝔫𝔱𝔞çã𝔬 𝔡𝔞 𝔱𝔯𝔞𝔭𝔞ç𝔞.
