@@ -90,10 +90,10 @@ if (global.xppergunta) {
   `)
   return !0
 }
-
-if(global.db.data.chats[m.chat].ricksan==false)){
+console.log("outside* "+global.db.data.chats[m.chat].ricksan)
+if(global.db.data.chats[m.chat].ricksan===false)){
    m.react("❌")
-   console.log("rick* "+global.db.data.chats[m.chat].ricksan)
+   console.log("inside* "+global.db.data.chats[m.chat].ricksan)
    console.log("on loop of fail")
    return !0;
  }
