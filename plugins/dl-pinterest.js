@@ -26,7 +26,7 @@ const randomWallpaperPath = randomWallpaper.link;
 console.log(randomWallpaperPath);
 
 
-  await conn.sendFile(m.chat,randomWallpaperPath, imagen1, `╰⊱🐈‍⬛⊱ *𝙀́𝙓𝙄𝙏𝙊 * ⊱⊱╮\n🕯️ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`.trim(), m)
+   conn.sendFile(m.chat,randomWallpaperPath, imagen1, `╰⊱🐈‍⬛⊱ *𝙀́𝙓𝙄𝙏𝙊 * ⊱⊱╮\n🕯️ 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: ${text}`.trim(), m)
   } )
     
     
