@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     const horoArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
     function getZodiacSign(text) {
   
-  
+  console.log(text)
   // Normalizing input: converting to lowercase and removing special characters
   const normalizedText = text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
