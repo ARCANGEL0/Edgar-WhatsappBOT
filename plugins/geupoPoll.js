@@ -13,23 +13,23 @@ let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
     zod = normalizedText; // Return the input as it is if it's already in the array
   } else {
     // Translations for normalized Portuguese input
-    const translations = {
-      "aries": "aries",
-      "taurus": "touro",
-      "gemini": "gemeos",
-      "cancer": "cancer",
-      "leo": "leao",
-      "virgo": "virgem",
-      "libra": "libra",
-      "scorpio": "escorpiao",
-      "sagittarius": "sagitario",
-      "capricorn": "capricornio",
-      "aquarius": "aquario",
-      "pisces": "peixes",
-    };
-
+ 
+const translations = {
+  "aries": "aries",
+  "touro": "taurus",
+  "gemeos": "gemini",
+  "cancer": "cancer",
+  "leao": "leo",
+  "virgem": "virgo",
+  "libra": "libra",
+  "escorpiao": "scorpio",
+  "sagitario": "sagittarius",
+  "capricornio": "capricorn",
+  "aquario": "aquarius",
+  "peixes": "pisces",
+};
     // Check if there's a translation for the normalized input text
-    const translatedSign = translations["leo"];
+    const translatedSign = translations[normalizedText];
     console.log(translatedSign)
     // Return the translated sign or a default value if not found
     zod = translatedSign ;
