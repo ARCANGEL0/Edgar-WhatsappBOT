@@ -17,7 +17,7 @@ if(!global.quiz[id]) {
   
   
 }
-console.log(gloval.quiz[id])
+console.log(global.quiz[id])
     if (global.quiz[id].math) {
         m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
