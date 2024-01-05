@@ -88,15 +88,15 @@ if (global.xppergunta) {
 𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙖-𝙢𝙚 𝙘𝙤𝙢 𝙖𝙨 𝙢𝙖𝙞𝙨 𝙨𝙞𝙣𝙘𝙚𝙧𝙖𝙨 𝙞𝙣𝙙𝙖𝙜𝙖𝙘𝙤𝙚𝙨 𝙙𝙚 𝙨𝙪𝙖 𝙖𝙡𝙢𝙖 𝙨𝙚𝙢 𝙩𝙚𝙧𝙘𝙚𝙞𝙧𝙤𝙨
    ━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━
   `)
-  return 0
+  return !0
 }
-try {
- if(global.db.data.chats[m.chat].ricksan==false){
+if(global.db.data.chats[m.chat].ricksan==false){
    m.react(”❌)
-   break;
+   return !0;
  }
- else {
-else if(!m.quoted){
+try {
+ 
+ if(!m.quoted){
   
 const data = {
     "model": "gpt-3.5-turbo",
@@ -165,7 +165,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
  console.log(global.db.data.chats[m.chat].rickgpt["config"])
   }
   
-}
+
 
   else if (m.quoted && m.quoted.id === global.db.data.chats[m.chat].rickgpt["config"CB].lastQuestion ) {
  console.log(m.quoted.id)
