@@ -42,7 +42,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
-if(!global.db.data.chats[m.chat].ricksan){
+if(global.db.data.chats[m.chat].ricksan == null){
   global.db.data.chats[m.chat].ricksan = true
 }
 if (!global.db.data.chats[m.chat].rickgpt) {
