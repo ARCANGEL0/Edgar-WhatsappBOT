@@ -143,7 +143,7 @@ let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiRep
   
   
   
-}
+
 }
   catch (error) {
     console.error('Error making GPT-3 request:', error);
