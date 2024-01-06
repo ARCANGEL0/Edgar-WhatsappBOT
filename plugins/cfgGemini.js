@@ -113,7 +113,9 @@ global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text
 
  
 await fetch(endpoint)
-.then(response=>{ return response.json()})
+.then(response=>{
+  console.log(response)
+  return response.json()})
 .then(data => {
   console.log(data)
   if(!data.status){
