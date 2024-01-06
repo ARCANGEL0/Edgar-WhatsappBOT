@@ -48,7 +48,8 @@ if (!global.db.data.chats[m.chat].gemini["config"]) {
 }
 
 
-if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
+if (!text){
+throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
 🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
 
@@ -57,7 +58,9 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ${usedPrefix + command} Quem foi Franz Kafka
 ${usedPrefix + command} Codigo em JS para um jogo da velha
 
-╰━━━━━━━━━━━━━━━━━━⬣` 
+╰━━━━━━━━━━━━━━━━━━⬣`
+}
+
 const allan = [
   "https://64.media.tumblr.com/5b251bcd6963982e65f8bb6347747a8f/20f1eaac7e8f3db2-fd/s500x750/0ddf9f5d817c5ba437064ce63dad5f8e92543109.jpg",
   "https://static.printler.com/cache/8/3/b/7/6/4/83b764f67a0e907794fa8e8a38379840850049cb.jpg",
@@ -78,7 +81,7 @@ Eis a questao do usuario:
 ${text}
 
 
-`;
+`
 if (global.xppergunta) {
   await m.reply(`
    ━━━━━━━━━⬣💀⬣━━━━━━━━ 
@@ -92,7 +95,7 @@ if (global.xppergunta) {
  
 
 
-  };
+  
   
 try {
   if(!m.quoted){
