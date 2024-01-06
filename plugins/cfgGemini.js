@@ -73,17 +73,9 @@ if (global.xppergunta) {
   `)
   return 0
 }
- await conn.sendMessage(m.chat,{ react: {
-        text: "🌒", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
+ 
 
-const data = {
-    "model": "gpt-3.5-turbo",
-    "temperature":0.4,
-    "messages": [{ "role": "system", "content": prompt } 
-    ],
+
   };
   
 try {
@@ -101,7 +93,8 @@ global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: te
   const endpoint = `https://vihangayt.me/tools/gemini?q=${text}`
   // ////
  
-// frtch 
+// frtch
+m.react("🌒")
  
 await fetch(endpoint)
 .then(response=>{ return response.json()})
@@ -111,8 +104,15 @@ await fetch(endpoint)
     
      m.reply("Seridor ocupado ")
   }
+  
+  let aiReply = data.text
   m.react("🌕")
-  console.log(data)
+ let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgae.jpg', aiReply, m)
+      
+      
+      global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+ 
+ global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
 })
 .catch(error => console.log(error))
 
@@ -121,9 +121,7 @@ await fetch(endpoint)
 
 
   /*
- global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
  */
   
   
