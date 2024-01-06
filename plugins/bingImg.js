@@ -21,13 +21,14 @@ try {
 
 let url =`https://vihangayt.me/tools/ai-bingimg?q=${text}`
 await fetch(url)
-.then(response=>console.log(response.data)
+.then(response=>console.log(response.data))
 .catch(error => console.log(error))
     
     
   
+    } 
     
-  } catch(e) {
+    catch(e) {
     console.log(e)
     throw '*Oops! Something went wrong while generating images. Please try again later.*';
   }
