@@ -112,7 +112,7 @@ global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text
   const endpoint = `https://vihangayt.me/tools/gemini?q=${prompt}`
 
  
-await fetch(endpoint)
+await fetch(`https://vihangayt.me/tools/gemini?q=Ajabcomo%20edgar%20allan%20poe.%20ola%20poe`)
 .then(response=>{
   console.log(response)
   return response.json()
