@@ -23,7 +23,7 @@ let url =`https://vihangayt.me/tools/ai-bingimg?q=${text}`
 await fetch(url)
 .then(response=>{ return response.json()})
 .then(data => {
-  console.log(data)
+  
   if(!data.status){
     
      m.reply("Seridor ocupado ")
