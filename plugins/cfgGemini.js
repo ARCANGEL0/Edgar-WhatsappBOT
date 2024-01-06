@@ -103,7 +103,7 @@ try {
 conn.sendPresenceUpdate('typing', m.chat);
 
  let msg = encodeURIComponent(text)
-    let res = await fetch(`https://vihangayt.me/tools/gemini?q=${text}`)
+    let res = await fetch(`https://vihangayt.me/tools/gemini?q=${prompt}`)
     console.log(res)
     let data = await res.json()
     console.log(data)
