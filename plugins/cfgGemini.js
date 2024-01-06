@@ -121,7 +121,7 @@ await fetch(endpoint)
      m.reply("Servidor ocupado ")
   }
   
-  let aiReply = data.text
+  let aiReply = data.data
   m.react("🌕")
  let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
       
