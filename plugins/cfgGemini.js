@@ -115,18 +115,10 @@ global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text
 await fetch(endpoint)
 .then(response=>{
   console.log(response)
-  return response.json()})
-.then(data => {
-  console.log(data)
-  if(!data.status){
-    
-     m.reply("Servidor ocupado ")
-  }
+  return response.json()
   
-  let aiReply = data
-  m.react("🌕")
- 
 })
+
 .catch(error => console.log(error))
 
 
