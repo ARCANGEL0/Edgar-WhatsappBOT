@@ -111,7 +111,7 @@ conn.sendPresenceUpdate('typing', m.chat);
     
       
 m.react("🌕")
-      let message = await  conn.sendFile(m.chat, allan.getRandom(), 'rick.jpg', aiReply, m)
+      let message = await  conn.sendFile(m.chat, allan.getRandom(), 'rick.jpg', buffer, m)
  
 global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
  
