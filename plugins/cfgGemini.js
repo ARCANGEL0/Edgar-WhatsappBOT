@@ -121,7 +121,7 @@ global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
   }
 
 
-}
+
   catch (error) {
     console.error('Error making GPT-3 request:', error);
     // Handle error response or throw an error
