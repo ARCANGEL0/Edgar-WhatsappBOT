@@ -28,9 +28,22 @@ let res = await fetch(`https://vihangayt.me/tools/ai-bingimg?q=${text}`)
     let buffer = data.data
 
 
-    
-    
-  
+    const imgBing = data.data;
+
+// Get a random index within the length of the array
+const randomIndex = Math.floor(Math.random() * imgBing.length);
+
+// Retrieve the random wallpaper object
+const resultado = imgBing[randomIndex];
+
+// Retrieve the 'path' property from the random wallpaper object
+
+
+
+// Display the result or use it as needed
+console.log(resultado);
+  m.react("✔️")
+      await conn.sendFile(m.chat, resultado, 'image.png', null, m);
     } 
     
     catch(e) {
