@@ -28,6 +28,7 @@ await fetch(url)
     
      m.reply("Seridor ocupado ")
   }
+  console.log(data)
 })
 .catch(error => console.log(error))
     
