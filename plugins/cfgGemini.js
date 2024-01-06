@@ -123,17 +123,17 @@ await fetch(endpoint)
   
   let aiReply = data.data
   m.react("🌕")
- let message =   conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
+ 
+})
+.catch(error => console.log(error))
+
+
+let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
       
       
       global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
  
  global.db.data.chats[m.chat].gemini["config"].resposta = aiReply
-})
-.catch(error => console.log(error))
-
-
-
 
 
   /*
