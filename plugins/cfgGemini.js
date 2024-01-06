@@ -98,25 +98,24 @@ if (global.xppergunta) {
   
   
 try {
-  if(!m.quoted){
+  
     m.react("🌒")
 conn.sendPresenceUpdate('typing', m.chat);
 
  
-global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text });
-    
 
 
-
-  
-  const endpoint = `https://vihangayt.me/tools/gemini?q=${prompt}`
 
  
-await fetch(`https://vihangayt.me/tools/gemini?q=Ajabcomo%20edgar%20allan%20poe.%20ola%20poe`)
+await fetch(`https://vihangayt.me/tools/gemini?q=${prompt}`)
 .then(response=>{
   console.log(response)
   return response.json()
   m.react("🌕")
+})
+.then(result=>{
+  console.log(result)
+  
 })
 
 .catch(error => console.log(error))
@@ -132,7 +131,7 @@ await fetch(`https://vihangayt.me/tools/gemini?q=Ajabcomo%20edgar%20allan%20poe.
   
   
 
-}
+
 
 }
   catch (error) {
