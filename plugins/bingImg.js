@@ -20,17 +20,9 @@ try {
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
 
 let url =`https://vihangayt.me/tools/ai-bingimg?q=${text}`
-await fetch(url)
-.then(response=>{ return response.json()})
-.then(data => {
-  
-  if(!data.status){
-    
-     m.reply("Seridor ocupado ")
-  }
-  console.log(data.data)
-})
-.catch(error => console.log(error))
+let resp = await fetch(url)
+console.log(resp.json())
+
     
     
   
