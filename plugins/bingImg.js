@@ -24,6 +24,9 @@ await fetch(url)
 .then(response=>{ return response.json()})
 .then(data => {
   console.log(data)
+  if(!data.status){
+    await m.reply("Seridor ocupado ")
+  }
 })
 .catch(error => console.log(error))
     
