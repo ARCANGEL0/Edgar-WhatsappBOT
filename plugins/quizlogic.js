@@ -81,7 +81,7 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
     
 }
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
+else if (global.db.data.chats[m.chat].edgargpt && m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
         text: "🌒", // use an empty string to remove the reaction
@@ -110,7 +110,7 @@ global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
  
 }
 
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id) {
+else if (global.db.data.chats[m.chat].rickgpt && m.quoted && m.quoted.id == global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
         text: "🧬", // use an empty string to remove the reaction
