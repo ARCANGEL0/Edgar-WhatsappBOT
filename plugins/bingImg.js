@@ -25,7 +25,8 @@ await fetch(url)
 .then(data => {
   console.log(data)
   if(!data.status){
-    await m.reply("Seridor ocupado ")
+    
+     m.reply("Seridor ocupado ")
   }
 })
 .catch(error => console.log(error))
