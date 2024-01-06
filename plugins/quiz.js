@@ -12888,7 +12888,7 @@ global.quiz[m.chat] = {
       "time": new Date().getTime()
     };
     
-    
+    console.log(global.quiz[m.chat])
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
      global.quiz[m.chat].math = true;
     } else {
