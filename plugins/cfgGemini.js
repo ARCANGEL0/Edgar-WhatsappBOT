@@ -102,7 +102,7 @@ try {
     m.react("🌒")
 conn.sendPresenceUpdate('typing', m.chat);
 
- let msg = encodeURIComponent(prompt)
+ let msg = encodeURIComponent(text)
     let res = await fetch(`https://vihangayt.me/tools/gemini?q=${msg}`)
     console.log(res)
     let data = await res.json()
