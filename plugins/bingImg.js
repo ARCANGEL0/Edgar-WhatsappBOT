@@ -18,8 +18,8 @@ try {
     await conn.sendMessage(m.chat, {text: `╭━━━━━━━━━⬣
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
-let msg = encodeURIComponent(text)
-let url =`https://vihangayt.me/tools/ai-bingimg?q=${msg}`
+
+let url =`https://vihangayt.me/tools/ai-bingimg?q=${text}`
 await fetch(url)
 .then(response=>console.log(response.data)
 .catch(error => console.log(error))
