@@ -110,10 +110,7 @@ global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text
 
   
   const endpoint = `https://vihangayt.me/tools/gemini?q=${prompt}`
-  // ////
- 
-// frtch
-m.react("🌒")
+
  
 await fetch(endpoint)
 .then(response=>{ return response.json()})
@@ -124,19 +121,13 @@ await fetch(endpoint)
      m.reply("Servidor ocupado ")
   }
   
-  let aiReply = data.data
+  let aiReply = data
   m.react("🌕")
  
 })
 .catch(error => console.log(error))
 
 
-let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
-      
-      
-      global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].gemini["config"].resposta = aiReply
 
 
   /*
