@@ -116,7 +116,7 @@ await fetch(endpoint)
 .then(response=>{
   console.log(response)
   return response.json()
-  
+  m.react("🌕")
 })
 
 .catch(error => console.log(error))
