@@ -19,9 +19,14 @@ try {
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`}, {quoted: m});
 
-let url =`https://vihangayt.me/tools/ai-bingimg?q=${text}`
-let resp = await fetch(url)
-console.log(resp.json())
+
+
+let res = await fetch(`https://vihangayt.me/tools/ai-bingimg?q=${text}`)
+    console.log(res)
+    let data = await res.json()
+    console.log(data)
+    let buffer = data.data
+
 
     
     
