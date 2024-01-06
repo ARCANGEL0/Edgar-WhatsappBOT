@@ -102,35 +102,23 @@ try {
     m.react("🌒")
 conn.sendPresenceUpdate('typing', m.chat);
 
+ let msg = encodeURIComponent(prompt)
+    let res = await fetch(`https://vihangayt.me/tools/gemini?q=${msg}`)
+    console.log(res)
+    let data = await res.json()
+    console.log(data)
+    let buffer = data.data
+    
+      
+m.react("🌕")
+      let message = await  conn.sendFile(m.chat, edgar.getRandom(), 'rick.jpg', aiReply, m)
  
-
-
-
+global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
  
-await fetch(`https://vihangayt.me/tools/gemini?q=${prompt}`)
-.then(response=>{
-  console.log(response)
-  return response.json()
-  m.react("🌕")
-})
-.then(result=>{
-  console.log(result)
-  
-})
-
-.catch(error => console.log(error))
-
-
-
-
-  /*
+ global.db.data.chats[m.chat].gemini["config"].resposta = buffer
  
- */
-  
-  
-  
-  
-
+ console.log(global.db.data.chats[m.chat].gemini["config"])
+  }
 
 
 }
