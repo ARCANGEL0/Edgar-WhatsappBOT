@@ -19,7 +19,7 @@ const fkontak = {
 let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
   let res = ''
-res = str.split('').map(char => {       
+res = text.split('').map(char => {       
 char.charCodeAt(0).toString(2);  
  }).join(' ')
 console.log(res)
@@ -29,7 +29,7 @@ console.log(res)
 else if(selected == "decode ")
 {
   
-  var newBin = str.split(" ")
+  var newBin = text.split(" ")
 var binCode = []
 for (i = 0; i < newBin.length; i++) {
     binCode.push(String.fromCharCode(parseInt(newBin[i], 2)))
