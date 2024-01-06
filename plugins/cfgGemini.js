@@ -33,18 +33,18 @@ if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
 
-if (!global.db.data.chats[m.chat].edgargpt) {
-  global.db.data.chats[m.chat].edgargpt = {};
+if (!global.db.data.chats[m.chat].gemini) {
+  global.db.data.chats[m.chat].gemini = {};
 }
 
-if (!global.db.data.chats[m.chat].edgargpt["config"]) {
-  global.db.data.chats[m.chat].edgargpt["config"] = {
+if (!global.db.data.chats[m.chat].gemini["config"]) {
+  global.db.data.chats[m.chat].gemini["config"] = {
    lastQuestion: '',
    resposta:''
   };
 }
-  if (!global.db.data.chats[m.chat].edgargpt[m.sender]) {
-  global.db.data.chats[m.chat].edgargpt[m.sender] = [];
+  if (!global.db.data.chats[m.chat].gemini[m.sender]) {
+  global.db.data.chats[m.chat].gemini[m.sender] = [];
 }
 
 
@@ -100,7 +100,7 @@ try {
 conn.sendPresenceUpdate('typing', m.chat);
 
  
-global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: text });
+global.db.data.chats[m.chat].gemini[m.sender].push({ role: 'user', content: text });
     
 
 
@@ -123,12 +123,12 @@ await fetch(endpoint)
   
   let aiReply = data.data
   m.react("🌕")
- let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
+ let message =   conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', aiReply, m)
       
       
-      global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+      global.db.data.chats[m.chat].gemini["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].edgargpt["config"].resposta = aiReply
+ global.db.data.chats[m.chat].gemini["config"].resposta = aiReply
 })
 .catch(error => console.log(error))
 
