@@ -24,11 +24,9 @@ handler.before = async function (m) {
    "id": ""
   }
 }
-if (m.text == "placar") {
-  console.log("placar")
-}
-console.log("poha  "+ m.quoted.id)
-else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
+
+
+if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       
