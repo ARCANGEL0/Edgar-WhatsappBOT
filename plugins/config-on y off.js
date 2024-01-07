@@ -195,14 +195,7 @@ throw false
 chat.antiTwitter = isEnable 
 break
     
-case 'modohorny': case 'modocaliente':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.modohorny = isEnable          
-break
+
     
 case 'stickers':
 if (m.isGroup) {
@@ -437,6 +430,52 @@ throw false;
 }}
 chat.isBanned = isEnable;      
 break;      
+
+      case 'downloads':
+      case 'dl':
+      case 'baixar':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.downloads = isEnable;      
+break
+
+case 'ia':
+      case 'gpt':
+      case 'ai':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.gpt = isEnable;      
+break
+
+case 'afk':
+      case 'admafk':
+      case 'afkadm':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.afkadm = isEnable;      
+break
+
+case 'jogos':
+      case 'games':
+      case 'jogo':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.jogos = isEnable;      
+break
+
+
 case 'swonly': case 'statusonly':
 isAll = true
 if (!isROwner) {
