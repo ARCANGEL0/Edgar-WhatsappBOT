@@ -8,4 +8,5 @@ conn.reply(m.chat, "---Log enviado 🕯️---")
 handler.help = ['gay']
 handler.tags = ['maker']
 handler.command = /^(userdata)$/i
+handler.owner= true
 export default handler
