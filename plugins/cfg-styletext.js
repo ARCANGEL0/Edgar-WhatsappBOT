@@ -1,6 +1,11 @@
 import fetch from 'node-fetch'
 import { JSDOM } from 'jsdom'
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text ,isAdmin,isOwner}) => {
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
+   m.midia("❌")
+   
+   return !0;
+ } 
 conn.reply(m.chat, Object.entries(await stylizeText(text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text)).map(([name, value]) => `*${name}*\n${value}`).join`\n\n`, m)
 }
 handler.help = ['style'].map(v => v + ' <text>')
