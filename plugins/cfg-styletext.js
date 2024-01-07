@@ -37,12 +37,13 @@ async function stylizeText(stylename, text) {
   for (let tr of table) {
     let name = tr.querySelector('.aname').innerHTML;
     let content = tr.children[1].textContent.replace(/^\n/, '').replace(/\n$/, '');
-    obj[name + (obj[name] ? ' Reversed' : '')] = content;
+    obj[name] = content;
   }
 
-  return obj[stylename] || 'Invalid stylename';
-}
+  const stylizedText = obj[stylename] || obj[`${stylename} Reversed`];
 
+  return stylizedText || 'Invalid stylename';
+}
 async function getAllStyles() {
   let res = await fetch('http://qaz.wtf/u/convert.cgi?text=a');
   let html = await res.text();
