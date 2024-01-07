@@ -1,6 +1,6 @@
 /* CREDITOS: https://github.com/FG98F */
 
-let handler = async (m, { args, usedPrefix, command, conn }) => {
+let handler = async (m, { isAdmin, isOwner, args, usedPrefix, command, conn }) => {
   
   
 if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
@@ -231,7 +231,7 @@ await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n⚡ 𝙀𝙓�
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
 ], m,)}*/
         
-if (command == 'apostar') {       
+if (command == 'apostar' || 'slot') {       
 await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what you will*\n\n⚡ 𝙀𝙓𝙋:\n${usedPrefix}slot1 ${apuesta}\n🐈 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎:\n${usedPrefix}slot2 ${apuesta}\n💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎:\n${usedPrefix}slot3 ${apuesta}`, m)}
 /*await conn.sendHydrated(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what you will*`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
@@ -244,7 +244,7 @@ await conn.reply(m.chat, `*Elija en que apostará ${apuesta}*\n\n*Choose what yo
 }
 handler.help = ['slot <apuesta>']
 handler.tags = ['game']
-handler.command = ['slot', 'apostar', 'slot1', 'slot2', 'slot3']
+handler.command = ['slot', 'apostar', 'slotxp', 'apostaxp']
 export default handler
 
 function msToTime(duration) {
