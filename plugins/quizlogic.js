@@ -57,6 +57,7 @@ console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
           
         }
         else {
+          console.log(global.quiz[m.chat])
           await m.reply(`
 ╭━━━━━━━━━⬣
 ┃ 👁️ ℜ𝔢𝔰𝔭𝔬𝔰𝔱𝔞 𝔢𝔯𝔯𝔞𝔡𝔞
