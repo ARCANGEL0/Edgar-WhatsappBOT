@@ -1,8 +1,12 @@
 /* Created by https://github.com/unptoadrih15 */
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn,isAdmin,isOwner, text, usedPrefix, command }) => {
   
- 
+ if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
+   m.react("❌")
+   
+   return !0;
+ } 
   
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
