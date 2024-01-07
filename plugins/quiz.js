@@ -12919,7 +12919,7 @@ ${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _�
     global.db.data.chats[m.chat].quiz.math = false
       }
       
-      if(global.quizxp&& global.db.data.chats[m.chat].xppergunta){
+      if(global.db.data.chats[m.chat].quizxp.modo && !global.db.data.chats[m.chat].xppergunta){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
