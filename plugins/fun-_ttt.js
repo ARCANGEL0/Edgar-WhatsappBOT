@@ -2,7 +2,7 @@ import { format } from 'util'
 let debugMode = !1
 //let winScore = 4999
 //let playScore = 99
-export async function before(m) {
+export async function before(m, {isAdmin}) {
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -99,6 +99,16 @@ await this.sendMessage(room.x, { text: str, mentions: this.parseMention(str)}, {
 await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, { quoted: fkontak, m })
     if(!users[room.game.playerX])   {
       users[room.game.playerX] = {
+        exp: 0,
+        limit:0,
+        role:'',
+        level:0,
+        adm: isAdmin,
+        legendary: false
+      }
+    } 
+    if(!users[room.game.playerO])   {
+      users[room.game.playerO] = {
         exp: 0,
         limit:0,
         role:'',
