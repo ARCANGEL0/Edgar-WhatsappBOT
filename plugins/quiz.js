@@ -1,7 +1,11 @@
 
 const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
   
-  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
+   m.react("❌")
+   
+   return !0;
+ } 
   if(!global.xppergunta){
     global.xppergunta = {}
   }
