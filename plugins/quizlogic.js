@@ -39,6 +39,11 @@ if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo) {
 
 console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
 
+
+if(!global.db.data.chats[m.chat].jogadores){
+  global.db.data.chats[m.chat].jogadores= {}
+}
+
 if(!global.db.data.chats[m.chat].jogadores[m.sender]){
              global.db.data.chats[m.chat].jogadores[m.sender] = {
                xp:0,
