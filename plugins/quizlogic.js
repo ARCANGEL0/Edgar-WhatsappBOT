@@ -24,9 +24,10 @@ handler.before = async function (m) {
    "id": ""
   }
 }
-
-
-if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
+if (m.text == "placar") {
+  console.log("placar")
+}
+else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       
@@ -80,7 +81,7 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
     
 }
-else if (global.db.data.chats[m.chat].edgargpt && m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
+else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
         text: "🌒", // use an empty string to remove the reaction
@@ -109,7 +110,7 @@ global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
  
 }
 
-else if (global.db.data.chats[m.chat].rickgpt && m.quoted && m.quoted.id == global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id) {
+else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
         text: "🧬", // use an empty string to remove the reaction
@@ -260,4 +261,3 @@ console.log(result.choices[0].message.content);
 handler.exp = 0
 
 export default handler
-
