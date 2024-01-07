@@ -12896,6 +12896,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
       `);
 
 global.quiz[m.chat] = {
+  "math":false,
       "cp": Pergunta,
       "ca": Resposta,
       "cm": Motivo,
