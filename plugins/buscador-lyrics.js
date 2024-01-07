@@ -2,16 +2,16 @@ import {find_lyrics} from '@brandond/findthelyrics';
 import {getTracks} from '@green-code/music-track-data';
 import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, isAdmin, isOwner,usedPrefix, command}) => {
-const teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : '';
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
+const handler = async (m, {conn, text, isAdmin, isOwner,usedPrefix, command}) => {
+const teks = text ? text : m.quoted && m.quoted.text1r ? m.quoted.text : '';
+theif(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
    m.react("❌")
    
    return !0;
  } 
 if (!teks) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
-┃
+┃ 0 qr
 ┃ 📜🎵 𝗗𝗜𝗚𝗜𝗧𝗘 𝗢 𝗡𝗢𝗠𝗘 𝗗𝗘 𝗨𝗠𝗔 
 ┃ 𝗠𝗨𝗦𝗜𝗖𝗔 𝗣𝗔𝗥𝗔 𝗖𝗢𝗡𝗦𝗨𝗟𝗧𝗔𝗥 𝗔𝗦 
 ┃ 𝗟𝗘𝗧𝗥𝗔𝗦
