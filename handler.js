@@ -157,6 +157,7 @@ global.db.data.chats[m.chat] = {
       "id": '',
       "time": ''
   },
+  users: {},
 isBanned: false,
 welcome: true,
 detect: false,
