@@ -9,7 +9,7 @@ var number = text.split`@`[1]
 var number = text
 }
 
-if(!text && !m.quoted) return conn.reply(m.chat, `*MARQUE O USUARIO, ESCREVA O NUMERO OU RESPONDA UMA MENSAGEM PARA REINICIAR DADOS*`, m)
+if(command=="resetuser" && !text && !m.quoted) return conn.reply(m.chat, `*MARQUE O USUARIO, ESCREVA O NUMERO OU RESPONDA UMA MENSAGEM PARA REINICIAR DADOS*`, m)
 if(isNaN(number)) return conn.reply(m.chat, `*O NÚMERO QUE DIGITOU NAO É VÁLIDO PARA REINICIAR OS DADOS*`, m)
 
 if(command=="resetuser")
