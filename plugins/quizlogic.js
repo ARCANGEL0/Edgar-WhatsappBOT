@@ -54,7 +54,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
 }
 }
 
-if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo) {
+if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo && global.quiz[m.chat].id == m.quoted.id) {
 
 console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
 
