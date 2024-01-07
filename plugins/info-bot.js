@@ -48,7 +48,7 @@ if (/^oi bot|ola edgar|ola poe|poe$/i.test(m.text)) {
     
 await conn.sendMessage(m.chat, {text: bot, mentions: [m.sender]}, {quoted: fkontak})
 //conn.sendButton(m.chat, `¡𝑬𝒚! 𝑨𝒒𝒖í 𝒆𝒔𝒕𝒐𝒚. 𝒀𝒐 𝒑𝒖𝒆𝒅𝒐 𝒂𝒚𝒖𝒅𝒂𝒓 👉👈 𝑯𝒆𝒚! 𝑰'𝒎 𝒉𝒆𝒓𝒆. 𝑰 𝒄𝒂𝒏 𝒉𝒆𝒍𝒑 🙌`, wm, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
-if (/^regras|Regras|normas$/i.test(m.text)) {
+if (/^quais sao as regras|quais as Regras/i.test(m.text)) {
     
     conn.sendMessage(m.chat,{text: `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 ⚠️ 〙*
 ➽❌ 𝙋𝙧𝙤𝙞𝙗𝙞𝙙𝙤 𝙘𝙝𝙖𝙢𝙖𝙧 𝙤 𝙗𝙤𝙩
