@@ -44,5 +44,5 @@ handler.tags = ['group']
 handler.command = /^(gpconfig|config)$/i
 handler.admin = true
 handler.botAdmin = false
-handler.exp = 200
+handler.exp = 0
 export default handler
