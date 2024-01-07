@@ -27,7 +27,13 @@ return notFond}
   
   
 }
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command,isAdmin,isOwner }) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝗗𝗶𝗴𝗶𝘁𝗲 𝗮 𝗽𝗮𝗹𝗮𝘃𝗿𝗮-𝗰𝗵𝗮𝘃𝗲 𝗽𝗮𝗿𝗮 𝗯𝘂𝘀𝗰𝗮𝗿. 🔎 \n𝗘𝘅𝗲𝗺𝗽𝗹𝗼\n*${usedPrefix + command} Universe*`
 wikipedia(`${text}`).then(res => {
 let info = `𝙄𝙨𝙩𝙤 𝙛𝙤𝙞 𝙤 𝙦𝙪𝙚 𝙚𝙪 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙚𝙞 🔎
