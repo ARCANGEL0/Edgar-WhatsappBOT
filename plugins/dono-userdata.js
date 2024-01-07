@@ -4,7 +4,7 @@ if(command=="userdata"){
 console.log(global.db.data.users[who])
 conn.reply(m.chat, "---Log enviado 🕯️---")
 }
-if(command=="chdata"){
+if(command=="chdat"){
 console.log(global.db.data.chats[m.chat])
 conn.reply(m.chat, "---Log enviado 🕯️---")
 }
