@@ -88,8 +88,19 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
 ┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
 ╰━━━━━━━━━━━━━━━━━━⬣
           `)
-        
-          global.xppergunta=false
+        global.xppergunta[m.chat]=false
+      
+        global.quiz[m.chat] = {
+        "math": false,
+      "cp": '',
+      "ca": '',
+      "cm": '',
+      "xp": 0,
+      "id": '',
+      "time": ''
+
+    }
+          
           
         }
         else {
