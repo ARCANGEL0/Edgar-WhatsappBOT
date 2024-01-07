@@ -5,14 +5,14 @@ let stylenameConversions = {};
 
 let handler = async (m, { conn, args, isAdmin, isOwner }) => {
   if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos === false) {
-    m.midia("â");
+    m.react("❌");
     return !0;
   }
 
   if (!args[0]) {
     const allStyles = await getAllStyles();
-    return conn.reply(m.chat, `─┅──┅❖ ❖─┅──┅
-    🪶 𝙴𝚜𝚝𝚒𝚕𝚘𝚜 𝚍𝚒𝚜𝚙𝚘𝚗𝚒𝚟𝚎𝚒𝚜s:\n${allStyles.join('  ⏦ ')}`, m);
+    return conn.reply(m.chat, `─┅─┅──┅┅──┅❖ ❖─┅──┅─┅─┅┅
+    🪶 𝙴𝚜𝚝𝚒𝚕𝚘𝚜 𝚍𝚒𝚜𝚙𝚘𝚗𝚒𝚟𝚎𝚒𝚜s:\n${allStyles.join(' ϯ ')}`, m);
   }
 
   let stylename = args[0].toLowerCase();
@@ -32,7 +32,7 @@ handler.exp = 0;
 
 async function stylizeText(stylename, text) {
   if (!text) {
-    return 'Please provide text to stylize.';
+    return '🪶 𝔇𝔦𝔤𝔞-𝔪𝔢 𝔬 𝔢𝔰𝔱𝔦𝔩𝔬 𝔞 𝔪𝔬𝔡𝔦𝔣𝔦𝔠𝔞𝔯';
   }
 
   let res = await fetch(`http://qaz.wtf/u/convert.cgi?text=${encodeURIComponent(text)}`);
@@ -49,7 +49,7 @@ async function stylizeText(stylename, text) {
 
   const stylizedText = obj[stylename];
 
-  return stylizedText || 'Invalid stylename';
+  return stylizedText || 'ℑ𝔫𝔳𝔞𝔩𝔦𝔡𝔬 ✖️';
 }
 
 async function getAllStyles() {
