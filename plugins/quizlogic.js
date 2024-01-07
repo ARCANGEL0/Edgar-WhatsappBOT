@@ -21,8 +21,7 @@ else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       
-      if(global.quizxp[m.chat].modo==false)
-      {
+      if(global.quizxp[m.chat].modo==false){
         await m.reply(`
         apenas em modo xp
         `)
@@ -70,34 +69,6 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       }
     
     
-}
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id) {
-
-await conn.sendMessage(m.chat,{ react: {
-        text: "🕰️", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
-
- console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
- 
- 
-
- let newReply = await requestToChatGPT(m.text)
-
-await conn.sendMessage(m.chat, {react: {
-        text: "👁️", // use an empty string to remove the reaction
-        key: m.key}
-    },
-    m  )
-    let message = await  conn.reply(m.chat, newReply, m);
- 
-global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].chatgpt["config"].resposta = newReply
- 
- 
 }
   
 else {
