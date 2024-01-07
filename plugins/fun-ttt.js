@@ -1,5 +1,5 @@
 import TicTacToe from '../lib/tictactoe.js' 
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+let handler = async (m, { conn, isAdmin, isOwner, usedPrefix, command, text }) => {
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
