@@ -1,6 +1,6 @@
 
 let handler = m => m
-handler.before = async function (m,{isOwner}) {
+handler.before = async function (m,{isOwner,isAdmin}) {
   const rick = [
   "https://cdn.dribbble.com/users/1230354/screenshots/4923869/rickandmorty.png",
   "https://banner2.cleanpng.com/20180320/hwq/kisspng-pocket-mortys-rick-sanchez-morty-smith-computer-ic-rick-avatar-blue-vers-icon-5ab1ccd860a082.9774853115216017523958.jpg",
