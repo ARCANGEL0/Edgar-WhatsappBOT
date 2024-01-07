@@ -12948,6 +12948,19 @@ ${global.quiz[m.chat].cm}
 
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
+          global.xppergunta[m.chat]=false
+      global.quizxp[m.chat].modo = false
+        global.quiz[m.chat] = {
+        "math": false,
+      "cp": '',
+      "ca": '',
+      "cm": '',
+      "xp": 0,
+      "id": '',
+      "time": ''
+
+    }
+    
     }
     }
     
