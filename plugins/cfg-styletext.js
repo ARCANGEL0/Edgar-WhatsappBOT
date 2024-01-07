@@ -40,6 +40,6 @@ async function stylizeText(style, text) {
 
 handler.help = ['styletext'].map(v => v + ' <style> <text>');
 handler.tags = ['tools'];
-handler.command = /^styletext/i;
+handler.command = /^styletext|style/i;
 handler.exp = 0;
 export default handler;
