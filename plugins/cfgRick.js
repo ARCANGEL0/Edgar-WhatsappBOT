@@ -97,6 +97,12 @@ if(global.db.data.chats[m.chat].ricksan===false){
    console.log("on loop of fail")
    return !0;
  }
+ 
+ if(chat.gpt===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 try {
  
  if(!m.quoted){
