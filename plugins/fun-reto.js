@@ -10,7 +10,7 @@ _${pickRandom(global.poe)}_ 📜💀
  ━━━━━━━━━⬣⬣━━━━━━━━`)
 }
 handler.tags = ['frases']
-handler.command = /^bio|biografia|poe|sobre/i
+handler.command = /^biografia|sobre/i
 export default handler
 
 function pickRandom(list) {
