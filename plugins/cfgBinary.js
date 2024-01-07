@@ -18,7 +18,7 @@ const fkontak = {
 
 let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
-  let resposta= text.split(" ")[0:]
+  let resposta= text.split(" ")[0::]
   console.log(resposta)
   let res = ''
 res = text.split('').map(char => {       
