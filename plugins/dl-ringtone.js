@@ -11,8 +11,13 @@ export default handler
 
 
 import fetch from 'node-fetch'
-let handler = async(m, { conn, text, command, usedPrefix }) => {
+let handler = async(m, {isAdmin,isOwner, conn, text, command, usedPrefix }) => {
   
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].downloads===false){
+   m.react("❌")
+   
+   return !0;
+ } 
   async function ringtone(title) {
 return new Promise((resolve, reject) => {
 axios.get('https://meloboom.com/es/search/'+title).then((get) => {
