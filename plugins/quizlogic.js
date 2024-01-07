@@ -30,7 +30,7 @@ handler.before = async function (m) {
 }
 
 
-if (global.quizxp[m.chat] && (global.quizxp[m.chat].modo==true && m.quoted && m.quoted.id == global.quiz[m.chat]?.id)) {
+if (global.quizxp[m.chat] && (global.quizxp[m.chat].modo==true && m.quoted && m.quoted.id == global.quiz[m.chat].id)) {
 
 console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
         if(m.text.toUpperCase()==global.quiz[m.chat].ca){
