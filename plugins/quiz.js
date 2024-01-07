@@ -12936,10 +12936,10 @@ global.quiz[m.chat] = {
       "id": '',
       "time": ''
 
-    };
+    }
       }
       
-      if(!global.quizxp[m.chat].modo && !global.xppergunta[m.chat]){
+     else if(!global.quizxp[m.chat].modo && !global.xppergunta[m.chat]){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
@@ -12948,6 +12948,7 @@ global.quiz[m.chat] = {
 ╰━━━━━━━━━━━━━━━━━━⬣
         `)
       }
+      else{
       await m.reply(`
 ╭━━━━━━━━━⬣
 💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
@@ -12957,6 +12958,7 @@ ${global.quiz[m.chat].cm}
 
 ╰━━━━━━━━━━━━━━━━━━⬣
       `)
+    }
     }
     else if(text.includes("xp") ){
       const matches = m.text.match(/\.quiz xp (on|off)/);
