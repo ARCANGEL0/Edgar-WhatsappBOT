@@ -1,6 +1,11 @@
-let handler = async (m, { conn, command, text }) => {
+let handler = async (m, { conn,isAdmin,isOwner, command, text }) => {
 	
 
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)	
@@ -25,7 +30,7 @@ conn.reply(m.chat, personalidad, m, { mentions: conn.parseMention(personalidad) 
 handler.help = ['personalidade *<nome>*']
 handler.tags = ['fun']
 handler.command = /^personalidade/i
-handler.admin = true
+handler.admin = false
 export default handler
 
 function pickRandom(list) {
