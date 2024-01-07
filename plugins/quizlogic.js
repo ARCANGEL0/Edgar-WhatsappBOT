@@ -26,7 +26,7 @@ handler.before = async function (m) {
 }
 
 
-if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
+if (global.quizxp[m.chat].modo==false && m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
 
 console.log(global.db.data.chats[m.chat])
         if(m.text.toUpperCase()==global.quiz[m.chat].ca){
