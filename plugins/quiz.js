@@ -12924,22 +12924,9 @@ global.quiz[m.chat] = {
 
 }
     else if(text === "r"){
-      if(global.xppergunta[m.chat]==true){
-        global.xppergunta[m.chat]=false
-      global.quizxp[m.chat].modo = false
-        global.quiz[m.chat] = {
-        "math": false,
-      "cp": '',
-      "ca": '',
-      "cm": '',
-      "xp": 0,
-      "id": '',
-      "time": ''
-
-    }
-      }
       
-     else if(!global.quizxp[m.chat].modo && !global.xppergunta[m.chat]){
+      
+     if(!global.quiz[m.chat].cp){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
@@ -12948,7 +12935,10 @@ global.quiz[m.chat] = {
 ╰━━━━━━━━━━━━━━━━━━⬣
         `)
       }
-      else{
+  
+     else if(global.quiz[m.chat].cp)
+     
+      {
       await m.reply(`
 ╭━━━━━━━━━⬣
 💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.quiz[m.chat].ca}
@@ -12960,6 +12950,10 @@ ${global.quiz[m.chat].cm}
       `)
     }
     }
+    
+    
+    
+    
     else if(text.includes("xp") ){
       const matches = m.text.match(/\.quiz xp (on|off)/);
 
