@@ -12847,7 +12847,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
      global.quiz[m.chat].math = false;
     }
     
-    console.log("on quiz  "+ global.quiz[m.chat].id)
+    console.log("on quiz  "+ global.quiz[m.chat])
     // Send the question
     
 
