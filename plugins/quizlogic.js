@@ -17,7 +17,7 @@ handler.before = async function (m) {
 if (m.text == "placar") {
   console.log("placar")
 }
-else if (m.quoted && m.quoted.id == global.quiz[m.chat]?.id) {
+else if (m.quoted) {
 
 console.log(global.db.data.chats[m.chat].jogadores[m.sender])
       
