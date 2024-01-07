@@ -4,7 +4,7 @@
 
 
 
-let handler = async (m, { text, args, usedPrefix, command, conn}) => { 
+let handler = async (m, { text,isAdmin,isOwner, args, usedPrefix, command, conn}) => { 
 let user = global.db.data.users[m.sender]
   
   
