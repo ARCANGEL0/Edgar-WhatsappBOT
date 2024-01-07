@@ -34,6 +34,7 @@ handler.before = async function (m,{isOwner}) {
   }
 }
 if(m.text && isOwner){
+  console.log("dono mandando mensagem!")
   if(!global.db.data.chats[m.chat]){
   global.db.data.chats[m.chat]={}
 }
