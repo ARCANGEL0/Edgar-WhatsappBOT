@@ -14,7 +14,12 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
-
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
+   m.react("❌")
+   
+   return !0;
+ } 
+ 
 conn.game = conn.game ? conn.game : {}
 if (Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) throw `
 ╭━━━━━━━━━⬣
