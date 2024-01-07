@@ -132,7 +132,7 @@ await conn.sendMessage(m.chat, {react: {
         key: m.key}
     },
     m  )
-    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', aiReply, m)
+    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', newReply, m)
  
 global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
  
