@@ -64,7 +64,7 @@ if (new Date - users.lastslot < 60000) throw `━━━━━━━━━⬣⋆�
 ━━━━━━━━━⬣🃁🂭🂺⬣━━━━━━━━`
 users.lastslot = new Date * 1
     
-let emojis = ["🍒", "💎, "🍇"];
+let emojis = ["🍒", "💎", "🍇"];
 let a = Math.floor(Math.random() * emojis.length);
 let b = Math.floor(Math.random() * emojis.length);
 let c = Math.floor(Math.random() * emojis.length);
