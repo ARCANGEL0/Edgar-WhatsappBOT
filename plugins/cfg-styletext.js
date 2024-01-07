@@ -1,9 +1,9 @@
-import fetch from 'node-fetch'
-import { JSDOM } from 'jsdom'
+import fetch from 'node-fetch';
+import { JSDOM } from 'jsdom';
 
 let handler = async (m, { conn, args, isAdmin, isOwner }) => {
   if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos === false) {
-    m.midia("â")
+    m.midia("â");
     return !0;
   }
 
@@ -16,11 +16,11 @@ let handler = async (m, { conn, args, isAdmin, isOwner }) => {
   const text = args.slice(1).join(' ');
 
   conn.reply(m.chat, `*${stylename}*\n${await stylizeText(stylename, text)}`, m);
-}
+};
 
 handler.help = ['styletext'].map(v => v + ' (stylename) (text)');
 handler.tags = ['tools'];
-handler.command = /^styletext|style$/i;
+handler.command = /^(styletext)$/i;
 handler.exp = 0;
 
 async function stylizeText(stylename, text) {
@@ -35,15 +35,17 @@ async function stylizeText(stylename, text) {
   let obj = {};
 
   for (let tr of table) {
-    let name = tr.querySelector('.aname').innerHTML;
+    let name = tr.querySelector('.aname').innerHTML.toLowerCase();
     let content = tr.children[1].textContent.replace(/^\n/, '').replace(/\n$/, '');
     obj[name] = content;
   }
 
-  const stylizedText = obj[stylename] || obj[`${stylename} Reversed`];
+  stylename = stylename.toLowerCase();
+  const stylizedText = obj[stylename] || obj[`${stylename} reversed`];
 
   return stylizedText || 'Invalid stylename';
 }
+
 async function getAllStyles() {
   let res = await fetch('http://qaz.wtf/u/convert.cgi?text=a');
   let html = await res.text();
