@@ -46,7 +46,11 @@ if (!global.db.data.chats[m.chat].edgargpt["config"]) {
   if (!global.db.data.chats[m.chat].edgargpt[m.sender]) {
   global.db.data.chats[m.chat].edgargpt[m.sender] = [];
 }
-
+if(global.db.data.chats[m.chat].gpt===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 
 if (!text) throw `*${lenguajeGB['smsAvisoMG']()}
 ╭━[𝗚𝗣𝗧]━━━━━━━⬣
