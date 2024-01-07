@@ -24,7 +24,7 @@ let pp = imagen6
 let chgptdb = []
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
-const handler = async (m, {conn, text, usedPrefix, command}) => {
+const handler = async (m, {isAdmin,isOwner, conn, text, usedPrefix, command}) => {
 
 
 
@@ -47,6 +47,11 @@ if (!global.db.data.chats[m.chat].gemini["config"]) {
   global.db.data.chats[m.chat].gemini[m.sender] = [];
 }
 
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].gpt===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 
 if (!text){
 throw `*${lenguajeGB['smsAvisoMG']()}
