@@ -21,12 +21,12 @@ let handler = async (m, { conn, args, isAdmin, isOwner }) => {
 
   const text = args.slice(1).join(' ');
 
-  conn.reply(m.chat, `*${stylename.replace(/-/g, ' ')}*\n${await stylizeText(stylename, text)}`, m);
+  conn.reply(m.chat, `${await stylizeText(stylename, text)}`, m);
 };
 
 handler.help = ['styletext'].map(v => v + ' (stylename) (text)');
 handler.tags = ['tools'];
-handler.command = /^(styletext)$/i;
+handler.command = /^(styletext|style)$/i;
 handler.exp = 0;
 
 async function stylizeText(stylename, text) {
