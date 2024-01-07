@@ -1,7 +1,7 @@
 import {googleIt} from '@bochilteam/scraper';
 import google from 'google-it';
 import axios from 'axios';
-let handler = async (m, { conn, command, args, usedPrefix }) => {
+let handler = async (m, { conn, command, args, usedPrefix,isAdmin,isOwner }) => {
 const fetch = (await import('node-fetch')).default;
 const text = args.join` `;
 
