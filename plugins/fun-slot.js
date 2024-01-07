@@ -1,6 +1,13 @@
 /* CREDITOS: https://github.com/FG98F */
 
 let handler = async (m, { args, usedPrefix, command, conn }) => {
+  
+  
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 let fa = `
 ${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝘿𝙀 𝙇𝘼 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 𝙈𝘼𝙉𝙀𝙍𝘼:
 𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙐𝙎𝙀 𝘼𝙎 𝙁𝙊𝙇𝙇𝙊𝙒𝙎:
@@ -11,8 +18,25 @@ ${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝘿𝙀 𝙇𝘼 𝙎𝙄𝙂�
 if (!args[0]) throw fa
 if (isNaN(args[0])) throw fa
 let apuesta = parseInt(args[0])
+if(!global.db.data.chats[m.chat]){
+  global.db.data.chats[m.chat]={}
+}
+if(!global.db.data.chats[m.chat].users){
+  global.db.data.chats[m.chat].users={}
+}
+if(!global.db.data.chats[m.chat].users[m.sender]){
+  global.db.data.chats[m.chat].users[m.sender]={
+    exp: 0,
+        limit:0,
+        role:'🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨',
+        money:0,
+        level:0,
+        adm: isAdmin,
+        legendary: false
+  }
+}
 
-let users = global.db.data.users[m.sender]
+let users = global.db.data.chats[m.chat].users[m.sender]
 //let time = global.db.data.users[m.sender].lastwork + 30000
 //if (new Date - users.lastwork < 30000) throw `*𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 ${msToTime(time - new Date())} 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊* 🎰\n\n*𝘾𝙊𝙈𝙀 𝘽𝘼𝘾𝙆 𝙄𝙉 ${msToTime(time - new Date())} 𝙏𝙊 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝙀 𝘽𝙀𝙏𝙏𝙄𝙉𝙂* 💰`
 
