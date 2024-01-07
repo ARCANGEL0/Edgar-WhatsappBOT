@@ -1,9 +1,23 @@
 
 const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
+  
+  
+  if(!global.xppergunta){
+    global.xppergunta = {}
+  }
+  
+  if(global.xppergunta[m.chat]){
+    global.xppergunta[m.chat]=false
+  }
+  
+  
 global.quiz[m.chat] = global.quiz[m.chat] ? global.quiz[m.chat] : {}
 global.quizxp[m.chat] = global.quizxp[m.chat] ? global.quizxp[m.chat] : {}
 
-global.xppergunta[m.chat].isPergunta= global.xppergunta[m.chat].isPergunta ? global.xppergunta[m.chat].isPergunta : {isPergunta: false}
+global.xppergunta[m.chat]= global.xppergunta[m.chat] ? global.xppergunta[m.chat] : false
+
+
+
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
@@ -12801,7 +12815,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
   }
   else if(global.quizxp[m.chat].modo==true){
   
-  if (global.xppergunta[m.chat].isPergunta.isPergunta==true) {
+  if (global.xppergunta[m.chat]==true) {
     await m.reply(`
      ━━━━━━━━━⬣ 💀 𝔔𝔲𝔦𝔷 💀 ⬣━━━━━━━━ 
  
@@ -12819,7 +12833,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta[m.chat].isPergunta.isPergunta = true
+    global.xppergunta[m.chat] = true
     let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
@@ -12864,7 +12878,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta[m.chat].isPergunta.isPergunta= true
+    global.xppergunta[m.chat]= true
  // Update the current question and answer
     
     console.log("test" + global.quizxp[m.chat].modo)
@@ -12910,8 +12924,8 @@ global.quiz[m.chat] = {
 
 }
     else if(text === "r"){
-      if(global.xppergunta[m.chat].isPergunta==true){
-        global.xppergunta[m.chat].isPergunta=false
+      if(global.xppergunta[m.chat]==true){
+        global.xppergunta[m.chat]=false
       
         global.quiz[m.chat] = {
         "math": false
@@ -12925,7 +12939,7 @@ global.quiz[m.chat] = {
     };
       }
       
-      if(global.quizxp[m.chat]&& global.xppergunta[m.chat].isPergunta){
+      if(global.quizxp[m.chat]&& global.xppergunta[m.chat]){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
@@ -12973,7 +12987,7 @@ else {
    global.quizxp[m.chat]= {
      "modo":false
    }
-   global.xppergunta[m.chat].isPergunta=false
+   global.xppergunta[m.chat]=false
    await m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━ 
 🕯️ 𝙈𝙊𝘿𝙊 𝘾𝙊𝙈𝙋𝙀𝙏𝙄𝙏𝙄𝙑𝙊 𝘿𝙀𝙎𝙇𝙄𝙂𝘼𝘿𝙊
