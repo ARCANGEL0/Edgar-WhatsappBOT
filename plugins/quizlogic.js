@@ -33,9 +33,9 @@ handler.before = async function (m) {
    "modo": false
   }
 }
-console.log('teste   ' + global.quizxp[m.chat] && global.quizxp[m.chat].modo==true && m.quoted && m.quoted.id == global.quiz[m.chat].id)
 
-if (global.quizxp[m.chat] && global.quizxp[m.chat].modo==true && m.quoted && m.quoted.id == global.quiz[m.chat].id) {
+
+if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo) {
 
 console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
         if(m.text.toUpperCase()==global.quiz[m.chat].ca){
