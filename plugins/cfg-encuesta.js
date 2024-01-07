@@ -1,6 +1,12 @@
 
 import uploadImage from '../lib/uploadImage.js';
-const handler = async (m, {conn, text, args, usedPrefix, command}) => {
+const handler = async (m, {conn, text, args, usedPrefix, command,isAdmin,isOwner}) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].midia===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 const q = m.quoted ? m.quoted : m;
 const mime = (q.msg || q).mimetype || q.mediaType || '';
 if (!/image/g.test(mime)) throw `${lenguajeGB.smsAvisoMG()}
