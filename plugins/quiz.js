@@ -12926,7 +12926,7 @@ global.quiz[m.chat] = {
     else if(text === "r"){
       if(global.xppergunta[m.chat]==true){
         global.xppergunta[m.chat]=false
-      
+      global.quizxp[m.chat].modo = false
         global.quiz[m.chat] = {
         "math": false,
       "cp": '',
@@ -12939,7 +12939,7 @@ global.quiz[m.chat] = {
     };
       }
       
-      if(global.quizxp[m.chat]&& global.xppergunta[m.chat]){
+      if(!global.quizxp[m.chat].modo && !global.xppergunta[m.chat]){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
