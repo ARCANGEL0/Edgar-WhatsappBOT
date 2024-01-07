@@ -49,7 +49,7 @@ if (apuesta < 10) throw `${lenguajeGB['smsAvisoAG']()}
 ━━━━━━━━━⬣🃁🂭🂺⬣━━━━━━━━`    
 
 
-if (command == 'slotxp' || 'apostarxp') {
+if (command ===('slotxp' || 'apostarxp')) {
   if (users.exp < apuesta) {
 throw `━━━━━━━━━⬣⋆🃜🃚🃖⬣━━━━━━━━ 
 ⏦ 𝙴𝚖 𝚖𝚎𝚞 𝚛𝚎𝚒𝚗𝚘 𝚊𝚕𝚐𝚘𝚛í𝚝𝚖𝚒𝚌𝚘, 𝚟𝚘𝚜𝚜𝚘 𝑥𝑝 𝚜𝚎 𝚖𝚘𝚜𝚝𝚛𝚊 𝚎𝚜𝚌𝚊𝚜𝚜𝚊.
@@ -117,7 +117,7 @@ await conn.reply(m.chat, s, m)}
 
 
 
-if (command == 'slot' || 'apostar') {
+if (command ===( 'slot' || 'apostar')) {
   
   if (users.money < apuesta)  { 
 throw `━━━━━━━━━⬣⋆🃜🃚🃖⬣━━━━━━━━ 
