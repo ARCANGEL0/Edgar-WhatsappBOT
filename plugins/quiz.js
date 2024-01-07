@@ -1,6 +1,6 @@
 global.quiz = global.quiz ? global.quiz : {}
 global.quizxp = global.quizxp ? global.quizxp : {}
-global.xppergunta= global.xppergunta ? global.xppergunta : ""
+global.db.data.chats[m.chat].xppergunta= global.db.data.chats[m.chat].xppergunta ? global.db.data.chats[m.chat].xppergunta : ""
 const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
@@ -12720,8 +12720,8 @@ const perguntasDireito = [
     
         
    // Assuming you have these variables defined somewhere in your script
-if(!global.quizxp[m.chat]){
-  global.quizxp[m.chat] = {
+if(!global.db.data.chats[m.chat].quizxp){
+  global.db.data.chats[m.chat].quizxp = {
     "modo": false
   }
 }
@@ -12736,7 +12736,7 @@ const delayBetweenQuestions = 45000; // 45 seconds
 
 if (selectedPerguntasArray && selectedPerguntasArray.length > 0) {
   const currentTime = new Date().getTime() ; // Current time in seconds
-  if(global.quizxp[m.chat].modo==false){
+  if(global.db.data.chats[m.chat].quizxp.modo==false){
   if(global.db.data.chats[m.chat].quiz != null) {
   console.log("Current Time: " + currentTime);
   console.log("Last Question Time: " + global.db.data.chats[m.chat].quiz.time);
@@ -12788,7 +12788,7 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
 
     // Update the last question time after sending a new question
     
@@ -12798,9 +12798,9 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
   }
  
   }
-  else if(global.quizxp[m.chat].modo==true){
+  else if(global.db.data.chats[m.chat].quizxp.modo==true){
   
-  if (global.xppergunta==true) {
+  if (global.db.data.chats[m.chat].xppergunta==true) {
     await m.reply(`
      ━━━━━━━━━⬣ 💀 𝔔𝔲𝔦𝔷 💀 ⬣━━━━━━━━ 
  
@@ -12818,7 +12818,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta = true
+    global.db.data.chats[m.chat].xppergunta = true
     let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
@@ -12828,7 +12828,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
 
  // Update the current question and answer
     global.db.data.chats[m.chat].quiz = {
@@ -12861,10 +12861,10 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta= true
+    global.db.data.chats[m.chat].xppergunta= true
  // Update the current question and answer
     
-    console.log("test" + global.quizxp[m.chat].modo)
+    console.log("test" + global.db.data.chats[m.chat].quizxp.modo)
     // Send the question
    let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
@@ -12875,7 +12875,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 ${optionsString}
 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
+${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
       `);
 
 
@@ -12904,11 +12904,11 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
 
 }
     else if(text === "r"){
-      if(global.xppergunta==true){
-        global.xppergunta=false
+      if(global.db.data.chats[m.chat].xppergunta==true){
+        global.db.data.chats[m.chat].xppergunta=false
       }
       global.db.data.chats[m.chat].quiz.math = false
-      if(global.quizxp&& global.xppergunta){
+      if(global.quizxp&& global.db.data.chats[m.chat].xppergunta){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
@@ -12940,7 +12940,7 @@ throw false
 } 
 else {
   if(status=="on"){
-    global.quizxp[m.chat] = {
+    global.db.data.chats[m.chat].quizxp = {
       "modo":true
     }
     await m.reply(`
@@ -12953,10 +12953,10 @@ else {
   }
   
  else if (status=="off"){
-   global.quizxp[m.chat]= {
+   global.db.data.chats[m.chat].quizxp= {
      "modo":false
    }
-   global.xppergunta=false
+   global.db.data.chats[m.chat].xppergunta=false
    await m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━ 
 🕯️ 𝙈𝙊𝘿𝙊 𝘾𝙊𝙈𝙋𝙀𝙏𝙄𝙏𝙄𝙑𝙊 𝘿𝙀𝙎𝙇𝙄𝙂𝘼𝘿𝙊
