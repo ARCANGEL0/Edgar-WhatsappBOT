@@ -8,7 +8,7 @@ let name = conn.getName(m.sender)
 
 
   
-  
+  /*
   
 if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo 
   conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗮 𝗮𝘀 𝗿𝗲𝗴𝗿𝗮𝘀 ⚠️ 〙*
@@ -22,7 +22,7 @@ if (/^regras|normas|Reglas$/i.test(m.text) ) { //sin prefijo
 
 
 
-
+*/
 
 return !0 
 }
