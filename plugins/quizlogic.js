@@ -23,6 +23,10 @@ handler.before = async function (m) {
   global.quiz[m.chat] = {
    "id": ""
   }
+  if(!global.quizxp[m.chat]){
+  global.quizxp[m.chat] = {
+   "modo": false
+  }
 }
 
 
