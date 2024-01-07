@@ -69,7 +69,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
                name: global.db.data.users[m.sender].name
              }
            }
-           
+           if(global.xppergunta[m.chat]==true){
         if(m.text.toUpperCase()==global.quiz[m.chat].ca){
           
            
@@ -116,7 +116,15 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
           `)
           global.db.data.chats[m.chat].jogadores[m.sender].xp -=10
         }
-      
+           }
+           else {
+             await m.reply(`
+╭━━━━━━━━━⬣
+💀 𝔈𝔰𝔱𝔢 𝔧𝔬𝔤𝔬 𝔧á 𝔣𝔬𝔦 𝔢𝔫𝔠𝔢𝔯𝔯𝔞𝔡𝔬
+┃ ─┅──┅❖ 
+╰━━━━━━━━━━━━━━━━━━⬣
+        `)
+           }
       
     
     
