@@ -678,18 +678,43 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-🕯️ ${lenguajeGB.smsParaAdmins()  }${global.ricksan  ? '🌕' : '🌒'}
+🕯️ ${lenguajeGB.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} rick
 🕯️ Desativa a IA Rick Sanchez neste chat
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-🕯️ ${lenguajeGB.smsParaAdmins()  }${global.xadrez  ? '🌕' : '🌒'}
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} xadrez
 🕯️ Ativa habilidade de jogar xadrez no grupo
 
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} jogos|games|jogo
+🕯️ Desabilita jogos neste vale obscuro
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} ia|ai|gpt
+🕯️ Desabilita a inteligência artiricial do bot
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} xadrez
+🕯️ Habilita AFK somente para ADM
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} dl|baixar|downloads
+🕯️ Desabilita funções de download neste grupo 
 
 ${wm}`, fkontak, { mentions: [aa,] })
+
+
 //conn.sendMessage(m.chat, { text: texto }, { quoted: fkontak })
 //conn.sendMessage(m.chat, texto, {quoted: fkontak})	
 throw false
