@@ -38,14 +38,17 @@ handler.before = async function (m) {
 if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo) {
 
 console.log("resposta" + m.text.toUpperCase()==global.quiz[m.chat].ca)
-        if(m.text.toUpperCase()==global.quiz[m.chat].ca){
-          
-           if(!global.db.data.chats[m.chat].jogadores[m.sender]){
+
+if(!global.db.data.chats[m.chat].jogadores[m.sender]){
              global.db.data.chats[m.chat].jogadores[m.sender] = {
                xp:0,
                name: global.db.data.users[m.sender].name
              }
            }
+           
+        if(m.text.toUpperCase()==global.quiz[m.chat].ca){
+          
+           
           global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[m.chat].xp 
           
           await m.reply(`
