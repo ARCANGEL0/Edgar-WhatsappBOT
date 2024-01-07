@@ -69,7 +69,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
                name: global.db.data.users[m.sender].name
              }
            }
-           if(global.xppergunta[m.chat]==true){
+           if(global.xppergunta[m.chat]==true && m.text.toUpperCase == "A" || "B" || "C" || "D" ){
         if(m.text.toUpperCase()==global.quiz[m.chat].ca){
           
            
