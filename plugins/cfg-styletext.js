@@ -11,7 +11,8 @@ let handler = async (m, { conn, args, isAdmin, isOwner }) => {
 
   if (!args[0]) {
     const allStyles = await getAllStyles();
-    return conn.reply(m.chat, `Available styles:\n${allStyles.join(', ')}`, m);
+    return conn.reply(m.chat, `─┅──┅❖ ❖─┅──┅
+    🪶 𝙴𝚜𝚝𝚒𝚕𝚘𝚜 𝚍𝚒𝚜𝚙𝚘𝚗𝚒𝚟𝚎𝚒𝚜s:\n${allStyles.join('  ⏦ ')}`, m);
   }
 
   let stylename = args[0].toLowerCase();
