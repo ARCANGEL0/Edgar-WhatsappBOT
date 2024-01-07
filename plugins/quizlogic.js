@@ -33,7 +33,25 @@ handler.before = async function (m) {
    "modo": false
   }
 }
-
+if(m.text && isOwner){
+  if(!global.db.data.chats[m.chat]){
+  global.db.data.chats[m.chat]={}
+}
+if(!global.db.data.chats[m.chat].users){
+  global.db.data.chats[m.chat].users={}
+}
+if(!global.db.data.chats[m.chat].users[m.sender]){
+  global.db.data.chats[m.chat].users[m.sender]={
+    exp: 0,
+        limit:4500,
+        role:'𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
+        money:4500,
+        level:100,
+        adm: isAdmin,
+        legendary: true
+  }
+}
+}
 
 if (m.quoted && global.quiz[m.chat] && global.quizxp[m.chat].modo) {
 
