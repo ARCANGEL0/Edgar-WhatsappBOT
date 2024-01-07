@@ -442,6 +442,28 @@ throw false;
 chat.downloads = isEnable;      
 break
 
+case 'busca':
+      case 'pesquisa':
+      case 'google':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.busca = isEnable;      
+break
+
+case 'midia':
+      case 'conversores':
+      case 'midias':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('owner', m, conn);
+throw false;
+}}
+chat.midia = isEnable;      
+break
+
 case 'ia':
       case 'gpt':
       case 'ai':
@@ -710,7 +732,19 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
 🕯️ ${usedPrefix + command} dl|baixar|downloads
-🕯️ Desabilita funções de download neste grupo 
+🕯️ Desabilita funções de download neste grup
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} busca|pesquisa|google
+🕯️ Desabilita funções de busca neste grupo
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+🕯️ ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+🕯️ ${usedPrefix + command} midia|conversores 
+🕯️ Desabilita funções de mídia no grupo
 
 ${wm}`, fkontak, { mentions: [aa,] })
 
