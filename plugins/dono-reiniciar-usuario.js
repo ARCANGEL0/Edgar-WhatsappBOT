@@ -30,7 +30,7 @@ let number = user.split('@')[0]
   
 delete global.global.db.data.users[user]
 conn.reply(m.chat, `* @${number} RESETADO NA BASE DE DADOS*`, null, { mentions: [user] })
-}}
+}
 
 if(command=="resetchat")
 try {
@@ -44,7 +44,10 @@ var user = number + '@s.whatsapp.net'
   
 delete global.global.db.data.chats[m.chat]
 conn.reply(m.chat, `*CHAT RESETADO NA BASE DE DADOS*`, null, { mentions: [user] })
-}}
+}
+
+
+}
 handler.tags = ['owner']
 handler.command = ['reiniciaruser','resetchat', 'resetuser', 'deletedatauser'] 
 handler.owner = true
