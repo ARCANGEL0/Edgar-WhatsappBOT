@@ -149,6 +149,7 @@ if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
   quiz:{
+    "math":false,
           "cp": '',
       "ca": '',
       "cm": '',
