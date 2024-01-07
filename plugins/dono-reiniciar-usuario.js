@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, text,command }) => {
 function no(number){
 return number.replace(/\s/g,'').replace(/([@+-])/g,'')}
 text = no(text)
