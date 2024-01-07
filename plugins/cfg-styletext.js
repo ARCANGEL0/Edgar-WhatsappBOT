@@ -1,9 +1,9 @@
-import fetch from 'node-fetch'
-import { JSDOM } from 'jsdom'
+import fetch from 'node-fetch';
+import { JSDOM } from 'jsdom';
 
 let handler = async (m, { conn, text, isAdmin, isOwner }) => {
   if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].jogos === false) {
-    m.midia("â")
+    m.midia("â");
     return !0;
   }
 
@@ -15,11 +15,26 @@ let handler = async (m, { conn, text, isAdmin, isOwner }) => {
     const stylizedText = await stylizeText(style, inputText);
     conn.reply(m.chat, stylizedText, m);
   } else if (!text) {
-    const availableStyles = 'Stroked, Subscript, Superscript, ...'; // Add more styles as needed
+    const availableStyles = await getAvailableStyles();
     conn.reply(m.chat, `Available styles: ${availableStyles}\n\nUse it like: .styletext Stroked TEXTO`, m);
   } else {
     conn.reply(m.chat, 'Invalid command. Use it like: .styletext Stroked TEXTO', m);
   }
+};
+
+async function getAvailableStyles() {
+  let res = await fetch('http://qaz.wtf/u/convert.cgi');
+  let html = await res.text();
+  let dom = new JSDOM(html);
+  let table = dom.window.document.querySelector('table').children[0].children;
+  let styles = [];
+
+  for (let tr of table) {
+    let name = tr.querySelector('.aname').textContent.trim();
+    styles.push(name);
+  }
+
+  return styles.join(', ');
 }
 
 async function stylizeText(style, text) {
@@ -28,9 +43,9 @@ async function stylizeText(style, text) {
   let dom = new JSDOM(html);
   let table = dom.window.document.querySelector('table').children[0].children;
   let obj = {};
-  
+
   for (let tr of table) {
-    let name = tr.querySelector('.aname').innerHTML;
+    let name = tr.querySelector('.aname').textContent.trim();
     let content = tr.children[1].textContent.replace(/^\n/, '').replace(/\n$/, '');
     obj[name + (obj[name] ? ' Reversed' : '')] = content;
   }
