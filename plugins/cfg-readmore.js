@@ -1,4 +1,5 @@
 let handler = async (m, { conn, text }) => {
+  await conn.sendMessage(m.chat, { delete: m.key })
 let [l, r] = text.split`|`
 if (!l) l = ''
 if (!r) r = ''
