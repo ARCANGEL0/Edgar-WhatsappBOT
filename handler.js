@@ -148,18 +148,26 @@ if (!('autolevelup' in chat))  chat.autolevelup = false
 if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
+  quiz:{
+          "cp": '',
+      "ca": '',
+      "cm": '',
+      "xp": 0,
+      "id": '',
+      "time": ''
+  },
 isBanned: false,
 welcome: true,
-detect: true,
+detect: false,
 sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
 delete: true,
-modohorny: true,
+modohorny: false,
 stickers: false,
 autosticker: false,
-audios: true,
+audios: false,
 antiver: false,
 antiLink: false,
 antiLink2: false,
@@ -173,9 +181,9 @@ antifake: false,
 reaction: true,
 viewonce: false,
 modoadmin: false,
-antitoxic: true,
+antitoxic: false,
 simi: false,
-antiTraba: true,
+antiTraba: false,
 autolevelup: false,
 expired: 0,
 }
@@ -194,14 +202,14 @@ if (!('modoia' in settings)) settings.modoia = false
 if (!('jadibotmd' in settings)) settings.jadibotmd = true  
 } else global.db.data.settings[this.user.jid] = {
 self: false,
-autoread: false,
+autoread: true,
 autoread2: false,
-restrict: false,
+restrict: true,
 temporal: false,
-antiPrivate: false,
+antiPrivate: true,
 antiCall: true,
-antiSpam: true,
-modoia: false, 
+antiSpam: false,
+modoia: true, 
 jadibotmd: true,
 }} catch (e) {
 console.error(e)
