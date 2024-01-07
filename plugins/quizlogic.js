@@ -23,7 +23,7 @@ handler.before = async function (m) {
   global.quiz[m.chat] = {
    "id": ""
   }
-  
+    }
   if(!global.quizxp){
   global.quizxp = {  }
 }
@@ -242,8 +242,8 @@ console.log(result.choices[0].message.content);
   return result.choices[0].message.content
     
 }
-}
 
+}
 
 handler.exp = 0
 
