@@ -1,6 +1,6 @@
-global.quiz = global.quiz ? global.quiz : {}
-global.quizxp = global.quizxp ? global.quizxp : {}
-global.xppergunta= global.xppergunta ? global.xppergunta : ""
+global.quiz[m.chat] = global.quiz[m.chat] ? global.quiz[m.chat] : {}
+global.quizxp[m.chat] = global.quizxp[m.chat] ? global.quizxp[m.chat] : {}
+global.xppergunta[m.chat]= global.xppergunta[m.chat] ? global.xppergunta[m.chat] : ""
 const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 
 function pickRandom(list) {
