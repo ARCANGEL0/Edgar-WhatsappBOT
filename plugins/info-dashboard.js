@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['dashboard']
 handler.tags = ['info']
 handler.command = /^dashboard$/i
-
+handler.owner = true
 export default handler
 
 export function parseMs(ms) {
