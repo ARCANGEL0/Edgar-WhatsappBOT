@@ -101,8 +101,9 @@ await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, {
       users[room.game.playerX] = {
         exp: 0,
         limit:0,
-        role:'',
+        role:'🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨',
         level:0,
+        money:0,
         adm: isAdmin,
         legendary: false
       }
@@ -111,7 +112,8 @@ await this.sendMessage(room.o, { text: str, mentions: this.parseMention(str)}, {
       users[room.game.playerO] = {
         exp: 0,
         limit:0,
-        role:'',
+        role:'🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨',
+        money:0,
         level:0,
         adm: isAdmin,
         legendary: false
