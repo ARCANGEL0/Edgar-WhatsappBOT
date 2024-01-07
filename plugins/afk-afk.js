@@ -8,6 +8,11 @@ let handler = async (m, { text, args, usedPrefix, command, conn}) => {
 let user = global.db.data.users[m.sender]
   
   
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].admafk===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 if (args.length >= 1 ) {
 text = args.slice(0).join(" ")
 } else if (m.quoted && m.quoted.text) {
