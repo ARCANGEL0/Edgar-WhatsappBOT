@@ -2,7 +2,7 @@ import {find_lyrics} from '@brandond/findthelyrics';
 import {getTracks} from '@green-code/music-track-data';
 import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, isAdmin, isOwner,usedPrefix, command}) => {
-const handler = async (m, {conn, text, isAdmin, isOwner,usedPrefix, command}) => {
+
 const teks = text ? text : m.quoted && m.quoted.text1r ? m.quoted.text : '';
 theif(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
    m.react("❌")
