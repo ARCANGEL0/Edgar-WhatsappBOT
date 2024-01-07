@@ -11,6 +11,8 @@ var number = text
 
 if(!text && !m.quoted) return conn.reply(m.chat, `*MARQUE O USUARIO, ESCREVA O NUMERO OU RESPONDA UMA MENSAGEM PARA REINICIAR DADOS*`, m)
 if(isNaN(number)) return conn.reply(m.chat, `*O NÚMERO QUE DIGITOU NAO É VÁLIDO PARA REINICIAR OS DADOS*`, m)
+
+if(command=="resetuser")
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -30,9 +32,22 @@ delete global.global.db.data.users[user]
 conn.reply(m.chat, `* @${number} RESETADO NA BASE DE DADOS*`, null, { mentions: [user] })
 }}
 
+if(command=="resetchat")
+try {
+if(text) {
+var user = number + '@s.whatsapp.net'
+} 
+  
+} catch (e) {
+  console.log(e)
+} finally {
+  
+delete global.global.db.data.chats[m.chat]
+conn.reply(m.chat, `*CHAT RESETADO NA BASE DE DADOS*`, null, { mentions: [user] })
+}}
 handler.tags = ['owner']
-handler.command = ['reiniciaruser', 'resetuser', 'deletedatauser'] 
-handler.owner = false
+handler.command = ['reiniciaruser','resetchat', 'resetuser', 'deletedatauser'] 
+handler.owner = true
 handler.admin = true
 
 export default handler
