@@ -12773,6 +12773,11 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
       "time": new Date().getTime()
     };
     
+    global.db.data.chats[m.chat].quiz.cp = Pergunta
+    global.db.data.chats[m.chat].quiz.cm = Motivo
+    global.db.data.chats[m.chat].quiz.ca = Resposta
+    
+    global.db.data.chats[m.chat].quiz.time = new Date().getTime()
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
      global.db.data.chats[m.chat].quiz.math = true;
     } else {
@@ -12831,13 +12836,13 @@ ${optionsString}
 ${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
 
  // Update the current question and answer
-    global.db.data.chats[m.chat].quiz = {
-      
-      "cp": Pergunta,
-      "ca": Resposta,
-      "cm": Motivo,
-      "time": new Date().getTime()
-    };
+    
+    global.db.data.chats[m.chat].quiz.cp = Pergunta
+    global.db.data.chats[m.chat].quiz.cm = Motivo
+    global.db.data.chats[m.chat].quiz.ca = Resposta
+    global.db.data.chats[m.chat].quiz.id = qid.id
+    global.db.data.chats[m.chat].quiz.time = new Date().getTime()
+    
     
      if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
      global.db.data.chats[m.chat].quiz.math = true;
@@ -12906,8 +12911,14 @@ ${global.db.data.chats[m.chat].quizxp.modo== true ? "╰━━━━━━⬣ _�
     else if(text === "r"){
       if(global.db.data.chats[m.chat].xppergunta==true){
         global.db.data.chats[m.chat].xppergunta=false
+        global.db.data.chats[m.chat].quiz.cp = ''
+    global.db.data.chats[m.chat].quiz.cm = ''
+    global.db.data.chats[m.chat].quiz.ca = ''
+    global.db.data.chats[m.chat].quiz.id = ''
+    global.db.data.chats[m.chat].quiz.time = ''
+    global.db.data.chats[m.chat].quiz.math = false
       }
-      global.db.data.chats[m.chat].quiz.math = false
+      
       if(global.quizxp&& global.db.data.chats[m.chat].xppergunta){
         await m.reply(`
        
