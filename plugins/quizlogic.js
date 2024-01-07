@@ -147,22 +147,6 @@ else {
 
     
  
-    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/^ⷮ/i.test(m.quoted.text)) return !0
-    
-    if (!(id in global.quiz)) return m.reply(' terminado!')
-    if (m.quoted.id == global.quiz[id].id) {
-      console.log("dentro do if:  "+ m.quoted.id)
-        let resposta = global.quiz[m.chat].ca
-        // m.reply(JSON.stringify(json, null, '\t'))
-        if (m.text == resposta ){
-            global.db.data.chats[m.chat].jogadores[m.sender].xp += global.quiz[id].xp
-            m.reply(`*Respesta correcta!*\n+${global.quiz[id].xp} Exp`)
-            
-            delete global.quiz[id]
-        } 
-        else m.reply('Respsta incorrecta!')
-    }
-    return !0
     
     
     async function requestToRickGPT(inputText) {
