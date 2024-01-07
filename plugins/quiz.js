@@ -6,7 +6,7 @@ const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, t
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
-
+console.log("test")
 
   const categories = [
         'Geral',
