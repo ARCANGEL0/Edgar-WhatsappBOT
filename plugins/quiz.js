@@ -2,7 +2,8 @@
 const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, text, args, usedPrefix, command, reply}) => {
 global.quiz[m.chat] = global.quiz[m.chat] ? global.quiz[m.chat] : {}
 global.quizxp[m.chat] = global.quizxp[m.chat] ? global.quizxp[m.chat] : {}
-global.xppergunta[m.chat]= global.xppergunta[m.chat] ? global.xppergunta[m.chat] : ""
+
+global.xppergunta[m.chat]= global.xppergunta[m.chat] ? global.xppergunta[m.chat] : false
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]}
 
@@ -12800,7 +12801,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
   }
   else if(global.quizxp[m.chat].modo==true){
   
-  if (global.xppergunta==true) {
+  if (global.xppergunta[m.chat]==true) {
     await m.reply(`
      ━━━━━━━━━⬣ 💀 𝔔𝔲𝔦𝔷 💀 ⬣━━━━━━━━ 
  
@@ -12818,7 +12819,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta = true
+    global.xppergunta[m.chat] = true
     let qid = await m.reply(`
 ╭━━━『 ${selectedCategory} 』━━━⬣
 ┃
@@ -12863,7 +12864,7 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
-    global.xppergunta= true
+    global.xppergunta[m.chat]= true
  // Update the current question and answer
     
     console.log("test" + global.quizxp[m.chat].modo)
@@ -12909,11 +12910,22 @@ global.quiz[m.chat] = {
 
 }
     else if(text === "r"){
-      if(global.xppergunta==true){
-        global.xppergunta=false
+      if(global.xppergunta[m.chat]==true){
+        global.xppergunta[m.chat]=false
+      
+        global.quiz[m.chat] = {
+        "math": false
+      "cp": '',
+      "ca": '',
+      "cm": '',
+      "xp": 0,
+      "id": '',
+      "time": ''
+
+    };
       }
-      global.quiz[m.chat].math = false
-      if(global.quizxp&& global.xppergunta){
+      
+      if(global.quizxp[m.chat]&& global.xppergunta[m.chat]){
         await m.reply(`
        
 ╭━━━━━━━━━⬣
@@ -12961,7 +12973,7 @@ else {
    global.quizxp[m.chat]= {
      "modo":false
    }
-   global.xppergunta=false
+   global.xppergunta[m.chat]=false
    await m.reply(`
 ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━ 
 🕯️ 𝙈𝙊𝘿𝙊 𝘾𝙊𝙈𝙋𝙀𝙏𝙄𝙏𝙄𝙑𝙊 𝘿𝙀𝙎𝙇𝙄𝙂𝘼𝘿𝙊
