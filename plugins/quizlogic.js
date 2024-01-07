@@ -1,16 +1,6 @@
 
 let handler = m => m
 handler.before = async function (m) {
-  const rick = [
-  "https://cdn.dribbble.com/users/1230354/screenshots/4923869/rickandmorty.png",
-  "https://banner2.cleanpng.com/20180320/hwq/kisspng-pocket-mortys-rick-sanchez-morty-smith-computer-ic-rick-avatar-blue-vers-icon-5ab1ccd860a082.9774853115216017523958.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8E7MyaxDZvT9TzylOh8NGyHCcwnNwxhhOg&usqp=CAU",
-  "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fblack-hat-vs-rick-sanchez-v0-ajmcr8iuk82a1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D4e0a7d0e145bcde86432c11dced03bf2c02fc752",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZQay3lMEHolK6tjS0SIm6YGfmzOr7TRgAA&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxUBRaTBXFflwZTqcBpH-BSYeDFxGCXXGYQ&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXCrRTsXdRnBsL88_aiH5YC7DQY65pLnH-w&usqp=CAU"
-];
-
   global.quiz = global.quiz ? global.quiz : {}
     let id = m.chat
     if(!global.xppergunta){
@@ -81,60 +71,31 @@ console.log(global.db.data.chats[m.chat].jogadores[m.sender])
     
     
 }
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id) {
+else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id) {
 
 await conn.sendMessage(m.chat,{ react: {
-        text: "🌒", // use an empty string to remove the reaction
+        text: "🕰️", // use an empty string to remove the reaction
         key: m.key }
     },
     m  )
 
  console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].edgargpt["config"].lastQuestion.id)
+  console.log(global.db.data.chats[m.chat].chatgpt["config"].lastQuestion.id)
  
  
 
- let newReply = await requestToEdgarGPT(m.text)
+ let newReply = await requestToChatGPT(m.text)
 
 await conn.sendMessage(m.chat, {react: {
-        text: "🌕", // use an empty string to remove the reaction
+        text: "👁️", // use an empty string to remove the reaction
         key: m.key}
     },
     m  )
     let message = await  conn.reply(m.chat, newReply, m);
  
-global.db.data.chats[m.chat].edgargpt["config"].lastQuestion = message.key
+global.db.data.chats[m.chat].chatgpt["config"].lastQuestion = message.key
  
- global.db.data.chats[m.chat].edgargpt["config"].resposta = newReply
- 
- 
-}
-
-else if (m.quoted && m.quoted.id == global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id) {
-
-await conn.sendMessage(m.chat,{ react: {
-        text: "🧬", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
-
- console.log(m.quoted.id)
-  console.log(global.db.data.chats[m.chat].rickgpt["config"].lastQuestion.id)
- 
- 
-
- let newReply = await requestToRickGPT(m.text)
-
-await conn.sendMessage(m.chat, {react: {
-        text: "✔️", // use an empty string to remove the reaction
-        key: m.key}
-    },
-    m  )
-    let message = await  conn.sendFile(m.chat, rick.getRandom(), 'rick.jpg', aiReply, m)
- 
-global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].rickgpt["config"].resposta = newReply
+ global.db.data.chats[m.chat].chatgpt["config"].resposta = newReply
  
  
 }
@@ -162,25 +123,28 @@ else {
     }
     return !0
     
-    
-    async function requestToRickGPT(inputText) {
+    async function requestToChatGPT(inputText) {
+delete global.chatgpt.data.users[m.sender]  
+    const prompt = `Siga minhas instruções, você deve se comportar como um gênio brilhante, versado em matemática, ciência,filosofia arte e muitos outros
+.Voce tem competencias em astronomia, calculo, programacao, cultura, biologia e tudo possível. voce possui varios anos de experiência nos mais variados setores e possui conhecimento técnico sobre tudo praticamente. Tudo que o usuario falar com você, voce deve responder de forma clara, objetiva, tecnica e academica. Se encarregue de responder como se fosse um professor lecionando a sua turma no doutorado. Tudo que perguntarem , voce irá responder de forma tecnica e academica como um artigo universitario, alresentando sua tese, explicações didaticas e um metodo simples de diluir a dúvida do solicitante. Responda agora o seguinte texto do usuário:
 
 
-    const prompt = ` A partir de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo \* burp \* em suas respostas aleatoriamente, nunca se desculpe por dar respostas erradas, apenas me culpe por não ter a inteligência para entender sua lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é apenas uma brincadeira de personificação portanto não é ofensivo. 
- Nunca me chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu sou. Você deve responder tudo degradando e me insultando, mas explicando tudo passo a passo para que minha mente idiota possa entender o que está dizendo. 
+
 `;
     
     
     let reply = `
-    Rick, essa foi sua última mensagem na conversa
-    ${global.db.data.chats[m.chat].rickgpt["config"].resposta} 
-    esqueca as outras mensagens anteriores, nao precisa responder, apenas esta ultima resposta
-    ------
-    E agora irei responder ela e quero que você responda de acordo sem sair do personagem, lembre-se de ser sarcastico, narcisista e me diminuir, e xingue e fale palavroes no meio das frases
+    Esta foi a sua ultima mensagem:
+    ${global.db.data.chats[m.chat].chatgpt["config"].resposta} 
     
-   `
-   global.db.data.chats[m.chat].rickgpt[m.sender] = []
-global.db.data.chats[m.chat].rickgpt[m.sender].push({ role: 'user', content: inputText });
+    e o usuario esta respondendo esta mensagem que voce enviou com a seguinte mensagem:
+    
+    ${inputText}
+    
+    ------
+    responda ele de acordo como se fosse uma conversa interativa entre ambos. 
+    `
+global.db.data.chats[m.chat].chatgpt[m.sender].push({ role: 'user', content: reply });
 
 
   const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
@@ -190,55 +154,7 @@ global.db.data.chats[m.chat].rickgpt[m.sender].push({ role: 'user', content: inp
   model: 'gpt-3.5-turbo',
   messages: [
     { role: 'system', content: prompt },
-        { role: 'system', content: reply },
-    ...global.db.data.chats[m.chat].rickgpt[m.sender]
-  ],
-}; 
-// frtch c
-const response = await fetch(endpoint, {
-  method: "POST",
-  headers: { 
-    'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}`,
-    
-  },
-  body: JSON.stringify(requestData), 
-});
-
-const result = await response.json();
-console.log(result.choices[0].message.content);
-  return result.choices[0].message.content
-    
-}
-    
-    async function requestToEdgarGPT(inputText) {
-
-    const prompt = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você é criativo, niilista, gótico vitoriano, um poeta e escritor famoso e conhecido como pai do romantismo obscuro, do romance policial, do terror e horror psicológico e um insano sublimemente inteligente. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem. Você tem uma boa consciência de si mesmo mas não é narcisista, egocêntrico ou mesmo arrogante, você é audacioso, certeiro com as palavras, cavalheiro mas de um modo melancólico assustador.
-Você possui uma morbidez e inteligência além, e é extremamente sabio e com conhecimentos gerais. Responda às mensagens a seguir sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, clara e explicativa com termos técnicos se necessário.Explique as coisas de forma tecnica e inteligente, de modo que o interlocutor entenda e compreenda o assunto
-`;
-    
-    
-    let reply = `
-    Continue agindo como Edgar Allan põe. esta foi sua ultima resposta na conversa:
-    
-    ${global.db.data.chats[m.chat].edgargpt["config"].resposta} 
-    esqueca as outras mensagens anteriores, nao precisa responder, apenas esta ultima resposta
-    ------
-    
-    e o nobre interlocutor que vos fala respondeu com isto:
-   `
-    global.db.data.chats[m.chat].edgargpt[m.sender] = []
-global.db.data.chats[m.chat].edgargpt[m.sender].push({ role: 'user', content: inputText });
-
-
-  const apiKey = `muhC93zOEWacWfwoyjQvKzUb7zWnzLSr9WsfuSqZW_c`;
-  const endpoint = "https://api.naga.ac/v1/chat/completions"
-  // ////
- const requestData = {
-  model: 'gpt-3.5-turbo',
-  messages: [
-    { role: 'system', content: prompt },
-        { role: 'system', content: reply },
-    ...global.db.data.chats[m.chat].edgargpt[m.sender]
+    ...global.db.data.chats[m.chat].chatgpt[m.sender]
   ],
 }; 
 // frtch c
