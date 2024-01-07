@@ -98,7 +98,7 @@ if(global.db.data.chats[m.chat].ricksan===false){
    return !0;
  }
  
- if(chat.gpt===false){
+ if(global.db.data.chats[m.chat].gpt===false){
    m.react("❌")
    
    return !0;
