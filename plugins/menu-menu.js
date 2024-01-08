@@ -244,17 +244,17 @@ let menugp = `*╭━〔 GRUPO 〕━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
 ┃
-┃✒️📜➺ _${usedPrefix}kick | remover *usuario*_ ☥ _Remove do grupo
+┃✒️📜➺ _${usedPrefix}kick | remover *usuario*_ ☥ _Remove do grupo_
 ┃
 ┃✒️📜➺ _${usedPrefix}ban | banir *@tag*_ ☥ _Proibe de usar o bot_
 ┃
-┃✒️📜➺ _${usedPrefix}mute *@tag*_ ☥ _Silencia e impede de mandar mensagem
+┃✒️📜➺ _${usedPrefix}mute *@tag*_ ☥ _Silencia e impede de mandar mensagem_
 ┃
 ┃✒️📜➺ _${usedPrefix}gc *abrir : fechar* *opcional: tempo*_ ☥ _abre ou fecha grupo, com opcao pra definir temporizador_
 ┃
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
-┃✒️📜➺ _${usedPrefix}mutebot *(opcional: tempo)* ☥ _Desativa o bot_
+┃✒️📜➺ _${usedPrefix}mutebot *(opcional: tempo)*☥ _Desativa o bot_
 ┃
 ┃✒️📜➺ _${usedPrefix}ativarbot_ ☥ _Ativa o bot_
 ┃
