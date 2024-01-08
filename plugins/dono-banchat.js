@@ -5,12 +5,11 @@ let handler = async (m,{text}) => {
   if (text) {
     let timeoutset = 86400000 * text / 24 
     m.reply(timeoutset)
-    
-    return!0
+ 
   }
   
   
-  
+  else if(!text){
   
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
@@ -28,6 +27,8 @@ ${pickRandom([
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
   -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`)
+}
+
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
