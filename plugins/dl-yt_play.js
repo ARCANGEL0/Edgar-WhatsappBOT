@@ -3,7 +3,13 @@ import yts from "yt-search"
 import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-let handler = async (m, { conn, command, args, text, usedPrefix }) => {
+let handler = async (m, { conn, command, args, text, usedPrefix, isAdmin,isOwner }) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
 if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━[*𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛*]━⬣
