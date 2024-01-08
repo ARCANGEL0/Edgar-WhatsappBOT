@@ -23,7 +23,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} Bauhaus - Dark Entries*
 ┃
-╰━━━❰ *𓃠 ${vs}* ❱━━⬣`
+╰━━━❰ *𓄿 ${vs}* ❱━━⬣`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
