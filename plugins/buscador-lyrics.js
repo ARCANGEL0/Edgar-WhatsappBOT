@@ -4,7 +4,7 @@ import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, isAdmin, isOwner,usedPrefix, command}) => {
 
 const teks = text ? text : m.quoted && m.quoted.text1r ? m.quoted.text : '';
-theif(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
    m.react("❌")
    
    return !0;
