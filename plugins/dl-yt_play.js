@@ -24,18 +24,11 @@ let additionalText = ''
 if (command === 'play') {
 additionalText = '𝘼𝙐𝘿𝙄𝙊 𝄞'
 } else if (command === 'play2') {
-additionalText = '𝙑𝙄𝘿𝙀𝙊 '}
-let captionvid = `╭━━[${yt_play[0].title}]━━━⬣
-
-📜🪶 𝐃𝐚𝐭𝐚:
-${yt_play[0].ago}
------------------
-🗝️ 𝐔𝐑𝐋:
- ${yt_play[0].url}
- 
- 🕰️ 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀.
- 
-╰━━━━━━━━━━━━━━━━━━⬣`
+additionalText = '𝙑𝙄𝘿𝙀𝙊 ⚝ '}
+let captionvid = `─┅──┅❖ ❖─┅──┅
+༒︎ ${yt_play[0].title} ༒︎
+𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀..
+─┅──┅❖ ❖─┅──┅ `
 
 
 let sendtext = await conn.sendMessage(m.chat, {
@@ -44,7 +37,6 @@ contextInfo: {
 externalAdReply: {
 title: yt_play[0].title,
 body: packname,
-thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
