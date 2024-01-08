@@ -1,7 +1,13 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 import fetch from 'node-fetch'
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+let handler = async (m, { conn, isAdmin,isOwner,args, usedPrefix, command }) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🥀💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐧𝐨𝐦𝐞 𝐝𝐚 𝐚𝐥𝐦𝐚 𝐪𝐮𝐞
