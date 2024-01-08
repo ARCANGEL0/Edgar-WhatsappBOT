@@ -252,7 +252,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2269,
+      "exp": 2285,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -458,7 +458,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 544,
+      "exp": 568,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -798,7 +798,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2741,
+      "exp": 2744,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1015,7 +1015,7 @@
       "legendary": 0,
       "level": 2,
       "limit": 0,
-      "exp": 1208,
+      "exp": 1217,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -1254,7 +1254,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 330,
+      "exp": 347,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1847,7 +1847,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 490,
+      "exp": 510,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2661,7 +2661,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1869,
+      "exp": 1908,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6831,7 +6831,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2760,
+      "exp": 2770,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -8743,7 +8743,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 282,
+      "exp": 286,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9997,7 +9997,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 143,
+      "exp": 153,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10162,7 +10162,7 @@
       "legendary": 0,
       "level": 4,
       "limit": 0,
-      "exp": 7283,
+      "exp": 7353,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -10402,7 +10402,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1319,
+      "exp": 1337,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10703,7 +10703,7 @@
       "legendary": 0,
       "level": 2,
       "limit": 0,
-      "exp": 965,
+      "exp": 981,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -13003,10 +13003,10 @@
       "lastSuccess": 1704666101632
     },
     "s-risa.js": {
-      "total": 1203,
-      "success": 1064,
-      "last": 1704674687859,
-      "lastSuccess": 1704674687859
+      "total": 1206,
+      "success": 1066,
+      "last": 1704674796270,
+      "lastSuccess": 1704674745452
     },
     "dono-banchat.js": {
       "total": 3,
@@ -13317,7 +13317,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704674714299
+      "status": 1704674831454
     }
   }
 }
