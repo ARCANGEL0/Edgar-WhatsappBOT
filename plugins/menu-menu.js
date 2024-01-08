@@ -91,14 +91,16 @@ let menubuscas = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ BUSCAS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍📜➺ _${usedPrefix}iavoz *texto*_
-┃🔍📜➺ _${usedPrefix}gpt | alangpt *texto*_
-┃🔍📜➺ _${usedPrefix}image *texto*_
-┃🔍📜➺ _${usedPrefix}google *texto*_
-┃🔍📜➺ _${usedPrefix}letra | lyrics *texto*_
-┃🔍📜➺ _${usedPrefix}ytsearch | yts *texto*_
-┃🔍📜➺ _${usedPrefix}wiki | wikipedia *texto*_
-┃🔍📜➺ _${usedPrefix}play | spotify *texto*_
+┃🔍📜➺ _${usedPrefix}imagem | img *texto*_ ♱ _Busca de imagem_
+┃🔍📜➺ _${usedPrefix}gimg *texto*_ ♱ _Busca de imagem no google_
+┃🔍📜➺ _${usedPrefix}wallpaper | wp *texto*_ ♱ _Busca de wallpapers_
+┃🔍📜➺ _${usedPrefix}pinterest | pin *texto*_ ♱ _Busca no pinterest_
+┃🔍📜➺ _${usedPrefix}google *texto*_ ♱ _busca no google_
+┃🔍📜➺ _${usedPrefix}letra | lyrics *texto*_ ♱ _pesquisa letras de musica_
+┃🔍📜➺ _${usedPrefix}ytsearch | yts *texto*_ ♱ _Busca de videos no youtube_
+┃🔍📜➺ _${usedPrefix}wiki | wikipedia *texto*_ ♱  _Busca na wikipedia_
+┃🔍📜➺ _${usedPrefix}core | pesquisar *texto*_ ♱  _Busca na CORE.uk por artigos e pesquisas academicas_ 
+┃🔍📜➺ _${usedPrefix}nasa ♱  _Retorna as noticias do dia da NASA_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
  
@@ -106,12 +108,19 @@ let menujogos = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
 *╭━━[ JOGOS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_
-┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
-┃🐈‍⬛➺ _${usedPrefix}quiz_
+┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_ 🂱  _Lista os top do grupo_ 
+┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_ 🂱 _Deduz a perosnalidade do @usuario_
+┃🐈‍⬛➺ _${usedPrefix}horoscopo  | hrp  *signo*_ 🂱 _Retorna o horoscopo do dia_
+┃🐈‍⬛➺ _${usedPrefix}slot  | apostar *valor*_ 🂱 _Aposta na maquina de slot com 𒄆𝙳𝚊𝚛𝚔𝙲𝚘𝚒𝚗𝚜
+┃🐈‍⬛➺ _${usedPrefix}slotxp | apostaxp *valor*_ 🂱 _Aposta na maquina de slot com pontos xp_
+┃🐈‍⬛➺ _${usedPrefix}quiz_ 🂱 
+┃🐈‍⬛➺ _${usedPrefix}xadrez | chess_ 
+┃🐈‍⬛➺ _${usedPrefix}ttt | xo_ 🂱 _Jogo da velha_
+┃🐈‍⬛➺ _${usedPrefix}delttt | xo_ 🂱 _Remove  partidq do jogo da velha_
+┃🐈‍⬛➺ _${usedPrefix}sudoku | sdk_ 🂱
 ┃🐈‍⬛➺ _${usedPrefix}poemas_
-┃🐈‍⬛➺ _${usedPrefix}morceguices_
-┃🐈‍⬛➺ _${usedPrefix}biografia_ 
+┃🐈‍⬛➺ _${usedPrefix}morceguices_ 🂱 _Curiosidades cultura gótica_
+┃🐈‍⬛➺ _${usedPrefix}biografia | bio_ 🂱 _Biografia do Edgar allan Poe_
 ┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
