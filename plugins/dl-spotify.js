@@ -2,7 +2,14 @@ import fetch from 'node-fetch'
 import Spotify from "spotifydl-x"
 import fs from 'fs'
 
-let handler = async (m, { conn, command, usedPrefix ,text}) => {
+let handler = async (m, { conn,isAdmin,isOwner, command, usedPrefix ,text}) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
+ 
 let picture = './media/menus/Menu1.jpg'
 let name = await conn.getName(m.sender)
 
