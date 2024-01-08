@@ -47,7 +47,6 @@ if (args[0].includes(':')) {
 
 const newScheduledTime = new Date(currentDateTime.getTime() + timeoutset);
 
-console.log("New scheduled time:", newSchedule);
 
 let tempo = formatTime(timeoutset)
 
