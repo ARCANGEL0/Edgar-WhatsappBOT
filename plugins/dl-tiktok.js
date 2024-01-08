@@ -4,8 +4,14 @@ import cheerio from 'cheerio'
 import { tiktok } from "@xct007/frieren-scraper";
 let generateWAMessageFromContent = (await import(global.baileys)).default
 import { tiktokdl } from '@bochilteam/scraper'
-let handler = async (m, { conn, text, args, usedPrefix, command}) => {
+let handler = async (m, { conn,isOwner,isAdmin, text, args, usedPrefix, command}) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
+if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
