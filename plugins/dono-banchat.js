@@ -3,7 +3,7 @@
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 let handler = async (m,{text}) => {
   if (text) {
-    let timeoutset = 86400000 * args[1] / 24 
+    let timeoutset = 86400000 * text / 24 
     m.reply(timeoutset)
     
     return!0
