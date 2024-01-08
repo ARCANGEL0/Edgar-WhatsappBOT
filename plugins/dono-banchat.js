@@ -3,14 +3,15 @@
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 let handler = async (m,{args}) => {
   try{
-  if (args[1]) {
+  if (args[0]) {
+    let timeoutset = 86400000 * args[0] / 24
     
-    m.reply(args[1])
+    m.reply(timeoutset)
  
   }
   
   
-  else if(!args[1]){
+  else if(!args[0]){
   
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
