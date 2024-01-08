@@ -46,7 +46,7 @@ if (args[0].includes(':')) {
 }
 
 const newScheduledTime = new Date(currentDateTime.getTime() + timeoutset);
-const newSchedule = `${newScheduledTime.getHours().toString().padStart(2, '0')}:${newScheduledTime.getMinutes().toString().padStart(2, '0')}:${newScheduledTime.getSeconds().toString().padStart(2, '0')}`;
+
 console.log("New scheduled time:", newSchedule);
 
 let tempo = formatTime(timeoutset)
@@ -67,8 +67,10 @@ ${pickRandom([
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
   -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
-  
- const job = schedule.scheduleJob(newSchedule, async () => {
+  const horarioBot = new Date();
+horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
+
+ schedule.scheduleJob(horarioBot, async () => {
 
   console.log('Executing scheduled task...');
 
@@ -91,6 +93,8 @@ ${pickRandom([
 ])}
 -- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
   }); 
+  
+  
   }
   
   
