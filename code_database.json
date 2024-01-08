@@ -17,7 +17,7 @@
       "legendary": 0,
       "level": 6,
       "limit": 0,
-      "exp": 10863,
+      "exp": 10923,
       "silencedChat": {
         "351927285125@s.whatsapp.net": {
           "silenced": false,
@@ -252,7 +252,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2285,
+      "exp": 2298,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -424,7 +424,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 880,
+      "exp": 891,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -458,7 +458,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 568,
+      "exp": 692,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -628,7 +628,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2411,
+      "exp": 2412,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -798,7 +798,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2744,
+      "exp": 2788,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -981,7 +981,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 156,
+      "exp": 238,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1152,7 +1152,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 4349,
+      "exp": 4367,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1186,7 +1186,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 5107,
+      "exp": 5110,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1220,7 +1220,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2942,
+      "exp": 2955,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1254,7 +1254,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 347,
+      "exp": 377,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1679,7 +1679,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1201,
+      "exp": 1304,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2286,7 +2286,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1133,
+      "exp": 1142,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2591,7 +2591,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1476,
+      "exp": 1527,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2661,7 +2661,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1908,
+      "exp": 1949,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6429,7 +6429,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 467,
+      "exp": 476,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7231,7 +7231,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 59,
+      "exp": 70,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -7408,7 +7408,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1236,
+      "exp": 1288,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -8743,7 +8743,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 286,
+      "exp": 294,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10162,7 +10162,7 @@
       "legendary": 0,
       "level": 4,
       "limit": 0,
-      "exp": 7353,
+      "exp": 7619,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -10402,7 +10402,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1337,
+      "exp": 1356,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10703,7 +10703,7 @@
       "legendary": 0,
       "level": 2,
       "limit": 0,
-      "exp": 981,
+      "exp": 1004,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -12336,6 +12336,40 @@
         }
       },
       "money": null
+    },
+    "557186256958@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Lu",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 57,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "557186256958@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
     }
   },
   "chats": {
@@ -13003,10 +13037,10 @@
       "lastSuccess": 1704666101632
     },
     "s-risa.js": {
-      "total": 1206,
-      "success": 1066,
-      "last": 1704674796270,
-      "lastSuccess": 1704674745452
+      "total": 1215,
+      "success": 1073,
+      "last": 1704675369951,
+      "lastSuccess": 1704675369951
     },
     "dono-banchat.js": {
       "total": 3,
@@ -13063,10 +13097,10 @@
       "lastSuccess": 1704662916351
     },
     "dl-yt_play.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1704674411512,
-      "lastSuccess": 1704674411512
+      "total": 16,
+      "success": 16,
+      "last": 1704675076039,
+      "lastSuccess": 1704675076039
     },
     "sticker-sticker.js": {
       "total": 10,
@@ -13317,7 +13351,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704674831454
+      "status": 1704675407097
     }
   }
 }
