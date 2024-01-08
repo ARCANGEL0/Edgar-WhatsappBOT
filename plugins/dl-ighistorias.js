@@ -1,4 +1,11 @@
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+let handler = async (m, { conn,isAdmin,isOwner, args, usedPrefix, command }) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
+ 
 if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🪦🐈‍⬛ 𝐅𝐨𝐫𝐧𝐞𝐜𝐚 𝐨 𝐧𝐨𝐦𝐞 𝐝𝐨 
