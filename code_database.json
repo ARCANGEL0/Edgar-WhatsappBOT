@@ -17,7 +17,7 @@
       "legendary": 0,
       "level": 6,
       "limit": 0,
-      "exp": 11148,
+      "exp": 11273,
       "silencedChat": {
         "351927285125@s.whatsapp.net": {
           "silenced": false,
@@ -662,7 +662,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2126,
+      "exp": 2157,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6230,7 +6230,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1927,
+      "exp": 1958,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6835,7 +6835,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2776,
+      "exp": 2778,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7001,7 +7001,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1383,
+      "exp": 1385,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7412,7 +7412,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1306,
+      "exp": 1314,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9968,7 +9968,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 158,
+      "exp": 287,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -13341,6 +13341,38 @@
         }
       },
       "money": null
+    },
+    "171051518542005_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 1,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "171051518542005_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
     }
   },
   "chats": {
@@ -14160,10 +14192,10 @@
       "lastSuccess": 1704663362374
     },
     "s-payaso.js": {
-      "total": 8,
-      "success": 6,
-      "last": 1704682790780,
-      "lastSuccess": 1704646129572
+      "total": 10,
+      "success": 8,
+      "last": 1704710329476,
+      "lastSuccess": 1704710329476
     },
     "dl-imagen.js": {
       "total": 5,
@@ -14354,7 +14386,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704709450846
+      "status": 1704710387055
     }
   }
 }
