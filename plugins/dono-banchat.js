@@ -6,7 +6,7 @@ let handler = async (m,{args}) => {
   if (args[0]) {
     let timeoutset = 86400000 * args[0] / 24
     
-    m.reply(timeoutset)
+  await  m.reply("tempo " + timeoutset)
  
   }
   
