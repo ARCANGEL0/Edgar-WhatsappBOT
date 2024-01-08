@@ -30,83 +30,55 @@ message3: 0,
 const userData = userSpamData[sender]
 const timeDifference = currentTime - userData.lastMessageTime
 
-if (userData.antiBan === 1) {
-if (userData.message < 1) {
-userData.message++  
-motive = 'SPAM DE MENSAGENS'
-mensaje = `*@${m.sender.split`@`[0]} COMMANDOS BLOQUEADOS DURANTE 30 SEGUNDOS*\n\n*MOTIVO: ${motive}*`  
-await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] })  
-user.messageSpam = motive
-}} else if (userData.antiBan === 2) {
-if (userData.message2 < 1) {
-userData.message2++  
-motive = 'SPAM DE MENSAGENS'
-mensaje = `*@${m.sender.split`@`[0]} COMMANDOS BLOQUEARIS DURANTE 1 MINUTO*\n\n*MOTIVO: ${motive}*`
-await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] })  
-user.messageSpam = motive
-}} else if (userData.antiBan === 3) {
-if (userData.message3 < 1) {
-userData.message3++  
-motive = 'SPAM DE MENSAGENS ALARMANTE'
-mensaje = `*@${m.sender.split`@`[0]} COMANDOS BLOQUEADOS DURANTE 2 MINUTOS*\n\n*MOTIVO: ${motive}*`
-await conn.reply(m.chat, mensaje, m, { mentions: [m.sender] }) 
-user.messageSpam = motive
-await conn.groupParticipantsUpdate(m.chat, [sender], 'remove')
-}}
-
 if (timeDifference <= timeWindow) {
 userData.messageCount += 1
 
-if (userData.messageCount >= messageLimit) {
+  if (userData.messageCount >= messageLimit) {
 const mention = `@${sender.split("@")[0]}`
-const warningMessage = `*${mention} PROIBIDO FAZER SPAM COM O BOT!!*`
-if (userData.antiBan > 2) return
+const warningMessage = `*${mention} PROIBIDO FAZER SPAM!!*`
+
 await conn.reply(m.chat, warningMessage, m, { mentions: [m.sender] })  
-user.banned = true
-userData.antiBan++
-userData.messageCount = 1
+
+if (!global.db.data.users[m.sender]) {
+    global.db.data.users[m.sender] = {};
+}
+
+// Assuming global.db.data.users[m.sender].silencedChat is defined
+if (!global.db.data.users[m.sender].silencedChat) {
+    global.db.data.users[user].silencedChat = {};
+}
+
+// Check if the specific chat exists
+const chatIdToCheck = m.chat;
+if (!global.db.data.users[m.sender].silencedChat[chatIdToCheck]) {
+    // Create the array if it doesn't exist
+    global.db.data.users[m.sender].silencedChat[chatIdToCheck] = {
+        silenced: false ,
+        chat: chatIdToCheck
+    };
+}
+
+users = global.db.data.users
+ let person = global.db.data.users[m.sender]
+
+
+person.silencedChat[m.chat] = {
+        silenced: true,
+        chat: m.chat
+        
+    };
+// reset 
+//userData.messageCount = 1
                 
-if (userData.antiBan === 1) {
-setTimeout(() => {
-if (userData.antiBan === 1) {
-userData.antiBan = 0
-userData.message = 0
-userData.message2 = 0
-userData.message3 = 0
-user.antispam = 0
-motive = 0
-user.messageSpam = 0
-user.banned = false
-}}, time) 
   
-} else if (userData.antiBan === 2) {
-setTimeout(() => {
-if (userData.antiBan === 2) {
-userData.antiBan = 0
-userData.message = 0
-userData.message2 = 0
-userData.message3 = 0
-user.antispam = 0
-motive = 0
-user.messageSpam = 0
-user.banned = false
-}}, time2) 
-                
-} else if (userData.antiBan === 3) {
-setTimeout(() => {
-if (userData.antiBan === 3) {
-userData.antiBan = 0
-userData.message = 0
-userData.message2 = 0
-userData.message3 = 0
-user.antispam = 0
-motive = 0
-user.messageSpam = 0
-user.banned = false
-}}, time3)
-    
-}}
-} else {
+  
+}
+} 
+// dim
+
+
+
+else {
 if (timeDifference >= 2000) {
 userData.messageCount = 1
 }}
