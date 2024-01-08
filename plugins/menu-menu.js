@@ -89,81 +89,124 @@ const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [de] YYYY || HH:mm A'
 
 let menubuscas = `*╭━━[ BUSCAS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍📜➺ _${usedPrefix}imagem | img *texto*_ ♱ _Busca de imagem_
-┃🔍📜➺ _${usedPrefix}gmg *texto*_ ♱ _Busca de imagem no google_
+┃🔍📜➺ ${usedPrefix}imagem | img *texto*_♱ _Busca de imagem_
+┃
+┃🔍📜➺ ${usedPrefix}gmg *texto* ♱ _Busca de imagem no google_
+┃
 ┃🔍📜➺ _${usedPrefix}wallpaper | wp *texto*_ ♱ _Busca de wallpapers_
-┃🔍📜➺ _${usedPrefix}pinterest | pin *texto*_ ♱ _Busca no pinterest_
-┃🔍📜➺ _${usedPrefix}google *texto*_ ♱ _busca no google_
-┃🔍📜➺ _${usedPrefix}letra | lyrics *texto*_ ♱ _pesquisa letras de musica_
-┃🔍📜➺ _${usedPrefix}ytsearch | yts *texto*_ ♱ _Busca de videos no youtube_
+┃
+┃🔍📜➺ ${usedPrefix}pinterest | pin *texto* ♱ _Busca no pinterest_
+┃
+┃🔍📜➺ ${usedPrefix}google *texto* ♱ _busca no google_
+┃
+┃🔍📜➺ ${usedPrefix}letra | lyrics *texto* ♱ _pesquisa letras de musica_
+┃
+┃🔍📜➺ ${usedPrefix}ytsearch | yts *texto* ♱ _Busca de videos no youtube_
+┃
 ┃🔍📜➺ _${usedPrefix}wiki | wikipedia *texto*_ ♱  _Busca na wikipedia_
-┃🔍📜➺ _${usedPrefix}core | pesquisar *texto*_ ♱  _Busca na CORE.uk por artigos e pesquisas academicas_ 
-┃🔍📜➺ _${usedPrefix}nasa ♱  _Retorna as noticias do dia da NASA_
-┃🔍📜➺ _${usedPrefix}elemento *oxigenio ou 8* ♱ _Retorna dados do elemento Químico por nome ou n° atomico_
+┃
+┃🔍📜➺ ${usedPrefix}core | pesquisar *texto* ♱  _Busca na CORE.uk por artigos e pesquisas academicas_ 
+┃
+┃🔍📜➺ ${usedPrefix}nasa ♱ _Retorna as noticias do dia da NASA_
+┃
+┃🔍📜➺ ${usedPrefix}elemento *oxigenio ou 8* ♱ _Retorna dados do elemento Químico por nome ou n° atomico_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
  
 let menujogos = `*╭━━[ JOGOS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_ 🂱  _Lista os top do grupo_ 
-┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_ 🂱 _Deduz a perosnalidade do @usuario_
-┃🐈‍⬛➺ _${usedPrefix}horoscopo  | hrp  *signo*_ 🂱 _Retorna o horoscopo do dia_
-┃🐈‍⬛➺ _${usedPrefix}slot  | apostar *valor*_ 🂱 _Aposta na maquina de slot com 𒄆𝙳𝚊𝚛𝚔𝙲𝚘𝚒𝚗𝚜
-┃🐈‍⬛➺ _${usedPrefix}slotxp | apostaxp *valor*_ 🂱 _Aposta na maquina de slot com pontos xp_
-┃🐈‍⬛➺ _${usedPrefix}quiz_ 🂱 
-┃🐈‍⬛➺ _${usedPrefix}xadrez | chess_ 
-┃🐈‍⬛➺ _${usedPrefix}ttt | xo_ 🂱 _Jogo da velha_
-┃🐈‍⬛➺ _${usedPrefix}delttt | xo_ 🂱 _Remove  partidq do jogo da velha_
-┃🐈‍⬛➺ _${usedPrefix}sudoku | sdk_ 🂱
-┃🐈‍⬛➺ _${usedPrefix}poemas_
-┃🐈‍⬛➺ _${usedPrefix}morceguices_ 🂱 _Curiosidades cultura gótica_
-┃🐈‍⬛➺ _${usedPrefix}biografia | bio_ 🂱 _Biografia do Edgar allan Poe_
-┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
+┃🐈‍⬛➺ ${usedPrefix}top5 | top10 *texto* 🂱 _Lista os top do grupo_ 
+┃
+┃🐈‍⬛➺ ${usedPrefix}personalidade *@usuario* 🂱 _Deduz a perosnalidade do @usuario_
+┃
+┃🐈‍⬛➺ ${usedPrefix}horoscopo  | hrp  *signo* 🂱 _Retorna o horoscopo do dia_
+┃
+┃🐈‍⬛➺ ${usedPrefix}slot  | apostar *valor* 🂱 _Aposta na maquina de slot com 𒄆𝙳𝚊𝚛𝚔𝙲𝚘𝚒𝚗𝚜
+┃
+┃🐈‍⬛➺ ${usedPrefix}slotxp | apostaxp *valor* 🂱 _Aposta na maquina de slot com pontos xp_
+┃
+┃🐈‍⬛➺ ${usedPrefix}quiz 🂱 
+┃🐈‍⬛➺ ${usedPrefix}xadrez | chess 
+┃🐈‍⬛➺ ${usedPrefix}ttt | xo 🂱 _Jogo da velha_
+┃🐈‍⬛➺ ${usedPrefix}delttt | xo 🂱 _Remove  partidq do jogo da velha_
+┃
+┃🐈‍⬛➺ ${usedPrefix}sudoku | sdk
+┃🐈‍⬛➺ ${usedPrefix}poemas
+┃🐈‍⬛➺ ${usedPrefix}morceguices 🂱 _Curiosidades cultura gótica_
+┃
+┃🐈‍⬛➺ ${usedPrefix}biografia | bio 🂱 _Biografia do Edgar allan Poe_
+┃
+┃🐈‍⬛➺ ${usedPrefix}curiosidades 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 let menuia = `*╭━━[ IA ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🩻️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_ 𓄿 _EdgarGPT em audio_
-┃🩻️➺ _${usedPrefix}gpt | alangpt  *texto*_ 𓄿 _EdgarGPT_
-┃🩻️➺ _${usedPrefix}bard  *texto*_ 𓄿 _IA da Google - Bard_
-┃🩻️➺ _${usedPrefix}gemini | ia  *texto*_ 𓄿 _EdgarGPT v3 com *Gemini*_
-┃🩻️➺ _${usedPrefix}bing | imagine  *texto*_ 𓄿 _Geracao de imagem com o Bing_
-┃🩻️➺ _${usedPrefix}dalle *texto*_ 𓄿 _Geracao de imagens com o DALL-E 2_
-┃🩻️➺ _${usedPrefix}math | calc  *operacao*_ 𓄿 _Calculadora avançada para Calculo_
+┃🩻️➺ ${usedPrefix}iavoz | chatgptvoz *texto* 𓄿 _EdgarGPT em audio_
+┃
+┃🩻️➺ ${usedPrefix}gpt | alangpt  *texto* 𓄿 _EdgarGPT_
+┃
+┃🩻️➺ ${usedPrefix}bard  *texto* 𓄿 _IA da Google - Bard_
+┃
+┃🩻️➺ ${usedPrefix}gemini | ia  *texto* 𓄿 _EdgarGPT v3 com *Gemini*_
+┃
+┃🩻️➺ ${usedPrefix}bing | imagine  *texto* 𓄿 _Geracao de imagem com o Bing_
+┃
+┃🩻️➺ ${usedPrefix}dalle *texto* 𓄿 _Geracao de imagens com o DALL-E 2_
+┃
+┃🩻️➺ ${usedPrefix}math | calc  *operacao* 𓄿 _Calculadora avançada para Calculo_
+┃
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
 let menubaixar = `*╭━━[ DOWNLOADS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-┃🕯️➺ _${usedPrefix}play *musica*_ 𓂀 _Download de musica_
-┃🕯️➺ _${usedPrefix}play2 *musica*_ 𓂀 _Download de video_
-┃🕯️➺ _${usedPrefix}spotify *musica*_ 𓂀 _Download de musica do spotify_
-┃🕯️➺ _${usedPrefix}ytmp3 | yta *link*_ 𓂀 _Baixar mp3 de link_
-┃🕯️➺ _${usedPrefix}ytmp4 | ytv *link*_ 𓂀 _Baixar mp4 de link_
-┃🕯️➺ _${usedPrefix}facebook | fb *link*_ 𓂀 _Baixar post de facebook_
-┃🕯️➺ _${usedPrefix}apk *nome*_ 𓂀 _Baixar apk_ 
-┃🕯️➺ _${usedPrefix}instagram | ig *link*_ 𓂀 _Baixar post de instagram_
-┃🕯️➺ _${usedPrefix}verig | igstalk *usuario(a)*_ 𓂀 _Stalkear perfil instagram_
-┃🕯️➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_ 𓂀 _Baixa stories do ig_
-┃🕯️➺ _${usedPrefix}tiktok *link*_ 𓂀 _Baixar post do tiktok_
-┃🕯️➺ _${usedPrefix}tw *link*_ 𓂀 _Baixar post do twitter
-┃🕯️➺ _${usedPrefix}tiktokimagen | ttimagen *link*_
-┃🕯️➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_ 𓂀 _Stalkear perfil Tiktok_
+┃🕯️➺ ${usedPrefix}play *musica* 𓂀 _Download de musica_
+┃
+┃🕯️➺ ${usedPrefix}play2 *musica* 𓂀 _Download de video_
+┃
+┃🕯️➺ ${usedPrefix}spotify *musica* 𓂀 _Download de musica do spotify_
+┃
+┃🕯️➺ ${usedPrefix}ytmp3 | yta *link* 𓂀 _Baixar mp3 de link_
+┃
+┃🕯️➺ ${usedPrefix}ytmp4 | ytv *link* 𓂀 _Baixar mp4 de link_
+┃
+┃🕯️➺ ${usedPrefix}facebook | fb *link* 𓂀 _Baixar post de facebook_
+┃
+┃🕯️➺ ${usedPrefix}apk *nome* 𓂀 _Baixar apk_ 
+┃🕯️➺ ${usedPrefix}instagram | ig *link* 𓂀 _Baixar post de instagram_
+┃
+┃🕯️➺ ${usedPrefix}verig | igstalk *usuario(a)* 𓂀 _Stalkear perfil instagram_
+┃
+┃🕯️➺ ${usedPrefix}ighistoria | igstory *usuario(a)* 𓂀 _Baixa stories do ig_
+┃
+┃🕯️➺ ${usedPrefix}tiktok *link* 𓂀 _Baixar post do tiktok_
+┃
+┃🕯️➺ ${usedPrefix}tw *link* 𓂀 _Baixar post do twitter
+┃
+┃🕯️➺ ${usedPrefix}tiktokimagen | ttimagen *link*
+┃🕯️➺ ${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*
+┃
+┃🕯️➺ ${usedPrefix}vertiktok | tiktokstalk *usuario(a)* 𓂀 _Stalkear perfil Tiktok_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 let menucvs = `*╭━━[ CONVERSORES ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🥀️➺ _${usedPrefix}toimg | jpg *figurinha*_ 𖤐 _Transforma figurinha em imagem_
-┃🥀️➺ _${usedPrefix}toanime *foto*_
+┃🥀️➺ ${usedPrefix}toimg | jpg *figurinha* 𖤐 _Transforma figurinha em imagem_
+┃
+┃🥀️➺ ${usedPrefix}toanime *foto*
 ┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video ou msg de voz*_
+┃
 ┃🥀️➺ _${usedPrefix}fg *imagem pra figurinha*_
 ┃🥀️➺ _${usedPrefix}topdf *imagem*_
 ┃🥀️➺ _${usedPrefix}tovn | vn *video ou audio*_
+┃
 ┃🥀️➺ _${usedPrefix}tovideo *audio*_
+┃
 ┃🥀️➺ _${usedPrefix}tourl *video, imagem*_
+┃
 ┃🥀️➺ _${usedPrefix}tts *idioma* *texto*_ ࣪𖤐 Texto para voz_
+┃
 ┃🥀️➺ _${usedPrefix}text *audio*_ ࣪𖤐 _Voz para texto_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 let menutools = `*╭━━[ FERRAMENTAS ]━━⬣*
@@ -175,8 +218,10 @@ let menutools = `*╭━━[ FERRAMENTAS ]━━⬣*
 ┃✒️️ _${usedPrefix}acortar *url*_
 ┃✒️️ _${usedPrefix}calc | math *operacao matematica*_
 ┃✒️️ _${usedPrefix}qrcode *texto*_
-┃✒️️ _${usedPrefix}styletext | style *texto*_ ϯ _Estiliza a fonte do texto
-┃✒️️ _${usedPrefix}traduzir | tra *idioma desejado* *texto*_
+┃✒️️ _${usedPrefix}styletext | style *texto*_ ϯ _Estiliza a fonte do texto_
+┃
+┃✒️️ _${usedPrefix}traduzir | trad *idioma desejado* *texto*_
+┃
 ┃✒️️ _${usedPrefix}morse codificar *texto*_
 ┃✒️️ _${usedPrefix}morse decodificar *morse*_
 ┃✒️️ _${usedPrefix}horario_
@@ -198,26 +243,42 @@ let menugp = `*╭━〔 GRUPO 〕━⬣*
 ┃┈*[ CONFIGURAÇÃO - ADMIN ]*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}kick | remover *usuario*_ ☥ _Remove do grupo_
+┃
+┃✒️📜➺ _${usedPrefix}kick | remover *usuario*_ ☥ _Remove do grupo
+┃
 ┃✒️📜➺ _${usedPrefix}ban | banir *@tag*_ ☥ _Proibe de usar o bot_
+┃
 ┃✒️📜➺ _${usedPrefix}mute *@tag*_ ☥ _Silencia e impede de mandar mensagem
-┃✒️📜➺ _${usedPrefix}gc *abrir : fechar* *opcional: tempo*_ ☥ _abre ou fecha grupo, com opcao pra definir temporizadkr
+┃
+┃✒️📜➺ _${usedPrefix}gc *abrir : fechar* *opcional: tempo*_ ☥ _abre ou fecha grupo, com opcao pra definir temporizador_
+┃
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
-┃✒️📜➺ _${usedPrefix}mutebot ☥ _Desativa o bot_
+┃✒️📜➺ _${usedPrefix}mutebot *(opcional: tempo)* ☥ _Desativa o bot_
+┃
 ┃✒️📜➺ _${usedPrefix}ativarbot_ ☥ _Ativa o bot_
+┃
 ┃✒️📜➺ _${usedPrefix}desmutar *@tag*_ ☥ _Tira o mute do @usuario_
+┃
 ┃✒️📜➺ _${usedPrefix}desbanir | unban *@tag*_ ☥ _Desbane usuario_
+┃
 ┃✒️📜➺ _${usedPrefix}admins *texto*_ ☥ _Invoca somente os admins_
+┃
 ┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_ ☥ _Invoca todos_
+┃
 ┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
+┃
 ┃✒️📜➺ _${usedPrefix}lembrete *horario* *mensagem*_
+┃
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
+┃
 ┃✒️📜➺ _${usedPrefix}link*_
 ┃✒️📜➺ _${usedPrefix}fantasmas*_ ☥ _Lista usuários inativos do grupo_
+┃
 ┃✒️📜➺ _${usedPrefix}kickfantasmas*_ ☥ _Remove usuarios inativos do grupo_
+┃
 ┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
-┃✒️📜➺ _${usedPrefix}despedida *texto*_
+┃✒️📜➺ _┃${usedPrefix}despedida *texto*_
 ┃✒️📜➺ _${usedPrefix}on_
 ┃✒️📜➺ _${usedPrefix}off_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
@@ -231,7 +292,9 @@ let menubot = `*╭━━[ BOT ]━━⬣*
 ┃⚙️ _${usedPrefix}boost_
 ┃⚙️ _${usedPrefix}status_
 ┃⚙️ _${usedPrefix}resetuser *user*_ ⚝ _Reseta dados de usuario_
+┃
 ┃⚙️ _${usedPrefix}resetchat_ ⚝ _Reseta dados de chat_
+┃ 
 ┃⚙️ _${usedPrefix}resetbot_ ⚝ _APAGA TUDO DO BOT!!_
 ┃⚙️ _${usedPrefix}chdat_ ⚝ _Loga dados chat_
 ┃⚙️ _${usedPrefix}userdata ⚝ _Loga dados user
@@ -277,15 +340,23 @@ let menubot = `*╭━━[ BOT ]━━⬣*
 
 let menumd = `*╭━━[ MIDIA ]━━⬣*
 ┃ 
-┃🥀 _${usedPrefix}logos *efeito texto*_ ☣︎ _Gerador de banner com texto_
-┃🥀 _${usedPrefix}style *fonte texto*_ ☣︎ _Gerador de fontes pra texto_
-┃🥀 _${usedPrefix}comunista | ussr *usuario*_ ☣︎ _Filtro camarada_
-┃🥀 _${usedPrefix}pixel *imagem*_ ☣︎ _Pixeliza uma imagem_
-┃🥀 _${usedPrefix}blur *imagem*_ ☣︎ Desfoca uma imagem_
-┃🥀 _${usedPrefix}mkpooh *texto | texto2*_ ☣︎ _Gerador de meme do pooh gentleman_
-┃🥀 _${usedPrefix}dado | dice_ ☣︎ _Gira um dado_
-┃🥀 _${usedPrefix}fg *imagem ou texto*_ ☣︎ _Cria uma figurinha_
-┃🥀 _${usedPrefix}attp|attp1|attp2|attp3 *texto*_ ☣︎ _Cria figurinha con texto colorido_
+┃🥀 ${usedPrefix}logos *efeito texto* ☣︎ _Gerador de banner com texto_
+┃
+┃🥀 ${usedPrefix}style *fonte texto* ☣︎ _Gerador de fontes pra texto_
+┃
+┃🥀 ${usedPrefix}comunista | ussr *usuario* ☣︎ _Filtro camarada_
+
+┃🥀 ${usedPrefix}pixel *imagem* ☣︎ _Pixeliza uma imagem_
+┃
+┃🥀 ${usedPrefix}blur *imagem* ☣︎ Desfoca uma imagem
+┃
+┃🥀 ${usedPrefix}mkpooh *texto | texto2* ☣︎ _Gerador de meme do pooh gentleman_
+┃
+┃🥀 ${usedPrefix}dado | dice ☣︎ _Gira um dado_
+┃
+┃🥀 ${usedPrefix}fg *imagem ou texto* ☣︎ _Cria uma figurinha_
+┃
+┃🥀 ${usedPrefix}attp|attp1|attp2|attp3 *texto* ☣︎ _Cria figurinha con texto colorido_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *Realiza modificações de audio*
 ┃
@@ -305,11 +376,11 @@ let menumd = `*╭━━[ MIDIA ]━━⬣*
 
 let menuvoto = `*╭━━[ VOTAÇÃO ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃📧➺ _${usedPrefix}criarvoto *texto*_
-┃📧➺ _${usedPrefix}upvoto_
-┃📧➺ _${usedPrefix}devoto_
-┃📧➺ _${usedPrefix}vervotos_
-┃📧➺ _${usedPrefix}delvoto | deletevoto_
+┃📧➺ ${usedPrefix}criarvoto *texto*
+┃📧➺ ${usedPrefix}upvoto
+┃📧➺ ${usedPrefix}devoto
+┃📧➺ ${usedPrefix}vervotos
+┃📧➺ ${usedPrefix}delvoto | deletevoto
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
