@@ -87,6 +87,6 @@ _${message.text}_
 
 handler.help = ['poll <desc>|opts1|opts2|etc...'];
 handler.tags = ['group'];
-handler.command = /^(horoscopo)$/i;
+handler.command = /^(horoscopo|hrp)$/i;
 
 export default handler;
