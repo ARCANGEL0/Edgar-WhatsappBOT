@@ -1,5 +1,10 @@
 import { googleImage } from '@bochilteam/scraper'
-var handler = async (m, { conn, text, usedPrefix, command }) => {
+var handler = async (m, { conn, text, usedPrefix, command,isAdmin,isOwner }) => {
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].busca===false){
+   m.react("❌")
+   
+   return !0;
+ } 
     if (!text) throw `${lenguajeGB['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
