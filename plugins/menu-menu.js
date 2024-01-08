@@ -6,7 +6,7 @@ const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
-let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
+let handler = async (m, { conn,isAdmin,isOwner, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
 try {
 let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 let { exp, limit, level, role } = global.db.data.users[m.sender]
@@ -184,52 +184,45 @@ let menutools = `*╭━━[ FERRAMENTAS ]━━⬣*
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
-let menugp = `
-*╭━〔 GRUPO 〕━⬣*
-┃ * configurar Grupo!!*
+let menugp = `*╭━〔 GRUPO 〕━⬣*
+┃ 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪦➺ _${usedPrefix}config_
+┃🪦➺ _${usedPrefix}link_
 ┃🪦➺ _${usedPrefix}infogrupo_
 ┃🪦➺ _${usedPrefix}listbanchat_
 ┃🪦➺ _${usedPrefix}listadv_
 ┃🪦➺ _${usedPrefix}listbloqueados_
 ┃🪦➺ _${usedPrefix}listbanidos_
-┃🪦➺ _${usedPrefix}settings
-┃🪦➺ _${usedPrefix}vergrupo_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ CONFIGURAÇÃO - GRUPOS ]━⬣*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃┈*[ CONFIGURAÇÃO - ADMIN ]*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}ban | mute *@tag*_
-┃✒️📜➺ _${usedPrefix}grupo *abrir : fechar*_
+┃✒️📜➺ _${usedPrefix}kick | remover *usuario*_ ☥ _Remove do grupo_
+┃✒️📜➺ _${usedPrefix}ban | banir *@tag*_ ☥ _Proibe de usar o bot_
+┃✒️📜➺ _${usedPrefix}mute *@tag*_ ☥ _Silencia e impede de mandar mensagem
+┃✒️📜➺ _${usedPrefix}gc *abrir : fechar* *opcional: tempo*_ ☥ _abre ou fecha grupo, com opcao pra definir temporizadkr
 ┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
 ┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
-┃✒️📜➺ _${usedPrefix}banchat_
-┃✒️📜➺ _${usedPrefix}unbanchat_
-┃✒️📜➺ _${usedPrefix}unmute | unban *@tag*_
-┃✒️📜➺ _${usedPrefix}admins *texto*_
-┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_
-┃✒️📜➺ _${usedPrefix}hidetag *texto*_
-┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
-┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
+┃✒️📜➺ _${usedPrefix}mutebot ☥ _Desativa o bot_
+┃✒️📜➺ _${usedPrefix}ativarbot_ ☥ _Ativa o bot_
+┃✒️📜➺ _${usedPrefix}desmutar *@tag*_ ☥ _Tira o mute do @usuario_
+┃✒️📜➺ _${usedPrefix}desbanir | unban *@tag*_ ☥ _Desbane usuario_
+┃✒️📜➺ _${usedPrefix}admins *texto*_ ☥ _Invoca somente os admins_
+┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_ ☥ _Invoca todos_
 ┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
 ┃✒️📜➺ _${usedPrefix}lembrete *horario* *mensagem*_
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
-┃✒️📜➺ _${usedPrefix}startvoto *texto*_
-┃✒️📜➺ _${usedPrefix}sivotar | upvote_
-┃✒️📜➺ _${usedPrefix}novotar | devote_
-┃✒️📜➺ _${usedPrefix}vervotos | cekvoto_
-┃✒️📜➺ _${usedPrefix}delvoto | deletevoto_
 ┃✒️📜➺ _${usedPrefix}link*_
+┃✒️📜➺ _${usedPrefix}fantasmas*_ ☥ _Lista usuários inativos do grupo_
+┃✒️📜➺ _${usedPrefix}kickfantasmas*_ ☥ _Remove usuarios inativos do grupo_
 ┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
 ┃✒️📜➺ _${usedPrefix}despedida *texto*_
 ┃✒️📜➺ _${usedPrefix}on_
 ┃✒️📜➺ _${usedPrefix}off_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
-let menubot = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ BOT ]━━⬣*
+let menubot = `*╭━━[ BOT ]━━⬣*
 ┃┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃⚙️ _${usedPrefix}criador_
@@ -237,6 +230,13 @@ let menubot = `💀🕯️ Olá @${username}
 ┃⚙️ _${usedPrefix}doar | paypal_
 ┃⚙️ _${usedPrefix}boost_
 ┃⚙️ _${usedPrefix}status_
+┃⚙️ _${usedPrefix}resetuser *user*_ ⚝ _Reseta dados de usuario_
+┃⚙️ _${usedPrefix}resetchat_ ⚝ _Reseta dados de chat_
+┃⚙️ _${usedPrefix}resetbot_ ⚝ _APAGA TUDO DO BOT!!_
+┃⚙️ _${usedPrefix}chdat_ ⚝ _Loga dados chat_
+┃⚙️ _${usedPrefix}userdata ⚝ _Loga dados user
+┃⚙️ _${usedPrefix}dashboard_
+┃⚙️ _${usedPrefix}speedtest_
 ┃⚙️ _${usedPrefix}ping_
 ┃⚙️ _${usedPrefix}on *:* off *welcome*_
 ┃⚙️ _${usedPrefix}on *:* off *avisos*_
@@ -247,9 +247,10 @@ let menubot = `💀🕯️ Olá @${username}
 ┃⚙️ _${usedPrefix}on *:* off *temporal*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
+┃⚙️ _${usedPrefix}on *:* off *autonivel*_
 ┃⚙️ _${usedPrefix}on *:* off *reaction*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
-┃⚙️ _${usedPrefix}on *:* off *antitoxicos*_
+┃⚙️ _${usedPrefix}on *:* off *antitoxic*_
 ┃⚙️ _${usedPrefix}on *:* off *antiver*_
 ┃⚙️ _${usedPrefix}on *:* off *antidelete*_
 ┃⚙️ _${usedPrefix}on *:* off  *antifake*_
@@ -264,39 +265,49 @@ let menubot = `💀🕯️ Olá @${username}
 ┃⚙️ _${usedPrefix}on *:* off *bot*_
 ┃⚙️ _${usedPrefix}on *:* off *gconly*_
 ┃⚙️ _${usedPrefix}on *:* off *pconly*_
+┃⚙️ _${usedPrefix}on *:* off *gpt*_
+┃⚙️ _${usedPrefix}on *:* off *busca*_
+┃⚙️ _${usedPrefix}on *:* off *midia*_
+┃⚙️ _${usedPrefix}on *:* off *jogos*_
+┃⚙️ _${usedPrefix}on *:* off *downloads*_
+┃⚙️ _${usedPrefix}on *:* off *quizxp*_
+┃⚙️ _${usedPrefix}on *:* off *xadrez*_
+┃⚙️ _${usedPrefix}on *:* off *rick*_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
-let menumd = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ MIDIA ]━━⬣*
-┃ * Personalização de logos
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🥀 _${usedPrefix}logos *efeito texto*_
-┃🪦🕯️ _${usedPrefix}menulogos2_
+let menumd = `*╭━━[ MIDIA ]━━⬣*
+┃ 
+┃🥀 _${usedPrefix}logos *efeito texto*_ ☣︎ _Gerador de banner com texto_
+┃🥀 _${usedPrefix}style *fonte texto*_ ☣︎ _Gerador de fontes pra texto_
+┃🥀 _${usedPrefix}comunista | ussr *usuario*_ ☣︎ _Filtro camarada_
+┃🥀 _${usedPrefix}pixel *imagem*_ ☣︎ _Pixeliza uma imagem_
+┃🥀 _${usedPrefix}blur *imagem*_ ☣︎ Desfoca uma imagem_
+┃🥀 _${usedPrefix}mkpooh *texto | texto2*_ ☣︎ _Gerador de meme do pooh gentleman_
+┃🥀 _${usedPrefix}dado | dice_ ☣︎ _Gira um dado_
+┃🥀 _${usedPrefix}fg *imagem ou texto*_ ☣︎ _Cria uma figurinha_
+┃🥀 _${usedPrefix}attp|attp1|attp2|attp3 *texto*_ ☣︎ _Cria figurinha con texto colorido_
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *Realiza modificações de audio*
 ┃
-┃🦇 _${usedPrefix}bass_
-┃🦇 _${usedPrefix}blown_
-┃🦇 _${usedPrefix}deep_
-┃🦇 _${usedPrefix}earrape_
-┃🦇 _${usedPrefix}fast_
-┃🦇 _${usedPrefix}fat_
-┃🦇 _${usedPrefix}nightcore_
-┃🦇 _${usedPrefix}reverse_
-┃🦇 _${usedPrefix}robot_
-┃🦇 _${usedPrefix}slow_
-┃🦇 _${usedPrefix}smooth_
-┃🦇 _${usedPrefix}tupai_
+┃🩻 _${usedPrefix}bass_
+┃🩻 _${usedPrefix}blown_
+┃🩻 _${usedPrefix}deep_
+┃🩻 _${usedPrefix}earrape_
+┃🩻 _${usedPrefix}fast_
+┃🩻 _${usedPrefix}fat_
+┃🩻 _${usedPrefix}nightcore_
+┃🩻 _${usedPrefix}reverse_
+┃🩻 _${usedPrefix}robot_
+┃🩻 _${usedPrefix}slow_
+┃🩻 _${usedPrefix}smooth_
+┃🩻 _${usedPrefix}tupai_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
-let menuvoto = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ VOTAÇÃO ]━━⬣*
+let menuvoto = `*╭━━[ VOTAÇÃO ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃📧➺ _${usedPrefix}startvote *texto*_
-┃📧➺ _${usedPrefix}upvote_
-┃📧➺ _${usedPrefix}devote_
+┃📧➺ _${usedPrefix}criarvoto *texto*_
+┃📧➺ _${usedPrefix}upvoto_
+┃📧➺ _${usedPrefix}devoto_
 ┃📧➺ _${usedPrefix}vervotos_
 ┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
@@ -305,211 +316,47 @@ let menuvoto = `💀🕯️ Olá @${username}
 
 let menuall = `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`
-*╭━━[ BUSCAS ]━━⬣*
-┃ *
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔍📜➺ _${usedPrefix}iavoz *texto*_
-┃🔍📜➺ _${usedPrefix}gpt | alangpt *texto*_
-┃🔍📜➺ _${usedPrefix}image *texto*_
-┃🔍📜➺ _${usedPrefix}google *texto*_
-┃🔍📜➺ _${usedPrefix}letra | lyrics *texto*_
-┃🔍📜➺ _${usedPrefix}ytsearch | yts *texto*_
-┃🔍📜➺ _${usedPrefix}wiki | wikipedia *texto*_
-┃🔍📜➺ _${usedPrefix}play | spotify *texto*_
-*╰━━━━━━━━━━━━⬣*
-*╭━〔 JOGOS 〕━⬣*
-┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_
-┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_
-┃🐈‍⬛➺ _${usedPrefix}quiz_
-┃🐈‍⬛➺ _${usedPrefix}poemas_
-┃🐈‍⬛➺ _${usedPrefix}morceguices_
-┃🐈‍⬛➺ _${usedPrefix}biografia_ 
-┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
-*╰━━━━━━━━━━━━⬣*
-*╭━〔 IA 〕━⬣*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🕷️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_
-┃🕷️➺ _${usedPrefix}gpt | alangpt  *texto*_
-┃🕷️➺ _${usedPrefix}dalle *texto*_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ DOWNLOADS ]━⬣*
-┃🕯️➺ _${usedPrefix}image *texto*_
-┃🕯️➺ _${usedPrefix}pinterest  *texto*_
-┃🕯️➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🕯️➺ _${usedPrefix}play *musica*_ 
-┃🕯️➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🕯️➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🕯️➺ _${usedPrefix}pdocaudio | ytadoc *link*_
-┃🕯️➺ _${usedPrefix}pdocvieo | ytvdoc *link*_
-┃🕯️➺ _${usedPrefix}facebook | fb *link*_
-┃🕯️➺ _${usedPrefix}instagram | ig *link video ou imagem*_
-┃🕯️➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🕯️➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🕯️➺ _${usedPrefix}tiktok *link*_
-┃🕯️➺ _${usedPrefix}tiktokimagen | ttimagen *link*_
-┃🕯️➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ CONVERSORES ]━⬣*
-┃🥀️➺ _${usedPrefix}toimg | img | jpg *figurinha*_
-┃🥀️➺ _${usedPrefix}toanime *foto*_
-┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
-┃🥀️➺ _${usedPrefix}fg *imagem pra figurinha*_
-┃🥀️➺ _${usedPrefix}topdf *imagem*_
-┃🥀️➺ _${usedPrefix}tovn | vn *video ou audio*_
-┃🥀️➺ _${usedPrefix}tovideo *audio*_
-┃🥀️➺ _${usedPrefix}tourl *video, imagem*_
-┃🥀️➺ _${usedPrefix}tts *idioma* *texto*_
-*╰━━━━━━━━━━━━⬣*
-*╭━━[ FERRAMENTAS ]━━⬣*
-┃✒️️ _${usedPrefix}criador_
-┃✒️️ _${usedPrefix}boost_
-┃✒️️ _${usedPrefix}status_
-┃✒️️ _${usedPrefix}ping_ 
-┃✒️️ _${usedPrefix}speedtest_
-┃✒️️ _${usedPrefix}afk *motivo*_
-┃✒️️ _${usedPrefix}acortar *url*_
-┃✒️️ _${usedPrefix}calc *operacao mth*_
-┃✒️️ _${usedPrefix}qrcode *texto*_
-┃✒️️ _${usedPrefix}styletext *texto*_
-┃✒️️ _${usedPrefix}traduzir | trad *texto*_
-┃✒️️ _${usedPrefix}morse codificar *texto*_
-┃✒️️ _${usedPrefix}morse decodificar *morse*_
-┃✒️️ _${usedPrefix}poll *Motivo*_
-┃✒️️ _${usedPrefix}horario_
-┃✒️ _${usedPrefix}clima *país cidade*_
-*╰━━━━━━━━━━━━⬣*
-*╭━━━[ AJUSTES - CHATS ]━━━⬣*
-┃ *Admin!!*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┃⚙️ _${usedPrefix}criador_
-┃⚙️ _${usedPrefix}infobot_
-┃⚙️ _${usedPrefix}doar | paypal_
-┃⚙️ _${usedPrefix}boost_
-┃⚙️ _${usedPrefix}status_
-┃⚙️ _${usedPrefix}ping_
-┃⚙️ _${usedPrefix}on *:* off *welcome*_
-┃⚙️ _${usedPrefix}on *:* off *avisos*_
-┃⚙️ _${usedPrefix}on *:* off *restrict*_
-┃⚙️ _${usedPrefix}on *:* off | *anticall*_
-┃⚙️ _${usedPrefix}on *:* off | *public*_
-┃⚙️ _${usedPrefix}on *:* off *autovisto*_
-┃⚙️ _${usedPrefix}on *:* off *temporal*_
-┃⚙️ _${usedPrefix}on *:* off *stickers*_
-┃⚙️ _${usedPrefix}on *:* off *autosticker*_
-┃⚙️ _${usedPrefix}on *:* off *reaction*_
-┃⚙️ _${usedPrefix}on *:* off *audios*_
-┃⚙️ _${usedPrefix}on *:* off *antitoxicos*_
-┃⚙️ _${usedPrefix}on *:* off *antiver*_
-┃⚙️ _${usedPrefix}on *:* off *antidelete*_
-┃⚙️ _${usedPrefix}on *:* off  *antifake*_
-┃⚙️ _${usedPrefix}on *:* off  *antilink*_
-┃⚙️ _${usedPrefix}on *:* off  *antilink2*_
-┃⚙️ _${usedPrefix}on *:* off *antitiktok*_
-┃⚙️ _${usedPrefix}on *:* off *antiyoutube*_
-┃⚙️ _${usedPrefix}on *:* off *antitelegram*_
-┃⚙️ _${usedPrefix}on *:* off *antifacebook*_
-┃⚙️ _${usedPrefix}on *:* off *antinstagram*_
-┃⚙️ _${usedPrefix}on *:* off *antitwitter*_
-┃⚙️ _${usedPrefix}on *:* off *bot*_
-┃⚙️ _${usedPrefix}on *:* off *gconly*_
-┃⚙️ _${usedPrefix}on *:* off *pconly*_
-*╰━━━━━━━━━━━━⬣*
-*╭━〔 GRUPO 〕━⬣**
-┃ * configurar Grupo!!*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪦➺ _${usedPrefix}config
-┃🪦➺ _${usedPrefix}infogrupo_
-┃🪦➺ _${usedPrefix}listbanchat_
-┃🪦➺ _${usedPrefix}listadv_
-┃🪦➺ _${usedPrefix}listbloqueados_
-┃🪦➺ _${usedPrefix}listbanidos_
-┃🪦➺ _${usedPrefix}settings'
-┃🪦➺ _${usedPrefix}vergrupo_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ CONFIGURAÇÃO - GRUPOS ]━⬣*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✒️📜➺ _${usedPrefix}add *numero*_
-┃✒️📜➺ _${usedPrefix}ban | mute *@tag*_
-┃✒️📜➺ _${usedPrefix}grupo *abrir : fechar*_
-┃✒️📜➺ _${usedPrefix}daradmin | promote *@tag*_
-┃✒️📜➺ _${usedPrefix}quitar | demote *@tag*_
-┃✒️📜➺ _${usedPrefix}banchat_
-┃✒️📜➺ _${usedPrefix}unbanchat_
-┃✒️📜➺ _${usedPrefix}unmute | unban *@tag*_
-┃✒️📜➺ _${usedPrefix}admins *texto*_
-┃✒️📜➺ _${usedPrefix}invocar | tagall *texto*_
-┃✒️📜➺ _${usedPrefix}hidetag *texto*_
-┃✒️📜➺ _${usedPrefix}infogrupo | infogroup_
-┃✒️📜➺ _${usedPrefix}gctime abrir | fechar *tempo*_
-┃✒️📜➺ _${usedPrefix}advertencia | adv *@tag*_
-┃✒️📜➺ _${usedPrefix}lembrete *horario* *mensagem*
-┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
-┃✒️📜➺ _${usedPrefix}startvoto *texto*_
-┃✒️📜➺ _${usedPrefix}sivotar | upvote_
-┃✒️📜➺ _${usedPrefix}novotar | devote_
-┃✒️📜➺ _${usedPrefix}vervotos | cekvoto_
-┃✒️📜➺ _${usedPrefix}delvoto | deletevoto_
-┃✒️📜➺ _${usedPrefix}link*_
-┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
-┃✒️📜➺ _${usedPrefix}despedida *texto*_
-┃✒️📜➺ _${usedPrefix}on_
-┃✒️📜➺ _${usedPrefix}off_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ VOTAÇÃO 📧 ]━⬣*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃📧➺ _${usedPrefix}startvote *texto*_
-┃📧➺ _${usedPrefix}upvote_
-┃📧➺ _${usedPrefix}devote_
-┃📧➺ _${usedPrefix}vervotos_
-┃📧➺ _${usedPrefix}delvoto | deletevoto_
-*╰━━━━━━━━━━━━⬣
-*╭━━━[ LOGOS ]━━⬣*
-┃ * Personalização de logos
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🥀 _${usedPrefix}logos *efeito texto*_
-┃🪦 _${usedPrefix}menulogos2_
-*╰━━━━━━━━━━━━⬣*
-*╭━[ MODIFICAR AUDIO ]━⬣*
-┃ *Realiza modificações*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🦇 _${usedPrefix}bass_
-┃🦇 _${usedPrefix}blown_
-┃🦇 _${usedPrefix}deep_
-┃🦇 _${usedPrefix}earrape_
-┃🦇 _${usedPrefix}fast_
-┃🦇 _${usedPrefix}fat_
-┃🦇 _${usedPrefix}nightcore_
-┃🦇 _${usedPrefix}reverse_
-┃🦇 _${usedPrefix}robot_
-┃🦇 _${usedPrefix}slow_
-┃🦇 _${usedPrefix}smooth_
-┃🦇 _${usedPrefix}tupai_
-*╰━━━━━━━━━━━━⬣*
+${menubuscas}
+${menuia}
+${menutools}
+${menujogos}
+${menucvs}
+${menubaixar}
+${menumd}
+${menuvoto}
 `.trim()
 
 
 if(!text[0])
-await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuall, fkontak)
+await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menuall}`, fkontak)
 
-if(text[0]=="busca") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubuscas, fkontak)
+if(text[0]=="busca") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menubuscas}`, fkontak)
 
-if(text[0]=="menu bot") conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',menubot, fkontak)
+if(text[0]=="bot" && (isAdmin || isOwner)) conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',`💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menubot}`, fkontak)
 
-if(text[0]=="menu ia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuia, fkontak)
-if(text[0]=="menu6") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menumd, fkontak)
+if(text[0]=="ia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menuia}`, fkontak)
+if(text[0]=="midia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menumd}`, fkontak)
 
-if(text[0]=="menu8") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
-if(text[0]=="menu4") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menubaixar, fkontak)
+if(text[0]=="voto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
+if(text[0]=="dl") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menubaixar}`, fkontak)
 
-if(text[0]=="menu9") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menugp, fkontak)
+if(text[0]=="gp" && (isAdmin || isOwner)) conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menugp}`, fkontak)
 
 
-if(text[0]=="menu2") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menutools, fkontak)
+if(text[0]=="util") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menutools}`, fkontak)
 
-if(text[0]=="menu3") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menujogos, fkontak)
-if(text[0]=="menu5") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menucvs, fkontak)
+if(text[0]=="jogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menujogos}`, fkontak)
+if(text[0]=="conversor") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+\`\`\`${horarioFecha}\`\`\`\n${menucvs}`, fkontak)
 
 
 }
