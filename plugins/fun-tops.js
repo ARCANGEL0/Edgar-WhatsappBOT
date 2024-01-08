@@ -18,17 +18,31 @@ function handler(m, { groupMetadata, command, usedPrefix, conn, text }) {
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`   
-let ps = groupMetadata.participants.map(v => v.id)
-let a = ps.getRandom()
-let b = ps.getRandom()
-let c = ps.getRandom()
-let d = ps.getRandom()
-let e = ps.getRandom()
-let f = ps.getRandom()
-let g = ps.getRandom()
-let h = ps.getRandom()
-let i = ps.getRandom()
-let j = ps.getRandom()
+
+let ps = groupMetadata.participants.map(v => v.id);
+
+if (ps.length < 5) {
+    throw "༒︎ É 𝚙𝚛𝚎𝚌𝚒𝚜𝚘 𝚖𝚊𝚒𝚜 𝚍𝚎 𝟻 𝚊𝚕𝚖𝚊𝚜 𝚗𝚎𝚜𝚝𝚎 𝚐𝚛𝚞𝚙𝚘 𝚙𝚊𝚛𝚊 𝚞𝚜𝚊𝚛 𝚎𝚜𝚝𝚎 𝚛𝚎𝚌𝚞𝚛𝚜𝚘. . .");
+}
+
+// Shuffle the array
+for (let i = ps.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [ps[i], ps[j]] = [ps[j], ps[i]];
+}
+
+// Select the first 5 (or 10 if there are more) unique members
+let a = ps[0];
+let b = ps[1];
+let c = ps[2];
+let d = ps[3];
+let e = ps[4];
+let f = ps[5] || null;
+let g = ps[6] || null;
+let h = ps[7] || null;
+let i = ps[8] || null;
+let j = ps[9] || null;
+
 if(command == "top10") {
 let top = 
 `╭━━⬣[🕯️💀 *_TOP 10 ${text}_* 🐈‍⬛]⬣━━━━━━
