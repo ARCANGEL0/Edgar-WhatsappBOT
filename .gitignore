@@ -123,7 +123,7 @@ dist
 .vscode-test
 GataBotSession/
 
-code_databaae.json
+code_database.json
 # yarn v2
 .yarn/cache
 .yarn/unplugged
