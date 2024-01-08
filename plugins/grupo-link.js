@@ -5,7 +5,7 @@ let mentionedJid = [who]
 let username = conn.getName(who)
 let group = m.chat
 
-const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './media/menus/Menu10.jpg'
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './media/menus/Menu5.jpg'
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let fsizedoc = '1'.repeat(10)
 
