@@ -3,7 +3,13 @@ import cheerio from "cheerio";
 import FormData from "form-data";
 
 const split = '|';
-const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
+const handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name,isAdmin,isOwner }) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].midia===false){
+   m.react("❌")
+   
+   return !0;
+ } 
   if (!effect) throw `${mg}
 ╭━━━━━━━━━⬣
 🥀 𝐍𝐨 𝐜𝐫𝐞𝐩𝐮𝐬𝐜𝐮𝐥𝐨 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞, 𝐚𝐠𝐮𝐚𝐫𝐝𝐨 𝐨 𝐬𝐞𝐮 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐩𝐚𝐫𝐚 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫 𝐮𝐦 𝐞𝐟𝐞𝐢𝐭𝐨 𝐚 𝐚𝐩𝐥𝐢𝐜𝐚𝐫.
