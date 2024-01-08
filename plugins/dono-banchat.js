@@ -10,7 +10,7 @@ let handler = async (m,{args}) => {
   }
   
   
-  else if(!text){
+  else if(!args[1]){
   
 global.db.data.chats[m.chat].isBanned = true
 m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
