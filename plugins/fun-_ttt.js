@@ -78,16 +78,25 @@ let expp2 = Math.floor(Math.random() * 2500)
 
 let winner = isSurrender ? room.game.currentTurn : room.game.winner
 let str = `
-🌒 𝙅𝙊𝙂𝘼𝘿𝙊𝙍𝙀𝙎
-*┈┈┈┈┈┈┈┈┈*
-❎ = @${room.game.playerX.split('@')[0]}
-⭕ = @${room.game.playerO.split('@')[0]}
-*┈┈┈┈┈┈┈┈┈*
+─┅──┅❖ ${isWin ? "𝚅𝚒𝚝𝚘𝚛𝚒𝚊": isTie ? "𝙴𝚖𝚙𝚊𝚝𝚎": ``} ❖─┅──┅
      ${arr.slice(0, 3).join('')}
      ${arr.slice(3, 6).join('')}
      ${arr.slice(6).join('')}
 *┈┈┈┈┈┈┈┈┈*
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 😎🏆 *GANASTE!!*\n*POR HABER GANADO OBTIENES*\n\n💎 *${dia2} Diamantes*\n🪙 *${tok2} Tokens*\n🐈 *${gata2} GataCoins*\n⚡ *${expp2} Exp*` : isTie ? `*EMPATE!!* 🤨\n*POR TERMINAR EN EMPATE AMBOS OBTIENEN*\n\n💎 *${dia} Diamantes*\n🪙 *${tok} Tokens*\n🐈 *${gata} GataCoins*\n⚡ *${expp} Exp*` : `🪄 *TURNO DE* @${room.game.currentTurn.split('@')[0]}`}
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} 🕯️💀*𝚅𝚎𝚗𝚌𝚎𝚜𝚝𝚎!*
+𓅊 𝙴𝚖 𝚟𝚒𝚛𝚝𝚞𝚍𝚎 𝚍𝚎 𝚝𝚞𝚊 𝚌𝚘𝚗𝚚𝚞𝚒𝚜𝚝𝚊, 𝚛𝚎𝚌𝚎𝚋𝚎𝚛á𝚜 :
+𓆣 *${tok2} 𝚃𝚘𝚔𝚎𝚗𝚜
+𓂀 *${expp2} 𝚇𝙿
+𒄆 *${gata2} 𝚁𝚊𝚟𝚎𝚗 𝙲𝚘𝚒𝚗𝚜
+
+─┅──┅❖ ❖─┅──┅` :
+isTie ? `*𝙽𝚘 𝚎𝚗𝚒𝚐𝚖𝚊 𝚍𝚘 𝚎𝚖𝚙𝚊𝚝𝚎...* 𝚊𝚖𝚋𝚊𝚜 𝚊𝚜 𝚊𝚕𝚖𝚊𝚜 𝚌𝚘𝚕𝚑𝚎𝚖:
+𓆣 *${tok} 𝚃𝚘𝚔𝚎𝚗𝚜
+𓂀 *${expp} 𝚇𝙿
+𒄆 *${gata} 𝚁𝚊𝚟𝚎𝚗 𝙲𝚘𝚒𝚗𝚜
+
+─┅──┅❖ ❖─┅──┅
+` : `🌕 *TURNO DE* @${room.game.currentTurn.split('@')[0]}`}
 `.trim()
 let users = global.db.data.chats[m.chat].users
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
