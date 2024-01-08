@@ -3,7 +3,13 @@ import axios from 'axios';
 import instagramGetUrl from 'instagram-url-direct';
 import {instagram} from '@xct007/frieren-scraper';
 import {instagramdl} from '@bochilteam/scraper';
-const handler = async (m, {conn, args, command, usedPrefix}) => {
+const handler = async (m, {conn,isAdmin,isOwner, args, command, usedPrefix}) => {
+  
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 const fkontak = {
         "key": {
         "participants":"0@s.whatsapp.net",
