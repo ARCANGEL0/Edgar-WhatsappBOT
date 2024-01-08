@@ -37,8 +37,16 @@ let captionvid = `─┅──┅❖ ❖─┅──┅
 ─┅──┅❖ ❖─┅──┅ `
 
 
-let sendtext = await conn.sendMessage(m.chat,
-captionvid , { quoted: m })
+let sendtext = await conn.sendMessage(m.chat, {
+text: captionvid,
+contextInfo: {
+externalAdReply: {
+title: yt_play[0].title,
+body: packname,
+mediaType: 1,
+showAdAttribution: false,
+renderLargerThumbnail: false
+}}} , { quoted: m })
 
 
 if (command == 'play') {	
