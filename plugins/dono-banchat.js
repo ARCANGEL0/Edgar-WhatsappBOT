@@ -9,12 +9,7 @@ let handler = async (m,{args}) => {
   const scheduledTime = new Date();
   /*
   
-  const job = schedule.scheduleJob(scheduledTime, async () => {
-  console.log('Executing scheduled task...');
   
-  global.db.data.chats[m.chat].isBanned = false
-    await m.reply("on")
-  }); 
   
   
   
@@ -54,14 +49,48 @@ const newScheduledTime = new Date(currentDateTime.getTime() + timeoutset);
 const newSchedule = `${newScheduledTime.getHours().toString().padStart(2, '0')}:${newScheduledTime.getMinutes().toString().padStart(2, '0')}:${newScheduledTime.getSeconds().toString().padStart(2, '0')}`;
 console.log("New scheduled time:", newSchedule);
 
-await m.reply("Horário  "+ newSchedule)
-await m.reply("Horário  "+ newSchedule)
+let tempo = formatTime(timeoutset)
 
-await m.reply("Timeout ;  " + formatTime(timeoutset))
-    
+   m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
+❖─┅──┅\n💀 COMANDOS INDISPONÍVEIS POR ${tempo}─┅──┅❖ 
+
+${pickRandom([ 
+ "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",
+  "Assim como o vento leva as folhas secas, minha despedida é suave, mas inevitável.",
+  "Parto desta existência como um barco que se afasta silenciosamente no crepúsculo.",
+  "Da encruzilhada da vida, escolho o caminho da despedida, deixando para trás memórias e mistérios.",
+  "Como um eco que desvanece na distância, minha presença se desvanece no horizonte do adeus.",
+  "Na penumbra da despedida, deixo para trás a trama intricada da vida para encontrar o desconhecido.",
+  "Assim como a última nota de uma melodia, minha despedida ressoa no silêncio que se segue.",
+  "Deixo este palco como um ator após sua última cena, desaparecendo nas cortinas do destino.",
+  "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
+  "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
+])}
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
+  
+ const job = schedule.scheduleJob(newSchedule, async () => {
+
+  console.log('Executing scheduled task...');
 
   
- 
+  global.db.data.chats[m.chat].isBanned = false
+m.reply(`${eg} ❖─┅──┅\n📜✒️ BOT REATIVADO NOVAMENTE\n─┅──┅❖ 
+
+${pickRandom([
+
+"Voltei do vale da sombra da morte para contemplar mais uma vez a luz do dia.",
+  "Como um corvo que retorna ao seu poleiro, estou de volta para encarar os enigmas da existência.",
+  "Dos abismos sombrios emergi, pronto para saudar novamente o mundo dos vivos.",
+  "Do limiar entre o sono e a vigília, regresso à realidade com olhos reavivados.",
+  "As portas do desconhecido se abriram e eu, como um espectro ressurgido, retorno à vida.",
+  "Após vagar por terras obscuras, retorno como uma fênix, pronto para renascer das cinzas.",
+  "Das profundezas do esquecimento, retornei para reescrever minha própria história.",
+  "As sombras da ausência dissiparam-se, e estou de volta para abraçar a luz da presença.",
+  "Como um viajante perdido retorna à senda certa, aqui estou eu, de volta aos caminhos familiares.",
+  "Das trevas do exílio, retorno com palavras de reconciliação e boas-vindas."
+])}
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
+  }); 
   }
   
   
