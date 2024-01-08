@@ -1,6 +1,11 @@
 import fetch from 'node-fetch'
 
-let handler = async(m, { conn, text, usedPrefix, command }) => {
+let handler = async(m, { conn, isAdmin,isOwner,text, usedPrefix, command }) => {
+  if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
+   m.react("❌")
+   
+   return !0;
+ } 
 if (!text) throw `╭━━━━━━━━━⬣
 ┃
 ┃ 🕯️🪦𝐃𝐢𝐠𝐢𝐭𝐞-𝐦𝐞 𝐨 𝐥𝐢𝐧𝐤 𝐝𝐨 𝐭𝐢𝐤𝐭𝐨𝐤
