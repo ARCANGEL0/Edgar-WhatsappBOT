@@ -52,7 +52,7 @@ console.log("New scheduled time:", newSchedule);
 let tempo = formatTime(timeoutset)
 
    m.reply(`${eg} ⚠️ BOT DESATIVADO ⚠️ \n 
-❖─┅──┅\n💀 COMANDOS INDISPONÍVEIS POR ${tempo}─┅──┅❖ 
+❖─┅──┅\n💀 COMANDOS INDISPONÍVEIS POR ${tempo}\n─┅──┅❖ 
 
 ${pickRandom([ 
  "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",
