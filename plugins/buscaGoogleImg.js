@@ -31,5 +31,5 @@ var handler = async (m, { conn, text, usedPrefix, command,isAdmin,isOwner }) => 
 handler.help = ['gimage']
 handler.tags = ['internet']
 handler.command = /^(googmg|gmg)$/i
-handler.limit = true
+handler.limit = false
 export default handler
