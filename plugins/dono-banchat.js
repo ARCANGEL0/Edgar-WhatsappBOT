@@ -5,8 +5,18 @@ let handler = async (m,{args}) => {
   try{
   if (args[0]) {
     global.db.data.chats[m.chat].isBanned = true
-    await m.reply("off")
-    let timeoutset = 86400000 * args[0] / 24
+    
+    let timeoutset;
+
+if (args[0].includes(':')) {
+  // User input is in the format HH:mm:ss
+  const [hours, minutes, seconds] = args[0].split(':').map(Number);
+  timeoutset = (hours * 3600 + minutes * 60 + seconds) * 1000; // Convert hours, minutes, and seconds to milliseconds
+} else {
+  // User input is in hours
+  timeoutset = args[0] * 3600000; // Convert hours to milliseconds
+}
+await m.reply("Timeout set for:", formatTime(timeoutset)")
     setTimeout(async () => {
 global.db.data.chats[m.chat].isBanned = false
 await m.reply("on")
@@ -48,3 +58,12 @@ handler.command = /^botoff|mutebot|desbott$/i
 handler.botAdmin = false
 handler.admin = true 
 export default handler
+
+function formatTime(milliseconds) {
+  const totalSeconds = Math.floor(milliseconds / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
