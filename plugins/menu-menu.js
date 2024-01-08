@@ -398,35 +398,35 @@ ${menuvoto}
 `.trim()
 
 
-if(!text[0])
+if(!text)
 await conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menuall}`, fkontak)
 
-if(text[0]=="busca") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="busca") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menubuscas}`, fkontak)
 
-if(text[0]=="bot" && (isAdmin || isOwner)) conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',`💀🕯️ Olá @${username}
+if(text=="bot" && (isAdmin || isOwner)) conn.sendFile(m.chat,gataVidMenu.getRandom(), 'gata.mp4',`💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menubot}`, fkontak)
 
-if(text[0]=="ia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="ia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menuia}`, fkontak)
-if(text[0]=="midia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="midia") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menumd}`, fkontak)
 
-if(text[0]=="voto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
-if(text[0]=="dl") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="voto") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', menuvoto, fkontak)
+if(text=="dl") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menubaixar}`, fkontak)
 
-if(text[0]=="gp" && (isAdmin || isOwner)) conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="gp" && (isAdmin || isOwner)) conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menugp}`, fkontak)
 
 
-if(text[0]=="util") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="util") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menutools}`, fkontak)
 
-if(text[0]=="jogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="jogos") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menujogos}`, fkontak)
-if(text[0]=="conversor") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
+if(text=="conversor") conn.sendFile(m.chat, gataVidMenu.getRandom(), 'gata.mp4', `💀🕯️ Olá @${username}
 \`\`\`${horarioFecha}\`\`\`\n${menucvs}`, fkontak)
 
 
