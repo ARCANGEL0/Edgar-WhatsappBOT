@@ -272,13 +272,13 @@ let menugp = `*╭━〔 GRUPO 〕━⬣*
 ┃
 ┃✒️📜➺ _${usedPrefix}deladvertencia | deladv *@tag*_
 ┃
-┃✒️📜➺ _${usedPrefix}link*_
-┃✒️📜➺ _${usedPrefix}fantasmas*_ ☥ _Lista usuários inativos do grupo_
+┃✒️📜➺ _*${usedPrefix}link*_
+┃✒️📜➺ _*${usedPrefix}fantasmas*_ ☥ _Lista usuários inativos do grupo_
 ┃
-┃✒️📜➺ _${usedPrefix}kickfantasmas*_ ☥ _Remove usuarios inativos do grupo_
+┃✒️📜➺ _*${usedPrefix}kickfantasmas*_ ☥ _Remove usuarios inativos do grupo_
 ┃
 ┃✒️📜➺ _${usedPrefix}setwelcome  *texto*_
-┃✒️📜➺ _┃${usedPrefix}despedida *texto*_
+┃✒️📜➺ _${usedPrefix}despedida *texto*_
 ┃✒️📜➺ _${usedPrefix}on_
 ┃✒️📜➺ _${usedPrefix}off_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
