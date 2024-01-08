@@ -130,13 +130,16 @@ if (isTie || isWin) {
   
 users[room.game.playerX].limit += dia //empate
 users[room.game.playerX].exp += expp
-        
+ users[room.game.playerX].money += data    
+ 
 users[room.game.playerO].limit += dia //empate
 users[room.game.playerO].exp += expp 
+users[room.game.playerO].money += gata
         
 if (isWin)
 users[winner].limit += dia2 //Ganador
 users[winner].exp += expp2
+users[winner].money += gata2
         
 if (debugMode)
 m.reply('[DEBUG]\n' + format(room))
