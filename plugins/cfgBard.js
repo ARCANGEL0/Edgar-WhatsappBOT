@@ -101,7 +101,7 @@ await conn.sendMessage(m.chat,{ react: {
     },
     m  )
 async function requestToChatGPT(inputText) {
-delete global.bard.data.users[m.sender]  
+
     
 global.db.data.chats[m.chat].bard[m.sender].push({ role: 'user', content: text });
 
