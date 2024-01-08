@@ -32,6 +32,6 @@ await conn.sendFile(m.chat, pp, './media/menus/Menu1.jpg', text, m, false, { men
 }
 handler.help = ['infogrup']
 handler.tags = ['group']
-handler.command = /^(infogrupo|gro?upinfo|info(gro?up|gc))$/i
+handler.command = /^(infogrupo|gro?upinfo|info(gru?up|gc))$/i
 handler.group = true
 export default handler
