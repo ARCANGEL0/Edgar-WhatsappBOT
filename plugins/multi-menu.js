@@ -79,7 +79,7 @@ let menuh = `╭━━━━━━━━━⬣
 ┃ *${usedPrefix}menu midia*  - _MIDIAS_
 ┃ *${usedPrefix}menu ia*  - _INTELIGENCIA ARTIFICIAL
 ┃ *${usedPrefix}menu voto*  - _VOTOS_
-┃ *${usedPrefix}menu grupo*  - _GRUPO_ *『💀 _ADMIN_』*
+┃ *${usedPrefix}menu gp*  - _GRUPO_ *『💀 _ADMIN_』*
 ┃ *${usedPrefix}menu bot*  - _BOT_ *『💀 _ADMIN_』*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
