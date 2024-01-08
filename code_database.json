@@ -1152,7 +1152,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 4942,
+      "exp": 4945,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -14354,7 +14354,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704709390985
+      "status": 1704709450846
     }
   }
 }
