@@ -3,11 +3,21 @@ import schedule from 'node-schedule'
 
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 let handler = async (m,{args}) => {
-  /*
   process.env.TZ = 'America/Sao_Paulo';
+
   const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
-  
   const scheduledTime = new Date();
+  /*
+  
+  const job = schedule.scheduleJob(scheduledTime, async () => {
+  console.log('Executing scheduled task...');
+  
+  global.db.data.chats[m.chat].isBanned = false
+    await m.reply("on")
+  }); 
+  
+  
+  
   scheduledTime.setHours(hours, minutes, 0, 0);
 
   // Schedule the task
@@ -19,6 +29,12 @@ let handler = async (m,{args}) => {
   if (args[0]) {
     global.db.data.chats[m.chat].isBanned = true
     
+    
+    const currentDateTime = new Date();
+const currentHours = currentDateTime.getHours();
+const currentMinutes = currentDateTime.getMinutes();
+const currentSeconds = currentDateTime.getSeconds();
+
 let timeoutset;
 
 if (args[0].includes(':')) {
@@ -33,6 +49,14 @@ if (args[0].includes(':')) {
   // User input is in hours
   timeoutset = args[0] * 3600000; // Convert hours to milliseconds
 }
+
+const newScheduledTime = new Date(currentDateTime.getTime() + timeoutset);
+const newSchedule = `${newScheduledTime.getHours().toString().padStart(2, '0')}:${newScheduledTime.getMinutes().toString().padStart(2, '0')}:${newScheduledTime.getSeconds().toString().padStart(2, '0')}`;
+console.log("New scheduled time:", newSchedule);
+
+await m.reply("Horário  "+ newSchedule)
+await m.reply("Horário  "+ newSchedule)
+
 await m.reply("Timeout ;  " + formatTime(timeoutset))
     
 
