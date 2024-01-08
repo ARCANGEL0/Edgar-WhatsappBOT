@@ -1,7 +1,20 @@
 
+import schedule from 'node-schedule'
 
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 let handler = async (m,{args}) => {
+  /*
+  process.env.TZ = 'America/Sao_Paulo';
+  const horaatual = moment().tz('America/Sao_Paulo').format('HH:mm')
+  
+  const scheduledTime = new Date();
+  scheduledTime.setHours(hours, minutes, 0, 0);
+
+  // Schedule the task
+  console.log('Scheduled time:', scheduledTime);
+  
+  const horario = args[0]
+  const [hours, minutes] = horario.split(':').map(Number); */
   try{
   if (args[0]) {
     global.db.data.chats[m.chat].isBanned = true
@@ -16,11 +29,8 @@ if (args[0].includes(':')) {
   // User input is in hours
   timeoutset = args[0] * 3600000; // Convert hours to milliseconds
 }
-await m.reply("Timeout set for:", formatTime(timeoutset)")
-    setTimeout(async () => {
-global.db.data.chats[m.chat].isBanned = false
-await m.reply("on")
-}, timeoutset)
+await m.reply("Timeout ;  " + formatTime(timeoutset))
+    
 
   
  
