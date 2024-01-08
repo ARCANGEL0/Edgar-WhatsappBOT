@@ -126,7 +126,7 @@ throw false
 let timeoutset = 86400000 * args[1] / 24 //Una Hora 86400000
 await conn.groupSettingUpdate(m.chat, isClose).then(async _=> {
 m.reply(`${lenguajeGB['smsAvisoRG']()}╭━━━━━━━━━⬣
-${lenguajeGB['smsGrupoTime3']()}* *${isClose == 'announcement' ? lenguajeGB.smsGrupoTime4() : lenguajeGB.smsGrupoTime5()}* ${args[1] ? `${lenguajeGB['smsGrupoTime6']()} ${clockString(timeoutset)}*` : ''}
+${lenguajeGB['smsGrupoTime3']()}* *${isClose == 'announcement' ? lenguajeGB.smsGrupoTime4() : lenguajeGB.smsGrupoTime5()}* ${args[1] ? `*${lenguajeGB['smsGrupoTime6']()} ${clockString(timeoutset)}*` : ''}
 ╰━━━━━━━━━━━━━━━━━━⬣`)
 })
 if (args[1]) {
@@ -141,7 +141,7 @@ await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
-handler.command = /^(grouptime|gctime|grupotiempo)$/i
+handler.command = /^(grouptime|gctime|gc)$/i
 handler.botAdmin = false
 handler.group = true 
 handler.admin = true
