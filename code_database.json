@@ -17,7 +17,7 @@
       "legendary": 0,
       "level": 6,
       "limit": 0,
-      "exp": 11113,
+      "exp": 11148,
       "silencedChat": {
         "351927285125@s.whatsapp.net": {
           "silenced": false,
@@ -14332,6 +14332,12 @@
       "success": 2,
       "last": 1704685349080,
       "lastSuccess": 1704685349080
+    },
+    "marker-ephoto360.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704708693394,
+      "lastSuccess": 1704708693394
     }
   },
   "msgs": {},
@@ -14348,7 +14354,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704708598163
+      "status": 1704708691834
     }
   }
 }
