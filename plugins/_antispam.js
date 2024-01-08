@@ -30,6 +30,7 @@ message3: 0,
 const userData = userSpamData[sender]
 const timeDifference = currentTime - userData.lastMessageTime
 
+
 if (timeDifference <= timeWindow) {
 userData.messageCount += 1
 
