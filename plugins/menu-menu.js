@@ -87,12 +87,10 @@ const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [de] YYYY || HH:mm A'
 
 
 
-let menubuscas = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ BUSCAS ]━━⬣*
+let menubuscas = `*╭━━[ BUSCAS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🔍📜➺ _${usedPrefix}imagem | img *texto*_ ♱ _Busca de imagem_
-┃🔍📜➺ _${usedPrefix}gimg *texto*_ ♱ _Busca de imagem no google_
+┃🔍📜➺ _${usedPrefix}gmg *texto*_ ♱ _Busca de imagem no google_
 ┃🔍📜➺ _${usedPrefix}wallpaper | wp *texto*_ ♱ _Busca de wallpapers_
 ┃🔍📜➺ _${usedPrefix}pinterest | pin *texto*_ ♱ _Busca no pinterest_
 ┃🔍📜➺ _${usedPrefix}google *texto*_ ♱ _busca no google_
@@ -101,12 +99,11 @@ let menubuscas = `💀🕯️ Olá @${username}
 ┃🔍📜➺ _${usedPrefix}wiki | wikipedia *texto*_ ♱  _Busca na wikipedia_
 ┃🔍📜➺ _${usedPrefix}core | pesquisar *texto*_ ♱  _Busca na CORE.uk por artigos e pesquisas academicas_ 
 ┃🔍📜➺ _${usedPrefix}nasa ♱  _Retorna as noticias do dia da NASA_
+┃🔍📜➺ _${usedPrefix}elemento *oxigenio ou 8* ♱ _Retorna dados do elemento Químico por nome ou n° atomico_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
  
-let menujogos = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ JOGOS ]━━⬣*
+let menujogos = `*╭━━[ JOGOS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🐈‍⬛➺ _${usedPrefix}top5 | top10 *texto*_ 🂱  _Lista os top do grupo_ 
 ┃🐈‍⬛➺ _${usedPrefix}personalidade *@usuario*_ 🂱 _Deduz a perosnalidade do @usuario_
@@ -124,87 +121,80 @@ let menujogos = `💀🕯️ Olá @${username}
 ┃🐈‍⬛➺ _${usedPrefix}curiosidades_ 
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
-let menuia = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ IA ]━━⬣*
+let menuia = `*╭━━[ IA ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🕷️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_
-┃🕷️➺ _${usedPrefix}gpt | alangpt  *texto*_
-┃🕷️➺ _${usedPrefix}dalle *texto*_
+┃🩻️➺ _${usedPrefix}iavoz | chatgptvoz *texto*_ 𓄿 _EdgarGPT em audio_
+┃🩻️➺ _${usedPrefix}gpt | alangpt  *texto*_ 𓄿 _EdgarGPT_
+┃🩻️➺ _${usedPrefix}bard  *texto*_ 𓄿 _IA da Google - Bard_
+┃🩻️➺ _${usedPrefix}gemini | ia  *texto*_ 𓄿 _EdgarGPT v3 com *Gemini*_
+┃🩻️➺ _${usedPrefix}bing | imagine  *texto*_ 𓄿 _Geracao de imagem com o Bing_
+┃🩻️➺ _${usedPrefix}dalle *texto*_ 𓄿 _Geracao de imagens com o DALL-E 2_
+┃🩻️➺ _${usedPrefix}math | calc  *operacao*_ 𓄿 _Calculadora avançada para Calculo_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
-let menubaixar = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ DOWNLOADS ]━━⬣*
+let menubaixar = `*╭━━[ DOWNLOADS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🕯️➺ _${usedPrefix}image *texto*_
-┃🕯️➺ _${usedPrefix}pinterest  *texto*_
-┃🕯️➺ _${usedPrefix}wallpaper|wp *texto*_
-┃🕯️➺ _${usedPrefix}play *musica*_ 
-┃🕯️➺ _${usedPrefix}ytmp3 | yta *link*_
-┃🕯️➺ _${usedPrefix}ytmp4 | ytv *link*_
-┃🕯️➺ _${usedPrefix}pdocaudio | ytadoc *link*_
-┃🕯️➺ _${usedPrefix}pdocvieo | ytvdoc *link*_
-┃🕯️➺ _${usedPrefix}facebook | fb *link*_
-┃🕯️➺ _${usedPrefix}instagram | ig *link video ou imagem*_
-┃🕯️➺ _${usedPrefix}verig | igstalk *usuario(a)*_
-┃🕯️➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-┃🕯️➺ _${usedPrefix}tiktok *link*_
+
+┃🕯️➺ _${usedPrefix}play *musica*_ 𓂀 _Download de musica_
+┃🕯️➺ _${usedPrefix}play2 *musica*_ 𓂀 _Download de video_
+┃🕯️➺ _${usedPrefix}spotify *musica*_ 𓂀 _Download de musica do spotify_
+┃🕯️➺ _${usedPrefix}ytmp3 | yta *link*_ 𓂀 _Baixar mp3 de link_
+┃🕯️➺ _${usedPrefix}ytmp4 | ytv *link*_ 𓂀 _Baixar mp4 de link_
+┃🕯️➺ _${usedPrefix}facebook | fb *link*_ 𓂀 _Baixar post de facebook_
+┃🕯️➺ _${usedPrefix}apk *nome*_ 𓂀 _Baixar apk_ 
+┃🕯️➺ _${usedPrefix}instagram | ig *link*_ 𓂀 _Baixar post de instagram_
+┃🕯️➺ _${usedPrefix}verig | igstalk *usuario(a)*_ 𓂀 _Stalkear perfil instagram_
+┃🕯️➺ _${usedPrefix}ighistoria | igstory *usuario(a)*_ 𓂀 _Baixa stories do ig_
+┃🕯️➺ _${usedPrefix}tiktok *link*_ 𓂀 _Baixar post do tiktok_
+┃🕯️➺ _${usedPrefix}tw *link*_ 𓂀 _Baixar post do twitter
 ┃🕯️➺ _${usedPrefix}tiktokimagen | ttimagen *link*_
 ┃🕯️➺ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
+┃🕯️➺ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_ 𓂀 _Stalkear perfil Tiktok_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
-let menucvs = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ CONVERSORES ]━━⬣*
+let menucvs = `*╭━━[ CONVERSORES ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🥀️➺ _${usedPrefix}toimg | img | jpg *figurinha*_
+┃🥀️➺ _${usedPrefix}toimg | jpg *figurinha*_ 𖤐 _Transforma figurinha em imagem_
 ┃🥀️➺ _${usedPrefix}toanime *foto*_
-┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
+┃🥀️➺ _${usedPrefix}tomp3 | mp3 *video ou msg de voz*_
 ┃🥀️➺ _${usedPrefix}fg *imagem pra figurinha*_
 ┃🥀️➺ _${usedPrefix}topdf *imagem*_
 ┃🥀️➺ _${usedPrefix}tovn | vn *video ou audio*_
 ┃🥀️➺ _${usedPrefix}tovideo *audio*_
 ┃🥀️➺ _${usedPrefix}tourl *video, imagem*_
-┃🥀️➺ _${usedPrefix}tts *idioma* *texto*_
+┃🥀️➺ _${usedPrefix}tts *idioma* *texto*_ ࣪𖤐 Texto para voz_
+┃🥀️➺ _${usedPrefix}text *audio*_ ࣪𖤐 _Voz para texto_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
-let menutools = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
-*╭━━[ FERRAMENTAS ]━━⬣*
+let menutools = `*╭━━[ FERRAMENTAS ]━━⬣*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✒️️ _${usedPrefix}criador_
-┃✒️️ _${usedPrefix}boost_
-┃✒️️ _${usedPrefix}status_
-┃✒️️ _${usedPrefix}ping_ 
-┃✒️️ _${usedPrefix}speedtest_
+┃✒️️ _${usedPrefix}doar_
+┃✒️️ _${usedPrefix}sobre_
 ┃✒️️ _${usedPrefix}afk *motivo*_
 ┃✒️️ _${usedPrefix}acortar *url*_
-┃✒️️ _${usedPrefix}calc *operacao mth*_
+┃✒️️ _${usedPrefix}calc | math *operacao matematica*_
 ┃✒️️ _${usedPrefix}qrcode *texto*_
-┃✒️️ _${usedPrefix}styletext *texto*_
-┃✒️️ _${usedPrefix}traduzir | trad *texto*_
+┃✒️️ _${usedPrefix}styletext | style *texto*_ ϯ _Estiliza a fonte do texto
+┃✒️️ _${usedPrefix}traduzir | tra *idioma desejado* *texto*_
 ┃✒️️ _${usedPrefix}morse codificar *texto*_
 ┃✒️️ _${usedPrefix}morse decodificar *morse*_
-┃✒️️ _${usedPrefix}poll *Motivo*_
 ┃✒️️ _${usedPrefix}horario_
-┃✒️️ _${usedPrefix}clima *pais cidade*_
+┃✒️️ _${usedPrefix}clima *cidade, Distrito*_
 *╰━━━━━[𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━━⬣*`.trim()
 
 
-let menugp = `💀🕯️ Olá @${username}
-\`\`\`${horarioFecha}\`\`\`
+let menugp = `
 *╭━〔 GRUPO 〕━⬣*
 ┃ * configurar Grupo!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪦➺ _${usedPrefix}config
+┃🪦➺ _${usedPrefix}config_
 ┃🪦➺ _${usedPrefix}infogrupo_
 ┃🪦➺ _${usedPrefix}listbanchat_
 ┃🪦➺ _${usedPrefix}listadv_
 ┃🪦➺ _${usedPrefix}listbloqueados_
 ┃🪦➺ _${usedPrefix}listbanidos_
-┃🪦➺ _${usedPrefix}settings'
+┃🪦➺ _${usedPrefix}settings
 ┃🪦➺ _${usedPrefix}vergrupo_
 *╰━━━━━━━━━━━━⬣*
 *╭━[ CONFIGURAÇÃO - GRUPOS ]━⬣*
