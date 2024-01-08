@@ -15,9 +15,9 @@
       "Banneduser": false,
       "lbars": "[▒▒▒▒▒▒▒▒▒]",
       "legendary": 0,
-      "level": 0,
+      "level": 6,
       "limit": 0,
-      "exp": 7510,
+      "exp": 10863,
       "silencedChat": {
         "351927285125@s.whatsapp.net": {
           "silenced": false,
@@ -46,6 +46,10 @@
         "status@broadcast": {
           "silenced": false,
           "chat": "status@broadcast"
+        },
+        "120363153388096560@g.us": {
+          "silenced": false,
+          "chat": "120363153388096560@g.us"
         }
       },
       "afkInfo": {
@@ -74,12 +78,17 @@
           "number": "351927285125@s.whatsapp.net",
           "afkReason": ""
         },
-        "120363178125353378@g.us": {
+        "status@broadcast": {
           "afkTime": -2,
           "number": "351927285125@s.whatsapp.net",
           "afkReason": ""
         },
-        "status@broadcast": {
+        "120363153388096560@g.us": {
+          "afkTime": -2,
+          "number": "351927285125@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363178125353378@g.us": {
           "afkTime": -2,
           "number": "351927285125@s.whatsapp.net",
           "afkReason": ""
@@ -107,7 +116,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 612,
+      "exp": 1084,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -141,7 +150,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 10,
+      "exp": 33,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -155,7 +164,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "554796646044@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -174,7 +184,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 46,
+      "exp": 58,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -208,7 +218,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 50,
+      "exp": 66,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -242,7 +252,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1239,
+      "exp": 2269,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -276,7 +286,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 195,
+      "exp": 536,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -310,7 +320,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 301,
+      "exp": 635,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -344,7 +354,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 673,
+      "exp": 730,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -377,9 +387,9 @@
       "Banneduser": false,
       "lbars": "[▒▒▒▒▒▒▒▒▒]",
       "legendary": 0,
-      "level": 0,
+      "level": 2,
       "limit": 0,
-      "exp": 424,
+      "exp": 585,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -414,7 +424,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 238,
+      "exp": 880,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -448,7 +458,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 278,
+      "exp": 544,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -584,7 +594,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 106,
+      "exp": 674,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -618,7 +628,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2061,
+      "exp": 2411,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -652,7 +662,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1250,
+      "exp": 1717,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -686,7 +696,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 291,
+      "exp": 312,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -754,7 +764,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 334,
+      "exp": 1447,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -788,7 +798,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1363,
+      "exp": 2741,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -797,6 +807,10 @@
         "120363153388096560@g.us": {
           "silenced": false,
           "chat": "120363153388096560@g.us"
+        },
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
         }
       },
       "afkInfo": {
@@ -831,7 +845,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 203,
+      "exp": 321,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -967,7 +981,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 77,
+      "exp": 156,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -999,9 +1013,9 @@
       "Banneduser": false,
       "lbars": "[▒▒▒▒▒▒▒▒▒]",
       "legendary": 0,
-      "level": 0,
+      "level": 2,
       "limit": 0,
-      "exp": 625,
+      "exp": 1208,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
@@ -1036,7 +1050,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 98,
+      "exp": 135,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1070,7 +1084,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 541,
+      "exp": 720,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1138,7 +1152,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2581,
+      "exp": 4349,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1172,7 +1186,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1860,
+      "exp": 5107,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1206,7 +1220,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1061,
+      "exp": 2942,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1240,7 +1254,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 212,
+      "exp": 330,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1292,7 +1306,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 361,
+      "exp": 385,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1360,7 +1374,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 140,
+      "exp": 273,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1394,7 +1408,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 25,
+      "exp": 42,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1462,7 +1476,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 99,
+      "exp": 127,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1496,7 +1510,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 388,
+      "exp": 465,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1631,7 +1645,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 66,
+      "exp": 118,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1665,7 +1679,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 994,
+      "exp": 1201,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1833,7 +1847,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 62,
+      "exp": 490,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1899,7 +1913,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 3,
+      "exp": 19,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -1913,7 +1927,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "553284577720@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -2000,7 +2015,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 173,
+      "exp": 1083,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2034,7 +2049,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 959,
+      "exp": 1717,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2043,6 +2058,10 @@
         "120363153388096560@g.us": {
           "silenced": false,
           "chat": "120363153388096560@g.us"
+        },
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
         }
       },
       "money": 150,
@@ -2054,6 +2073,11 @@
           "afkReason": ""
         },
         "120363153388096560@g.us": {
+          "afkTime": -2,
+          "number": "5516993161616@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363160427787079@g.us": {
           "afkTime": -2,
           "number": "5516993161616@s.whatsapp.net",
           "afkReason": ""
@@ -2109,7 +2133,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 889,
+      "exp": 1535,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2118,6 +2142,10 @@
         "120363153388096560@g.us": {
           "silenced": false,
           "chat": "120363153388096560@g.us"
+        },
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
         }
       },
       "money": 150,
@@ -2129,6 +2157,11 @@
           "afkReason": ""
         },
         "120363153388096560@g.us": {
+          "afkTime": -2,
+          "number": "556796154647@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363160427787079@g.us": {
           "afkTime": -2,
           "number": "556796154647@s.whatsapp.net",
           "afkReason": ""
@@ -2185,7 +2218,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 112,
+      "exp": 120,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2253,7 +2286,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 707,
+      "exp": 1133,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2287,7 +2320,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 8,
+      "exp": 17,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -2321,7 +2354,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 174,
+      "exp": 184,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2490,7 +2523,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 3,
+      "exp": 11,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -2524,7 +2557,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 32,
+      "exp": 52,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2558,7 +2591,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 943,
+      "exp": 1476,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2575,6 +2608,10 @@
         "120363153388096560@g.us": {
           "silenced": false,
           "chat": "120363153388096560@g.us"
+        },
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
         }
       },
       "money": 150,
@@ -2599,6 +2636,11 @@
           "afkTime": -2,
           "number": "553591942359@s.whatsapp.net",
           "afkReason": ""
+        },
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "553591942359@s.whatsapp.net",
+          "afkReason": ""
         }
       }
     },
@@ -2619,7 +2661,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 614,
+      "exp": 1869,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2662,7 +2704,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 103,
+      "exp": 137,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2964,7 +3006,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 159,
+      "exp": 200,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -2998,7 +3040,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 743,
+      "exp": 830,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3032,7 +3074,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 43,
+      "exp": 55,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3134,7 +3176,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 183,
+      "exp": 196,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3168,7 +3210,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 732,
+      "exp": 1553,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3235,7 +3277,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 364,
+      "exp": 399,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3404,7 +3446,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 28,
+      "exp": 73,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3805,7 +3847,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 3,
+      "exp": 10,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -3819,7 +3861,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5521969457986@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -4202,7 +4245,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 7,
+      "exp": 9,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -4216,7 +4259,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5511983864937@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -4466,7 +4510,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 14,
+      "exp": 45,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -5397,7 +5441,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 4,
+      "exp": 34,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -5411,7 +5455,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5519995481594@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -5662,7 +5707,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 23,
+      "exp": 152,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -5671,6 +5716,10 @@
         "120363153388096560@g.us": {
           "silenced": false,
           "chat": "120363153388096560@g.us"
+        },
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
         }
       },
       "afkInfo": {
@@ -5680,6 +5729,11 @@
           "afkReason": ""
         },
         "120363153388096560@g.us": {
+          "afkTime": -2,
+          "number": "5522997671199@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363160427787079@g.us": {
           "afkTime": -2,
           "number": "5522997671199@s.whatsapp.net",
           "afkReason": ""
@@ -5905,7 +5959,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 7,
+      "exp": 127,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -5919,7 +5973,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5521979140493@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -5971,7 +6026,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 116,
+      "exp": 118,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6172,7 +6227,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 865,
+      "exp": 1873,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6274,7 +6329,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 129,
+      "exp": 194,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6340,7 +6395,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 50,
+      "exp": 64,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -6374,7 +6429,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 374,
+      "exp": 467,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6608,7 +6663,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 67,
+      "exp": 78,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -6709,7 +6764,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 5,
+      "exp": 18,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -6723,7 +6778,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "554792298095@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -6775,7 +6831,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1094,
+      "exp": 2760,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -6941,7 +6997,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 458,
+      "exp": 1288,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7008,7 +7064,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 9,
+      "exp": 18,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -7022,7 +7078,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "558194709509@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -7308,7 +7365,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 138,
+      "exp": 206,
       "silencedChat": {
         "556284810788@s.whatsapp.net": {
           "silenced": false,
@@ -7351,7 +7408,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 516,
+      "exp": 1236,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7452,7 +7509,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 34,
+      "exp": 81,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7486,7 +7543,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 12,
+      "exp": 16,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7520,7 +7577,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 25,
+      "exp": 1001,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7619,7 +7676,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 74,
+      "exp": 83,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7751,7 +7808,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1,
+      "exp": 11,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7765,7 +7822,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5511916923579@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -7784,7 +7842,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 41,
+      "exp": 51,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -7915,7 +7973,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 9,
+      "exp": 22,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -8079,7 +8137,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 22,
+      "exp": 87,
       "silencedChat": {
         "559293897466@s.whatsapp.net": {
           "silenced": false,
@@ -8122,7 +8180,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 18,
+      "exp": 104,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -8320,7 +8378,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 2,
+      "exp": 44,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -8334,7 +8392,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5521966769350@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -8684,7 +8743,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 70,
+      "exp": 282,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -8985,7 +9044,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 8,
+      "exp": 23,
       "silencedChat": {
         "120363160427787079@g.us": {
           "silenced": false,
@@ -8999,7 +9058,8 @@
           "afkReason": ""
         }
       },
-      "money": null
+      "money": 150,
+      "spammer": 0
     },
     "5511941770863@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -9315,7 +9375,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 28,
+      "exp": 39,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9349,7 +9409,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 86,
+      "exp": 95,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9514,7 +9574,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 86,
+      "exp": 142,
       "silencedChat": {
         "120363153388096560@g.us": {
           "silenced": false,
@@ -9681,7 +9741,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 1,
+      "exp": 7,
       "silencedChat": {
         "120363198784572069@g.us": {
           "silenced": false,
@@ -9698,12 +9758,21 @@
         "120363202611492303@g.us": {
           "silenced": false,
           "chat": "120363202611492303@g.us"
+        },
+        "120363153388096560@g.us": {
+          "silenced": false,
+          "chat": "120363153388096560@g.us"
         }
       },
       "money": 150,
       "spammer": 0,
       "afkInfo": {
         "120363198784572069@g.us": {
+          "afkTime": -2,
+          "number": "639633532405@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363178125353378@g.us": {
           "afkTime": -2,
           "number": "639633532405@s.whatsapp.net",
           "afkReason": ""
@@ -9827,7 +9896,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 13,
+      "exp": 22,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9894,7 +9963,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 18,
+      "exp": 158,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -9928,7 +9997,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 81,
+      "exp": 143,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10091,17 +10160,53 @@
       "Banneduser": false,
       "lbars": "[▒▒▒▒▒▒▒▒▒]",
       "legendary": 0,
-      "level": 0,
+      "level": 4,
       "limit": 0,
-      "exp": 236,
+      "exp": 7283,
       "silencedChat": {
         "120363178125353378@g.us": {
           "silenced": false,
           "chat": "120363178125353378@g.us"
+        },
+        "120363202611492303@g.us": {
+          "silenced": false,
+          "chat": "120363202611492303@g.us"
+        },
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        },
+        "120363153388096560@g.us": {
+          "silenced": false,
+          "chat": "120363153388096560@g.us"
+        },
+        "120363198784572069@g.us": {
+          "silenced": false,
+          "chat": "120363198784572069@g.us"
         }
       },
       "afkInfo": {
         "120363178125353378@g.us": {
+          "afkTime": -2,
+          "number": "554598527531@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363202611492303@g.us": {
+          "afkTime": -2,
+          "number": "554598527531@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "554598527531@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363153388096560@g.us": {
+          "afkTime": -2,
+          "number": "554598527531@s.whatsapp.net",
+          "afkReason": ""
+        },
+        "120363198784572069@g.us": {
           "afkTime": -2,
           "number": "554598527531@s.whatsapp.net",
           "afkReason": ""
@@ -10127,7 +10232,7 @@
       "legendary": 0,
       "level": 0,
       "limit": 0,
-      "exp": 3,
+      "exp": 36,
       "silencedChat": {
         "120363126337539207@g.us": {
           "silenced": false,
@@ -10138,6 +10243,2095 @@
         "120363126337539207@g.us": {
           "afkTime": -2,
           "number": "556699270757@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5521983686909@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Kayck",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 73,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5521983686909@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "556493123331@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Luis",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 52,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "556493123331@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "555197450698@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Lucas",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 57,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "555197450698@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "559291695117@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Marcy 🌻",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 1233,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "559291695117@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5512997907267@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Anderson Mendrot",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 1319,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5512997907267@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "555481299895@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "ᛒᚱᚢᚾᛟ",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 29,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "555481299895@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "557791365830@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "𝔨𝔬𝔪𝔪𝔶☭🇵🇸 🇮🇱⃠",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 11,
+      "silencedChat": {
+        "120363178125353378@g.us": {
+          "silenced": false,
+          "chat": "120363178125353378@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363178125353378@g.us": {
+          "afkTime": -2,
+          "number": "557791365830@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5511970508593@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Odailson 😎",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 23,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511970508593@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "273031255580703_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 3,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "273031255580703_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5511996104960@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Alex Hask",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 64,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511996104960@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5513981844616@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 13 98184-4616",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 9,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5513981844616@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "272460142403688_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 9,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "272460142403688_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "553598841731@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Ryan",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 27,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "553598841731@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5511937353830@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Cavi Pessoa",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 2,
+      "limit": 0,
+      "exp": 965,
+      "silencedChat": {
+        "120363178125353378@g.us": {
+          "silenced": false,
+          "chat": "120363178125353378@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363178125353378@g.us": {
+          "afkTime": -2,
+          "number": "5511937353830@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "553175816533@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Thales",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 40,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "553175816533@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "151367649886370_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "151367649886370_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5521995972247@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "ㅤㅤㅤㅤㅤ",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 38,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5521995972247@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5521969269414@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 21 96926-9414",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5521969269414@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "149014142017663_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 10,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "149014142017663_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5511970147134@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 11 97014-7134",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 10,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511970147134@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "130425372598443_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "130425372598443_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "559185150852@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 9185150852",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 3,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "559185150852@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "109109466636421_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "109109466636421_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "73302324334676_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 9,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "73302324334676_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "265631211483329_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 3,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "265631211483329_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "104638657355814_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "104638657355814_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "222595387519214_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 10,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "222595387519214_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "559181906538@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "±Vęnūs±",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 24,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "559181906538@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "553398065080@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Arthur",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 22,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "553398065080@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5515991942619@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "KtDragon485",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 36,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5515991942619@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "555481021649@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 5481021649",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 5,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "555481021649@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "556799810501@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Rian Pedro",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 91,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "556799810501@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "559384001107@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "thvnvtxmxrphxse",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 74,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "559384001107@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "5511995102981@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Jorge",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 53,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511995102981@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "554796985897@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 4796985897",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "554796985897@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "96959088091321@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Ana Bibibi 🦋✨",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 29,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "96959088091321@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "1915672879170@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Gabriel Barreto",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 20,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "1915672879170@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "22192146378960@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Luis",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 6,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "22192146378960@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "175470989586454_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "175470989586454_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5516997648992@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "jvzinn_",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 19,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5516997648992@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "103955539443721@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Mari 🌈",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 16,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "103955539443721@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "10389559463942@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Alex Corrêa",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 6,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "10389559463942@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "218841502212158_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "218841502212158_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "226126119104688_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 3,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "226126119104688_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "28325493887064@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "𝕲𝖚𝖘 🇷🇺",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "28325493887064@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "13469134884881_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "13469134884881_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "265188527886420@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Marcy 🌻",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 15,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "265188527886420@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "161885974487118@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Marcelle Crystine",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "161885974487118@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "13924284027119@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Felipe",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "13924284027119@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "559185819536@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 9185819536",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 5,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "559185819536@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "6159335461105_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 3,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "6159335461105_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "151457944850648@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "M. R.",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "151457944850648@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "36829680160775_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 6,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "36829680160775_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "195055956582428@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "¿‽",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "195055956582428@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "140875296464914@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Alex Hask",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 4,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "140875296464914@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5511930223695@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Doni",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 37,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511930223695@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "2736045207660@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Bernardo",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 17,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "2736045207660@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "2590184100029_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 10,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "2590184100029_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5521980401333@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "밀레나",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 16,
+      "silencedChat": {
+        "120363178125353378@g.us": {
+          "silenced": false,
+          "chat": "120363178125353378@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363178125353378@g.us": {
+          "afkTime": -2,
+          "number": "5521980401333@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "spammer": 0
+    },
+    "40123970371599_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 7,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "40123970371599_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "125632440746131@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "𝑳𝒐𝒈𝒂𝒏 𝑺𝒂𝒏𝒕𝒂𝒏𝒂 (𝑯𝒂𝒓𝒓𝒚)",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "125632440746131@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "204092634861579_1@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 2,
+      "silencedChat": {
+        "120363160427787079@g.us": {
+          "silenced": false,
+          "chat": "120363160427787079@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363160427787079@g.us": {
+          "afkTime": -2,
+          "number": "204092634861579_1@s.whatsapp.net",
+          "afkReason": ""
+        }
+      },
+      "money": null
+    },
+    "5516993496827@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "+55 16 99349-6827",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 9,
+      "silencedChat": {
+        "120363126337539207@g.us": {
+          "silenced": false,
+          "chat": "120363126337539207@g.us"
+        }
+      },
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5516993496827@s.whatsapp.net",
           "afkReason": ""
         }
       },
@@ -10186,172 +12380,6 @@
       "autolevelup": false,
       "expired": 0,
       "afks": []
-    },
-    "120363178125353378@g.us": {
-      "quiz": {
-        "math": false,
-        "cp": "",
-        "ca": "",
-        "cm": "",
-        "xp": 0,
-        "id": "",
-        "time": ""
-      },
-      "isBanned": false,
-      "welcome": true,
-      "detect": false,
-      "sWelcome": "",
-      "sBye": "",
-      "sPromote": "",
-      "sDemote": "",
-      "delete": false,
-      "modohorny": false,
-      "stickers": false,
-      "autosticker": false,
-      "audios": false,
-      "antiver": false,
-      "antiLink": false,
-      "antiLink2": false,
-      "antiTiktok": false,
-      "antiYoutube": false,
-      "antiTelegram": false,
-      "antiFacebook": false,
-      "antiInstagram": false,
-      "antiTwitter": false,
-      "antifake": false,
-      "reaction": true,
-      "viewonce": false,
-      "modoadmin": false,
-      "antitoxic": false,
-      "simi": false,
-      "antiTraba": false,
-      "autolevelup": false,
-      "expired": 0,
-      "afks": [],
-      "edgargpt": {
-        "config": {
-          "lastQuestion": {
-            "remoteJid": "120363178125353378@g.us",
-            "fromMe": true,
-            "id": "BAE53F3D8058ADBC"
-          },
-          "resposta": "Ah, caro inquiridor, a sabedoria dos antigos gregos era, de fato, intrigante. Permita-me esclarecer a questão que assombra sua mente inquisitiva.\n\nDe acordo com a crença dos gregos antigos, o fígado era considerado o centro das emoções, acreditando-se que as sensações e os estados mentais eram resultado de uma interação entre o corpo e a alma. Essa visão, por sua vez, estava profundamente arraigada na antiga doutrina hipocrática dos quatro humores do corpo, conhecida como teoria humoral.\n\nConforme essa concepção, o corpo era composto por quatro humores principais: sangue, fleuma, bile amarela e bile negra. Cada um desses humores estava associado a características diferentes, incluindo temperamento e estados emocionais.\n\nO fígado, na perspectiva dos gregos, era considerado o órgão responsável pela produção e armazenamento da bile negra, também conhecida como melancolia. Acreditava-se que o excesso dessa bile causava desequilíbrios emocionais e afetava diretamente o estado de espírito de uma pessoa.\n\nObservo, porém, que tal concepção não se sustenta nos fundamentos científicos modernos, uma vez que o fígado desempenha funções importantes, como a síntese de proteínas, o metabolismo de drogas e toxinas, a produção de bile e a purificação do sangue. A relação com as emoções, ancorada na antiguidade, estaria mais relacionada a uma metáfora filosófica e poética, transcendendo a pura análise científica.\n\nEssa perspectiva peculiar e antiquada dos gregos em relação ao fígado como centro das emoções destaca a riqueza do pensamento humano ao longo das eras. No entanto, na atualidade, temos uma compreensão mais precisa da complexidade do sistema nervoso e da influência cerebral sobre as emoções. Como poeta do obscuro e do sublime, tal assunto me é particularmente empolgante, pois representa o impulso inato do homem em buscar explicações para as maravilhas e enigmas do mundo à sua volta."
-        },
-        "554598527531@s.whatsapp.net": [
-          {
-            "role": "user",
-            "content": "Fale sobre a afirmativa que diz que quem tem letra bonita ou detalhada normalmente não é considerada uma pessoa inteligente"
-          },
-          {
-            "role": "user",
-            "content": "Porque o cabelo colorido ganhou visibilidade no século XIX"
-          },
-          {
-            "role": "user",
-            "content": "William Godwin também era jornalista, você chegou a conhecer o trabalho dele?"
-          }
-        ],
-        "351927285125@s.whatsapp.net": [
-          {
-            "role": "user",
-            "content": "Fale sobre a afirmativa que diz que quem tem letra bonita ou detalhada normalmente não é considerada uma pessoa inteligente"
-          },
-          {
-            "role": "user",
-            "content": "diz oi"
-          }
-        ],
-        "5519987110100@s.whatsapp.net": [
-          {
-            "role": "user",
-            "content": "discorra sobre a importância do lançamento do WhatsApp 2"
-          },
-          {
-            "role": "user",
-            "content": "discorra sobre a importância de Pablo Vittar na promoção da cultura nacional brasileira a nível internacional e mundial"
-          },
-          {
-            "role": "user",
-            "content": "desconsiderando sua origem anglosaxônica, você acha mais racional ser católico ou protestante?"
-          }
-        ],
-        "553183436556@s.whatsapp.net": [
-          {
-            "role": "user",
-            "content": "discorra sobre a importância do lançamento da mulher 2"
-          },
-          {
-            "role": "user",
-            "content": "discorra sobre o waifuismo"
-          },
-          {
-            "role": "user",
-            "content": "qual é a previsão do lançamento do sexo 2?"
-          },
-          {
-            "role": "user",
-            "content": "qual é a variação do preço do quilo do sexo em 2023?"
-          },
-          {
-            "role": "user",
-            "content": "me xinga"
-          }
-        ],
-        "553591942359@s.whatsapp.net": [
-          {
-            "role": "user",
-            "content": "por que os Gregos consideravam o fígado como os centro das emoções"
-          }
-        ]
-      },
-      "gemini": {
-        "config": {
-          "lastQuestion": "",
-          "resposta": ""
-        },
-        "351927285125@s.whatsapp.net": []
-      },
-      "bard": {
-        "config": {
-          "lastQuestion": "",
-          "resposta": ""
-        },
-        "351927285125@s.whatsapp.net": []
-      },
-      "users": {
-        "351927285125@s.whatsapp.net": {
-          "exp": 0,
-          "limit": 4500,
-          "role": "𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱",
-          "money": 4500,
-          "level": 100,
-          "adm": true,
-          "legendary": true
-        }
-      },
-      "jogos": true,
-      "jogadores": {
-        "351927285125@s.whatsapp.net": {
-          "xp": 105,
-          "name": "ᯓ  ꫝꫀꪀ᥅ꪗ"
-        },
-        "5519987110100@s.whatsapp.net": {
-          "xp": 160,
-          "name": "Gabriel"
-        },
-        "556284810788@s.whatsapp.net": {
-          "xp": -20,
-          "name": "Isadora Simões"
-        },
-        "553183436556@s.whatsapp.net": {
-          "xp": 10,
-          "name": "Matheus"
-        },
-        "558175001504@s.whatsapp.net": {
-          "xp": -30,
-          "name": "Nina Rodrigues"
-        }
-      }
     },
     "351927285125@s.whatsapp.net": {
       "quiz": {
@@ -10648,7 +12676,28 @@
       "antiTraba": false,
       "autolevelup": false,
       "expired": 0,
-      "afks": []
+      "afks": [],
+      "users": {
+        "351927285125@s.whatsapp.net": {
+          "exp": 0,
+          "limit": 4500,
+          "role": "𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱",
+          "money": 4550,
+          "level": 100,
+          "adm": true,
+          "legendary": true,
+          "lastslot": 1704661204786
+        },
+        "556796154647@s.whatsapp.net": {
+          "exp": 0,
+          "limit": 0,
+          "role": "🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨",
+          "money": 0,
+          "level": 0,
+          "adm": true,
+          "legendary": false
+        }
+      }
     },
     "status@broadcast": {
       "quiz": {
@@ -10805,7 +12854,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 0,
+          "exp": 8,
           "limit": 4500,
           "role": "𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱",
           "money": 4450,
@@ -10822,6 +12871,15 @@
           "level": 100,
           "adm": false,
           "legendary": true
+        },
+        "554598527531@s.whatsapp.net": {
+          "exp": 2200,
+          "limit": 12,
+          "role": "🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨",
+          "level": 0,
+          "money": 0,
+          "adm": false,
+          "legendary": false
         }
       },
       "isBanned": false,
@@ -10833,9 +12891,9 @@
       "sDemote": "",
       "delete": false,
       "jogos": true,
-      "gpt": true,
+      "gpt": false,
       "xadrez": true,
-      "afkadm": false,
+      "afkadm": true,
       "downloads": true,
       "modohorny": false,
       "stickers": false,
@@ -10865,28 +12923,90 @@
           "lastQuestion": "",
           "resposta": ""
         },
-        "351927285125@s.whatsapp.net": []
+        "351927285125@s.whatsapp.net": [],
+        "554598527531@s.whatsapp.net": []
       },
       "jogadores": {
         "351927285125@s.whatsapp.net": {
           "xp": -5,
           "name": "ᯓ  ꫝꫀꪀ᥅ꪗ"
         }
-      }
+      },
+      "busca": false
+    },
+    "120363178125353378@g.us": {
+      "quiz": {
+        "math": false,
+        "cp": "",
+        "ca": "",
+        "cm": "",
+        "xp": 0,
+        "id": "",
+        "time": ""
+      },
+      "users": {
+        "351927285125@s.whatsapp.net": {
+          "exp": 0,
+          "limit": 4500,
+          "role": "𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱",
+          "money": 4500,
+          "level": 100,
+          "adm": true,
+          "legendary": true
+        }
+      },
+      "isBanned": false,
+      "welcome": true,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": false,
+      "jogos": true,
+      "gpt": true,
+      "busca": true,
+      "midia": true,
+      "xadrez": true,
+      "afkadm": true,
+      "downloads": true,
+      "modohorny": false,
+      "stickers": false,
+      "autosticker": false,
+      "audios": false,
+      "antiver": false,
+      "antiLink": false,
+      "antiLink2": false,
+      "antiTiktok": false,
+      "antiYoutube": false,
+      "antiTelegram": false,
+      "antiFacebook": false,
+      "antiInstagram": false,
+      "antiTwitter": false,
+      "antifake": false,
+      "reaction": true,
+      "viewonce": false,
+      "modoadmin": false,
+      "antitoxic": false,
+      "simi": false,
+      "antiTraba": true,
+      "autolevelup": false,
+      "expired": 0,
+      "afks": []
     }
   },
   "stats": {
     "config-on y off.js": {
-      "total": 27,
-      "success": 27,
-      "last": 1704645082069,
-      "lastSuccess": 1704645082069
+      "total": 36,
+      "success": 36,
+      "last": 1704666101632,
+      "lastSuccess": 1704666101632
     },
     "s-risa.js": {
-      "total": 533,
-      "success": 484,
-      "last": 1704648725124,
-      "lastSuccess": 1704648626450
+      "total": 1203,
+      "success": 1064,
+      "last": 1704674687859,
+      "lastSuccess": 1704674687859
     },
     "dono-banchat.js": {
       "total": 3,
@@ -10895,10 +13015,10 @@
       "lastSuccess": 1704613601969
     },
     "status.js": {
-      "total": 19,
-      "success": 19,
-      "last": 1704645814488,
-      "lastSuccess": 1704645814488
+      "total": 22,
+      "success": 22,
+      "last": 1704663288711,
+      "lastSuccess": 1704663288711
     },
     "curiosidades.js": {
       "total": 2,
@@ -10907,10 +13027,10 @@
       "lastSuccess": 1704588263331
     },
     "dono-update.js": {
-      "total": 58,
-      "success": 57,
-      "last": 1704647659540,
-      "lastSuccess": 1704647659540
+      "total": 75,
+      "success": 74,
+      "last": 1704674294626,
+      "lastSuccess": 1704674294626
     },
     "gameChess.js": {
       "total": 2,
@@ -10919,10 +13039,10 @@
       "lastSuccess": 1704588318563
     },
     "quiz.js": {
-      "total": 145,
-      "success": 128,
-      "last": 1704648282719,
-      "lastSuccess": 1704648282719
+      "total": 146,
+      "success": 129,
+      "last": 1704649076874,
+      "lastSuccess": 1704649076874
     },
     "dono-exec.js": {
       "total": 3,
@@ -10931,28 +13051,28 @@
       "lastSuccess": 1704640795497
     },
     "s-amor.js": {
-      "total": 17,
-      "success": 16,
-      "last": 1704648118383,
-      "lastSuccess": 1704648118383
+      "total": 51,
+      "success": 34,
+      "last": 1704673822351,
+      "lastSuccess": 1704673520375
     },
     "multi-menu.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1704603997768,
-      "lastSuccess": 1704603997768
-    },
-    "dl-yt_play.js": {
       "total": 6,
       "success": 6,
-      "last": 1704646461225,
-      "lastSuccess": 1704646461225
+      "last": 1704662916351,
+      "lastSuccess": 1704662916351
+    },
+    "dl-yt_play.js": {
+      "total": 15,
+      "success": 15,
+      "last": 1704674411512,
+      "lastSuccess": 1704674411512
     },
     "sticker-sticker.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1704635460903,
-      "lastSuccess": 1704635460903
+      "total": 10,
+      "success": 10,
+      "last": 1704654957194,
+      "lastSuccess": 1704654957194
     },
     "fun-simi.js": {
       "total": 2,
@@ -10967,16 +13087,16 @@
       "lastSuccess": 1704645782346
     },
     "s-ok.js": {
-      "total": 30,
-      "success": 26,
-      "last": 1704648207899,
-      "lastSuccess": 1704645878860
+      "total": 61,
+      "success": 43,
+      "last": 1704674596737,
+      "lastSuccess": 1704674596737
     },
     "cfg-chatGPT.js": {
-      "total": 26,
-      "success": 25,
-      "last": 1704645946603,
-      "lastSuccess": 1704625855961
+      "total": 31,
+      "success": 30,
+      "last": 1704666077177,
+      "lastSuccess": 1704666077177
     },
     "cfg-hd.js": {
       "total": 2,
@@ -10997,10 +13117,10 @@
       "lastSuccess": 1704591713891
     },
     "dono-unbanchat.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1704645914929,
-      "lastSuccess": 1704645914929
+      "total": 7,
+      "success": 7,
+      "last": 1704662758873,
+      "lastSuccess": 1704662758873
     },
     "dono-cleartmp.js": {
       "total": 2,
@@ -11009,10 +13129,10 @@
       "lastSuccess": 1704592180819
     },
     "dono-boost.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1704645917727,
-      "lastSuccess": 1704645917727
+      "total": 5,
+      "success": 5,
+      "last": 1704663362374,
+      "lastSuccess": 1704663362374
     },
     "s-payaso.js": {
       "total": 6,
@@ -11021,10 +13141,10 @@
       "lastSuccess": 1704646129572
     },
     "dl-imagen.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1704601896314,
-      "lastSuccess": 1704601896314
+      "total": 5,
+      "success": 5,
+      "last": 1704666263171,
+      "lastSuccess": 1704666263171
     },
     "dono-banuser.js": {
       "total": 2,
@@ -11051,10 +13171,10 @@
       "lastSuccess": 1704616468257
     },
     "grupo-config.js": {
-      "total": 10,
-      "success": 9,
-      "last": 1704646024949,
-      "lastSuccess": 1704646024949
+      "total": 11,
+      "success": 10,
+      "last": 1704649074043,
+      "lastSuccess": 1704649074043
     },
     "info-dashboard.js": {
       "total": 2,
@@ -11063,10 +13183,10 @@
       "lastSuccess": 1704617084597
     },
     "dono-reiniciar-usuario.js": {
-      "total": 9,
-      "success": 8,
-      "last": 1704645936244,
-      "lastSuccess": 1704645936244
+      "total": 10,
+      "success": 9,
+      "last": 1704663011473,
+      "lastSuccess": 1704663011473
     },
     "dono-userdata.js": {
       "total": 13,
@@ -11075,22 +13195,22 @@
       "lastSuccess": 1704642229041
     },
     "fun-ttt.js": {
-      "total": 12,
-      "success": 6,
-      "last": 1704637478972,
-      "lastSuccess": 1704636270678
+      "total": 20,
+      "success": 10,
+      "last": 1704670019899,
+      "lastSuccess": 1704670019899
     },
     "dono-clearallsession.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1704632762014,
-      "lastSuccess": 1704632762014
-    },
-    "fun-delttt.js": {
       "total": 3,
       "success": 3,
-      "last": 1704637476638,
-      "lastSuccess": 1704637476638
+      "last": 1704663049971,
+      "lastSuccess": 1704663049971
+    },
+    "fun-delttt.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1704670016888,
+      "lastSuccess": 1704670016888
     },
     "fun-ppt.js": {
       "total": 3,
@@ -11099,10 +13219,10 @@
       "lastSuccess": 1704638860394
     },
     "fun-slot.js": {
-      "total": 31,
-      "success": 2,
-      "last": 1704646193618,
-      "lastSuccess": 1704646174773
+      "total": 33,
+      "success": 3,
+      "last": 1704661345556,
+      "lastSuccess": 1704661207333
     },
     "fun-tops.js": {
       "total": 2,
@@ -11111,16 +13231,76 @@
       "lastSuccess": 1704645236724
     },
     "grupo-tagall.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1704645357965,
-      "lastSuccess": 1704645357965
+      "total": 4,
+      "success": 4,
+      "last": 1704673064885,
+      "lastSuccess": 1704673064885
     },
     "menu-menu.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704666167315,
+      "lastSuccess": 1704666167315
+    },
+    "cfg-translate.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704649148807,
+      "lastSuccess": 1704649148807
+    },
+    "grupo-fantasmas.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704650060034,
+      "lastSuccess": 1704650060034
+    },
+    "cfgBard.js": {
       "total": 2,
       "success": 2,
-      "last": 1704645634719,
-      "lastSuccess": 1704645634719
+      "last": 1704660724654,
+      "lastSuccess": 1704660724654
+    },
+    "afk-afk.js": {
+      "total": 3,
+      "success": 1,
+      "last": 1704663844607,
+      "lastSuccess": 1704663844607
+    },
+    "_allfake.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1704664250134,
+      "lastSuccess": 1704664250134
+    },
+    "cfg-readmore.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704664309837,
+      "lastSuccess": 1704664309837
+    },
+    "cfg-styletext.js": {
+      "total": 44,
+      "success": 43,
+      "last": 1704673821583,
+      "lastSuccess": 1704673821583
+    },
+    "cfg-whatmusic.js": {
+      "total": 4,
+      "success": 3,
+      "last": 1704669121784,
+      "lastSuccess": 1704667886498
+    },
+    "dl-ringtone.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704667878153,
+      "lastSuccess": 1704667878153
+    },
+    "conversor-toanime.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1704669716608,
+      "lastSuccess": 1704669716608
     }
   },
   "msgs": {},
@@ -11137,7 +13317,7 @@
       "antiSpam": false,
       "modoia": true,
       "jadibotmd": true,
-      "status": 1704648747928
+      "status": 1704674714299
     }
   }
 }
