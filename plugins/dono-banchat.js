@@ -19,12 +19,16 @@ let handler = async (m,{args}) => {
   if (args[0]) {
     global.db.data.chats[m.chat].isBanned = true
     
-    let timeoutset;
+let timeoutset;
 
 if (args[0].includes(':')) {
-  // User input is in the format HH:mm:ss
+  // User input is in the format HH:mm or HH:mm:ss
   const [hours, minutes, seconds] = args[0].split(':').map(Number);
-  timeoutset = (hours * 3600 + minutes * 60 + seconds) * 1000; // Convert hours, minutes, and seconds to milliseconds
+
+  // Check if seconds are present, otherwise default to 0
+  const totalSeconds = isNaN(seconds) ? 0 : seconds;
+
+  timeoutset = (hours * 3600 + minutes * 60 + totalSeconds) * 1000; // Convert hours, minutes, and seconds to milliseconds
 } else {
   // User input is in hours
   timeoutset = args[0] * 3600000; // Convert hours to milliseconds
