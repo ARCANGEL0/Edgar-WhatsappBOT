@@ -15,7 +15,8 @@ const fkontak = {
 }
 
 try{
-let plvra = text.split(" ")[1]
+let plvra = args.slice(1).join(' ');
+    
   
 if (!args[1] && m.quoted && m.quoted.text) plvra= m.quoted.text
 
