@@ -4,7 +4,7 @@ let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
 if (!mime) throw '𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗨𝗠𝗔 𝗜𝗠𝗔𝗚𝗘𝗠'    
 
-audio = args[0]
+let audio = args[0]
 			
 			txt = await fetch(`https://api.lolhuman.xyz/api/speech-to-text?apikey=${apikey}&audio=${audio}`)
 			
