@@ -15,8 +15,9 @@ const fkontak = {
 }
 
 try{
-let plvra = text || m.quoted.text
+let plvra = text
   
+if (!text && m.quoted && m.quoted.text) plvra = m.quoted.text
 
 let selected = plvra.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
