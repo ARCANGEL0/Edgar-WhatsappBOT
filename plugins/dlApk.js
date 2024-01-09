@@ -1,33 +1,27 @@
-import { download } from 'aptoide-scraper';
+import cheerio from 'cheerio'
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
-  try {
-    if (command === 'modapk') {
-      if (!text) throw `*[❗] Please provide the APK Name you want to download.*`;
-
-      await conn.reply(m.chat, global.wait, m);
-      let data = await download(text);
-
-      if (data.size.replace(' MB', '') > 200) {
-        return await conn.sendMessage(m.chat, { text: '*[⛔] The file is too large.*' }, { quoted: m });
-      }
-
-      if (data.size.includes('GB')) {
-        return await conn.sendMessage(m.chat, { text: '*[⛔] The file is too large.*' }, { quoted: m });
-      }
-
-      await conn.sendMessage(
-        m.chat,
-        { document: { url: data.dllink }, mimetype: 'application/vnd.android.package-archive', fileName: data.name + '.apk', caption: null },
-        { quoted: m }
-      )
-    }
-  } catch {
-    throw `*[❗] An error occurred. Make sure to provide a valid link.*`;
-  }
-};
-
-handler.help = ['modapk']
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+	if (!args[0]) throw `Ex: ${usedPrefix + command} https://play.google.com/store/apps/details?id=com.linecorp.LGGRTHN`
+	let res = await apkDl(args[0])
+	await m.reply('_In progress, please wait..._')
+	conn.sendMessage(m.chat, { document: { url: res.download }, mimetype: res.mimetype, fileName: res.fileName }, { quoted: m })
+}
+handler.help = handler.alias = ['apkdl']
 handler.tags = ['downloader']
-handler.command = /^modapk$/i;
-export default handler;
+handler.command = /^(apkdl)$/i
+
+export default handler
+
+async function apkDl(url) {
+	let res = await fetch('https://apk.support/gapi/index.php', {
+		method: 'post',
+		body: new URLSearchParams(Object.entries({ x: 'downapk', t: 1, google_id: url, device_id: '', language: 'en-US', dpi: 480, gl: 'SUQ=', model: '', hl: 'en', de_av: '', aav: '', android_ver: 5.1, tbi: 'arm64-v8a', country: 0, gc: undefined }))
+	})
+	let $ = cheerio.load(await res.text())
+	let fileName = $('div.browser > div.dvContents > ul > li > a').text().trim().split(' ')[0]
+	let download = $('div.browser > div.dvContents > ul > li > a').attr('href')
+	if (!download) throw 'Can\'t download the apk!'
+	let mimetype = (await fetch(download, { method: 'head' })).headers.get('content-type')
+	return { fileName, mimetype, download }
+}
