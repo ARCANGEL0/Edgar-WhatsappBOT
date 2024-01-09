@@ -7,7 +7,7 @@ if (!mime) throw '𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗨𝗠𝗔 𝗜𝗠𝗔𝗚
 let audio = args[0]
 			
 		let	txt = await fetch(`https://api.lolhuman.xyz/api/speech-to-text?apikey=${lolkeysapi}&audio=${audio}`)
-			
+			await m.reply("ok")
 			console.log(txt.json())
 
 }
