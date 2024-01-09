@@ -13,16 +13,16 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
-
+let plvra = text || m.quoted.text
   
 
-let selected = text.toLowerCase().split(" ")[0] + " "
+let selected = plvra.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
-  let resposta = text.replace("code", "").trim();
+  let resposta = plvra.replace("code", "").trim();
 console.log(resposta);
 
 let res = '';
-res = text.split('').map(char => {
+res = plvra.split('').map(char => {
   return char.charCodeAt(0).toString(2);
 }).join(' ');
 
@@ -33,7 +33,7 @@ await m.reply(res);
 else if(selected == "decode ")
 {
   
-  var newBin = text.split(" ")
+  var newBin = plvra.split(" ")
 var binCode = []
 for (let i = 0; i < newBin.length; i++) {
     binCode.push(String.fromCharCode(parseInt(newBin[i], 2)))
