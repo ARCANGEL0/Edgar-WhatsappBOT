@@ -8,7 +8,8 @@ import axios from "axios"
 import moment from "moment-timezone"
 import { en, es, id, ar, pt, fr, hi } from "./lib/idiomas/total-idiomas.js"
 
-require('dotenv').config();
+import('dotenv').then(dotenv => dotenv.config());
+
 
 const apiKey = process.env.OPENAI_API_KEY;
 console.log("api open  " + apiKey)
