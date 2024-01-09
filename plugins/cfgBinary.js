@@ -16,12 +16,12 @@ const fkontak = {
 
 try{
 let plvra = args[1]
-  await m.reply(plvra)
+  
 if (!args[1] && m.quoted && m.quoted.text) args[1]= m.quoted.text
 
 let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
-  let resposta = plvra.replace("code", "").trim();
+  let resposta = plvra
 console.log(resposta);
 
 let res = '';
