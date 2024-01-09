@@ -1,3 +1,6 @@
+import('dotenv').then(dotenv => dotenv.config());
+
+
 let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
