@@ -13,6 +13,8 @@ const fkontak = {
 	},
 	"participant": "0@s.whatsapp.net"
 }
+
+try{
 let plvra = text || m.quoted.text
   
 
@@ -44,6 +46,13 @@ let result = binCode.join("")
 } else {
 return conn.reply(m.chat, `${mg}🔣 𝘾𝙊𝘿𝙄𝘾𝙊 𝙈𝙊𝙍𝙎𝙀 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍/𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍\n\n𝙋𝘼𝙍𝘼 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:*\n*${usedPrefix}${command} codificar Hola Gata*\n\n𝙋𝘼𝙍𝘼 𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:**${usedPrefix}${command} decodificar •••• --- •-•• •- / --• •- - •-*\n*${usedPrefix}${command} decodificar •••• • •-•• •-•• --- / --• •- - •-*`, fkontak, m)
 }}
+
+catch(e){
+  console.log(e)
+  
+  await m.reply("⸸ 𝙴𝚛𝚛𝚘 𝚎𝚖 𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛 ")
+}
+}
 
 handler.help = ["binary"].map(v => v + " <encode|decode>")
 handler.tags = ["tools"]
