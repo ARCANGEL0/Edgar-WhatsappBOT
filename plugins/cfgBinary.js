@@ -15,7 +15,7 @@ const fkontak = {
 }
 
 try{
-let plvra = args[1]
+let plvra = text.toLowerCase().split(" ")[1]
   
 if (!args[1] && m.quoted && m.quoted.text) plvra= m.quoted.text
 
