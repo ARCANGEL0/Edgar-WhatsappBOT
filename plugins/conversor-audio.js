@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
     let apiKey = process.env.OPENAI_API_KEY
-    console.log(apiKey)
+    console.log("key*  "+apiKey)
 
     let audioPath = args[0];
 
