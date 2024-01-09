@@ -9,7 +9,7 @@ let audio = args[0]
 	 fetch(`https://api.lolhuman.xyz/api/speech-to-text?apikey=${lolkeysapi}&audio=${audio}`)
 		.then(response=>{
 		   m.reply("ok")
-			console.log(txt.json())
+			console.log(response.json())
 		})
 		.catch(e=>console.log(e))
 			
