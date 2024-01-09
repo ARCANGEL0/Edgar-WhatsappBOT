@@ -11,8 +11,8 @@ import fetch from 'node-fetch'
  * @type {import('@adiwajshing/baileys')}  
  */
 const { proto } = (await import('@whiskeysockets/baileys')).default
-const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
+const isNumber = x => typeof x === 'number' && !isNaN(x)
 clearTimeout(this)
 resolve()
 }, ms))
@@ -670,7 +670,7 @@ export async function deleteUpdate(message) {
 try {
 const { fromMe, id, participant } = message
 if (fromMe) return 
-let msg = mconn.conn.serializeM(mconn.conn.loadMessage(id))
+let msg = m.conn.conn.serializeM(mconn.conn.loadMessage(id))
 let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
