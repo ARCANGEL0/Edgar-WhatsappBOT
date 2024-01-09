@@ -1,4 +1,4 @@
-let handler = async(m, { conn, usedPrefix, command, text }) => {
+let handler = async(m, { conn, usedPrefix, command, text ,args}) => {
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -15,11 +15,11 @@ const fkontak = {
 }
 
 try{
-let plvra = text
-  
-if (!text && m.quoted && m.quoted.text) plvra = m.quoted.text
+let plvra = args[1]
+  await m.reply(plvra)
+if (!args[1] && m.quoted && m.quoted.text) args[1]= m.quoted.text
 
-let selected = plvra.toLowerCase().split(" ")[0] + " "
+let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
   let resposta = plvra.replace("code", "").trim();
 console.log(resposta);
