@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
-    if (!mime || !args[0]) throw 'Por favor, responda a um Ã¡udio e forneÃ§a um caminho vÃ¡lido para o arquivo.';
+    
 
     let audioPath = args[0];
 
