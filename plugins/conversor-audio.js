@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command, isOwner, args,apiKey }) => {
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
-    
+    console.log(apiKey)
 
     let audioPath = args[0];
 
