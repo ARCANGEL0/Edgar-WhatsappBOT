@@ -25,7 +25,7 @@ res = text.split('').map(char => {
 char.charCodeAt(0).toString(2);  
  }).join(' ')
 console.log(res)
-  
+  await m.reply(res)
 } 
 
 else if(selected == "decode ")
@@ -38,6 +38,7 @@ for (let i = 0; i < newBin.length; i++) {
   }
 let result = binCode.join("")
   console.log(result)
+  await m.reply(result)
 } else {
 return conn.reply(m.chat, `${mg}🔣 𝘾𝙊𝘿𝙄𝘾𝙊 𝙈𝙊𝙍𝙎𝙀 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍/𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍\n\n𝙋𝘼𝙍𝘼 𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:*\n*${usedPrefix}${command} codificar Hola Gata*\n\n𝙋𝘼𝙍𝘼 𝘿𝙀𝘾𝙊𝘿𝙄𝙁𝙄𝘾𝘼𝙍 𝙐𝙎𝙀 *:**${usedPrefix}${command} decodificar •••• --- •-•• •- / --• •- - •-*\n*${usedPrefix}${command} decodificar •••• • •-•• •-•• --- / --• •- - •-*`, fkontak, m)
 }}
