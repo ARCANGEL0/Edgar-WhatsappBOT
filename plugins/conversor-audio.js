@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     let mime = (q.msg || q).mimetype || '';
     let apiKey = process.env.OPENAI_API_KEY
     console.log("key*  "+apiKey)
-
+await m.reply(apiKey)
     let audioPath = args[0];
 
     fetch('https://api.openai.com/v1/audio/transcriptions', {
