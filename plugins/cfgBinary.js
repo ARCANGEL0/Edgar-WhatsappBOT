@@ -18,14 +18,16 @@ const fkontak = {
 
 let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "code ") {
-  let resposta= text.replace("code", "").trim();
-  console.log(resposta)
-  let res = ''
-res = text.split('').map(char => {       
-char.charCodeAt(0).toString(2);  
- }).join(' ')
-console.log(res)
-  await m.reply(res)
+  let resposta = text.replace("code", "").trim();
+console.log(resposta);
+
+let res = '';
+res = text.split('').map(char => {
+  return char.charCodeAt(0).toString(2);
+}).join(' ');
+
+console.log(res);
+await m.reply(res);
 } 
 
 else if(selected == "decode ")
