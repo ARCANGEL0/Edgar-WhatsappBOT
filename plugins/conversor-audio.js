@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
+let handler = async (m, { conn, text, usedPrefix, command, isOwner, args,apiKey }) => {
     let q = m.quoted ? m.quoted : m;
     let mime = (q.msg || q).mimetype || '';
     
@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     fetch('https://api.openai.com/v1/audio/transcriptions', {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`, // Replace with your API key or use your method to get the key
+            'Authorization': `Bearer ${apiKey}`, // Replace with your API key or use your method to get the key
             'Content-Type': 'multipart/form-data',
         },
         body: JSON.stringify({
@@ -26,5 +26,5 @@ let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
     });
 };
 
-handler.command = /^text/i;
+handler.command = /^text|tx/i;
 export default handler;
