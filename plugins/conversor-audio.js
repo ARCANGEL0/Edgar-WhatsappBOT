@@ -1,19 +1,30 @@
+let handler = async (m, { conn, text, usedPrefix, command, isOwner, args }) => {
+    let q = m.quoted ? m.quoted : m;
+    let mime = (q.msg || q).mimetype || '';
+    if (!mime || !args[0]) throw 'Por favor, responda a um Ã¡udio e forneÃ§a um caminho vÃ¡lido para o arquivo.';
 
-let handler = async (m, { conn, text, usedPrefix, command, isOwner,args }) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-if (!mime) throw '𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗔 𝗨𝗠𝗔 𝗜𝗠𝗔𝗚𝗘𝗠'    
+    let audioPath = args[0];
 
-let audio = args[0]
-			
-	 fetch(`https://api.lolhuman.xyz/api/speech-to-text?apikey=${lolkeysapi}&audio=${audio}`)
-		.then(response=>{
-		   m.reply("ok")
-			console.log(response.json())
-		})
-		.catch(e=>console.log(e))
-			
+    fetch('https://api.openai.com/v1/audio/transcriptions', {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`, // Replace with your API key or use your method to get the key
+            'Content-Type': 'multipart/form-data',
+        },
+        body: JSON.stringify({
+            model: 'whisper-1',
+            file: `https://file.io/OASvpLuHnpIq`,
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the OpenAI response here
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+};
 
-}
-handler.command = /^text/i
-export default handler
+handler.command = /^text/i;
+export default handler;
